@@ -4,7 +4,9 @@ import { HelloWave } from "@/components/HelloWave";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
-import { Button } from "tamagui";
+import { Button, SizableText, XStack } from "tamagui";
+import React from "react";
+import { Icon } from "../../components/Icon";
 
 export default function HomeScreen() {
   return (
@@ -51,7 +53,18 @@ export default function HomeScreen() {
           <ThemedText type="defaultSemiBold">app-example</ThemedText>.
         </ThemedText>
       </ThemedView>
-      <Button>Click me</Button>
+      <Button color="$blue5" backgroundColor="$blue9Dark">
+        Click me
+      </Button>
+
+      {/* icons example */}
+      <SizableText size="$8" fontWeight="bold">
+        Icons
+      </SizableText>
+      <XStack gap="$4">
+        <Icon icon="puzzle" width={24} height={24} color="$gray9" />
+        <Icon icon="chart" width={24} height={24} color="$red11" />
+      </XStack>
     </ParallaxScrollView>
   );
 }
