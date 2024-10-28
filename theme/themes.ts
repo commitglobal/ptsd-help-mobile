@@ -5,18 +5,18 @@ import type { Variable } from "@tamagui/web";
 const colorTokens = {
   light: {
     blue: {
-      blue1: "hsl(206, 100%, 99.2%)",
-      blue2: "hsl(210, 100%, 98.0%)",
-      blue3: "hsl(209, 100%, 96.5%)",
-      blue4: "hsl(210, 98.8%, 94.0%)",
-      blue5: "hsl(209, 95.0%, 90.1%)",
-      blue6: "hsl(209, 81.2%, 84.5%)",
-      blue7: "hsl(208, 77.5%, 76.9%)",
-      blue8: "hsl(206, 81.9%, 65.3%)",
-      blue9: "hsl(206, 100%, 50.0%)",
-      blue10: "hsl(208, 100%, 47.3%)",
-      blue11: "hsl(211, 100%, 43.2%)",
-      blue12: "hsl(211, 100%, 15.0%)",
+      blue1: "hsl(185, 60.0%, 98.7%)",
+      blue2: "hsl(185, 73.3%, 97.1%)",
+      blue3: "hsl(186, 70.2%, 94.4%)",
+      blue4: "hsl(186, 63.8%, 90.6%)",
+      blue5: "hsl(187, 58.3%, 85.4%)",
+      blue6: "hsl(188, 54.6%, 78.4%)",
+      blue7: "hsl(189, 53.7%, 68.7%)",
+      blue8: "hsl(189, 60.3%, 52.5%)",
+      blue9: "hsl(190, 95.0%, 39.0%)",
+      blue10: "hsl(191, 91.2%, 36.8%)",
+      blue11: "hsl(192, 85.0%, 31.0%)",
+      blue12: "hsl(192, 88.0%, 12.5%)",
     },
     orange: {
       orange1: "hsl(24, 70.0%, 99.0%)",
@@ -47,62 +47,10 @@ const colorTokens = {
       gray12: "hsl(0, 0%, 9.0%)",
     },
   },
-  dark: {
-    blue: {
-      blue1: "hsl(212, 35.0%, 9.2%)",
-      blue2: "hsl(216, 50.0%, 11.8%)",
-      blue3: "hsl(214, 59.4%, 15.3%)",
-      blue4: "hsl(214, 65.8%, 17.9%)",
-      blue5: "hsl(213, 71.2%, 20.2%)",
-      blue6: "hsl(212, 77.4%, 23.1%)",
-      blue7: "hsl(211, 85.1%, 27.4%)",
-      blue8: "hsl(211, 89.7%, 34.1%)",
-      blue9: "hsl(206, 100%, 50.0%)",
-      blue10: "hsl(209, 100%, 60.6%)",
-      blue11: "hsl(210, 100%, 66.1%)",
-      blue12: "hsl(206, 98.0%, 95.8%)",
-    },
-    orange: {
-      orange1: "hsl(30, 70.0%, 7.2%)",
-      orange2: "hsl(28, 100%, 8.4%)",
-      orange3: "hsl(26, 91.1%, 11.6%)",
-      orange4: "hsl(25, 88.3%, 14.1%)",
-      orange5: "hsl(24, 87.6%, 16.6%)",
-      orange6: "hsl(24, 88.6%, 19.8%)",
-      orange7: "hsl(24, 92.4%, 24.0%)",
-      orange8: "hsl(25, 100%, 29.0%)",
-      orange9: "hsl(24, 94.0%, 50.0%)",
-      orange10: "hsl(24, 100%, 58.5%)",
-      orange11: "hsl(24, 100%, 62.2%)",
-      orange12: "hsl(24, 97.0%, 93.2%)",
-    },
-    gray: {
-      gray1: "hsl(0, 0%, 8.5%)",
-      gray2: "hsl(0, 0%, 11.0%)",
-      gray3: "hsl(0, 0%, 13.6%)",
-      gray4: "hsl(0, 0%, 15.8%)",
-      gray5: "hsl(0, 0%, 17.9%)",
-      gray6: "hsl(0, 0%, 20.5%)",
-      gray7: "hsl(0, 0%, 24.3%)",
-      gray8: "hsl(0, 0%, 31.2%)",
-      gray9: "hsl(0, 0%, 43.9%)",
-      gray10: "hsl(0, 0%, 49.4%)",
-      gray11: "hsl(0, 0%, 62.8%)",
-      gray12: "hsl(0, 0%, 93.0%)",
-    },
-  },
 };
 
 const lightShadowColor = "hsla(0, 0%, 0%, 0.04)";
 const lightShadowColorStrong = "hsla(0, 0%, 0%, 0.085)";
-const darkShadowColor = "hsla(0, 0%, 0%, 0.2)";
-const darkShadowColorStrong = "hsla(0, 0%, 0%, 0.3)";
-
-const darkColors = {
-  ...colorTokens.dark.blue,
-  ...colorTokens.dark.orange,
-  ...colorTokens.dark.gray,
-};
 
 const lightColors = {
   ...colorTokens.light.blue,
@@ -144,7 +92,6 @@ const color = {
   black11: "hsl(0, 0%, 65%)",
   black12: "hsl(0, 0%, 100%)",
   ...postfixObjKeys(lightColors, "Light"),
-  ...postfixObjKeys(darkColors, "Dark"),
 };
 
 export const palettes = (() => {
@@ -195,29 +142,6 @@ export const palettes = (() => {
     color.black0,
   ];
 
-  const darkPalette = [
-    color.black0,
-    color.black075,
-    color.black05,
-    color.black025,
-    color.black1,
-    color.black2,
-    color.black3,
-    color.black4,
-    color.black5,
-    color.black6,
-    color.black7,
-    color.black8,
-    color.black9,
-    color.black10,
-    color.black11,
-    color.black12,
-    color.white075,
-    color.white05,
-    color.white025,
-    color.white0,
-  ];
-
   const lightPalettes = objectFromEntries(
     objectKeys(colorTokens.light).map(
       (key) =>
@@ -225,20 +149,12 @@ export const palettes = (() => {
     )
   );
 
-  const darkPalettes = objectFromEntries(
-    objectKeys(colorTokens.dark).map(
-      (key) => [`dark_${key}`, getColorPalette(colorTokens.dark[key])] as const
-    )
-  );
-
   const colorPalettes = {
     ...lightPalettes,
-    ...darkPalettes,
   };
 
   return {
     light: lightPalette,
-    dark: darkPalette,
     ...colorPalettes,
   };
 })();
@@ -395,22 +311,12 @@ const shadows = {
     shadowColorPress: lightShadowColor,
     shadowColorFocus: lightShadowColor,
   },
-  dark: {
-    shadowColor: darkShadowColorStrong,
-    shadowColorHover: darkShadowColorStrong,
-    shadowColorPress: darkShadowColor,
-    shadowColorFocus: darkShadowColor,
-  },
 };
 
 const nonInherited = {
   light: {
     ...lightColors,
     ...shadows.light,
-  },
-  dark: {
-    ...darkColors,
-    ...shadows.dark,
   },
 };
 
@@ -419,12 +325,6 @@ const overlayThemeDefinitions = [
     parent: "light",
     theme: {
       background: "hsla(0, 0%, 0%, 0.5)",
-    },
-  },
-  {
-    parent: "dark",
-    theme: {
-      background: "hsla(0, 0%, 0%, 0.9)",
     },
   },
 ];
@@ -483,11 +383,6 @@ const themeBuilder = createThemeBuilder()
       template: "base",
       palette: "light",
       nonInheritedValues: nonInherited.light,
-    },
-    dark: {
-      template: "base",
-      palette: "dark",
-      nonInheritedValues: nonInherited.dark,
     },
   })
   .addChildThemes({
