@@ -1,9 +1,10 @@
 import { Image, StyleSheet, Platform } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { SizableText, XStack, YStack } from "tamagui";
+import { Separator, SizableText, XStack, YStack } from "tamagui";
 import React from "react";
 import { Icon } from "../../components/Icon";
 import Button from "@/components/Button";
+import { Typography } from "@/components/Typography";
 
 export default function HomeScreen() {
   return (
@@ -16,14 +17,15 @@ export default function HomeScreen() {
         />
       }
     >
-      <SizableText size="$9" fontWeight="bold">
-        Examples
-      </SizableText>
+      <Typography preset="heading">Typography</Typography>
+      <Typography preset="subheading">Subheading</Typography>
+      <Typography preset="default">Default</Typography>
+      <Typography preset="helper">Helper</Typography>
+
+      <Separator />
 
       {/* icons example */}
-      <SizableText size="$6" fontWeight="bold">
-        Icons
-      </SizableText>
+      <Typography preset="subheading">Icons</Typography>
       <XStack gap="$4">
         <Icon icon="puzzle" width={24} height={24} color="$blue6" />
         <Icon icon="puzzle" width={24} height={24} color="$orange6" />
@@ -32,11 +34,11 @@ export default function HomeScreen() {
         <Icon icon="chart" width={24} height={24} color="$orange11" />
       </XStack>
 
+      <Separator />
+
       {/* buttons */}
       <YStack gap="$4">
-        <SizableText size="$6" fontWeight="bold">
-          Buttons
-        </SizableText>
+        <Typography preset="subheading">Buttons</Typography>
         <Button>Primary</Button>
         <Button disabled>Primary disabled</Button>
         <Button preset="secondary">Secondary</Button>
