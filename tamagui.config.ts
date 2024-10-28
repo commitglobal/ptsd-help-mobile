@@ -1,10 +1,12 @@
 import { config } from "@tamagui/config/v3";
 import { themes } from "./theme/themes";
+import { tokens } from "./theme/tokens";
 
 import { createTamagui } from "tamagui"; // or '@tamagui/core'
 
 const appConfig = createTamagui({
   ...config,
+  tokens,
   themes,
 });
 

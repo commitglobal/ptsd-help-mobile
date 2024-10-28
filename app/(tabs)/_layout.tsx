@@ -19,9 +19,7 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color, focused }) => {
-            console.log("focused", focused);
-            console.log("color", color);
+          tabBarIcon: ({ color }) => {
             return <Icon icon="puzzle" width={24} height={24} color={color} />;
           },
         }}
@@ -30,7 +28,7 @@ export default function TabLayout() {
         name="theme"
         options={{
           title: "Theme",
-          tabBarIcon: ({ color, focused }) => (
+          tabBarIcon: ({ color }) => (
             <Icon icon="chart" width={24} height={24} color={color} />
           ),
         }}

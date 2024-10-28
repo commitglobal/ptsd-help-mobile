@@ -5,6 +5,7 @@ import React from "react";
 import { Icon } from "../../components/Icon";
 import Button from "@/components/Button";
 import { Typography } from "@/components/Typography";
+import { Card } from "@/components/Card";
 
 export default function HomeScreen() {
   return (
@@ -55,6 +56,15 @@ export default function HomeScreen() {
           Chromeless disabled
         </Button>
       </YStack>
+
+      {/* card */}
+      <Card
+        padding="$md"
+        height={100}
+        cardFooter={<Typography preset="helper">Card footer</Typography>}
+      >
+        <Typography preset="heading">Card</Typography>
+      </Card>
     </ParallaxScrollView>
   );
 }
