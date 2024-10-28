@@ -3,6 +3,8 @@ import { styled, XStack, XStackProps } from "tamagui";
 import { SvgProps } from "react-native-svg";
 import Puzzle from "../assets/icons/tabs/puzzle.svg";
 import Chart from "../assets/icons/tabs/chart.svg";
+import ChevronLeft from "../assets/icons/chevron-left.svg";
+import Heart from "../assets/icons/heart.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -17,11 +19,19 @@ type IconRegistry = {
 const iconRegistry: IconRegistry = {
   puzzle: Puzzle,
   chart: Chart,
+  chevronLeft: ChevronLeft,
+  heart: Heart,
 };
 
 const IconComponent = React.forwardRef(
   (props: IconProps, ref: React.Ref<typeof XStack>) => {
-    const { icon, color = "black", width, height, ...wrapperProps } = props;
+    const {
+      icon,
+      color = "black",
+      width = 24,
+      height = 24,
+      ...wrapperProps
+    } = props;
 
     const IconSvg = iconRegistry[icon];
 
