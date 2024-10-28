@@ -1,9 +1,9 @@
 import { Tabs } from "expo-router";
 import React from "react";
 
-import { TabBarIcon } from "@/components/navigation/TabBarIcon";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
+import { Icon } from "@/components/Icon";
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
@@ -19,12 +19,11 @@ export default function TabLayout() {
         name="index"
         options={{
           title: "Home",
-          tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "home" : "home-outline"}
-              color={color}
-            />
-          ),
+          tabBarIcon: ({ color, focused }) => {
+            console.log("focused", focused);
+            console.log("color", color);
+            return <Icon icon="puzzle" width={24} height={24} color={color} />;
+          },
         }}
       />
       <Tabs.Screen
@@ -32,10 +31,7 @@ export default function TabLayout() {
         options={{
           title: "Theme",
           tabBarIcon: ({ color, focused }) => (
-            <TabBarIcon
-              name={focused ? "code-slash" : "code-slash-outline"}
-              color={color}
-            />
+            <Icon icon="chart" width={24} height={24} color={color} />
           ),
         }}
       />

@@ -1,8 +1,6 @@
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { StyleSheet, Image, Platform } from "react-native";
-
 import { Collapsible } from "@/components/Collapsible";
-import { ExternalLink } from "@/components/ExternalLink";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { ThemedText } from "@/components/ThemedText";
 import { ThemedView } from "@/components/ThemedView";
@@ -27,6 +25,7 @@ export default function TabTwoScreen() {
         <XStack gap="$4" borderColor="$blue11" flexWrap="wrap">
           {colors.map((color) => (
             <YStack
+              key={color}
               width="$4"
               height="$4"
               backgroundColor={`$blue${color}`}
@@ -44,6 +43,7 @@ export default function TabTwoScreen() {
         <XStack gap="$4" borderColor="$orange11" flexWrap="wrap">
           {colors.map((color) => (
             <YStack
+              key={color}
               width="$4"
               height="$4"
               backgroundColor={`$orange${color}`}
@@ -61,6 +61,7 @@ export default function TabTwoScreen() {
         <XStack gap="$4" borderColor="$gray11" flexWrap="wrap">
           {colors.map((color) => (
             <YStack
+              key={color}
               width="$4"
               height="$4"
               backgroundColor={`$gray${color}`}
