@@ -32,13 +32,27 @@ export default function HomeScreen() {
         <Icon icon="chart" width={24} height={24} color="$orange11" />
       </XStack>
 
-      <SizableText size="$6" fontWeight="bold">
-        Buttons
-      </SizableText>
-      <Button>Primary</Button>
-      <Button disabled>Primary disabled</Button>
-      <Button preset="outlined">Outlined</Button>
-      <Button preset="chromeless">Chromeless</Button>
+      {/* buttons */}
+      <YStack gap="$4">
+        <SizableText size="$6" fontWeight="bold">
+          Buttons
+        </SizableText>
+        <Button>Primary</Button>
+        <Button disabled>Primary disabled</Button>
+        <Button preset="secondary">Secondary</Button>
+        <Button preset="secondary" disabled>
+          Secondary disabled
+        </Button>
+        <Button preset="outlined">Outlined</Button>
+        <Button preset="outlined" disabled>
+          Outlined disabled
+        </Button>
+
+        <Button preset="chromeless">Chromeless</Button>
+        <Button preset="chromeless" disabled>
+          Chromeless disabled
+        </Button>
+      </YStack>
     </ParallaxScrollView>
   );
 }
