@@ -8,6 +8,11 @@ import Heart from "../assets/icons/heart.svg";
 import Screen from "../assets/icons/screen.svg";
 import Plus from "../assets/icons/plus.svg";
 import Minus from "../assets/icons/minus.svg";
+import MenuAlt2 from "../assets/icons/menu-alt-2.svg";
+import X from "../assets/icons/x.svg";
+import Settings from "../assets/icons/settings.svg";
+import User from "../assets/icons/user.svg";
+import InformationCircle from "../assets/icons/information-circle.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -27,6 +32,11 @@ const iconRegistry: IconRegistry = {
   screen: Screen,
   plus: Plus,
   minus: Minus,
+  menuAlt2: MenuAlt2,
+  x: X,
+  settings: Settings,
+  user: User,
+  informationCircle: InformationCircle,
 };
 
 const IconComponent = React.forwardRef(

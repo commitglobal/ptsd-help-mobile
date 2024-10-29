@@ -1,16 +1,15 @@
 import { Icon } from "@/components/Icon";
 import React, { useState } from "react";
 import { Screen } from "@/components/Screen";
-import { Typography } from "@/components/Typography";
-import { XStack, YStack } from "tamagui";
-import { Thermometer } from "@/components/Thermometer";
-import Button from "@/components/Button";
 import { DistressMeter } from "@/components/DistressMeter";
+import { DrawerActions, useNavigation } from "@react-navigation/native";
 
 export default function Play() {
+  const navigation = useNavigation();
+
   const [stressValue, setStressValue] = useState(5);
   const maxStressValue = 10;
-  const step = 2;
+  const step = 1;
 
   const incrementStressValue = () => {
     if (stressValue < maxStressValue) {
@@ -30,10 +29,8 @@ export default function Play() {
         title: "Screen with header",
         titleProps: { color: "white" },
         statusBarStyle: "light",
-        iconLeft: <Icon icon="chevronLeft" color="white" />,
-        onLeftPress: () => {
-          console.log("left pressed");
-        },
+        iconLeft: <Icon icon="menuAlt2" color="white" />,
+        onLeftPress: () => navigation.dispatch(DrawerActions.openDrawer),
         iconRight: <Icon icon="heart" color="white" />,
         onRightPress: () => {
           console.log("right pressed");
@@ -53,7 +50,7 @@ export default function Play() {
         thermometerProps={{
           width: 100,
           height: 300,
-          step: 2,
+          step: step,
           max: maxStressValue,
         }}
       />

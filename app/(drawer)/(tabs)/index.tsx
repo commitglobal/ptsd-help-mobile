@@ -2,10 +2,10 @@ import { Image, StyleSheet, Platform } from "react-native";
 import ParallaxScrollView from "@/components/ParallaxScrollView";
 import { Separator, SizableText, XStack, YStack } from "tamagui";
 import React from "react";
-import { Icon } from "../../components/Icon";
 import Button from "@/components/Button";
 import { Typography } from "@/components/Typography";
 import { Card } from "@/components/Card";
+import { Icon } from "@/components/Icon";
 
 export default function HomeScreen() {
   return (
