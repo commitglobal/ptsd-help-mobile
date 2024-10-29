@@ -6,6 +6,8 @@ import Chart from "../assets/icons/tabs/chart.svg";
 import ChevronLeft from "../assets/icons/chevron-left.svg";
 import Heart from "../assets/icons/heart.svg";
 import Screen from "../assets/icons/screen.svg";
+import Plus from "../assets/icons/plus.svg";
+import Minus from "../assets/icons/minus.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -23,6 +25,8 @@ const iconRegistry: IconRegistry = {
   chevronLeft: ChevronLeft,
   heart: Heart,
   screen: Screen,
+  plus: Plus,
+  minus: Minus,
 };
 
 const IconComponent = React.forwardRef(

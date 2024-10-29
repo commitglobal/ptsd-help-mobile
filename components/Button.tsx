@@ -10,7 +10,7 @@ import {
 
 type PresetType = "default" | "secondary" | "outlined" | "chromeless";
 export interface ButtonProps extends TamaguiButtonProps {
-  children: string;
+  children?: string;
   preset?: PresetType;
   style?: StyleProp<ViewStyle>;
   textStyle?: TextStyle;
@@ -118,7 +118,7 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
 
   return (
     <StyledButton presets={presetType} style={$styleOverride} {...rest}>
-      <SizableText style={$textStyles}>{children}</SizableText>
+      {children && <SizableText style={$textStyles}>{children}</SizableText>}
     </StyledButton>
   );
 });

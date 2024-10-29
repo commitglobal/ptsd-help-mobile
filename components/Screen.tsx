@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { ScrollView, ScrollViewProps, YStack, YStackProps } from "tamagui";
+import { YStack, YStackProps } from "tamagui";
 import { Header, HeaderProps } from "./Header";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { KeyboardAvoidingView, Platform } from "react-native";
@@ -7,16 +7,12 @@ import { KeyboardAvoidingView, Platform } from "react-native";
 interface ScreenProps extends YStackProps {
   children: React.ReactNode;
   headerProps?: HeaderProps;
-  scrollViewProps?: ScrollViewProps;
   contentContainerStyle?: YStackProps;
 }
 
 export const Screen = ({
   children,
   headerProps,
-  paddingTop,
-  padding,
-  scrollViewProps,
   contentContainerStyle,
 }: ScreenProps) => {
   const insets = useSafeAreaInsets();
