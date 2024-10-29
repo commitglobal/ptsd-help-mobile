@@ -6,6 +6,11 @@ import Chart from "../assets/icons/tabs/chart.svg";
 import ChevronLeft from "../assets/icons/chevron-left.svg";
 import Heart from "../assets/icons/heart.svg";
 import Screen from "../assets/icons/screen.svg";
+import MenuAlt2 from "../assets/icons/menu-alt-2.svg";
+import X from "../assets/icons/x.svg";
+import Settings from "../assets/icons/settings.svg";
+import User from "../assets/icons/user.svg";
+import InformationCircle from "../assets/icons/information-circle.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -23,6 +28,11 @@ const iconRegistry: IconRegistry = {
   chevronLeft: ChevronLeft,
   heart: Heart,
   screen: Screen,
+  menuAlt2: MenuAlt2,
+  x: X,
+  settings: Settings,
+  user: User,
+  informationCircle: InformationCircle,
 };
 
 const IconComponent = React.forwardRef(

@@ -17,6 +17,7 @@
   "dependencies": {
     "@expo/vector-icons": "^14.0.2",
     "@floating-ui/react": "^0.26.25",
+    "@react-navigation/drawer": "^6.7.2",
     "@react-navigation/native": "^6.0.2",
     "@tamagui/config": "^1.116.7",
     "expo": "~51.0.28",
