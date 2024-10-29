@@ -5,6 +5,7 @@ import Puzzle from "../assets/icons/tabs/puzzle.svg";
 import Chart from "../assets/icons/tabs/chart.svg";
 import ChevronLeft from "../assets/icons/chevron-left.svg";
 import Heart from "../assets/icons/heart.svg";
+import Screen from "../assets/icons/screen.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -21,6 +22,7 @@ const iconRegistry: IconRegistry = {
   chart: Chart,
   chevronLeft: ChevronLeft,
   heart: Heart,
+  screen: Screen,
 };
 
 const IconComponent = React.forwardRef(

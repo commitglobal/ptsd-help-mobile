@@ -4,7 +4,7 @@ import { Typography } from "./Typography";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 
-interface HeaderProps extends XStackProps {
+export interface HeaderProps extends XStackProps {
   title?: string;
   titleProps?: TextProps;
   statusBarStyle?: "light" | "dark";
@@ -55,7 +55,7 @@ export const Header = ({
         alignItems="center"
       >
         {title && (
-          <Typography textAlign="center" {...titleProps}>
+          <Typography textAlign="center" color="white" {...titleProps}>
             {title}
           </Typography>
         )}
