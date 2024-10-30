@@ -13,6 +13,9 @@ import X from "../assets/icons/x.svg";
 import Settings from "../assets/icons/settings.svg";
 import User from "../assets/icons/user.svg";
 import InformationCircle from "../assets/icons/information-circle.svg";
+import House from "../assets/icons/tabs/house.svg";
+import OpenBook from "../assets/icons/tabs/book-open.svg";
+import SolidHeart from "../assets/icons/tabs/solid-heart.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -25,8 +28,11 @@ type IconRegistry = {
 };
 
 const iconRegistry: IconRegistry = {
+  house: House,
   puzzle: Puzzle,
   chart: Chart,
+  openBook: OpenBook,
+  solidHeart: SolidHeart,
   chevronLeft: ChevronLeft,
   heart: Heart,
   screen: Screen,

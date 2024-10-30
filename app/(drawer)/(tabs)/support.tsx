@@ -26,7 +26,7 @@ const mockData = [
   },
 ];
 
-export default function Screen() {
+export default function Support() {
   return (
     <ScreenComponent contentContainerStyle={{ padding: "$md" }}>
       <Typography preset="heading">Screen without header</Typography>

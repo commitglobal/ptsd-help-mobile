@@ -4,7 +4,7 @@ import { Screen } from "@/components/Screen";
 import { DistressMeter } from "@/components/DistressMeter";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
 
-export default function Play() {
+export default function Track() {
   const navigation = useNavigation();
 
   const [stressValue, setStressValue] = useState(5);

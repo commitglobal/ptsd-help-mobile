@@ -5,9 +5,11 @@ import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Icon } from "@/components/Icon";
 import { useTheme } from "tamagui";
+import { useTranslation } from "react-i18next";
 
 export default function TabLayout() {
   const theme = useTheme();
+  const { t } = useTranslation("tabs");
 
   return (
     <Tabs
@@ -19,36 +21,45 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: t("home"),
           tabBarIcon: ({ color }) => {
-            return <Icon icon="puzzle" width={24} height={24} color={color} />;
+            return <Icon icon="house" width={24} height={24} color={color} />;
           },
         }}
       />
       <Tabs.Screen
-        name="theme"
+        name="manage"
         options={{
-          title: "Theme",
+          title: t("manage"),
+          tabBarIcon: ({ color }) => (
+            <Icon icon="puzzle" width={24} height={24} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="track"
+        options={{
+          title: t("track"),
           tabBarIcon: ({ color }) => (
             <Icon icon="chart" width={24} height={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="play"
+        name="learn"
         options={{
-          title: "Play",
+          title: t("learn"),
           tabBarIcon: ({ color }) => (
-            <Icon icon="chart" width={24} height={24} color={color} />
+            <Icon icon="openBook" width={24} height={24} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="screen"
+        name="support"
         options={{
-          title: "Screen",
+          title: t("support"),
           tabBarIcon: ({ color }) => (
-            <Icon icon="screen" width={24} height={24} color={color} />
+            <Icon icon="solidHeart" width={24} height={24} color={color} />
           ),
         }}
       />
