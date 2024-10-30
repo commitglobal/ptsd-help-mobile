@@ -4,18 +4,32 @@ import React from "react";
 import { Colors } from "@/constants/Colors";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Icon } from "@/components/Icon";
-import { useTheme } from "tamagui";
+import { useTheme, XStack } from "tamagui";
 import { useTranslation } from "react-i18next";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export default function TabLayout() {
   const theme = useTheme();
   const { t } = useTranslation("tabs");
+  const insets = useSafeAreaInsets();
 
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: theme.blue11?.val || "hsl(192, 85.0%, 31.0%)",
         headerShown: false,
+        tabBarStyle: {
+          height: insets.bottom + 56,
+          backgroundColor: "white",
+        },
+        tabBarItemStyle: {
+          marginBottom: 4,
+          marginTop: 4,
+        },
+        tabBarAllowFontScaling: false,
+        tabBarLabelStyle: {
+          marginHorizontal: 4,
+        },
       }}
     >
       <Tabs.Screen
