@@ -29,7 +29,12 @@ export const Header = ({
   return (
     <XStack
       paddingTop={insets.top}
-      backgroundColor="$blue12"
+      backgroundColor="$blue11"
+      elevation={5}
+      shadowColor="black"
+      shadowOffset={{ width: 0, height: 8 }}
+      shadowOpacity={0.15}
+      shadowRadius={8}
       alignItems="center"
       {...rest}
     >

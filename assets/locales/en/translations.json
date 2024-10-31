@@ -5,5 +5,11 @@
         "track": "Track",
         "learn": "Learn",
         "support": "Support"
+    },
+    "manage": {
+        "title": "Manage Symptoms",
+        "symptoms": "Symptoms",
+        "tools": "Tools",
+        "favorites": "Favorites"
     }
 }

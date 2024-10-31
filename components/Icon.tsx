@@ -16,6 +16,7 @@ import InformationCircle from "../assets/icons/information-circle.svg";
 import House from "../assets/icons/tabs/house.svg";
 import OpenBook from "../assets/icons/tabs/book-open.svg";
 import SolidHeart from "../assets/icons/tabs/solid-heart.svg";
+import Info from "../assets/icons/info.svg";
 interface IconProps extends XStackProps {
   icon: string;
   color?: string;
@@ -43,6 +44,7 @@ const iconRegistry: IconRegistry = {
   settings: Settings,
   user: User,
   informationCircle: InformationCircle,
+  info: Info,
 };
 
 const IconComponent = React.forwardRef(

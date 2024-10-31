@@ -18,6 +18,11 @@ export default function RootLayout() {
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
     InterBold: require("@tamagui/font-inter/otf/Inter-Bold.otf"),
+    Roboto: require("../assets/fonts/Roboto-Medium.ttf"),
+    RobotoBold: require("../assets/fonts/Roboto-Bold.ttf"),
+    DMSans: require("../assets/fonts/DMSans-Regular.ttf"),
+    DMSansBold: require("../assets/fonts/DMSans-Bold.ttf"),
+    DMSansRegular: require("../assets/fonts/DMSans-Regular.ttf"),
   });
 
   useEffect(() => {

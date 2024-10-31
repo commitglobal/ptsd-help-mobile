@@ -26,7 +26,7 @@ export const Screen = ({
         behavior={isIos ? "padding" : "height"}
         style={{ flex: 1 }}
       >
-        <YStack {...contentContainerStyle} flex={1}>
+        <YStack {...contentContainerStyle} flex={1} flexGrow={1}>
           {children}
         </YStack>
       </KeyboardAvoidingView>
