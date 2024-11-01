@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { Animated } from "react-native";
-import { Circle, Slider, YStack } from "tamagui";
+import { Circle, SizeTokens, Slider, YStack } from "tamagui";
 import { LinearGradient } from "tamagui/linear-gradient";
 
 const colors = [
@@ -16,13 +16,13 @@ const colors = [
   "$tomato11",
 ];
 
-interface ThermometerProps {
-  step: number;
-  max: number;
-  value: number;
-  onChange: (value: number) => void;
-  width: number;
-  height: number;
+export interface ThermometerProps {
+  step?: number;
+  max?: number;
+  value?: number;
+  onChange?: (value: number) => void;
+  width?: SizeTokens;
+  height?: number;
 }
 
 export const Thermometer = ({
@@ -30,7 +30,7 @@ export const Thermometer = ({
   max = 10,
   value = 5,
   onChange,
-  width = 100,
+  width = "$12",
   height = 300,
 }: ThermometerProps) => {
   //   animate the received alue
@@ -50,14 +50,15 @@ export const Thermometer = ({
   );
 
   return (
-    <YStack alignItems="center" width={width} height={height}>
+    <YStack alignItems="center" height={height}>
       <Slider
         orientation="vertical"
-        size="$12"
+        size={width}
         max={max}
         step={step}
         value={[value]}
-        onValueChange={(value) => onChange(value[0])}
+        defaultValue={[5]}
+        onValueChange={(value) => onChange?.(value[0])}
         flex={0.8}
       >
         <Slider.Track

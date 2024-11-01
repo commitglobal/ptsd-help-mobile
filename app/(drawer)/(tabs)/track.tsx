@@ -29,30 +29,20 @@ export default function Track() {
         title: "Screen with header",
         titleProps: { color: "white" },
         statusBarStyle: "light",
-        iconLeft: <Icon icon="menuAlt2" color="white" />,
+        iconLeft: <Icon icon="menuAlt2" color="white" width={24} height={24} />,
         onLeftPress: () => navigation.dispatch(DrawerActions.openDrawer),
-        iconRight: <Icon icon="heart" color="white" />,
+        iconRight: <Icon icon="heart" color="white" width={24} height={24} />,
         onRightPress: () => {
           console.log("right pressed");
         },
       }}
       contentContainerStyle={{
         padding: "$md",
-        borderWidth: 3,
-        borderColor: "yellow",
       }}
     >
       <DistressMeter
-        onIncrement={incrementStressValue}
-        onDecrement={decrementStressValue}
         stressValue={stressValue}
         setStressValue={setStressValue}
-        thermometerProps={{
-          width: 100,
-          height: 300,
-          step: step,
-          max: maxStressValue,
-        }}
       />
     </Screen>
   );

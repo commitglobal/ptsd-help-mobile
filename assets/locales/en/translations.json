@@ -11,5 +11,15 @@
         "symptoms": "Symptoms",
         "tools": "Tools",
         "favorites": "Favorites"
+    },
+    "distress-meter": {
+        "header-title": "Distress Meter",
+        "title": "What's your current level of distress?",
+        "scale": "{{min}} means no distress, {{max}} is the worst",
+        "subtitle": "Tap on the up and down arrows to indicate how you are feeling.",
+        "actions": {
+            "start": "Start using a tool",
+            "skip": "Skip"
+        }
     }
 }
