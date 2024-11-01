@@ -2,20 +2,36 @@ import React, { useCallback, useMemo, useState } from "react";
 import { Screen } from "@/components/Screen";
 import { Icon } from "@/components/Icon";
 import { useTranslation } from "react-i18next";
-import { SymptomCard } from "@/components/SymptonCard";
+import { SymptomCard } from "@/components/SymptomCard";
 import { FlashList } from "@shopify/flash-list";
 import { Spinner, YStack } from "tamagui";
 import ScreenTabs from "@/components/ScreenTabs";
 import { favorites, symptoms, tools } from "@/mocks/mocks";
+import { useRouter } from "expo-router";
 
 const SymptomsList = () => {
+  const router = useRouter();
   return (
     <FlashList
       bounces={false}
       data={symptoms}
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <SymptomCard key={item.id} symptom={item} />}
+      renderItem={({ item }) => (
+        <SymptomCard
+          key={item.id}
+          symptom={item}
+          onPress={() =>
+            router.push({
+              pathname: "/(tools)/distress-meter",
+              params: {
+                onMainActionNavigateTo: "/(tabs)/manage",
+                onSecondaryActionNavigateTo: "/(tabs)",
+              },
+            })
+          }
+        />
+      )}
       ItemSeparatorComponent={() => <YStack height={8} />}
       estimatedItemSize={80}
     />
@@ -93,7 +109,7 @@ export default function Manage() {
     <Screen
       headerProps={{
         title: t("title"),
-        iconRight: <Icon icon="info" color="white" />,
+        iconRight: <Icon icon="info" color="white" width={24} height={24} />,
       }}
     >
       {/* don't add this as ListHeaderComponent, because it messes up the animation */}
