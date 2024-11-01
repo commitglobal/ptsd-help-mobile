@@ -12,17 +12,10 @@ import MenuAlt2 from "../assets/icons/menu-alt-2.svg";
 import X from "../assets/icons/x.svg";
 import Settings from "../assets/icons/settings.svg";
 import User from "../assets/icons/user.svg";
-import InformationCircle from "../assets/icons/information-circle.svg";
 import House from "../assets/icons/tabs/house.svg";
 import OpenBook from "../assets/icons/tabs/book-open.svg";
 import SolidHeart from "../assets/icons/tabs/solid-heart.svg";
 import Info from "../assets/icons/info.svg";
-interface IconProps extends XStackProps {
-  icon: string;
-  color?: string;
-  width?: number;
-  height?: number;
-}
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -43,19 +36,19 @@ const iconRegistry: IconRegistry = {
   x: X,
   settings: Settings,
   user: User,
-  informationCircle: InformationCircle,
   info: Info,
 };
 
+interface IconProps extends XStackProps {
+  icon: string;
+  color?: string;
+  width: number;
+  height: number;
+}
+
 const IconComponent = React.forwardRef(
   (props: IconProps, ref: React.Ref<typeof XStack>) => {
-    const {
-      icon,
-      color = "black",
-      width = 24,
-      height = 24,
-      ...wrapperProps
-    } = props;
+    const { icon, color = "black", width, height, ...wrapperProps } = props;
 
     const IconSvg = iconRegistry[icon];
 
