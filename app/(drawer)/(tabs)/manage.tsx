@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useState } from "react";
 import { Screen } from "@/components/Screen";
 import { Icon } from "@/components/Icon";
 import { useTranslation } from "react-i18next";
-import { SymptomCard } from "@/components/SymptonCard";
+import { SymptomCard } from "@/components/SymptomCard";
 import { FlashList } from "@shopify/flash-list";
 import { Spinner, YStack } from "tamagui";
 import ScreenTabs from "@/components/ScreenTabs";
