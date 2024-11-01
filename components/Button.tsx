@@ -2,6 +2,7 @@ import React, { useMemo } from "react";
 import { StyleProp, TextStyle, ViewStyle } from "react-native";
 import {
   SizableText,
+  SizableTextProps,
   Button as TamaguiButton,
   ButtonProps as TamaguiButtonProps,
   styled,
@@ -13,7 +14,8 @@ export interface ButtonProps extends TamaguiButtonProps {
   children?: string;
   preset?: PresetType;
   style?: StyleProp<ViewStyle>;
-  textStyle?: TextStyle;
+  textStyle?: SizableTextProps;
+  colorTheme?: "blue" | "orange";
 }
 
 /**
@@ -23,7 +25,13 @@ export interface ButtonProps extends TamaguiButtonProps {
  */
 const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
   const theme = useTheme();
-  const { style: $styleOverride, children, textStyle, ...rest } = props;
+  const {
+    style: $styleOverride,
+    children,
+    textStyle,
+    colorTheme = "blue",
+    ...rest
+  } = props;
 
   const presetType: PresetType = props.preset ?? "default";
   const $presetTextStyles = useMemo(() => {
@@ -35,32 +43,32 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
             return "white";
           case "secondary":
           case "chromeless":
-            return theme.$gray12?.val;
+            return theme[`${colorTheme}12`]?.val;
           case "outlined":
-            return theme.$blue8?.val;
+            return theme[`${colorTheme}8`]?.val;
           default:
-            return theme.$blue8?.val;
+            return theme[`${colorTheme}8`]?.val;
         }
       })(),
     };
   }, [presetType, theme]);
 
-  const $textStyles: TextStyle = useMemo(
-    () => ({ ...$presetTextStyles, ...textStyle }),
-    [$presetTextStyles, textStyle]
-  );
+  // const $textStyles: TextStyle = useMemo(
+  //   () => ({ ...$presetTextStyles }),
+  //   [$presetTextStyles]
+  // );
 
   const StyledButton = useMemo(
     () =>
       styled(TamaguiButton, {
         name: "StyledButton",
         borderRadius: 10,
-        backgroundColor: "$blue9",
+        backgroundColor: `$${colorTheme}9`,
         disabledStyle: {
-          backgroundColor: "$blue5",
+          backgroundColor: `$${colorTheme}5`,
         },
         pressStyle: {
-          backgroundColor: "$blue11",
+          backgroundColor: `$${colorTheme}11`,
           borderColor: "transparent",
           opacity: 0.8,
         },
@@ -75,22 +83,22 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
               shadowRadius: 4,
               elevation: 1,
               pressStyle: {
-                backgroundColor: "$blue3",
+                backgroundColor: `$${colorTheme}3`,
                 opacity: 0.8,
               },
               disabledStyle: {
-                backgroundColor: "$blue3",
+                backgroundColor: `$${colorTheme}3`,
                 opacity: 0.5,
               },
             },
             outlined: {
               borderWidth: 2,
-              borderColor: "$blue8",
+              borderColor: `$${colorTheme}8`,
               backgroundColor: "white",
               pressStyle: {
-                backgroundColor: "$blue2",
+                backgroundColor: `$${colorTheme}2`,
                 opacity: 0.8,
-                borderColor: "$blue8",
+                borderColor: `$${colorTheme}8`,
                 color: "red",
               },
               disabledStyle: {
@@ -118,7 +126,11 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
 
   return (
     <StyledButton presets={presetType} style={$styleOverride} {...rest}>
-      {children && <SizableText style={$textStyles}>{children}</SizableText>}
+      {children && (
+        <SizableText style={$presetTextStyles} {...textStyle}>
+          {children}
+        </SizableText>
+      )}
     </StyledButton>
   );
 });
