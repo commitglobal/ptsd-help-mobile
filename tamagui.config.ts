@@ -1,7 +1,15 @@
 import { config } from "@tamagui/config/v3";
-import { createTamagui } from "tamagui"; // or '@tamagui/core'
+import { themes } from "./theme/themes";
+import { tokens } from "./theme/tokens";
+import { fonts } from "./theme/fonts";
+import { createTamagui } from "tamagui";
 
-const appConfig = createTamagui(config);
+const appConfig = createTamagui({
+  ...config,
+  fonts,
+  tokens,
+  themes,
+});
 
 export type AppConfig = typeof appConfig;
 
