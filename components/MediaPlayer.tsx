@@ -15,7 +15,7 @@ import { Asset } from "expo-asset";
 
 const PLAYLIST = [
     {
-        name: "Comfort Fit - “Sorry”",
+        name: "Comfort Fit - 'Sorry'",
         uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Comfort_Fit_-_03_-_Sorry.mp3",
         isVideo: false
     },
@@ -25,7 +25,7 @@ const PLAYLIST = [
         isVideo: true
     },
     {
-        name: "Mildred Bailey – “All Of Me”",
+        name: "Mildred Bailey – 'All Of Me'",
         uri: "https://ia800304.us.archive.org/34/items/PaulWhitemanwithMildredBailey/PaulWhitemanwithMildredBailey-AllofMe.mp3",
         isVideo: false
     },
@@ -35,15 +35,11 @@ const PLAYLIST = [
         isVideo: true
     },
     {
-        name: "Podington Bear - “Rubber Robot”",
+        name: "Podington Bear - 'Rubber Robot'",
         uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Podington_Bear_-_Rubber_Robot.mp3",
         isVideo: false
     }
 ];
-
-const ICON_THROUGH_EARPIECE = "speaker-phone";
-const ICON_THROUGH_SPEAKER = "speaker";
-
 
 class Icon {
     module: any;
@@ -59,7 +55,6 @@ class Icon {
 
 const ICON_TRACK_1 = new Icon(require("@/assets/images/media-player/track_1.png"), 166, 5);
 const ICON_THUMB_1 = new Icon(require("@/assets/images/media-player/thumb_1.png"), 18, 19);
-const ICON_THUMB_2 = new Icon(require("@/assets/images/media-player/thumb_2.png"), 15, 19);
 
 const ICON_PLAY_BUTTON = new Icon(
     require("@/assets/images/media-player/play_button.png"),
@@ -76,28 +71,6 @@ const ICON_STOP_BUTTON = new Icon(
     22,
     22
 );
-const ICON_FORWARD_BUTTON = new Icon(
-    require("@/assets/images/media-player/forward_button.png"),
-    33,
-    25
-);
-const ICON_BACK_BUTTON = new Icon(
-    require("@/assets/images/media-player/back_button.png"),
-    33,
-    25
-);
-
-const ICON_LOOP_ALL_BUTTON = new Icon(
-    require("@/assets/images/media-player/loop_all_button.png"),
-    77,
-    35
-);
-const ICON_LOOP_ONE_BUTTON = new Icon(
-    require("@/assets/images/media-player/loop_one_button.png"),
-    77,
-    35
-);
-
 const ICON_MUTED_BUTTON = new Icon(
     require("@/assets/images/media-player/muted_button.png"),
     67,
@@ -124,7 +97,6 @@ const DISABLED_OPACITY = 0.5;
 const FONT_SIZE = 14;
 const LOADING_STRING = "... loading ...";
 const BUFFERING_STRING = "...buffering...";
-const RATE_SCALE = 3.0;
 const VIDEO_CONTAINER_HEIGHT = (DEVICE_HEIGHT * 2.0) / 5.0 - FONT_SIZE * 2;
 
 interface PlaybackStatus {
@@ -241,6 +213,7 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
         if (PLAYLIST[this.index].isVideo) {
             await this._video.loadAsync(source, initialStatus);
             this.playbackInstance = this._video;
+            // Unused variable
             const status = await this._video.getStatusAsync();
         } else {
             const { sound, status } = await Audio.Sound.createAsync(
@@ -372,56 +345,10 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
         }
     };
 
-    _onForwardPressed = () => {
-        if (this.playbackInstance != null) {
-            this._advanceIndex(true);
-            this._updatePlaybackInstanceForIndex(this.state.shouldPlay);
-        }
-    };
-
-    _onBackPressed = () => {
-        if (this.playbackInstance != null) {
-            this._advanceIndex(false);
-            this._updatePlaybackInstanceForIndex(this.state.shouldPlay);
-        }
-    };
-
     _onMutePressed = () => {
         if (this.playbackInstance != null) {
             this.playbackInstance.setIsMutedAsync(!this.state.muted);
         }
-    };
-
-    _onLoopPressed = () => {
-        if (this.playbackInstance != null) {
-            this.playbackInstance.setIsLoopingAsync(
-                this.state.loopingType !== LOOPING_TYPE_ONE
-            );
-        }
-    };
-
-    _onVolumeSliderValueChange = (value: number) => {
-        if (this.playbackInstance != null) {
-            this.playbackInstance.setVolumeAsync(value);
-        }
-    };
-
-    _trySetRate = async (rate: number, shouldCorrectPitch: boolean) => {
-        if (this.playbackInstance != null) {
-            try {
-                await this.playbackInstance.setRateAsync(rate, shouldCorrectPitch);
-            } catch (error) {
-                // Rate changing could not be performed, possibly because the client's Android API is too old.
-            }
-        }
-    };
-
-    _onRateSliderSlidingComplete = async (value: number) => {
-        this._trySetRate(value * RATE_SCALE, this.state.shouldCorrectPitch);
-    };
-
-    _onPitchCorrectionPressed = async () => {
-        this._trySetRate(this.state.rate, !this.state.shouldCorrectPitch);
     };
 
     _onSeekSliderValueChange = (value: number) => {
@@ -485,14 +412,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
         }
         return "";
     }
-
-    _onPosterPressed = () => {
-        this.setState({ poster: !this.state.poster });
-    };
-
-    _onUseNativeControlsPressed = () => {
-        this.setState({ useNativeControls: !this.state.useNativeControls });
-    };
 
     _onFullscreenPressed = () => {
         try {
@@ -632,8 +551,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
     }
 }
 
-
-
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -644,9 +561,6 @@ const styles = StyleSheet.create({
         backgroundColor: BACKGROUND_COLOR
     },
     wrapper: {},
-    nameContainer: {
-        height: FONT_SIZE
-    },
     videoContainer: {
         height: VIDEO_CONTAINER_HEIGHT
     },
@@ -662,8 +576,6 @@ const styles = StyleSheet.create({
         minHeight: ICON_THUMB_1.height * 2.0,
         maxHeight: ICON_THUMB_1.height * 2.0,
         marginBottom: 30
-        // minHeight: 64,
-        // maxHeight: 64
     },
     playbackSlider: {
         alignSelf: "stretch"
@@ -703,39 +615,4 @@ const styles = StyleSheet.create({
         minWidth: DEVICE_WIDTH / 2.0,
         maxWidth: DEVICE_WIDTH / 2.0
     },
-    buttonsContainerMiddleRow: {
-        maxHeight: ICON_MUTED_BUTTON.height,
-        // maxHeight: 32,
-        alignSelf: "stretch",
-        paddingRight: 20
-    },
-    volumeContainer: {
-        flex: 1,
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "space-between",
-        minWidth: DEVICE_WIDTH / 2.0,
-        maxWidth: DEVICE_WIDTH / 2.0
-    },
-    volumeSlider: {
-        width: DEVICE_WIDTH / 2.0 - ICON_MUTED_BUTTON.width
-        // width: DEVICE_WIDTH / 2.0 - 24
-    },
-    buttonsContainerBottomRow: {
-        maxHeight: 32,
-        alignSelf: "stretch",
-        paddingRight: 20,
-        paddingLeft: 20
-    },
-    rateSlider: {
-        width: DEVICE_WIDTH / 2.0
-    },
-    buttonsContainerTextRow: {
-        maxHeight: FONT_SIZE,
-        alignItems: "center",
-        paddingRight: 20,
-        paddingLeft: 20,
-        minWidth: DEVICE_WIDTH,
-        maxWidth: DEVICE_WIDTH
-    }
 });
