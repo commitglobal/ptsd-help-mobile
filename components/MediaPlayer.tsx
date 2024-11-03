@@ -13,33 +13,6 @@ import {
 import Slider from "@react-native-community/slider";
 import { Asset } from "expo-asset";
 
-const PLAYLIST = [
-    {
-        name: "Comfort Fit - 'Sorry'",
-        uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Comfort_Fit_-_03_-_Sorry.mp3",
-        isVideo: false
-    },
-    {
-        name: "Big Buck Bunny",
-        uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-        isVideo: true
-    },
-    {
-        name: "Mildred Bailey – 'All Of Me'",
-        uri: "https://ia800304.us.archive.org/34/items/PaulWhitemanwithMildredBailey/PaulWhitemanwithMildredBailey-AllofMe.mp3",
-        isVideo: false
-    },
-    {
-        name: "Popeye - I don't scare",
-        uri: "https://ia800501.us.archive.org/11/items/popeye_i_dont_scare/popeye_i_dont_scare_512kb.mp4",
-        isVideo: true
-    },
-    {
-        name: "Podington Bear - 'Rubber Robot'",
-        uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Podington_Bear_-_Rubber_Robot.mp3",
-        isVideo: false
-    }
-];
 
 class Icon {
     module: any;
@@ -95,8 +68,8 @@ const { width: DEVICE_WIDTH, height: DEVICE_HEIGHT } = Dimensions.get("window");
 const BACKGROUND_COLOR = "#FFFFFF";
 const DISABLED_OPACITY = 0.5;
 const FONT_SIZE = 14;
-const LOADING_STRING = "... loading ...";
-const BUFFERING_STRING = "...buffering...";
+const LOADING_STRING = "Loading ...";
+const BUFFERING_STRING = "Buffering ...";
 const VIDEO_CONTAINER_HEIGHT = (DEVICE_HEIGHT * 2.0) / 5.0 - FONT_SIZE * 2;
 
 interface PlaybackStatus {
@@ -145,16 +118,20 @@ interface AppState {
     throughEarpiece: boolean;
 }
 
-export default class MediaPlayer extends React.Component<{}, AppState> {
-    private index: number;
+export type MediaPlayerProps = {
+    mediaURI: string;
+    isVideo: boolean;
+}
+
+export default class MediaPlayer extends React.Component<MediaPlayerProps, AppState> {
     private isSeeking: boolean;
     private shouldPlayAtEndOfSeek: boolean;
     private playbackInstance: any;
     private _video: any;
 
-    constructor(props: {}) {
+    constructor(props: MediaPlayerProps) {
         super(props);
-        this.index = 0;
+
         this.isSeeking = false;
         this.shouldPlayAtEndOfSeek = false;
         this.playbackInstance = null;
@@ -185,7 +162,7 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
     componentDidMount() {
         Audio.setAudioModeAsync({
             allowsRecordingIOS: false,
-            staysActiveInBackground: false,
+            staysActiveInBackground: true,
             interruptionModeIOS: InterruptionModeIOS.DoNotMix,
             playsInSilentModeIOS: true,
             shouldDuckAndroid: true,
@@ -200,7 +177,7 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
             this.playbackInstance = null;
         }
 
-        const source = { uri: PLAYLIST[this.index].uri };
+        const source = { uri: this.props.mediaURI };
         const initialStatus = {
             shouldPlay: playing,
             rate: this.state.rate,
@@ -210,13 +187,11 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
             isLooping: this.state.loopingType === LOOPING_TYPE_ONE
         };
 
-        if (PLAYLIST[this.index].isVideo) {
+        if (this.props.isVideo) {
             await this._video.loadAsync(source, initialStatus);
             this.playbackInstance = this._video;
-            // Unused variable
-            const status = await this._video.getStatusAsync();
         } else {
-            const { sound, status } = await Audio.Sound.createAsync(
+            const { sound } = await Audio.Sound.createAsync(
                 source,
                 initialStatus,
                 this._onPlaybackStatusUpdate
@@ -244,8 +219,8 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
             });
         } else {
             this.setState({
-                playbackInstanceName: PLAYLIST[this.index].name || PLAYLIST[0].name,
-                showVideo: PLAYLIST[this.index].isVideo,
+                playbackInstanceName: this.props.mediaURI,
+                showVideo: this.props.isVideo,
                 isLoading: false
             });
         }
@@ -266,8 +241,7 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                 shouldCorrectPitch: status.shouldCorrectPitch
             });
             if (status.didJustFinish && !status.isLooping) {
-                this._advanceIndex(true);
-                this._updatePlaybackInstanceForIndex(true);
+                this.playbackInstance.stopAsync();
             }
         } else {
             if (status.error) {
@@ -312,22 +286,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
             `FULLSCREEN UPDATE : ${JSON.stringify(event.fullscreenUpdate)}`
         );
     };
-
-    _advanceIndex(forward: boolean) {
-        this.index =
-            (this.index + (forward ? 1 : PLAYLIST.length - 1)) % PLAYLIST.length;
-    }
-
-    async _updatePlaybackInstanceForIndex(playing: boolean) {
-        this._updateScreenForLoading(true);
-
-        this.setState({
-            videoWidth: DEVICE_WIDTH,
-            videoHeight: VIDEO_CONTAINER_HEIGHT
-        });
-
-        this._loadNewPlaybackInstance(playing);
-    }
 
     _onPlayPausePressed = () => {
         if (this.playbackInstance != null) {
@@ -471,7 +429,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                             style={[
                                 styles.text,
                                 styles.buffering,
-                                { fontFamily: "cutive-mono-regular" }
                             ]}
                         >
                             {this.state.isBuffering ? BUFFERING_STRING : ""}
@@ -480,7 +437,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                             style={[
                                 styles.text,
                                 styles.timestamp,
-                                { fontFamily: "cutive-mono-regular" }
                             ]}
                         >
                             {this._getTimestamp()}
@@ -499,7 +455,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                 >
                     <TouchableHighlight
                         underlayColor={BACKGROUND_COLOR}
-                        style={styles.wrapper}
                         onPress={this._onMutePressed}
                     >
                         <Image
@@ -513,7 +468,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                     </TouchableHighlight>
                     <TouchableHighlight
                         underlayColor={BACKGROUND_COLOR}
-                        style={styles.wrapper}
                         onPress={this._onPlayPausePressed}
                         disabled={this.state.isLoading}
                     >
@@ -528,7 +482,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                     </TouchableHighlight>
                     <TouchableHighlight
                         underlayColor={BACKGROUND_COLOR}
-                        style={styles.wrapper}
                         onPress={this._onStopPressed}
                         disabled={this.state.isLoading}
                     >
@@ -537,7 +490,6 @@ export default class MediaPlayer extends React.Component<{}, AppState> {
                     {this.state.showVideo && (
                         <TouchableHighlight
                             underlayColor={BACKGROUND_COLOR}
-                            style={styles.wrapper}
                             onPress={this._onFullscreenPressed}
                         >
                             <Image style={styles.button} source={ICON_FULLSCREEN_BUTTON.module} />
@@ -555,14 +507,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         flexDirection: "column",
-        justifyContent: "space-between",
+        justifyContent: "flex-start",
         alignItems: "center",
         alignSelf: "stretch",
         backgroundColor: BACKGROUND_COLOR
     },
-    wrapper: {},
     videoContainer: {
-        height: VIDEO_CONTAINER_HEIGHT
+        height: VIDEO_CONTAINER_HEIGHT,
     },
     video: {
         maxWidth: DEVICE_WIDTH
@@ -575,10 +526,12 @@ const styles = StyleSheet.create({
         alignSelf: "stretch",
         minHeight: ICON_THUMB_1.height * 2.0,
         maxHeight: ICON_THUMB_1.height * 2.0,
-        marginBottom: 30
+        marginBottom: 30,
     },
     playbackSlider: {
-        alignSelf: "stretch"
+        alignSelf: "center",
+        width: DEVICE_WIDTH - 30,
+        maxWidth: 400,
     },
     timestampRow: {
         flex: 1,
