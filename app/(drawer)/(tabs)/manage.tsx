@@ -2,7 +2,7 @@ import React, { useCallback, useMemo, useState } from "react";
 import { Screen } from "@/components/Screen";
 import { Icon } from "@/components/Icon";
 import { useTranslation } from "react-i18next";
-import { SymptomCard } from "@/components/SymptomCard";
+import { ListCard } from "@/components/ListCard";
 import { FlashList } from "@shopify/flash-list";
 import { Spinner, YStack } from "tamagui";
 import ScreenTabs from "@/components/ScreenTabs";
@@ -18,9 +18,9 @@ const SymptomsList = () => {
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
       renderItem={({ item }) => (
-        <SymptomCard
+        <ListCard
           key={item.id}
-          symptom={item}
+          item={item}
           onPress={() =>
             router.push({
               pathname: "/(tools)/distress-meter",
@@ -45,7 +45,7 @@ const ToolsList = () => {
       data={tools}
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <SymptomCard key={item.id} symptom={item} />}
+      renderItem={({ item }) => <ListCard key={item.id} item={item} />}
       ItemSeparatorComponent={() => <YStack height={8} />}
       estimatedItemSize={80}
     />
@@ -59,7 +59,7 @@ const FavoritesList = () => {
       data={favorites}
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <SymptomCard key={item.id} symptom={item} />}
+      renderItem={({ item }) => <ListCard key={item.id} item={item} />}
       ItemSeparatorComponent={() => <YStack height={8} />}
       estimatedItemSize={80}
     />
