@@ -6,7 +6,7 @@ import "react-native-reanimated";
 import "../common/config/i18n";
 
 import { useColorScheme } from "@/hooks/useColorScheme";
-import { TamaguiProvider } from "tamagui";
+import { PortalProvider, TamaguiProvider } from "tamagui";
 import config from "../tamagui.config";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -37,10 +37,12 @@ export default function RootLayout() {
 
   return (
     <TamaguiProvider config={config}>
-      <Stack>
-        <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
+      <PortalProvider>
+        <Stack>
+          <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+          <Stack.Screen name="+not-found" />
+        </Stack>
+      </PortalProvider>
     </TamaguiProvider>
   );
 }

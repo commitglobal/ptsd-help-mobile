@@ -25,6 +25,7 @@ const SymptomsList = () => {
             router.push({
               pathname: "/(tools)/distress-meter",
               params: {
+                isInitial: 1,
                 onMainActionNavigateTo: "/(tools)/relationships",
                 onSecondaryActionNavigateTo: "/(tools)/relationships",
               },

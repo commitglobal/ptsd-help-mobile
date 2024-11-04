@@ -23,6 +23,13 @@
         "actions": {
             "start": "Start using a tool",
             "skip": "Skip"
+        },
+        "high-distress": {
+            "text": "This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
+            "actions": {
+                "help": "No, continue to the support tool",
+                "talk": "Yes, I want to talk to someone"
+            }
         }
     },
     "relationships": {
