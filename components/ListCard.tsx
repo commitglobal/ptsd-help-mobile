@@ -3,22 +3,19 @@ import { Avatar, XStack, YStackProps } from "tamagui";
 import { Typography } from "./Typography";
 import { Card } from "./Card";
 
-interface SymptomCardProps extends YStackProps {
-  symptom: { id: string; label: string; photoUrl: string };
+interface ListCardProps extends YStackProps {
+  item: { id: string; label: string; photoUrl: string };
 }
 
-export const SymptomCard = ({ symptom, ...rest }: SymptomCardProps) => {
+export const ListCard = ({ item, ...rest }: ListCardProps) => {
   return (
     <Card {...rest}>
       <XStack alignItems="center" gap="$md" padding="$sm">
         <Avatar circular size="$5" borderWidth={2} borderColor="$blue11">
-          <Avatar.Image
-            accessibilityLabel={symptom.label}
-            src={symptom.photoUrl}
-          />
+          <Avatar.Image accessibilityLabel={item.label} src={item.photoUrl} />
           <Avatar.Fallback backgroundColor="$blue10" />
         </Avatar>
-        <Typography flex={1}>{symptom.label}</Typography>
+        <Typography flex={1}>{item.label}</Typography>
       </XStack>
     </Card>
   );
