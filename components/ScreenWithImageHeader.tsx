@@ -1,17 +1,18 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { YStack, Image, XStack } from "tamagui";
 import HeaderImageSkeletonLoader from "./HeaderImageSkeletonLoader";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useRouter } from "expo-router";
 import Button from "./Button";
 import { Icon } from "./Icon";
+import { useTranslation } from "react-i18next";
 
-interface ScreenWithImageHeaderProps {
-  children: React.ReactNode;
+export interface ScreenWithImageHeaderProps {
+  children?: React.ReactNode;
   imageUrl: string;
   onBackButtonPress?: () => void;
+  mainActionButtonLabel?: string;
   onMainActionButtonPress?: () => void;
 }
 
@@ -19,13 +20,18 @@ export const ScreenWithImageHeader = ({
   imageUrl,
   children,
   onBackButtonPress,
+  mainActionButtonLabel,
   onMainActionButtonPress,
 }: ScreenWithImageHeaderProps) => {
   const insets = useSafeAreaInsets();
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const router = useRouter();
+  const { t } = useTranslation("general");
 
-  const hasButtons = onBackButtonPress || onMainActionButtonPress;
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const hasButtons = useMemo(
+    () => onBackButtonPress || onMainActionButtonPress,
+    [onBackButtonPress, onMainActionButtonPress]
+  );
 
   return (
     <YStack flex={1} backgroundColor="white">
@@ -96,13 +102,13 @@ export const ScreenWithImageHeader = ({
               colorTheme="orange"
               onPress={onMainActionButtonPress}
             >
-              Realizat
+              {mainActionButtonLabel || t("done")}
             </Button>
           )}
         </XStack>
       ) : null}
 
-      {children}
+      {children || null}
     </YStack>
   );
 };
