@@ -16,6 +16,9 @@ import House from "../assets/icons/tabs/house.svg";
 import OpenBook from "../assets/icons/tabs/book-open.svg";
 import SolidHeart from "../assets/icons/tabs/solid-heart.svg";
 import Info from "../assets/icons/info.svg";
+import ArrowLeft from "../assets/icons/arrow-left.svg";
+import ArrowRight from "../assets/icons/arrow-right.svg";
+import ArrowUpOnSquare from "../assets/icons/arrow-up-on-square.svg";
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -37,6 +40,9 @@ const iconRegistry: IconRegistry = {
   settings: Settings,
   user: User,
   info: Info,
+  arrowLeft: ArrowLeft,
+  arrowRight: ArrowRight,
+  arrowUpOnSquare: ArrowUpOnSquare,
 };
 
 interface IconProps extends XStackProps {
