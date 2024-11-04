@@ -1,13 +1,13 @@
 import React, { useMemo } from "react";
 import { StyleProp, TextStyle, ViewStyle } from "react-native";
 import {
-  SizableText,
   SizableTextProps,
   Button as TamaguiButton,
   ButtonProps as TamaguiButtonProps,
   styled,
   useTheme,
 } from "tamagui";
+import { Typography } from "./Typography";
 
 type PresetType = "default" | "secondary" | "outlined" | "chromeless";
 export interface ButtonProps extends TamaguiButtonProps {
@@ -53,16 +53,14 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
     };
   }, [presetType, theme]);
 
-  // const $textStyles: TextStyle = useMemo(
-  //   () => ({ ...$presetTextStyles }),
-  //   [$presetTextStyles]
-  // );
-
   const StyledButton = useMemo(
     () =>
       styled(TamaguiButton, {
         name: "StyledButton",
         borderRadius: 10,
+        height: "auto",
+        paddingVertical: "$xs",
+        paddingHorizontal: "$md",
         backgroundColor: `$${colorTheme}9`,
         disabledStyle: {
           backgroundColor: `$${colorTheme}5`,
@@ -127,9 +125,9 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
   return (
     <StyledButton presets={presetType} style={$styleOverride} {...rest}>
       {children && (
-        <SizableText style={$presetTextStyles} {...textStyle}>
+        <Typography textAlign="center" style={$presetTextStyles} {...textStyle}>
           {children}
-        </SizableText>
+        </Typography>
       )}
     </StyledButton>
   );
