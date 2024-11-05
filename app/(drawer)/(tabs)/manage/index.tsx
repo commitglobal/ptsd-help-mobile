@@ -23,7 +23,7 @@ const SymptomsList = () => {
           item={item}
           onPress={() =>
             router.push({
-              pathname: "/(tools)/distress-meter",
+              pathname: "/manage/(flow)/distress-meter",
               params: {
                 isInitial: 1,
                 onMainActionNavigateTo: "/(tools)/relationships",

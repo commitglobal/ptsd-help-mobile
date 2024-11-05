@@ -80,7 +80,7 @@ const DistressMeter = () => {
           paddingHorizontal="$md"
           paddingTop={insets.top + 16}
           gap="$xs"
-          paddingBottom={insets.bottom + 16}
+          paddingBottom="$md"
         >
           <Button onPress={handleMainAction}>{t("actions.start")}</Button>
           {onSecondaryActionNavigateTo && (
