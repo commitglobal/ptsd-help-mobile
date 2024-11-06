@@ -3,7 +3,9 @@
         "done": "Done"
     },
     "languages": {
-        "en": "English"
+        "en": "English",
+        "am": "Armenian",
+        "ua": "Ukrainian"
     },
     "tabs": {
         "home": "Home",
@@ -13,7 +15,7 @@
         "support": "Support"
     },
     "choose-country": {
-        "title": "Choose your country",
+        "title": "Localization",
         "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
         "next": "Next",
         "countries": {
@@ -33,6 +35,11 @@
             "mx": "Mexico",
             "za": "South Africa"
         }
+    },
+    "choose-language": {
+        "title": "Language",
+        "subtitle": "Please choose the language of the app content.",
+        "next": "Next"
     },
     "manage": {
         "title": "Manage Symptoms",

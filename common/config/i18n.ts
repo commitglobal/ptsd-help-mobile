@@ -2,6 +2,8 @@ import i18n, { ResourceLanguage } from "i18next";
 import { initReactI18next } from "react-i18next";
 // import * as Localization from "expo-localization";
 import en from "../../assets/locales/en/translations.json";
+import am from "../../assets/locales/am/translations.json";
+import ua from "../../assets/locales/ua/translations.json";
 
 // TODO: do we need the systemLocale?
 
@@ -19,11 +21,13 @@ import en from "../../assets/locales/en/translations.json";
 
 i18n.use(initReactI18next).init<ResourceLanguage>({
   lng: "en",
-  fallbackLng: ["en"],
+  fallbackLng: ["en", "am", "ua"],
   compatibilityJSON: "v3",
-  supportedLngs: ["en"],
+  supportedLngs: ["en", "am", "ua"],
   resources: {
     en,
+    am,
+    ua,
   },
   debug: true,
   interpolation: {

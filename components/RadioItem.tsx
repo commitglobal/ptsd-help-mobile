@@ -1,13 +1,18 @@
-import React, { useMemo } from "react";
-import { useTranslation } from "react-i18next";
+import React, { Dispatch, SetStateAction, useEffect, useMemo } from "react";
 import { Avatar, XStack } from "tamagui";
 import { Card } from "./Card";
 import { Typography } from "./Typography";
 
+interface Item {
+  id: string;
+  label: string;
+  avatar?: string;
+}
+
 interface RadioItemProps {
-  item: { id: string; label: string };
+  item: Item;
   selectedItem: string;
-  onSelectItem: (item: string) => void;
+  onSelectItem: Dispatch<SetStateAction<string>>;
 }
 
 export const RadioItem = ({
@@ -15,11 +20,11 @@ export const RadioItem = ({
   onSelectItem,
   selectedItem,
 }: RadioItemProps) => {
-  const { t } = useTranslation("choose-country");
   const isSelected = useMemo(
     () => item.id === selectedItem,
     [item.id, selectedItem]
   );
+
   return (
     <Card
       borderWidth={1}
@@ -30,11 +35,14 @@ export const RadioItem = ({
       backgroundColor={isSelected ? "$blue2" : "white"}
     >
       <XStack alignItems="center" gap="$md">
-        <Avatar size="$4" circular>
-          {/* //todo: add flags */}
-          <Avatar.Image src={`https://flagcdn.com/256x192/${item.id}.png`} />
-        </Avatar>
-        <Typography flex={1}>{t(`countries.${item.id}`)}</Typography>
+        {item.avatar && (
+          <Avatar size="$2" circular>
+            {/* //todo: add flags */}
+            <Avatar.Image src={item.avatar} />
+          </Avatar>
+        )}
+
+        <Typography flex={1}>{item.label}</Typography>
 
         <XStack
           marginLeft="auto"

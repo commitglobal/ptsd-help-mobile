@@ -2,7 +2,7 @@ import { Icon } from "@/components/Icon";
 import { Screen } from "@/components/Screen";
 import { Typography } from "@/components/Typography";
 import { useRouter } from "expo-router";
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { XStack, YStack } from "tamagui";
 import { FlashList } from "@shopify/flash-list";
@@ -15,10 +15,10 @@ const Learn = () => {
   const insets = useSafeAreaInsets();
   const router = useRouter();
 
-  const [selectedLanguage, setSelectedLanguage] = useState<string>("us");
+  const [selectedCountry, setSelectedCountry] = useState<string>("us");
 
   // todo: add countries
-  const countries = [
+  const countriesArray = [
     "us", // United States
     "gb", // United Kingdom
     "ca", // Canada
@@ -35,6 +35,16 @@ const Learn = () => {
     "mx", // Mexico
     "za", // South Africa
   ];
+
+  const countries = useMemo(
+    () =>
+      countriesArray.map((country) => ({
+        id: country,
+        label: t(`countries.${country}`),
+        avatar: `https://flagcdn.com/256x192/${country}.png`,
+      })),
+    [countriesArray, t]
+  );
 
   return (
     <Screen
@@ -64,12 +74,12 @@ const Learn = () => {
         data={countries}
         renderItem={({ item }) => (
           <RadioItem
-            item={{ id: item, label: t(`countries.${item}`) }}
-            selectedItem={selectedLanguage}
-            onSelectItem={setSelectedLanguage}
+            item={item}
+            selectedItem={selectedCountry}
+            onSelectItem={setSelectedCountry}
           />
         )}
-        estimatedItemSize={100}
+        estimatedItemSize={60}
       />
 
       <XStack padding="$md" paddingBottom={insets.bottom + 16}>
