@@ -29,6 +29,9 @@ import UsersRound from "../assets/icons/users-round.svg";
 import Zap from "../assets/icons/zap.svg";
 import ChatBubble from "../assets/icons/chat-bubble.svg";
 import Bike from "../assets/icons/bike.svg";
+import Clock from "../assets/icons/clock.svg";
+import Clipboard from "../assets/icons/clipboard.svg";
+import Calendar from "../assets/icons/calendar.svg";
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -63,6 +66,9 @@ const iconRegistry: IconRegistry = {
   zap: Zap,
   chatBubble: ChatBubble,
   bike: Bike,
+  clock: Clock,
+  clipboard: Clipboard,
+  calendar: Calendar,
 };
 
 interface IconProps extends XStackProps {

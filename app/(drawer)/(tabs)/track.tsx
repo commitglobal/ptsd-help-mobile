@@ -1,27 +1,21 @@
 import { Icon } from "@/components/Icon";
-import React, { useState } from "react";
+import React from "react";
 import { Screen } from "@/components/Screen";
-import { DistressMeter } from "@/components/DistressMeter";
 import { DrawerActions, useNavigation } from "@react-navigation/native";
+import { FlashList } from "@shopify/flash-list";
+import { useTranslation } from "react-i18next";
+import { ListCard } from "@/components/ListCard";
+import { YStack } from "tamagui";
 
 export default function Track() {
   const navigation = useNavigation();
+  const { t } = useTranslation("track");
 
-  const [stressValue, setStressValue] = useState(5);
-  const maxStressValue = 10;
-  const step = 1;
-
-  const incrementStressValue = () => {
-    if (stressValue < maxStressValue) {
-      setStressValue(stressValue + step);
-    }
-  };
-
-  const decrementStressValue = () => {
-    if (stressValue > 0) {
-      setStressValue(stressValue - step);
-    }
-  };
+  const items = [
+    { label: t("evaluate"), id: "evaluate", icon: "clipboard" },
+    { label: t("history"), id: "history", icon: "clock" },
+    { label: t("schedule"), id: "schedule", icon: "calendar" },
+  ];
 
   return (
     <Screen
@@ -36,13 +30,15 @@ export default function Track() {
           console.log("right pressed");
         },
       }}
-      contentContainerStyle={{
-        padding: "$md",
-      }}
     >
-      <DistressMeter
-        stressValue={stressValue}
-        setStressValue={setStressValue}
+      <FlashList
+        bounces={false}
+        data={items}
+        contentContainerStyle={{ padding: 16 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => <ListCard key={item.label} item={item} />}
+        ItemSeparatorComponent={() => <YStack height={8} />}
+        estimatedItemSize={80}
       />
     </Screen>
   );

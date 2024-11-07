@@ -99,6 +99,11 @@
         "tools": "Tools",
         "favorites": "Favorites"
     },
+    "track": {
+        "evaluate": "Perform an evaluation",
+        "history": "Evaluation history",
+        "schedule": "Schedule an evaluation"
+    },
     "distress-meter": {
         "header-title": "Distress Meter",
         "title": "What's your current level of distress?",
