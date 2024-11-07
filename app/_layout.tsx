@@ -40,6 +40,7 @@ export default function RootLayout() {
       <PortalProvider>
         <Stack>
           <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+          <Stack.Screen name="onboarding" options={{ headerShown: false }} />
           <Stack.Screen name="+not-found" />
         </Stack>
       </PortalProvider>

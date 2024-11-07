@@ -1,11 +1,44 @@
 {
     "general": {
-        "done": "Done"
+        "done": "Done",
+        "ptsd-help": "PTSD Help"
     },
     "languages": {
         "en": "English",
         "am": "Armenian",
         "ua": "Ukrainian"
+    },
+    "onboarding": {
+        "learn": {
+            "title": "Learn",
+            "description": "Learn more information about PTSD - for you or for someone you care about."
+        },
+        "monitor-progress": {
+            "title": "Monitor Progress",
+            "description": "Monitor your progress over time and get feedback."
+        },
+        "manage-symptoms": {
+            "title": "Manage Symptoms",
+            "description": "Choose your favourite instruments for managing stress."
+        },
+        "get-support": {
+            "title": "Get Support",
+            "description": "Connect with support and resources that can truly help you."
+        },
+        "welcome": {
+            "title": "Welcome to PTSD Help",
+            "description": "This app is designed to support trauma survivors. Please note that it cannot provide medical diagnosis or treatment - these services can only be provided by healthcare professionals. But it can help you learn more about PTSD and manage your symptoms, by providing you with the necessary tools and information for managing the distress that trauma can cause.",
+            "actions": {
+                "start": "Start using PTSD Help",
+                "personalize": "Personalize your experience"
+            },
+            "personalize": {
+                "title": "Personalize the app by adding:",
+                "l1": "Contact information for friends, family or your support network",
+                "l2": "Soothing photos of nature or places that are important to you",
+                "modify_preferences": "You can always modify your preferences later from the settings menu."
+            }
+        }
     },
     "tabs": {
         "home": "Home",
@@ -13,6 +46,25 @@
         "track": "Track",
         "learn": "Learn",
         "support": "Support"
+    },
+    "symptoms": {
+        "trauma": "Reminded of trauma",
+        "avoiding-triggers": "Avoiding triggers",
+        "disconnected-people": "Disconnected from people",
+        "disconnected-reality": "Disconnected from reality",
+        "sad-hopeless": "Sad/Hopeless",
+        "worried-anxious": "Worried/Anxious",
+        "angry": "Angry"
+    },
+    "dashboard": {
+        "feeling": "How are you feeling today?",
+        "see-all": "See all",
+        "monthly-evaluation": "Take your monthly evaluation",
+        "evaluate": "Evaluate the intensity of your PTSD symptoms by answering 20 simple questions.",
+        "start": "Start evaluation",
+        "learn": "Learn about PTSD",
+        "read": "Read",
+        "favorite-instruments": "Favorite Tools"
     },
     "choose-country": {
         "title": "Localization",

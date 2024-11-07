@@ -4,6 +4,7 @@ import { SvgProps } from "react-native-svg";
 import Puzzle from "../assets/icons/tabs/puzzle.svg";
 import Chart from "../assets/icons/tabs/chart.svg";
 import ChevronLeft from "../assets/icons/chevron-left.svg";
+import ChevronRight from "../assets/icons/chevron-right.svg";
 import Heart from "../assets/icons/heart.svg";
 import Screen from "../assets/icons/screen.svg";
 import Plus from "../assets/icons/plus.svg";
@@ -19,6 +20,15 @@ import Info from "../assets/icons/info.svg";
 import ArrowLeft from "../assets/icons/arrow-left.svg";
 import ArrowRight from "../assets/icons/arrow-right.svg";
 import ArrowUpOnSquare from "../assets/icons/arrow-up-on-square.svg";
+import Lifeboat from "../assets/icons/lifeboat.svg";
+import Angry from "../assets/icons/angry.svg";
+import CircleSlash from "../assets/icons/circle-slash.svg";
+import CloudDrizzle from "../assets/icons/cloud-drizzle.svg";
+import Unplug from "../assets/icons/unplug.svg";
+import UsersRound from "../assets/icons/users-round.svg";
+import Zap from "../assets/icons/zap.svg";
+import ChatBubble from "../assets/icons/chat-bubble.svg";
+import Bike from "../assets/icons/bike.svg";
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -31,6 +41,7 @@ const iconRegistry: IconRegistry = {
   openBook: OpenBook,
   solidHeart: SolidHeart,
   chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
   heart: Heart,
   screen: Screen,
   plus: Plus,
@@ -43,6 +54,15 @@ const iconRegistry: IconRegistry = {
   arrowLeft: ArrowLeft,
   arrowRight: ArrowRight,
   arrowUpOnSquare: ArrowUpOnSquare,
+  lifeboat: Lifeboat,
+  angry: Angry,
+  circleSlash: CircleSlash,
+  cloudDrizzle: CloudDrizzle,
+  unplug: Unplug,
+  usersRound: UsersRound,
+  zap: Zap,
+  chatBubble: ChatBubble,
+  bike: Bike,
 };
 
 interface IconProps extends XStackProps {

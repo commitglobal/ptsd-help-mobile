@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { Screen } from "@/components/Screen";
 import { Icon } from "@/components/Icon";
 import { useTranslation } from "react-i18next";
@@ -7,7 +7,7 @@ import { FlashList } from "@shopify/flash-list";
 import { Spinner, YStack } from "tamagui";
 import ScreenTabs from "@/components/ScreenTabs";
 import { favorites, symptoms, tools } from "@/mocks/mocks";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 
 const SymptomsList = () => {
   const router = useRouter();
@@ -68,7 +68,10 @@ const FavoritesList = () => {
 };
 
 export default function Manage() {
+  const { tabId } = useLocalSearchParams() as { tabId: string };
   const { t } = useTranslation("manage");
+  const router = useRouter();
+
   const tabs = useMemo(
     () => [
       { id: "symptoms", label: t("symptoms") },
@@ -77,8 +80,14 @@ export default function Manage() {
     ],
     [t]
   );
-  const [selectedTabId, setSelectedTabId] = useState(tabs[0].id);
+  const [selectedTabId, setSelectedTabId] = useState(tabId || tabs[0].id);
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    if (tabId) {
+      setSelectedTabId(tabId);
+    }
+  }, [tabId]);
 
   const renderList = useCallback(() => {
     if (isLoading) {
@@ -101,6 +110,7 @@ export default function Manage() {
   const handleTabChange = useCallback((tabId: string) => {
     setIsLoading(true);
     setSelectedTabId(tabId);
+    router.setParams({ tabId });
     setTimeout(() => {
       setIsLoading(false);
     }, 500);
