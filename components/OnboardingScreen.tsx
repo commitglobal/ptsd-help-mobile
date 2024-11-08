@@ -3,7 +3,7 @@ import { ScrollView } from "tamagui";
 import { useWindowDimensions } from "react-native";
 import { Typography } from "./Typography";
 import { Icon } from "./Icon";
-import { ItemProps } from "@/app/onboarding";
+import { ItemProps } from "@/app/onboarding/onboarding-slider";
 
 export const OnboardingScreen = ({ item }: { item: ItemProps }) => {
   const { width } = useWindowDimensions();

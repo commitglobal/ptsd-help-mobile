@@ -112,7 +112,7 @@ export default function HomeScreen() {
           />
         </XStack>
 
-        <Button onPress={() => router.push("/onboarding")}>
+        <Button onPress={() => router.push("/onboarding/licence-agreement")}>
           Go to onboarding
         </Button>
       </ScrollView>

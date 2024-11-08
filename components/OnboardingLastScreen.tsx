@@ -45,8 +45,8 @@ export const OnboardingLastScreen = () => {
         {t("welcome.personalize.title")}
       </Typography>
       {listItems.map((item) => (
-        <XStack key={item} alignItems="center" gap="$sm">
-          <Circle size={10} backgroundColor="$blue11" />
+        <XStack key={item} gap="$sm">
+          <Circle size={5} backgroundColor="$blue11" marginTop="$sm" />
           <Typography>{item}</Typography>
         </XStack>
       ))}
