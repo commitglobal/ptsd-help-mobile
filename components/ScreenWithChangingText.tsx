@@ -42,67 +42,71 @@ export const ScreenWithChangingText = ({
       imageUrl={imageUrl}
       onBackButtonPress={onBackButtonPress}
       onMainActionButtonPress={onMainActionButtonPress}
+      footerComponent={
+        <Footer
+          onExport={onExport}
+          onPreviousItem={handlePreviousItem}
+          onNextItem={handleNextItem}
+        />
+      }
     >
-      <YStack flex={1}>
-        <ScrollView
-          contentContainerStyle={{
-            flexGrow: 1,
-            padding: "$md",
-            gap: "$md",
-          }}
-          showsVerticalScrollIndicator={false}
-          bounces={false}
-        >
-          <Typography preset="helper">{staticText}</Typography>
-
-          <Typography>{renderedItem.text}</Typography>
-        </ScrollView>
-
-        <XStack
-          paddingBottom={insets.bottom + 16}
-          paddingHorizontal="$md"
-          justifyContent="center"
-          gap="$md"
-        >
-          {onExport && (
-            <Button
-              preset="secondary"
-              onPress={onExport}
-              colorTheme="orange"
-              icon={
-                <Icon
-                  icon="arrowUpOnSquare"
-                  width={24}
-                  height={24}
-                  color="$orange10"
-                />
-              }
-            />
-          )}
-
-          <Button
-            preset="secondary"
-            colorTheme="orange"
-            onPress={handlePreviousItem}
-            icon={
-              <Icon icon="arrowLeft" width={24} height={24} color="$orange10" />
-            }
-          />
-          <Button
-            preset="secondary"
-            colorTheme="orange"
-            onPress={handleNextItem}
-            icon={
-              <Icon
-                icon="arrowRight"
-                width={24}
-                height={24}
-                color="$orange10"
-              />
-            }
-          />
-        </XStack>
-      </YStack>
+      <Typography preset="helper">{staticText}</Typography>
+      <Typography>{renderedItem.text}</Typography>
     </ScreenWithImageHeader>
+  );
+};
+
+const Footer = ({
+  onExport,
+  onPreviousItem,
+  onNextItem,
+}: {
+  onExport?: () => void;
+  onPreviousItem?: () => void;
+  onNextItem?: () => void;
+}) => {
+  const insets = useSafeAreaInsets();
+
+  return (
+    <XStack
+      paddingBottom={insets.bottom + 16}
+      paddingHorizontal="$md"
+      justifyContent="center"
+      gap="$md"
+      flex={1}
+    >
+      {onExport && (
+        <Button
+          preset="secondary"
+          onPress={onExport}
+          colorTheme="orange"
+          icon={
+            <Icon
+              icon="arrowUpOnSquare"
+              width={24}
+              height={24}
+              color="$orange10"
+            />
+          }
+        />
+      )}
+
+      <Button
+        preset="secondary"
+        colorTheme="orange"
+        onPress={onPreviousItem}
+        icon={
+          <Icon icon="arrowLeft" width={24} height={24} color="$orange10" />
+        }
+      />
+      <Button
+        preset="secondary"
+        colorTheme="orange"
+        onPress={onNextItem}
+        icon={
+          <Icon icon="arrowRight" width={24} height={24} color="$orange10" />
+        }
+      />
+    </XStack>
   );
 };

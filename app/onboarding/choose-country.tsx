@@ -49,9 +49,14 @@ const ChooseCountry = () => {
     >
       <FlashList
         ListHeaderComponent={() => (
-          <Typography textAlign="center" marginBottom="$md">
-            {t("subtitle")}
-          </Typography>
+          <>
+            <Typography preset="heading" textAlign="center" marginBottom="$md">
+              {t("choose")}
+            </Typography>
+            <Typography textAlign="center" marginBottom="$md">
+              {t("subtitle")}
+            </Typography>
+          </>
         )}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{

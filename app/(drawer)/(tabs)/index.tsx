@@ -115,6 +115,9 @@ export default function HomeScreen() {
         <Button onPress={() => router.push("/onboarding/licence-agreement")}>
           Go to onboarding
         </Button>
+        <Button onPress={() => router.push("/iMessages")}>
+          Go to iMessages
+        </Button>
       </ScrollView>
     </Screen>
   );

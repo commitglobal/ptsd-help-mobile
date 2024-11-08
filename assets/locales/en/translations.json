@@ -18,6 +18,7 @@
     },
     "choose-country": {
         "title": "Localization",
+        "choose": "Choose your country",
         "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
         "next": "Next",
         "countries": {
@@ -28,6 +29,7 @@
     },
     "choose-language": {
         "title": "Language",
+        "choose": "Choose the app language",
         "subtitle": "Please choose the language of the app content.",
         "next": "Next"
     },
@@ -120,5 +122,13 @@
     "relationships": {
         "helper": "Try these strategies - either on your own or, better, with your partner!",
         "done": "Done"
+    },
+    "i-messages": {
+        "title": "Using 'I' messages",
+        "find-time": "Find time to share these messages with your partner.",
+        "text": "Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "when": "When my loved one",
+        "feel": "I feel",
+        "because": "because"
     }
 }
