@@ -21,21 +21,9 @@
         "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
         "next": "Next",
         "countries": {
-            "us": "United States",
-            "gb": "United Kingdom",
-            "ca": "Canada",
-            "fr": "France",
-            "de": "Germany",
-            "it": "Italy",
-            "es": "Spain",
-            "au": "Australia",
-            "jp": "Japan",
-            "br": "Brazil",
-            "in": "India",
-            "cn": "China",
-            "ru": "Russia",
-            "mx": "Mexico",
-            "za": "South Africa"
+            "ro": "Romania",
+            "am": "Armenia",
+            "ua": "Ukraine"
         }
     },
     "choose-language": {

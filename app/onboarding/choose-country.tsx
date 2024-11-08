@@ -17,31 +17,19 @@ const ChooseCountry = () => {
 
   const [selectedCountry, setSelectedCountry] = useState<string>("us");
 
-  // todo: add countries
-  const countriesArray = [
-    "us", // United States
-    "gb", // United Kingdom
-    "ca", // Canada
-    "fr", // France
-    "de", // Germany
-    "it", // Italy
-    "es", // Spain
-    "au", // Australia
-    "jp", // Japan
-    "br", // Brazil
-    "in", // India
-    "cn", // China
-    "ru", // Russia
-    "mx", // Mexico
-    "za", // South Africa
-  ];
+  const countriesArray = ["ro", "am", "ua"];
+  const countryFlags = {
+    ro: require("../../assets/images/flags/ro.png"),
+    am: require("../../assets/images/flags/am.png"),
+    ua: require("../../assets/images/flags/ua.png"),
+  } as const;
 
   const countries = useMemo(
     () =>
       countriesArray.map((country) => ({
         id: country,
         label: t(`countries.${country}`),
-        avatar: `https://flagcdn.com/256x192/${country}.png`,
+        avatar: countryFlags[country as keyof typeof countryFlags],
       })),
     [countriesArray, t]
   );
