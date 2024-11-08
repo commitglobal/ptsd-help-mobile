@@ -8,9 +8,18 @@ import "../common/config/i18n";
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { PortalProvider, TamaguiProvider } from "tamagui";
 import config from "../tamagui.config";
+import * as Notifications from "expo-notifications";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 export default function RootLayout() {
   const colorScheme = useColorScheme();
