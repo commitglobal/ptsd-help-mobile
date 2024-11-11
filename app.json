@@ -15,7 +15,7 @@
     "ios": {
       "supportsTablet": true,
       "buildNumber": "1",
-      "bundleIdentifier": "org.commitglobal.vic",
+      "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
         "com.apple.developer.applesignin": [
           "Default"
