@@ -135,8 +135,9 @@
             "placeholder": "Something that my partner does that annoys me is...",
             "example": "Example: Drinks a lot and then gets angry"
         },
+        "declaration": "Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
         "i-feel": {
-            "label": "Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).\n\n When my partner does this, I feel...",
+            "label": "When my partner does this, I feel...",
             "placeholder": "I feel...",
             "example": "Example: sad and disappointed"
         },

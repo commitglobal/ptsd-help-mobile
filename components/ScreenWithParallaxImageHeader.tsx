@@ -59,11 +59,7 @@ export default function ScreenWithParallaxImageHeader({
   });
 
   return (
-    <YStack
-      flex={1}
-      backgroundColor="$gray2"
-      paddingBottom={insets.bottom + 16}
-    >
+    <YStack flex={1} backgroundColor="$gray2" paddingBottom={insets.bottom}>
       <Stack.Screen
         options={{
           headerTransparent: true,
@@ -80,6 +76,7 @@ export default function ScreenWithParallaxImageHeader({
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
           flexGrow: 1,
+          paddingBottom: 16,
         }}
       >
         <Animated.View style={[styles.imageHeader, imageAnimatedStyle]}>
