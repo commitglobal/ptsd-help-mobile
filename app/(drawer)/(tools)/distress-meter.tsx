@@ -1,14 +1,13 @@
 import { Screen } from "@/components/Screen";
 import { Typography } from "@/components/Typography";
 import React, { useState } from "react";
-import { useRouter } from "expo-router";
+import { useRouter, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { DistressMeter as DistressMeterComponent } from "@/components/DistressMeter";
 import { Icon } from "@/components/Icon";
 import { ScrollView, YStack } from "tamagui";
 import Button from "@/components/Button";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useLocalSearchParams } from "expo-router";
 import { CrisisSheet } from "@/components/CrisisSheet";
 
 const DistressMeter = () => {
@@ -17,11 +16,10 @@ const DistressMeter = () => {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation("distress-meter");
 
-  const { onMainActionNavigateTo, onSecondaryActionNavigateTo } =
-    useLocalSearchParams<{
-      onMainActionNavigateTo?: string;
-      onSecondaryActionNavigateTo?: string;
-    }>();
+  const { onMainActionNavigateTo, onSecondaryActionNavigateTo } = useLocalSearchParams<{
+    onMainActionNavigateTo?: string;
+    onSecondaryActionNavigateTo?: string;
+  }>();
 
   const [stressValue, setStressValue] = useState(5);
   const [crisisSheetOpen, setCrisisSheetOpen] = useState(false);
@@ -33,14 +31,12 @@ const DistressMeter = () => {
     if (onMainActionNavigateTo) {
       router.push({ pathname: onMainActionNavigateTo as any });
     }
-    return;
   };
 
   const handleSecondaryAction = () => {
     if (onSecondaryActionNavigateTo) {
       router.push({ pathname: onSecondaryActionNavigateTo as any });
     }
-    return;
   };
 
   return (
@@ -48,9 +44,7 @@ const DistressMeter = () => {
       <Screen
         headerProps={{
           title: t("header-title"),
-          iconLeft: (
-            <Icon icon="chevronLeft" color="white" width={24} height={24} />
-          ),
+          iconLeft: <Icon icon="chevronLeft" color="white" width={24} height={24} />,
           onLeftPress: () => router.back(),
           iconRight: <Icon icon="info" color="white" width={24} height={24} />,
         }}
@@ -70,10 +64,7 @@ const DistressMeter = () => {
             </Typography>
           </YStack>
 
-          <DistressMeterComponent
-            stressValue={stressValue}
-            setStressValue={setStressValue}
-          />
+          <DistressMeterComponent stressValue={stressValue} setStressValue={setStressValue} />
         </ScrollView>
 
         <YStack

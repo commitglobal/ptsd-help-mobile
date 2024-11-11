@@ -21,28 +21,19 @@ export const DistressMeter = ({
   const maxValue = thermometerProps?.max ?? 10;
 
   const onIncrement = () => {
-    if (stressValue === maxValue) {
-      return;
-    } else {
+    if (stressValue !== maxValue) {
       setStressValue((prev) => prev + (thermometerProps?.step ?? 1));
     }
   };
 
   const onDecrement = () => {
-    if (stressValue <= 0) {
-      return;
-    } else {
+    if (stressValue >= 0) {
       setStressValue((prev) => prev - (thermometerProps?.step ?? 1));
     }
   };
 
   return (
-    <XStack
-      alignSelf="center"
-      alignItems="center"
-      gap="$xxxl"
-      {...wrapperProps}
-    >
+    <XStack alignSelf="center" alignItems="center" gap="$xxxl" {...wrapperProps}>
       <YStack gap="$md" alignItems="center">
         <Button
           icon={<Icon icon="plus" color="white" width={24} height={24} />}

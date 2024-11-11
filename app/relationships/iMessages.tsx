@@ -1,5 +1,4 @@
 import Button from "@/components/Button";
-import { Card } from "@/components/Card";
 import { Icon } from "@/components/Icon";
 import { MessageCard } from "@/components/MessageCard";
 import ScreenWithParallaxImageHeader from "@/components/ScreenWithParallaxImageHeader";
@@ -66,9 +65,7 @@ export default function iMessages() {
         }
         headerProps={{
           title: t("title"),
-          iconLeft: (
-            <Icon icon="chevronLeft" color="white" width={24} height={24} />
-          ),
+          iconLeft: <Icon icon="chevronLeft" color="white" width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
       >
@@ -89,9 +86,7 @@ export default function iMessages() {
       </ScreenWithParallaxImageHeader>
 
       <XStack position="absolute" bottom={insets.bottom + 16} right="$lg">
-        <Button
-          icon={<Icon icon="plus" color="white" width={24} height={24} />}
-        />
+        <Button icon={<Icon icon="plus" color="white" width={24} height={24} />} />
       </XStack>
     </>
   );

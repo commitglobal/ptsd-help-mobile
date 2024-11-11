@@ -1,11 +1,10 @@
 import React from "react";
-import { Sheet } from "tamagui";
-import { YStack } from "tamagui";
 import { Typography } from "./Typography";
 import { BottomSheet } from "./BottomSheet";
 import Button from "./Button";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { useTranslation } from "react-i18next";
+import { Sheet, YStack } from "tamagui";
 
 export const CrisisSheet = ({
   setCrisisSheetOpen,

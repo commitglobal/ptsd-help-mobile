@@ -78,24 +78,22 @@ interface IconProps extends XStackProps {
   height: number;
 }
 
-const IconComponent = React.forwardRef(
-  (props: IconProps, ref: React.Ref<typeof XStack>) => {
-    const { icon, color = "black", width, height, ...wrapperProps } = props;
+const IconComponent = React.forwardRef((props: IconProps, ref: React.ForwardedRef<any>) => {
+  const { icon, color = "black", width, height, ...wrapperProps } = props;
 
-    const IconSvg = iconRegistry[icon];
+  const IconSvg = iconRegistry[icon];
 
-    if (!IconSvg) {
-      console.warn(`Icon "${icon}" not found in registry`);
-      return null;
-    }
-
-    return (
-      <XStack justifyContent="center" alignItems="center" {...wrapperProps}>
-        <IconSvg color={color} width={width} height={height} />
-      </XStack>
-    );
+  if (!IconSvg) {
+    console.warn(`Icon "${icon}" not found in registry`);
+    return null;
   }
-);
+
+  return (
+    <XStack ref={ref} justifyContent="center" alignItems="center" {...wrapperProps}>
+      <IconSvg color={color} width={width} height={height} />
+    </XStack>
+  );
+});
 
 export const Icon = styled(
   IconComponent,
@@ -104,5 +102,5 @@ export const Icon = styled(
     accept: {
       color: "color",
     },
-  }
+  },
 );

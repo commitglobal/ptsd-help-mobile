@@ -34,15 +34,11 @@ export default function ScreenWithParallaxImageHeader({
           translateY: interpolate(
             scrollOffset.value,
             [-HEADER_HEIGHT, 0, HEADER_HEIGHT],
-            [-HEADER_HEIGHT / 2, 0, HEADER_HEIGHT * 0.75]
+            [-HEADER_HEIGHT / 2, 0, HEADER_HEIGHT * 0.75],
           ),
         },
         {
-          scale: interpolate(
-            scrollOffset.value,
-            [-HEADER_HEIGHT, 0, HEADER_HEIGHT],
-            [2, 1, 1]
-          ),
+          scale: interpolate(scrollOffset.value, [-HEADER_HEIGHT, 0, HEADER_HEIGHT], [2, 1, 1]),
         },
       ],
     };
@@ -50,11 +46,7 @@ export default function ScreenWithParallaxImageHeader({
 
   const headerAnimatedStyle = useAnimatedStyle(() => {
     return {
-      opacity: interpolate(
-        scrollOffset.value,
-        [0, HEADER_HEIGHT / 1.5],
-        [0, 1]
-      ),
+      opacity: interpolate(scrollOffset.value, [0, HEADER_HEIGHT / 1.5], [0, 1]),
     };
   });
 
@@ -82,13 +74,7 @@ export default function ScreenWithParallaxImageHeader({
         <Animated.View style={[styles.imageHeader, imageAnimatedStyle]}>
           {headerImage}
         </Animated.View>
-        <YStack
-          flex={1}
-          padding="$lg"
-          gap="$md"
-          overflow="hidden"
-          backgroundColor="$gray2"
-        >
+        <YStack flex={1} padding="$lg" gap="$md" overflow="hidden" backgroundColor="$gray2">
           {children}
         </YStack>
       </Animated.ScrollView>
@@ -100,8 +86,5 @@ const styles = StyleSheet.create({
   imageHeader: {
     height: HEADER_HEIGHT,
     overflow: "hidden",
-  },
-  afterHeader: {
-    height: 150,
   },
 });

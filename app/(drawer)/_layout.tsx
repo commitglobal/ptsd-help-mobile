@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { Drawer } from "expo-router/drawer";
 import { ScrollViewProps } from "react-native";
@@ -42,13 +42,7 @@ export const DrawerContent = (props: DrawerContentProps) => {
         activeTintColor={theme.blue1?.val}
         activeBackgroundColor={theme.blue9?.val}
         icon={() => (
-          <Icon
-            icon="info"
-            width={24}
-            height={24}
-            color={theme.blue1?.val}
-            marginRight={-16}
-          />
+          <Icon icon="info" width={24} height={24} color={theme.blue1?.val} marginRight={-16} />
         )}
         inactiveTintColor="white"
         onPress={() => router.push("/about")}
@@ -69,13 +63,7 @@ export const DrawerContent = (props: DrawerContentProps) => {
         activeBackgroundColor={theme.blue9?.val}
         inactiveTintColor="white"
         icon={() => (
-          <Icon
-            icon="user"
-            width={24}
-            height={24}
-            color={theme.blue1?.val}
-            marginRight={-16}
-          />
+          <Icon icon="user" width={24} height={24} color={theme.blue1?.val} marginRight={-16} />
         )}
         onPress={() => router.push("/profile")}
         style={{
@@ -91,13 +79,7 @@ export const DrawerContent = (props: DrawerContentProps) => {
         key={2}
         label={`Settings`}
         icon={() => (
-          <Icon
-            icon="settings"
-            width={24}
-            height={24}
-            color={theme.blue1?.val}
-            marginRight={-16}
-          />
+          <Icon icon="settings" width={24} height={24} color={theme.blue1?.val} marginRight={-16} />
         )}
         focused={true}
         activeTintColor={theme.blue1?.val}
@@ -122,9 +104,7 @@ export default function MainLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer
-        drawerContent={() => (
-          <DrawerContent backgroundColor={theme.blue9?.val} />
-        )}
+        drawerContent={() => <DrawerContent backgroundColor={theme.blue9?.val} />}
         screenOptions={{
           drawerType: "front",
           headerShown: false,
