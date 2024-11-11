@@ -4,8 +4,6 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 import "../common/config/i18n";
-
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { PortalProvider, TamaguiProvider } from "tamagui";
 import config from "../tamagui.config";
 
@@ -13,7 +11,6 @@ import config from "../tamagui.config";
 SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
   const [loaded] = useFonts({
     SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
     Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),

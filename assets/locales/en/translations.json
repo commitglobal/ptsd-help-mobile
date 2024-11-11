@@ -129,6 +129,21 @@
         "text": "Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
         "when": "When my loved one",
         "feel": "I feel",
-        "because": "because"
+        "because": "because",
+        "annoyance": {
+            "label": "What's something that your partner does that truly annoys you?",
+            "placeholder": "Something that my partner does that annoys me is...",
+            "example": "Example: Drinks a lot and then gets angry"
+        },
+        "i-feel": {
+            "label": "Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).\n\n When my partner does this, I feel...",
+            "placeholder": "I feel...",
+            "example": "Example: sad and disappointed"
+        },
+        "because-input": {
+            "label": "Because...",
+            "placeholder": "Because...",
+            "example": "Example: Because I am worried about the future"
+        }
     }
 }
