@@ -30,6 +30,13 @@ export const TOOLS_REGISTRY_MOCK: Record<string, Tool> = {
         route: 'relationships/positive-communication',
         type: 'tool',
       },
+      {
+        id: '3',
+        label: 'I Messages',
+        photoUrl: 'https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?w=150&h=150&fit=crop',
+        route: 'relationships/iMessages',
+        type: 'tool',
+      },
     ],
   },
   POSITIVE_COMMUNICATION: {
