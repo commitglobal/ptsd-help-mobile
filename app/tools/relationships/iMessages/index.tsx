@@ -74,7 +74,12 @@ export default function iMessages() {
               <MessageCard
                 key={message.id}
                 message={message}
-                onPress={() => router.push(`/tools/relationships/iMessages/new-message`)}
+                onPress={() =>
+                  router.push({
+                    pathname: `/tools/relationships/iMessages/edit-message`,
+                    params: { messageId: message.id },
+                  })
+                }
               />
             ))}
           </>

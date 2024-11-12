@@ -146,6 +146,17 @@
             "label": "Because...",
             "placeholder": "Because...",
             "example": "Example: Because I am worried about the future"
+        },
+        "edit": {
+            "title": "Edit 'I' message",
+            "save": "Save",
+            "delete": "Delete 'I' message",
+            "unsaved-data": "You have unsaved changes. Are you sure you want to leave this page?",
+            "discard": "Discard",
+            "sure": "Yes, I'm sure",
+            "delete-confirmation": "Are you sure you want to delete this message?",
+            "yes": "Yes",
+            "no": "No"
         }
     }
 }

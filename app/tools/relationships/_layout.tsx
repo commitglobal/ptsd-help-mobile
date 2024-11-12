@@ -18,7 +18,7 @@ const RelationshipsLayout = () => {
 
       {/* <Stack.Screen name='iMessages/index' options={{ headerShown: false }} />
       <Stack.Screen name='iMessages/new-message' options={{ headerShown: false }} />
-      <Stack.Screen name='iMessages/editMessage' options={{ headerShown: false }} /> */}
+      <Stack.Screen name='iMessages/edit-message' options={{ headerShown: false }} /> */}
     </Stack>
   );
 };
