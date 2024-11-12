@@ -6,56 +6,65 @@ import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
 import { Spinner, YStack } from 'tamagui';
 import ScreenTabs from '@/components/ScreenTabs';
-import { favorites, symptoms } from '@/mocks/mocks';
+import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Tool, TOOLS_REGISTRY_MOCK } from '@/mocks/tools';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
-const SymptomsList = () => {
-  const router = useRouter();
-  return (
-    <FlashList
-      bounces={false}
-      data={symptoms}
-      contentContainerStyle={{ padding: 16 }}
-      showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => router.push('/tools')} />}
-      ItemSeparatorComponent={() => <YStack height={8} />}
-      estimatedItemSize={80}
-    />
-  );
+type SymptomListProps = {
+  onSymptomSelected: (symptom: unknown) => void;
 };
 
-const ToolsList = ({ onToolSelected }: { onToolSelected: (tool: Tool) => void }) => {
-  return (
-    <FlashList
-      bounces={false}
-      data={Object.values(TOOLS_REGISTRY_MOCK)}
-      contentContainerStyle={{ padding: 16 }}
-      showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
-      ItemSeparatorComponent={() => <YStack height={8} />}
-      estimatedItemSize={80}
-    />
-  );
+type ToolListProps = {
+  onToolSelected: (tool: Tool) => void;
 };
 
-const FavoritesList = () => {
-  return (
-    <FlashList
-      bounces={false}
-      data={favorites}
-      contentContainerStyle={{ padding: 16 }}
-      showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <ListCard key={item.id} item={item} />}
-      ItemSeparatorComponent={() => <YStack height={8} />}
-      estimatedItemSize={80}
-    />
-  );
+const Lists = {
+  symptoms: ({ onSymptomSelected }: SymptomListProps) => {
+    return (
+      <FlashList
+        bounces={false}
+        data={symptoms}
+        contentContainerStyle={{ padding: 16 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onSymptomSelected(item)} />}
+        ItemSeparatorComponent={() => <YStack height={8} />}
+        estimatedItemSize={80}
+      />
+    );
+  },
+
+  tools: ({ onToolSelected }: ToolListProps) => {
+    return (
+      <FlashList
+        bounces={false}
+        data={Object.values(TOOLS_REGISTRY_MOCK)}
+        contentContainerStyle={{ padding: 16 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
+        ItemSeparatorComponent={() => <YStack height={8} />}
+        estimatedItemSize={80}
+      />
+    );
+  },
+
+  favorites: ({ onToolSelected }: ToolListProps) => {
+    return (
+      <FlashList
+        bounces={false}
+        data={Object.values(TOOLS_REGISTRY_MOCK)}
+        contentContainerStyle={{ padding: 16 }}
+        showsVerticalScrollIndicator={false}
+        renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
+        ItemSeparatorComponent={() => <YStack height={8} />}
+        estimatedItemSize={80}
+      />
+    );
+  },
 };
 
 export default function Manage() {
-  const { tabId } = useLocalSearchParams<{ tabId: 'symptoms' | 'tools' | 'favorites' }>();
+  const { tabId } = useLocalSearchParams<{ tabId: keyof typeof Lists }>();
   const { t } = useTranslation('manage');
   const router = useRouter();
   const { startTool } = useToolManagerContext();
@@ -68,7 +77,8 @@ export default function Manage() {
     ],
     [t]
   );
-  const [selectedTabId, setSelectedTabId] = useState(tabId || tabs[0].id);
+
+  const [selectedTabId, setSelectedTabId] = useState<keyof typeof Lists>(tabId || (tabs[0].id as keyof typeof Lists));
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -85,26 +95,40 @@ export default function Manage() {
         </YStack>
       );
     }
-    switch (selectedTabId) {
-      case 'symptoms':
-        return <SymptomsList />;
-      case 'tools':
-        return (
-          <ToolsList
-            onToolSelected={(tool) => {
-              startTool(tool, `/manage?tabId=tools`);
-            }}
-          />
-        );
-      case 'favorites':
-        return <FavoritesList />;
+
+    if (selectedTabId === 'symptoms') {
+      const ListComponent = Lists[selectedTabId];
+      return (
+        <ListComponent
+          onSymptomSelected={(_symptom) => {
+            const allTools = Object.values(TOOLS_REGISTRY_MOCK).flatMap((item) =>
+              item.subcategories
+                ? item.subcategories.filter((sub) => sub.type === 'tool')
+                : item.type === 'tool'
+                  ? [item]
+                  : []
+            );
+            const randomTool = allTools[Math.floor(Math.random() * allTools.length)];
+            startTool(randomTool, `/manage?tabId=symptoms`);
+          }}
+        />
+      );
     }
-  }, [selectedTabId, isLoading]);
+
+    const ListComponent = Lists[selectedTabId];
+    return (
+      <ListComponent
+        onToolSelected={(tool) => {
+          startTool(tool, `/manage?tabId=tools`);
+        }}
+      />
+    );
+  }, [selectedTabId, isLoading, startTool]);
 
   const handleTabChange = useCallback(
     (tabId: string) => {
       setIsLoading(true);
-      setSelectedTabId(tabId as 'symptoms' | 'tools' | 'favorites');
+      setSelectedTabId(tabId as keyof typeof Lists);
       router.setParams({ tabId });
       setTimeout(() => {
         setIsLoading(false);
@@ -119,7 +143,6 @@ export default function Manage() {
         title: t('title'),
         iconRight: <Icon icon='info' color='white' width={24} height={24} />,
       }}>
-      {/* don't add this as ListHeaderComponent, because it messes up the animation */}
       <ScreenTabs tabs={tabs} selectedTabId={selectedTabId} setSelectedTabId={handleTabChange} />
       {renderList()}
     </Screen>
