@@ -6,10 +6,10 @@ import TextFormInput from '@/components/TextFormInput';
 import { Typography } from '@/components/Typography';
 import { scrollToTextarea } from '@/helpers/scrollToTextarea';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
 import { useTranslation } from 'react-i18next';
-import { Keyboard } from 'react-native';
+import { BackHandler, Keyboard } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScrollView, XStack, YStack } from 'tamagui';
 
@@ -69,6 +69,7 @@ export default function Message() {
   const { messageId } = useLocalSearchParams();
   // todo: replace this with query
   const message = messages.find((message) => message.id === messageId);
+
   const {
     control,
     handleSubmit,
@@ -80,6 +81,15 @@ export default function Message() {
       because: message?.because,
     },
   });
+
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
+      handleGoBack();
+      return true;
+    });
+
+    return () => backHandler.remove();
+  }, [isDirty]);
 
   const handleFocus = (ref: React.RefObject<any>) => {
     if (ref.current) {
@@ -120,7 +130,7 @@ export default function Message() {
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
+      <Stack.Screen options={{ headerShown: false, gestureEnabled: false, fullScreenGestureEnabled: false }} />
       <Screen
         headerProps={{
           title: t('edit.title'),
