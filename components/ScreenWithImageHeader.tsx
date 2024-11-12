@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useMemo, useState } from "react";
-import { YStack, Image, XStack } from "tamagui";
+import { YStack, Image, XStack, ScrollView } from "tamagui";
 import HeaderImageSkeletonLoader from "./HeaderImageSkeletonLoader";
 import { LinearGradient } from "expo-linear-gradient";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -14,6 +14,8 @@ export interface ScreenWithImageHeaderProps {
   onBackButtonPress?: () => void;
   mainActionButtonLabel?: string;
   onMainActionButtonPress?: () => void;
+  statusBarStyle?: "light" | "dark";
+  footerComponent?: React.ReactNode;
 }
 
 export const ScreenWithImageHeader = ({
@@ -22,6 +24,8 @@ export const ScreenWithImageHeader = ({
   onBackButtonPress,
   mainActionButtonLabel,
   onMainActionButtonPress,
+  statusBarStyle = "dark",
+  footerComponent,
 }: ScreenWithImageHeaderProps) => {
   const insets = useSafeAreaInsets();
   const { t } = useTranslation("general");
@@ -35,7 +39,7 @@ export const ScreenWithImageHeader = ({
 
   return (
     <YStack flex={1} backgroundColor="white">
-      <StatusBar style="dark" />
+      <StatusBar style={statusBarStyle} />
 
       {/* image container */}
       <YStack
@@ -108,7 +112,21 @@ export const ScreenWithImageHeader = ({
         </XStack>
       ) : null}
 
-      {children || null}
+      <ScrollView
+        contentContainerStyle={{
+          flexGrow: 1,
+          padding: "$md",
+          gap: "$md",
+        }}
+        showsVerticalScrollIndicator={false}
+        bounces={false}
+      >
+        {children || null}
+      </ScrollView>
+
+      {footerComponent ? (
+        <XStack marginTop="auto">{footerComponent}</XStack>
+      ) : null}
     </YStack>
   );
 };

@@ -1,9 +1,69 @@
 {
     "general": {
-        "done": "Done"
+        "done": "Done",
+        "ptsd-help": "PTSD Help"
     },
     "languages": {
-        "en": "English"
+        "en": "English",
+        "am": "Armenian",
+        "ua": "Ukrainian"
+    },
+    "licence-agreement": {
+        "header-title": "Licence Agreement",
+        "title": "Licence Agreement for the final user (EULA)",
+        "p1": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+        "l1": "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt",
+        "l2": "Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.",
+        "accept": "Accept"
+    },
+    "choose-country": {
+        "title": "Localization",
+        "choose": "Choose your country",
+        "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
+        "next": "Next",
+        "countries": {
+            "ro": "Romania",
+            "am": "Armenia",
+            "ua": "Ukraine"
+        }
+    },
+    "choose-language": {
+        "title": "Language",
+        "choose": "Choose the app language",
+        "subtitle": "Please choose the language of the app content.",
+        "next": "Next"
+    },
+    "onboarding": {
+        "learn": {
+            "title": "Learn",
+            "description": "Learn more information about PTSD - for you or for someone you care about."
+        },
+        "monitor-progress": {
+            "title": "Monitor Progress",
+            "description": "Monitor your progress over time and get feedback."
+        },
+        "manage-symptoms": {
+            "title": "Manage Symptoms",
+            "description": "Choose your favourite instruments for managing stress."
+        },
+        "get-support": {
+            "title": "Get Support",
+            "description": "Connect with support and resources that can truly help you."
+        },
+        "welcome": {
+            "title": "Welcome to PTSD Help",
+            "description": "This app is designed to support trauma survivors. Please note that it cannot provide medical diagnosis or treatment - these services can only be provided by healthcare professionals. But it can help you learn more about PTSD and manage your symptoms, by providing you with the necessary tools and information for managing the distress that trauma can cause.",
+            "actions": {
+                "start": "Start using PTSD Help",
+                "personalize": "Personalize your experience"
+            },
+            "personalize": {
+                "title": "Personalize the app by adding:",
+                "l1": "Contact information for friends, family or your support network",
+                "l2": "Soothing photos of nature or places that are important to you",
+                "modify_preferences": "You can always modify your preferences later from the settings menu."
+            }
+        }
     },
     "tabs": {
         "home": "Home",
@@ -12,33 +72,35 @@
         "learn": "Learn",
         "support": "Support"
     },
-    "choose-country": {
-        "title": "Choose your country",
-        "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
-        "next": "Next",
-        "countries": {
-            "us": "United States",
-            "gb": "United Kingdom",
-            "ca": "Canada",
-            "fr": "France",
-            "de": "Germany",
-            "it": "Italy",
-            "es": "Spain",
-            "au": "Australia",
-            "jp": "Japan",
-            "br": "Brazil",
-            "in": "India",
-            "cn": "China",
-            "ru": "Russia",
-            "mx": "Mexico",
-            "za": "South Africa"
-        }
+    "symptoms": {
+        "trauma": "Reminded of trauma",
+        "avoiding-triggers": "Avoiding triggers",
+        "disconnected-people": "Disconnected from people",
+        "disconnected-reality": "Disconnected from reality",
+        "sad-hopeless": "Sad/Hopeless",
+        "worried-anxious": "Worried/Anxious",
+        "angry": "Angry"
+    },
+    "dashboard": {
+        "feeling": "How are you feeling today?",
+        "see-all": "See all",
+        "monthly-evaluation": "Take your monthly evaluation",
+        "evaluate": "Evaluate the intensity of your PTSD symptoms by answering 20 simple questions.",
+        "start": "Start evaluation",
+        "learn": "Learn about PTSD",
+        "read": "Read",
+        "favorite-instruments": "Favorite Tools"
     },
     "manage": {
         "title": "Manage Symptoms",
         "symptoms": "Symptoms",
         "tools": "Tools",
         "favorites": "Favorites"
+    },
+    "track": {
+        "evaluate": "Perform an evaluation",
+        "history": "Evaluation history",
+        "schedule": "Schedule an evaluation"
     },
     "distress-meter": {
         "header-title": "Distress Meter",
@@ -60,5 +122,29 @@
     "relationships": {
         "helper": "Try these strategies - either on your own or, better, with your partner!",
         "done": "Done"
+    },
+    "i-messages": {
+        "title": "Using 'I' messages",
+        "find-time": "Find time to share these messages with your partner.",
+        "text": "Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "when": "When my loved one",
+        "feel": "I feel",
+        "because": "because",
+        "annoyance": {
+            "label": "What's something that your partner does that truly annoys you?",
+            "placeholder": "Something that my partner does that annoys me is...",
+            "example": "Example: Drinks a lot and then gets angry"
+        },
+        "declaration": "Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+        "i-feel": {
+            "label": "When my partner does this, I feel...",
+            "placeholder": "I feel...",
+            "example": "Example: sad and disappointed"
+        },
+        "because-input": {
+            "label": "Because...",
+            "placeholder": "Because...",
+            "example": "Example: Because I am worried about the future"
+        }
     }
 }

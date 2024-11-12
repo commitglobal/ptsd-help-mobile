@@ -4,6 +4,7 @@ import { SvgProps } from "react-native-svg";
 import Puzzle from "../assets/icons/tabs/puzzle.svg";
 import Chart from "../assets/icons/tabs/chart.svg";
 import ChevronLeft from "../assets/icons/chevron-left.svg";
+import ChevronRight from "../assets/icons/chevron-right.svg";
 import Heart from "../assets/icons/heart.svg";
 import Screen from "../assets/icons/screen.svg";
 import Plus from "../assets/icons/plus.svg";
@@ -19,6 +20,18 @@ import Info from "../assets/icons/info.svg";
 import ArrowLeft from "../assets/icons/arrow-left.svg";
 import ArrowRight from "../assets/icons/arrow-right.svg";
 import ArrowUpOnSquare from "../assets/icons/arrow-up-on-square.svg";
+import Lifeboat from "../assets/icons/lifeboat.svg";
+import Angry from "../assets/icons/angry.svg";
+import CircleSlash from "../assets/icons/circle-slash.svg";
+import CloudDrizzle from "../assets/icons/cloud-drizzle.svg";
+import Unplug from "../assets/icons/unplug.svg";
+import UsersRound from "../assets/icons/users-round.svg";
+import Zap from "../assets/icons/zap.svg";
+import ChatBubble from "../assets/icons/chat-bubble.svg";
+import Bike from "../assets/icons/bike.svg";
+import Clock from "../assets/icons/clock.svg";
+import Clipboard from "../assets/icons/clipboard.svg";
+import Calendar from "../assets/icons/calendar.svg";
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -31,6 +44,7 @@ const iconRegistry: IconRegistry = {
   openBook: OpenBook,
   solidHeart: SolidHeart,
   chevronLeft: ChevronLeft,
+  chevronRight: ChevronRight,
   heart: Heart,
   screen: Screen,
   plus: Plus,
@@ -43,6 +57,18 @@ const iconRegistry: IconRegistry = {
   arrowLeft: ArrowLeft,
   arrowRight: ArrowRight,
   arrowUpOnSquare: ArrowUpOnSquare,
+  lifeboat: Lifeboat,
+  angry: Angry,
+  circleSlash: CircleSlash,
+  cloudDrizzle: CloudDrizzle,
+  unplug: Unplug,
+  usersRound: UsersRound,
+  zap: Zap,
+  chatBubble: ChatBubble,
+  bike: Bike,
+  clock: Clock,
+  clipboard: Clipboard,
+  calendar: Calendar,
 };
 
 interface IconProps extends XStackProps {
@@ -52,24 +78,22 @@ interface IconProps extends XStackProps {
   height: number;
 }
 
-const IconComponent = React.forwardRef(
-  (props: IconProps, ref: React.Ref<typeof XStack>) => {
-    const { icon, color = "black", width, height, ...wrapperProps } = props;
+const IconComponent = React.forwardRef((props: IconProps, ref: React.ForwardedRef<any>) => {
+  const { icon, color = "black", width, height, ...wrapperProps } = props;
 
-    const IconSvg = iconRegistry[icon];
+  const IconSvg = iconRegistry[icon];
 
-    if (!IconSvg) {
-      console.warn(`Icon "${icon}" not found in registry`);
-      return null;
-    }
-
-    return (
-      <XStack justifyContent="center" alignItems="center" {...wrapperProps}>
-        <IconSvg color={color} width={width} height={height} />
-      </XStack>
-    );
+  if (!IconSvg) {
+    console.warn(`Icon "${icon}" not found in registry`);
+    return null;
   }
-);
+
+  return (
+    <XStack ref={ref} justifyContent="center" alignItems="center" {...wrapperProps}>
+      <IconSvg color={color} width={width} height={height} />
+    </XStack>
+  );
+});
 
 export const Icon = styled(
   IconComponent,
@@ -78,5 +102,5 @@ export const Icon = styled(
     accept: {
       color: "color",
     },
-  }
+  },
 );

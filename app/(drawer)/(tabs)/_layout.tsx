@@ -1,10 +1,7 @@
 import { Tabs } from "expo-router";
 import React from "react";
-
-import { Colors } from "@/constants/Colors";
-import { useColorScheme } from "@/hooks/useColorScheme";
 import { Icon } from "@/components/Icon";
-import { useTheme, XStack } from "tamagui";
+import { useTheme } from "tamagui";
 import { useTranslation } from "react-i18next";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 

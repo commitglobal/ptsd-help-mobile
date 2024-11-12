@@ -1,89 +1,124 @@
-import { Image, StyleSheet, Platform } from "react-native";
-import ParallaxScrollView from "@/components/ParallaxScrollView";
-import { Separator, SizableText, XStack, YStack } from "tamagui";
+import { ScrollView, XStack } from "tamagui";
 import React from "react";
 import Button from "@/components/Button";
 import { Typography } from "@/components/Typography";
-import { Card } from "@/components/Card";
 import { Icon } from "@/components/Icon";
+import { useRouter, useNavigation } from "expo-router";
+import { useTranslation } from "react-i18next";
+import { Screen } from "@/components/Screen";
+import { DrawerActions } from "@react-navigation/native";
+import { CircleHorizontalScrollView } from "@/components/CircleHorizontalScrollView";
+import { MonthlyEvaluationCard } from "@/components/MonthlyEvaluationCard";
+import { CardsHorizontalScrollView } from "@/components/CardsHorizontalScrollView";
 
 export default function HomeScreen() {
+  const navigation = useNavigation();
+  const { t } = useTranslation(["dashboard", "symptoms", "general"]);
+  const router = useRouter();
+
+  const feelings = [
+    { label: t("trauma", { ns: "symptoms" }), icon: "zap" },
+    { label: t("avoiding-triggers", { ns: "symptoms" }), icon: "circleSlash" },
+    { label: t("disconnected-people", { ns: "symptoms" }), icon: "usersRound" },
+    { label: t("disconnected-reality", { ns: "symptoms" }), icon: "unplug" },
+    { label: t("sad-hopeless", { ns: "symptoms" }), icon: "cloudDrizzle" },
+    { label: t("worried-anxious", { ns: "symptoms" }), icon: "lifeboat" },
+    { label: t("angry", { ns: "symptoms" }), icon: "angry" },
+  ];
+
+  const questions = [
+    { title: "What is PTSD?" },
+    { title: "How long does PTSD last?" },
+    { title: "Problems related to PTSD" },
+    { title: "PTSD and relationships" },
+  ];
+
+  const favoriteInstruments = [
+    { label: "Toolr 1", icon: "bike" },
+    { label: "Tool 2", icon: "chatBubble" },
+    { label: "Tool 3", icon: "bike" },
+  ];
+
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: "#A1CEDC", dark: "#1D3D47" }}
-      headerImage={
-        <Image
-          source={require("@/assets/images/partial-react-logo.png")}
-          style={styles.reactLogo}
-        />
-      }
+    <Screen
+      headerProps={{
+        title: t("ptsd-help", { ns: "general" }),
+        iconLeft: <Icon icon="menuAlt2" width={24} height={24} color="white" />,
+        onLeftPress: () => navigation.dispatch(DrawerActions.openDrawer),
+        statusBarStyle: "light",
+      }}
+      contentContainerStyle={{
+        backgroundColor: "white",
+      }}
     >
-      <Typography preset="heading">Typography</Typography>
-      <Typography preset="subheading">Subheading</Typography>
-      <Typography preset="default">Default</Typography>
-      <Typography preset="helper">Helper</Typography>
-
-      <Separator />
-
-      {/* icons example */}
-      <Typography preset="subheading">Icons</Typography>
-      <XStack gap="$4">
-        <Icon icon="puzzle" width={24} height={24} color="$blue6" />
-        <Icon icon="puzzle" width={24} height={24} color="$orange6" />
-        <Icon icon="puzzle" width={24} height={24} color="$orange6" />
-
-        <Icon icon="chart" width={24} height={24} color="$orange11" />
-      </XStack>
-
-      <Separator />
-
-      {/* buttons */}
-      <YStack gap="$4">
-        <Typography preset="subheading">Buttons</Typography>
-        <Button>Primary</Button>
-        <Button disabled>Primary disabled</Button>
-        <Button preset="secondary">Secondary</Button>
-        <Button preset="secondary" disabled>
-          Secondary disabled
-        </Button>
-        <Button preset="outlined">Outlined</Button>
-        <Button preset="outlined" disabled>
-          Outlined disabled
-        </Button>
-
-        <Button preset="chromeless">Chromeless</Button>
-        <Button preset="chromeless" disabled>
-          Chromeless disabled
-        </Button>
-      </YStack>
-
-      {/* card */}
-      <Card
-        padding="$md"
-        height={100}
-        cardFooter={<Typography preset="helper">Card footer</Typography>}
+      <ScrollView
+        contentContainerStyle={{ padding: "$lg", gap: "$md", flexGrow: 1 }}
+        showsVerticalScrollIndicator={false}
+        bounces={false}
       >
-        <Typography preset="heading">Card</Typography>
-      </Card>
-    </ParallaxScrollView>
+        <XStack gap="$md" alignItems="center">
+          <Typography preset="default" flex={1}>
+            {t("feeling")}
+          </Typography>
+          <XStack
+            //  margin and padding account for the pressArea
+            marginVertical={-16}
+            padding="$md"
+            pressStyle={{
+              opacity: 0.5,
+            }}
+            onPress={() =>
+              router.push({
+                pathname: "/manage",
+                params: { tabId: "symptoms" },
+              })
+            }
+          >
+            <Typography preset="default" color="$blue11" fontWeight="bold">
+              {t("see-all")}
+            </Typography>
+          </XStack>
+        </XStack>
+
+        <XStack marginHorizontal={-32}>
+          {/* //todo: on press */}
+          <CircleHorizontalScrollView items={feelings} onItemPress={() => {}} />
+        </XStack>
+
+        {/* monthly evaluation */}
+        {/* //todo: on press */}
+        <MonthlyEvaluationCard onPress={() => {}} />
+
+        {/* learn about ptsd */}
+        <XStack marginTop="$md">
+          <Typography flex={1}>{t("learn")}</Typography>
+          <Typography color="$blue11" fontWeight="bold">
+            {t("see-all")}
+          </Typography>
+        </XStack>
+
+        <XStack marginHorizontal={-32}>
+          <CardsHorizontalScrollView items={questions} />
+        </XStack>
+
+        {/* favorite instruments */}
+
+        <Typography marginTop="$md">{t("favorite-instruments")}</Typography>
+        <XStack marginHorizontal={-32}>
+          <CircleHorizontalScrollView
+            items={favoriteInstruments}
+            // todo: on press
+            onItemPress={() => {}}
+          />
+        </XStack>
+
+        <Button onPress={() => router.push("/onboarding/licence-agreement")}>
+          Go to onboarding
+        </Button>
+        <Button onPress={() => router.push("/relationships/iMessages")}>
+          Go to iMessages
+        </Button>
+      </ScrollView>
+    </Screen>
   );
 }
-
-const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  reactLogo: {
-    height: 178,
-    width: 290,
-    bottom: 0,
-    left: 0,
-    position: "absolute",
-  },
-});

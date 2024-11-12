@@ -1,4 +1,4 @@
-import Reactx from "react";
+import React from "react";
 import { TextProps, XStack, XStackProps } from "tamagui";
 import { Typography } from "./Typography";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
@@ -53,12 +53,7 @@ export const Header = ({
       </XStack>
 
       {/* title */}
-      <XStack
-        flex={0.8}
-        paddingVertical="$md"
-        justifyContent="center"
-        alignItems="center"
-      >
+      <XStack flex={0.8} paddingVertical="$md" justifyContent="center" alignItems="center">
         {title && (
           <Typography textAlign="center" color="white" {...titleProps}>
             {title}

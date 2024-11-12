@@ -12,21 +12,21 @@ export const Typography = ({
 }: TypographyProps) => {
   const presetStyles = {
     default: {
-      fontSize: 16,
+      fontSize: 14,
       lineHeight: 24,
     },
     heading: {
-      fontSize: 30,
+      fontSize: 24,
       fontWeight: "bold",
       lineHeight: 32,
     },
     subheading: {
-      fontSize: 18,
+      fontSize: 16,
       fontWeight: "bold",
       lineHeight: 26,
     },
     helper: {
-      fontSize: 14,
+      fontSize: 12,
       color: "$gray11",
       lineHeight: 20,
     },
