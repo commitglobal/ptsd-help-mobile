@@ -1,13 +1,15 @@
-import React, { useCallback, useEffect, useMemo, useState } from "react";
-import { Screen } from "@/components/Screen";
-import { Icon } from "@/components/Icon";
-import { useTranslation } from "react-i18next";
-import { ListCard } from "@/components/ListCard";
-import { FlashList } from "@shopify/flash-list";
-import { Spinner, YStack } from "tamagui";
-import ScreenTabs from "@/components/ScreenTabs";
-import { favorites, symptoms, tools } from "@/mocks/mocks";
-import { useRouter, useLocalSearchParams } from "expo-router";
+import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import { Screen } from '@/components/Screen';
+import { Icon } from '@/components/Icon';
+import { useTranslation } from 'react-i18next';
+import { ListCard } from '@/components/ListCard';
+import { FlashList } from '@shopify/flash-list';
+import { Spinner, YStack } from 'tamagui';
+import ScreenTabs from '@/components/ScreenTabs';
+import { favorites, symptoms } from '@/mocks/mocks';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Tool, TOOLS_REGISTRY_MOCK } from '@/mocks/tools';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 const SymptomsList = () => {
   const router = useRouter();
@@ -17,36 +19,21 @@ const SymptomsList = () => {
       data={symptoms}
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => (
-        <ListCard
-          key={item.id}
-          item={item}
-          onPress={() =>
-            router.push({
-              pathname: "/(tools)/distress-meter",
-              params: {
-                isInitial: 1,
-                onMainActionNavigateTo: "/(tools)/relationships",
-                onSecondaryActionNavigateTo: "/(tools)/relationships",
-              },
-            })
-          }
-        />
-      )}
+      renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => router.push('/tools')} />}
       ItemSeparatorComponent={() => <YStack height={8} />}
       estimatedItemSize={80}
     />
   );
 };
 
-const ToolsList = () => {
+const ToolsList = ({ onToolSelected }: { onToolSelected: (tool: Tool) => void }) => {
   return (
     <FlashList
       bounces={false}
-      data={tools}
+      data={Object.values(TOOLS_REGISTRY_MOCK)}
       contentContainerStyle={{ padding: 16 }}
       showsVerticalScrollIndicator={false}
-      renderItem={({ item }) => <ListCard key={item.id} item={item} />}
+      renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
       ItemSeparatorComponent={() => <YStack height={8} />}
       estimatedItemSize={80}
     />
@@ -68,15 +55,16 @@ const FavoritesList = () => {
 };
 
 export default function Manage() {
-  const { tabId } = useLocalSearchParams() as { tabId: string };
-  const { t } = useTranslation("manage");
+  const { tabId } = useLocalSearchParams<{ tabId: 'symptoms' | 'tools' | 'favorites' }>();
+  const { t } = useTranslation('manage');
   const router = useRouter();
+  const { startTool } = useToolManagerContext();
 
   const tabs = useMemo(
     () => [
-      { id: "symptoms", label: t("symptoms") },
-      { id: "tools", label: t("tools") },
-      { id: "favorites", label: t("favorites") },
+      { id: 'symptoms', label: t('symptoms') },
+      { id: 'tools', label: t('tools') },
+      { id: 'favorites', label: t('favorites') },
     ],
     [t]
   );
@@ -92,43 +80,47 @@ export default function Manage() {
   const renderList = useCallback(() => {
     if (isLoading) {
       return (
-        <YStack flex={1} justifyContent="center" alignItems="center">
+        <YStack flex={1} justifyContent='center' alignItems='center'>
           <Spinner />
         </YStack>
       );
     }
     switch (selectedTabId) {
-      case "symptoms":
+      case 'symptoms':
         return <SymptomsList />;
-      case "tools":
-        return <ToolsList />;
-      case "favorites":
+      case 'tools':
+        return (
+          <ToolsList
+            onToolSelected={(tool) => {
+              startTool(tool, `/manage?tabId=tools`);
+            }}
+          />
+        );
+      case 'favorites':
         return <FavoritesList />;
     }
   }, [selectedTabId, isLoading]);
 
-  const handleTabChange = useCallback((tabId: string) => {
-    setIsLoading(true);
-    setSelectedTabId(tabId);
-    router.setParams({ tabId });
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 500);
-  }, []);
+  const handleTabChange = useCallback(
+    (tabId: string) => {
+      setIsLoading(true);
+      setSelectedTabId(tabId as 'symptoms' | 'tools' | 'favorites');
+      router.setParams({ tabId });
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 500);
+    },
+    [router]
+  );
 
   return (
     <Screen
       headerProps={{
-        title: t("title"),
-        iconRight: <Icon icon="info" color="white" width={24} height={24} />,
-      }}
-    >
+        title: t('title'),
+        iconRight: <Icon icon='info' color='white' width={24} height={24} />,
+      }}>
       {/* don't add this as ListHeaderComponent, because it messes up the animation */}
-      <ScreenTabs
-        tabs={tabs}
-        selectedTabId={selectedTabId}
-        setSelectedTabId={handleTabChange}
-      />
+      <ScreenTabs tabs={tabs} selectedTabId={selectedTabId} setSelectedTabId={handleTabChange} />
       {renderList()}
     </Screen>
   );

@@ -1,21 +1,21 @@
-import React, { useMemo } from "react";
-import { StyleProp, TextStyle, ViewStyle } from "react-native";
+import React, { useMemo } from 'react';
+import { StyleProp, TextStyle, ViewStyle } from 'react-native';
 import {
   SizableTextProps,
   Button as TamaguiButton,
   ButtonProps as TamaguiButtonProps,
   styled,
   useTheme,
-} from "tamagui";
-import { Typography } from "./Typography";
+} from 'tamagui';
+import { Typography } from './Typography';
 
-type PresetType = "default" | "secondary" | "outlined" | "chromeless";
+type PresetType = 'default' | 'secondary' | 'outlined' | 'chromeless';
 export interface ButtonProps extends TamaguiButtonProps {
   children?: string;
   preset?: PresetType;
   style?: StyleProp<ViewStyle>;
   textStyle?: SizableTextProps;
-  colorTheme?: "blue" | "orange";
+  colorTheme?: 'blue' | 'orange';
 }
 
 /**
@@ -25,26 +25,20 @@ export interface ButtonProps extends TamaguiButtonProps {
  */
 const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
   const theme = useTheme();
-  const {
-    style: $styleOverride,
-    children,
-    textStyle,
-    colorTheme = "blue",
-    ...rest
-  } = props;
+  const { style: $styleOverride, children, textStyle, colorTheme = 'blue', ...rest } = props;
 
-  const presetType: PresetType = props.preset ?? "default";
+  const presetType: PresetType = props.preset ?? 'default';
   const $presetTextStyles = useMemo(() => {
     return {
-      fontWeight: "700" as TextStyle["fontWeight"],
+      fontWeight: '700' as TextStyle['fontWeight'],
       color: (() => {
         switch (presetType) {
-          case "default":
-            return "white";
-          case "secondary":
-          case "chromeless":
+          case 'default':
+            return 'white';
+          case 'secondary':
+          case 'chromeless':
             return theme[`${colorTheme}12`]?.val;
-          case "outlined":
+          case 'outlined':
             return theme[`${colorTheme}8`]?.val;
           default:
             return theme[`${colorTheme}8`]?.val;
@@ -56,26 +50,26 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
   const StyledButton = useMemo(
     () =>
       styled(TamaguiButton, {
-        name: "StyledButton",
+        name: 'StyledButton',
         borderRadius: 10,
-        height: "auto",
-        paddingVertical: "$xs",
-        paddingHorizontal: "$md",
+        height: 'auto',
+        paddingVertical: '$xs',
+        paddingHorizontal: '$md',
         backgroundColor: `$${colorTheme}9`,
         disabledStyle: {
           backgroundColor: `$${colorTheme}5`,
         },
         pressStyle: {
           backgroundColor: `$${colorTheme}11`,
-          borderColor: "transparent",
+          borderColor: 'transparent',
           opacity: 0.8,
         },
         variants: {
           presets: {
             default: {},
             secondary: {
-              backgroundColor: "white",
-              shadowColor: "$gray12",
+              backgroundColor: 'white',
+              shadowColor: '$gray12',
               shadowOffset: { width: 0, height: 2 },
               shadowOpacity: 0.1,
               shadowRadius: 4,
@@ -92,27 +86,27 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
             outlined: {
               borderWidth: 2,
               borderColor: `$${colorTheme}8`,
-              backgroundColor: "white",
+              backgroundColor: 'white',
               pressStyle: {
                 backgroundColor: `$${colorTheme}2`,
                 opacity: 0.8,
                 borderColor: `$${colorTheme}8`,
-                color: "red",
+                color: 'red',
               },
               disabledStyle: {
-                backgroundColor: "transparent",
+                backgroundColor: 'transparent',
                 opacity: 0.5,
               },
             },
             chromeless: {
-              backgroundColor: "transparent",
+              backgroundColor: 'transparent',
               pressStyle: {
-                backgroundColor: "transparent",
+                backgroundColor: 'transparent',
                 opacity: 0.5,
-                borderColor: "transparent",
+                borderColor: 'transparent',
               },
               disabledStyle: {
-                backgroundColor: "transparent",
+                backgroundColor: 'transparent',
                 opacity: 0.5,
               },
             },
@@ -125,7 +119,7 @@ const Button = React.forwardRef((props: ButtonProps, _): JSX.Element => {
   return (
     <StyledButton presets={presetType} style={$styleOverride} {...rest}>
       {children && (
-        <Typography textAlign="center" style={$presetTextStyles} {...textStyle}>
+        <Typography textAlign='center' style={$presetTextStyles} {...textStyle}>
           {children}
         </Typography>
       )}

@@ -54,10 +54,10 @@ export default function Onboarding() {
   ];
 
   const scrollX = React.useRef(new Animated.Value(0)).current;
-  //Current item index of flatlist
+  // Current item index of flatlist
   const [activeIndex, setActiveIndex] = React.useState(0);
-  let flatListRef = React.useRef(null);
-  //Flatlist props that calculates current item index
+  const flatListRef = React.useRef(null);
+  // Flatlist props that calculates current item index
   const onViewRef = React.useRef(({ viewableItems }: any) => {
     setActiveIndex(viewableItems[0].index);
   });
@@ -91,7 +91,7 @@ export default function Onboarding() {
 
       return <OnboardingScreen item={item} />;
     },
-    [width]
+    [width],
   );
 
   const keyExtractor = React.useCallback((item: ItemProps) => item.key, []);
@@ -111,23 +111,16 @@ export default function Onboarding() {
         viewabilityConfig={viewConfigRef.current}
         keyExtractor={keyExtractor}
         showsHorizontalScrollIndicator={false}
-        onScroll={Animated.event(
-          [{ nativeEvent: { contentOffset: { x: scrollX } } }],
-          {
-            useNativeDriver: false,
-          }
-        )}
+        onScroll={Animated.event([{ nativeEvent: { contentOffset: { x: scrollX } } }], {
+          useNativeDriver: false,
+        })}
         pagingEnabled
         horizontal
         decelerationRate={"normal"}
         scrollEventThrottle={16}
         renderItem={renderItem}
       />
-      <XStack
-        paddingBottom={insets.bottom}
-        justifyContent="space-around"
-        alignItems="center"
-      >
+      <XStack paddingBottom={insets.bottom} justifyContent="space-around" alignItems="center">
         <XStack
           flex={1}
           padding="$md"
@@ -137,9 +130,7 @@ export default function Onboarding() {
           }}
           justifyContent="flex-end"
         >
-          {activeIndex > 0 && (
-            <Icon icon="chevronLeft" color="white" width={24} height={24} />
-          )}
+          {activeIndex > 0 && <Icon icon="chevronLeft" color="white" width={24} height={24} />}
         </XStack>
 
         <YStack flex={5}>

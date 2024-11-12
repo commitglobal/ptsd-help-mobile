@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { Typography } from "./Typography";
-import { ScreenWithImageHeader } from "./ScreenWithImageHeader";
-import { ScrollView, XStack, YStack } from "tamagui";
+import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from "./ScreenWithImageHeader";
+import { XStack } from "tamagui";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Button from "./Button";
 import { Icon } from "./Icon";
-import { ScreenWithImageHeaderProps } from "./ScreenWithImageHeader";
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText: string;
@@ -21,8 +20,6 @@ export const ScreenWithChangingText = ({
   onExport,
   onMainActionButtonPress,
 }: ScreenWithChangingTextProps) => {
-  const insets = useSafeAreaInsets();
-
   const [renderedItem, setRenderedItem] = useState(items[0]);
 
   const handleNextItem = () => {
@@ -80,14 +77,7 @@ const Footer = ({
           preset="secondary"
           onPress={onExport}
           colorTheme="orange"
-          icon={
-            <Icon
-              icon="arrowUpOnSquare"
-              width={24}
-              height={24}
-              color="$orange10"
-            />
-          }
+          icon={<Icon icon="arrowUpOnSquare" width={24} height={24} color="$orange10" />}
         />
       )}
 
@@ -95,17 +85,13 @@ const Footer = ({
         preset="secondary"
         colorTheme="orange"
         onPress={onPreviousItem}
-        icon={
-          <Icon icon="arrowLeft" width={24} height={24} color="$orange10" />
-        }
+        icon={<Icon icon="arrowLeft" width={24} height={24} color="$orange10" />}
       />
       <Button
         preset="secondary"
         colorTheme="orange"
         onPress={onNextItem}
-        icon={
-          <Icon icon="arrowRight" width={24} height={24} color="$orange10" />
-        }
+        icon={<Icon icon="arrowRight" width={24} height={24} color="$orange10" />}
       />
     </XStack>
   );

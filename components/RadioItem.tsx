@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useEffect, useMemo } from "react";
+import React, { Dispatch, SetStateAction, useMemo } from "react";
 import { Avatar, XStack } from "tamagui";
 import { Card } from "./Card";
 import { Typography } from "./Typography";
@@ -15,15 +15,8 @@ interface RadioItemProps {
   onSelectItem: Dispatch<SetStateAction<string>>;
 }
 
-export const RadioItem = ({
-  item,
-  onSelectItem,
-  selectedItem,
-}: RadioItemProps) => {
-  const isSelected = useMemo(
-    () => item.id === selectedItem,
-    [item.id, selectedItem]
-  );
+export const RadioItem = ({ item, onSelectItem, selectedItem }: RadioItemProps) => {
+  const isSelected = useMemo(() => item.id === selectedItem, [item.id, selectedItem]);
 
   return (
     <Card
@@ -56,12 +49,7 @@ export const RadioItem = ({
           backgroundColor={isSelected ? "$blue9" : "white"}
         >
           {isSelected && (
-            <XStack
-              width="$0.75"
-              height="$0.75"
-              backgroundColor="white"
-              borderRadius="$12"
-            />
+            <XStack width="$0.75" height="$0.75" backgroundColor="white" borderRadius="$12" />
           )}
         </XStack>
       </XStack>
