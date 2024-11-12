@@ -1,7 +1,7 @@
-import React from "react";
-import { Avatar, XStack, YStackProps } from "tamagui";
-import { Typography } from "./Typography";
-import { Card } from "./Card";
+import React from 'react';
+import { Avatar, XStack, YStackProps } from 'tamagui';
+import { Typography } from './Typography';
+import { Card } from './Card';
 
 interface ListCardProps extends YStackProps {
   item: { id: string; label: string; photoUrl: string };

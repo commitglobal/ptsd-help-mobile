@@ -1,20 +1,25 @@
+import { Tool } from '@/mocks/tools';
+import { Href, router } from 'expo-router';
 import { createContext, useContext, useState } from 'react';
 
 type ToolManagerContextType = {
-  selectedTool: string | null;
+  selectedTool: Tool | null;
 
   isDistressMeterActive: boolean;
 
   initialDistressLevel: number | null;
   finalDistressLevel: number | null;
 
-  setInitialDistressLevel: (level: number) => void;
-  setFinalDistressLevel: (level: number) => void;
+  returnURL: string | null;
 
-  onToolSelected: (tool: string) => void;
+  setInitialDistressLevel: (level: number | null) => void;
+  setFinalDistressLevel: (level: number | null) => void;
 
   getFeedback: () => string;
-  getToolBySymptom: (symptom: string) => string;
+
+  startTool: (tool: Tool, returnURL: string) => void;
+  finishTool: () => void;
+  resetToolManagerContext: () => void;
 };
 
 const ToolManagerContext = createContext<ToolManagerContextType | null>(null);
@@ -22,7 +27,8 @@ const ToolManagerContext = createContext<ToolManagerContextType | null>(null);
 const ToolManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
 
-  const [selectedTool, setSelectedTool] = useState<string | null>(null);
+  const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
+  const [returnURL, setReturnURL] = useState<string | null>(null);
 
   const [initialDistressLevel, setInitialDistressLevel] = useState<number | null>(null);
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
@@ -31,12 +37,32 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     return `Feedback from tool manager ${initialDistressLevel} to ${finalDistressLevel}`;
   };
 
-  const getToolBySymptom = (symptom: string) => {
-    return `Tool for symptom ${symptom}`;
+  const startTool = (tool: Tool, returnURL: string) => {
+    setSelectedTool(tool);
+    setReturnURL(returnURL);
+
+    if (tool.subcategories?.length) {
+      router.push(`/tools/${tool.route}` as Href);
+    } else if (isDistressMeterActive) {
+      router.push('/tools/distress-meter/pre');
+    } else {
+      router.push(`/tools/${tool.route}` as Href);
+    }
   };
 
-  const onToolSelected = (tool: string) => {
-    setSelectedTool(tool);
+  const finishTool = () => {
+    if (initialDistressLevel && !finalDistressLevel) {
+      router.push('/tools/distress-meter/post');
+    } else {
+      console.log('🚀 returnURL', returnURL);
+      router.push(returnURL as Href);
+    }
+  };
+
+  const resetToolManagerContext = () => {
+    setSelectedTool(null);
+    setInitialDistressLevel(null);
+    setFinalDistressLevel(null);
   };
 
   const contextValue: ToolManagerContextType = {
@@ -44,11 +70,13 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     isDistressMeterActive,
     initialDistressLevel,
     finalDistressLevel,
+    returnURL,
     setInitialDistressLevel,
     setFinalDistressLevel,
     getFeedback,
-    getToolBySymptom,
-    onToolSelected,
+    startTool,
+    finishTool,
+    resetToolManagerContext,
   };
 
   return <ToolManagerContext.Provider value={contextValue}>{children}</ToolManagerContext.Provider>;

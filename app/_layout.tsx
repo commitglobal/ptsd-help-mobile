@@ -1,13 +1,14 @@
-import { useFonts } from "expo-font";
-import { Stack } from "expo-router";
-import * as SplashScreen from "expo-splash-screen";
-import { useEffect } from "react";
-import "react-native-reanimated";
-import "../common/config/i18n";
+import { useFonts } from 'expo-font';
+import { Stack } from 'expo-router';
+import * as SplashScreen from 'expo-splash-screen';
+import { useEffect } from 'react';
+import 'react-native-reanimated';
+import '../common/config/i18n';
 
-import { useColorScheme } from "@/hooks/useColorScheme";
-import { PortalProvider, TamaguiProvider } from "tamagui";
-import config from "../tamagui.config";
+import { useColorScheme } from '@/hooks/useColorScheme';
+import { PortalProvider, TamaguiProvider } from 'tamagui';
+import config from '../tamagui.config';
+import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -15,14 +16,14 @@ SplashScreen.preventAutoHideAsync();
 export default function RootLayout() {
   const colorScheme = useColorScheme();
   const [loaded] = useFonts({
-    SpaceMono: require("../assets/fonts/SpaceMono-Regular.ttf"),
-    Inter: require("@tamagui/font-inter/otf/Inter-Medium.otf"),
-    InterBold: require("@tamagui/font-inter/otf/Inter-Bold.otf"),
-    Roboto: require("../assets/fonts/Roboto-Medium.ttf"),
-    RobotoBold: require("../assets/fonts/Roboto-Bold.ttf"),
-    DMSans: require("../assets/fonts/DMSans-Regular.ttf"),
-    DMSansBold: require("../assets/fonts/DMSans-Bold.ttf"),
-    DMSansRegular: require("../assets/fonts/DMSans-Regular.ttf"),
+    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
+    InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+    Roboto: require('../assets/fonts/Roboto-Medium.ttf'),
+    RobotoBold: require('../assets/fonts/Roboto-Bold.ttf'),
+    DMSans: require('../assets/fonts/DMSans-Regular.ttf'),
+    DMSansBold: require('../assets/fonts/DMSans-Bold.ttf'),
+    DMSansRegular: require('../assets/fonts/DMSans-Regular.ttf'),
   });
 
   useEffect(() => {
@@ -38,10 +39,13 @@ export default function RootLayout() {
   return (
     <TamaguiProvider config={config}>
       <PortalProvider>
-        <Stack>
-          <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
-          <Stack.Screen name="+not-found" />
-        </Stack>
+        <ToolManagerContextProvider>
+          <Stack>
+            <Stack.Screen name="(drawer)" options={{ headerShown: false }} />
+            <Stack.Screen name="tools" options={{ headerShown: false }} />
+            <Stack.Screen name="+not-found" />
+          </Stack>
+        </ToolManagerContextProvider>
       </PortalProvider>
     </TamaguiProvider>
   );
