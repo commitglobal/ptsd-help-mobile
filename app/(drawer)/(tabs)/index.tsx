@@ -82,12 +82,12 @@ export default function HomeScreen() {
 
         <XStack marginHorizontal={-32}>
           {/* //todo: on press */}
-          <CircleHorizontalScrollView items={feelings} onItemPress={() => {}} />
+          <CircleHorizontalScrollView items={feelings} onItemPress={() => { }} />
         </XStack>
 
         {/* monthly evaluation */}
         {/* //todo: on press */}
-        <MonthlyEvaluationCard onPress={() => {}} />
+        <MonthlyEvaluationCard onPress={() => { }} />
 
         {/* learn about ptsd */}
         <XStack marginTop="$md">
@@ -108,7 +108,7 @@ export default function HomeScreen() {
           <CircleHorizontalScrollView
             items={favoriteInstruments}
             // todo: on press
-            onItemPress={() => {}}
+            onItemPress={() => { }}
           />
         </XStack>
 
@@ -118,6 +118,8 @@ export default function HomeScreen() {
         <Button onPress={() => router.push("/relationships/iMessages")}>
           Go to iMessages
         </Button>
+        <Button onPress={() => router.push("/player")}>Go to player</Button>
+        <Button onPress={() => router.push("/playlist")}>Go to playlist</Button>
       </ScrollView>
     </Screen>
   );

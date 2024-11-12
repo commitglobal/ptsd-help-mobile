@@ -12,6 +12,39 @@ import {
 } from "expo-av";
 import Slider from "@react-native-community/slider";
 import { Asset } from "expo-asset";
+import { Typography } from "./Typography";
+export const PLAYLIST = [
+    {
+        name: "Dragostea",
+        uri: "https://d2c5tif9s6pex6.cloudfront.net/o5jeis%2Ffile%2F7ce1f6683e48fa92fc0cc410a24fe322_c769e1e2057ef81f8bfbfd3652cb1e60.mp3?response-content-disposition=inline%3Bfilename%3D%227ce1f6683e48fa92fc0cc410a24fe322_c769e1e2057ef81f8bfbfd3652cb1e60.mp3%22%3B&response-content-type=audio%2Fmpeg&Expires=1731356418&Signature=YfSJyT7CNOgRjS8Sie0k1-mow8-Ft-MaulxjKEcy9ovDb~-n9yRedwFiTD-iSLlEuvoN8Vz67-9OxhJjxIi-rzphbl9ay8FPgSI-O9fnmKVe3vKccw1qCoI6M8oNiUm9cAYcrFiMII5cHMi~SskEDDakihMoyjVtuEwFX66TdZpSk6G0hQn21i-KvHknyk9SeRysVWyKJhiHHCxX7In~mn88I0GuBOa6lPDBkexLrTieKgwwz74V3FNvazgaqTs9S6hsdAh-s1-KyYOU9noUowlfJHq~pmaOIYzb-xkYd5B6edWMuKNaY9pVQXKh4GRJ8~JAPd0wt20GTJlvtUInCw__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ",
+        isVideo: false
+    },
+    {
+        name: "Comfort Fit - “Sorry”",
+        uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Comfort_Fit_-_03_-_Sorry.mp3",
+        isVideo: false
+    },
+    {
+        name: "Big Buck Bunny",
+        uri: "https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
+        isVideo: true
+    },
+    {
+        name: "Mildred Bailey – “All Of Me”",
+        uri: "https://ia800304.us.archive.org/34/items/PaulWhitemanwithMildredBailey/PaulWhitemanwithMildredBailey-AllofMe.mp3",
+        isVideo: false
+    },
+    {
+        name: "Popeye - I don't scare",
+        uri: "https://ia800501.us.archive.org/11/items/popeye_i_dont_scare/popeye_i_dont_scare_512kb.mp4",
+        isVideo: true
+    },
+    {
+        name: "Podington Bear - “Rubber Robot”",
+        uri: "https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Podington_Bear_-_Rubber_Robot.mp3",
+        isVideo: false
+    }
+];
 
 
 class Icon {
@@ -116,6 +149,8 @@ interface AppState {
     useNativeControls: boolean;
     fullscreen: boolean;
     throughEarpiece: boolean;
+
+    loadingError: boolean;
 }
 
 export type MediaPlayerProps = {
@@ -155,7 +190,9 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
             poster: false,
             useNativeControls: false,
             fullscreen: false,
-            throughEarpiece: false
+            throughEarpiece: false,
+
+            loadingError: false
         };
     }
 
@@ -171,7 +208,14 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         });
     }
 
+    componentDidUpdate(prevProps: Readonly<MediaPlayerProps>, prevState: Readonly<AppState>, snapshot?: any): void {
+        if (prevProps.mediaURI !== this.props.mediaURI) {
+            this._loadNewPlaybackInstance(true);
+        }
+    }
+
     async _loadNewPlaybackInstance(playing: boolean) {
+        this.setState({ loadingError: false });
         if (this.playbackInstance != null) {
             await this.playbackInstance.unloadAsync();
             this.playbackInstance = null;
@@ -191,12 +235,16 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
             await this._video.loadAsync(source, initialStatus);
             this.playbackInstance = this._video;
         } else {
-            const { sound } = await Audio.Sound.createAsync(
-                source,
-                initialStatus,
-                this._onPlaybackStatusUpdate
-            );
-            this.playbackInstance = sound;
+            try {
+                const { sound } = await Audio.Sound.createAsync(
+                    source,
+                    initialStatus,
+                    this._onPlaybackStatusUpdate
+                );
+                this.playbackInstance = sound;
+            } catch (error) {
+                this.setState({ loadingError: true });
+            }
         }
 
         this._updateScreenForLoading(false);
@@ -383,7 +431,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         return (
             <View style={styles.container}>
                 {/* VIDEO CONTAINER */}
-                <View style={styles.videoContainer}>
+                <View style={this.props.isVideo ? styles.videoContainer : {}}>
                     <Video
                         ref={this._mountVideo}
                         style={[
@@ -391,7 +439,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
                             {
                                 opacity: this.state.showVideo ? 1.0 : 0.0,
                                 width: this.state.videoWidth,
-                                height: this.state.videoHeight
+                                height: this.props.isVideo ? this.state.videoHeight : 0
                             }
                         ]}
                         resizeMode={ResizeMode.CONTAIN}
@@ -497,6 +545,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
                     )}
 
                 </View>
+                {this.state.loadingError && <Typography color="red">Errored loading media</Typography>}
                 <View />
             </View>
         );
