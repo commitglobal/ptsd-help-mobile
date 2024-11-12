@@ -1,7 +1,8 @@
 {
     "general": {
         "done": "Done",
-        "ptsd-help": "PTSD Help"
+        "ptsd-help": "PTSD Help",
+        "required": "This field is required"
     },
     "languages": {
         "en": "English",

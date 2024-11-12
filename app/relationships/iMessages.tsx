@@ -78,7 +78,7 @@ export default function iMessages() {
               <MessageCard
                 key={message.id}
                 message={message}
-                onPress={() => router.push(`/relationships/${message.id}`)}
+                onPress={() => router.push(`/relationships/new-message`)}
               />
             ))}
           </>
@@ -86,7 +86,10 @@ export default function iMessages() {
       </ScreenWithParallaxImageHeader>
 
       <XStack position="absolute" bottom={insets.bottom + 16} right="$lg">
-        <Button icon={<Icon icon="plus" color="white" width={24} height={24} />} />
+        <Button
+          icon={<Icon icon="plus" color="white" width={24} height={24} />}
+          onPress={() => router.push(`/relationships/new-message`)}
+        />
       </XStack>
     </>
   );

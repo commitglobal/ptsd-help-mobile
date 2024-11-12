@@ -15,7 +15,7 @@ const TextareaInput = React.forwardRef<React.ElementRef<typeof TamaguiTextArea>,
         <TamaguiTextArea
           ref={ref}
           value={value}
-          onChange={onChange}
+          onChangeText={(text: string) => onChange?.({ target: { value: text } } as any)}
           size="$4"
           backgroundColor="$gray1"
           focusStyle={{ borderColor: "$blue9" }}

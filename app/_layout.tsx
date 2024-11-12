@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import "react-native-reanimated";
 import "../common/config/i18n";
 import { PortalProvider, TamaguiProvider } from "tamagui";
-import config from "../tamagui.config";
+import appConfig from "@/tamagui.config";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -33,7 +33,7 @@ export default function RootLayout() {
   }
 
   return (
-    <TamaguiProvider config={config}>
+    <TamaguiProvider config={appConfig}>
       <PortalProvider>
         <Stack>
           <Stack.Screen name="(drawer)" options={{ headerShown: false }} />

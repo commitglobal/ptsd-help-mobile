@@ -3,17 +3,19 @@ import { XStack, YStack } from "tamagui";
 import { Typography } from "./Typography";
 import TextareaInput from "./Inputs/Textarea";
 import { Icon } from "./Icon";
+import { FieldError } from "react-hook-form";
 
 type FormInputProps = {
   label: string;
   infoMessage?: string;
   onInfoMessagePress?: () => void;
+  errorMessage?: string | FieldError;
 };
 
 const TextFormInput = React.forwardRef<
   React.ElementRef<typeof TextareaInput>,
   FormInputProps & React.ComponentProps<typeof TextareaInput>
->(({ label, placeholder, infoMessage, onInfoMessagePress, ...props }, ref) => {
+>(({ label, placeholder, infoMessage, onInfoMessagePress, errorMessage, ...props }, ref) => {
   return (
     <YStack gap="$sm">
       <XStack justifyContent="space-between" gap="$md">
@@ -30,7 +32,7 @@ const TextFormInput = React.forwardRef<
           </XStack>
         )}
       </XStack>
-      <TextareaInput ref={ref} placeholder={placeholder} {...props} />
+      <TextareaInput ref={ref} placeholder={placeholder} errorMessage={errorMessage} {...props} />
     </YStack>
   );
 });
