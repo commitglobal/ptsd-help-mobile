@@ -17,15 +17,10 @@
       "buildNumber": "1",
       "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
-        "com.apple.developer.applesignin": [
-          "Default"
-        ]
+        "com.apple.developer.applesignin": ["Default"]
       },
       "infoPlist": {
-        "UIBackgroundModes": [
-          "fetch",
-          "remote-notification"
-        ]
+        "UIBackgroundModes": ["fetch", "remote-notification"]
       },
       "config": {
         "usesNonExemptEncryption": false

@@ -34,11 +34,11 @@ const DistressMeterPre = () => {
     }
 
     setInitialDistressLevel(stressValue);
-    router.push(`/tools/${selectedTool?.route}` as Href);
+    router.push(selectedTool?.route as Href);
   };
 
   const handleSecondaryAction = () => {
-    router.push(`/tools/${selectedTool?.route}` as Href);
+    router.push(selectedTool?.route as Href);
   };
 
   return (
@@ -46,22 +46,20 @@ const DistressMeterPre = () => {
       <Screen
         headerProps={{
           title: t('header-title'),
-          iconLeft: <Icon icon="chevronLeft" color="white" width={24} height={24} />,
+          iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
           onLeftPress: () => router.back(),
-          iconRight: <Icon icon="info" color="white" width={24} height={24} />,
-        }}
-      >
+          iconRight: <Icon icon='info' color='white' width={24} height={24} />,
+        }}>
         <ScrollView
           contentContainerStyle={{ padding: 24, gap: 32, flexGrow: 1 }}
           showsVerticalScrollIndicator={false}
-          bounces={false}
-        >
-          <YStack gap="$xxs">
-            <Typography textAlign="center">{t('title')}</Typography>
-            <Typography textAlign="center" preset="helper">
+          bounces={false}>
+          <YStack gap='$xxs'>
+            <Typography textAlign='center'>{t('title')}</Typography>
+            <Typography textAlign='center' preset='helper'>
               {t('scale', { min: 0, max: 10 })}
             </Typography>
-            <Typography textAlign="center" preset="helper">
+            <Typography textAlign='center' preset='helper'>
               {t('subtitle')}
             </Typography>
           </YStack>
@@ -69,9 +67,9 @@ const DistressMeterPre = () => {
           <DistressMeterComponent stressValue={stressValue} setStressValue={setStressValue} />
         </ScrollView>
 
-        <YStack paddingHorizontal="$md" paddingTop={insets.top + 16} gap="$xs" paddingBottom="$md">
+        <YStack paddingHorizontal='$md' paddingTop={insets.top + 16} gap='$xs' paddingBottom='$md'>
           <Button onPress={handleMainAction}>{t('actions.start')}</Button>
-          <Button preset="secondary" onPress={handleSecondaryAction}>
+          <Button preset='secondary' onPress={handleSecondaryAction}>
             {t('actions.skip')}
           </Button>
         </YStack>
@@ -81,7 +79,7 @@ const DistressMeterPre = () => {
           setCrisisSheetOpen={setCrisisSheetOpen}
           onContinueToTool={() => {
             setInitialDistressLevel(stressValue);
-            router.push(`/tools/${selectedTool?.route}` as Href);
+            router.push(selectedTool?.route as Href);
             setCrisisSheetOpen(false);
           }}
         />

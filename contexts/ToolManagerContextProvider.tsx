@@ -42,11 +42,11 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     setReturnURL(returnURL);
 
     if (tool.subcategories?.length) {
-      router.push(`/tools/${tool.route}` as Href);
+      router.push(tool.route);
     } else if (isDistressMeterActive) {
       router.push('/tools/distress-meter/pre');
     } else {
-      router.push(`/tools/${tool.route}` as Href);
+      router.push(tool.route);
     }
   };
 
