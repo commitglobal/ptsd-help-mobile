@@ -1,0 +1,177 @@
+{
+  "common": {
+    "start": "RO/ro: Start",
+    "next": "RO/ro: Next",
+    "previous": "RO/ro: Previous",
+    "finish": "RO/ro: Finish",
+    "save": "RO/ro: Save",
+    "cancel": "RO/ro: Cancel",
+    "delete": "RO/en: Delete",
+    "unsaved-data": "RO/en: You have unsaved changes. Are you sure you want to leave this page?",
+    "discard": "RO/en: Discard",
+    "sure": "RO/en: Yes, I'm sure",
+    "delete-confirmation": "RO/en: Are you sure you want to delete?",
+    "yes": "RO/en: Yes",
+    "no": "RO/en: No"
+  },
+  "general": {
+    "done": "RO/ro: Done",
+    "ptsd-help": "RO/ro: PTSD Help",
+    "required": "RO/ro: This field is required"
+  },
+  "languages": {
+    "en": "RO/ro: English",
+    "am": "RO/ro: Armenian",
+    "ua": "RO/ro: Ukrainian"
+  },
+  "licence-agreement": {
+    "header-title": "RO/ro: Licence Agreement",
+    "title": "RO/ro: Licence Agreement for the final user (EULA)",
+    "p1": "RO/ro: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+    "l1": "RO/ro: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt",
+    "l2": "RO/ro: Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.",
+    "accept": "RO/ro: Accept"
+  },
+  "choose-country": {
+    "title": "RO/ro: Localization",
+    "choose": "RO/ro: Choose your country",
+    "subtitle": "RO/ro: Please choose the country you are in right now or the country for which you wish to view resources.",
+    "next": "RO/ro: Next",
+    "countries": {
+      "ro": "RO/ro: Romania",
+      "am": "RO/ro: Armenia",
+      "ua": "RO/ro: Ukraine"
+    }
+  },
+  "choose-language": {
+    "title": "RO/ro: Language",
+    "choose": "RO/ro: Choose the app language",
+    "subtitle": "RO/ro: Please choose the language of the app content.",
+    "next": "RO/ro: Next"
+  },
+  "onboarding": {
+    "learn": {
+      "title": "RO/ro: Learn",
+      "description": "RO/ro: Learn more information about PTSD - for you or for someone you care about."
+    },
+    "monitor-progress": {
+      "title": "RO/ro: Monitor Progress",
+      "description": "RO/ro: Monitor your progress over time and get feedback."
+    },
+    "manage-symptoms": {
+      "title": "RO/ro: Manage Symptoms",
+      "description": "RO/ro: Choose your favourite instruments for managing stress."
+    },
+    "get-support": {
+      "title": "RO/ro: Get Support",
+      "description": "RO/ro: Connect with support and resources that can truly help you."
+    },
+    "welcome": {
+      "title": "RO/ro: Welcome to PTSD Help",
+      "description": "RO/ro: This app is designed to support trauma survivors. Please note that it cannot provide medical diagnosis or treatment - these services can only be provided by healthcare professionals. But it can help you learn more about PTSD and manage your symptoms, by providing you with the necessary tools and information for managing the distress that trauma can cause.",
+      "actions": {
+        "start": "RO/ro: Start using PTSD Help",
+        "personalize": "RO/ro: Personalize your experience"
+      },
+      "personalize": {
+        "title": "RO/ro: Personalize the app by adding:",
+        "l1": "RO/ro: Contact information for friends, family or your support network",
+        "l2": "RO/ro: Soothing photos of nature or places that are important to you",
+        "modify_preferences": "RO/ro: You can always modify your preferences later from the settings menu."
+      }
+    }
+  },
+  "tabs": {
+    "home": "RO/ro: Home",
+    "manage": "RO/ro: Manage",
+    "track": "RO/ro: Track",
+    "learn": "RO/ro: Learn",
+    "support": "RO/ro: Support"
+  },
+  "symptoms": {
+    "trauma": "RO/ro: Reminded of trauma",
+    "avoiding-triggers": "RO/ro: Avoiding triggers",
+    "disconnected-people": "RO/ro: Disconnected from people",
+    "disconnected-reality": "RO/ro: Disconnected from reality",
+    "sad-hopeless": "RO/ro: Sad/Hopeless",
+    "worried-anxious": "RO/ro: Worried/Anxious",
+    "angry": "RO/ro: Angry"
+  },
+  "dashboard": {
+    "feeling": "RO/ro: How are you feeling today?",
+    "see-all": "RO/ro: See all",
+    "monthly-evaluation": "RO/ro: Take your monthly evaluation",
+    "evaluate": "RO/ro: Evaluate the intensity of your PTSD symptoms by answering 20 simple questions.",
+    "start": "RO/ro: Start evaluation",
+    "learn": "RO/ro: Learn about PTSD",
+    "read": "RO/ro: Read",
+    "favorite-instruments": "RO/ro: Favorite Tools"
+  },
+  "manage": {
+    "title": "RO/ro: Manage Symptoms",
+    "symptoms": "RO/ro: Symptoms",
+    "tools": "RO/ro: Tools",
+    "favorites": "RO/ro: Favorites"
+  },
+  "track": {
+    "evaluate": "RO/ro: Perform an evaluation",
+    "history": "RO/ro: Evaluation history",
+    "schedule": "RO/ro: Schedule an evaluation"
+  },
+  "distress-meter": {
+    "header-title": "RO/ro: Distress Meter",
+    "title": "RO/ro: What's your current level of distress?",
+    "scale": "RO/ro: {{min}} means no distress, {{max}} is the worst",
+    "subtitle": "RO/ro: Tap on the up and down arrows to indicate how you are feeling.",
+    "actions": {
+      "start": "RO/ro: Start using a tool",
+      "skip": "RO/ro: Skip"
+    },
+    "high-distress": {
+      "text": "RO/ro: This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
+      "actions": {
+        "help": "RO/ro: No, continue to the support tool",
+        "talk": "RO/ro: Yes, I want to talk to someone"
+      }
+    }
+  },
+  "relationships": {
+    "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+    "done": "RO/ro: Done"
+  },
+  "i-messages": {
+    "title": "RO/ro: Using 'I' messages",
+    "find-time": "RO/ro: Find time to share these messages with your partner.",
+    "text": "RO/ro: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+    "when": "RO/ro: When my loved one",
+    "feel": "RO/ro: I feel",
+    "because": "RO/ro: because",
+    "annoyance": {
+      "label": "RO/ro: What's something that your partner does that truly annoys you?",
+      "placeholder": "RO/ro: Something that my partner does that annoys me is...",
+      "example": "RO/ro: Example: Drinks a lot and then gets angry"
+    },
+    "declaration": "RO/ro: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+    "i-feel": {
+      "label": "RO/ro: When my partner does this, I feel...",
+      "placeholder": "RO/ro: I feel...",
+      "example": "RO/ro: Example: sad and disappointed"
+    },
+    "because-input": {
+      "label": "RO/ro: Because...",
+      "placeholder": "RO/ro: Because...",
+      "example": "RO/ro: Example: Because I am worried about the future"
+    },
+    "edit": {
+      "title": "RO/ro: Edit 'I' message",
+      "save": "RO/ro: Save",
+      "delete": "RO/ro: Delete 'I' message",
+      "unsaved-data": "RO/ro: You have unsaved changes. Are you sure you want to leave this page?",
+      "discard": "RO/ro: Discard",
+      "sure": "RO/ro: Yes, I'm sure",
+      "delete-confirmation": "RO/ro: Are you sure you want to delete this message?",
+      "yes": "RO/ro: Yes",
+      "no": "RO/ro: No"
+    }
+  }
+}

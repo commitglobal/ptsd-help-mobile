@@ -53,7 +53,8 @@ const messages = [
 ];
 
 export default function Message() {
-  const { t } = useTranslation('i-messages');
+  const { t } = useTranslation('tools');
+
   const insets = useSafeAreaInsets();
 
   // using refs for scrolling capabilities
@@ -133,10 +134,10 @@ export default function Message() {
       <Stack.Screen options={{ headerShown: false, gestureEnabled: false, fullScreenGestureEnabled: false }} />
       <Screen
         headerProps={{
-          title: t('edit.title'),
+          title: t('relationships.tools.i-messages.edit.title'),
           iconLeft: <Icon icon='x' color='white' width={24} height={24} />,
           onLeftPress: handleGoBack,
-          iconRight: <Typography color='white'>{t('edit.save')}</Typography>,
+          iconRight: <Typography color='white'>{t('common.save', { ns: 'translation' })}</Typography>,
           onRightPress: handleSubmit(onSubmit),
         }}
         contentContainerStyle={{
@@ -158,43 +159,47 @@ export default function Message() {
             rules={{
               required: {
                 value: true,
-                message: t('required', { ns: 'general' }),
+                message: t('general.required', { ns: 'translation' }),
               },
             }}
             render={({ field: { value, onChange } }) => (
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('annoyance.label')}
-                placeholder={t('annoyance.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.annoyance.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.annoyance.placeholder')}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t('annoyance.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('annoyance.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.annoyance.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.annoyance.example'))
+                }
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t('declaration')}</Typography>
+          <Typography>{t('relationships.tools.i-messages.new-message.declaration')}</Typography>
           <Controller
             control={control}
             name='message'
             rules={{
               required: {
                 value: true,
-                message: t('required', { ns: 'general' }),
+                message: t('general.required', { ns: 'translation' }),
               },
             }}
             render={({ field: { value, onChange } }) => (
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('i-feel.label')}
-                placeholder={t('i-feel.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.i-feel.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.i-feel.placeholder')}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t('i-feel.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('i-feel.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.i-feel.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.i-feel.example'))
+                }
                 errorMessage={errors.message?.message as string}
               />
             )}
@@ -212,17 +217,19 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('because-input.label')}
-                placeholder={t('because-input.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.because-input.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.because-input.placeholder')}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t('because-input.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('because-input.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.because-input.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.because-input.example'))
+                }
                 errorMessage={errors.because?.message as string}
               />
             )}
           />
-          <Button onPress={handleOpenDeleteMessageModal}>{t('edit.delete')}</Button>
+          <Button onPress={handleOpenDeleteMessageModal}>{t('common.delete', { ns: 'translation' })}</Button>
         </ScrollView>
       </Screen>
       {infoMessage && (
@@ -236,13 +243,13 @@ export default function Message() {
       {deleteMessageModalOpen && (
         <Modal open onOpenChange={setDeleteMessageModalOpen}>
           <YStack minHeight={100}>
-            <Typography>{t('edit.delete-confirmation')}</Typography>
+            <Typography>{t('common.delete-confirmation', { ns: 'translation' })}</Typography>
             <XStack justifyContent='flex-end' gap='$md'>
               <Button preset='chromeless' onPress={() => setDeleteMessageModalOpen(false)}>
-                {t('edit.no')}
+                {t('common.no', { ns: 'translation' })}
               </Button>
               <Button preset='chromeless' textStyle={{ color: 'red' }} onPress={handleDeleteMessage}>
-                {t('edit.yes')}
+                {t('common.yes', { ns: 'translation' })}
               </Button>
             </XStack>
           </YStack>
@@ -257,13 +264,13 @@ const UnsavedDataModal = ({ setUnsavedDataModalOpen }: { setUnsavedDataModalOpen
   return (
     <Modal open onOpenChange={setUnsavedDataModalOpen}>
       <YStack minHeight={100} gap='$md'>
-        <Typography>{t('edit.unsaved-data')}</Typography>
+        <Typography>{t('common.unsaved-data', { ns: 'translation' })}</Typography>
         <XStack justifyContent='flex-end' gap='$md'>
           <Button preset='chromeless' onPress={() => setUnsavedDataModalOpen(false)}>
-            {t('edit.discard')}
+            {t('common.discard', { ns: 'translation' })}
           </Button>
           <Button preset='chromeless' textStyle={{ color: 'red' }} onPress={() => router.back()}>
-            {t('edit.sure')}
+            {t('common.sure', { ns: 'translation' })}
           </Button>
         </XStack>
       </YStack>

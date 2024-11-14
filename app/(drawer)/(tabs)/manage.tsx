@@ -65,15 +65,15 @@ const Lists = {
 
 export default function Manage() {
   const { tabId } = useLocalSearchParams<{ tabId: keyof typeof Lists }>();
-  const { t } = useTranslation('manage');
+  const { t } = useTranslation('translation');
   const router = useRouter();
   const { startTool } = useToolManagerContext();
 
   const tabs = useMemo(
     () => [
-      { id: 'symptoms', label: t('symptoms') },
-      { id: 'tools', label: t('tools') },
-      { id: 'favorites', label: t('favorites') },
+      { id: 'symptoms', label: t('manage.symptoms', { ns: 'translation' }) },
+      { id: 'tools', label: t('manage.tools', { ns: 'translation' }) },
+      { id: 'favorites', label: t('manage.favorites', { ns: 'translation' }) },
     ],
     [t]
   );

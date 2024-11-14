@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Typography } from "./Typography";
-import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from "./ScreenWithImageHeader";
-import { XStack } from "tamagui";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import Button from "./Button";
-import { Icon } from "./Icon";
+import React, { useState } from 'react';
+import { Typography } from './Typography';
+import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithImageHeader';
+import { XStack } from 'tamagui';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import Button from './Button';
+import { Icon } from './Icon';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText: string;
-  items: { id: string; text: string }[];
+  items: { id: string; title?: string; description?: string }[];
   onExport?: () => void;
 }
 
@@ -39,16 +39,11 @@ export const ScreenWithChangingText = ({
       imageUrl={imageUrl}
       onBackButtonPress={onBackButtonPress}
       onMainActionButtonPress={onMainActionButtonPress}
-      footerComponent={
-        <Footer
-          onExport={onExport}
-          onPreviousItem={handlePreviousItem}
-          onNextItem={handleNextItem}
-        />
-      }
-    >
-      <Typography preset="helper">{staticText}</Typography>
-      <Typography>{renderedItem.text}</Typography>
+      footerComponent={<Footer onExport={onExport} onPreviousItem={handlePreviousItem} onNextItem={handleNextItem} />}>
+      <Typography preset='helper'>{staticText}</Typography>
+      {/* <Typography>{renderedItem.text}</Typography> */}
+      {renderedItem.title && <Typography>{renderedItem.title}</Typography>}
+      {renderedItem.description && <Typography>{renderedItem.description}</Typography>}
     </ScreenWithImageHeader>
   );
 };
@@ -65,33 +60,27 @@ const Footer = ({
   const insets = useSafeAreaInsets();
 
   return (
-    <XStack
-      paddingBottom={insets.bottom + 16}
-      paddingHorizontal="$md"
-      justifyContent="center"
-      gap="$md"
-      flex={1}
-    >
+    <XStack paddingBottom={insets.bottom + 16} paddingHorizontal='$md' justifyContent='center' gap='$md' flex={1}>
       {onExport && (
         <Button
-          preset="secondary"
+          preset='secondary'
           onPress={onExport}
-          colorTheme="orange"
-          icon={<Icon icon="arrowUpOnSquare" width={24} height={24} color="$orange10" />}
+          colorTheme='orange'
+          icon={<Icon icon='arrowUpOnSquare' width={24} height={24} color='$orange10' />}
         />
       )}
 
       <Button
-        preset="secondary"
-        colorTheme="orange"
+        preset='secondary'
+        colorTheme='orange'
         onPress={onPreviousItem}
-        icon={<Icon icon="arrowLeft" width={24} height={24} color="$orange10" />}
+        icon={<Icon icon='arrowLeft' width={24} height={24} color='$orange10' />}
       />
       <Button
-        preset="secondary"
-        colorTheme="orange"
+        preset='secondary'
+        colorTheme='orange'
         onPress={onNextItem}
-        icon={<Icon icon="arrowRight" width={24} height={24} color="$orange10" />}
+        icon={<Icon icon='arrowRight' width={24} height={24} color='$orange10' />}
       />
     </XStack>
   );

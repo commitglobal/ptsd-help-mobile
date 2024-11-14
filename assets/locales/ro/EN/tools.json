@@ -1,0 +1,76 @@
+{
+  "relationships": {
+    "title": "RO/ro: Relationships",
+    "description": "RO/ro: Tools to help improve your relationships with loved ones",
+    "tools": {
+      "i-messages": {
+        "title": "RO/en: Using 'I' messages",
+        "find-time": "RO/en: Find time to share these messages with your partner.",
+        "text": "RO/en: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "when": "RO/en: When my loved one",
+        "feel": "RO/en: I feel",
+        "because": "RO/en: because",
+        "new-message": {
+          "title": "RO/en: New 'I' message",
+          "save": "RO/en: Save",
+          "annoyance": {
+            "label": "RO/en: What's something that your partner does that truly annoys you?",
+            "placeholder": "RO/en: Something that my partner does that annoys me is...",
+            "example": "RO/en: Example: Drinks a lot and then gets angry"
+          },
+          "declaration": "RO/en: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+          "i-feel": {
+            "label": "RO/en: When my partner does this, I feel...",
+            "placeholder": "RO/en: I feel...",
+            "example": "RO/en: Example: sad and disappointed"
+          },
+          "because-input": {
+            "label": "RO/en: Because...",
+            "placeholder": "RO/en: Because...",
+            "example": "RO/en: Example: Because I am worried about the future"
+          }
+        }
+      },
+      "reconnect-with-partner": {
+        "title": "RO/ro: Reconnect with your partner",
+        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "repeater": {
+          "1": {
+            "title": "RO/ro: Go for a walk or exercise together",
+            "description": "RO/ro: Find time to go for a walk or exercise together"
+          },
+          "2": {
+            "title": "RO/ro: Prepare a delicious meal and have fun in the kitchen",
+            "description": "RO/ro: Find time to prepare a delicious meal and have fun in the kitchen"
+          },
+          "3": {
+            "title": "RO/ro: Organize a movie night at home with favorite films",
+            "description": "RO/ro: Find time to organize a movie night at home with favorite films"
+          }
+        }
+      },
+      "positive-communication": {
+        "title": "RO/ro: Positive Communication",
+        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "repeater": {
+          "1": {
+            "title": "RO/ro: Overcome your automatic negative thoughts",
+            "description": "RO/ro: Think about positive things about your partner"
+          },
+          "2": {
+            "title": "RO/ro: Start a conversation with your partner",
+            "description": "RO/ro: Talk about your feelings and thoughts with your partner"
+          }
+        }
+      }
+    },
+    "common": {
+      "start": "RO/ro: Start",
+      "next": "RO/ro: Next",
+      "previous": "RO/ro: Previous",
+      "finish": "RO/ro: Finish",
+      "save": "RO/ro: Save",
+      "cancel": "RO/ro: Cancel"
+    }
+  }
+}

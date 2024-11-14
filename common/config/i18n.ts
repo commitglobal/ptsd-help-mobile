@@ -1,9 +1,11 @@
-import i18n, { ResourceLanguage } from "i18next";
-import { initReactI18next } from "react-i18next";
-// import * as Localization from "expo-localization";
-import en from "../../assets/locales/en/translations.json";
-import am from "../../assets/locales/am/translations.json";
-import ua from "../../assets/locales/ua/translations.json";
+import i18n, { ResourceLanguage } from 'i18next';
+import { initReactI18next } from 'react-i18next';
+
+import roEN from '../../assets/locales/ro/EN/ro-EN.json';
+import tools_roEN from '../../assets/locales/ro/EN/tools.json';
+
+import roRO from '../../assets/locales/ro/RO/ro-RO.json';
+import tools_roRO from '../../assets/locales/ro/RO/tools.json';
 
 // TODO: do we need the systemLocale?
 
@@ -20,15 +22,21 @@ import ua from "../../assets/locales/ua/translations.json";
 // export const isRTL = language?.textDirection === "rtl";
 
 i18n.use(initReactI18next).init<ResourceLanguage>({
-  lng: "en",
-  fallbackLng: ["en", "am", "ua"],
-  compatibilityJSON: "v3",
-  supportedLngs: ["en", "am", "ua"],
+  lng: 'en',
+  fallbackLng: ['en', 'ro'],
+  compatibilityJSON: 'v3',
+  supportedLngs: ['en', 'ro'],
   resources: {
-    en,
-    am,
-    ua,
+    en: {
+      translation: roEN,
+      tools: tools_roEN,
+    },
+    ro: {
+      translation: roRO,
+      tools: tools_roRO,
+    },
   },
+  defaultNS: 'translation',
   debug: true,
   interpolation: {
     escapeValue: false,

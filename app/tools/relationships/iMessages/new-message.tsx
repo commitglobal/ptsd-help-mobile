@@ -12,7 +12,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 
 export default function NewMessage() {
-  const { t } = useTranslation(['i-messages', 'general']);
+  const { t } = useTranslation('tools');
   const insets = useSafeAreaInsets();
 
   // using refs for scrolling capabilities
@@ -52,8 +52,8 @@ export default function NewMessage() {
       <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
-          title: "Messages with 'I'",
-          iconRight: <Typography color='white'>{t('done', { ns: 'general' })}</Typography>,
+          title: t('relationships.tools.i-messages.new-message.title'),
+          iconRight: <Typography color='white'>{t('general.done', { ns: 'translation' })}</Typography>,
           onRightPress: handleSubmit(onSubmit),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='white' />,
           onLeftPress: router.back,
@@ -77,43 +77,47 @@ export default function NewMessage() {
             rules={{
               required: {
                 value: true,
-                message: t('required', { ns: 'general' }),
+                message: t('general.required', { ns: 'translation' }),
               },
             }}
             render={({ field: { value, onChange } }) => (
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('annoyance.label')}
-                placeholder={t('annoyance.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.annoyance.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.annoyance.placeholder')}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t('annoyance.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('annoyance.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.annoyance.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.annoyance.example'))
+                }
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t('declaration')}</Typography>
+          <Typography>{t('relationships.tools.i-messages.new-message.declaration')}</Typography>
           <Controller
             control={control}
             name='feel'
             rules={{
               required: {
                 value: true,
-                message: t('required', { ns: 'general' }),
+                message: t('general.required', { ns: 'translation' }),
               },
             }}
             render={({ field: { value, onChange } }) => (
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('i-feel.label')}
-                placeholder={t('i-feel.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.i-feel.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.i-feel.placeholder')}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t('i-feel.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('i-feel.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.i-feel.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.i-feel.example'))
+                }
                 errorMessage={errors.feel?.message as string}
               />
             )}
@@ -124,19 +128,21 @@ export default function NewMessage() {
             rules={{
               required: {
                 value: true,
-                message: t('required', { ns: 'general' }),
+                message: t('general.required', { ns: 'translation' }),
               },
             }}
             render={({ field: { value, onChange } }) => (
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('because-input.label')}
-                placeholder={t('because-input.placeholder')}
+                label={t('relationships.tools.i-messages.new-message.because-input.label')}
+                placeholder={t('relationships.tools.i-messages.new-message.because-input.placeholder')}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t('because-input.example')}
-                onInfoMessagePress={() => handleInfoModalOpen(t('because-input.example'))}
+                infoMessage={t('relationships.tools.i-messages.new-message.because-input.example')}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.because-input.example'))
+                }
                 errorMessage={errors.because?.message as string}
               />
             )}

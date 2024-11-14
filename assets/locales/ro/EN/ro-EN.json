@@ -1,0 +1,142 @@
+{
+  "common": {
+    "start": "RO/ro: Start",
+    "next": "RO/ro: Next",
+    "previous": "RO/ro: Previous",
+    "finish": "RO/ro: Finish",
+    "save": "RO/ro: Save",
+    "cancel": "RO/ro: Cancel",
+    "delete": "RO/en: Delete",
+    "unsaved-data": "RO/en: You have unsaved changes. Are you sure you want to leave this page?",
+    "discard": "RO/en: Discard",
+    "sure": "RO/en: Yes, I'm sure",
+    "delete-confirmation": "RO/en: Are you sure you want to delete?",
+    "yes": "RO/en: Yes",
+    "no": "RO/en: No"
+  },
+  "general": {
+    "done": "RO/en: Done",
+    "ptsd-help": "RO/en: PTSD Help",
+    "required": "RO/en: This field is required"
+  },
+  "languages": {
+    "en": "RO/en: English",
+    "am": "RO/en: Armenian",
+    "ua": "RO/en: Ukrainian"
+  },
+  "licence-agreement": {
+    "header-title": "RO/en: Licence Agreement",
+    "title": "RO/en: Licence Agreement for the final user (EULA)",
+    "p1": "RO/en: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+    "l1": "RO/en: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt",
+    "l2": "RO/en: Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.",
+    "accept": "RO/en: Accept"
+  },
+  "choose-country": {
+    "title": "RO/en: Localization",
+    "choose": "RO/en: Choose your country",
+    "subtitle": "RO/en: Please choose the country you are in right now or the country for which you wish to view resources.",
+    "next": "RO/en: Next",
+    "countries": {
+      "ro": "RO/en: Romania",
+      "am": "RO/en: Armenia",
+      "ua": "RO/en: Ukraine"
+    }
+  },
+  "choose-language": {
+    "title": "RO/en: Language",
+    "choose": "RO/en: Choose the app language",
+    "subtitle": "RO/en: Please choose the language of the app content.",
+    "next": "RO/en: Next"
+  },
+  "onboarding": {
+    "learn": {
+      "title": "RO/en: Learn",
+      "description": "RO/en: Learn more information about PTSD - for you or for someone you care about."
+    },
+    "monitor-progress": {
+      "title": "RO/en: Monitor Progress",
+      "description": "RO/en: Monitor your progress over time and get feedback."
+    },
+    "manage-symptoms": {
+      "title": "RO/en: Manage Symptoms",
+      "description": "RO/en: Choose your favourite instruments for managing stress."
+    },
+    "get-support": {
+      "title": "RO/en: Get Support",
+      "description": "RO/en: Connect with support and resources that can truly help you."
+    },
+    "welcome": {
+      "title": "RO/en: Welcome to PTSD Help",
+      "description": "RO/en: This app is designed to support trauma survivors. Please note that it cannot provide medical diagnosis or treatment - these services can only be provided by healthcare professionals. But it can help you learn more about PTSD and manage your symptoms, by providing you with the necessary tools and information for managing the distress that trauma can cause.",
+      "actions": {
+        "start": "RO/en: Start using PTSD Help",
+        "personalize": "RO/en: Personalize your experience"
+      },
+      "personalize": {
+        "title": "RO/en: Personalize the app by adding:",
+        "l1": "RO/en: Contact information for friends, family or your support network",
+        "l2": "RO/en: Soothing photos of nature or places that are important to you",
+        "modify_preferences": "RO/en: You can always modify your preferences later from the settings menu."
+      }
+    }
+  },
+  "tabs": {
+    "home": "RO/en: Home",
+    "manage": "RO/en: Manage",
+    "track": "RO/en: Track",
+    "learn": "RO/en: Learn",
+    "support": "RO/en: Support"
+  },
+  "symptoms": {
+    "trauma": "RO/en: Reminded of trauma",
+    "avoiding-triggers": "RO/en: Avoiding triggers",
+    "disconnected-people": "RO/en: Disconnected from people",
+    "disconnected-reality": "RO/en: Disconnected from reality",
+    "sad-hopeless": "RO/en: Sad/Hopeless",
+    "worried-anxious": "RO/en: Worried/Anxious",
+    "angry": "RO/en: Angry"
+  },
+  "dashboard": {
+    "feeling": "RO/en: How are you feeling today?",
+    "see-all": "RO/en: See all",
+    "monthly-evaluation": "RO/en: Take your monthly evaluation",
+    "evaluate": "RO/en: Evaluate the intensity of your PTSD symptoms by answering 20 simple questions.",
+    "start": "RO/en: Start evaluation",
+    "learn": "RO/en: Learn about PTSD",
+    "read": "RO/en: Read",
+    "favorite-instruments": "RO/en: Favorite Tools"
+  },
+  "manage": {
+    "title": "RO/en: Manage Symptoms",
+    "symptoms": "RO/en: Symptoms",
+    "tools": "RO/en: Tools",
+    "favorites": "RO/en: Favorites"
+  },
+  "track": {
+    "evaluate": "RO/en: Perform an evaluation",
+    "history": "RO/en: Evaluation history",
+    "schedule": "RO/en: Schedule an evaluation"
+  },
+  "distress-meter": {
+    "header-title": "RO/en: Distress Meter",
+    "title": "RO/en: What's your current level of distress?",
+    "scale": "RO/en: {{min}} means no distress, {{max}} is the worst",
+    "subtitle": "RO/en: Tap on the up and down arrows to indicate how you are feeling.",
+    "actions": {
+      "start": "RO/en: Start using a tool",
+      "skip": "RO/en: Skip"
+    },
+    "high-distress": {
+      "text": "RO/en: This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
+      "actions": {
+        "help": "RO/en: No, continue to the support tool",
+        "talk": "RO/en: Yes, I want to talk to someone"
+      }
+    }
+  },
+  "relationships": {
+    "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
+    "done": "RO/en: Done"
+  }
+}

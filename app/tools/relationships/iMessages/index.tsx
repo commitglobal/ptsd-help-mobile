@@ -1,6 +1,6 @@
 import Button from '@/components/Button';
+import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
-import { MessageCard } from '@/components/MessageCard';
 import ScreenWithParallaxImageHeader from '@/components/ScreenWithParallaxImageHeader';
 import { Typography } from '@/components/Typography';
 import { useRouter } from 'expo-router';
@@ -8,10 +8,10 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { XStack } from 'tamagui';
+import { Separator, XStack } from 'tamagui';
 
 export default function iMessages() {
-  const { t } = useTranslation('i-messages');
+  const { t } = useTranslation('tools');
   const insets = useSafeAreaInsets();
   const router = useRouter();
 
@@ -61,26 +61,35 @@ export default function iMessages() {
           <Image source={require('@/assets/images/old-couple.png')} style={{ width: '100%', height: 250 }} />
         }
         headerProps={{
-          title: t('title'),
+          title: t('relationships.tools.i-messages.title'),
           iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}>
         {!messages || messages.length === 0 ? (
-          <Typography>{t('text')}</Typography>
+          <Typography>{t('i-messages.text')}</Typography>
         ) : (
           <>
-            <Typography>{t('find-time')}</Typography>
+            <Typography>{t('relationships.tools.i-messages.find-time')}</Typography>
             {messages.map((message) => (
-              <MessageCard
+              <Card
                 key={message.id}
-                message={message}
+                padding='$md'
+                gap={4}
                 onPress={() =>
                   router.push({
                     pathname: `/tools/relationships/iMessages/edit-message`,
                     params: { messageId: message.id },
                   })
-                }
-              />
+                }>
+                <Typography>{t('relationships.tools.i-messages.when')}</Typography>
+                <Typography preset='helper'>{message.annoyance}</Typography>
+                <Separator marginVertical={4} />
+                <Typography>{t('relationships.tools.i-messages.feel')}</Typography>
+                <Typography preset='helper'>{message.message}</Typography>
+                <Separator marginVertical={4} />
+                <Typography>{t('relationships.tools.i-messages.because')}</Typography>
+                <Typography preset='helper'>{message.because}</Typography>
+              </Card>
             ))}
           </>
         )}
