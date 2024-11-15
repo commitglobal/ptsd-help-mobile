@@ -7,7 +7,7 @@ import { FlashList } from '@shopify/flash-list';
 import { Spinner, YStack } from 'tamagui';
 import ScreenTabs from '@/components/ScreenTabs';
 import { symptoms } from '@/mocks/mocks';
-import { useLocalSearchParams, useRouter } from 'expo-router';
+import { router, useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { Tool, TOOLS_CONFIG } from '@/_config/tools.config';
 
@@ -119,10 +119,13 @@ export default function Manage() {
     const ListComponent = Lists[selectedTabId];
     return (
       <ListComponent
-        data={Object.values(TOOLS_CONFIG).map((tool) => ({
-          ...tool,
-          label: t(tool.label, { ns: 'tools' }),
-        }))}
+        data={Object.values(TOOLS_CONFIG).map((tool) => {
+          console.log(tool);
+          return {
+            ...tool,
+            label: t(tool.label, { ns: 'tools' }),
+          };
+        })}
         onToolSelected={(tool) => {
           startTool(tool, `/manage?tabId=tools`);
         }}

@@ -46,4 +46,27 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
       },
     },
   },
+  AMBIENT_SOUNDS: {
+    label: 'list.ambient-sounds',
+  },
+  MINDFULNESS: {
+    label: 'list.mindfulness',
+    subcategories: {
+      CONSCIOUS_BREATHING: {
+        label: 'list.conscious-breathing',
+      },
+      MINDFUL_WALKING: {
+        label: 'list.mindful-walking',
+      },
+      EMOTIONAL_DISCOMFORT: {
+        label: 'list.emotional-discomfort',
+      },
+      SENSE_AWARENESS: {
+        label: 'list.sense-awareness',
+      },
+      LOVING_KINDNESS: {
+        label: 'list.loving-kindness',
+      },
+    },
+  },
 };

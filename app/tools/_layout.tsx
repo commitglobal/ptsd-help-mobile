@@ -17,8 +17,9 @@ export default function ToolsLayout() {
       <Stack.Screen name='distress-meter/post' options={{ headerShown: false }} />
 
       <Stack.Screen name='relationships' options={{ headerShown: false }} />
+      <Stack.Screen name='mindfulness' options={{ headerShown: false }} />
+
       <Stack.Screen name='ambient-sounds/index' options={{ headerShown: false }} />
-      <Stack.Screen name='mindfulness/index' options={{ headerShown: false }} />
     </Stack>
   );
 }

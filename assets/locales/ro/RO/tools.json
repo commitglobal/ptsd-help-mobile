@@ -3,7 +3,14 @@
     "relationships": "RO/ro: Relationships",
     "reconnect-with-partner": "RO/ro: Reconnect with your partner",
     "positive-communication": "RO/ro: Positive Communication",
-    "i-messages": "RO/ro: I Messages"
+    "i-messages": "RO/ro: I Messages",
+    "ambient-sounds": "RO/ro: Ambient Sounds",
+    "mindfulness": "RO/ro: Mindfulness",
+    "conscious-breathing": "RO/ro: Conscious Breathing",
+    "mindful-walking": "RO/ro: Mindful Walking",
+    "emotional-discomfort": "RO/ro: Emotional Discomfort",
+    "sense-awareness": "RO/ro: Sense Awareness",
+    "loving-kindness": "RO/ro: Loving Kindness"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
