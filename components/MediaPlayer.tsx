@@ -1,7 +1,6 @@
 import React from "react";
-import { Dimensions, StyleSheet, TouchableHighlight, Image } from "react-native";
+import { Dimensions, StyleSheet, Text, TouchableHighlight, Image } from "react-native";
 import { View } from "tamagui";
-import { Text } from "react-native";
 import {
     Audio,
     AVPlaybackStatus,
@@ -118,7 +117,6 @@ interface PlaybackStatus {
     isLooping?: boolean;
     shouldCorrectPitch?: boolean;
     didJustFinish?: boolean;
-    error?: string;
 }
 
 interface VideoReadyForDisplayEvent {
@@ -164,6 +162,8 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
     private playbackInstance: any;
     private _video: any;
 
+    private isUnmounting: boolean = false;
+
     constructor(props: MediaPlayerProps) {
         super(props);
 
@@ -208,13 +208,29 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         });
     }
 
-    componentDidUpdate(prevProps: Readonly<MediaPlayerProps>, prevState: Readonly<AppState>, snapshot?: any): void {
+    componentDidUpdate(prevProps: Readonly<MediaPlayerProps>, _prevState: Readonly<AppState>, _snapshot?: any): void {
         if (prevProps.mediaURI !== this.props.mediaURI) {
             this._loadNewPlaybackInstance(true);
         }
     }
 
+    async componentWillUnmount() {
+        this.isUnmounting = true;
+        if (this.playbackInstance) {
+            await Promise.all([
+                this.playbackInstance.setStatusAsync({ shouldPlay: false }),
+                this.playbackInstance.stopAsync(),
+                this.playbackInstance.unloadAsync()
+            ]);
+            this.playbackInstance = null;
+        }
+
+    }
+
     async _loadNewPlaybackInstance(playing: boolean) {
+        if (this.isUnmounting) {
+            return;
+        }
         this.setState({ loadingError: false });
         if (this.playbackInstance != null) {
             await this.playbackInstance.unloadAsync();
@@ -242,7 +258,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
                     this._onPlaybackStatusUpdate
                 );
                 this.playbackInstance = sound;
-            } catch (error) {
+            } catch {
                 this.setState({ loadingError: true });
             }
         }
@@ -250,9 +266,11 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         this._updateScreenForLoading(false);
     }
 
+
+
     _mountVideo = (component: any) => {
         this._video = component;
-        this._loadNewPlaybackInstance(false);
+        this._loadNewPlaybackInstance(true);
     };
 
     _updateScreenForLoading(isLoading: boolean) {
@@ -357,7 +375,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         }
     };
 
-    _onSeekSliderValueChange = (value: number) => {
+    _onSeekSliderValueChange = (_value: number) => {
         if (this.playbackInstance != null && !this.isSeeking) {
             this.isSeeking = true;
             this.shouldPlayAtEndOfSeek = this.state.shouldPlay;

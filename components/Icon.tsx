@@ -32,6 +32,7 @@ import Bike from "../assets/icons/bike.svg";
 import Clock from "../assets/icons/clock.svg";
 import Clipboard from "../assets/icons/clipboard.svg";
 import Calendar from "../assets/icons/calendar.svg";
+import Check from "../assets/icons/check.svg";
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -69,6 +70,7 @@ const iconRegistry: IconRegistry = {
   clock: Clock,
   clipboard: Clipboard,
   calendar: Calendar,
+  check: Check,
 };
 
 interface IconProps extends XStackProps {
