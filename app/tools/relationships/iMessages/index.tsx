@@ -1,3 +1,5 @@
+import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
+import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import Button from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
@@ -54,22 +56,23 @@ export default function iMessages() {
     },
   ];
 
+  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
+  const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.I_MESSAGES;
+
   return (
     <>
       <ScreenWithParallaxImageHeader
-        headerImage={
-          <Image source={require('@/assets/images/old-couple.png')} style={{ width: '100%', height: 250 }} />
-        }
+        headerImage={<Image source={mediaMapper.headerImageURI} style={{ width: '100%', height: 250 }} />}
         headerProps={{
-          title: t('relationships.tools.i-messages.title'),
+          title: t(translationsKeys.title),
           iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}>
         {!messages || messages.length === 0 ? (
-          <Typography>{t('i-messages.text')}</Typography>
+          <Typography>{t(translationsKeys.text)}</Typography>
         ) : (
           <>
-            <Typography>{t('relationships.tools.i-messages.find-time')}</Typography>
+            <Typography>{t(translationsKeys.findTime)}</Typography>
             {messages.map((message) => (
               <Card
                 key={message.id}
@@ -81,13 +84,13 @@ export default function iMessages() {
                     params: { messageId: message.id },
                   })
                 }>
-                <Typography>{t('relationships.tools.i-messages.when')}</Typography>
+                <Typography>{t(translationsKeys.when)}</Typography>
                 <Typography preset='helper'>{message.annoyance}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t('relationships.tools.i-messages.feel')}</Typography>
+                <Typography>{t(translationsKeys.feel)}</Typography>
                 <Typography preset='helper'>{message.message}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t('relationships.tools.i-messages.because')}</Typography>
+                <Typography>{t(translationsKeys.because)}</Typography>
                 <Typography preset='helper'>{message.because}</Typography>
               </Card>
             ))}

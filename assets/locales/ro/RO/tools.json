@@ -35,6 +35,9 @@
             "placeholder": "RO/en: Because...",
             "example": "RO/en: Example: Because I am worried about the future"
           }
+        },
+        "edit": {
+          "title": "RO/en: Edit 'I' message"
         }
       },
       "reconnect-with-partner": {
@@ -69,6 +72,14 @@
           }
         }
       }
+    },
+    "common": {
+      "start": "RO/ro: Start",
+      "next": "RO/ro: Next",
+      "previous": "RO/ro: Previous",
+      "finish": "RO/ro: Finish",
+      "save": "RO/ro: Save",
+      "cancel": "RO/ro: Cancel"
     }
   }
 }

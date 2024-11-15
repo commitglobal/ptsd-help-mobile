@@ -134,9 +134,5 @@
         "talk": "RO/en: Yes, I want to talk to someone"
       }
     }
-  },
-  "relationships": {
-    "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
-    "done": "RO/en: Done"
   }
 }

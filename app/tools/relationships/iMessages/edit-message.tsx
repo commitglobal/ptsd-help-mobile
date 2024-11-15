@@ -1,3 +1,4 @@
+import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import Button from '@/components/Button';
 import { Icon } from '@/components/Icon';
 import { Modal } from '@/components/Modal';
@@ -129,12 +130,14 @@ export default function Message() {
     }
   };
 
+  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
+
   return (
     <>
       <Stack.Screen options={{ headerShown: false, gestureEnabled: false, fullScreenGestureEnabled: false }} />
       <Screen
         headerProps={{
-          title: t('relationships.tools.i-messages.edit.title'),
+          title: t(translationsKeys.edit.title),
           iconLeft: <Icon icon='x' color='white' width={24} height={24} />,
           onLeftPress: handleGoBack,
           iconRight: <Typography color='white'>{t('common.save', { ns: 'translation' })}</Typography>,
@@ -166,19 +169,17 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.annoyance.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.annoyance.placeholder')}
+                label={t(translationsKeys.newMessage.annoyance.label)}
+                placeholder={t(translationsKeys.newMessage.annoyance.placeholder)}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.annoyance.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.annoyance.example'))
-                }
+                infoMessage={t(translationsKeys.newMessage.annoyance.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.newMessage.annoyance.example))}
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t('relationships.tools.i-messages.new-message.declaration')}</Typography>
+          <Typography>{t(translationsKeys.newMessage.declaration)}</Typography>
           <Controller
             control={control}
             name='message'
@@ -192,14 +193,12 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.i-feel.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.i-feel.placeholder')}
+                label={t(translationsKeys.newMessage.iFeel.label)}
+                placeholder={t(translationsKeys.newMessage.iFeel.placeholder)}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.i-feel.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.i-feel.example'))
-                }
+                infoMessage={t(translationsKeys.newMessage.iFeel.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.newMessage.iFeel.example))}
                 errorMessage={errors.message?.message as string}
               />
             )}
@@ -217,14 +216,12 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.because-input.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.because-input.placeholder')}
+                label={t(translationsKeys.newMessage.becauseInput.label)}
+                placeholder={t(translationsKeys.newMessage.becauseInput.placeholder)}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.because-input.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.because-input.example'))
-                }
+                infoMessage={t(translationsKeys.newMessage.becauseInput.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.newMessage.becauseInput.example))}
                 errorMessage={errors.because?.message as string}
               />
             )}

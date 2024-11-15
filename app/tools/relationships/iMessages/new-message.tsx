@@ -10,6 +10,7 @@ import { ScrollView, YStack } from 'tamagui';
 import { Controller, useForm } from 'react-hook-form';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
+import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
@@ -47,12 +48,14 @@ export default function NewMessage() {
     console.log('data 🩷: ', data);
   };
 
+  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage;
+
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
-          title: t('relationships.tools.i-messages.new-message.title'),
+          title: t(translationsKeys.title),
           iconRight: <Typography color='white'>{t('general.done', { ns: 'translation' })}</Typography>,
           onRightPress: handleSubmit(onSubmit),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='white' />,
@@ -84,19 +87,17 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.annoyance.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.annoyance.placeholder')}
+                label={t(translationsKeys.annoyance.label)}
+                placeholder={t(translationsKeys.annoyance.placeholder)}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.annoyance.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.annoyance.example'))
-                }
+                infoMessage={t(translationsKeys.annoyance.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.annoyance.example))}
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t('relationships.tools.i-messages.new-message.declaration')}</Typography>
+          <Typography>{t(translationsKeys.declaration)}</Typography>
           <Controller
             control={control}
             name='feel'
@@ -110,14 +111,12 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.i-feel.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.i-feel.placeholder')}
+                label={t(translationsKeys.iFeel.label)}
+                placeholder={t(translationsKeys.iFeel.placeholder)}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.i-feel.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.i-feel.example'))
-                }
+                infoMessage={t(translationsKeys.iFeel.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.iFeel.example))}
                 errorMessage={errors.feel?.message as string}
               />
             )}
@@ -135,14 +134,12 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t('relationships.tools.i-messages.new-message.because-input.label')}
-                placeholder={t('relationships.tools.i-messages.new-message.because-input.placeholder')}
+                label={t(translationsKeys.becauseInput.label)}
+                placeholder={t(translationsKeys.becauseInput.placeholder)}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t('relationships.tools.i-messages.new-message.because-input.example')}
-                onInfoMessagePress={() =>
-                  handleInfoModalOpen(t('relationships.tools.i-messages.new-message.because-input.example'))
-                }
+                infoMessage={t(translationsKeys.becauseInput.example)}
+                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.becauseInput.example))}
                 errorMessage={errors.because?.message as string}
               />
             )}

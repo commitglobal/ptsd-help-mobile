@@ -8,14 +8,15 @@ import { Spinner, YStack } from 'tamagui';
 import ScreenTabs from '@/components/ScreenTabs';
 import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
-import { Tool, TOOLS_REGISTRY_MOCK } from '@/mocks/tools';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
+import { Tool, TOOLS_CONFIG } from '@/_config/tools.config';
 
 type SymptomListProps = {
   onSymptomSelected: (symptom: unknown) => void;
 };
 
 type ToolListProps = {
+  data: Tool[];
   onToolSelected: (tool: Tool) => void;
 };
 
@@ -34,11 +35,11 @@ const Lists = {
     );
   },
 
-  tools: ({ onToolSelected }: ToolListProps) => {
+  tools: ({ data, onToolSelected }: ToolListProps) => {
     return (
       <FlashList
         bounces={false}
-        data={Object.values(TOOLS_REGISTRY_MOCK)}
+        data={data}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
@@ -48,11 +49,11 @@ const Lists = {
     );
   },
 
-  favorites: ({ onToolSelected }: ToolListProps) => {
+  favorites: ({ data, onToolSelected }: ToolListProps) => {
     return (
       <FlashList
         bounces={false}
-        data={Object.values(TOOLS_REGISTRY_MOCK)}
+        data={data}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
@@ -101,9 +102,9 @@ export default function Manage() {
       return (
         <ListComponent
           onSymptomSelected={(_symptom) => {
-            const allTools = Object.values(TOOLS_REGISTRY_MOCK).flatMap((item) =>
+            const allTools = Object.values(TOOLS_CONFIG).flatMap((item) =>
               item.subcategories
-                ? item.subcategories.filter((sub) => sub.type === 'tool')
+                ? Object.values(item.subcategories).filter((sub) => sub.type === 'tool')
                 : item.type === 'tool'
                   ? [item]
                   : []
@@ -118,6 +119,10 @@ export default function Manage() {
     const ListComponent = Lists[selectedTabId];
     return (
       <ListComponent
+        data={Object.values(TOOLS_CONFIG).map((tool) => ({
+          ...tool,
+          label: t(tool.label, { ns: 'tools' }),
+        }))}
         onToolSelected={(tool) => {
           startTool(tool, `/manage?tabId=tools`);
         }}

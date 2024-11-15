@@ -1,4 +1,10 @@
 {
+  "list": {
+    "relationships": "RO/ro: Relationships",
+    "reconnect-with-partner": "RO/ro: Reconnect with your partner",
+    "positive-communication": "RO/ro: Positive Communication",
+    "i-messages": "RO/ro: I Messages"
+  },
   "relationships": {
     "title": "RO/ro: Relationships",
     "description": "RO/ro: Tools to help improve your relationships with loved ones",
@@ -29,6 +35,9 @@
             "placeholder": "RO/en: Because...",
             "example": "RO/en: Example: Because I am worried about the future"
           }
+        },
+        "edit": {
+          "title": "RO/en: Edit 'I' message"
         }
       },
       "reconnect-with-partner": {
