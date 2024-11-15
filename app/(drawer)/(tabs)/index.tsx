@@ -79,12 +79,12 @@ export default function HomeScreen() {
 
         <XStack marginHorizontal={-32}>
           {/* //todo: on press */}
-          <CircleHorizontalScrollView items={feelings} onItemPress={() => {}} />
+          <CircleHorizontalScrollView items={feelings} onItemPress={() => { }} />
         </XStack>
 
         {/* monthly evaluation */}
         {/* //todo: on press */}
-        <MonthlyEvaluationCard onPress={() => {}} />
+        <MonthlyEvaluationCard onPress={() => { }} />
 
         {/* learn about ptsd */}
         <XStack marginTop='$md'>
@@ -105,7 +105,7 @@ export default function HomeScreen() {
           <CircleHorizontalScrollView
             items={favoriteInstruments}
             // todo: on press
-            onItemPress={() => {}}
+            onItemPress={() => { }}
           />
         </XStack>
 
