@@ -67,7 +67,7 @@ const DistressMeterPre = () => {
           <DistressMeterComponent stressValue={stressValue} setStressValue={setStressValue} />
         </ScrollView>
 
-        <YStack paddingHorizontal='$md' paddingTop={insets.top + 16} gap='$xs' paddingBottom='$md'>
+        <YStack paddingHorizontal='$md' paddingBottom={insets.bottom + 16} gap='$xs'>
           <Button onPress={handleMainAction}>{t('actions.start')}</Button>
           <Button preset='secondary' onPress={handleSecondaryAction}>
             {t('actions.skip')}

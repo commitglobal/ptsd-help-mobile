@@ -1,38 +1,39 @@
-import * as React from "react";
-import { styled, XStack, XStackProps } from "tamagui";
-import { SvgProps } from "react-native-svg";
-import Puzzle from "../assets/icons/tabs/puzzle.svg";
-import Chart from "../assets/icons/tabs/chart.svg";
-import ChevronLeft from "../assets/icons/chevron-left.svg";
-import ChevronRight from "../assets/icons/chevron-right.svg";
-import Heart from "../assets/icons/heart.svg";
-import Screen from "../assets/icons/screen.svg";
-import Plus from "../assets/icons/plus.svg";
-import Minus from "../assets/icons/minus.svg";
-import MenuAlt2 from "../assets/icons/menu-alt-2.svg";
-import X from "../assets/icons/x.svg";
-import Settings from "../assets/icons/settings.svg";
-import User from "../assets/icons/user.svg";
-import House from "../assets/icons/tabs/house.svg";
-import OpenBook from "../assets/icons/tabs/book-open.svg";
-import SolidHeart from "../assets/icons/tabs/solid-heart.svg";
-import Info from "../assets/icons/info.svg";
-import ArrowLeft from "../assets/icons/arrow-left.svg";
-import ArrowRight from "../assets/icons/arrow-right.svg";
-import ArrowUpOnSquare from "../assets/icons/arrow-up-on-square.svg";
-import Lifeboat from "../assets/icons/lifeboat.svg";
-import Angry from "../assets/icons/angry.svg";
-import CircleSlash from "../assets/icons/circle-slash.svg";
-import CloudDrizzle from "../assets/icons/cloud-drizzle.svg";
-import Unplug from "../assets/icons/unplug.svg";
-import UsersRound from "../assets/icons/users-round.svg";
-import Zap from "../assets/icons/zap.svg";
-import ChatBubble from "../assets/icons/chat-bubble.svg";
-import Bike from "../assets/icons/bike.svg";
-import Clock from "../assets/icons/clock.svg";
-import Clipboard from "../assets/icons/clipboard.svg";
-import Calendar from "../assets/icons/calendar.svg";
-import Check from "../assets/icons/check.svg";
+import * as React from 'react';
+import { styled, XStack, XStackProps } from 'tamagui';
+import { SvgProps } from 'react-native-svg';
+import Puzzle from '../assets/icons/tabs/puzzle.svg';
+import Chart from '../assets/icons/tabs/chart.svg';
+import ChevronLeft from '../assets/icons/chevron-left.svg';
+import ChevronRight from '../assets/icons/chevron-right.svg';
+import Heart from '../assets/icons/heart.svg';
+import Screen from '../assets/icons/screen.svg';
+import Plus from '../assets/icons/plus.svg';
+import Minus from '../assets/icons/minus.svg';
+import MenuAlt2 from '../assets/icons/menu-alt-2.svg';
+import X from '../assets/icons/x.svg';
+import Settings from '../assets/icons/settings.svg';
+import User from '../assets/icons/user.svg';
+import House from '../assets/icons/tabs/house.svg';
+import OpenBook from '../assets/icons/tabs/book-open.svg';
+import SolidHeart from '../assets/icons/tabs/solid-heart.svg';
+import Info from '../assets/icons/info.svg';
+import ArrowLeft from '../assets/icons/arrow-left.svg';
+import ArrowRight from '../assets/icons/arrow-right.svg';
+import ArrowUpOnSquare from '../assets/icons/arrow-up-on-square.svg';
+import Lifeboat from '../assets/icons/lifeboat.svg';
+import Angry from '../assets/icons/angry.svg';
+import CircleSlash from '../assets/icons/circle-slash.svg';
+import CloudDrizzle from '../assets/icons/cloud-drizzle.svg';
+import Unplug from '../assets/icons/unplug.svg';
+import UsersRound from '../assets/icons/users-round.svg';
+import Zap from '../assets/icons/zap.svg';
+import ChatBubble from '../assets/icons/chat-bubble.svg';
+import Bike from '../assets/icons/bike.svg';
+import Clock from '../assets/icons/clock.svg';
+import Clipboard from '../assets/icons/clipboard.svg';
+import Calendar from '../assets/icons/calendar.svg';
+import Check from '../assets/icons/check.svg';
+import MusicalNote from '../assets/icons/musical-note.svg';
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -71,6 +72,7 @@ const iconRegistry: IconRegistry = {
   clipboard: Clipboard,
   calendar: Calendar,
   check: Check,
+  musicalNote: MusicalNote,
 };
 
 interface IconProps extends XStackProps {
@@ -81,7 +83,7 @@ interface IconProps extends XStackProps {
 }
 
 const IconComponent = React.forwardRef((props: IconProps, ref: React.ForwardedRef<any>) => {
-  const { icon, color = "black", width, height, ...wrapperProps } = props;
+  const { icon, color = 'black', width, height, ...wrapperProps } = props;
 
   const IconSvg = iconRegistry[icon];
 
@@ -91,7 +93,7 @@ const IconComponent = React.forwardRef((props: IconProps, ref: React.ForwardedRe
   }
 
   return (
-    <XStack ref={ref} justifyContent="center" alignItems="center" {...wrapperProps}>
+    <XStack ref={ref} justifyContent='center' alignItems='center' {...wrapperProps}>
       <IconSvg color={color} width={width} height={height} />
     </XStack>
   );
@@ -102,7 +104,7 @@ export const Icon = styled(
   {},
   {
     accept: {
-      color: "color",
+      color: 'color',
     },
-  },
+  }
 );

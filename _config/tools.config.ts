@@ -1,4 +1,3 @@
-import i18n from '@/common/config/i18n';
 import { Href } from 'expo-router';
 import { TOOLS_TRANSLATIONS_CONFIG } from './translations.config';
 
