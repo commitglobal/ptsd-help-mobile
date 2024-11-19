@@ -11,6 +11,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
+import repository, { Message } from '@/db/repository';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
@@ -44,8 +45,13 @@ export default function NewMessage() {
     setInfoMessage('');
   };
 
-  const onSubmit = (data: any) => {
-    console.log('data 🩷: ', data);
+  const onSubmit = async (data: any) => {
+    try {
+      await repository.createMessage(data as Message);
+      router.back();
+    } catch (error) {
+      console.error('Error inserting message:', error);
+    }
   };
 
   const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage;
@@ -100,7 +106,7 @@ export default function NewMessage() {
           <Typography>{t(translationsKeys.declaration)}</Typography>
           <Controller
             control={control}
-            name='feel'
+            name='message'
             rules={{
               required: {
                 value: true,

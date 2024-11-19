@@ -13,45 +13,8 @@ import { useTranslation } from 'react-i18next';
 import { BackHandler, Keyboard } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScrollView, XStack, YStack } from 'tamagui';
-
-const messages = [
-  {
-    id: '1',
-    annoyance: "Doesn't want to go to the movies",
-    message: 'sad',
-    because: 'I want to go to the movies',
-  },
-  {
-    id: '2',
-    annoyance: "Interrupts me when I'm speaking",
-    message: 'frustrated',
-    because: "I feel like my thoughts aren't being valued",
-  },
-  {
-    id: '3',
-    annoyance: 'Is always late to our meetings',
-    message: 'disrespected',
-    because: 'my time is important too',
-  },
-  {
-    id: '4',
-    annoyance: 'Makes plans without consulting me',
-    message: 'hurt',
-    because: 'I want to be included in decisions that affect us both',
-  },
-  {
-    id: '5',
-    annoyance: "Doesn't help with household chores",
-    message: 'overwhelmed',
-    because: 'I need support in maintaining our shared space',
-  },
-  {
-    id: '6',
-    annoyance: 'Spends too much time on their phone',
-    message: 'lonely',
-    because: 'I want to connect and spend quality time together',
-  },
-];
+import { useMessage } from '@/services/messages.service';
+import repository from '@/db/repository';
 
 export default function Message() {
   const { t } = useTranslation('tools');
@@ -69,20 +32,16 @@ export default function Message() {
   const [deleteMessageModalOpen, setDeleteMessageModalOpen] = useState(false);
 
   const { messageId } = useLocalSearchParams();
-  // todo: replace this with query
-  const message = messages.find((message) => message.id === messageId);
+
+  // TODO: handle error and loading
+  const { data: message } = useMessage(Number(messageId));
 
   const {
     control,
     handleSubmit,
+    reset,
     formState: { errors, isDirty },
-  } = useForm({
-    defaultValues: {
-      annoyance: message?.annoyance,
-      message: message?.message,
-      because: message?.because,
-    },
-  });
+  } = useForm();
 
   useEffect(() => {
     const backHandler = BackHandler.addEventListener('hardwareBackPress', () => {
@@ -92,6 +51,16 @@ export default function Message() {
 
     return () => backHandler.remove();
   }, [isDirty]);
+
+  useEffect(() => {
+    if (message) {
+      reset({
+        annoyance: message.annoyance,
+        message: message.message,
+        because: message.because,
+      });
+    }
+  }, [message]);
 
   const handleFocus = (ref: React.RefObject<any>) => {
     if (ref.current) {
@@ -107,18 +76,27 @@ export default function Message() {
     setInfoMessage('');
   };
 
-  const onSubmit = (data: any) => {
-    console.log('data for edit 🩷: ', data);
+  const onSubmit = async (data: any) => {
+    try {
+      await repository.updateMessage(Number(messageId), data);
+      router.back();
+    } catch (error) {
+      console.error('Error updating message', error);
+    }
   };
 
   const handleOpenDeleteMessageModal = () => {
     setDeleteMessageModalOpen(true);
   };
 
-  const handleDeleteMessage = () => {
+  const handleDeleteMessage = async () => {
     setDeleteMessageModalOpen(false);
-    console.log('delete message 🩷');
-    router.back();
+    try {
+      await repository.deleteMessage(Number(messageId));
+      router.back();
+    } catch (error) {
+      console.error('Error deleting message', error);
+    }
   };
 
   const handleGoBack = () => {

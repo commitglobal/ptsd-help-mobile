@@ -5,38 +5,6 @@ import { Audio, AVPlaybackStatus, InterruptionModeAndroid, InterruptionModeIOS, 
 import Slider from '@react-native-community/slider';
 import { Asset } from 'expo-asset';
 import { Typography } from './Typography';
-export const PLAYLIST = [
-  {
-    name: 'Dragostea',
-    uri: 'https://d2c5tif9s6pex6.cloudfront.net/o5jeis%2Ffile%2F7ce1f6683e48fa92fc0cc410a24fe322_c769e1e2057ef81f8bfbfd3652cb1e60.mp3?response-content-disposition=inline%3Bfilename%3D%227ce1f6683e48fa92fc0cc410a24fe322_c769e1e2057ef81f8bfbfd3652cb1e60.mp3%22%3B&response-content-type=audio%2Fmpeg&Expires=1731356418&Signature=YfSJyT7CNOgRjS8Sie0k1-mow8-Ft-MaulxjKEcy9ovDb~-n9yRedwFiTD-iSLlEuvoN8Vz67-9OxhJjxIi-rzphbl9ay8FPgSI-O9fnmKVe3vKccw1qCoI6M8oNiUm9cAYcrFiMII5cHMi~SskEDDakihMoyjVtuEwFX66TdZpSk6G0hQn21i-KvHknyk9SeRysVWyKJhiHHCxX7In~mn88I0GuBOa6lPDBkexLrTieKgwwz74V3FNvazgaqTs9S6hsdAh-s1-KyYOU9noUowlfJHq~pmaOIYzb-xkYd5B6edWMuKNaY9pVQXKh4GRJ8~JAPd0wt20GTJlvtUInCw__&Key-Pair-Id=APKAJT5WQLLEOADKLHBQ',
-    isVideo: false,
-  },
-  {
-    name: 'Comfort Fit - “Sorry”',
-    uri: 'https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Comfort_Fit_-_03_-_Sorry.mp3',
-    isVideo: false,
-  },
-  {
-    name: 'Big Buck Bunny',
-    uri: 'https://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4',
-    isVideo: true,
-  },
-  {
-    name: 'Mildred Bailey – “All Of Me”',
-    uri: 'https://ia800304.us.archive.org/34/items/PaulWhitemanwithMildredBailey/PaulWhitemanwithMildredBailey-AllofMe.mp3',
-    isVideo: false,
-  },
-  {
-    name: "Popeye - I don't scare",
-    uri: 'https://ia800501.us.archive.org/11/items/popeye_i_dont_scare/popeye_i_dont_scare_512kb.mp4',
-    isVideo: true,
-  },
-  {
-    name: 'Podington Bear - “Rubber Robot”',
-    uri: 'https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Podington_Bear_-_Rubber_Robot.mp3',
-    isVideo: false,
-  },
-];
 
 class Icon {
   module: any;
@@ -129,6 +97,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
   private shouldPlayAtEndOfSeek: boolean;
   private playbackInstance: any;
   private _video: any;
+  private loadingOperation: number = 0;
 
   private isUnmounting: boolean = false;
 
@@ -185,11 +154,19 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
   async componentWillUnmount() {
     this.isUnmounting = true;
     if (this.playbackInstance) {
-      await Promise.all([
-        this.playbackInstance.setStatusAsync({ shouldPlay: false }),
-        this.playbackInstance.stopAsync(),
-        this.playbackInstance.unloadAsync(),
-      ]);
+      await this._unloadPlaybackInstance();
+    }
+  }
+
+  async _unloadPlaybackInstance() {
+    if (this.playbackInstance) {
+      try {
+        await this.playbackInstance.setStatusAsync({ shouldPlay: false });
+        await this.playbackInstance.stopAsync();
+        await this.playbackInstance.unloadAsync();
+      } catch (error) {
+        console.log('Error unloading playback instance:', error);
+      }
       this.playbackInstance = null;
     }
   }
@@ -198,10 +175,17 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
     if (this.isUnmounting) {
       return;
     }
+
+    const currentOperation = ++this.loadingOperation;
+
     this.setState({ loadingError: false });
-    if (this.playbackInstance != null) {
-      await this.playbackInstance.unloadAsync();
-      this.playbackInstance = null;
+
+    // Unload previous instance if it exists
+    await this._unloadPlaybackInstance();
+
+    // If another loading operation was started, abort this one
+    if (currentOperation !== this.loadingOperation) {
+      return;
     }
 
     const source = { uri: this.props.mediaURI };
@@ -214,19 +198,34 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
       isLooping: this.state.loopingType === LOOPING_TYPE_ONE,
     };
 
-    if (this.props.isVideo) {
-      await this._video.loadAsync(source, initialStatus);
-      this.playbackInstance = this._video;
-    } else {
-      try {
+    try {
+      if (this.props.isVideo) {
+        await this._video.loadAsync(source, initialStatus);
+        // Check if this is still the current operation
+        if (currentOperation === this.loadingOperation && !this.isUnmounting) {
+          this.playbackInstance = this._video;
+        } else {
+          await this._video.unloadAsync();
+          return;
+        }
+      } else {
         const { sound } = await Audio.Sound.createAsync(source, initialStatus, this._onPlaybackStatusUpdate);
-        this.playbackInstance = sound;
-      } catch {
+        // Check if this is still the current operation
+        if (currentOperation === this.loadingOperation && !this.isUnmounting) {
+          this.playbackInstance = sound;
+        } else {
+          await sound.unloadAsync();
+          return;
+        }
+      }
+
+      this._updateScreenForLoading(false);
+    } catch (error) {
+      console.log('Error loading playback instance:', error);
+      if (currentOperation === this.loadingOperation) {
         this.setState({ loadingError: true });
       }
     }
-
-    this._updateScreenForLoading(false);
   }
 
   _mountVideo = (component: any) => {
@@ -257,7 +256,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
     if (status.isLoaded) {
       this.setState({
         playbackInstancePosition: status.positionMillis,
-        playbackInstanceDuration: status.durationMillis || -1, // TODO: watch again to this
+        playbackInstanceDuration: status.durationMillis || -1,
         shouldPlay: status.shouldPlay,
         isPlaying: status.isPlaying,
         isBuffering: status.isBuffering,
@@ -268,7 +267,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
         shouldCorrectPitch: status.shouldCorrectPitch,
       });
       if (status.didJustFinish && !status.isLooping) {
-        this.playbackInstance.stopAsync();
+        this.playbackInstance?.stopAsync();
       }
     } else {
       if (status.error) {
