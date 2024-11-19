@@ -64,7 +64,7 @@ export default function NewMessage() {
           title: t(translationsKeys.title),
           iconRight: <Typography color='white'>{t('general.done', { ns: 'translation' })}</Typography>,
           onRightPress: handleSubmit(onSubmit),
-          iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='white' />,
+          iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: router.back,
         }}
         contentContainerStyle={{

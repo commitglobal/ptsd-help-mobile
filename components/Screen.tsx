@@ -22,9 +22,16 @@ export interface ScreenProps extends YStackProps {
   headerProps?: HeaderProps;
   contentContainerStyle?: YStackProps;
   footerProps?: FooterProps;
+  footerContainerStyle?: YStackProps;
 }
 
-export const Screen = ({ children, headerProps, contentContainerStyle, footerProps }: ScreenProps) => {
+export const Screen = ({
+  children,
+  headerProps,
+  contentContainerStyle,
+  footerProps,
+  footerContainerStyle,
+}: ScreenProps) => {
   const insets = useSafeAreaInsets();
   const isIos = useMemo(() => Platform.OS === 'ios', []);
 
@@ -55,7 +62,8 @@ export const Screen = ({ children, headerProps, contentContainerStyle, footerPro
               paddingBottom={insets.bottom + 16}
               paddingHorizontal='$md'
               gap='$xs'
-              backgroundColor={footerBackgroundColor}>
+              backgroundColor={footerBackgroundColor}
+              {...footerContainerStyle}>
               {hasSmallButtons && (
                 <XStack gap='$xs'>
                   {footerProps.onPrev && (

@@ -3,14 +3,14 @@ import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import Button from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
-import ScreenWithParallaxImageHeader from '@/components/ScreenWithParallaxImageHeader';
+import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
 import repository from '@/db/repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
-import { useRouter } from 'expo-router';
+import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Image } from 'react-native';
+
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Separator, XStack } from 'tamagui';
 
@@ -26,13 +26,15 @@ export default function iMessages() {
 
   return (
     <>
-      <ScreenWithParallaxImageHeader
-        headerImage={<Image source={mediaMapper.headerImageURI} style={{ width: '100%', height: 250 }} />}
+      <Stack.Screen options={{ headerShown: false }} />
+      <ScreenWithImageHeader
+        imageUrl={mediaMapper.headerImageURI}
         headerProps={{
           title: t(translationsKeys.title),
-          iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
+          iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
-        }}>
+        }}
+        contentContainerStyle={{ backgroundColor: 'white' }}>
         {!messages || messages.length === 0 ? (
           error ? (
             <Typography>{error.message}</Typography> // TODO: handle error differently
@@ -65,7 +67,7 @@ export default function iMessages() {
             ))}
           </>
         )}
-      </ScreenWithParallaxImageHeader>
+      </ScreenWithImageHeader>
 
       <XStack position='absolute' bottom={insets.bottom + 16} right='$lg'>
         <Button
