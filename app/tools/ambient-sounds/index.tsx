@@ -69,10 +69,11 @@ export default function AmbientSounds() {
     <Screen
       headerProps={{
         title: t(translationKeys.label, { ns: 'tools' }),
-        iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
+        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
-        onRightPress: () => finishTool(),
-        iconRight: <Icon icon='check' color='white' width={24} height={24} />,
+      }}
+      footerProps={{
+        onMainAction: () => finishTool(),
       }}>
       {/* TODO: add real audios */}
       <AudioPlaylistPlayer audios={PLAYLIST} />

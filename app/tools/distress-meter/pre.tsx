@@ -7,14 +7,11 @@ import { Href, router } from 'expo-router';
 import { ScrollView, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';
-import Button from '@/components/Button';
 import { CrisisSheet } from '@/components/CrisisSheet';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 const DistressMeterPre = () => {
   console.log('🚀 DistressMeterPre');
 
-  const insets = useSafeAreaInsets();
   const { t } = useTranslation('distress-meter');
 
   const { setInitialDistressLevel, selectedTool } = useToolManagerContext();
@@ -46,9 +43,16 @@ const DistressMeterPre = () => {
       <Screen
         headerProps={{
           title: t('header-title'),
-          iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
+          iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
-          iconRight: <Icon icon='info' color='white' width={24} height={24} />,
+          iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+        }}
+        contentContainerStyle={{ backgroundColor: 'transparent' }}
+        footerProps={{
+          mainActionLabel: t('actions.start'),
+          onMainAction: () => handleMainAction(),
+          secondaryActionLabel: t('actions.skip'),
+          onSecondaryAction: () => handleSecondaryAction(),
         }}>
         <ScrollView
           contentContainerStyle={{ padding: 24, gap: 32, flexGrow: 1 }}
@@ -66,13 +70,6 @@ const DistressMeterPre = () => {
 
           <DistressMeterComponent stressValue={stressValue} setStressValue={setStressValue} />
         </ScrollView>
-
-        <YStack paddingHorizontal='$md' paddingBottom={insets.bottom + 16} gap='$xs'>
-          <Button onPress={handleMainAction}>{t('actions.start')}</Button>
-          <Button preset='secondary' onPress={handleSecondaryAction}>
-            {t('actions.skip')}
-          </Button>
-        </YStack>
       </Screen>
       {crisisSheetOpen && (
         <CrisisSheet

@@ -17,8 +17,8 @@ const RelationshipsIndex = () => {
     <Screen
       headerProps={{
         title: t(translationsKeys.label),
-        iconRight: <Icon icon='info' color='white' width={24} height={24} />,
-        iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
+        iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}>
       <SubcategoriesList

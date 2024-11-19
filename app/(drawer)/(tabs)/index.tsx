@@ -43,13 +43,10 @@ export default function HomeScreen() {
     <Screen
       headerProps={{
         title: t('general.ptsd-help'),
-        iconLeft: <Icon icon='menuAlt2' width={24} height={24} color='white' />,
+        iconLeft: <Icon icon='menuAlt2' width={24} height={24} color='$gray12' />,
         onLeftPress: () => navigation.dispatch(DrawerActions.openDrawer),
-        statusBarStyle: 'light',
       }}
-      contentContainerStyle={{
-        backgroundColor: 'white',
-      }}>
+      contentContainerStyle={{ backgroundColor: 'white' }}>
       <ScrollView
         contentContainerStyle={{ padding: '$lg', gap: '$md', flexGrow: 1 }}
         showsVerticalScrollIndicator={false}
@@ -79,12 +76,12 @@ export default function HomeScreen() {
 
         <XStack marginHorizontal={-32}>
           {/* //todo: on press */}
-          <CircleHorizontalScrollView items={feelings} onItemPress={() => { }} />
+          <CircleHorizontalScrollView items={feelings} onItemPress={() => {}} />
         </XStack>
 
         {/* monthly evaluation */}
         {/* //todo: on press */}
-        <MonthlyEvaluationCard onPress={() => { }} />
+        <MonthlyEvaluationCard onPress={() => {}} />
 
         {/* learn about ptsd */}
         <XStack marginTop='$md'>
@@ -105,7 +102,7 @@ export default function HomeScreen() {
           <CircleHorizontalScrollView
             items={favoriteInstruments}
             // todo: on press
-            onItemPress={() => { }}
+            onItemPress={() => {}}
           />
         </XStack>
 

@@ -88,5 +88,10 @@
       "save": "RO/ro: Save",
       "cancel": "RO/ro: Cancel"
     }
+  },
+  "mindfulness": {
+    "conscious-breathing": {
+      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes."
+    }
   }
 }

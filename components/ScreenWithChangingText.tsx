@@ -1,24 +1,18 @@
 import React, { useState } from 'react';
 import { Typography } from './Typography';
 import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithImageHeader';
-import { XStack } from 'tamagui';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import Button from './Button';
-import { Icon } from './Icon';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText: string;
   items: { id: string; title?: string; description?: string }[];
-  onExport?: () => void;
 }
 
 export const ScreenWithChangingText = ({
+  headerProps,
+  footerProps,
   staticText,
   items,
   imageUrl,
-  onBackButtonPress,
-  onExport,
-  onMainActionButtonPress,
 }: ScreenWithChangingTextProps) => {
   const [renderedItem, setRenderedItem] = useState(items[0]);
 
@@ -37,51 +31,12 @@ export const ScreenWithChangingText = ({
   return (
     <ScreenWithImageHeader
       imageUrl={imageUrl}
-      onBackButtonPress={onBackButtonPress}
-      onMainActionButtonPress={onMainActionButtonPress}
-      footerComponent={<Footer onExport={onExport} onPreviousItem={handlePreviousItem} onNextItem={handleNextItem} />}>
+      headerProps={headerProps}
+      footerProps={{ onPrev: handlePreviousItem, onNext: handleNextItem, ...footerProps }}>
       <Typography preset='helper'>{staticText}</Typography>
       {/* <Typography>{renderedItem.text}</Typography> */}
       {renderedItem.title && <Typography>{renderedItem.title}</Typography>}
       {renderedItem.description && <Typography>{renderedItem.description}</Typography>}
     </ScreenWithImageHeader>
-  );
-};
-
-const Footer = ({
-  onExport,
-  onPreviousItem,
-  onNextItem,
-}: {
-  onExport?: () => void;
-  onPreviousItem?: () => void;
-  onNextItem?: () => void;
-}) => {
-  const insets = useSafeAreaInsets();
-
-  return (
-    <XStack paddingBottom={insets.bottom + 16} paddingHorizontal='$md' justifyContent='center' gap='$md' flex={1}>
-      {onExport && (
-        <Button
-          preset='secondary'
-          onPress={onExport}
-          colorTheme='orange'
-          icon={<Icon icon='arrowUpOnSquare' width={24} height={24} color='$orange10' />}
-        />
-      )}
-
-      <Button
-        preset='secondary'
-        colorTheme='orange'
-        onPress={onPreviousItem}
-        icon={<Icon icon='arrowLeft' width={24} height={24} color='$orange10' />}
-      />
-      <Button
-        preset='secondary'
-        colorTheme='orange'
-        onPress={onNextItem}
-        icon={<Icon icon='arrowRight' width={24} height={24} color='$orange10' />}
-      />
-    </XStack>
   );
 };

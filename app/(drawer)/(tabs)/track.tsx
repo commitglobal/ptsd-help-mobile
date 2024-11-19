@@ -20,16 +20,15 @@ export default function Track() {
   return (
     <Screen
       headerProps={{
-        title: 'Screen with header',
-        titleProps: { color: 'white' },
-        statusBarStyle: 'light',
-        iconLeft: <Icon icon='menuAlt2' color='white' width={24} height={24} />,
+        title: 'Track',
+        iconLeft: <Icon icon='menuAlt2' width={24} height={24} color='$gray12' />,
         onLeftPress: () => navigation.dispatch(DrawerActions.openDrawer),
-        iconRight: <Icon icon='heart' color='white' width={24} height={24} />,
+        iconRight: <Icon icon='heart' width={24} height={24} color='$gray12' />,
         onRightPress: () => {
           console.log('right pressed');
         },
-      }}>
+      }}
+      contentContainerStyle={{ backgroundColor: 'transparent' }}>
       <FlashList
         bounces={false}
         data={items}

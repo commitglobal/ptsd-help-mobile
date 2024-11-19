@@ -54,6 +54,7 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
     subcategories: {
       CONSCIOUS_BREATHING: {
         label: 'list.conscious-breathing',
+        description: 'mindfulness.conscious-breathing.description',
       },
       MINDFUL_WALKING: {
         label: 'list.mindful-walking',

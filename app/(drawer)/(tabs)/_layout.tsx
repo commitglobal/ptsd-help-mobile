@@ -18,6 +18,7 @@ export default function TabLayout() {
         tabBarStyle: {
           height: insets.bottom + 56,
           backgroundColor: 'white',
+          borderTopWidth: 0,
         },
         tabBarItemStyle: {
           marginBottom: 4,

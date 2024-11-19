@@ -38,6 +38,21 @@ export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
 
   return (
     <YStack flex={1} backgroundColor='white'>
+      {!selectedAudio && (
+        <XStack
+          backgroundColor='$blue4'
+          alignItems='center'
+          gap='$md'
+          marginHorizontal='$md'
+          padding='$md'
+          borderRadius='$md'>
+          <Icon icon='musicalNote' width={24} height={24} color='$blue9' />
+          <Typography color='$blue10' fontWeight='bold'>
+            Select an audio to play
+          </Typography>
+        </XStack>
+      )}
+
       {/* flashlist */}
       <YStack flex={1}>
         <FlashList
@@ -58,23 +73,6 @@ export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
           estimatedItemSize={80}
         />
       </YStack>
-
-      {!selectedAudio && (
-        <XStack
-          backgroundColor='$blue4'
-          justifyContent='center'
-          alignItems='center'
-          gap='$md'
-          marginBottom={insets.bottom + 16}
-          marginHorizontal='$md'
-          padding='$md'
-          borderRadius='$md'>
-          <Icon icon='musicalNote' width={24} height={24} color='$blue9' />
-          <Typography color='$blue10' fontWeight='bold'>
-            Select an audio to play
-          </Typography>
-        </XStack>
-      )}
 
       {/* selected audio label */}
       {selectedAudio && (

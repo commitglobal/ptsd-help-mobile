@@ -148,10 +148,17 @@ export default function Manage() {
   return (
     <Screen
       headerProps={{
-        title: t('title'),
+        title: 'Manage',
         iconRight: <Icon icon='info' color='white' width={24} height={24} />,
-      }}>
-      <ScreenTabs tabs={tabs} selectedTabId={selectedTabId} setSelectedTabId={handleTabChange} />
+      }}
+      contentContainerStyle={{ backgroundColor: 'transparent' }}>
+      <ScreenTabs
+        tabs={tabs}
+        selectedTabId={selectedTabId}
+        setSelectedTabId={handleTabChange}
+        containerStyle={{ backgroundColor: 'white' }}
+      />
+
       {renderList()}
     </Screen>
   );
