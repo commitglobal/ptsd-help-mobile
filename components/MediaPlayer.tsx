@@ -202,7 +202,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
       if (this.props.isVideo) {
         await this._video.loadAsync(source, initialStatus);
         // Check if this is still the current operation
-        if (currentOperation === this.loadingOperation) {
+        if (currentOperation === this.loadingOperation && !this.isUnmounting) {
           this.playbackInstance = this._video;
         } else {
           await this._video.unloadAsync();
@@ -211,7 +211,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
       } else {
         const { sound } = await Audio.Sound.createAsync(source, initialStatus, this._onPlaybackStatusUpdate);
         // Check if this is still the current operation
-        if (currentOperation === this.loadingOperation) {
+        if (currentOperation === this.loadingOperation && !this.isUnmounting) {
           this.playbackInstance = sound;
         } else {
           await sound.unloadAsync();
