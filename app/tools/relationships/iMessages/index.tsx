@@ -5,6 +5,8 @@ import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import ScreenWithParallaxImageHeader from '@/components/ScreenWithParallaxImageHeader';
 import { Typography } from '@/components/Typography';
+import repository from '@/db/repository';
+import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
@@ -17,47 +19,10 @@ export default function iMessages() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
 
-  const messages = [
-    {
-      id: '1',
-      annoyance: "Doesn't want to go to the movies",
-      message: 'sad',
-      because: 'I want to go to the movies',
-    },
-    {
-      id: '2',
-      annoyance: "Interrupts me when I'm speaking",
-      message: 'frustrated',
-      because: "I feel like my thoughts aren't being valued",
-    },
-    {
-      id: '3',
-      annoyance: 'Is always late to our meetings',
-      message: 'disrespected',
-      because: 'my time is important too',
-    },
-    {
-      id: '4',
-      annoyance: 'Makes plans without consulting me',
-      message: 'hurt',
-      because: 'I want to be included in decisions that affect us both',
-    },
-    {
-      id: '5',
-      annoyance: "Doesn't help with household chores",
-      message: 'overwhelmed',
-      because: 'I need support in maintaining our shared space',
-    },
-    {
-      id: '6',
-      annoyance: 'Spends too much time on their phone',
-      message: 'lonely',
-      because: 'I want to connect and spend quality time together',
-    },
-  ];
-
   const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
   const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.I_MESSAGES;
+
+  const { data: messages, error } = useLiveQuery(repository.getMessages(), []);
 
   return (
     <>
@@ -69,7 +34,11 @@ export default function iMessages() {
           onLeftPress: () => router.back(),
         }}>
         {!messages || messages.length === 0 ? (
-          <Typography>{t(translationsKeys.text)}</Typography>
+          error ? (
+            <Typography>{error.message}</Typography> // TODO: handle error differently
+          ) : (
+            <Typography>{t(translationsKeys.text)}</Typography>
+          )
         ) : (
           <>
             <Typography>{t(translationsKeys.findTime)}</Typography>
