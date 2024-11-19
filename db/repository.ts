@@ -1,6 +1,6 @@
 import db from './db';
 import { messages } from './schema';
-import { eq, DrizzleError } from 'drizzle-orm';
+import { eq, DrizzleError, sql } from 'drizzle-orm';
 
 class DatabaseError extends DrizzleError {
   constructor(message: string) {
@@ -53,7 +53,13 @@ class Repository {
 
   public updateMessage = async (id: number, message: Message): Promise<void> => {
     try {
-      await this.databaseInstance.update(messages).set(message).where(eq(messages.id, id));
+      await this.databaseInstance
+        .update(messages)
+        .set({
+          ...message,
+          updatedAt: sql`CURRENT_TIMESTAMP`,
+        })
+        .where(eq(messages.id, id));
     } catch (error) {
       console.error('Failed to update message:', error);
       throw new DatabaseError('Failed to update message in database');
