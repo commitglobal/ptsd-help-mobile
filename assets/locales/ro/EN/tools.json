@@ -1,20 +1,20 @@
 {
   "list": {
-    "relationships": "RO/ro: Relationships",
-    "reconnect-with-partner": "RO/ro: Reconnect with your partner",
-    "positive-communication": "RO/ro: Positive Communication",
-    "i-messages": "RO/ro: I Messages",
-    "mindfulness": "RO/ro: Mindfulness",
-    "ambient-sounds": "RO/ro: Ambient Sounds",
-    "conscious-breathing": "RO/ro: Conscious Breathing",
-    "mindful-walking": "RO/ro: Mindful Walking",
-    "emotional-discomfort": "RO/ro: Emotional Discomfort",
-    "sense-awareness": "RO/ro: Sense Awareness",
-    "loving-kindness": "RO/ro: Loving Kindness"
+    "relationships": "RO/en: Relationships",
+    "reconnect-with-partner": "RO/en: Reconnect with your partner",
+    "positive-communication": "RO/en: Positive Communication",
+    "i-messages": "RO/en: I Messages",
+    "mindfulness": "RO/en: Mindfulness",
+    "ambient-sounds": "RO/en: Ambient Sounds",
+    "conscious-breathing": "RO/en: Conscious Breathing",
+    "mindful-walking": "RO/en: Mindful Walking",
+    "emotional-discomfort": "RO/en: Emotional Discomfort",
+    "sense-awareness": "RO/en: Sense Awareness",
+    "loving-kindness": "RO/en: Loving Kindness"
   },
   "relationships": {
-    "title": "RO/ro: Relationships",
-    "description": "RO/ro: Tools to help improve your relationships with loved ones",
+    "title": "RO/en: Relationships",
+    "description": "RO/en: Tools to help improve your relationships with loved ones",
     "tools": {
       "i-messages": {
         "title": "RO/en: Using 'I' messages",
@@ -48,67 +48,84 @@
         }
       },
       "reconnect-with-partner": {
-        "title": "RO/ro: Reconnect with your partner",
-        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "title": "RO/en: Reconnect with your partner",
+        "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
         "repeater": {
           "1": {
-            "title": "RO/ro: Go for a walk or exercise together",
-            "description": "RO/ro: Find time to go for a walk or exercise together"
+            "title": "RO/en: Go for a walk or exercise together",
+            "description": "RO/en: Find time to go for a walk or exercise together"
           },
           "2": {
-            "title": "RO/ro: Prepare a delicious meal and have fun in the kitchen",
-            "description": "RO/ro: Find time to prepare a delicious meal and have fun in the kitchen"
+            "title": "RO/en: Prepare a delicious meal and have fun in the kitchen",
+            "description": "RO/en: Find time to prepare a delicious meal and have fun in the kitchen"
           },
           "3": {
-            "title": "RO/ro: Organize a movie night at home with favorite films",
-            "description": "RO/ro: Find time to organize a movie night at home with favorite films"
+            "title": "RO/en: Organize a movie night at home with favorite films",
+            "description": "RO/en: Find time to organize a movie night at home with favorite films"
           }
         }
       },
       "positive-communication": {
-        "title": "RO/ro: Positive Communication",
-        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "title": "RO/en: Positive Communication",
+        "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
         "repeater": {
           "1": {
-            "title": "RO/ro: Overcome your automatic negative thoughts",
-            "description": "RO/ro: Think about positive things about your partner"
+            "title": "RO/en: Overcome your automatic negative thoughts",
+            "description": "RO/en: Think about positive things about your partner"
           },
           "2": {
-            "title": "RO/ro: Start a conversation with your partner",
-            "description": "RO/ro: Talk about your feelings and thoughts with your partner"
+            "title": "RO/en: Start a conversation with your partner",
+            "description": "RO/en: Talk about your feelings and thoughts with your partner"
           }
         }
       }
     },
     "common": {
-      "start": "RO/ro: Start",
-      "next": "RO/ro: Next",
-      "previous": "RO/ro: Previous",
-      "finish": "RO/ro: Finish",
-      "save": "RO/ro: Save",
-      "cancel": "RO/ro: Cancel"
+      "start": "RO/en: Start",
+      "next": "RO/en: Next",
+      "previous": "RO/en: Previous",
+      "finish": "RO/en: Finish",
+      "save": "RO/en: Save",
+      "cancel": "RO/en: Cancel"
     }
+  },
+  "ambient-sounds": {
+    "select": "RO/en: Select an audio to play",
+    "beach": "RO/en: Beach",
+    "birds": "RO/en: Birds",
+    "country-road": "RO/en: Country Road",
+    "crickets": "RO/en: Crickets",
+    "dripping-water": "RO/en: Dripping Water",
+    "forest": "RO/en: Forest",
+    "frogs": "RO/en: Frogs",
+    "marsh": "RO/en: Marsh",
+    "public-pool": "RO/en: Public Pool",
+    "rain": "RO/en: Rain",
+    "running-water": "RO/en: Running Water",
+    "stream-water": "RO/en: Stream Water",
+    "waterfall": "RO/en: Waterfall",
+    "wind": "RO/en: Wind"
   },
   "mindfulness": {
     "conscious-breathing": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
-      "action-btn-label": "RO/ro: Continue"
+      "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+      "action-btn-label": "RO/en: Continue"
     },
     "mindful-walking": {
-      "description": "RO/ro: For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
-      "action-btn-label": "RO/ro: Continue"
+      "description": "RO/en: For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
+      "action-btn-label": "RO/en: Continue"
     },
     "emotional-discomfort": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
-      "action-btn-label": "RO/ro: Continue"
+      "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
+      "action-btn-label": "RO/en: Continue"
     },
     "sense-awareness": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
-      "action-btn-label": "RO/ro: Continue"
+      "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
+      "action-btn-label": "RO/en: Continue"
     },
     "loving-kindness": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
-      "action-btn-label": "RO/ro: Continue"
+      "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
+      "action-btn-label": "RO/en: Continue"
     }
   }
 }

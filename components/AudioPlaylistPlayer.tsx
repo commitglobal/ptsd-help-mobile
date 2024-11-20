@@ -6,6 +6,7 @@ import { XStack, Card, YStack, YStackProps } from 'tamagui';
 import MediaPlayer from './MediaPlayer';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from './Icon';
+import { Asset } from 'expo-asset';
 
 export interface AudioFile {
   id: string;
@@ -32,9 +33,19 @@ const ListAudioCard = ({ item, selected, ...rest }: ListAudioCardProps) => {
 };
 
 export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
+  const insets = useSafeAreaInsets();
+
   const [selectedAudio, setSelectedAudio] = useState<AudioFile | null>(null);
 
-  const insets = useSafeAreaInsets();
+  // get the asset only when URI exists
+  const asset = selectedAudio?.uri ? Asset.fromModule(selectedAudio.uri) : null;
+
+  // load the asset
+  React.useEffect(() => {
+    if (asset) {
+      asset.downloadAsync();
+    }
+  }, [asset]);
 
   return (
     <YStack flex={1} backgroundColor='white'>
@@ -92,7 +103,7 @@ export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
           alignItems='center'
           marginHorizontal='$md'
           padding='$md'>
-          <MediaPlayer mediaURI={selectedAudio?.uri} isVideo={false} />
+          <MediaPlayer mediaURI={asset?.uri || ''} isVideo={false} />
         </XStack>
       )}
     </YStack>

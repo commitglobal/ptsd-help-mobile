@@ -18,8 +18,8 @@ const MindfulnessIndex = () => {
     <Screen
       headerProps={{
         title: t(translationKeys.label, { ns: 'tools' }),
-        iconRight: <Icon icon='info' color='white' width={24} height={24} />,
-        iconLeft: <Icon icon='chevronLeft' color='white' width={24} height={24} />,
+        iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}>
       <SubcategoriesList

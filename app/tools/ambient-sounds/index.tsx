@@ -1,3 +1,4 @@
+import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import { AudioFile, AudioPlaylistPlayer } from '@/components/AudioPlaylistPlayer';
 import { Icon } from '@/components/Icon';
@@ -6,64 +7,101 @@ import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 
-export const PLAYLIST: AudioFile[] = [
-  {
-    id: '1',
-    label: 'Comfdsafda”',
-    uri: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Sevish_-__nbsp_.mp3',
-    isVideo: false,
-  },
-  {
-    id: '2',
-    label: 'Comfort Fit - “Sorry”',
-    uri: 'https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    isVideo: false,
-  },
-  {
-    id: '3',
-    label: 'Mildred Bailey – “All Of Me”',
-    uri: 'https://ia800304.us.archive.org/34/items/PaulWhitemanwithMildredBailey/PaulWhitemanwithMildredBailey-AllofMe.mp3',
-    isVideo: false,
-  },
-  {
-    id: '4',
-    label: 'Podington Bear - “Rubber Robot”',
-    uri: 'https://s3.amazonaws.com/exp-us-standard/audio/playlist-example/Podington_Bear_-_Rubber_Robot.mp3',
-    isVideo: false,
-  },
-  {
-    id: '5',
-    label: 'Podington B',
-    uri: 'http://codeskulptor-demos.commondatastorage.googleapis.com/GalaxyInvaders/theme_01.mp3',
-    isVideo: false,
-  },
-
-  {
-    id: '6',
-    label: 'Podington B fdsafdsa',
-    uri: 'http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3',
-    isVideo: false,
-  },
-  {
-    id: '7',
-    label: 'Podington Thrust',
-    uri: 'http://commondatastorage.googleapis.com/codeskulptor-assets/sounddogs/thrust.mp3',
-    isVideo: false,
-  },
-  {
-    id: '8',
-    label: 'Podingfdsafdsaton B',
-    uri: 'http://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3',
-    isVideo: false,
-  },
-];
-
 export default function AmbientSounds() {
   const router = useRouter();
   const { finishTool } = useToolManagerContext();
   const { t } = useTranslation('tools');
 
   const translationKeys = TOOLS_TRANSLATIONS_CONFIG.AMBIENT_SOUNDS;
+  const mediaMapper = TOOLS_MEDIA_MAPPER.AMBIENT_SOUNDS;
+
+  const PLAYLIST: AudioFile[] = [
+    {
+      id: '1',
+      label: t(translationKeys.beach),
+      uri: mediaMapper.BEACH.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '2',
+      label: t(translationKeys.birds),
+      uri: mediaMapper.BIRDS.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '3',
+      label: t(translationKeys.countryRoad),
+      uri: mediaMapper.COUNTRY_ROAD.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '4',
+      label: t(translationKeys.crickets),
+      uri: mediaMapper.CRICKETS.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '5',
+      label: t(translationKeys.drippingWater),
+      uri: mediaMapper.DRIPPING_WATER.soundURI,
+      isVideo: false,
+    },
+
+    {
+      id: '6',
+      label: t(translationKeys.forest),
+      uri: mediaMapper.FOREST.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '7',
+      label: t(translationKeys.frogs),
+      uri: mediaMapper.FROGS.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '8',
+      label: t(translationKeys.marsh),
+      uri: mediaMapper.MARSH.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '9',
+      label: t(translationKeys.publicPool),
+      uri: mediaMapper.PUBLIC_POOL.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '10',
+      label: t(translationKeys.rain),
+      uri: mediaMapper.RAIN.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '11',
+      label: t(translationKeys.runningWater),
+      uri: mediaMapper.RUNNING_WATER.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '12',
+      label: t(translationKeys.streamWater),
+      uri: mediaMapper.STREAM_WATER.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '13',
+      label: t(translationKeys.waterfall),
+      uri: mediaMapper.WATERFALL.soundURI,
+      isVideo: false,
+    },
+    {
+      id: '14',
+      label: t(translationKeys.wind),
+      uri: mediaMapper.WIND.soundURI,
+      isVideo: false,
+    },
+  ];
 
   return (
     <Screen
