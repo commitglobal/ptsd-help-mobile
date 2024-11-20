@@ -19,15 +19,7 @@ export const ScreenWithImageHeader = ({
   return (
     <Screen headerProps={headerProps} contentContainerStyle={contentContainerStyle} footerProps={footerProps}>
       {/* image container */}
-      <YStack
-        position='relative'
-        width='100%'
-        height={'25%'}
-        shadowColor='black'
-        shadowOffset={{ width: 0, height: 5 }}
-        shadowOpacity={0.2}
-        shadowRadius={8}
-        elevation={5}>
+      <YStack position='relative' width='100%' height={'25%'}>
         {!imageLoaded ? <HeaderImageSkeletonLoader /> : null}
 
         <Image

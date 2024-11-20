@@ -18,7 +18,7 @@ const ScreenTabs = ({
   return (
     <XStack
       justifyContent='space-between'
-      paddingVertical='$sm'
+      paddingBottom='$xxs'
       position='relative'
       onLayout={(e) => {
         setContainerWidth(e.nativeEvent.layout.width);

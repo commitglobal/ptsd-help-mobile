@@ -55,18 +55,27 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
       CONSCIOUS_BREATHING: {
         label: 'list.conscious-breathing',
         description: 'mindfulness.conscious-breathing.description',
+        actionBtnLabel: 'mindfulness.conscious-breathing.action-btn-label',
       },
       MINDFUL_WALKING: {
         label: 'list.mindful-walking',
+        description: 'mindfulness.mindful-walking.description',
+        actionBtnLabel: 'mindfulness.mindful-walking.action-btn-label',
       },
       EMOTIONAL_DISCOMFORT: {
         label: 'list.emotional-discomfort',
+        description: 'mindfulness.emotional-discomfort.description',
+        actionBtnLabel: 'mindfulness.emotional-discomfort.action-btn-label',
       },
       SENSE_AWARENESS: {
         label: 'list.sense-awareness',
+        description: 'mindfulness.sense-awareness.description',
+        actionBtnLabel: 'mindfulness.sense-awareness.action-btn-label',
       },
       LOVING_KINDNESS: {
         label: 'list.loving-kindness',
+        description: 'mindfulness.loving-kindness.description',
+        actionBtnLabel: 'mindfulness.loving-kindness.action-btn-label',
       },
     },
   },

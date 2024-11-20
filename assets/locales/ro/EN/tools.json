@@ -91,7 +91,24 @@
   },
   "mindfulness": {
     "conscious-breathing": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes."
+      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+      "action-btn-label": "RO/ro: Continue"
+    },
+    "mindful-walking": {
+      "description": "RO/ro: For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
+      "action-btn-label": "RO/ro: Continue"
+    },
+    "emotional-discomfort": {
+      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
+      "action-btn-label": "RO/ro: Continue"
+    },
+    "sense-awareness": {
+      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
+      "action-btn-label": "RO/ro: Continue"
+    },
+    "loving-kindness": {
+      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
+      "action-btn-label": "RO/ro: Continue"
     }
   }
 }

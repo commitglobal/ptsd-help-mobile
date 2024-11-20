@@ -9,12 +9,12 @@ import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
 import { Asset } from 'expo-asset';
 
-export const ConsciousBreathingPlayer = () => {
+export const MindfulWalkingPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
-  const translationKeys = TOOLS_TRANSLATIONS_CONFIG.MINDFULNESS.subcategories.CONSCIOUS_BREATHING;
-  const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.CONSCIOUS_BREATHING;
+  const translationKeys = TOOLS_TRANSLATIONS_CONFIG.MINDFULNESS.subcategories.MINDFUL_WALKING;
+  const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.MINDFUL_WALKING;
 
   //   get the asset
   const asset = Asset.fromModule(mediaMapper.soundURI);
@@ -42,4 +42,4 @@ export const ConsciousBreathingPlayer = () => {
   );
 };
 
-export default ConsciousBreathingPlayer;
+export default MindfulWalkingPlayer;
