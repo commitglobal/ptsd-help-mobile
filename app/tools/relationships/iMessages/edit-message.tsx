@@ -14,7 +14,7 @@ import { BackHandler, Keyboard } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScrollView, XStack, YStack } from 'tamagui';
 import { useMessage } from '@/services/messages.service';
-import repository from '@/db/repository';
+import messagesRepository from '@/db/repositories/messages.repository';
 
 export default function Message() {
   const { t } = useTranslation('tools');
@@ -78,7 +78,7 @@ export default function Message() {
 
   const onSubmit = async (data: any) => {
     try {
-      await repository.updateMessage(Number(messageId), data);
+      await messagesRepository.updateMessage(Number(messageId), data);
       router.back();
     } catch (error) {
       console.error('Error updating message', error);
@@ -92,7 +92,7 @@ export default function Message() {
   const handleDeleteMessage = async () => {
     setDeleteMessageModalOpen(false);
     try {
-      await repository.deleteMessage(Number(messageId));
+      await messagesRepository.deleteMessage(Number(messageId));
       router.back();
     } catch (error) {
       console.error('Error deleting message', error);
@@ -116,9 +116,13 @@ export default function Message() {
       <Screen
         headerProps={{
           title: t(translationsKeys.edit.title),
-          iconLeft: <Icon icon='x' color='white' width={24} height={24} />,
+          iconLeft: <Icon icon='x' color='$gray12' width={24} height={24} />,
           onLeftPress: handleGoBack,
-          iconRight: <Typography color='white'>{t('common.save', { ns: 'translation' })}</Typography>,
+          iconRight: (
+            <Typography color='$gray12' fontWeight='bold'>
+              {t('common.save', { ns: 'translation' })}
+            </Typography>
+          ),
           onRightPress: handleSubmit(onSubmit),
         }}
         contentContainerStyle={{

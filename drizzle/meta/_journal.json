@@ -5,15 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1731685622005,
-      "tag": "0000_i_message_migration",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1732008313752,
-      "tag": "0001_timestamps",
+      "when": 1732113480152,
+      "tag": "0000_messages-table",
       "breakpoints": true
     }
   ]

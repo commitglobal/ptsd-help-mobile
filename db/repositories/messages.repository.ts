@@ -1,5 +1,5 @@
-import db from './db';
-import { messages } from './schema';
+import db from '../db';
+import { messages } from '../schema/messages';
 import { eq, DrizzleError, sql } from 'drizzle-orm';
 
 class DatabaseError extends DrizzleError {
@@ -18,7 +18,7 @@ class NotFoundError extends DrizzleError {
 
 export type Message = Omit<typeof messages.$inferSelect, 'id'>;
 
-class Repository {
+class MessagesRepository {
   private databaseInstance = db;
 
   constructor(db: any) {
@@ -76,6 +76,6 @@ class Repository {
   };
 }
 
-const repository = new Repository(db);
+const messagesRepository = new MessagesRepository(db);
 
-export default repository;
+export default messagesRepository;

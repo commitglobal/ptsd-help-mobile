@@ -11,7 +11,7 @@ import { Controller, useForm } from 'react-hook-form';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
-import repository, { Message } from '@/db/repository';
+import messagesRepository, { Message } from '@/db/repositories/messages.repository';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
@@ -47,7 +47,7 @@ export default function NewMessage() {
 
   const onSubmit = async (data: any) => {
     try {
-      await repository.createMessage(data as Message);
+      await messagesRepository.createMessage(data as Message);
       router.back();
     } catch (error) {
       console.error('Error inserting message:', error);
@@ -62,7 +62,11 @@ export default function NewMessage() {
       <Screen
         headerProps={{
           title: t(translationsKeys.title),
-          iconRight: <Typography color='white'>{t('general.done', { ns: 'translation' })}</Typography>,
+          iconRight: (
+            <Typography color='$gray12' fontWeight='bold'>
+              {t('general.done', { ns: 'translation' })}
+            </Typography>
+          ),
           onRightPress: handleSubmit(onSubmit),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: router.back,

@@ -5,7 +5,7 @@ import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
-import repository from '@/db/repository';
+import messagesRepository from '@/db/repositories/messages.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
@@ -22,7 +22,7 @@ export default function iMessages() {
   const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
   const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.I_MESSAGES;
 
-  const { data: messages, error } = useLiveQuery(repository.getMessages(), []);
+  const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
 
   return (
     <>
