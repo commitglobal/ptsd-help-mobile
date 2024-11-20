@@ -44,6 +44,11 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
           title: 'relationships.tools.i-messages.edit.title',
         },
       },
+      HEALTHY_ARGUMENTS: {
+        label: 'list.healthy-arguments',
+        helper: 'relationships.tools.healthy-arguments.helper',
+        repeater: 'relationships.tools.healthy-arguments.repeater',
+      },
     },
   },
   AMBIENT_SOUNDS: {

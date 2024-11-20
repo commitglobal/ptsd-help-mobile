@@ -3,6 +3,7 @@
     "relationships": "RO/en: Relationships",
     "reconnect-with-partner": "RO/en: Reconnect with your partner",
     "positive-communication": "RO/en: Positive Communication",
+    "healthy-arguments": "RO/en: Healthy Arguments",
     "i-messages": "RO/en: I Messages",
     "mindfulness": "RO/en: Mindfulness",
     "ambient-sounds": "RO/en: Ambient Sounds",
@@ -76,6 +77,128 @@
           "2": {
             "title": "RO/en: Start a conversation with your partner",
             "description": "RO/en: Talk about your feelings and thoughts with your partner"
+          }
+        }
+      },
+      "healthy-arguments": {
+        "title": "RO/en: Healthy Arguments",
+        "helper": "RO/en: Every relationship has its conflicts. Here are a few strategies that you can try when you find yourself in an argument with your partner.",
+        "repeater": {
+          "1": {
+            "title": "RO/en: Managing 'Sensitive Topics'",
+            "description": "RO/en: Approach sensitive topics carefully. Make sure you feel calm enough. Take time to reflect and choose your words more carefully!"
+          },
+          "2": {
+            "title": "RO/en: How to spend a break outside of conflict",
+            "description": "RO/en: Find something relaxing to do, like a walk, talk to a friend, exercise or read."
+          },
+          "3": {
+            "title": "RO/en: How to spend a break outside of conflict",
+            "description": "RO/en: Which are the activities you and your partner can do together that don't involve talking?"
+          },
+          "4": {
+            "title": "RO/en: Take a break",
+            "description": "RO/en: Make sure you have favourite activities that relax and soothe you. Spend time doing things that you like instead of reliving the conflict."
+          },
+          "5": {
+            "title": "RO/en: Have a break",
+            "description": "RO/en: Here's what you can say to your partner: 'I care about this problem and I want to fix it. I just need time to think and I'll be back when I have a clear head.'"
+          },
+          "6": {
+            "title": "RO/en: Have perspective",
+            "description": "RO/en: Every relationship has its conflicts. Tolerating or dealing with them successfully, even if they're small, is a way of consolidating the relationship."
+          },
+          "7": {
+            "title": "RO/en: Try not to criticize your partner",
+            "description": "RO/en: Critique can make you feel judged or rejected and it's not the best way of driving change. Instead of criticizing your partner, use the affirmations that contain 'I' for expressing your feelings."
+          },
+          "8": {
+            "title": "RO/en: Feeling guilty?",
+            "description": "RO/en: Try not to be defensive if you feel blamed by your loved one. Try to understand what they need from you before responding or trying to defend yourself."
+          },
+          "9": {
+            "title": "RO/en: Ask and offer respect",
+            "description": "RO/en: In any conflict, there needs to be a basic level of trust and respect for each other. Don't tolerate insults, ridicule, disrespect or disgust. Take a break if you feel disrespected."
+          },
+          "10": {
+            "title": "RO/en: Be there for your partner",
+            "description": "RO/en: Don't run away from a conflict, unless one of you needs to take a break."
+          },
+          "11": {
+            "title": "RO/en: Practice understanding",
+            "description": "RO/en: Slow down and listen - don't interrupt."
+          },
+          "12": {
+            "title": "RO/en: Practice understanding",
+            "description": "RO/en: Focus on your partner's words and body language."
+          },
+          "13": {
+            "title": "RO/en: Practice understanding",
+            "description": "RO/en: Show interest, even during a conflict."
+          },
+          "14": {
+            "title": "RO/en: Accept your partner",
+            "description": "RO/en: Give your loved one the benefit of the doubt."
+          },
+          "15": {
+            "title": "RO/en: Accept your partner",
+            "description": "RO/en: Try not to judge."
+          },
+          "16": {
+            "title": "RO/en: Understand your partner",
+            "description": "RO/en: Use your own words to repeat what you think your loved one is really trying to say."
+          },
+          "17": {
+            "title": "RO/en: Understand your partner",
+            "description": "RO/en: Don't read minds. Don't assume you know what your loved one is thinking."
+          },
+          "18": {
+            "title": "RO/en: Understand your partner",
+            "description": "RO/en: Make sure your loved one knows you can't read their mind, and ask them to help you understand their needs through open conversation."
+          },
+          "19": {
+            "title": "RO/en: Understand your partner",
+            "description": "RO/en: Trying to understand how your loved one feels doesn't mean you have to agree with them. Understanding their perspective is key to moving the discussion forward."
+          },
+          "20": {
+            "title": "RO/en: Understand your partner",
+            "description": "RO/en: Ask as many questions as possible. Make sure you understand what your loved one is telling you. Correct yourself when you make mistakes."
+          },
+          "21": {
+            "title": "RO/en: When your partner is angry",
+            "description": "RO/en: Always make sure you are safe. If needed, don't hesitate to call 911."
+          },
+          "22": {
+            "title": "RO/en: When you're angry",
+            "description": "RO/en: Stop and take a deep breath."
+          },
+          "23": {
+            "title": "RO/en: When you're angry",
+            "description": "RO/en: Take a break. Leave the difficult situation until you can resume the conversation when you're not angry."
+          },
+          "24": {
+            "title": "RO/en: When you're angry",
+            "description": "RO/en: Discuss with your partner in advance about when to take breaks during a certain conflict or disagreement."
+          },
+          "25": {
+            "title": "RO/en: When your partner is angry",
+            "description": "RO/en: Stop and take a deep breath. Ask your loved one to do the same."
+          },
+          "26": {
+            "title": "RO/en: If you take a break",
+            "description": "RO/en: When both of you feel less angry, try to resume the conversation and find a solution that works for both of you."
+          },
+          "27": {
+            "title": "RO/en: When your partner is angry",
+            "description": "RO/en: Try to recognize the triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+          },
+          "28": {
+            "title": "RO/en: When you're angry",
+            "description": "RO/en: Try to recognize your own triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+          },
+          "29": {
+            "title": "RO/en: Know your 'Sensitive Topics'",
+            "description": "RO/en: What are the things that come up and cause tension and conflict with your loved one? When they come up, treat 'sensitive topics' with care."
           }
         }
       }

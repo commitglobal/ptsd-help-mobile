@@ -120,7 +120,6 @@ export default function Manage() {
     return (
       <ListComponent
         data={Object.values(TOOLS_CONFIG).map((tool) => {
-          console.log(tool);
           return {
             ...tool,
             label: t(tool.label, { ns: 'tools' }),

@@ -3,6 +3,9 @@ export const TOOLS_MEDIA_MAPPER = {
     I_MESSAGES: {
       headerImageURI: require('@/assets/images/old-couple.png'),
     },
+    HEALTHY_ARGUMENTS: {
+      headerImageURI: require('@/assets/images/tools/relationship/list_healthy-arguments.jpg'),
+    },
   },
   AMBIENT_SOUNDS: {
     BEACH: {

@@ -45,6 +45,13 @@ export const TOOLS_CONFIG: Record<string, Tool> = {
         route: '/tools/relationships/iMessages',
         type: ToolType.TOOL,
       },
+      HEALTHY_ARGUMENTS: {
+        id: '4',
+        label: TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.label,
+        photoUrl: require('@/assets/images/tools/relationship/list_healthy-arguments.jpg'),
+        route: '/tools/relationships/healthy-arguments',
+        type: ToolType.TOOL,
+      },
     },
   },
   AMBIENT_SOUNDS: {

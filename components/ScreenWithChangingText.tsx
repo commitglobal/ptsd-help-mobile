@@ -35,7 +35,7 @@ export const ScreenWithChangingText = ({
       footerProps={{ onPrev: handlePreviousItem, onNext: handleNextItem, ...footerProps }}>
       <Typography preset='helper'>{staticText}</Typography>
       {/* <Typography>{renderedItem.text}</Typography> */}
-      {renderedItem.title && <Typography>{renderedItem.title}</Typography>}
+      {renderedItem.title && <Typography preset='subheading'>{renderedItem.title}</Typography>}
       {renderedItem.description && <Typography>{renderedItem.description}</Typography>}
     </ScreenWithImageHeader>
   );
