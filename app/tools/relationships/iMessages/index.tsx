@@ -5,7 +5,7 @@ import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
-import messagesRepository from '@/db/repositories/messages.repository';
+import messagesRepository, { Message } from '@/db/repositories/messages.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
@@ -45,25 +45,7 @@ export default function iMessages() {
           <>
             <Typography>{t(translationsKeys.findTime)}</Typography>
             {messages.map((message) => (
-              <Card
-                key={message.id}
-                padding='$md'
-                gap={4}
-                onPress={() =>
-                  router.push({
-                    pathname: `/tools/relationships/iMessages/edit-message`,
-                    params: { messageId: message.id },
-                  })
-                }>
-                <Typography>{t(translationsKeys.when)}</Typography>
-                <Typography preset='helper'>{message.annoyance}</Typography>
-                <Separator marginVertical={4} />
-                <Typography>{t(translationsKeys.feel)}</Typography>
-                <Typography preset='helper'>{message.message}</Typography>
-                <Separator marginVertical={4} />
-                <Typography>{t(translationsKeys.because)}</Typography>
-                <Typography preset='helper'>{message.because}</Typography>
-              </Card>
+              <MessageCard message={message} key={message.id} />
             ))}
           </>
         )}
@@ -78,3 +60,31 @@ export default function iMessages() {
     </>
   );
 }
+
+const MessageCard = ({ message }: { message: Message }) => {
+  const { t } = useTranslation('tools');
+  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
+  const router = useRouter();
+
+  return (
+    <Card
+      key={message.id}
+      padding='$md'
+      gap={4}
+      onPress={() =>
+        router.push({
+          pathname: `/tools/relationships/iMessages/edit-message`,
+          params: { messageId: message.id },
+        })
+      }>
+      <Typography>{t(translationsKeys.when)}</Typography>
+      <Typography preset='helper'>{message.annoyance}</Typography>
+      <Separator marginVertical={4} />
+      <Typography>{t(translationsKeys.feel)}</Typography>
+      <Typography preset='helper'>{message.message}</Typography>
+      <Separator marginVertical={4} />
+      <Typography>{t(translationsKeys.because)}</Typography>
+      <Typography preset='helper'>{message.because}</Typography>
+    </Card>
+  );
+};

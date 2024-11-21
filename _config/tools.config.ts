@@ -105,4 +105,11 @@ export const TOOLS_CONFIG: Record<string, Tool> = {
       },
     },
   },
+  MY_FEELINGS: {
+    id: 'tool-5',
+    label: TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS.label,
+    photoUrl: require('@/assets/images/tools/my-feelings/my_feelings.jpg'),
+    route: '/tools/my-feelings',
+    type: ToolType.TOOL,
+  },
 };

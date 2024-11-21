@@ -113,7 +113,6 @@ export default function AmbientSounds() {
       footerProps={{
         onMainAction: () => finishTool(),
       }}>
-      {/* TODO: add real audios */}
       <AudioPlaylistPlayer audios={PLAYLIST} />
     </Screen>
   );

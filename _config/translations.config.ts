@@ -99,4 +99,14 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
       },
     },
   },
+  MY_FEELINGS: {
+    label: 'list.my-feelings',
+    mainActionLabel: 'my-feelings.main-action-label',
+    done: 'my-feelings.done',
+    next: 'my-feelings.next',
+    noFeelings: 'my-feelings.no-feelings',
+    chooseMainFeelings: 'my-feelings.choose-main-feelings',
+    chooseSecondaryFeelings: 'my-feelings.choose-secondary-feelings',
+    discomfortMeter: 'my-feelings.discomfort-meter',
+  },
 };

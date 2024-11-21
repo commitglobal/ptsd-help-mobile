@@ -11,7 +11,8 @@
     "mindful-walking": "RO/en: Mindful Walking",
     "emotional-discomfort": "RO/en: Emotional Discomfort",
     "sense-awareness": "RO/en: Sense Awareness",
-    "loving-kindness": "RO/en: Loving Kindness"
+    "loving-kindness": "RO/en: Loving Kindness",
+    "my-feelings": "RO/en: My Feelings"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -250,5 +251,14 @@
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
       "action-btn-label": "RO/en: Continue"
     }
+  },
+  "my-feelings": {
+    "done": "RO/en: Done",
+    "next": "RO/en: Next",
+    "main-action-label": "RO/en: Add a feeling",
+    "no-feelings": "RO/en: You haven't added any feelings yet.",
+    "choose-main-feelings": "RO/en: Firstly, pick one or more feelings that describe how you're feeling right now.",
+    "choose-secondary-feelings": "RO/en: Pick any feelings that you feel right now.",
+    "discomfort-meter": "RO/en: Discomfort Meter"
   }
 }

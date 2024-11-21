@@ -9,6 +9,7 @@ import { Icon } from './Icon';
 interface FooterProps {
   onMainAction?: () => void;
   mainActionLabel?: string;
+  mainActionDisabled?: boolean;
   onSecondaryAction?: () => void;
   secondaryActionLabel?: string;
   onPrev?: () => void;
@@ -101,7 +102,9 @@ export const Screen = ({
               )}
 
               {footerProps.onMainAction && (
-                <Button onPress={footerProps.onMainAction}>{footerProps.mainActionLabel || 'Done'}</Button>
+                <Button onPress={footerProps.onMainAction} disabled={footerProps.mainActionDisabled}>
+                  {footerProps.mainActionLabel || 'Done'}
+                </Button>
               )}
               {footerProps.onSecondaryAction && (
                 <Button preset='secondary' onPress={footerProps.onSecondaryAction}>
