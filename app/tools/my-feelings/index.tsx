@@ -43,13 +43,17 @@ export default function MyFeelings() {
 
       {/* feelings cards */}
       {feelings.map((feeling) => (
-        <FeelingCard feeling={feeling} key={feeling.id} />
+        <FeelingCard
+          feeling={feeling}
+          key={feeling.id}
+          onPress={() => router.push(`/tools/my-feelings/delete-feeling?feelingId=${feeling.id}`)}
+        />
       ))}
     </ScreenWithImageHeader>
   );
 }
 
-const FeelingCard = ({ feeling }: { feeling: Feeling }) => {
+const FeelingCard = ({ feeling, onPress }: { feeling: Feeling; onPress: () => void }) => {
   const { t } = useTranslation('tools');
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
   const feelingsTranslationKey = TOOLS_TRANSLATIONS_CONFIG.FEELINGS;
@@ -58,7 +62,7 @@ const FeelingCard = ({ feeling }: { feeling: Feeling }) => {
   const currentDiscomfortLevel = getDiscomfortLevel(feeling.discomfort, discomfortLevelsArray);
 
   return (
-    <Card padding='$md'>
+    <Card padding='$md' onPress={onPress}>
       <YStack gap='$md'>
         {/* stress section */}
         <XStack>

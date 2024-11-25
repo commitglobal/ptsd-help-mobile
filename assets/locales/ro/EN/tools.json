@@ -255,6 +255,7 @@
   "my-feelings": {
     "done": "RO/en: Done",
     "next": "RO/en: Next",
+    "delete": "RO/en: Delete feelings",
     "main-action-label": "RO/en: Add a feeling",
     "no-feelings": "RO/en: You haven't added any feelings yet.",
     "choose-main-feelings": "RO/en: Firstly, pick one or more feelings that describe how you're feeling right now.",

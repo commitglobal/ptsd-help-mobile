@@ -15,6 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ScrollView, XStack, YStack } from 'tamagui';
 import { useMessage } from '@/services/messages.service';
 import messagesRepository from '@/db/repositories/messages.repository';
+import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
 
 export default function Message() {
   const { t } = useTranslation('tools');
@@ -220,19 +221,7 @@ export default function Message() {
       )}
       {unsavedDataModalOpen && <UnsavedDataModal setUnsavedDataModalOpen={setUnsavedDataModalOpen} />}
       {deleteMessageModalOpen && (
-        <Modal open onOpenChange={setDeleteMessageModalOpen}>
-          <YStack minHeight={100}>
-            <Typography>{t('common.delete-confirmation', { ns: 'translation' })}</Typography>
-            <XStack justifyContent='flex-end' gap='$md'>
-              <Button preset='chromeless' onPress={() => setDeleteMessageModalOpen(false)}>
-                {t('common.no', { ns: 'translation' })}
-              </Button>
-              <Button preset='chromeless' textStyle={{ color: 'red' }} onPress={handleDeleteMessage}>
-                {t('common.yes', { ns: 'translation' })}
-              </Button>
-            </XStack>
-          </YStack>
-        </Modal>
+        <DeleteConfirmationModal setModalOpen={setDeleteMessageModalOpen} handleDelete={handleDeleteMessage} />
       )}
     </>
   );

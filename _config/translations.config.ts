@@ -103,6 +103,7 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
     label: 'list.my-feelings',
     stress: 'my-feelings.stress',
     mainActionLabel: 'my-feelings.main-action-label',
+    delete: 'my-feelings.delete',
     done: 'my-feelings.done',
     next: 'my-feelings.next',
     noFeelings: 'my-feelings.no-feelings',

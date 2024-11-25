@@ -10,6 +10,7 @@ export default function MyFeelingsLayout() {
         <Stack.Screen name='choose-secondary-feelings' options={{ headerShown: false }} />
         <Stack.Screen name='discomfort-meter' options={{ headerShown: false }} />
         <Stack.Screen name='feelings-summary' options={{ headerShown: false }} />
+        <Stack.Screen name='delete-feeling' options={{ headerShown: false }} />
       </Stack>
     </FeelingsContextProvider>
   );
