@@ -1,4 +1,4 @@
-import { DrizzleError } from 'drizzle-orm';
+import { DrizzleError, eq } from 'drizzle-orm';
 import db from '../db';
 import { feelings } from '../schema/feelings';
 
@@ -28,6 +28,15 @@ class FeelingsRepository {
     } catch (error) {
       console.error('Failed to create feeling:', error);
       throw new DatabaseError('Failed to create feeling in database');
+    }
+  };
+
+  public deleteFeeling = async (id: number): Promise<void> => {
+    try {
+      await this.databaseInstance.delete(feelings).where(eq(feelings.id, id));
+    } catch (error) {
+      console.error('Failed to delete feeling:', error);
+      throw new DatabaseError('Failed to delete feeling in database');
     }
   };
 }

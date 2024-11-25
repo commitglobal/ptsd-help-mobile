@@ -33,16 +33,7 @@ export default function DiscomfortMeter() {
   const { t } = useTranslation('tools');
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
 
-  const { discomfort, setDiscomfort } = useFeelingsContext();
-  const discomfortLevels = t(translationKey.repeater, { returnObjects: true });
-  const discomfortLevelsArray = Object.values(discomfortLevels);
-
-  const getDiscomfortLevel = (value: number) => {
-    const threshold = Math.floor(value / 10);
-    return discomfortLevelsArray[threshold as keyof typeof GRADIENT_COLORS] ?? discomfortLevelsArray[0];
-  };
-
-  const currentDiscomfortLevel = React.useMemo(() => getDiscomfortLevel(discomfort), [discomfort]);
+  const { discomfort, setDiscomfort, currentDiscomfortLevel } = useFeelingsContext();
 
   const currentGradientColors = React.useMemo(() => getGradientColors(discomfort), [discomfort]);
 

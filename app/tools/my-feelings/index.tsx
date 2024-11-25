@@ -11,6 +11,7 @@ import { Typography } from '@/components/Typography';
 import { Separator, XStack, YStack } from 'tamagui';
 import { Card } from '@/components/Card';
 import { format } from 'date-fns';
+import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
 
 export default function MyFeelings() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export default function MyFeelings() {
 
   // TODO: loading & error
   const { data: feelings } = useLiveQuery(feelingsRepository.getFeelings(), []);
+  //  how do we manage loading here??? feelings is [] while 'loading'
 
   return (
     <ScreenWithImageHeader
@@ -48,16 +50,25 @@ export default function MyFeelings() {
 }
 
 const FeelingCard = ({ feeling }: { feeling: Feeling }) => {
+  const { t } = useTranslation('tools');
+  const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
+  const feelingsTranslationKey = TOOLS_TRANSLATIONS_CONFIG.FEELINGS;
+
+  const discomfortLevelsArray = useDiscomfortLevels(t, translationKey);
+  const currentDiscomfortLevel = getDiscomfortLevel(feeling.discomfort, discomfortLevelsArray);
+
   return (
     <Card padding='$md'>
       <YStack gap='$md'>
         {/* stress section */}
         <XStack>
           <XStack flex={0.3} justifyContent='center' alignItems='center'>
-            <Typography preset='heading'>{`${feeling.disconfort}%`}</Typography>
+            <Typography preset='heading'>{`${feeling.discomfort}%`}</Typography>
           </XStack>
           <YStack flex={0.7}>
-            <Typography>Stress: ....</Typography>
+            <Typography>
+              {t(translationKey.stress)}: {currentDiscomfortLevel}
+            </Typography>
             <Typography preset='helper'>{format(new Date(feeling.createdAt), 'EEEE, MMM. d, yyyy')}</Typography>
           </YStack>
         </XStack>
@@ -69,11 +80,13 @@ const FeelingCard = ({ feeling }: { feeling: Feeling }) => {
           {feeling.feelings.map((feeling) => (
             <XStack key={feeling.mainFeeling}>
               <Typography flex={0.3} preset='subheading' color='$blue11' textAlign='center'>
-                {feeling.mainFeeling}
+                {t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}
               </Typography>
 
               {feeling.secondaryFeelings.length !== 0 && (
-                <Typography flex={0.7}>{feeling.secondaryFeelings.join(', ')}</Typography>
+                <Typography flex={0.7}>
+                  {feeling.secondaryFeelings.map((secondaryFeeling) => t(secondaryFeeling)).join(', ')}
+                </Typography>
               )}
             </XStack>
           ))}

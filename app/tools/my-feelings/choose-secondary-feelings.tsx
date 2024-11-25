@@ -15,6 +15,7 @@ export default function ChooseSecondaryFeelings() {
   const router = useRouter();
 
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
+  const feelingsTranslationKey = TOOLS_TRANSLATIONS_CONFIG.FEELINGS;
 
   const { feelings, setFeelings } = useFeelingsContext();
 
@@ -58,12 +59,19 @@ export default function ChooseSecondaryFeelings() {
         <Typography>{t(translationKey.chooseSecondaryFeelings)}</Typography>
         {feelings.map((feeling) => (
           <YStack key={feeling.mainFeeling} gap='$md'>
-            <Typography preset='heading'>{feeling.mainFeeling}</Typography>
+            <Typography preset='heading'>{t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}</Typography>
 
             {Object.entries(FEELINGS[feeling.mainFeeling]).map(([key, secondaryFeeling]) => (
               <CheckboxItem
                 key={key}
-                item={{ id: secondaryFeeling, label: secondaryFeeling }}
+                item={{
+                  id: secondaryFeeling,
+                  label: t(
+                    feelingsTranslationKey[feeling.mainFeeling][
+                      key as keyof (typeof FEELINGS)[typeof feeling.mainFeeling]
+                    ]
+                  ),
+                }}
                 selectedItems={feeling.secondaryFeelings}
                 onSelectItem={() => handleSecondaryFeelingsChange(feeling.mainFeeling, secondaryFeeling)}
               />

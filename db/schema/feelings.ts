@@ -10,6 +10,6 @@ export type FeelingEntry = {
 export const feelings = sqliteTable('feelings', {
   id: integer('id').primaryKey(),
   feelings: text('feelings', { mode: 'json' }).$type<FeelingEntry[]>().notNull(),
-  disconfort: integer('disconfort').notNull(),
+  discomfort: integer('discomfort').notNull(),
   ...timestamps,
 });

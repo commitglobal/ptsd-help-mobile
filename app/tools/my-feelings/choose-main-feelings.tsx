@@ -14,6 +14,7 @@ import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
 export default function ChooseMainFeelings() {
   const { t } = useTranslation('tools');
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
+  const feelingsTranslationKey = TOOLS_TRANSLATIONS_CONFIG.FEELINGS;
   const router = useRouter();
 
   const { setFeelings } = useFeelingsContext();
@@ -40,7 +41,7 @@ export default function ChooseMainFeelings() {
         ListHeaderComponent={<Typography marginBottom='$lg'>{t(translationKey.chooseMainFeelings)}</Typography>}
         data={Object.values(MainFeeling).map((feeling) => ({
           id: feeling,
-          label: feeling,
+          label: t(feelingsTranslationKey[feeling].MAIN),
         }))}
         contentContainerStyle={{ padding: 16 }}
         renderItem={({ item }) => (
