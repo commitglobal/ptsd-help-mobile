@@ -14,6 +14,17 @@ import db from '@/db/db';
 import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { MMKV } from 'react-native-mmkv'
+
+// Create and initialise the MMKV instance
+let instance: MMKV | null = null;
+
+export const KeyValueStorage = () => {
+  if (!instance) {
+    instance = new MMKV();
+  }
+  return instance;
+}
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();

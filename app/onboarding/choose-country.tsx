@@ -2,11 +2,13 @@ import { Icon } from '@/components/Icon';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
 import { useRouter } from 'expo-router';
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FlashList } from '@shopify/flash-list';
 import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
+import { KeyValueStorage } from '../_layout';
+import { STORE_KEYS } from '@/constants/store-keys';
 
 const ChooseCountry = () => {
   const { t } = useTranslation('choose-country');
@@ -30,6 +32,10 @@ const ChooseCountry = () => {
       })),
     [countriesArray, t]
   );
+
+  useEffect(() => {
+    KeyValueStorage.set(STORE_KEYS.COUNTRY, selectedCountry);
+  }, [selectedCountry]);
 
   return (
     <Screen
