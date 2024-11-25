@@ -1,0 +1,66 @@
+{
+  "RELATIONSHIPS.I_MESSAGES.headerImage": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/relationship/grounding.jpg",
+    "lastUpdatedAt": 1726963200
+  },
+  "RELATIONSHIPS.HEALTHY_ARGUMENTS.headerImage": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/relationship/list_healthy-arguments.jpg",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.BEACH.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/beach.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.BIRDS.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/birds.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.COUNTRY_ROAD.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/country_road.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.CRICKETS.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/beach.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.DRIPPING_WATER.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/dripping_water.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.FOREST.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/forest.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.FROGS.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/frogs.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.MARSH.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/marsh.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.PUBLIC_POOL.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/public_pool.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.RAIN.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/rain.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.RUNNING_WATER.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/running_water.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.STREAM_WATER.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/stream_water.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.WATERFALL.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/waterfall.mp3",
+    "lastUpdatedAt": 1726963200
+  },
+  "AMBIENT_SOUNDS.WIND.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/ambient-sounds/sounds/wind.mp3",
+    "lastUpdatedAt": 1726963200
+  }
+}

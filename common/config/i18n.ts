@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import i18n, { ResourceLanguage } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 

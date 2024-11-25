@@ -5,6 +5,7 @@ import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import messagesRepository from '@/db/repositories/messages.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Stack, useRouter } from 'expo-router';
@@ -20,15 +21,17 @@ export default function iMessages() {
   const router = useRouter();
 
   const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
-  const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.I_MESSAGES;
+  const { mediaMapping } = useAssetsManagerContext();
 
   const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
+
+  console.log(mediaMapping);
 
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithImageHeader
-        imageUrl={mediaMapper.headerImageURI}
+        imageUrl={mediaMapping ? mediaMapping['RELATIONSHIPS.I_MESSAGES.headerImage'] : ''}
         headerProps={{
           title: t(translationsKeys.title),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,

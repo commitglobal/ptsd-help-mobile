@@ -14,6 +14,7 @@ import db from '@/db/db';
 import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -68,14 +69,16 @@ export default function RootLayout() {
     <QueryClientProvider client={queryClient}>
       <TamaguiProvider config={appConfig}>
         <PortalProvider>
-          <ToolManagerContextProvider>
-            <Stack>
-              <Stack.Screen name='(drawer)' options={{ headerShown: false }} />
-              <Stack.Screen name='tools' options={{ headerShown: false }} />
-              <Stack.Screen name='onboarding' options={{ headerShown: false }} />
-              <Stack.Screen name='+not-found' />
-            </Stack>
-          </ToolManagerContextProvider>
+          <AssetsManagerContextProvider>
+            <ToolManagerContextProvider>
+              <Stack>
+                <Stack.Screen name='(drawer)' options={{ headerShown: false }} />
+                <Stack.Screen name='tools' options={{ headerShown: false }} />
+                <Stack.Screen name='onboarding' options={{ headerShown: false }} />
+                <Stack.Screen name='+not-found' />
+              </Stack>
+            </ToolManagerContextProvider>
+          </AssetsManagerContextProvider>
         </PortalProvider>
       </TamaguiProvider>
     </QueryClientProvider>

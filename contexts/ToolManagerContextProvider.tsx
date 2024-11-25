@@ -1,4 +1,4 @@
-import { Tool } from '@/mocks/tools';
+import { Tool } from '@/_config/tools.config';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useState } from 'react';
 
@@ -25,7 +25,7 @@ type ToolManagerContextType = {
 const ToolManagerContext = createContext<ToolManagerContextType | null>(null);
 
 const ToolManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
+  const isDistressMeterActive = false; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [returnURL, setReturnURL] = useState<string | null>(null);

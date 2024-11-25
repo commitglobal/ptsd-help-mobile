@@ -5,8 +5,8 @@
   "scripts": {
     "start": "expo lint & expo start",
     "reset-project": "node ./scripts/reset-project.js",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
     "lint": "expo lint"
@@ -29,6 +29,7 @@
     "expo-av": "~14.0.7",
     "expo-constants": "~16.0.2",
     "expo-dev-client": "~4.0.28",
+    "expo-file-system": "~17.0.1",
     "expo-font": "~12.0.9",
     "expo-linear-gradient": "^13.0.2",
     "expo-linking": "~6.3.1",
@@ -81,72 +82,5 @@
   "private": true,
   "engines": {
     "node": ">=22"
-  },
-  "eslintConfig": {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "extends": [
-      "plugin:@typescript-eslint/recommended",
-      "plugin:react/recommended",
-      "plugin:react-native/all",
-      "standard",
-      "prettier"
-    ],
-    "plugins": [
-      "@typescript-eslint",
-      "react",
-      "react-native",
-      "reactotron"
-    ],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "jsx": true
-      }
-    },
-    "settings": {
-      "react": {
-        "pragma": "React",
-        "version": "detect"
-      }
-    },
-    "rules": {
-      "@typescript-eslint/ban-ts-ignore": 0,
-      "@typescript-eslint/ban-ts-comment": 0,
-      "@typescript-eslint/explicit-function-return-type": 0,
-      "@typescript-eslint/explicit-member-accessibility": 0,
-      "@typescript-eslint/explicit-module-boundary-types": 0,
-      "@typescript-eslint/indent": 0,
-      "@typescript-eslint/member-delimiter-style": 0,
-      "@typescript-eslint/no-empty-interface": 0,
-      "@typescript-eslint/no-explicit-any": 0,
-      "@typescript-eslint/no-empty-object-type": 0,
-      "@typescript-eslint/no-require-imports": 0,
-      "@typescript-eslint/no-object-literal-type-assertion": 0,
-      "@typescript-eslint/no-var-requires": 0,
-      "@typescript-eslint/no-unused-vars": [
-        "error",
-        {
-          "argsIgnorePattern": "^_",
-          "varsIgnorePattern": "^_"
-        }
-      ],
-      "comma-dangle": 0,
-      "multiline-ternary": 0,
-      "no-undef": 0,
-      "no-unused-vars": 0,
-      "no-use-before-define": 0,
-      "no-global-assign": 0,
-      "quotes": 0,
-      "react-native/no-raw-text": 0,
-      "react/no-unescaped-entities": 0,
-      "react/prop-types": 0,
-      "space-before-function-paren": 0,
-      "reactotron/no-tron-in-production": "error",
-      "react/react-in-jsx-scope": "off",
-      "react-native/no-inline-styles": 0,
-      "react/display-name": "off",
-      "react-native/no-color-literals": "off",
-      "react-native/sort-styles": "off"
-    }
   }
 }
