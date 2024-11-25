@@ -23,31 +23,3 @@ interface DownloadResult {
 //     throw new Error(`Download failed: ${(error as Error).message}`);
 //   }
 // }
-
-export const downloadAssetIfNeeded = async (url: string, destinationFolder: string, fileName: string) => {
-  const filePath = `${destinationFolder}${fileName}`;
-
-  if (await fileExists(filePath)) {
-    console.log(`File already exists: ${filePath}`);
-    return filePath;
-  }
-
-  try {
-    const folderInfo = await FileSystem.getInfoAsync(destinationFolder);
-    if (!folderInfo.exists) {
-      await FileSystem.makeDirectoryAsync(destinationFolder, { intermediates: true });
-    }
-
-    const result = await FileSystem.downloadAsync(url, filePath);
-    console.log(`Downloaded: ${result.uri}`);
-    return result.uri;
-  } catch (error) {
-    console.error(`Error downloading asset: ${url}`, error);
-    return null;
-  }
-};
-
-export const fileExists = async (filePath: string) => {
-  const fileInfo = await FileSystem.getInfoAsync(filePath);
-  return fileInfo.exists;
-};
