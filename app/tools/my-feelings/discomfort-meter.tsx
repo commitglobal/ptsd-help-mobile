@@ -5,11 +5,12 @@ import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { Circle, ScrollView, Slider, XStack } from 'tamagui';
-import { LinearGradient } from 'expo-linear-gradient';
 import { useTranslation } from 'react-i18next';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
+import Animated, { withTiming, useAnimatedStyle } from 'react-native-reanimated';
 
 const GRADIENT_COLORS = {
+  0: ['#4ECDC440', '#7BDBD440'],
   10: ['#4ECDC440', '#7BDBD440'],
   20: ['#7BDBD440', '#98E7A740'],
   30: ['#98E7A740', '#C5E17C40'],
@@ -33,10 +34,27 @@ export default function DiscomfortMeter() {
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
 
   const { discomfort, setDiscomfort } = useFeelingsContext();
+  const discomfortLevels = t(translationKey.repeater, { returnObjects: true });
+  const discomfortLevelsArray = Object.values(discomfortLevels);
+
+  const getDiscomfortLevel = (value: number) => {
+    const threshold = Math.floor(value / 10);
+    return discomfortLevelsArray[threshold as keyof typeof GRADIENT_COLORS] ?? discomfortLevelsArray[0];
+  };
+
+  const currentDiscomfortLevel = React.useMemo(() => getDiscomfortLevel(discomfort), [discomfort]);
 
   const currentGradientColors = React.useMemo(() => getGradientColors(discomfort), [discomfort]);
 
-  const handleValueChange = React.useCallback((value: number[]) => setDiscomfort(value[0]), [setDiscomfort]);
+  const animatedStyle = useAnimatedStyle(() => ({
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    borderRadius: 100,
+    backgroundColor: withTiming(currentGradientColors[0], { duration: 300 }),
+  }));
 
   return (
     <Screen
@@ -44,7 +62,11 @@ export default function DiscomfortMeter() {
         title: t(translationKey.discomfortMeter),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} onPress={router.back} />,
       }}
-      contentContainerStyle={{ backgroundColor: 'white' }}>
+      contentContainerStyle={{ backgroundColor: 'white' }}
+      footerProps={{
+        onMainAction: () => router.push('/tools/my-feelings/feelings-summary'),
+        mainActionLabel: t(translationKey.next),
+      }}>
       <ScrollView
         contentContainerStyle={{
           flexGrow: 1,
@@ -56,6 +78,7 @@ export default function DiscomfortMeter() {
         }}
         bounces={false}
         showsVerticalScrollIndicator={false}>
+        <Typography textAlign='center'>{t(translationKey.discomfortIntensity)}</Typography>
         <XStack>
           <Circle
             size='$14'
@@ -66,28 +89,21 @@ export default function DiscomfortMeter() {
             shadowColor={currentGradientColors[0]}
             shadowOpacity={1}
             shadowRadius={20}>
-            <LinearGradient
-              colors={currentGradientColors}
-              style={{
-                position: 'absolute',
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0,
-                borderRadius: 100,
-              }}
-            />
+            <Animated.View style={animatedStyle} />
             <Typography preset='heading'>{`${discomfort}%`}</Typography>
           </Circle>
         </XStack>
+        <Typography textAlign='center' marginBottom='$lg'>
+          {currentDiscomfortLevel}
+        </Typography>
         <Slider
           size='$4'
           width={'100%'}
           defaultValue={[discomfort]}
+          min={0}
           max={100}
           step={1}
-          value={[discomfort]}
-          onValueChange={handleValueChange}>
+          onValueChange={(value) => setDiscomfort(value[0])}>
           <Slider.Track>
             <Slider.TrackActive backgroundColor='$blue7' />
           </Slider.Track>

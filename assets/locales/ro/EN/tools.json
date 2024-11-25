@@ -259,6 +259,20 @@
     "no-feelings": "RO/en: You haven't added any feelings yet.",
     "choose-main-feelings": "RO/en: Firstly, pick one or more feelings that describe how you're feeling right now.",
     "choose-secondary-feelings": "RO/en: Pick any feelings that you feel right now.",
-    "discomfort-meter": "RO/en: Discomfort Meter"
+    "discomfort-meter": "RO/en: Discomfort Meter",
+    "discomfort-intensity": "RO/en: How intense is your discomfort right now?",
+    "repeater": {
+      "0": "RO/en: Total peace and quiet",
+      "1": "RO/en: Relaxed and not stressed",
+      "2": "RO/en: Mild sadness",
+      "3": "RO/en: A little sad and without tension",
+      "4": "RO/en: Mild stress",
+      "5": "RO/en: Stressed, but not too much",
+      "6": "RO/en: Moderate stress",
+      "7": "RO/en: Moderately high stress",
+      "8": "RO/en: High stress and tension",
+      "9": "RO/en: Very high to extreme stress",
+      "10": "RO/en: Extreme stress and panic"
+    }
   }
 }

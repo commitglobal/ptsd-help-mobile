@@ -108,5 +108,7 @@ export const TOOLS_TRANSLATIONS_CONFIG = {
     chooseMainFeelings: 'my-feelings.choose-main-feelings',
     chooseSecondaryFeelings: 'my-feelings.choose-secondary-feelings',
     discomfortMeter: 'my-feelings.discomfort-meter',
+    discomfortIntensity: 'my-feelings.discomfort-intensity',
+    repeater: 'my-feelings.repeater',
   },
 };
