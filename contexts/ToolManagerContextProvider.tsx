@@ -1,6 +1,6 @@
 
 import { Href, router } from 'expo-router';
-// import '../common/config/i18n';
+import '../common/config/i18n';
 import { createContext, useContext, useState } from 'react';
 import { Tool } from '@/_config/tools.config';
 
