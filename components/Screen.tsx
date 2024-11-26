@@ -15,6 +15,8 @@ interface FooterProps {
   onNext?: () => void;
   onCustomAction?: () => void;
   customActionIcon?: string;
+  mainActionDisabled?: boolean;
+  secondaryActionDisabled?: boolean;
 }
 
 export interface ScreenProps extends YStackProps {
@@ -101,10 +103,15 @@ export const Screen = ({
               )}
 
               {footerProps.onMainAction && (
-                <Button onPress={footerProps.onMainAction}>{footerProps.mainActionLabel || 'Done'}</Button>
+                <Button onPress={footerProps.onMainAction} disabled={footerProps.mainActionDisabled}>
+                  {footerProps.mainActionLabel || 'Done'}
+                </Button>
               )}
               {footerProps.onSecondaryAction && (
-                <Button preset='secondary' onPress={footerProps.onSecondaryAction}>
+                <Button
+                  preset='secondary'
+                  onPress={footerProps.onSecondaryAction}
+                  disabled={footerProps.secondaryActionDisabled}>
                   {footerProps.secondaryActionLabel}
                 </Button>
               )}

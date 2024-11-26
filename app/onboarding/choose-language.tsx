@@ -15,17 +15,12 @@ export default function ChooseLanguage() {
   const { t } = useTranslation(['choose-language', 'languages']);
   const router = useRouter();
 
-  const languagesArray = useMemo(() => i18n.languages || ['en'], [i18n.languages]);
-  const languages = languagesArray.map((language) => ({
+  const languages = i18n.languages.map((language) => ({
     id: language,
     label: t(`${language}`, { ns: 'languages' }),
   }));
 
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
-
-  useEffect(() => {
-    MKKV().set(STORE_KEYS.LANGUAGE, selectedLanguage);
-  }, [selectedLanguage]);
 
   return (
     <Screen
@@ -39,7 +34,12 @@ export default function ChooseLanguage() {
       }}
       footerProps={{
         mainActionLabel: t('next'),
-        onMainAction: () => router.push('/onboarding/onboarding-slider'),
+        onMainAction: () => {
+          if (selectedLanguage) {
+            MKKV().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+            router.push('/onboarding/onboarding-slider');
+          }
+        },
       }}>
       <FlashList
         ListHeaderComponent={() => (

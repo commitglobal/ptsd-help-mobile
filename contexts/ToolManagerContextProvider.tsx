@@ -7,7 +7,7 @@ import { FogglesConfig } from '@/models/CMSFoggles.type';
 import '../common/config/i18n';
 
 type ToolManagerContextType = {
-  TOOL_CONFIG: Record<string, Tool>;
+  TOOL_CONFIG: ToolConfigType;
 
   selectedTool: Tool | null;
 
@@ -28,7 +28,7 @@ type ToolManagerContextType = {
   resetToolManagerContext: () => void;
 };
 
-const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig) => {
+const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
   if (!foggles) {
     return toolsConfig;
   }
@@ -55,7 +55,7 @@ const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesCon
             }, {}),
       },
     };
-  }, {});
+  }, {} as ToolConfigType);
 };
 
 const ToolManagerContext = createContext<ToolManagerContextType | null>(null);

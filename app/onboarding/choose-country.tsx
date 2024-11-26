@@ -9,12 +9,14 @@ import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
 import { MKKV } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
-
+import * as FileSystem from 'expo-file-system';
 const ChooseCountry = () => {
+  console.log(FileSystem.documentDirectory);
+
   const { t } = useTranslation('choose-country');
   const router = useRouter();
 
-  const [selectedCountry, setSelectedCountry] = useState<string>('us');
+  const [selectedCountry, setSelectedCountry] = useState<string>();
 
   const countriesArray = ['ro', 'am', 'ua'];
   const countryFlags = {
@@ -33,10 +35,6 @@ const ChooseCountry = () => {
     [countriesArray, t]
   );
 
-  useEffect(() => {
-    MKKV().set(STORE_KEYS.COUNTRY, selectedCountry);
-  }, [selectedCountry]);
-
   return (
     <Screen
       headerProps={{
@@ -49,7 +47,13 @@ const ChooseCountry = () => {
       }}
       footerProps={{
         mainActionLabel: t('next'),
-        onMainAction: () => router.push('/onboarding/choose-language'),
+        onMainAction: () => {
+          if (selectedCountry) {
+            MKKV().set(STORE_KEYS.COUNTRY, selectedCountry);
+            router.push('/onboarding/choose-language');
+          }
+        },
+        mainActionDisabled: !selectedCountry,
       }}>
       <FlashList
         ListHeaderComponent={() => (
