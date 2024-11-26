@@ -4,7 +4,6 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-
 import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
 import { PortalProvider, TamaguiProvider } from 'tamagui';
 import appConfig from '@/tamagui.config';
@@ -14,7 +13,8 @@ import db from '@/db/db';
 import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-// import '../common/config/i18n';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { MKKV } from '@/helpers/mmkv';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -31,7 +31,7 @@ const queryClient = new QueryClient({
 export default function RootLayout() {
   const { success, error } = useMigrations(db, migrations);
 
-  // const hasOnboardingDone = KeyValueStorage().getBoolean(STORE_KEYS.ONBOARDING_DONE) || false;
+  const hasOnboardingDone = MKKV().getBoolean(STORE_KEYS.ONBOARDING_DONE) || false;
 
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
@@ -73,8 +73,8 @@ export default function RootLayout() {
         <PortalProvider>
           <ToolManagerContextProvider>
             <Stack>
-              <Stack.Screen redirect={false} name='onboarding' options={{ headerShown: false }} />
               <Stack.Screen name='(drawer)' options={{ headerShown: false }} />
+              <Stack.Screen name='onboarding' options={{ headerShown: false }} />
               <Stack.Screen name='tools' options={{ headerShown: false }} />
               <Stack.Screen name='+not-found' />
             </Stack>

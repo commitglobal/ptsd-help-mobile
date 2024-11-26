@@ -8,7 +8,7 @@ import { useRouter } from 'expo-router';
 import i18n from '@/common/config/i18n';
 import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
-import { KeyValueStorage } from '@/app/index';
+import { MKKV } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChooseLanguage() {
@@ -24,7 +24,7 @@ export default function ChooseLanguage() {
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
 
   useEffect(() => {
-    KeyValueStorage().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+    MKKV().set(STORE_KEYS.LANGUAGE, selectedLanguage);
   }, [selectedLanguage]);
 
   return (
