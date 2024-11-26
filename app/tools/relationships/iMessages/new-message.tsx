@@ -10,7 +10,7 @@ import { ScrollView, YStack } from 'tamagui';
 import { Controller, useForm } from 'react-hook-form';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
-import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
+import useTranslationKeys from '@/hooks/useTranslationKeys';
 import messagesRepository, { Message } from '@/db/repositories/messages.repository';
 
 export default function NewMessage() {
@@ -54,14 +54,14 @@ export default function NewMessage() {
     }
   };
 
-  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage;
+  const { translations } = useTranslationKeys();
 
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
-          title: t(translationsKeys.title),
+          title: t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.title),
           iconRight: (
             <Typography color='$gray12' fontWeight='bold'>
               {t('general.done', { ns: 'translation' })}
@@ -97,17 +97,21 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translationsKeys.annoyance.label)}
-                placeholder={t(translationsKeys.annoyance.placeholder)}
+                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.label)}
+                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder)}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t(translationsKeys.annoyance.example)}
-                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.annoyance.example))}
+                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(
+                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)
+                  )
+                }
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t(translationsKeys.declaration)}</Typography>
+          <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.declaration)}</Typography>
           <Controller
             control={control}
             name='message'
@@ -121,12 +125,14 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translationsKeys.iFeel.label)}
-                placeholder={t(translationsKeys.iFeel.placeholder)}
+                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.label)}
+                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder)}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t(translationsKeys.iFeel.example)}
-                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.iFeel.example))}
+                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example))
+                }
                 errorMessage={errors.feel?.message as string}
               />
             )}
@@ -144,12 +150,16 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translationsKeys.becauseInput.label)}
-                placeholder={t(translationsKeys.becauseInput.placeholder)}
+                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.label)}
+                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder)}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t(translationsKeys.becauseInput.example)}
-                onInfoMessagePress={() => handleInfoModalOpen(t(translationsKeys.becauseInput.example))}
+                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)}
+                onInfoMessagePress={() =>
+                  handleInfoModalOpen(
+                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)
+                  )
+                }
                 errorMessage={errors.because?.message as string}
               />
             )}

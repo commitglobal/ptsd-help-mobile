@@ -1,5 +1,4 @@
-import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
-import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
+import useTranslationKeys from '@/hooks/useTranslationKeys';
 import Button from '@/components/Button';
 import { Card } from '@/components/Card';
 import { Icon } from '@/components/Icon';
@@ -20,7 +19,7 @@ export default function iMessages() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
 
-  const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
+  const { translations } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
   const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
@@ -33,7 +32,7 @@ export default function iMessages() {
       <ScreenWithImageHeader
         imageUrl={mediaMapping ? mediaMapping['RELATIONSHIPS.I_MESSAGES.headerImage'] : ''}
         headerProps={{
-          title: t(translationsKeys.title),
+          title: t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.title),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
@@ -42,11 +41,11 @@ export default function iMessages() {
           error ? (
             <Typography>{error.message}</Typography> // TODO: handle error differently
           ) : (
-            <Typography>{t(translationsKeys.text)}</Typography>
+            <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.text)}</Typography>
           )
         ) : (
           <>
-            <Typography>{t(translationsKeys.findTime)}</Typography>
+            <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.findTime)}</Typography>
             {messages.map((message) => (
               <Card
                 key={message.id}
@@ -58,13 +57,13 @@ export default function iMessages() {
                     params: { messageId: message.id },
                   })
                 }>
-                <Typography>{t(translationsKeys.when)}</Typography>
+                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.when)}</Typography>
                 <Typography preset='helper'>{message.annoyance}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t(translationsKeys.feel)}</Typography>
+                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.feel)}</Typography>
                 <Typography preset='helper'>{message.message}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t(translationsKeys.because)}</Typography>
+                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.because)}</Typography>
                 <Typography preset='helper'>{message.because}</Typography>
               </Card>
             ))}

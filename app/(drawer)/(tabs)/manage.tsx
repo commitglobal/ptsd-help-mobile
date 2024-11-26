@@ -9,7 +9,7 @@ import ScreenTabs from '@/components/ScreenTabs';
 import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { Tool, TOOLS_CONFIG } from '@/_config/tools.config';
+import { Tool } from '@/_config/tools.config';
 
 type SymptomListProps = {
   onSymptomSelected: (symptom: unknown) => void;
@@ -68,7 +68,7 @@ export default function Manage() {
   const { tabId } = useLocalSearchParams<{ tabId: keyof typeof Lists }>();
   const { t } = useTranslation('translation');
   const router = useRouter();
-  const { startTool } = useToolManagerContext();
+  const { startTool, TOOL_CONFIG } = useToolManagerContext();
 
   const tabs = useMemo(
     () => [
@@ -102,7 +102,7 @@ export default function Manage() {
       return (
         <ListComponent
           onSymptomSelected={(_symptom) => {
-            const allTools = Object.values(TOOLS_CONFIG).flatMap((item) =>
+            const allTools = Object.values(TOOL_CONFIG).flatMap((item) =>
               item.subcategories
                 ? Object.values(item.subcategories).filter((sub) => sub.type === 'tool')
                 : item.type === 'tool'
@@ -119,7 +119,7 @@ export default function Manage() {
     const ListComponent = Lists[selectedTabId];
     return (
       <ListComponent
-        data={Object.values(TOOLS_CONFIG).map((tool) => {
+        data={Object.values(TOOL_CONFIG).map((tool) => {
           return {
             ...tool,
             label: t(tool.label, { ns: 'tools' }),

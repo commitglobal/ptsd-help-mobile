@@ -1,8 +1,12 @@
-import { Tool } from '@/_config/tools.config';
+import { Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext, useMemo, useState } from 'react';
+import { useAssetsManagerContext } from './AssetsManagerContextProvider';
+import { FogglesConfig } from '@/models/CMSFoggles.type';
 
 type ToolManagerContextType = {
+  TOOL_CONFIG: Record<string, Tool>;
+
   selectedTool: Tool | null;
 
   isDistressMeterActive: boolean;
@@ -22,9 +26,42 @@ type ToolManagerContextType = {
   resetToolManagerContext: () => void;
 };
 
+const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig) => {
+  if (!foggles) {
+    return toolsConfig;
+  }
+
+  return Object.entries(toolsConfig).reduce((acc, [key, tool]) => {
+    if (!foggles?.features?.tools?.[tool.id]?.enabled) {
+      return acc;
+    }
+
+    return {
+      ...acc,
+      [key]: {
+        ...tool,
+        subcategories: !tool.subcategories
+          ? undefined
+          : Object.entries(tool.subcategories).reduce((subAcc, [subKey, subcategory]) => {
+              if (!foggles?.features?.tools?.[tool.id]?.subcategories?.[subcategory.id]?.enabled) {
+                return subAcc;
+              }
+              return {
+                ...subAcc,
+                [subKey]: subcategory,
+              };
+            }, {}),
+      },
+    };
+  }, {});
+};
+
 const ToolManagerContext = createContext<ToolManagerContextType | null>(null);
 
 const ToolManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
+  const { foggles } = useAssetsManagerContext();
+  const TOOLS_CONFIG = useTools();
+
   const isDistressMeterActive = false; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
@@ -32,6 +69,10 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
 
   const [initialDistressLevel, setInitialDistressLevel] = useState<number | null>(null);
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
+
+  const TOOL_CONFIG = useMemo(() => {
+    return filterToolsWithFoggles(TOOLS_CONFIG, foggles);
+  }, [foggles]);
 
   const getFeedback = () => {
     return `Feedback from tool manager ${initialDistressLevel} to ${finalDistressLevel}`;
@@ -66,6 +107,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   };
 
   const contextValue: ToolManagerContextType = {
+    TOOL_CONFIG,
     selectedTool,
     isDistressMeterActive,
     initialDistressLevel,

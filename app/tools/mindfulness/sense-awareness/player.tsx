@@ -5,7 +5,7 @@ import { Stack, useRouter } from 'expo-router';
 import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
-import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
+import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
 import { Asset } from 'expo-asset';
 
@@ -13,7 +13,7 @@ export const SenseAwarenessPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
-  const translationKeys = TOOLS_TRANSLATIONS_CONFIG.MINDFULNESS.subcategories.SENSE_AWARENESS;
+  const { translations } = useTranslationKeys();
   const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.SENSE_AWARENESS;
 
   //   get the asset
@@ -29,7 +29,7 @@ export const SenseAwarenessPlayer = () => {
       <ScreenWithImageHeader
         imageUrl={mediaMapper.headerImageURI}
         headerProps={{
-          title: t(translationKeys.label, { ns: 'tools' }),
+          title: t(translations.MINDFULNESS.subcategories.SENSE_AWARENESS.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}

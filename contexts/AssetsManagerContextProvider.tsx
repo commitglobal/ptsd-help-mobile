@@ -17,17 +17,19 @@
  * 5. Provides mapping to components to resolve asset URIs
  */
 
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext } from 'react';
 import * as FileSystem from 'expo-file-system';
-import { skipToken, useQuery } from '@tanstack/react-query';
+import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
+import { FogglesConfig } from '@/models/CMSFoggles.type';
 
 const S3_CMS_BASE_URL = 'https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com';
 const S3_CMS_CONFIG_FOLDER = `${S3_CMS_BASE_URL}/config/`;
 const ASSETS_FOLDER_LOCAL = 'assets/';
 
 type AssetsManagerContextType = {
-  mediaMapping: any;
+  mediaMapping: FlatLocalMediaMapping;
+  foggles: FogglesConfig;
 };
 
 export interface MediaItem {
@@ -55,6 +57,8 @@ export const processFlatMediaAssets = async (
 
   const assetsFolder = `${destinationFolder}${ASSETS_FOLDER_LOCAL}`;
 
+  let hasChanges = false;
+
   const downloadPromises = Object.entries(cmsMapping).map(async ([key, { uri, lastUpdatedAt }]) => {
     const fileName = uri.split('/').pop(); // Extract file name
 
@@ -63,17 +67,14 @@ export const processFlatMediaAssets = async (
       await FileSystem.makeDirectoryAsync(assetsFolder, { intermediates: true });
     }
 
-    const localFilePath = `${assetsFolder}${fileName}`; // !Le bag intr-un folder assets/ ca sa pot sa sterg tot ce nu exista in localMapping fara sa sterg config files
+    const localFilePath = `${assetsFolder}${fileName}`;
 
     // Check if the file exists and is up-to-date
     const fileInfo = await FileSystem.getInfoAsync(localFilePath);
     const needsDownload = !fileInfo.exists || (fileInfo.exists && lastUpdatedAt > fileInfo.modificationTime! * 1000);
 
-    console.log(`${key}: ${needsDownload ? 'DOWNLOAD' : 'SKIP'}`);
-    console.log(`${fileInfo.exists ? 'EXISTS' : 'NOT EXISTS'}`);
-    console.log(`${fileInfo.exists ? `Modification Time: ${fileInfo.modificationTime}` : 'N/A'}`);
-
     if (needsDownload) {
+      hasChanges = true;
       try {
         console.log(`Downloading: ${uri}`);
         const result = await FileSystem.downloadAsync(uri, localFilePath);
@@ -82,7 +83,6 @@ export const processFlatMediaAssets = async (
         console.error(`Error downloading ${uri}:`, error);
       }
     } else {
-      console.log(`File is up-to-date: ${localFilePath}`);
       updatedMapping[key] = localFilePath; // Use existing file
     }
   });
@@ -90,7 +90,7 @@ export const processFlatMediaAssets = async (
   await Promise.all(downloadPromises);
 
   const timeEnd = new Date().getTime();
-  console.log(`Download time: ${timeEnd - timeStart}ms`);
+  console.log(`Media mapping download time: ${timeEnd - timeStart}ms`);
 
   // Get all files in assets folder
   const assetFiles = await FileSystem.readDirectoryAsync(assetsFolder);
@@ -101,6 +101,7 @@ export const processFlatMediaAssets = async (
   // Delete files that are not in the mapping
   for (const file of assetFiles) {
     if (!validFilePaths.has(file)) {
+      hasChanges = true;
       const filePath = `${assetsFolder}${file}`;
       try {
         await FileSystem.deleteAsync(filePath);
@@ -111,26 +112,28 @@ export const processFlatMediaAssets = async (
     }
   }
 
-  try {
-    // Delete any existing localMapping files
-    const files = await FileSystem.readDirectoryAsync(destinationFolder);
-    for (const file of files) {
-      if (file.startsWith('localMapping_') && file.endsWith('.json')) {
-        try {
-          await FileSystem.deleteAsync(`${destinationFolder}${file}`);
-          console.log(`Deleted old mapping file: ${file}`);
-        } catch (error) {
-          console.error(`Error deleting mapping file ${file}:`, error);
+  if (hasChanges) {
+    try {
+      // Delete any existing localMapping files
+      const files = await FileSystem.readDirectoryAsync(destinationFolder);
+      for (const file of files) {
+        if (file.startsWith('localMapping_') && file.endsWith('.json')) {
+          try {
+            await FileSystem.deleteAsync(`${destinationFolder}${file}`);
+            console.log(`Deleted old mapping file: ${file}`);
+          } catch (error) {
+            console.error(`Error deleting mapping file ${file}:`, error);
+          }
         }
       }
-    }
 
-    // Save new mapping
-    const json = JSON.stringify(updatedMapping, null, 2);
-    await FileSystem.writeAsStringAsync(`${destinationFolder}localMapping_${countryCode}.json`, json);
-    console.log(`Mapping saved to: ${destinationFolder}localMapping_${countryCode}.json`);
-  } catch (error) {
-    console.error('Error saving local mapping:', error);
+      // Save new mapping
+      const json = JSON.stringify(updatedMapping, null, 2);
+      await FileSystem.writeAsStringAsync(`${destinationFolder}localMapping_${countryCode}.json`, json);
+      console.log(`Mapping saved to: ${destinationFolder}localMapping_${countryCode}.json`);
+    } catch (error) {
+      console.error('Error saving local mapping:', error);
+    }
   }
 
   return updatedMapping;
@@ -145,6 +148,65 @@ export const fetchMediaMapping = async (countryCode: string) => {
     console.error('Error fetching media mapping:', error);
     return null;
   }
+};
+
+export const fetchFoggles = async (countryCode: string, destinationFolder: string) => {
+  const localFogglesPath = `${destinationFolder}foggles_${countryCode}.json`;
+
+  const getLocalFoggles = async () => {
+    try {
+      const localFogglesJson = await FileSystem.readAsStringAsync(localFogglesPath);
+      return JSON.parse(localFogglesJson);
+    } catch (error) {
+      console.log('No existing local foggles found');
+      return null;
+    }
+  };
+
+  const getRemoteFoggles = async () => {
+    try {
+      const response = await fetch(`${S3_CMS_CONFIG_FOLDER}foggles_${countryCode}.json`);
+      if (!response.ok) return null;
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching remote foggles:', error);
+      return null;
+    }
+  };
+
+  try {
+    const [localFoggles, remoteFoggles] = await Promise.all([getLocalFoggles(), getRemoteFoggles()]);
+
+    if (!localFoggles && !remoteFoggles) {
+      return null;
+    }
+
+    const shouldUpdateLocal =
+      !localFoggles || new Date(remoteFoggles?.lastUpdated) > new Date(localFoggles?.lastUpdated);
+
+    if (shouldUpdateLocal && remoteFoggles) {
+      await FileSystem.writeAsStringAsync(localFogglesPath, JSON.stringify(remoteFoggles, null, 2));
+      console.log(`Updated foggles saved to: ${localFogglesPath}`);
+      return remoteFoggles;
+    }
+
+    return localFoggles;
+  } catch (error) {
+    console.error('Error fetching/saving foggles:', error);
+    return null;
+  }
+};
+
+const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
+  return useQuery({
+    queryKey: ['foggles', countryCode],
+    queryFn: !countryCode
+      ? skipToken
+      : async () => {
+          const destinationFolder = `${FileSystem.documentDirectory}`;
+          return fetchFoggles(countryCode, destinationFolder);
+        },
+  });
 };
 
 /**
@@ -207,18 +269,21 @@ const useMediaMapper = (countryCode: string) => {
 const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null);
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const countryCode = 'EN';
-  const { data: mediaMapping, isFetching } = useMediaMapper(countryCode);
+  const countryCode = 'RO';
+  const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
+  const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
 
-  if (!isFetching && !mediaMapping) {
+  //   console.log('foggles', JSON.stringify(foggles, null, 2));
+
+  if (isFetchingMedia || isFetchingFoggles) {
+    return <Typography>Loading...</Typography>;
+  }
+
+  if (!mediaMapping) {
     return <Typography>FATAL: No media mapping found</Typography>;
   }
 
-  return isFetching ? (
-    <Typography>Loading media mapping...</Typography>
-  ) : (
-    <AssetsManagerContext.Provider value={{ mediaMapping }}>{children}</AssetsManagerContext.Provider>
-  );
+  return <AssetsManagerContext.Provider value={{ mediaMapping, foggles }}>{children}</AssetsManagerContext.Provider>;
 };
 
 export const useAssetsManagerContext = () => {
