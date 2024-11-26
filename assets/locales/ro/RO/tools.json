@@ -99,6 +99,7 @@
     "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat.\n\nTe rugăm să reții că vor fi pauze în înregistrarea audio pentru a putea practica fără distrageri.\n\nDurata: Aproximativ 9 minute.",
     "action-btn-label": "Continuă",
     "helper": "RO/ro: Incearca sa faci asta pentru 5 minute",
+    "take_break": "RO/ro: Ia o pauză",
     "repeater": {
       "1": {
         "title": "Fă o plimbare pentru a te relaxa și a-ți limpezi gândurile"

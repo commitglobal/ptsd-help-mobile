@@ -10,7 +10,7 @@ import { YStack } from "tamagui";
 import Button from "@/components/Button";
 import { useEffect, useState } from "react";
 
-const PAUSE_TIME = 10
+const PAUSE_TIME = 5 * 60
 export default function Pause() {
 	const [isPauseActive, setIsPauseActive] = useState(false);
 	const [timeLeft, setTimeLeft] = useState(PAUSE_TIME);
