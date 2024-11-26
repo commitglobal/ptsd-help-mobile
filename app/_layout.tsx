@@ -1,5 +1,5 @@
 import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
+import { Slot, Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
@@ -71,12 +71,7 @@ export default function RootLayout() {
         <PortalProvider>
           <AssetsManagerContextProvider>
             <ToolManagerContextProvider>
-              <Stack>
-                <Stack.Screen name='(drawer)' options={{ headerShown: false }} />
-                <Stack.Screen name='tools' options={{ headerShown: false }} />
-                <Stack.Screen name='onboarding' options={{ headerShown: false }} />
-                <Stack.Screen name='+not-found' />
-              </Stack>
+              <Slot />
             </ToolManagerContextProvider>
           </AssetsManagerContextProvider>
         </PortalProvider>

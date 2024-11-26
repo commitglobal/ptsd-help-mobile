@@ -273,8 +273,6 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
 
-  //   console.log('foggles', JSON.stringify(foggles, null, 2));
-
   if (isFetchingMedia || isFetchingFoggles) {
     return <Typography>Loading...</Typography>;
   }
