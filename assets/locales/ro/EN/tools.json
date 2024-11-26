@@ -250,5 +250,61 @@
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
       "action-btn-label": "RO/en: Continue"
     }
+  },
+  "pause": {
+    "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+    "action-btn-label": "RO/en: Continue",
+    "helper": "RO/en: Try to do this for 5 minutes",
+    "take_break": "RO/en: Take a break",
+    "repeater": {
+      "1": {
+        "title": "Take a walk to relax and clear your thoughts"
+      },
+      "2": {
+        "title": "Breathe deeply for 10 minutes or more"
+      },
+      "3": {
+        "title": "Exercise (bike riding, hiking, weight lifting, swimming, running)"
+      },
+      "4": {
+        "title": "Garden or do yard work"
+      },
+      "5": {
+        "title": "Tell yourself positive things like \"I can handle this situation without losing my cool\""
+      },
+      "6": {
+        "title": "Draw or paint to express your emotions"
+      },
+      "7": {
+        "title": "Call a friend or loved one for support"
+      },
+      "8": {
+        "title": "Call your therapist for support"
+      },
+      "9": {
+        "title": "Stretch and breathe deeply and slowly"
+      },
+      "10": {
+        "title": "Remember that you can cope"
+      },
+      "11": {
+        "title": "Meditate to calm your mind"
+      },
+      "12": {
+        "title": "Pray for guidance and support"
+      },
+      "13": {
+        "title": "Think about what advice someone you trust would give you"
+      },
+      "14": {
+        "title": "Spend time with a pet for comfort and peace"
+      },
+      "15": {
+        "title": "Take a shower or bath to relax"
+      },
+      "16": {
+        "title": "Think about how you want to be a role model for others in your life - children etc."
+      }
+    }
   }
 }
