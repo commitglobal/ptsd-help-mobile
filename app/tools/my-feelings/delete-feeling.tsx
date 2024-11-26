@@ -11,6 +11,7 @@ import { useFeeling } from '@/services/feelings.service';
 import feelingsRepository from '@/db/repositories/feelings.repository';
 import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
 import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
+import { GenericError } from '@/components/GenericError';
 
 export default function DeleteFeeling() {
   const { t } = useTranslation('tools');
@@ -19,7 +20,7 @@ export default function DeleteFeeling() {
 
   const [deleteFeelingModalOpen, setDeleteFeelingModalOpen] = useState(false);
   const { feelingId } = useLocalSearchParams();
-  const { data: feeling, isLoading } = useFeeling(Number(feelingId));
+  const { data: feeling, isLoading, error } = useFeeling(Number(feelingId));
   const discomfortLevels = useDiscomfortLevels(t, translationKey);
   const currentDiscomfortLevel = getDiscomfortLevel(feeling?.discomfort ?? 0, discomfortLevels);
 
@@ -31,6 +32,19 @@ export default function DeleteFeeling() {
       console.error('Error deleting feeling', error);
     }
   };
+
+  if (error) {
+    return (
+      <Screen
+        headerProps={{
+          title: t(translationKey.feelingsSummary),
+          iconLeft: <Icon icon='chevronLeft' width={24} height={24} onPress={router.back} />,
+        }}
+        contentContainerStyle={{ backgroundColor: 'white', padding: 24 }}>
+        <GenericError />
+      </Screen>
+    );
+  }
 
   return (
     <>

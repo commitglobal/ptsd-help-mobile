@@ -12,7 +12,8 @@
     "sure": "RO/en: Yes, I'm sure",
     "delete-confirmation": "RO/en: Are you sure you want to delete?",
     "yes": "RO/en: Yes",
-    "no": "RO/en: No"
+    "no": "RO/en: No",
+    "generic-error": "RO/en: Something went wrong and we couldn't retrieve your data."
   },
   "general": {
     "done": "RO/en: Done",

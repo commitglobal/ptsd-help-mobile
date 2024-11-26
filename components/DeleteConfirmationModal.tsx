@@ -12,7 +12,7 @@ export const DeleteConfirmationModal = ({
   setModalOpen: (open: boolean) => void;
   handleDelete: () => void;
 }) => {
-  const { t } = useTranslation('tools');
+  const { t } = useTranslation();
 
   return (
     <Modal open onOpenChange={setModalOpen}>

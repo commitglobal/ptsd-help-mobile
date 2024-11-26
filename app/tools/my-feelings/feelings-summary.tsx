@@ -21,8 +21,7 @@ export default function FeelingsSummary() {
   const handleSubmitFeelings = async () => {
     try {
       await submitFeelings();
-      // TODO: this is not ok
-      router.replace('/tools/my-feelings');
+      router.dismissAll(); //  go back to the index screen
     } catch (error) {
       console.error('Error submitting feelings:', error);
     }

@@ -12,6 +12,7 @@ import { Separator, XStack, YStack } from 'tamagui';
 import { Card } from '@/components/Card';
 import { format } from 'date-fns';
 import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
+import { GenericError } from '@/components/GenericError';
 
 export default function MyFeelings() {
   const router = useRouter();
@@ -20,9 +21,23 @@ export default function MyFeelings() {
 
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
 
-  // TODO: loading & error
-  const { data: feelings } = useLiveQuery(feelingsRepository.getFeelings(), []);
+  // TODO: loading
+  const { data: feelings, error } = useLiveQuery(feelingsRepository.getFeelings(), []);
   //  how do we manage loading here??? feelings is [] while 'loading'
+
+  if (error) {
+    return (
+      <ScreenWithImageHeader
+        imageUrl={require('@/assets/images/tools/my-feelings/my_feelings.jpg')}
+        headerProps={{
+          title: t(translationKey.label),
+          iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
+          onLeftPress: () => router.back(),
+        }}>
+        <GenericError />
+      </ScreenWithImageHeader>
+    );
+  }
 
   return (
     <ScreenWithImageHeader
