@@ -112,4 +112,11 @@ export const TOOLS_CONFIG: Record<string, Tool> = {
     route: '/tools/my-feelings',
     type: ToolType.TOOL,
   },
+  WORRY_TIME: {
+    id: 'tool-6',
+    label: TOOLS_TRANSLATIONS_CONFIG.WORRY_TIME.label,
+    photoUrl: require('@/assets/images/tools/worry-time/schedule_worry_time.jpg'),
+    route: '/tools/worry-time',
+    type: ToolType.TOOL,
+  },
 };

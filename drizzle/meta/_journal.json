@@ -22,6 +22,20 @@
       "when": 1732534828427,
       "tag": "0002_correct-discomfort-name",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1732632913398,
+      "tag": "0003_worries-table",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "6",
+      "when": 1732633120335,
+      "tag": "0004_worries-table-rename",
+      "breakpoints": true
     }
   ]
 }

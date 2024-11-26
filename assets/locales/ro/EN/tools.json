@@ -12,7 +12,8 @@
     "emotional-discomfort": "RO/en: Emotional Discomfort",
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
-    "my-feelings": "RO/en: My Feelings"
+    "my-feelings": "RO/en: My Feelings",
+    "worry-time": "RO/en: Worry Time"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -372,5 +373,12 @@
       "blocked": "RO/en: Blocked",
       "vulnerable": "RO/en: Vulnerable"
     }
+  },
+  "worry-time": {
+    "title": "RO/en: Worry Time",
+    "help": "RO/en: Help",
+    "description": "RO/en: A strategy that has proven helpful in calming anxious thoughts is scheduling a worry period. Although this may seem counterintuitive for people struggling with anxiety, it can actually help gain control over obsessive thoughts. If you find yourself worrying at night, schedule a time below when you can think about the issues on your mind.",
+    "write-here": "RO/en: Use this space to write your thoughts...",
+    "subjects-to-think-about": "RO/en: Subjects to think about"
   }
 }
