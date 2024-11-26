@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
@@ -8,6 +8,8 @@ import { useRouter } from 'expo-router';
 import i18n from '@/common/config/i18n';
 import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
+import { MKKV } from '@/helpers/mmkv';
+import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChooseLanguage() {
   const { t } = useTranslation(['choose-language', 'languages']);
@@ -20,6 +22,10 @@ export default function ChooseLanguage() {
   }));
 
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
+
+  useEffect(() => {
+    MKKV().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+  }, [selectedLanguage]);
 
   return (
     <Screen

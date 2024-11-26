@@ -4,6 +4,8 @@ import { createContext, useContext, useMemo, useState } from 'react';
 import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 import { FogglesConfig } from '@/models/CMSFoggles.type';
 
+import '../common/config/i18n';
+
 type ToolManagerContextType = {
   TOOL_CONFIG: Record<string, Tool>;
 
@@ -82,7 +84,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     setSelectedTool(tool);
     setReturnURL(returnURL);
 
-    if (tool.subcategories?.length) {
+    if (tool.subcategories && Object.keys(tool.subcategories).length > 0) {
       router.push(tool.route);
     } else if (isDistressMeterActive) {
       router.push('/tools/distress-meter/pre');

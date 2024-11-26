@@ -3,7 +3,6 @@ import { Slot, Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
-import '../common/config/i18n';
 
 import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
 import { PortalProvider, TamaguiProvider } from 'tamagui';
