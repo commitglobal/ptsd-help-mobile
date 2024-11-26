@@ -7,13 +7,12 @@ import toolsRoEn from '../../assets/locales/ro/EN/tools.json';
 import roRO from '../../assets/locales/ro/RO/ro-RO.json';
 import toolsRoRo from '../../assets/locales/ro/RO/tools.json';
 import { STORE_KEYS } from '@/constants/store-keys';
-import { KeyValueStorage } from '@/app/_layout';
+import { KeyValueStorage } from '@/app/index';
 
 import * as Localization from 'expo-localization';
 
-const storage = KeyValueStorage();
-
-const systemLocale = storage.getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
+const systemLocale =
+  KeyValueStorage().getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
 
 // handle RTL languages
 const language = Localization.getLocales().find((lang) => lang.languageCode === systemLocale);

@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 import { FlashList } from '@shopify/flash-list';
 import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
-import { KeyValueStorage } from '../_layout';
+import { KeyValueStorage } from '../index';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 const ChooseCountry = () => {
@@ -34,7 +34,7 @@ const ChooseCountry = () => {
   );
 
   useEffect(() => {
-    KeyValueStorage.set(STORE_KEYS.COUNTRY, selectedCountry);
+    KeyValueStorage().set(STORE_KEYS.COUNTRY, selectedCountry);
   }, [selectedCountry]);
 
   return (

@@ -10,6 +10,8 @@ import { Typography } from "./Typography";
 import { useTranslation } from "react-i18next";
 import Button from "./Button";
 import { useRouter } from "expo-router";
+import { KeyValueStorage } from "@/app/index";
+import { STORE_KEYS } from "@/constants/store-keys";
 
 export const OnboardingLastScreen = () => {
   const { width } = useWindowDimensions();
@@ -20,6 +22,11 @@ export const OnboardingLastScreen = () => {
     () => [t("welcome.personalize.l1"), t("welcome.personalize.l2")],
     [t]
   );
+
+  const handleStart = () => {
+    KeyValueStorage().set(STORE_KEYS.ONBOARDING_DONE, true);
+    router.replace("/(drawer)/(tabs)");
+  };
 
   return (
     <ScrollView
@@ -57,12 +64,12 @@ export const OnboardingLastScreen = () => {
       <YStack gap="$md" marginTop="auto">
         <Button
           preset="secondary"
-          onPress={() => router.replace("/(drawer)/(tabs)")}
+          onPress={handleStart}
         >
           {t("welcome.actions.start")}
         </Button>
         {/* //todo: route to personalize screen */}
-        <Button preset="secondary" onPress={() => {}}>
+        <Button preset="secondary" onPress={() => { }}>
           {t("welcome.actions.personalize")}
         </Button>
       </YStack>
