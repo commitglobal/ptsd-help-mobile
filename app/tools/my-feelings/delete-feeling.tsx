@@ -10,6 +10,7 @@ import { format } from 'date-fns';
 import { useFeeling } from '@/services/feelings.service';
 import feelingsRepository from '@/db/repositories/feelings.repository';
 import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
+import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
 
 export default function DeleteFeeling() {
   const { t } = useTranslation('tools');
@@ -19,6 +20,8 @@ export default function DeleteFeeling() {
   const [deleteFeelingModalOpen, setDeleteFeelingModalOpen] = useState(false);
   const { feelingId } = useLocalSearchParams();
   const { data: feeling, isLoading } = useFeeling(Number(feelingId));
+  const discomfortLevels = useDiscomfortLevels(t, translationKey);
+  const currentDiscomfortLevel = getDiscomfortLevel(feeling?.discomfort ?? 0, discomfortLevels);
 
   const handleDeleteFeeling = async () => {
     try {
@@ -79,7 +82,9 @@ export default function DeleteFeeling() {
               <Typography preset='subheading' color='$blue11' marginTop='$md'>
                 {t(translationKey.emotionIntensity)}
               </Typography>
-              <Typography>{feeling.discomfort}%: </Typography>
+              <Typography>
+                {feeling.discomfort}%: {currentDiscomfortLevel}
+              </Typography>
             </>
           ) : null}
         </ScrollView>
