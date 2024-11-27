@@ -65,8 +65,8 @@ export default function RootLayout() {
   }
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TamaguiProvider config={appConfig}>
+    <TamaguiProvider config={appConfig}>
+      <QueryClientProvider client={queryClient}>
         <PortalProvider>
           <AssetsManagerContextProvider>
             <ToolManagerContextProvider>
@@ -74,7 +74,7 @@ export default function RootLayout() {
             </ToolManagerContextProvider>
           </AssetsManagerContextProvider>
         </PortalProvider>
-      </TamaguiProvider>
-    </QueryClientProvider>
+      </QueryClientProvider>
+    </TamaguiProvider>
   );
 }

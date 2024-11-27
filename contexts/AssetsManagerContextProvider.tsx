@@ -76,6 +76,7 @@ export type FlatLocalMediaMapping = {
   'AMBIENT_SOUNDS.FOREST.soundURI': string;
   'PAUSE.CATEGORY_ICON': string;
   'MINDFULNESS.CONSCIOUS_BREATHING.soundURI': string;
+  'MY_FEELINGS.CATEGORY_ICON': string;
 };
 
 export const processFlatMediaAssets = async (

@@ -20,7 +20,7 @@ export type Tool = {
 
 export type ToolConfigType = Record<ToolCategories, Tool>;
 
-type ToolCategories = 'RELATIONSHIPS' | 'AMBIENT_SOUNDS' | 'MINDFULNESS' | 'PAUSE';
+type ToolCategories = 'RELATIONSHIPS' | 'AMBIENT_SOUNDS' | 'MINDFULNESS' | 'PAUSE' | 'MY_FEELINGS';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -130,6 +130,13 @@ export const useTools = () => {
       label: toolsTranslationKeys.PAUSE.label,
       photoUrl: mediaMapping?.['PAUSE.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/pause',
+      type: ToolType.TOOL,
+    },
+    MY_FEELINGS: {
+      id: 'my-feelings',
+      label: toolsTranslationKeys.MY_FEELINGS.label,
+      photoUrl: mediaMapping?.['MY_FEELINGS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/my-feelings',
       type: ToolType.TOOL,
     },
   };

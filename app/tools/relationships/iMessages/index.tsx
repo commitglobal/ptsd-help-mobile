@@ -1,18 +1,19 @@
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import Button from '@/components/Button';
 import { Card } from '@/components/Card';
+import { GenericError } from '@/components/GenericError';
 import { Icon } from '@/components/Icon';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
-import messagesRepository from '@/db/repositories/messages.repository';
+import messagesRepository, { Message } from '@/db/repositories/messages.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Separator, XStack } from 'tamagui';
+import { Separator, Spinner, XStack, YStack } from 'tamagui';
 
 export default function iMessages() {
   const { t } = useTranslation('tools');
@@ -22,7 +23,7 @@ export default function iMessages() {
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
-  const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
+  const { data: messages, error, updatedAt } = useLiveQuery(messagesRepository.getMessages(), []);
 
   return (
     <>
@@ -35,35 +36,23 @@ export default function iMessages() {
           onLeftPress: () => router.back(),
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
-        {!messages || messages.length === 0 ? (
-          error ? (
-            <Typography>{error.message}</Typography> // TODO: handle error differently
-          ) : (
-            <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.text)}</Typography>
-          )
+        {updatedAt === undefined ? (
+          // loading state
+          <YStack flex={1}>
+            <Spinner color='$blue11' size='large' />
+          </YStack>
+        ) : error ? (
+          // error state
+          <GenericError errorMessage={error.message} />
+        ) : messages.length === 0 ? (
+          // empty state
+          <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.text)}</Typography>
         ) : (
+          // content state
           <>
             <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.findTime)}</Typography>
             {messages.map((message) => (
-              <Card
-                key={message.id}
-                padding='$md'
-                gap={4}
-                onPress={() =>
-                  router.push({
-                    pathname: `/tools/relationships/iMessages/edit-message`,
-                    params: { messageId: message.id },
-                  })
-                }>
-                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.when)}</Typography>
-                <Typography preset='helper'>{message.annoyance}</Typography>
-                <Separator marginVertical={4} />
-                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.feel)}</Typography>
-                <Typography preset='helper'>{message.message}</Typography>
-                <Separator marginVertical={4} />
-                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.because)}</Typography>
-                <Typography preset='helper'>{message.because}</Typography>
-              </Card>
+              <MessageCard message={message} key={message.id} />
             ))}
           </>
         )}
@@ -78,3 +67,31 @@ export default function iMessages() {
     </>
   );
 }
+
+const MessageCard = ({ message }: { message: Message }) => {
+  const { t } = useTranslation('tools');
+  const { toolsTranslationKeys } = useTranslationKeys();
+  const router = useRouter();
+
+  return (
+    <Card
+      key={message.id}
+      padding='$md'
+      gap={4}
+      onPress={() =>
+        router.push({
+          pathname: `/tools/relationships/iMessages/edit-message`,
+          params: { messageId: message.id },
+        })
+      }>
+      <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.when)}</Typography>
+      <Typography preset='helper'>{message.annoyance}</Typography>
+      <Separator marginVertical={4} />
+      <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.feel)}</Typography>
+      <Typography preset='helper'>{message.message}</Typography>
+      <Separator marginVertical={4} />
+      <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.because)}</Typography>
+      <Typography preset='helper'>{message.because}</Typography>
+    </Card>
+  );
+};

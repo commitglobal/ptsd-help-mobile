@@ -134,5 +134,9 @@
   "PAUSE.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/pause/list_pause.jpg",
     "lastUpdatedAt": 1732623322783
+  },
+  "MY_FEELINGS.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/my-feelings/my_feelings.jpg",
+    "lastUpdatedAt": 1732623322783
   }
 }
