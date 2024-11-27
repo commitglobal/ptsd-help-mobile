@@ -5,18 +5,18 @@ import { useRouter } from 'expo-router';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
-import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
 export const ConsciousBreathing = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
   const { toolsTranslationKeys } = useTranslationKeys();
-  const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.CONSCIOUS_BREATHING;
+  const { mediaMapping } = useAssetsManagerContext();
 
   return (
     <ScreenWithImageHeader
-      imageUrl={mediaMapper.headerImageURI}
+      imageUrl={mediaMapping['MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON']}
       headerProps={{
         title: t(toolsTranslationKeys.MINDFULNESS.subcategories.CONSCIOUS_BREATHING.label),
         iconLeft: <Icon icon='chevronLeft' width={20} height={20} color='$gray12' />,

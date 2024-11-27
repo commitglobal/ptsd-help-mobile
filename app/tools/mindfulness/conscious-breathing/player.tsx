@@ -6,28 +6,20 @@ import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
-import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
-import { Asset } from 'expo-asset';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
 export const ConsciousBreathingPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
   const { toolsTranslationKeys } = useTranslationKeys();
-  const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.CONSCIOUS_BREATHING;
-
-  //   get the asset
-  const asset = Asset.fromModule(mediaMapper.soundURI);
-  // load the asset
-  React.useEffect(() => {
-    asset.downloadAsync();
-  }, []);
+  const { mediaMapping } = useAssetsManagerContext();
 
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithImageHeader
-        imageUrl={mediaMapper.headerImageURI}
+        imageUrl={mediaMapping['MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON']}
         headerProps={{
           title: t(toolsTranslationKeys.MINDFULNESS.subcategories.CONSCIOUS_BREATHING.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
@@ -35,7 +27,7 @@ export const ConsciousBreathingPlayer = () => {
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         <YStack>
-          <MediaPlayer mediaURI={asset.uri} isVideo={false} />
+          <MediaPlayer mediaURI={mediaMapping?.['MINDFULNESS.CONSCIOUS_BREATHING.soundURI']} isVideo={false} />
         </YStack>
       </ScreenWithImageHeader>
     </>

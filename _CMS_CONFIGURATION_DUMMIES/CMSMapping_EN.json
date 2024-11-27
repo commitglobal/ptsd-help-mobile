@@ -95,12 +95,20 @@
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/mindful-breathing/list_mindful-breathing.png",
     "lastUpdatedAt": 1732623322783
   },
+  "MINDFULNESS.CONSCIOUS_BREATHING.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/mindful-breathing/mindful_breathing.mp3",
+    "lastUpdatedAt": 1732623322783
+  },
   "MINDFULNESS.MINDFUL_WALKING.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/mindful-walking/list_mindful-walking.png",
     "lastUpdatedAt": 1732623322783
   },
   "MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/emotional-discomfort/list_emotional-discomfort.jpg",
+    "lastUpdatedAt": 1732623322783
+  },
+  "MINDFULNESS.EMOTIONAL_DISCOMFORT.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/emotional-discomfort/emotional_discomfort.mp3",
     "lastUpdatedAt": 1732623322783
   },
   "MINDFULNESS.SENSE_AWARENESS.CATEGORY_ICON": {
