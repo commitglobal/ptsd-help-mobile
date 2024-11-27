@@ -5,13 +5,15 @@ import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { ScrollView } from 'tamagui';
+import { ScrollView, Separator, XStack, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import TextareaInput from '@/components/Inputs/Textarea';
 import { scrollToTextarea } from '@/helpers/scrollToTextarea';
 import TextFormInput from '@/components/TextFormInput';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import worriesRepository from '@/db/repositories/worries.repository';
+import { Switch } from '@/components/Switch';
+import DatePicker from 'react-native-date-picker';
 
 export default function WorryTime() {
   const { t } = useTranslation('tools');
@@ -23,6 +25,9 @@ export default function WorryTime() {
 
   const { data: worries } = useLiveQuery(worriesRepository.getWorries(), []);
   const [worryText, setWorryText] = useState(worries[0]?.worry || '');
+  const [isReminderChecked, setIsReminderChecked] = useState(false);
+  const [time, setTime] = useState(new Date());
+  console.log('time: 🕰️', time);
 
   useEffect(() => {
     setWorryText(worries[0]?.worry || '');
@@ -71,11 +76,34 @@ export default function WorryTime() {
           label={t(translationKey.subjectsToThinkAbout)}
           ref={textareaRef}
           placeholder={t(translationKey.writeHere)}
-          height={300}
+          height={200}
           onPress={handleFocus}
           value={worryText}
           onChange={({ target: { value } }: any) => setWorryText(value)}
         />
+
+        <YStack backgroundColor='white' padding='$md' gap='$xs' borderRadius='$md'>
+          <XStack alignItems='center' justifyContent='space-between'>
+            <Typography flex={1}>{t(translationKey.reminder)}</Typography>
+            <Switch isChecked={isReminderChecked} setIsChecked={setIsReminderChecked} />
+          </XStack>
+
+          {isReminderChecked && (
+            <YStack
+              gap='$xs'
+              animation='quick'
+              enterStyle={{ opacity: 0, y: -10 }}
+              exitStyle={{ opacity: 0, y: -10 }}
+              y={0}
+              opacity={1}>
+              <Separator />
+              <XStack>
+                <Typography>{t(translationKey.daily)}</Typography>
+                <DatePicker date={time} onDateChange={setTime} mode='time' />
+              </XStack>
+            </YStack>
+          )}
+        </YStack>
       </ScrollView>
     </Screen>
   );

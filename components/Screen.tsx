@@ -2,9 +2,10 @@ import React, { useMemo } from 'react';
 import { Spinner, XStack, YStack, YStackProps } from 'tamagui';
 import { Header, HeaderProps } from './Header';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { KeyboardAvoidingView, Platform } from 'react-native';
+import { Animated, KeyboardAvoidingView, Platform } from 'react-native';
 import Button from './Button';
 import { Icon } from './Icon';
+import useAnimatedBottomPadding from '@/hooks/useAnimatedBottomPadding';
 
 interface FooterProps {
   onMainAction?: () => void;
@@ -50,6 +51,10 @@ export const Screen = ({
 
   const hasFooterButtons = hasBigButtons || hasSmallButtons;
 
+  const paddingBottom = useAnimatedBottomPadding(16);
+
+  const AnimatedYStack = Animated.createAnimatedComponent(YStack);
+
   return (
     <YStack paddingTop={headerProps ? 0 : insets.top} flex={1} backgroundColor={backgroundColor}>
       {headerProps && <Header {...headerProps} />}
@@ -59,9 +64,9 @@ export const Screen = ({
           {children}
 
           {hasFooterButtons && (
-            <YStack
+            <AnimatedYStack
               marginTop='auto'
-              paddingBottom={insets.bottom + 16}
+              paddingBottom={paddingBottom}
               paddingHorizontal='$md'
               gap='$xs'
               backgroundColor={footerBackgroundColor}
@@ -115,7 +120,7 @@ export const Screen = ({
                   {footerProps.secondaryActionLabel}
                 </Button>
               )}
-            </YStack>
+            </AnimatedYStack>
           )}
         </YStack>
       </KeyboardAvoidingView>
