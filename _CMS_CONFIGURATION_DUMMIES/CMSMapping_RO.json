@@ -103,6 +103,10 @@
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/mindful-walking/list_mindful-walking.png",
     "lastUpdatedAt": 1732623322783
   },
+  "MINDFULNESS.MINDFUL_WALKING.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/mindful-walking/mindful_walking.mp3",
+    "lastUpdatedAt": 1732623322783
+  },
   "MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/emotional-discomfort/list_emotional-discomfort.jpg",
     "lastUpdatedAt": 1732623322783
@@ -115,8 +119,16 @@
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/sense-awarness/list_sense-awarness.jpg",
     "lastUpdatedAt": 1732623322783
   },
+  "MINDFULNESS.SENSE_AWARENESS.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/sense-awarness/awareness_of_the_senses.mp3",
+    "lastUpdatedAt": 1732623322783
+  },
   "MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/loving-kindness/list_loving-kindness.jpg",
+    "lastUpdatedAt": 1732623322783
+  },
+  "MINDFULNESS.LOVING_KINDNESS.soundURI": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/loving-kindness/loving_kindness.mp3",
     "lastUpdatedAt": 1732623322783
   },
   "PAUSE.CATEGORY_ICON": {

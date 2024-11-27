@@ -6,28 +6,20 @@ import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
-import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
-import { Asset } from 'expo-asset';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
 export const LovingKindnessPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
   const { toolsTranslationKeys } = useTranslationKeys();
-  const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.LOVING_KINDNESS;
-
-  //   get the asset
-  const asset = Asset.fromModule(mediaMapper.soundURI);
-  // load the asset
-  React.useEffect(() => {
-    asset.downloadAsync();
-  }, []);
+  const { mediaMapping } = useAssetsManagerContext();
 
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithImageHeader
-        imageUrl={mediaMapper.headerImageURI}
+        imageUrl={mediaMapping['MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON']}
         headerProps={{
           title: t(toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
@@ -35,7 +27,7 @@ export const LovingKindnessPlayer = () => {
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         <YStack>
-          <MediaPlayer mediaURI={asset.uri} isVideo={false} />
+          <MediaPlayer mediaURI={mediaMapping['MINDFULNESS.LOVING_KINDNESS.soundURI']} isVideo={false} />
         </YStack>
       </ScreenWithImageHeader>
     </>

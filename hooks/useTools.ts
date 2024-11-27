@@ -2,7 +2,7 @@ import { Href } from 'expo-router';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
-const DUMMY_PHOTO = require('@/assets/images/tools/relationship/list_healthy-arguments.jpg');
+const DUMMY_PHOTO = require('@/assets/images/old-couple.png');
 
 enum ToolType {
   CATEGORY = 'category',

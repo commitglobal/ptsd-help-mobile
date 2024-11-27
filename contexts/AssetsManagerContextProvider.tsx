@@ -57,9 +57,12 @@ export type FlatLocalMediaMapping = {
   'MINDFULNESS.CATEGORY_ICON': string;
   'AMBIENT_SOUNDS.RUNNING_WATER.soundURI': string;
   'MINDFULNESS.MINDFUL_WALKING.CATEGORY_ICON': string;
+  'MINDFULNESS.MINDFUL_WALKING.soundURI': string;
   'MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON': string;
   'MINDFULNESS.SENSE_AWARENESS.CATEGORY_ICON': string;
+  'MINDFULNESS.SENSE_AWARENESS.soundURI': string;
   'MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON': string;
+  'MINDFULNESS.LOVING_KINDNESS.soundURI': string;
   'RELATIONSHIPS.I_MESSAGES.CATEGORY_ICON': string;
   'MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON': string;
   'MINDFULNESS.EMOTIONAL_DISCOMFORT.soundURI': string;
@@ -300,6 +303,7 @@ const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const countryCode = 'RO';
+  console.log(FileSystem.documentDirectory);
   const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
 
