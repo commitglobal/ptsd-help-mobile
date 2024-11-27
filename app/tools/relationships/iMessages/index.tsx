@@ -2,6 +2,7 @@ import { TOOLS_MEDIA_MAPPER } from '@/_config/media.mapper';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import Button from '@/components/Button';
 import { Card } from '@/components/Card';
+import { GenericError } from '@/components/GenericError';
 import { Icon } from '@/components/Icon';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
@@ -12,7 +13,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Separator, XStack } from 'tamagui';
+import { Separator, Spinner, XStack, YStack } from 'tamagui';
 
 export default function iMessages() {
   const { t } = useTranslation('tools');
@@ -22,7 +23,7 @@ export default function iMessages() {
   const translationsKeys = TOOLS_TRANSLATIONS_CONFIG.RELATIONSHIPS.subcategories.I_MESSAGES;
   const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.I_MESSAGES;
 
-  const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
+  const { data: messages, error, updatedAt } = useLiveQuery(messagesRepository.getMessages(), []);
 
   return (
     <>
@@ -35,13 +36,19 @@ export default function iMessages() {
           onLeftPress: () => router.back(),
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
-        {!messages || messages.length === 0 ? (
-          error ? (
-            <Typography>{error.message}</Typography> // TODO: handle error differently
-          ) : (
-            <Typography>{t(translationsKeys.text)}</Typography>
-          )
+        {updatedAt === undefined ? (
+          // loading state
+          <YStack flex={1}>
+            <Spinner color='$blue11' size='large' />
+          </YStack>
+        ) : error ? (
+          // error state
+          <GenericError errorMessage={error.message} />
+        ) : messages.length === 0 ? (
+          // empty state
+          <Typography>{t(translationsKeys.text)}</Typography>
         ) : (
+          // content state
           <>
             <Typography>{t(translationsKeys.findTime)}</Typography>
             {messages.map((message) => (

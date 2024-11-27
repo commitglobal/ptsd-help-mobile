@@ -12,6 +12,7 @@ import feelingsRepository from '@/db/repositories/feelings.repository';
 import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
 import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
 import { GenericError } from '@/components/GenericError';
+import { MainFeeling } from '@/constants/Feelings';
 
 export default function DeleteFeeling() {
   const { t } = useTranslation('tools');
@@ -77,11 +78,13 @@ export default function DeleteFeeling() {
               <Typography preset='subheading' color='$blue11' marginTop='$md'>
                 {t(translationKey.myFeelings)}
               </Typography>
-              {feeling.feelings.map((feeling) => (
-                <YStack key={feeling.mainFeeling} gap='$xxs'>
-                  <Typography preset='subheading'>{t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}</Typography>
-                  {feeling.secondaryFeelings.length !== 0 &&
-                    feeling.secondaryFeelings.map((secondaryFeeling) => {
+              {Object.keys(feeling.feelings).map((mainFeeling) => (
+                <YStack key={mainFeeling} gap='$xxs'>
+                  <Typography preset='subheading'>
+                    {t(feelingsTranslationKey[mainFeeling as MainFeeling].MAIN)}
+                  </Typography>
+                  {feeling.feelings[mainFeeling as MainFeeling]?.length !== 0 &&
+                    feeling.feelings[mainFeeling as MainFeeling]?.map((secondaryFeeling) => {
                       return (
                         <XStack key={secondaryFeeling} alignItems='center' gap='$xxs'>
                           <Circle size={8} backgroundColor='$blue11' />

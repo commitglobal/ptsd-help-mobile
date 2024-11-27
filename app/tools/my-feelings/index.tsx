@@ -8,11 +8,12 @@ import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import feelingsRepository, { Feeling } from '@/db/repositories/feelings.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Typography } from '@/components/Typography';
-import { Separator, XStack, YStack } from 'tamagui';
+import { Separator, Spinner, XStack, YStack } from 'tamagui';
 import { Card } from '@/components/Card';
 import { format } from 'date-fns';
 import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsContextProvider';
 import { GenericError } from '@/components/GenericError';
+import { MainFeeling } from '@/constants/Feelings';
 
 export default function MyFeelings() {
   const router = useRouter();
@@ -21,11 +22,9 @@ export default function MyFeelings() {
 
   const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
 
-  // TODO: loading
-  const { data: feelings, error } = useLiveQuery(feelingsRepository.getFeelings(), []);
-  //  how do we manage loading here??? feelings is [] while 'loading'
+  const { data: feelings, error, updatedAt } = useLiveQuery(feelingsRepository.getFeelings(), []);
 
-  if (error) {
+  if (updatedAt !== undefined && error) {
     return (
       <ScreenWithImageHeader
         imageUrl={require('@/assets/images/tools/my-feelings/my_feelings.jpg')}
@@ -53,17 +52,26 @@ export default function MyFeelings() {
         secondaryActionLabel: t(translationKey.done),
         onSecondaryAction: finishTool,
       }}>
-      {/* empty state */}
-      {!feelings || feelings.length === 0 ? <Typography>{t(translationKey.noFeelings)}</Typography> : null}
-
-      {/* feelings cards */}
-      {feelings.map((feeling) => (
-        <FeelingCard
-          feeling={feeling}
-          key={feeling.id}
-          onPress={() => router.push(`/tools/my-feelings/delete-feeling?feelingId=${feeling.id}`)}
-        />
-      ))}
+      {updatedAt === undefined ? (
+        // loading state
+        <YStack flex={1}>
+          <Spinner color='$blue11' size='large' />
+        </YStack>
+      ) : feelings.length === 0 ? (
+        // empty state
+        <Typography>{t(translationKey.noFeelings)}</Typography>
+      ) : (
+        // content state
+        <>
+          {feelings.map((feeling) => (
+            <FeelingCard
+              feeling={feeling}
+              key={feeling.id}
+              onPress={() => router.push(`/tools/my-feelings/delete-feeling?feelingId=${feeling.id}`)}
+            />
+          ))}
+        </>
+      )}
     </ScreenWithImageHeader>
   );
 }
@@ -96,15 +104,17 @@ const FeelingCard = ({ feeling, onPress }: { feeling: Feeling; onPress: () => vo
 
         {/* feelings section */}
         <YStack gap='$xs'>
-          {feeling.feelings.map((feeling) => (
-            <XStack key={feeling.mainFeeling}>
+          {Object.keys(feeling.feelings).map((mainFeeling) => (
+            <XStack key={mainFeeling}>
               <Typography flex={0.3} preset='subheading' color='$blue11' textAlign='center'>
-                {t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}
+                {t(feelingsTranslationKey[mainFeeling as MainFeeling].MAIN)}
               </Typography>
 
-              {feeling.secondaryFeelings.length !== 0 && (
+              {feeling.feelings[mainFeeling as MainFeeling]?.length !== 0 && (
                 <Typography flex={0.7}>
-                  {feeling.secondaryFeelings.map((secondaryFeeling) => t(secondaryFeeling)).join(', ')}
+                  {feeling.feelings[mainFeeling as MainFeeling]
+                    ?.map((secondaryFeeling) => t(secondaryFeeling))
+                    .join(', ')}
                 </Typography>
               )}
             </XStack>
