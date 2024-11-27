@@ -13,10 +13,10 @@ const HealthyArguments = () => {
 
   const { finishTool } = useToolManagerContext();
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const mediaMapper = TOOLS_MEDIA_MAPPER.RELATIONSHIPS.HEALTHY_ARGUMENTS;
 
-  const items = t(translations.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.repeater, {
+  const items = t(toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.repeater, {
     returnObjects: true,
   }) as Record<string, { title: string; description: string }>;
 
@@ -25,11 +25,11 @@ const HealthyArguments = () => {
       <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithChangingText
         headerProps={{
-          title: t(translations.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.label),
+          title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
-        staticText={t(translations.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.helper)}
+        staticText={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.helper)}
         items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
         imageUrl={mediaMapper.headerImageURI}
         footerProps={{ onMainAction: () => finishTool() }}

@@ -158,7 +158,7 @@ export const fetchFoggles = async (countryCode: string, destinationFolder: strin
       const localFogglesJson = await FileSystem.readAsStringAsync(localFogglesPath);
       return JSON.parse(localFogglesJson);
     } catch (error) {
-      console.log('No existing local foggles found');
+      console.log('No existing local foggles found', error);
       return null;
     }
   };
@@ -237,7 +237,7 @@ const useMediaMapper = (countryCode: string) => {
             );
             localMapping = JSON.parse(localMappingJson);
           } catch (error) {
-            console.log('No existing local mapping found, creating new one');
+            console.log('No existing local mapping found, creating new one', error);
           }
 
           let cmsMapping: FlatCMSMediaMapping | null = null;

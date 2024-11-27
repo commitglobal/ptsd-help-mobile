@@ -13,7 +13,7 @@ export const ConsciousBreathingPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.CONSCIOUS_BREATHING;
 
   //   get the asset
@@ -29,7 +29,7 @@ export const ConsciousBreathingPlayer = () => {
       <ScreenWithImageHeader
         imageUrl={mediaMapper.headerImageURI}
         headerProps={{
-          title: t(translations.MINDFULNESS.subcategories.CONSCIOUS_BREATHING.label),
+          title: t(toolsTranslationKeys.MINDFULNESS.subcategories.CONSCIOUS_BREATHING.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}

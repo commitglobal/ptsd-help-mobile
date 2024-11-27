@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { Avatar, XStack } from 'tamagui';
 import { Card } from './Card';
 import { Typography } from './Typography';

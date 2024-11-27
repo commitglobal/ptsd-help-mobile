@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';

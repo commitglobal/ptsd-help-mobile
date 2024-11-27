@@ -7,14 +7,14 @@ import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useTranslation } from 'react-i18next';
 
 const RelationshipsIndex = () => {
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const { startTool, TOOL_CONFIG } = useToolManagerContext();
   const { t } = useTranslation('tools');
 
   return (
     <Screen
       headerProps={{
-        title: t(translations.RELATIONSHIPS.label),
+        title: t(toolsTranslationKeys.RELATIONSHIPS.label),
         iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),

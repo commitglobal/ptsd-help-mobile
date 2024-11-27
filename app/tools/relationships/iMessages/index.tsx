@@ -19,7 +19,7 @@ export default function iMessages() {
   const insets = useSafeAreaInsets();
   const router = useRouter();
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
   const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
@@ -30,7 +30,7 @@ export default function iMessages() {
       <ScreenWithImageHeader
         imageUrl={mediaMapping ? mediaMapping['RELATIONSHIPS.I_MESSAGES.headerImage'] : ''}
         headerProps={{
-          title: t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.title),
+          title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.title),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
@@ -39,11 +39,11 @@ export default function iMessages() {
           error ? (
             <Typography>{error.message}</Typography> // TODO: handle error differently
           ) : (
-            <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.text)}</Typography>
+            <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.text)}</Typography>
           )
         ) : (
           <>
-            <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.findTime)}</Typography>
+            <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.findTime)}</Typography>
             {messages.map((message) => (
               <Card
                 key={message.id}
@@ -55,13 +55,13 @@ export default function iMessages() {
                     params: { messageId: message.id },
                   })
                 }>
-                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.when)}</Typography>
+                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.when)}</Typography>
                 <Typography preset='helper'>{message.annoyance}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.feel)}</Typography>
+                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.feel)}</Typography>
                 <Typography preset='helper'>{message.message}</Typography>
                 <Separator marginVertical={4} />
-                <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.because)}</Typography>
+                <Typography>{t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.because)}</Typography>
                 <Typography preset='helper'>{message.because}</Typography>
               </Card>
             ))}

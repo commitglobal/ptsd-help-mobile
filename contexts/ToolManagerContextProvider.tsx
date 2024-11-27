@@ -34,7 +34,9 @@ const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesCon
   }
 
   return Object.entries(toolsConfig).reduce((acc, [key, tool]) => {
-    if (!foggles?.features?.tools?.[tool.id]?.enabled) {
+    // If no specific foggle exists for this tool, consider it enabled
+    const isToolEnabled = foggles?.features?.tools?.[tool.id]?.enabled ?? true;
+    if (!isToolEnabled) {
       return acc;
     }
 
@@ -45,7 +47,10 @@ const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesCon
         subcategories: !tool.subcategories
           ? undefined
           : Object.entries(tool.subcategories).reduce((subAcc, [subKey, subcategory]) => {
-              if (!foggles?.features?.tools?.[tool.id]?.subcategories?.[subcategory.id]?.enabled) {
+              // If no specific foggle exists for this subcategory, consider it enabled
+              const isSubcategoryEnabled =
+                foggles?.features?.tools?.[tool.id]?.subcategories?.[subcategory.id]?.enabled ?? true;
+              if (!isSubcategoryEnabled) {
                 return subAcc;
               }
               return {

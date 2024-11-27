@@ -110,5 +110,9 @@
   "MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/mindfulness/loving-kindness/list_loving-kindness.jpg",
     "lastUpdatedAt": 1732623322783
+  },
+  "PAUSE.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/pause/list_pause.jpg",
+    "lastUpdatedAt": 1732623322783
   }
 }

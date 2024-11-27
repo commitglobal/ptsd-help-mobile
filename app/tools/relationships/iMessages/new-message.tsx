@@ -54,14 +54,14 @@ export default function NewMessage() {
     }
   };
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
 
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
-          title: t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.title),
+          title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.title),
           iconRight: (
             <Typography color='$gray12' fontWeight='bold'>
               {t('general.done', { ns: 'translation' })}
@@ -97,21 +97,27 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder
+                )}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)}
+                infoMessage={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example
+                )}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
-                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)
                   )
                 }
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.declaration)}</Typography>
+          <Typography>
+            {t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.declaration)}
+          </Typography>
           <Controller
             control={control}
             name='message'
@@ -125,13 +131,17 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder
+                )}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
+                infoMessage={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
                 onInfoMessagePress={() =>
-                  handleInfoModalOpen(t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example))
+                  handleInfoModalOpen(
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)
+                  )
                 }
                 errorMessage={errors.feel?.message as string}
               />
@@ -150,14 +160,18 @@ export default function NewMessage() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder
+                )}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)}
+                infoMessage={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example
+                )}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
-                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)
                   )
                 }
                 errorMessage={errors.because?.message as string}

@@ -1,5 +1,5 @@
 const useTranslationKeys = () => {
-  const translations = {
+  const toolsTranslationKeys = {
     RELATIONSHIPS: {
       label: 'list.relationships',
       subcategories: {
@@ -100,10 +100,18 @@ const useTranslationKeys = () => {
         },
       },
     },
+    PAUSE: {
+      label: 'list.pause',
+      description: 'pause.pause.description',
+      actionBtnLabel: 'pause.pause.action-btn-label',
+      takeBreak: 'pause.take_break',
+      repeater: 'pause.repeater',
+      helper: 'pause.helper',
+    },
   };
 
   return {
-    translations,
+    toolsTranslationKeys,
   };
 };
 

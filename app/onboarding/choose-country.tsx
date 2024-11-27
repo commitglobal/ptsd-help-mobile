@@ -2,7 +2,7 @@ import { Icon } from '@/components/Icon';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
 import { useRouter } from 'expo-router';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FlashList } from '@shopify/flash-list';
 import { RadioItem } from '@/components/RadioItem';

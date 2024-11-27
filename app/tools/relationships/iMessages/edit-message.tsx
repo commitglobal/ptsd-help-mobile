@@ -18,7 +18,7 @@ import messagesRepository from '@/db/repositories/messages.repository';
 
 export default function Message() {
   const { t } = useTranslation('tools');
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const insets = useSafeAreaInsets();
 
   // using refs for scrolling capabilities
@@ -113,7 +113,7 @@ export default function Message() {
       <Stack.Screen options={{ headerShown: false, gestureEnabled: false, fullScreenGestureEnabled: false }} />
       <Screen
         headerProps={{
-          title: t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.edit.title),
+          title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.edit.title),
           iconLeft: <Icon icon='x' color='$gray12' width={24} height={24} />,
           onLeftPress: handleGoBack,
           iconRight: (
@@ -149,21 +149,27 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder
+                )}
                 ref={annoyanceRef}
                 onFocus={() => handleFocus(annoyanceRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)}
+                infoMessage={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example
+                )}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
-                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example)
                   )
                 }
                 errorMessage={errors.annoyance?.message as string}
               />
             )}
           />
-          <Typography>{t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.declaration)}</Typography>
+          <Typography>
+            {t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.declaration)}
+          </Typography>
           <Controller
             control={control}
             name='message'
@@ -177,13 +183,17 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder
+                )}
                 ref={feelRef}
                 onFocus={() => handleFocus(feelRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
+                infoMessage={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
                 onInfoMessagePress={() =>
-                  handleInfoModalOpen(t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example))
+                  handleInfoModalOpen(
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)
+                  )
                 }
                 errorMessage={errors.message?.message as string}
               />
@@ -202,14 +212,18 @@ export default function Message() {
               <TextFormInput
                 value={value}
                 onChange={onChange}
-                label={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.label)}
-                placeholder={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder)}
+                label={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.label)}
+                placeholder={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder
+                )}
                 ref={becauseRef}
                 onFocus={() => handleFocus(becauseRef)}
-                infoMessage={t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)}
+                infoMessage={t(
+                  toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example
+                )}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
-                    t(translations.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)
+                    t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example)
                   )
                 }
                 errorMessage={errors.because?.message as string}

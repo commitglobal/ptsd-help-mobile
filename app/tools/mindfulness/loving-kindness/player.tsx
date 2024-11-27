@@ -13,7 +13,7 @@ export const LovingKindnessPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.LOVING_KINDNESS;
 
   //   get the asset
@@ -29,7 +29,7 @@ export const LovingKindnessPlayer = () => {
       <ScreenWithImageHeader
         imageUrl={mediaMapper.headerImageURI}
         headerProps={{
-          title: t(translations.MINDFULNESS.subcategories.LOVING_KINDNESS.label),
+          title: t(toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}

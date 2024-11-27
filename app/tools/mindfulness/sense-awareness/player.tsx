@@ -13,7 +13,7 @@ export const SenseAwarenessPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
-  const { translations } = useTranslationKeys();
+  const { toolsTranslationKeys } = useTranslationKeys();
   const mediaMapper = TOOLS_MEDIA_MAPPER.MINDFULNESS.SENSE_AWARENESS;
 
   //   get the asset
@@ -29,7 +29,7 @@ export const SenseAwarenessPlayer = () => {
       <ScreenWithImageHeader
         imageUrl={mediaMapper.headerImageURI}
         headerProps={{
-          title: t(translations.MINDFULNESS.subcategories.SENSE_AWARENESS.label),
+          title: t(toolsTranslationKeys.MINDFULNESS.subcategories.SENSE_AWARENESS.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
