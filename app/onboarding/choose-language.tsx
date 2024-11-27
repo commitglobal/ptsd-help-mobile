@@ -8,7 +8,7 @@ import { useRouter } from 'expo-router';
 import i18n from '@/common/config/i18n';
 import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
-import { MKKV } from '@/helpers/mmkv';
+import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChooseLanguage() {
@@ -36,7 +36,7 @@ export default function ChooseLanguage() {
         mainActionLabel: t('next'),
         onMainAction: () => {
           if (selectedLanguage) {
-            MKKV().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+            KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
             router.push('/onboarding/onboarding-slider');
           }
         },

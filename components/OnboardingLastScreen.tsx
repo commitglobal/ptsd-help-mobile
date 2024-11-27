@@ -4,7 +4,7 @@ import { Typography } from './Typography';
 import { useTranslation } from 'react-i18next';
 import Button from './Button';
 import { useRouter } from 'expo-router';
-import { MKKV } from '@/helpers/mmkv';
+import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 export const OnboardingLastScreen = () => {
@@ -15,7 +15,7 @@ export const OnboardingLastScreen = () => {
   const listItems = useMemo(() => [t('welcome.personalize.l1'), t('welcome.personalize.l2')], [t]);
 
   const handleStart = () => {
-    MKKV().set(STORE_KEYS.ONBOARDING_DONE, true);
+    KVStore().set(STORE_KEYS.ONBOARDING_DONE, true);
     router.replace('/(drawer)/(tabs)');
   };
 

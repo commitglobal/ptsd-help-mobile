@@ -9,11 +9,11 @@ import roRO from '../../assets/locales/ro/RO/ro-RO.json';
 import toolsRoRo from '../../assets/locales/ro/RO/tools.json';
 import { STORE_KEYS } from '@/constants/store-keys';
 
-import { MKKV } from '@/helpers/mmkv';
+import { KVStore } from '@/helpers/mmkv';
 
 import * as Localization from 'expo-localization';
 
-const systemLocale = MKKV().getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
+const systemLocale = KVStore().getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
 
 // handle RTL languages
 const language = Localization.getLocales().find((lang) => lang.languageCode === systemLocale); // TODO: We need to use the user's preferred language FIRST

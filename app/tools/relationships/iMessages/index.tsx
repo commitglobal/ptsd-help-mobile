@@ -24,8 +24,6 @@ export default function iMessages() {
 
   const { data: messages, error } = useLiveQuery(messagesRepository.getMessages(), []);
 
-  console.log(mediaMapping);
-
   return (
     <>
       <Stack.Screen options={{ headerShown: false }} />

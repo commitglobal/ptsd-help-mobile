@@ -7,12 +7,9 @@ import { useTranslation } from 'react-i18next';
 import { FlashList } from '@shopify/flash-list';
 import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
-import { MKKV } from '@/helpers/mmkv';
+import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
-import * as FileSystem from 'expo-file-system';
 const ChooseCountry = () => {
-  console.log(FileSystem.documentDirectory);
-
   const { t } = useTranslation('choose-country');
   const router = useRouter();
 
@@ -49,7 +46,7 @@ const ChooseCountry = () => {
         mainActionLabel: t('next'),
         onMainAction: () => {
           if (selectedCountry) {
-            MKKV().set(STORE_KEYS.COUNTRY, selectedCountry);
+            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
             router.push('/onboarding/choose-language');
           }
         },
