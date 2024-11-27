@@ -14,6 +14,7 @@ import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import worriesRepository from '@/db/repositories/worries.repository';
 import { Switch } from '@/components/Switch';
 import DatePicker from 'react-native-date-picker';
+import { format } from 'date-fns';
 
 export default function WorryTime() {
   const { t } = useTranslation('tools');
@@ -27,11 +28,17 @@ export default function WorryTime() {
   const [worryText, setWorryText] = useState(worries[0]?.worry || '');
   const [isReminderChecked, setIsReminderChecked] = useState(false);
   const [time, setTime] = useState(new Date());
-  console.log('time: 🕰️', time);
 
   useEffect(() => {
     setWorryText(worries[0]?.worry || '');
   }, [worries]);
+
+  // scroll to the bottom of the screen when the reminder switch is checked and the time picker is presented
+  useEffect(() => {
+    if (isReminderChecked) {
+      scrollViewRef.current?.scrollToEnd();
+    }
+  }, [isReminderChecked]);
 
   const handleFocus = () => {
     if (textareaRef.current && scrollViewRef.current) {
@@ -82,7 +89,7 @@ export default function WorryTime() {
           onChange={({ target: { value } }: any) => setWorryText(value)}
         />
 
-        <YStack backgroundColor='white' padding='$md' gap='$xs' borderRadius='$md'>
+        <YStack backgroundColor='white' padding='$md' gap='$xs' borderRadius='$sm'>
           <XStack alignItems='center' justifyContent='space-between'>
             <Typography flex={1}>{t(translationKey.reminder)}</Typography>
             <Switch isChecked={isReminderChecked} setIsChecked={setIsReminderChecked} />
@@ -97,8 +104,13 @@ export default function WorryTime() {
               y={0}
               opacity={1}>
               <Separator />
-              <XStack>
+
+              <XStack justifyContent='space-between'>
                 <Typography>{t(translationKey.daily)}</Typography>
+                <Typography>{format(time, 'hh:mm')}</Typography>
+              </XStack>
+
+              <XStack justifyContent='center'>
                 <DatePicker date={time} onDateChange={setTime} mode='time' />
               </XStack>
             </YStack>
