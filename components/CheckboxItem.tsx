@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { Avatar, XStack } from 'tamagui';
 import { Card } from './Card';
 import { Typography } from './Typography';
@@ -13,7 +13,7 @@ interface Item {
 interface CheckboxItemProps {
   item: Item;
   selectedItems: any[];
-  onSelectItem: Dispatch<SetStateAction<any[]>>;
+  onSelectItem: any;
 }
 
 export const CheckboxItem = ({ item, onSelectItem, selectedItems }: CheckboxItemProps) => {

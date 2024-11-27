@@ -10,6 +10,7 @@ import { CheckboxItem } from '@/components/CheckboxItem';
 import { Typography } from '@/components/Typography';
 import { YStack } from 'tamagui';
 import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
+import { FeelingEntry } from '@/db/schema/feelings';
 
 export default function ChooseMainFeelings() {
   const { t } = useTranslation('tools');
@@ -23,7 +24,12 @@ export default function ChooseMainFeelings() {
   // update context feelings when the local state changes
   // we do this because of the CheckboxItem component and how it's setting the state
   useEffect(() => {
-    setFeelings(mainFeelings.map((feeling) => ({ mainFeeling: feeling, secondaryFeelings: [] })));
+    setFeelings(
+      mainFeelings.reduce((acc, feeling) => {
+        acc[feeling] = [];
+        return acc;
+      }, {} as FeelingEntry)
+    );
   }, [mainFeelings]);
 
   return (

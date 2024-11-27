@@ -1,12 +1,13 @@
 import React, { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
 import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
-import { FeelingEntry } from '@/db/schema/feelings';
 import { useTranslation } from 'react-i18next';
 import feelingsRepository from '@/db/repositories/feelings.repository';
 
+import { FeelingEntry } from '@/db/schema/feelings';
+
 type FeelingsContextType = {
-  feelings: FeelingEntry[];
-  setFeelings: Dispatch<SetStateAction<FeelingEntry[]>>;
+  feelings: FeelingEntry;
+  setFeelings: Dispatch<SetStateAction<FeelingEntry>>;
   discomfort: number;
   currentDiscomfortLevel: string;
   setDiscomfort: Dispatch<SetStateAction<number>>;
@@ -34,7 +35,7 @@ export const FeelingsContextProvider = ({ children }: { children: React.ReactNod
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const [feelings, setFeelings] = useState<FeelingEntry[]>([]);
+  const [feelings, setFeelings] = useState<FeelingEntry>({});
   const [discomfort, setDiscomfort] = useState<number>(0);
 
   const discomfortLevelsArray = useDiscomfortLevels(t, translationKey);
@@ -44,7 +45,7 @@ export const FeelingsContextProvider = ({ children }: { children: React.ReactNod
   );
 
   const resetFeelings = () => {
-    setFeelings([]);
+    setFeelings({});
     setDiscomfort(0);
   };
 

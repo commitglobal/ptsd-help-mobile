@@ -8,6 +8,7 @@ import { Circle, ScrollView, XStack, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
 import { format } from 'date-fns';
+import { MainFeeling } from '@/constants/Feelings';
 
 export default function FeelingsSummary() {
   const { t } = useTranslation('tools');
@@ -49,11 +50,11 @@ export default function FeelingsSummary() {
         <Typography preset='subheading' color='$blue11' marginTop='$md'>
           {t(translationKey.myFeelings)}
         </Typography>
-        {feelings.map((feeling) => (
-          <YStack key={feeling.mainFeeling} gap='$xxs'>
-            <Typography preset='subheading'>{t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}</Typography>
-            {feeling.secondaryFeelings.length !== 0 &&
-              feeling.secondaryFeelings.map((secondaryFeeling) => {
+        {Object.keys(feelings).map((mainFeeling) => (
+          <YStack key={mainFeeling} gap='$xxs'>
+            <Typography preset='subheading'>{t(feelingsTranslationKey[mainFeeling as MainFeeling].MAIN)}</Typography>
+            {feelings[mainFeeling as MainFeeling]?.length !== 0 &&
+              feelings[mainFeeling as MainFeeling]?.map((secondaryFeeling) => {
                 return (
                   <XStack key={secondaryFeeling} alignItems='center' gap='$xxs'>
                     <Circle size={8} backgroundColor='$blue11' />

@@ -19,27 +19,12 @@ export default function ChooseSecondaryFeelings() {
 
   const { feelings, setFeelings } = useFeelingsContext();
 
-  // TODO: maybe improve this? it could be quite slow if there are many feelings selected
-  const handleSecondaryFeelingsChange = (mainFeeling: MainFeeling, secondaryFeeling: string) => {
-    setFeelings((currentFeelings) => {
-      // find the current main feeling index
-      const feelingIndex = currentFeelings.findIndex((f) => f.mainFeeling === mainFeeling);
-      if (feelingIndex === -1) return currentFeelings;
-
-      // create a copy of the current feelings array
-      const newFeelings = [...currentFeelings];
-      // get the current feeling object
-      const feeling = newFeelings[feelingIndex];
-
-      // Update the specific feeling's secondaryFeelings
-      newFeelings[feelingIndex] = {
-        ...feeling,
-        secondaryFeelings: feeling.secondaryFeelings.includes(secondaryFeeling)
-          ? feeling.secondaryFeelings.filter((f) => f !== secondaryFeeling)
-          : [...feeling.secondaryFeelings, secondaryFeeling],
+  const handleSelectSecondaryFeelings = (mainFeeling: MainFeeling, selectedItems: string[]) => {
+    setFeelings((prev) => {
+      return {
+        ...prev,
+        [mainFeeling]: selectedItems,
       };
-
-      return newFeelings;
     });
   };
 
@@ -57,23 +42,20 @@ export default function ChooseSecondaryFeelings() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ flexGrow: 1, padding: '$md', gap: '$md' }}>
         <Typography>{t(translationKey.chooseSecondaryFeelings)}</Typography>
-        {feelings.map((feeling) => (
-          <YStack key={feeling.mainFeeling} gap='$md'>
-            <Typography preset='heading'>{t(feelingsTranslationKey[feeling.mainFeeling].MAIN)}</Typography>
-
-            {Object.entries(FEELINGS[feeling.mainFeeling]).map(([key, secondaryFeeling]) => (
+        {Object.keys(feelings).map((feeling) => (
+          <YStack key={feeling} gap='$md'>
+            <Typography preset='heading'>{t(feelingsTranslationKey[feeling as MainFeeling].MAIN)}</Typography>
+            {Object.values(FEELINGS[feeling as MainFeeling]).map((secondaryFeeling) => (
               <CheckboxItem
-                key={key}
+                key={secondaryFeeling}
                 item={{
                   id: secondaryFeeling,
-                  label: t(
-                    feelingsTranslationKey[feeling.mainFeeling][
-                      key as keyof (typeof FEELINGS)[typeof feeling.mainFeeling]
-                    ]
-                  ),
+                  label: t(secondaryFeeling),
                 }}
-                selectedItems={feeling.secondaryFeelings}
-                onSelectItem={() => handleSecondaryFeelingsChange(feeling.mainFeeling, secondaryFeeling)}
+                selectedItems={feelings[feeling as MainFeeling] || []}
+                onSelectItem={(selectedItems: string[]) =>
+                  handleSelectSecondaryFeelings(feeling as MainFeeling, selectedItems)
+                }
               />
             ))}
           </YStack>
