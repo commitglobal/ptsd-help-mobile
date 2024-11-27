@@ -10,7 +10,8 @@
     "mindful-walking": "RO/ro: Mindful Walking",
     "emotional-discomfort": "RO/ro: Emotional Discomfort",
     "sense-awareness": "RO/ro: Sense Awareness",
-    "loving-kindness": "RO/ro: Loving Kindness"
+    "loving-kindness": "RO/ro: Loving Kindness",
+    "pause": "RO/ro: Pause"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
@@ -92,6 +93,62 @@
   "mindfulness": {
     "conscious-breathing": {
       "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes."
+    }
+  },
+  "pause": {
+    "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat.\n\nTe rugăm să reții că vor fi pauze în înregistrarea audio pentru a putea practica fără distrageri.\n\nDurata: Aproximativ 9 minute.",
+    "action-btn-label": "Continuă",
+    "helper": "RO/ro: Incearca sa faci asta pentru 5 minute",
+    "take_break": "RO/ro: Ia o pauză",
+    "repeater": {
+      "1": {
+        "title": "Fă o plimbare pentru a te relaxa și a-ți limpezi gândurile"
+      },
+      "2": {
+        "title": "Respiră adânc timp de 10 minute sau mai mult"
+      },
+      "3": {
+        "title": "Fă sport (mergi cu bicileta, mergi în drumeții, ridică greutăți, înoată, aleargă)"
+      },
+      "4": {
+        "title": "Grădinărește sau fă curat prin curte"
+      },
+      "5": {
+        "title": "Spune-ți lucruri pozitive precum \"Pot să fac față acestei situații fără să îmi pierd cumpătul\""
+      },
+      "6": {
+        "title": "Desenează sau pictează pentru a-ți exprima emoțiile"
+      },
+      "7": {
+        "title": "Sună un prieten sau o persoană iubită pentru sprijin"
+      },
+      "8": {
+        "title": "Sună-ți terapeutul pentru sprijin"
+      },
+      "9": {
+        "title": "Întinde-te și respiră adânc și lent"
+      },
+      "10": {
+        "title": "Amintește-ți că poți să faci față"
+      },
+      "11": {
+        "title": "Meditează pentru a-ți liniști mintea"
+      },
+      "12": {
+        "title": "Roagă-te pentru îndrumare și sprijin"
+      },
+      "13": {
+        "title": "Gândește-te ce sfat ți-ar da cineva în care ai încredere"
+      },
+      "14": {
+        "title": "Petrece timp cu un animal pentru confort și liniște"
+      },
+      "15": {
+        "title": "Fă un duș sau o baie pentru a te relaxa"
+      },
+      "16": {
+        "title": "Gândește-te la cum vrei să fii un exemplu pentru alții din viața ta - copiii etc."
+      }
     }
   }
 }

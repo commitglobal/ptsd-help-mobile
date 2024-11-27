@@ -73,4 +73,7 @@ export const TOOLS_MEDIA_MAPPER = {
       soundURI: require('@/assets/sounds/tools/mindfulness/loving-kindness/loving_kindness.mp3'),
     },
   },
+  PAUSE: {
+    headerImageURI: require('@/assets/images/tools/pause/timeout.jpg'),
+  },
 };

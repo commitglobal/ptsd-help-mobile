@@ -5,6 +5,7 @@ import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithI
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText: string;
   items: { id: string; title?: string; description?: string }[];
+  children?: React.ReactNode;
 }
 
 export const ScreenWithChangingText = ({
@@ -13,6 +14,7 @@ export const ScreenWithChangingText = ({
   staticText,
   items,
   imageUrl,
+  children,
 }: ScreenWithChangingTextProps) => {
   const [renderedItem, setRenderedItem] = useState(items[0]);
 
@@ -37,6 +39,7 @@ export const ScreenWithChangingText = ({
       {/* <Typography>{renderedItem.text}</Typography> */}
       {renderedItem.title && <Typography preset='subheading'>{renderedItem.title}</Typography>}
       {renderedItem.description && <Typography>{renderedItem.description}</Typography>}
+      {children}
     </ScreenWithImageHeader>
   );
 };

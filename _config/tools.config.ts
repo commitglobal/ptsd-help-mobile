@@ -105,4 +105,11 @@ export const TOOLS_CONFIG: Record<string, Tool> = {
       },
     },
   },
+  PAUSE: {
+    id: 'tool-5',
+    label: TOOLS_TRANSLATIONS_CONFIG.PAUSE.label,
+    photoUrl: require('@/assets/images/tools/pause/timeout.jpg'),
+    route: '/tools/pause',
+    type: ToolType.TOOL,
+  },
 };
