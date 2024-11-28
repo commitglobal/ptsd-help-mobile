@@ -106,7 +106,7 @@ export default function HomeScreen() {
           />
         </XStack>
 
-        <Button onPress={() => router.push('/onboarding/licence-agreement')}>Go to onboarding</Button>
+        <Button onPress={() => router.push('/onboarding')}>Go to onboarding</Button>
         <Button onPress={() => router.push('/tools/relationships/iMessages')}>Go to iMessages</Button>
       </ScrollView>
     </Screen>

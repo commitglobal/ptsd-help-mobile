@@ -69,7 +69,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const { foggles } = useAssetsManagerContext();
   const TOOLS_CONFIG = useTools();
 
-  const isDistressMeterActive = false; // TODO: Change to RQ, get from DB
+  const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [returnURL, setReturnURL] = useState<string | null>(null);
@@ -102,8 +102,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     if (initialDistressLevel && !finalDistressLevel) {
       router.push('/tools/distress-meter/post');
     } else {
-      console.log('🚀 returnURL', returnURL);
-      router.push(returnURL as Href);
+      router.replace(returnURL as Href);
     }
   };
 

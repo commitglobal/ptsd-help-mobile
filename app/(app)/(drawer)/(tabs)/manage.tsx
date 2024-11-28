@@ -9,7 +9,7 @@ import ScreenTabs from '@/components/ScreenTabs';
 import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { Tool } from '@/_config/tools.config';
+import { Tool } from '@/hooks/useTools';
 
 type SymptomListProps = {
   onSymptomSelected: (symptom: unknown) => void;

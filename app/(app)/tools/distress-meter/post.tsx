@@ -33,7 +33,6 @@ const DistressMeterPost = () => {
 
   const onFinishFeedback = () => {
     setfeedbackSheetOpen(false);
-    console.log('returnURL', returnURL);
     router.replace(returnURL as Href);
   };
 
