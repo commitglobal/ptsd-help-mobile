@@ -3,38 +3,35 @@ import i18n, { ResourceLanguage } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import roEN from '../../assets/locales/ro/EN/ro-EN.json';
-import tools_roEN from '../../assets/locales/ro/EN/tools.json';
+import toolsRoEn from '../../assets/locales/ro/EN/tools.json';
 
 import roRO from '../../assets/locales/ro/RO/ro-RO.json';
-import tools_roRO from '../../assets/locales/ro/RO/tools.json';
+import toolsRoRo from '../../assets/locales/ro/RO/tools.json';
+import { STORE_KEYS } from '@/constants/store-keys';
 
-// TODO: do we need the systemLocale?
+import { KVStore } from '@/helpers/mmkv';
 
-// import { SECURE_STORAGE_KEYS } from "../constants";
-// import { getSecureStoreItem } from "../../helpers/SecureStoreWrapper";
+import * as Localization from 'expo-localization';
 
-// const systemLocale =
-//   getSecureStoreItem(SECURE_STORAGE_KEYS.I18N_LANGUAGE) ||
-//   Localization.getLocales()?.[0]?.languageCode ||
-//   "en";
+const systemLocale = KVStore().getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
 
 // handle RTL languages
-// const language = Localization.getLocales().find((lang) => lang.languageCode === systemLocale);
-// export const isRTL = language?.textDirection === "rtl";
+const language = Localization.getLocales().find((lang) => lang.languageCode === systemLocale); // TODO: We need to use the user's preferred language FIRST
+export const isRTL = language?.textDirection === 'rtl';
 
 i18n.use(initReactI18next).init<ResourceLanguage>({
-  lng: 'en',
+  lng: systemLocale || 'en',
   fallbackLng: ['en', 'ro'],
   compatibilityJSON: 'v3',
   supportedLngs: ['en', 'ro'],
   resources: {
     en: {
       translation: roEN,
-      tools: tools_roEN,
+      tools: toolsRoEn,
     },
     ro: {
       translation: roRO,
-      tools: tools_roRO,
+      tools: toolsRoRo,
     },
   },
   defaultNS: 'translation',

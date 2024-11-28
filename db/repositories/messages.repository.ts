@@ -16,7 +16,7 @@ class NotFoundError extends DrizzleError {
   }
 }
 
-export type Message = Omit<typeof messages.$inferSelect, 'id'>;
+export type Message = typeof messages.$inferSelect;
 
 class MessagesRepository {
   private databaseInstance = db;

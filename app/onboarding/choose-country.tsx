@@ -7,12 +7,13 @@ import { useTranslation } from 'react-i18next';
 import { FlashList } from '@shopify/flash-list';
 import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
-
+import { KVStore } from '@/helpers/mmkv';
+import { STORE_KEYS } from '@/constants/store-keys';
 const ChooseCountry = () => {
   const { t } = useTranslation('choose-country');
   const router = useRouter();
 
-  const [selectedCountry, setSelectedCountry] = useState<string>('us');
+  const [selectedCountry, setSelectedCountry] = useState<string>();
 
   const countriesArray = ['ro', 'am', 'ua'];
   const countryFlags = {
@@ -43,7 +44,13 @@ const ChooseCountry = () => {
       }}
       footerProps={{
         mainActionLabel: t('next'),
-        onMainAction: () => router.push('/onboarding/choose-language'),
+        onMainAction: () => {
+          if (selectedCountry) {
+            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
+            router.push('/onboarding/choose-language');
+          }
+        },
+        mainActionDisabled: !selectedCountry,
       }}>
       <FlashList
         ListHeaderComponent={() => (

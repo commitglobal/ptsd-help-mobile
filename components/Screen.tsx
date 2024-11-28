@@ -1,5 +1,5 @@
 import React, { useMemo } from 'react';
-import { XStack, YStack, YStackProps } from 'tamagui';
+import { Spinner, XStack, YStack, YStackProps } from 'tamagui';
 import { Header, HeaderProps } from './Header';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { KeyboardAvoidingView, Platform } from 'react-native';
@@ -9,12 +9,14 @@ import { Icon } from './Icon';
 interface FooterProps {
   onMainAction?: () => void;
   mainActionLabel?: string;
+  mainActionDisabled?: boolean;
   onSecondaryAction?: () => void;
   secondaryActionLabel?: string;
   onPrev?: () => void;
   onNext?: () => void;
   onCustomAction?: () => void;
   customActionIcon?: string;
+  isLoading?: boolean;
 }
 
 export interface ScreenProps extends YStackProps {
@@ -101,10 +103,15 @@ export const Screen = ({
               )}
 
               {footerProps.onMainAction && (
-                <Button onPress={footerProps.onMainAction}>{footerProps.mainActionLabel || 'Done'}</Button>
+                <Button
+                  onPress={footerProps.onMainAction}
+                  disabled={footerProps.mainActionDisabled || footerProps.isLoading}
+                  icon={footerProps.isLoading ? <Spinner size='small' color='$blue11' /> : null}>
+                  {footerProps.mainActionLabel || 'Done'}
+                </Button>
               )}
               {footerProps.onSecondaryAction && (
-                <Button preset='secondary' onPress={footerProps.onSecondaryAction}>
+                <Button preset='secondary' onPress={footerProps.onSecondaryAction} disabled={footerProps.isLoading}>
                   {footerProps.secondaryActionLabel}
                 </Button>
               )}
