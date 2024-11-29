@@ -3,7 +3,7 @@ import React from 'react';
 import Button from '@/components/Button';
 import { Typography } from '@/components/Typography';
 import { Icon } from '@/components/Icon';
-import { useRouter, useNavigation } from 'expo-router';
+import { useRouter, useNavigation, Link } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Screen } from '@/components/Screen';
 import { DrawerActions } from '@react-navigation/native';
@@ -105,9 +105,6 @@ export default function HomeScreen() {
             onItemPress={() => {}}
           />
         </XStack>
-
-        <Button onPress={() => router.push('/onboarding')}>Go to onboarding</Button>
-        <Button onPress={() => router.push('/tools/relationships/iMessages')}>Go to iMessages</Button>
       </ScrollView>
     </Screen>
   );

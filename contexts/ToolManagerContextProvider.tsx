@@ -26,6 +26,7 @@ type ToolManagerContextType = {
   startTool: (tool: Tool, returnURL: string) => void;
   finishTool: () => void;
   resetToolManagerContext: () => void;
+  getToolById: (toolId: string) => Tool | undefined;
 };
 
 const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
@@ -85,6 +86,21 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     return `Feedback from tool manager ${initialDistressLevel} to ${finalDistressLevel}`;
   };
 
+  const getToolById = (toolId: string) => {
+    // First search in top level tools
+    const topLevelTool = Object.values(TOOL_CONFIG).find((tool) => tool.id === toolId);
+    if (topLevelTool) return topLevelTool;
+
+    // Then search in subcategories
+    for (const tool of Object.values(TOOL_CONFIG)) {
+      if (tool.subcategories) {
+        const subcategoryTool = Object.values(tool.subcategories).find((subcategory) => subcategory?.id === toolId);
+        if (subcategoryTool) return subcategoryTool;
+      }
+    }
+    return undefined;
+  };
+
   const startTool = (tool: Tool, returnURL: string) => {
     setSelectedTool(tool);
     setReturnURL(returnURL);
@@ -125,6 +141,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     startTool,
     finishTool,
     resetToolManagerContext,
+    getToolById,
   };
 
   return <ToolManagerContext.Provider value={contextValue}>{children}</ToolManagerContext.Provider>;
