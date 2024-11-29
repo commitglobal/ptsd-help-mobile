@@ -18,6 +18,12 @@
     "preview": {
       "distribution": "internal"
     },
+    "staging": {
+      "channel": "staging",
+      "env": {
+        "EXPO_PUBLIC_ENVIRONMENT": "staging"
+      }
+    },
     "production": {
       "autoIncrement": true
     }

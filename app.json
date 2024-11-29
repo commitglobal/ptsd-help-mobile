@@ -17,16 +17,23 @@
       "buildNumber": "1",
       "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
-        "com.apple.developer.applesignin": ["Default"]
+        "com.apple.developer.applesignin": [
+          "Default"
+        ]
       },
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"]
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
       },
       "config": {
         "usesNonExemptEncryption": false
       }
     },
     "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "versionCode": 1,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -56,6 +63,12 @@
         "projectId": "60a0c8de-7ca5-4043-90c5-734c6e67b8a6"
       }
     },
-    "owner": "commit-global"
+    "owner": "commit-global",
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/60a0c8de-7ca5-4043-90c5-734c6e67b8a6"
+    }
   }
 }
