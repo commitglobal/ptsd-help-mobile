@@ -1,4 +1,4 @@
-type ActionType = 'start_tool' | 'external' | 'phone' | 'play_video';
+type ActionType = 'start_tool' | 'external' | 'phone' | 'webview';
 
 type BaseAction = {
   type: ActionType;
@@ -19,12 +19,12 @@ type PhoneAction = BaseAction & {
   number: string;
 };
 
-type VideoAction = BaseAction & {
-  type: 'play_video';
+type WebviewAction = BaseAction & {
+  type: 'webview';
   url: string;
 };
 
-type Action = StartToolAction | ExternalAction | PhoneAction | VideoAction;
+type Action = StartToolAction | ExternalAction | PhoneAction | WebviewAction;
 
 type BaseContent = {
   type: string;
@@ -54,15 +54,15 @@ export type ButtonContent = BaseContent & {
 
 export type MultiContent = BaseContent & {
   type: 'multiContent';
-  contentArray: (RichTextContent | TextContent | ButtonContent)[];
+  contentArray: (ImageContent | RichTextContent | TextContent | ButtonContent)[];
 };
 
-export type SwipableContent = BaseContent & {
-  type: 'swipableContent';
-  contentArray: (ImageContent | TextContent | ButtonContent)[];
-};
+export type Section = ImageContent | TextContent | RichTextContent | ButtonContent | MultiContent | MultiPage;
 
-export type Section = ImageContent | TextContent | RichTextContent | ButtonContent | MultiContent | SwipableContent;
+export type MultiPage = BaseContent & {
+  type: 'multiPage';
+  pageArray: Section[][];
+};
 
 type Topic = {
   id: string;

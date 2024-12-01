@@ -70,7 +70,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const { foggles } = useAssetsManagerContext();
   const TOOLS_CONFIG = useTools();
 
-  const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
+  const isDistressMeterActive = false; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [returnURL, setReturnURL] = useState<string | null>(null);

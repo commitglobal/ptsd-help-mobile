@@ -15,7 +15,7 @@ import { useTranslation } from 'react-i18next';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Separator, Spinner, XStack, YStack } from 'tamagui';
 
-export default function iMessages() {
+export default function IMessages() {
   const { t } = useTranslation('tools');
   const insets = useSafeAreaInsets();
   const router = useRouter();

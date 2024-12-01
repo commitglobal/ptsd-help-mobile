@@ -1,14 +1,24 @@
 import { Screen } from '@/components/Screen';
 import { Icon } from '@/components/Icon';
-import { router, Stack, useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
-import { learnContentJSON } from '../(drawer)/(tabs)/learn';
-import { XStack, YStack } from 'tamagui';
-import { ButtonContent, ImageContent, RichTextContent, Section, TextContent } from '@/models/LearnContent.type';
+import { ScrollView, XStack, YStack } from 'tamagui';
+import {
+  ButtonContent,
+  ImageContent,
+  MultiContent,
+  MultiPage,
+  RichTextContent,
+  Section,
+  TextContent,
+} from '@/models/LearnContent.type';
 import { Dimensions, Image, Linking } from 'react-native';
 import RenderHTML from 'react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
+import { useState } from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { learnContentJSON } from '@/constants/learnTopics';
 
 type ContentRendererProps = {
   section: Section;
@@ -27,6 +37,7 @@ function ImageContentComponent({ content }: { content: ImageContent }) {
 
 function RichTextContentComponent({ content }: { content: RichTextContent }) {
   const width = Dimensions.get('window').width;
+
   // ! There is "Support for defaultProps will be removed from function components" Error
   // ! Discussed here, to be fixed soon:  https://github.com/Expensify/App/pull/52917
   return (
@@ -53,8 +64,6 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
   const { startTool, getToolById } = useToolManagerContext();
   const { topicId } = useLocalSearchParams();
 
-  console.log('topicId button', topicId);
-
   const handlePress = () => {
     switch (content.action.type) {
       case 'start_tool': {
@@ -63,7 +72,7 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
         if (tool) {
           startTool(tool, `/learn/${topicId}`);
         } else {
-          // Show toast
+          // TODO: Show toast
           console.error('❌ Tool not found', content.action.toolId);
         }
         break;
@@ -76,10 +85,12 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
         // Handle phone call
         Linking.openURL(`tel:${content.action.number}`);
         break;
-      case 'play_video':
-        // Handle video playback
-        // You might want to implement a video player component
-        Linking.openURL(content.action.url);
+      case 'webview':
+        // Handle webview
+        router.push({ pathname: '/(app)/webview', params: { url: content.action.url } });
+        break;
+      default:
+        console.error('❌ Unknown button action', content.action);
         break;
     }
   };
@@ -93,6 +104,86 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
   );
 }
 
+function MultiContentComponent({ content }: { content: MultiContent }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const currentContent = content.contentArray[currentIndex];
+  const insets = useSafeAreaInsets();
+
+  return (
+    <YStack gap='$xs'>
+      <ContentRenderer section={currentContent} />
+      <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom={insets.bottom + 16}>
+        <Button
+          preset='secondary'
+          icon={<Icon icon='chevronLeft' width={20} height={20} color='$gray12' />}
+          flex={1}
+          onPress={() => {
+            if (currentIndex === 0) {
+              setCurrentIndex(content.contentArray.length - 1);
+            } else {
+              setCurrentIndex(currentIndex - 1);
+            }
+          }}
+        />
+
+        <Button
+          preset='secondary'
+          icon={<Icon icon='chevronRight' width={20} height={20} color='$gray12' />}
+          flex={1}
+          onPress={() => {
+            if (currentIndex === content.contentArray.length - 1) {
+              setCurrentIndex(0);
+            } else {
+              setCurrentIndex(currentIndex + 1);
+            }
+          }}
+        />
+      </XStack>
+    </YStack>
+  );
+}
+
+function MultiPageComponent({ content }: { content: MultiPage }) {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const currentPage = content.pageArray[currentIndex];
+  const insets = useSafeAreaInsets();
+
+  return (
+    <YStack gap='$xs'>
+      {currentPage.map((section: Section, index: number) => (
+        <ContentRenderer key={index} section={section} />
+      ))}
+      <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom={insets.bottom + 16}>
+        <Button
+          preset='secondary'
+          icon={<Icon icon='chevronLeft' width={20} height={20} color='$gray12' />}
+          flex={1}
+          onPress={() => {
+            if (currentIndex === 0) {
+              setCurrentIndex(content.pageArray.length - 1);
+            } else {
+              setCurrentIndex(currentIndex - 1);
+            }
+          }}
+        />
+
+        <Button
+          preset='secondary'
+          icon={<Icon icon='chevronRight' width={20} height={20} color='$gray12' />}
+          flex={1}
+          onPress={() => {
+            if (currentIndex === content.pageArray.length - 1) {
+              setCurrentIndex(0);
+            } else {
+              setCurrentIndex(currentIndex + 1);
+            }
+          }}
+        />
+      </XStack>
+    </YStack>
+  );
+}
+
 export function ContentRenderer({ section }: ContentRendererProps) {
   switch (section.type) {
     case 'image':
@@ -103,20 +194,18 @@ export function ContentRenderer({ section }: ContentRendererProps) {
       return <RichTextContentComponent content={section} />;
     case 'button':
       return <ButtonContentComponent content={section} />;
-    //   case 'multiContent':
-    //     return <MultiContent content={section} />;
-    //   case 'swipableContent':
-    //     return <SwipableContent content={section} />;
+    case 'multiContent':
+      return <MultiContentComponent content={section} />;
+    case 'multiPage':
+      return <MultiPageComponent content={section} />;
     default:
-      return <Typography>{section.type} + + Unknown type</Typography>;
+      return <Typography>{JSON.stringify(section)} Unknown type</Typography>;
   }
 }
 
 export default function LearnTopic() {
   const { topicId } = useLocalSearchParams();
   const topic = learnContentJSON.topics.find((topic) => topic.id === topicId);
-
-  console.log('🚀 🚀 🚀 🚀 topicId', topicId);
 
   return (
     <Screen
@@ -126,9 +215,14 @@ export default function LearnTopic() {
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}>
-      <YStack gap='$sm'>
-        {topic?.content.sections.map((section, index) => <ContentRenderer key={index} section={section} />)}
-      </YStack>
+      <ScrollView
+        contentContainerStyle={{ padding: 0, gap: 32, flexGrow: 1 }}
+        showsVerticalScrollIndicator={false}
+        bounces={false}>
+        <YStack gap='$sm' flexGrow={1}>
+          {topic?.content.sections.map((section, index) => <ContentRenderer key={index} section={section} />)}
+        </YStack>
+      </ScrollView>
     </Screen>
   );
 }
