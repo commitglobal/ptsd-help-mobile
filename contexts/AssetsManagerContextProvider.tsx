@@ -23,10 +23,9 @@ import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
 import { FogglesConfig } from '@/models/CMSFoggles.type';
 import { Category, LearnContent, Section, Topic } from '@/models/LearnContent.type';
+import { S3_CMS_CONFIG_FOLDER, S3_CMS_CONTENT_FOLDER } from '@/constants/cms';
+import { fetchFoggles } from '@/services/foggles/foggles.fetcher';
 
-const S3_CMS_BASE_URL = 'https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com';
-const S3_CMS_CONFIG_FOLDER = `${S3_CMS_BASE_URL}/config/`;
-const S3_CMS_CONTENT_FOLDER = `${S3_CMS_BASE_URL}/content/`;
 const ASSETS_FOLDER_LOCAL = 'assets/';
 
 type AssetsManagerContextType = {
@@ -44,11 +43,7 @@ export type FlatCMSMediaMapping = {
   [key: string]: MediaItem; // e.g., "RELATIONSHIPS.I_MESSAGES.headerImage"
 };
 
-// TODO: 1. Learn Content
-// - Add lastUpdateAt
-// - Remove/replace assets and learn.json locally if there are changes on the CMS
 // TODO: 2. Add country/language specific assets in both Learn and Tools assets
-// Refactor everything :))
 
 export type FlatLocalMediaMapping = {
   'RELATIONSHIPS.CATEGORY_ICON': string;
@@ -197,7 +192,12 @@ export const fetchLearnContent = async (countryCode: string) => {
   const processImageContent = async (imageSrc: string, contentDir: string): Promise<string> => {
     const imageFileName = imageSrc.split('/').pop();
     const localImagePath = `${contentDir}/${imageFileName}`;
-    await FileSystem.downloadAsync(imageSrc, localImagePath);
+    try {
+      await FileSystem.downloadAsync(imageSrc, localImagePath);
+    } catch (error) {
+      console.error('Error downloading image:', error);
+      return '';
+    }
     return localImagePath;
   };
 
@@ -290,20 +290,26 @@ export const fetchLearnContent = async (countryCode: string) => {
   await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
 
   if (shouldUpdateLocal && remoteContent) {
+    // Get list of all files in learn directory
+    const existingFiles = new Set(await FileSystem.readDirectoryAsync(contentDir));
+    const usedFiles = new Set<string>();
+
     // Process categories
-    const processedCategories = await Promise.all(
+    const processedCategories: Category[] = await Promise.all(
       remoteContent.categories.map(async (category: Category) => {
         // Process category icon
         const processedIcon = category.icon ? await processImageContent(category.icon, contentDir) : category.icon;
+        if (processedIcon) usedFiles.add(processedIcon.split('/').pop()!);
 
         // Process topics within category
-        const processedTopics = await Promise.all(
+        const processedTopics: Topic[] = await Promise.all(
           category.topics.map(async (topic: Topic) => {
             // Process topic icon
             const processedTopicIcon = topic.icon ? await processImageContent(topic.icon, contentDir) : topic.icon;
+            if (processedTopicIcon) usedFiles.add(processedTopicIcon.split('/').pop()!);
 
             // Process sections
-            const processedSections = await Promise.all(
+            const processedSections: Section[] = await Promise.all(
               topic.content.sections.map((section) => processSection(section, contentDir))
             );
 
@@ -326,64 +332,31 @@ export const fetchLearnContent = async (countryCode: string) => {
       })
     );
 
-    // Save processed content
-    const localContentPath = `${FileSystem.documentDirectory}content/${countryCode}/learn.json`;
-    await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(localContent, null, 2));
+    // Delete files that are not in usedFiles
+    for (const file of existingFiles) {
+      if (!usedFiles.has(file)) {
+        try {
+          await FileSystem.deleteAsync(`${contentDir}/${file}`);
+          console.log(`Deleted unused file from learn: ${file}`);
+        } catch (error) {
+          console.error(`Error deleting file ${file}:`, error);
+        }
+      }
+    }
 
-    return {
+    const toReturn: LearnContent = {
       ...remoteContent,
       categories: processedCategories,
     };
+
+    // Save processed content
+    const localContentPath = `${FileSystem.documentDirectory}content/${countryCode}/learn.json`;
+    await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(toReturn, null, 2));
+
+    return toReturn;
   }
 
   return localContent;
-};
-
-const fetchFoggles = async (countryCode: string, destinationFolder: string) => {
-  const localFogglesPath = `${destinationFolder}foggles_${countryCode}.json`;
-
-  const getLocalFoggles = async () => {
-    try {
-      const localFogglesJson = await FileSystem.readAsStringAsync(localFogglesPath);
-      return JSON.parse(localFogglesJson);
-    } catch (error) {
-      console.log('No existing local foggles found', error);
-      return null;
-    }
-  };
-
-  const getRemoteFoggles = async () => {
-    try {
-      const response = await fetch(`${S3_CMS_CONFIG_FOLDER}foggles_${countryCode}.json`);
-      if (!response.ok) return null;
-      return await response.json();
-    } catch (error) {
-      console.error('Error fetching remote foggles:', error);
-      return null;
-    }
-  };
-
-  try {
-    const [localFoggles, remoteFoggles] = await Promise.all([getLocalFoggles(), getRemoteFoggles()]);
-
-    if (!localFoggles && !remoteFoggles) {
-      return null;
-    }
-
-    const shouldUpdateLocal =
-      !localFoggles || new Date(remoteFoggles?.lastUpdated) > new Date(localFoggles?.lastUpdated);
-
-    if (shouldUpdateLocal && remoteFoggles) {
-      await FileSystem.writeAsStringAsync(localFogglesPath, JSON.stringify(remoteFoggles, null, 2));
-      console.log(`Updated foggles saved to: ${localFogglesPath}`);
-      return remoteFoggles;
-    }
-
-    return localFoggles;
-  } catch (error) {
-    console.error('Error fetching/saving foggles:', error);
-    return null;
-  }
 };
 
 const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
@@ -392,8 +365,8 @@ const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
     queryFn: !countryCode
       ? skipToken
       : async () => {
-          const destinationFolder = `${FileSystem.documentDirectory}`;
-          return fetchFoggles(countryCode, destinationFolder);
+          console.log('🐸 useFoggles');
+          return fetchFoggles(countryCode);
         },
   });
 };
@@ -401,7 +374,13 @@ const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
 const useLearnContent = (countryCode: string): UseQueryResult<LearnContent> => {
   return useQuery({
     queryKey: ['learn', countryCode],
-    queryFn: !countryCode ? skipToken : async () => fetchLearnContent(countryCode),
+    queryFn: !countryCode
+      ? skipToken
+      : async () => {
+          console.log('📕 useLearnContent');
+          return fetchLearnContent(countryCode);
+        },
+    staleTime: 60 * 60 * 1000, // 24 hours
   });
 };
 
@@ -422,6 +401,8 @@ const useMediaMapper = (countryCode: string) => {
     queryFn: !countryCode
       ? skipToken
       : async () => {
+          console.log('🥳 useMediaMapper');
+
           const LOCAL_MAPPING_FILE_NAME = `localMapping_${countryCode}.json`;
           const destinationFolder = `${FileSystem.documentDirectory}`;
 
@@ -466,7 +447,7 @@ const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const countryCode = 'RO';
-  console.log(FileSystem.documentDirectory);
+  // console.log(FileSystem.documentDirectory);
   const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
   const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(countryCode);

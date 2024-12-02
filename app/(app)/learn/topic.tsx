@@ -13,7 +13,7 @@ import {
   TextContent,
 } from '@/models/LearnContent.type';
 import { Dimensions, Image, Linking } from 'react-native';
-import RenderHTML from 'react-native-render-html';
+import RenderHTML from '@builder.io/react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useMemo, useState } from 'react';
