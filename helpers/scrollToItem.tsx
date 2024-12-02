@@ -2,10 +2,10 @@ import { Platform } from 'react-native';
 
 const scrollToPadding = 16;
 
-export const scrollToTextarea = (scrollViewRef: any, textareaRef: any) => {
+export const scrollToItem = (scrollViewRef: any, itemRef: any) => {
   if (Platform.OS === 'ios') {
-    if (scrollViewRef.current && textareaRef.current) {
-      (textareaRef.current as any).measureLayout(
+    if (scrollViewRef.current && itemRef.current) {
+      (itemRef.current as any).measureLayout(
         scrollViewRef.current,
         (x: number, y: number, _width: number, _height: number) => {
           setTimeout(() => {

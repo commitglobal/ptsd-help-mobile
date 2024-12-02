@@ -1,24 +1,24 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { useRouter } from 'expo-router';
 import { Screen } from '@/components/Screen';
-import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { ScrollView, Separator, XStack, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import TextareaInput from '@/components/Inputs/Textarea';
-import { scrollToTextarea } from '@/helpers/scrollToTextarea';
 import TextFormInput from '@/components/TextFormInput';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import worriesRepository from '@/db/repositories/worries.repository';
 import { Switch } from '@/components/Switch';
-import DatePicker from 'react-native-date-picker';
 import { format } from 'date-fns';
+import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { TimePicker } from '@/components/TimePicker';
+import { scrollToItem } from '@/helpers/scrollToItem';
 
 export default function WorryTime() {
+  const { toolsTranslationKeys } = useTranslationKeys();
   const { t } = useTranslation('tools');
-  const translationKey = TOOLS_TRANSLATIONS_CONFIG.WORRY_TIME;
   const router = useRouter();
   const scrollViewRef = useRef<ScrollView>(null);
   const textareaRef = useRef<React.ElementRef<typeof TextareaInput>>(null);
@@ -42,7 +42,7 @@ export default function WorryTime() {
 
   const handleFocus = () => {
     if (textareaRef.current && scrollViewRef.current) {
-      scrollToTextarea(scrollViewRef, textareaRef);
+      scrollToItem(scrollViewRef, textareaRef);
     }
   };
 
@@ -67,22 +67,22 @@ export default function WorryTime() {
   return (
     <Screen
       headerProps={{
-        title: t(translationKey.title),
+        title: t(toolsTranslationKeys.WORRY_TIME.title),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}
       footerProps={{
         onMainAction: handleDone,
-        secondaryActionLabel: t(translationKey.help),
+        secondaryActionLabel: t(toolsTranslationKeys.WORRY_TIME.help),
         onSecondaryAction: () => router.push('/tools/worry-time/help'),
       }}>
       <ScrollView contentContainerStyle={{ flexGrow: 1, gap: 16, padding: 16 }} ref={scrollViewRef}>
-        <Typography>{t(translationKey.description)}</Typography>
+        <Typography>{t(toolsTranslationKeys.WORRY_TIME.description)}</Typography>
 
         <TextFormInput
-          label={t(translationKey.subjectsToThinkAbout)}
+          label={t(toolsTranslationKeys.WORRY_TIME.subjectsToThinkAbout)}
           ref={textareaRef}
-          placeholder={t(translationKey.writeHere)}
+          placeholder={t(toolsTranslationKeys.WORRY_TIME.writeHere)}
           height={200}
           onPress={handleFocus}
           value={worryText}
@@ -91,7 +91,7 @@ export default function WorryTime() {
 
         <YStack backgroundColor='white' padding='$md' gap='$xs' borderRadius='$sm'>
           <XStack alignItems='center' justifyContent='space-between'>
-            <Typography flex={1}>{t(translationKey.reminder)}</Typography>
+            <Typography flex={1}>{t(toolsTranslationKeys.WORRY_TIME.reminder)}</Typography>
             <Switch isChecked={isReminderChecked} setIsChecked={setIsReminderChecked} />
           </XStack>
 
@@ -106,12 +106,12 @@ export default function WorryTime() {
               <Separator />
 
               <XStack justifyContent='space-between'>
-                <Typography>{t(translationKey.daily)}</Typography>
-                <Typography>{format(time, 'hh:mm')}</Typography>
+                <Typography>{t(toolsTranslationKeys.WORRY_TIME.daily)}</Typography>
+                <Typography>{format(time, 'HH:mm')}</Typography>
               </XStack>
 
               <XStack justifyContent='center'>
-                <DatePicker date={time} onDateChange={setTime} mode='time' />
+                <TimePicker date={time} onChange={setTime} scrollViewRef={scrollViewRef} />
               </XStack>
             </YStack>
           )}
