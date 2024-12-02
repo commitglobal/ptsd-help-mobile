@@ -1,5 +1,5 @@
 import { S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
-import { FogglesConfig } from '@/models/CMSFoggles.type';
+import { FogglesConfig } from './foggles.type';
 import * as FileSystem from 'expo-file-system';
 
 export const fetchFoggles = async (countryCode: string) => {
