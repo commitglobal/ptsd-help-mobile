@@ -21,11 +21,13 @@ import { createContext, useContext } from 'react';
 import * as FileSystem from 'expo-file-system';
 import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
-import { Category, LearnContent, Section, Topic } from '@/models/LearnContent.type';
-import { getS3CMSContentFolder, S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
+import { S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
 import { useFoggles } from '@/services/foggles/foggles.query';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
 import { useLearnContent } from '@/services/learn/learn.query';
+import { LearnContent } from '@/services/learn/learn.type';
+import { FlatCMSMediaMapping } from '@/services/tools-assets/tools-assets.type';
+import { FlatLocalMediaMapping } from '@/services/tools-assets/tools-assets.type';
 
 const ASSETS_FOLDER_LOCAL = 'assets/';
 
@@ -33,55 +35,6 @@ type AssetsManagerContextType = {
   mediaMapping: FlatLocalMediaMapping;
   foggles: FogglesConfig;
   learnContent: LearnContent;
-};
-
-export interface MediaItem {
-  uri: string;
-  lastUpdatedAt: number;
-}
-
-export type FlatCMSMediaMapping = {
-  [key: string]: MediaItem; // e.g., "RELATIONSHIPS.I_MESSAGES.headerImage"
-};
-
-// TODO: 2. Add country/language specific assets in both Learn and Tools assets
-
-export type FlatLocalMediaMapping = {
-  'RELATIONSHIPS.CATEGORY_ICON': string;
-  'AMBIENT_SOUNDS.CATEGORY_ICON': string;
-  'RELATIONSHIPS.HEALTHY_ARGUMENTS.headerImage': string;
-  'AMBIENT_SOUNDS.BIRDS.soundURI': string;
-  'AMBIENT_SOUNDS.CRICKETS.soundURI': string;
-  'AMBIENT_SOUNDS.FROGS.soundURI': string;
-  'AMBIENT_SOUNDS.DRIPPING_WATER.soundURI': string;
-  'AMBIENT_SOUNDS.MARSH.soundURI': string;
-  'AMBIENT_SOUNDS.PUBLIC_POOL.soundURI': string;
-  'AMBIENT_SOUNDS.BEACH.soundURI': string;
-  'AMBIENT_SOUNDS.STREAM_WATER.soundURI': string;
-  'AMBIENT_SOUNDS.WATERFALL.soundURI': string;
-  'MINDFULNESS.CATEGORY_ICON': string;
-  'AMBIENT_SOUNDS.RUNNING_WATER.soundURI': string;
-  'MINDFULNESS.MINDFUL_WALKING.CATEGORY_ICON': string;
-  'MINDFULNESS.MINDFUL_WALKING.soundURI': string;
-  'MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON': string;
-  'MINDFULNESS.SENSE_AWARENESS.CATEGORY_ICON': string;
-  'MINDFULNESS.SENSE_AWARENESS.soundURI': string;
-  'MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON': string;
-  'MINDFULNESS.LOVING_KINDNESS.soundURI': string;
-  'RELATIONSHIPS.I_MESSAGES.CATEGORY_ICON': string;
-  'MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON': string;
-  'MINDFULNESS.EMOTIONAL_DISCOMFORT.soundURI': string;
-  'RELATIONSHIPS.HEALTHY_ARGUMENTS.CATEGORY_ICON': string;
-  'RELATIONSHIPS.I_MESSAGES.headerImage': string;
-  'RELATIONSHIPS.POSITIVE_COMMUNICATION.CATEGORY_ICON': string;
-  'RELATIONSHIPS.RECONNECT_WITH_PARTNER.CATEGORY_ICON': string;
-  'AMBIENT_SOUNDS.RAIN.soundURI': string;
-  'AMBIENT_SOUNDS.WIND.soundURI': string;
-  'AMBIENT_SOUNDS.COUNTRY_ROAD.soundURI': string;
-  'AMBIENT_SOUNDS.FOREST.soundURI': string;
-  'PAUSE.CATEGORY_ICON': string;
-  'MINDFULNESS.CONSCIOUS_BREATHING.soundURI': string;
-  'MY_FEELINGS.CATEGORY_ICON': string;
 };
 
 export const processFlatMediaAssets = async (
