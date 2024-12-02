@@ -23,7 +23,7 @@ import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
 import { FogglesConfig } from '@/models/CMSFoggles.type';
 import { Category, LearnContent, Section, Topic } from '@/models/LearnContent.type';
-import { S3_CMS_CONFIG_FOLDER, S3_CMS_CONTENT_FOLDER } from '@/constants/cms';
+import { getS3CMSContentFolder, S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
 import { fetchFoggles } from '@/services/foggles/foggles.fetcher';
 
 const ASSETS_FOLDER_LOCAL = 'assets/';
@@ -188,7 +188,7 @@ export const fetchMediaMapping = async (countryCode: string) => {
   }
 };
 
-export const fetchLearnContent = async (countryCode: string) => {
+export const fetchLearnContent = async (countryCode: string, languageCode: string) => {
   const processImageContent = async (imageSrc: string, contentDir: string): Promise<string> => {
     const imageFileName = imageSrc.split('/').pop();
     const localImagePath = `${contentDir}/${imageFileName}`;
@@ -267,7 +267,7 @@ export const fetchLearnContent = async (countryCode: string) => {
 
   const getRemoteLearnContent = async () => {
     try {
-      const response = await fetch(`${S3_CMS_CONTENT_FOLDER}learn.json`);
+      const response = await fetch(getS3CMSContentFolder(countryCode, languageCode));
       if (!response.ok) return null;
       return await response.json();
     } catch (error) {
@@ -371,14 +371,14 @@ const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
   });
 };
 
-const useLearnContent = (countryCode: string): UseQueryResult<LearnContent> => {
+const useLearnContent = (countryCode: string, languageCode: string): UseQueryResult<LearnContent> => {
   return useQuery({
-    queryKey: ['learn', countryCode],
+    queryKey: ['learn', countryCode, languageCode],
     queryFn: !countryCode
       ? skipToken
       : async () => {
           console.log('📕 useLearnContent');
-          return fetchLearnContent(countryCode);
+          return fetchLearnContent(countryCode, languageCode);
         },
     staleTime: 60 * 60 * 1000, // 24 hours
   });
@@ -447,10 +447,11 @@ const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const countryCode = 'RO';
+  const languageCode = 'ro';
   // console.log(FileSystem.documentDirectory);
   const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
-  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(countryCode);
+  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(countryCode, languageCode);
 
   if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent) {
     return <Typography>Loading...</Typography>;
