@@ -64,7 +64,7 @@ export type MultiPage = BaseContent & {
   pageArray: Section[][];
 };
 
-type Topic = {
+export type Topic = {
   id: string;
   label: string;
   icon: string;
@@ -81,6 +81,7 @@ export type Category = {
 };
 
 export type LearnContent = {
+  lastUpdatedAt: string;
   title: string;
   categories: Category[];
 };

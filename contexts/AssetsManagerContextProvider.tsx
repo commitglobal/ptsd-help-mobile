@@ -22,7 +22,7 @@ import * as FileSystem from 'expo-file-system';
 import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
 import { FogglesConfig } from '@/models/CMSFoggles.type';
-import { LearnContent, Section } from '@/models/LearnContent.type';
+import { Category, LearnContent, Section, Topic } from '@/models/LearnContent.type';
 
 const S3_CMS_BASE_URL = 'https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com';
 const S3_CMS_CONFIG_FOLDER = `${S3_CMS_BASE_URL}/config/`;
@@ -254,25 +254,51 @@ export const fetchLearnContent = async (countryCode: string) => {
     return section;
   };
 
-  try {
-    const response = await fetch(`${S3_CMS_CONTENT_FOLDER}learn.json`);
-    if (!response.ok) return null;
+  const getLocalLearnContent = async () => {
+    try {
+      const localContentPath = `${FileSystem.documentDirectory}content/${countryCode}/learn.json`;
+      const localContentJson = await FileSystem.readAsStringAsync(localContentPath);
+      return JSON.parse(localContentJson);
+    } catch (error) {
+      console.log('No existing local learn content found', error);
+      return null;
+    }
+  };
 
-    const remoteContent: LearnContent = await response.json();
-    const contentDir = `${FileSystem.documentDirectory}content/${countryCode}/learn`;
+  const getRemoteLearnContent = async () => {
+    try {
+      const response = await fetch(`${S3_CMS_CONTENT_FOLDER}learn.json`);
+      if (!response.ok) return null;
+      return await response.json();
+    } catch (error) {
+      console.error('Error fetching remote learn content:', error);
+      return null;
+    }
+  };
 
-    // Create content directory if it doesn't exist
-    await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
+  const [localContent, remoteContent] = await Promise.all([getLocalLearnContent(), getRemoteLearnContent()]);
 
+  if (!localContent && !remoteContent) {
+    return null;
+  }
+
+  const shouldUpdateLocal =
+    !localContent || new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt);
+
+  const contentDir = `${FileSystem.documentDirectory}content/${countryCode}/learn`;
+  // Create content directory if it doesn't exist
+  await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
+
+  if (shouldUpdateLocal && remoteContent) {
     // Process categories
     const processedCategories = await Promise.all(
-      remoteContent.categories.map(async (category) => {
+      remoteContent.categories.map(async (category: Category) => {
         // Process category icon
         const processedIcon = category.icon ? await processImageContent(category.icon, contentDir) : category.icon;
 
         // Process topics within category
         const processedTopics = await Promise.all(
-          category.topics.map(async (topic) => {
+          category.topics.map(async (topic: Topic) => {
             // Process topic icon
             const processedTopicIcon = topic.icon ? await processImageContent(topic.icon, contentDir) : topic.icon;
 
@@ -300,21 +326,17 @@ export const fetchLearnContent = async (countryCode: string) => {
       })
     );
 
-    const localContent = {
-      ...remoteContent,
-      categories: processedCategories,
-    };
-
     // Save processed content
     const localContentPath = `${FileSystem.documentDirectory}content/${countryCode}/learn.json`;
     await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(localContent, null, 2));
 
-    return localContent;
-  } catch (error) {
-    console.error(error);
-    // console.error('Error in fetchLearnContent:', error);
-    return null;
+    return {
+      ...remoteContent,
+      categories: processedCategories,
+    };
   }
+
+  return localContent;
 };
 
 const fetchFoggles = async (countryCode: string, destinationFolder: string) => {
