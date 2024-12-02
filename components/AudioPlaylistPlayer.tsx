@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Typography } from './Typography';
 
 import { FlashList } from '@shopify/flash-list';
@@ -7,6 +7,7 @@ import MediaPlayer from './MediaPlayer';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from './Icon';
 import { Asset } from 'expo-asset';
+import { useFocusEffect } from 'expo-router';
 
 export interface AudioFile {
   id: string;
@@ -37,15 +38,15 @@ export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
 
   const [selectedAudio, setSelectedAudio] = useState<AudioFile | null>(null);
 
-  // get the asset only when URI exists
-  const asset = selectedAudio?.uri ? Asset.fromModule(selectedAudio.uri) : null;
-
-  // load the asset
-  React.useEffect(() => {
-    if (asset) {
-      asset.downloadAsync();
-    }
-  }, [asset]);
+  useFocusEffect(
+    React.useCallback(() => {
+      return () => {
+        // When the screen is PUSHED, the component is not unmounted and the sounds will keep playing
+        // We reset the selected audio @luciatugui 2024-11-28
+        setSelectedAudio(null);
+      };
+    }, [])
+  );
 
   return (
     <YStack flex={1} backgroundColor='white'>
@@ -103,7 +104,7 @@ export const AudioPlaylistPlayer = ({ audios }: { audios?: AudioFile[] }) => {
           alignItems='center'
           marginHorizontal='$md'
           padding='$md'>
-          <MediaPlayer mediaURI={asset?.uri || ''} isVideo={false} />
+          <MediaPlayer mediaURI={selectedAudio?.uri || ''} isVideo={false} />
         </XStack>
       )}
     </YStack>

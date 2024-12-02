@@ -1,0 +1,38 @@
+sequenceDiagram
+    participant App
+    participant AMC as AssetsManagerContext
+    participant Local as Local Storage
+    participant CMS as S3 CMS
+
+    Note over App,CMS: App Initialization
+    
+    App->>AMC: Mount AssetsManagerContext
+    
+    AMC->>Local: Try load localMapping_{countryCode}.json
+    
+    alt Local mapping exists
+        Local-->>AMC: Return local mapping
+    else No local mapping
+        Note over AMC: Continue with empty object<br/>localMapping = {}
+    end
+    
+    AMC->>CMS: Fetch CMSMapping_{countryCode}.json
+    
+    alt CMS mapping fetch successful
+        CMS-->>AMC: Return CMS mapping
+        
+        loop For each asset in CMS mapping
+            AMC->>Local: Check if asset exists locally
+            
+            alt Asset needs download
+                Note over AMC,Local: If asset doesn't exist OR<br/>CMS lastUpdatedAt > local modificationTime
+                AMC->>CMS: Download asset
+                CMS-->>AMC: Return asset
+                AMC->>Local: Save asset to assets folder
+                AMC->>Local: Update localMapping_{countryCode}.json
+            end
+        end
+    else CMS mapping fetch fails
+        Note over AMC: If local mapping exists,<br/>continue with local mapping
+        Note over AMC: If no local mapping,<br/>return null (fatal error)
+    end

@@ -1,9 +1,9 @@
 import React, { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
-import { TOOLS_TRANSLATIONS_CONFIG } from '@/_config/translations.config';
 import { useTranslation } from 'react-i18next';
 import feelingsRepository from '@/db/repositories/feelings.repository';
 
 import { FeelingEntry } from '@/db/schema/feelings';
+import useTranslationKeys from '@/hooks/useTranslationKeys';
 
 type FeelingsContextType = {
   feelings: FeelingEntry;
@@ -17,11 +17,16 @@ type FeelingsContextType = {
 
 const FeelingsContext = createContext<FeelingsContextType | null>(null);
 
-export const useDiscomfortLevels = (t: any, translationKey: any) => {
+export const useDiscomfortLevels = () => {
+  const { t } = useTranslation('tools');
+  const { toolsTranslationKeys } = useTranslationKeys();
+
   return React.useMemo(() => {
-    const discomfortLevels = t(translationKey.repeater, { returnObjects: true }) as string[];
+    const discomfortLevels = t(toolsTranslationKeys.MY_FEELINGS.repeater, {
+      returnObjects: true,
+    }) as string[];
     return Object.values(discomfortLevels);
-  }, [t, translationKey.repeater]);
+  }, [t, toolsTranslationKeys.MY_FEELINGS.repeater]);
 };
 
 export const getDiscomfortLevel = (value: number, discomfortLevelsArray: string[]) => {
@@ -30,15 +35,12 @@ export const getDiscomfortLevel = (value: number, discomfortLevelsArray: string[
 };
 
 export const FeelingsContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const { t } = useTranslation('tools');
-  const translationKey = TOOLS_TRANSLATIONS_CONFIG.MY_FEELINGS;
-
   const [isLoading, setIsLoading] = useState(false);
 
   const [feelings, setFeelings] = useState<FeelingEntry>({});
   const [discomfort, setDiscomfort] = useState<number>(0);
 
-  const discomfortLevelsArray = useDiscomfortLevels(t, translationKey);
+  const discomfortLevelsArray = useDiscomfortLevels();
   const currentDiscomfortLevel = React.useMemo(
     () => getDiscomfortLevel(discomfort, discomfortLevelsArray),
     [discomfort, discomfortLevelsArray]

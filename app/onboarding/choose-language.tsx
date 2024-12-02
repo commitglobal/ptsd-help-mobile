@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
@@ -8,13 +8,14 @@ import { useRouter } from 'expo-router';
 import i18n from '@/common/config/i18n';
 import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
+import { KVStore } from '@/helpers/mmkv';
+import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChooseLanguage() {
   const { t } = useTranslation(['choose-language', 'languages']);
   const router = useRouter();
 
-  const languagesArray = useMemo(() => i18n.languages || ['en'], [i18n.languages]);
-  const languages = languagesArray.map((language) => ({
+  const languages = i18n.languages.map((language) => ({
     id: language,
     label: t(`${language}`, { ns: 'languages' }),
   }));
@@ -33,7 +34,12 @@ export default function ChooseLanguage() {
       }}
       footerProps={{
         mainActionLabel: t('next'),
-        onMainAction: () => router.push('/onboarding/onboarding-slider'),
+        onMainAction: () => {
+          if (selectedLanguage) {
+            KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+            router.push('/onboarding/onboarding-slider');
+          }
+        },
       }}>
       <FlashList
         ListHeaderComponent={() => (

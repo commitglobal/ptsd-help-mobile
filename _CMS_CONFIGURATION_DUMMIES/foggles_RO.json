@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2024-03-24T13:01:00Z",
+  "features": {
+    "tools": {
+      "relationships": {
+        "enabled": true,
+        "subcategories": {
+          "relationships-reconnect-with-partner": {
+            "enabled": true
+          },
+          "relationships-positive-communication": {
+            "enabled": true
+          },
+          "relationships-i-messages": {
+            "enabled": true
+          },
+          "relationships-healthy-arguments": {
+            "enabled": true
+          }
+        }
+      },
+      "ambient-sounds": {
+        "enabled": true
+      },
+      "mindfulness": {
+        "enabled": true,
+        "subcategories": {
+          "mindfulness-conscious-breathing": {
+            "enabled": true
+          },
+          "mindfulness-mindful-walking": {
+            "enabled": true
+          },
+          "mindfulness-emotional-discomfort": {
+            "enabled": true
+          },
+          "mindfulness-sense-awareness": {
+            "enabled": true
+          },
+          "mindfulness-loving-kindness": {
+            "enabled": true
+          }
+        }
+      },
+      "my-feelings": {
+        "enabled": true
+      }
+    }
+  }
+}

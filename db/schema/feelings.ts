@@ -1,6 +1,6 @@
 import { sqliteTable, integer, text } from 'drizzle-orm/sqlite-core';
 import { timestamps } from '../helpers';
-import { MainFeeling } from '@/constants/Feelings';
+import { MainFeeling } from '@/enums/MainFeeling';
 
 export type FeelingEntry = Partial<Record<MainFeeling, string[]>>;
 
