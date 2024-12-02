@@ -15,6 +15,7 @@ import { format } from 'date-fns';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { TimePicker } from '@/components/TimePicker';
 import { scrollToItem } from '@/helpers/scrollToItem';
+import * as Notifications from 'expo-notifications';
 
 export default function WorryTime() {
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -25,20 +26,17 @@ export default function WorryTime() {
   const { finishTool } = useToolManagerContext();
 
   const { data: worries } = useLiveQuery(worriesRepository.getWorries(), []);
+
   const [worryText, setWorryText] = useState(worries[0]?.worry || '');
   const [isReminderChecked, setIsReminderChecked] = useState(false);
-  const [time, setTime] = useState(new Date());
+  const [time, setTime] = useState<Date | null>(new Date());
 
+  // initialize the textarea value with the existing worry
   useEffect(() => {
     setWorryText(worries[0]?.worry || '');
+    setIsReminderChecked(worries[0]?.reminderEnabled || false);
+    setTime(worries[0]?.reminderTime && new Date(worries[0]?.reminderTime));
   }, [worries]);
-
-  // scroll to the bottom of the screen when the reminder switch is checked and the time picker is presented
-  useEffect(() => {
-    if (isReminderChecked) {
-      scrollViewRef.current?.scrollToEnd();
-    }
-  }, [isReminderChecked]);
 
   const handleFocus = () => {
     if (textareaRef.current && scrollViewRef.current) {
@@ -46,19 +44,81 @@ export default function WorryTime() {
     }
   };
 
-  const handleDone = () => {
+  const handleReminderChange = (checked: boolean) => {
+    if (!checked) {
+      setTime(null);
+    }
+    if (checked) {
+      setTimeout(() => {
+        scrollViewRef.current?.scrollToEnd();
+      }, 100);
+    }
+    setIsReminderChecked(checked);
+  };
+
+  const handleDone = async () => {
     // if we have no worries, create one, otherwise update the existing one
     if (worries.length === 0) {
+      let notificationId: string | null = null;
+
+      // schedule the notification if the reminder is checked
+      if (isReminderChecked) {
+        const reminderTimeDate = time ? new Date(time) : new Date();
+
+        notificationId = await Notifications.scheduleNotificationAsync({
+          content: {
+            title: 'PTSD Help',
+            body: 'Review the issues that are causing you to worry.',
+          },
+          trigger: {
+            hour: reminderTimeDate.getHours(),
+            minute: reminderTimeDate.getMinutes(),
+            repeats: true,
+          },
+        });
+      }
+
+      // create the worry in the database
       worriesRepository.createWorry({
         worry: worryText,
+        reminderEnabled: isReminderChecked,
+        reminderTime: time,
+        notificationId,
         createdAt: new Date().toISOString(),
         updatedAt: new Date().toISOString(),
         deletedAt: null,
       });
     } else {
+      // cancel the existing notification
+      if (worries[0].notificationId) {
+        await Notifications.cancelScheduledNotificationAsync(worries[0].notificationId);
+      }
+
+      let notificationId: string | null = null;
+
+      // schedule the new notification if the reminder is checked
+      if (isReminderChecked) {
+        const reminderTimeDate = time ? new Date(time) : new Date();
+
+        notificationId = await Notifications.scheduleNotificationAsync({
+          content: {
+            title: 'PTSD Help',
+            body: 'Review the issues that are causing you to worry.',
+          },
+          trigger: {
+            hour: reminderTimeDate.getHours(),
+            minute: reminderTimeDate.getMinutes(),
+            repeats: true,
+          },
+        });
+      }
+
       worriesRepository.updateWorry(worries[0].id, {
         ...worries[0],
         worry: worryText,
+        reminderEnabled: isReminderChecked,
+        reminderTime: time,
+        notificationId,
       });
     }
     finishTool();
@@ -90,9 +150,9 @@ export default function WorryTime() {
         />
 
         <YStack backgroundColor='white' padding='$md' gap='$xs' borderRadius='$sm'>
-          <XStack alignItems='center' justifyContent='space-between'>
+          <XStack alignItems='center' justifyContent='space-between' gap='$md'>
             <Typography flex={1}>{t(toolsTranslationKeys.WORRY_TIME.reminder)}</Typography>
-            <Switch isChecked={isReminderChecked} setIsChecked={setIsReminderChecked} />
+            <Switch isChecked={isReminderChecked} setIsChecked={handleReminderChange} />
           </XStack>
 
           {isReminderChecked && (
@@ -107,11 +167,11 @@ export default function WorryTime() {
 
               <XStack justifyContent='space-between'>
                 <Typography>{t(toolsTranslationKeys.WORRY_TIME.daily)}</Typography>
-                <Typography>{format(time, 'HH:mm')}</Typography>
+                <Typography>{format(time || new Date(), 'HH:mm')}</Typography>
               </XStack>
 
               <XStack justifyContent='center'>
-                <TimePicker date={time} onChange={setTime} scrollViewRef={scrollViewRef} />
+                <TimePicker date={time || new Date()} onChange={setTime} scrollViewRef={scrollViewRef} />
               </XStack>
             </YStack>
           )}

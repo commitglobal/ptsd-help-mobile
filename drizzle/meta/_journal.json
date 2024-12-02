@@ -36,6 +36,20 @@
       "when": 1732633120335,
       "tag": "0004_worries-table-rename",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "6",
+      "when": 1733146366261,
+      "tag": "0005_worries-table-reminder",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "6",
+      "when": 1733149383973,
+      "tag": "0006_worries-table-notificationId",
+      "breakpoints": true
     }
   ]
 }
