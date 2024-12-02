@@ -16,9 +16,9 @@ import { Dimensions, Image, Linking } from 'react-native';
 import RenderHTML from 'react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { learnContentJSON } from '@/constants/learnTopics';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
 type ContentRendererProps = {
   section: Section;
@@ -204,8 +204,21 @@ export function ContentRenderer({ section }: ContentRendererProps) {
 }
 
 export default function LearnTopic() {
-  const { topicId } = useLocalSearchParams();
-  const topic = learnContentJSON.topics.find((topic) => topic.id === topicId);
+  const { categoryId, topicId } = useLocalSearchParams<{ categoryId: string; topicId: string }>();
+
+  const { learnContent } = useAssetsManagerContext();
+
+  const topic = useMemo(
+    () =>
+      learnContent.categories
+        .find((category) => category.id === categoryId)
+        ?.topics.find((topic) => topic.id === topicId),
+    [learnContent, categoryId, topicId]
+  );
+
+  if (!categoryId || !topicId) {
+    return <Typography>CategoryId or TopicId not passed as params</Typography>;
+  }
 
   return (
     <Screen

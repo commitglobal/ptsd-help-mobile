@@ -22,14 +22,17 @@ import * as FileSystem from 'expo-file-system';
 import { skipToken, useQuery, UseQueryResult } from '@tanstack/react-query';
 import { Typography } from '@/components/Typography';
 import { FogglesConfig } from '@/models/CMSFoggles.type';
+import { LearnContent, Section } from '@/models/LearnContent.type';
 
 const S3_CMS_BASE_URL = 'https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com';
 const S3_CMS_CONFIG_FOLDER = `${S3_CMS_BASE_URL}/config/`;
+const S3_CMS_CONTENT_FOLDER = `${S3_CMS_BASE_URL}/content/`;
 const ASSETS_FOLDER_LOCAL = 'assets/';
 
 type AssetsManagerContextType = {
   mediaMapping: FlatLocalMediaMapping;
   foggles: FogglesConfig;
+  learnContent: LearnContent;
 };
 
 export interface MediaItem {
@@ -40,6 +43,12 @@ export interface MediaItem {
 export type FlatCMSMediaMapping = {
   [key: string]: MediaItem; // e.g., "RELATIONSHIPS.I_MESSAGES.headerImage"
 };
+
+// TODO: 1. Learn Content
+// - Add lastUpdateAt
+// - Remove/replace assets and learn.json locally if there are changes on the CMS
+// TODO: 2. Add country/language specific assets in both Learn and Tools assets
+// Refactor everything :))
 
 export type FlatLocalMediaMapping = {
   'RELATIONSHIPS.CATEGORY_ICON': string;
@@ -184,7 +193,131 @@ export const fetchMediaMapping = async (countryCode: string) => {
   }
 };
 
-export const fetchFoggles = async (countryCode: string, destinationFolder: string) => {
+export const fetchLearnContent = async (countryCode: string) => {
+  const processImageContent = async (imageSrc: string, contentDir: string): Promise<string> => {
+    const imageFileName = imageSrc.split('/').pop();
+    const localImagePath = `${contentDir}/${imageFileName}`;
+    await FileSystem.downloadAsync(imageSrc, localImagePath);
+    return localImagePath;
+  };
+
+  const processSection = async (section: Section, contentDir: string): Promise<Section> => {
+    if (section.type === 'image') {
+      return {
+        ...section,
+        src: await processImageContent(section.src, contentDir),
+      };
+    }
+
+    if (section.type === 'multiContent') {
+      const processedContent = await Promise.all(
+        section.contentArray.map(async (content) => {
+          if (content.type === 'image') {
+            return {
+              ...content,
+              src: await processImageContent(content.src, contentDir),
+            };
+          }
+          return content;
+        })
+      );
+
+      return {
+        ...section,
+        contentArray: processedContent,
+      };
+    }
+
+    if (section.type === 'multiPage') {
+      const processedPages = await Promise.all(
+        section.pageArray.map(async (page) =>
+          Promise.all(
+            page.map(async (content) => {
+              if (content.type === 'image') {
+                return {
+                  ...content,
+                  src: await processImageContent(content.src, contentDir),
+                };
+              }
+              return content;
+            })
+          )
+        )
+      );
+
+      return {
+        ...section,
+        pageArray: processedPages,
+      };
+    }
+
+    return section;
+  };
+
+  try {
+    const response = await fetch(`${S3_CMS_CONTENT_FOLDER}learn.json`);
+    if (!response.ok) return null;
+
+    const remoteContent: LearnContent = await response.json();
+    const contentDir = `${FileSystem.documentDirectory}content/${countryCode}/learn`;
+
+    // Create content directory if it doesn't exist
+    await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
+
+    // Process categories
+    const processedCategories = await Promise.all(
+      remoteContent.categories.map(async (category) => {
+        // Process category icon
+        const processedIcon = category.icon ? await processImageContent(category.icon, contentDir) : category.icon;
+
+        // Process topics within category
+        const processedTopics = await Promise.all(
+          category.topics.map(async (topic) => {
+            // Process topic icon
+            const processedTopicIcon = topic.icon ? await processImageContent(topic.icon, contentDir) : topic.icon;
+
+            // Process sections
+            const processedSections = await Promise.all(
+              topic.content.sections.map((section) => processSection(section, contentDir))
+            );
+
+            return {
+              ...topic,
+              icon: processedTopicIcon,
+              content: {
+                ...topic.content,
+                sections: processedSections,
+              },
+            };
+          })
+        );
+
+        return {
+          ...category,
+          icon: processedIcon,
+          topics: processedTopics,
+        };
+      })
+    );
+
+    const localContent = {
+      ...remoteContent,
+      categories: processedCategories,
+    };
+
+    // Save processed content
+    const localContentPath = `${FileSystem.documentDirectory}content/${countryCode}/learn.json`;
+    await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(localContent, null, 2));
+
+    return localContent;
+  } catch (error) {
+    console.error(error);
+    // console.error('Error in fetchLearnContent:', error);
+    return null;
+  }
+};
+
+const fetchFoggles = async (countryCode: string, destinationFolder: string) => {
   const localFogglesPath = `${destinationFolder}foggles_${countryCode}.json`;
 
   const getLocalFoggles = async () => {
@@ -240,6 +373,13 @@ const useFoggles = (countryCode: string): UseQueryResult<FogglesConfig> => {
           const destinationFolder = `${FileSystem.documentDirectory}`;
           return fetchFoggles(countryCode, destinationFolder);
         },
+  });
+};
+
+const useLearnContent = (countryCode: string): UseQueryResult<LearnContent> => {
+  return useQuery({
+    queryKey: ['learn', countryCode],
+    queryFn: !countryCode ? skipToken : async () => fetchLearnContent(countryCode),
   });
 };
 
@@ -307,8 +447,9 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   console.log(FileSystem.documentDirectory);
   const { data: mediaMapping, isFetching: isFetchingMedia } = useMediaMapper(countryCode);
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
+  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(countryCode);
 
-  if (isFetchingMedia || isFetchingFoggles) {
+  if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent) {
     return <Typography>Loading...</Typography>;
   }
 
@@ -316,7 +457,15 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
     return <Typography>FATAL: No media mapping found</Typography>;
   }
 
-  return <AssetsManagerContext.Provider value={{ mediaMapping, foggles }}>{children}</AssetsManagerContext.Provider>;
+  if (!learnContent) {
+    return <Typography>FATAL: No learn content found</Typography>;
+  }
+
+  return (
+    <AssetsManagerContext.Provider value={{ mediaMapping, foggles, learnContent }}>
+      {children}
+    </AssetsManagerContext.Provider>
+  );
 };
 
 export const useAssetsManagerContext = () => {

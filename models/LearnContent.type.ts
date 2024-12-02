@@ -73,7 +73,14 @@ type Topic = {
   };
 };
 
+export type Category = {
+  id: string;
+  label: string;
+  icon: string;
+  topics: Topic[];
+};
+
 export type LearnContent = {
   title: string;
-  topics: Topic[];
+  categories: Category[];
 };
