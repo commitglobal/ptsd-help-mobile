@@ -258,4 +258,10 @@ const tagsStyles = {
     textDecoration: 'underline',
     textDecorationColor: 'hsl(272, 56%, 45%)',
   },
+  ul: {
+    maxWidth: '100%',
+  },
+  li: {
+    marginBottom: 4,
+  },
 };
