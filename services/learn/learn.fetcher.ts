@@ -4,7 +4,8 @@ import { getS3CMSContentFolder } from '@/constants/cms';
 import { Category, Section, Topic } from '@/services/learn/learn.type';
 import { getLocalLearnContentDir, getLocalLearnContentFilePath } from './learn.helper';
 
-const deleteUnusedFiles = async (contentDir: string, existingFiles: Set<string>, usedFiles: Set<string>) => {
+const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => {
+  const existingFiles = new Set(await FileSystem.readDirectoryAsync(contentDir));
   for (const file of existingFiles) {
     if (!usedFiles.has(file)) {
       try {
@@ -92,6 +93,27 @@ const getRemoteLearnContent = async (countryCode: string, languageCode: string) 
   }
 };
 
+function extractFileNames(jsonObj: any) {
+  const fileNames: string[] = [];
+
+  function traverse(obj: any) {
+    for (let key in obj) {
+      if (typeof obj[key] === 'object' && obj[key] !== null) {
+        traverse(obj[key]);
+      } else if (key === 'icon' || key === 'src') {
+        const url = obj[key];
+        const fileName = url.substring(url.lastIndexOf('/') + 1);
+        fileNames.push(fileName);
+      }
+    }
+  }
+
+  traverse(jsonObj);
+  return fileNames;
+}
+
+// ! TODO: Delete unused folder like in MediaMapping
+
 export const fetchLearnContent = async (countryCode: string, languageCode: string) => {
   const [localContent, remoteContent] = await Promise.all([
     getLocalLearnContent(countryCode, languageCode),
@@ -99,6 +121,7 @@ export const fetchLearnContent = async (countryCode: string, languageCode: strin
   ]);
 
   if (!localContent && !remoteContent) {
+    console.log('❌ No local or remote learn content found');
     return null;
   }
 
@@ -110,23 +133,18 @@ export const fetchLearnContent = async (countryCode: string, languageCode: strin
   await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
 
   if (shouldUpdateLocal && remoteContent) {
-    const usedFiles = new Set<string>();
-
     // Process categories: Replace images URLs with downloaded local paths
     const processedCategories: Category[] = await Promise.all(
       remoteContent.categories.map(async (category: Category) => {
         // Process category icon
         const processedIcon = category.icon ? await downloadImage(category.icon, contentDir) : category.icon;
-        if (processedIcon) usedFiles.add(processedIcon.split('/').pop()!);
 
         // Process topics within category
         const processedTopics: Topic[] = await Promise.all(
           category.topics.map(async (topic: Topic) => {
             // Process topic icon
             const processedTopicIcon = topic.icon ? await downloadImage(topic.icon, contentDir) : topic.icon;
-            if (processedTopicIcon) usedFiles.add(processedTopicIcon.split('/').pop()!);
 
-            // Process sections
             const processedSections: Section[] = await Promise.all(
               topic.content.sections.map((section) => processSection(section, contentDir))
             );
@@ -150,14 +168,14 @@ export const fetchLearnContent = async (countryCode: string, languageCode: strin
       })
     );
 
-    // Get list of all files in learn directory
-    const existingFiles = new Set(await FileSystem.readDirectoryAsync(contentDir));
-    await deleteUnusedFiles(contentDir, existingFiles, usedFiles);
-
     const toReturn: LearnContent = {
       ...remoteContent,
       categories: processedCategories,
     };
+
+    // Delete unused files in the learn directory (CountryCode-LanguageCode)
+    const usedFiles = new Set(extractFileNames(toReturn));
+    await deleteUnusedFiles(contentDir, usedFiles);
 
     // Save processed content
     const localContentPath = getLocalLearnContentFilePath(countryCode, languageCode);

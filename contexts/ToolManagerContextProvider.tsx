@@ -2,9 +2,9 @@ import { Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
 import { useAssetsManagerContext } from './AssetsManagerContextProvider';
-import { FogglesConfig } from '@/models/CMSFoggles.type';
 
 import '../common/config/i18n';
+import { FogglesConfig } from '@/services/foggles/foggles.type';
 
 type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
