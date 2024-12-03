@@ -14,7 +14,7 @@ export const TimePicker = ({ date, onChange }: TimePickerProps) => {
 
   return (
     <YStack ref={ref}>
-      <DatePicker date={date} onDateChange={onChange} mode='time' />
+      <DatePicker date={date} onDateChange={onChange} mode='time' theme='light' />
     </YStack>
   );
 };
