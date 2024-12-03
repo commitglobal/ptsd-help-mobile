@@ -57,25 +57,29 @@ export default function WorryTime() {
   };
 
   const handleDone = async () => {
+    const reminderTimeDate = time ? new Date(time) : new Date();
+    const notificationData: Notifications.NotificationRequestInput = {
+      content: {
+        title: t(toolsTranslationKeys.WORRY_TIME.ptsdHelp),
+        body: t(toolsTranslationKeys.WORRY_TIME.review),
+        data: {
+          url: '/tools/worry-time', // where to redirect to
+        },
+      },
+      trigger: {
+        hour: reminderTimeDate.getHours(),
+        minute: reminderTimeDate.getMinutes(),
+        repeats: true,
+      },
+    };
+
     // if we have no worries, create one, otherwise update the existing one
     if (worries.length === 0) {
       let notificationId: string | null = null;
 
-      // schedule the notification if the reminder is checked
+      // if the reminder is checked -> schedule the notification
       if (isReminderChecked) {
-        const reminderTimeDate = time ? new Date(time) : new Date();
-
-        notificationId = await Notifications.scheduleNotificationAsync({
-          content: {
-            title: 'PTSD Help',
-            body: 'Review the issues that are causing you to worry.',
-          },
-          trigger: {
-            hour: reminderTimeDate.getHours(),
-            minute: reminderTimeDate.getMinutes(),
-            repeats: true,
-          },
-        });
+        notificationId = await Notifications.scheduleNotificationAsync(notificationData);
       }
 
       // create the worry in the database
@@ -89,28 +93,16 @@ export default function WorryTime() {
         deletedAt: null,
       });
     } else {
-      // cancel the existing notification
+      // cancel the existing notification, if it exists, because we will create a new one if necessary
       if (worries[0].notificationId) {
         await Notifications.cancelScheduledNotificationAsync(worries[0].notificationId);
       }
 
       let notificationId: string | null = null;
 
-      // schedule the new notification if the reminder is checked
+      // if the reminder is checked -> schedule the new notification
       if (isReminderChecked) {
-        const reminderTimeDate = time ? new Date(time) : new Date();
-
-        notificationId = await Notifications.scheduleNotificationAsync({
-          content: {
-            title: 'PTSD Help',
-            body: 'Review the issues that are causing you to worry.',
-          },
-          trigger: {
-            hour: reminderTimeDate.getHours(),
-            minute: reminderTimeDate.getMinutes(),
-            repeats: true,
-          },
-        });
+        notificationId = await Notifications.scheduleNotificationAsync(notificationData);
       }
 
       worriesRepository.updateWorry(worries[0].id, {
@@ -136,7 +128,10 @@ export default function WorryTime() {
         secondaryActionLabel: t(toolsTranslationKeys.WORRY_TIME.help),
         onSecondaryAction: () => router.push('/tools/worry-time/help'),
       }}>
-      <ScrollView contentContainerStyle={{ flexGrow: 1, gap: 16, padding: 16 }} ref={scrollViewRef}>
+      <ScrollView
+        contentContainerStyle={{ flexGrow: 1, gap: 16, padding: 16 }}
+        ref={scrollViewRef}
+        showsVerticalScrollIndicator={false}>
         <Typography>{t(toolsTranslationKeys.WORRY_TIME.description)}</Typography>
 
         <TextFormInput
@@ -171,7 +166,7 @@ export default function WorryTime() {
               </XStack>
 
               <XStack justifyContent='center'>
-                <TimePicker date={time || new Date()} onChange={setTime} scrollViewRef={scrollViewRef} />
+                <TimePicker date={time || new Date()} onChange={setTime} />
               </XStack>
             </YStack>
           )}

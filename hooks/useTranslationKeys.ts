@@ -228,6 +228,8 @@ const useTranslationKeys = () => {
       helpText: 'worry-time.help-text',
       reminder: 'worry-time.reminder',
       daily: 'worry-time.daily-reminder',
+      ptsdHelp: 'worry-time.ptsd-help',
+      review: 'worry-time.review',
     },
   };
 

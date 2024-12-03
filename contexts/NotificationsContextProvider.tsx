@@ -1,6 +1,7 @@
-import React, { createContext, useEffect, useRef, useState } from 'react';
+import React, { createContext, useEffect, useRef } from 'react';
 import * as Notifications from 'expo-notifications';
 import { registerForPushNotificationsAsync } from '@/common/utils/notifications';
+import { router } from 'expo-router';
 
 interface NotificationContextProps {
   unsubscribe: () => void;
@@ -11,17 +12,15 @@ export const NotificationContext = createContext<NotificationContextProps>({
 });
 
 const NotificationsContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const [_expoPushToken, setExpoPushToken] = useState('');
-  const [_notification, setNotification] = useState<Notifications.Notification>();
-
   const notificationListener = useRef<Notifications.Subscription>();
   const responseListener = useRef<Notifications.Subscription>();
 
+  // register for push notifications
   useEffect(() => {
-    registerForPushNotificationsAsync().then((token) => token && setExpoPushToken(token));
+    registerForPushNotificationsAsync();
 
     notificationListener.current = Notifications.addNotificationReceivedListener((notification) => {
-      setNotification(notification);
+      console.log(notification);
     });
 
     responseListener.current = Notifications.addNotificationResponseReceivedListener((response) => {
@@ -33,9 +32,41 @@ const NotificationsContextProvider = ({ children }: { children: React.ReactNode 
     };
   }, []);
 
+  // redirect to the url from the notification
+  useEffect(() => {
+    let isMounted = true;
+
+    function redirect(notification: Notifications.Notification) {
+      const url = notification.request.content.data?.url;
+      if (url) {
+        router.push(url);
+      }
+    }
+
+    Notifications.getLastNotificationResponseAsync().then((response) => {
+      if (!isMounted || !response?.notification) {
+        return;
+      }
+      redirect(response?.notification);
+    });
+
+    const subscription = Notifications.addNotificationResponseReceivedListener((response) => {
+      redirect(response.notification);
+    });
+
+    return () => {
+      isMounted = false;
+      subscription.remove();
+    };
+  }, []);
+
   const unsubscribe = () => {
-    Notifications.removeNotificationSubscription(notificationListener.current as Notifications.Subscription);
-    Notifications.removeNotificationSubscription(responseListener.current as Notifications.Subscription);
+    try {
+      Notifications.removeNotificationSubscription(notificationListener.current as Notifications.Subscription);
+      Notifications.removeNotificationSubscription(responseListener.current as Notifications.Subscription);
+    } catch (e) {
+      console.error(e);
+    }
   };
 
   return (
