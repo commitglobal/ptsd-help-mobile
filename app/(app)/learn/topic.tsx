@@ -3,6 +3,13 @@ import { Icon } from '@/components/Icon';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
 import { ScrollView, XStack, YStack } from 'tamagui';
+import { Dimensions, Image, Linking } from 'react-native';
+import RenderHTML from '@builder.io/react-native-render-html';
+import Button from '@/components/Button';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
+import { useMemo, useState } from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import {
   ButtonContent,
   ImageContent,
@@ -11,14 +18,7 @@ import {
   RichTextContent,
   Section,
   TextContent,
-} from '@/models/LearnContent.type';
-import { Dimensions, Image, Linking } from 'react-native';
-import RenderHTML from '@builder.io/react-native-render-html';
-import Button from '@/components/Button';
-import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { useMemo, useState } from 'react';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+} from '@/services/learn/learn.type';
 
 type ContentRendererProps = {
   section: Section;
@@ -207,6 +207,7 @@ export default function LearnTopic() {
   const { categoryId, topicId } = useLocalSearchParams<{ categoryId: string; topicId: string }>();
 
   const { learnContent } = useAssetsManagerContext();
+  const insets = useSafeAreaInsets();
 
   const topic = useMemo(
     () =>
@@ -229,7 +230,7 @@ export default function LearnTopic() {
         onLeftPress: () => router.back(),
       }}>
       <ScrollView
-        contentContainerStyle={{ padding: 0, gap: 32, flexGrow: 1 }}
+        contentContainerStyle={{ padding: 0, paddingBottom: insets?.bottom, gap: 32, flexGrow: 1 }}
         showsVerticalScrollIndicator={false}
         bounces={false}>
         <YStack gap='$sm' flexGrow={1}>
