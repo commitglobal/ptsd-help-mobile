@@ -5,7 +5,7 @@ import { Card } from './Card';
 import { Icon } from './Icon';
 
 interface ListCardProps extends YStackProps {
-  item: { id: string; label: string; photoUrl?: string; icon?: string };
+  item: { id: string; label: string; photoUrl?: string; icon?: string; rightIcon?: string };
 }
 
 export const ListCard = ({ item, ...rest }: ListCardProps) => {
@@ -26,6 +26,7 @@ export const ListCard = ({ item, ...rest }: ListCardProps) => {
         )}
 
         <Typography flex={1}>{item.label}</Typography>
+        {item.rightIcon && <Icon icon={item.rightIcon} width={24} height={24} color='$gray12' />}
       </XStack>
     </Card>
   );

@@ -20,7 +20,7 @@ export type Tool = {
 
 export type ToolConfigType = Record<ToolCategories, Tool>;
 
-type ToolCategories = 'RELATIONSHIPS' | 'AMBIENT_SOUNDS' | 'MINDFULNESS' | 'PAUSE' | 'MY_FEELINGS';
+type ToolCategories = 'RELATIONSHIPS' | 'AMBIENT_SOUNDS' | 'MINDFULNESS' | 'PAUSE' | 'MY_FEELINGS' | 'SLEEP';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -31,7 +31,10 @@ type ToolSubcategories =
   | 'MINDFUL_WALKING'
   | 'EMOTIONAL_DISCOMFORT'
   | 'SENSE_AWARENESS'
-  | 'LOVING_KINDNESS';
+  | 'LOVING_KINDNESS'
+  | 'SLEEP_HELP'
+  | 'SLEEP_HABITS'
+  | 'SLEEP_PERSPECTIVE';
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
@@ -138,6 +141,37 @@ export const useTools = () => {
       photoUrl: mediaMapping?.['MY_FEELINGS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/my-feelings',
       type: ToolType.TOOL,
+    },
+    SLEEP: {
+      id: 'sleep',
+      label: toolsTranslationKeys.SLEEP.label,
+      photoUrl: mediaMapping?.['SLEEP.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/sleep',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        SLEEP_HELP: {
+          id: 'sleep-help',
+          label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_HELP.label,
+          photoUrl: mediaMapping?.['SLEEP.SLEEP_HELP.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/sleep/sleep-help',
+          type: ToolType.TOOL,
+        },
+        SLEEP_HABITS: {
+          id: 'sleep-habits',
+          label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.label,
+          photoUrl: mediaMapping?.['SLEEP.SLEEP_HABITS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/sleep/sleep-habits',
+          type: ToolType.TOOL,
+        },
+
+        SLEEP_PERSPECTIVE: {
+          id: 'sleep-perspective',
+          label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_PERSPECTIVE.label,
+          photoUrl: mediaMapping?.['SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/sleep/sleep-perspective',
+          type: ToolType.TOOL,
+        },
+      },
     },
   };
 

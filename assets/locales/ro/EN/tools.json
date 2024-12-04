@@ -12,7 +12,11 @@
     "emotional-discomfort": "RO/en: Emotional Discomfort",
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
-    "my-feelings": "RO/en: My Feelings"
+    "my-feelings": "RO/en: My Feelings",
+    "sleep": "RO/en: Sleep Instruments",
+    "sleep-help": "RO/en: Help to sleep",
+    "sleep-habits": "RO/en: Good sleep habits",
+    "sleep-perspective": "RO/en: Change sleep perspective"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -250,6 +254,484 @@
     "loving-kindness": {
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
       "action-btn-label": "RO/en: Continue"
+    }
+  },
+  "sleep": {
+    "title": "RO/en: Help to sleep",
+    "repeater": {
+      "1": {
+        "title": "RO/en: Only go to bed when you feel sleepy."
+      },
+      "2": {
+        "title": "RO/en: If you lie in bed for 20 minutes and still can't sleep, get up and do something else (without exposing yourself to bright light or computer/phone/TV screens)."
+      },
+      "3": {
+        "title": "RO/en: Listen to relaxing music."
+      },
+      "4": {
+        "title": "RO/en: Read something calming."
+      },
+      "5": {
+        "title": "RO/en: Drink a cup of decaffeinated tea."
+      },
+      "6": {
+        "title": "RO/en: Drink a cup of warm milk."
+      },
+      "7": {
+        "title": "RO/en: Breathe slowly and deeply through your nose - do this for 10 minutes. You can use the breathing tool in this app if you wish."
+      },
+      "8": {
+        "title": "RO/en: Eat a light snack if you're hungry - something with little or no sugar and no alcohol."
+      },
+      "9": {
+        "title": "RO/en: Make sure the room temperature is cool."
+      },
+      "10": {
+        "title": "RO/en: Try wearing earplugs if there is noise around you."
+      },
+      "11": {
+        "title": "RO/en: If there is light around, try sleeping with an eye mask."
+      },
+      "12": {
+        "title": "RO/en: Make sure the room is dark."
+      },
+      "13": {
+        "title": "RO/en: Try taking a warm bath an hour or 2 before bedtime."
+      },
+      "14": {
+        "title": "RO/en: Make sure you are comfortable and your clothes aren't uncomfortable."
+      },
+      "15": {
+        "title": "RO/en: Avoid looking at the clock."
+      },
+      "16": {
+        "title": "RO/en: Let your mind wander. Don't focus too much on the process of falling asleep."
+      },
+      "17": {
+        "title": "RO/en: If you feel worried, get up and write down your worries, then try to let them go."
+      },
+      "18": {
+        "title": "RO/en: Imagine a safe and peaceful place: picture yourself by a river, lake or in a meadow. Imagine the whole scene, the sights, sounds and smells, while you relax. You can use the positive imagery tool in this app if you wish."
+      },
+      "19": {
+        "title": "RO/en: Feel all your body muscles relaxed, as if they've sunk into the mattress. You can use the progressive muscle relaxation tool in this app if you wish."
+      },
+      "20": {
+        "title": "RO/en: Avoid nicotine, caffeine and alcohol in the evening."
+      },
+      "21": {
+        "title": "RO/en: Avoid too much salt in food. This can make you wake up thirsty throughout the night."
+      },
+      "22": {
+        "title": "RO/en: Turn off the computer or TV 30 minutes before bedtime."
+      },
+      "23": {
+        "title": "RO/en: Create a relaxing bedtime routine."
+      },
+      "24": {
+        "title": "RO/en: Get up and drink a glass of water."
+      },
+      "25": {
+        "title": "RO/en: Make sure the sheets are clean and the pillow and mattress are comfortable."
+      },
+      "26": {
+        "title": "RO/en: Try not to worry about not falling asleep. Keep trying to relax."
+      }
+    },
+    "sleep-habits": {
+      "title": "Good Sleep Habits",
+      "description": "Incorporating new habits into your nighttime routine can help achieve smoother sleep. Use the following tools to shape your current schedule into one that leads to quality sleep.",
+      "list": {
+        "relaxing-activities": "Relaxing Activities",
+        "awake-activities": "Activities to Stay Awake",
+        "no-sleep-activities": "Activities When I Can't Sleep",
+        "wake-up-activities": "Activities to Help Me Wake Up"
+      },
+      "relaxing-activities": {
+        "description": "Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Choose clothes to wear tomorrow"
+          },
+          {
+            "id": 2,
+            "text": "Prepare lunch for tomorrow"
+          },
+          {
+            "id": 3,
+            "text": "Prepare dinner for tomorrow and put it in the fridge"
+          },
+          {
+            "id": 4,
+            "text": "Take a long bath or shower"
+          },
+          {
+            "id": 5,
+            "text": "Write thank you notes or short messages to friends"
+          },
+          {
+            "id": 6,
+            "text": "Browse the internet (only non-stressful topics) or research future purchases (cars, appliances, vacations)"
+          },
+          {
+            "id": 7,
+            "text": "Watch movies or TV show episodes you haven't seen in a long time (no action movies or thrillers)"
+          },
+          {
+            "id": 8,
+            "text": "Take the dog for a long walk"
+          },
+          {
+            "id": 9,
+            "text": "Take care of your pets"
+          },
+          {
+            "id": 10,
+            "text": "Listen to slow, relaxing or instrumental music"
+          },
+          {
+            "id": 11,
+            "text": "Gather old bills and statements and throw them away if no longer needed"
+          },
+          {
+            "id": 12,
+            "text": "Organize collections if you have any - photos, old letters, books or other items"
+          },
+          {
+            "id": 13,
+            "text": "Sort laundry or fold clothes"
+          },
+          {
+            "id": 14,
+            "text": "Polish your shoes"
+          },
+          {
+            "id": 15,
+            "text": "Iron or repair clothes"
+          },
+          {
+            "id": 16,
+            "text": "Write in your journal"
+          },
+          {
+            "id": 17,
+            "text": "Do light exercise to relax your muscles"
+          },
+          {
+            "id": 18,
+            "text": "Do a pedicure, manicure or facial treatment"
+          },
+          {
+            "id": 19,
+            "text": "Sweep or mop the kitchen floor"
+          },
+          {
+            "id": 20,
+            "text": "Floss your teeth"
+          },
+          {
+            "id": 21,
+            "text": "Knit"
+          },
+          {
+            "id": 22,
+            "text": "Start another handmade project"
+          }
+        ]
+      },
+      "awake-activities": {
+        "description": "If you have trouble staying awake until your desired bedtime, check the Activities to Keep Me Awake section below for ideas to help with deep drowsiness. If any of these activities help you, press the star next to the activity to mark it.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Work on a hobby you're interested in"
+          },
+          {
+            "id": 2,
+            "text": "Read an engaging book"
+          },
+          {
+            "id": 3,
+            "text": "Watch an interesting series"
+          },
+          {
+            "id": 4,
+            "text": "Write a long letter"
+          },
+          {
+            "id": 5,
+            "text": "Call a friend"
+          },
+          {
+            "id": 6,
+            "text": "Do light exercises"
+          },
+          {
+            "id": 7,
+            "text": "Get up and take a few steps"
+          },
+          {
+            "id": 8,
+            "text": "Do household chores"
+          },
+          {
+            "id": 9,
+            "text": "Listen to upbeat music (sing)"
+          },
+          {
+            "id": 10,
+            "text": "Dance"
+          },
+          {
+            "id": 11,
+            "text": "Watch a comedy"
+          },
+          {
+            "id": 12,
+            "text": "Turn on all the lights"
+          },
+          {
+            "id": 13,
+            "text": "Go outside (if it's safe to leave the house)"
+          },
+          {
+            "id": 14,
+            "text": "Prepare lunch for tomorrow"
+          },
+          {
+            "id": 15,
+            "text": "Prepare meals for the rest of the week"
+          },
+          {
+            "id": 16,
+            "text": "Organize laundry"
+          },
+          {
+            "id": 17,
+            "text": "Organize files on computer"
+          },
+          {
+            "id": 18,
+            "text": "Organize drawers or shelves"
+          }
+        ]
+      },
+      "no-sleep-activities": {
+        "description": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. See the Midnight Activities section below for ideas of things to do when it's hard to fall asleep. If any of these activities help you, press the star next to the activity to mark it.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Look through catalogs/magazines"
+          },
+          {
+            "id": 2,
+            "text": "Update your contact list or start one online or on paper"
+          },
+          {
+            "id": 3,
+            "text": "Organize emails and bills"
+          },
+          {
+            "id": 4,
+            "text": "Play solitaire online or with cards if you're not very competitive"
+          },
+          {
+            "id": 5,
+            "text": "Read"
+          },
+          {
+            "id": 6,
+            "text": "Make a shopping list for the current week"
+          },
+          {
+            "id": 7,
+            "text": "Plan the menu for upcoming dinners"
+          },
+          {
+            "id": 8,
+            "text": "Clean and organize the coffee table, dining area, kitchen counter or desk"
+          },
+          {
+            "id": 9,
+            "text": "Create a list of activities you'd like to do on weekends or vacation"
+          },
+          {
+            "id": 10,
+            "text": "Organize photo album or journal"
+          },
+          {
+            "id": 11,
+            "text": "Fold clothes and put them away"
+          },
+          {
+            "id": 12,
+            "text": "Buy gifts for birthdays or holidays"
+          },
+          {
+            "id": 13,
+            "text": "Read a magazine or light book"
+          },
+          {
+            "id": 14,
+            "text": "Make a materials list for a home do-it-yourself project"
+          },
+          {
+            "id": 15,
+            "text": "Choose two drawers to organize (in office, bathroom or kitchen)"
+          },
+          {
+            "id": 16,
+            "text": "Watch repetitive TV shows or commercials"
+          },
+          {
+            "id": 17,
+            "text": "Organize your CD or DVD collection and choose some to donate or sell if you no longer need them or don't like them"
+          },
+          {
+            "id": 18,
+            "text": "Write thoughts in a notebook for a while. Use this exercise to get rid of negative thoughts."
+          },
+          {
+            "id": 19,
+            "text": "Crochet or do an activity you can easily stop if you get sleepy"
+          },
+          {
+            "id": 20,
+            "text": "Read a children's book. These are often soothing and amusing"
+          }
+        ]
+      },
+      "wake-up-activities": {
+        "description": "If you have an exciting activity scheduled for the morning, it can help you get out of bed with more energy. See the Morning Activities section below for ideas of things to do in the morning. If any of these activities help you, press the star next to the activity to mark it.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Meditate or pray"
+          },
+          {
+            "id": 2,
+            "text": "Watch the sunrise"
+          },
+          {
+            "id": 3,
+            "text": "Take the dog for a walk if you're in a safe area"
+          },
+          {
+            "id": 4,
+            "text": "Read the newspaper or read news online"
+          },
+          {
+            "id": 5,
+            "text": "Exercise at home or go to the gym"
+          },
+          {
+            "id": 6,
+            "text": "Go shopping at the store"
+          },
+          {
+            "id": 7,
+            "text": "Prepare lunch for yourself or the whole family"
+          },
+          {
+            "id": 8,
+            "text": "Enjoy being able to prepare for work and having time to get children ready for school without rushing"
+          },
+          {
+            "id": 9,
+            "text": "Organize children's toys and choose items to donate"
+          },
+          {
+            "id": 10,
+            "text": "Sort clothes for washing or iron laundry"
+          },
+          {
+            "id": 11,
+            "text": "Plan family budget in excel or on paper"
+          },
+          {
+            "id": 12,
+            "text": "Send emails to friends or check work email"
+          },
+          {
+            "id": 13,
+            "text": "Clean up old hard drives or DVDs"
+          },
+          {
+            "id": 14,
+            "text": "Organize bills, documents or other papers"
+          },
+          {
+            "id": 15,
+            "text": "Prepare ingredients for dinner (marinate meat, cut vegetables etc)"
+          },
+          {
+            "id": 16,
+            "text": "Make the bed and clean the room"
+          },
+          {
+            "id": 17,
+            "text": "Pull back curtains and blinds"
+          },
+          {
+            "id": 18,
+            "text": "Sweep inside or outside the house"
+          },
+          {
+            "id": 19,
+            "text": "Take care of indoor plants or garden, water the flowers"
+          },
+          {
+            "id": 20,
+            "text": "Check task list for the current day or week"
+          }
+        ]
+      }
+    },
+    "sleep-perspective": {
+      "title": "RO/en: Change your sleep perspective",
+      "description": "RO/en: Try these habits to improve your sleep quality",
+      "repeater": {
+        "1": {
+          "title": "I can tolerate this."
+        },
+        "2": {
+          "title": "I will survive even if I don't sleep at all tonight."
+        },
+        "3": {
+          "title": "I've done this before, so I know I can do it again."
+        },
+        "4": {
+          "title": "I don't have to feel comfortable all the time. I'm human."
+        },
+        "5": {
+          "title": "This is just another challenge that I will solve and cope with."
+        },
+        "6": {
+          "title": "I've been through this before and I was fine."
+        },
+        "7": {
+          "title": "One bad night of sleep is not the end of the world."
+        },
+        "8": {
+          "title": "This restless night will pass."
+        },
+        "9": {
+          "title": "Although it feels like I'll never sleep well, that might not be the case. Anticipating that I might not sleep well will probably make my sleep worse. I've functioned well before even after not sleeping well."
+        },
+        "10": {
+          "title": "I've functioned poorly before even after sleeping well."
+        },
+        "11": {
+          "title": "Although I'm anticipating poor sleep, it could be fine... I've slept well before."
+        },
+        "12": {
+          "title": "The body naturally regulates sleep; even if I miss some sleep, I'll be able to function."
+        },
+        "13": {
+          "title": "If I don't worry about sleep, one bad night will probably improve my sleep the next night."
+        }
+      }
     }
   },
   "pause": {

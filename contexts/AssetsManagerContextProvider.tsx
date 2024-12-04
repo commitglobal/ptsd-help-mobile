@@ -77,6 +77,10 @@ export type FlatLocalMediaMapping = {
   'PAUSE.CATEGORY_ICON': string;
   'MINDFULNESS.CONSCIOUS_BREATHING.soundURI': string;
   'MY_FEELINGS.CATEGORY_ICON': string;
+  'SLEEP.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_HELP.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_HABITS.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON': string;
 };
 
 export const processFlatMediaAssets = async (
