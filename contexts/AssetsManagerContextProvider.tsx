@@ -28,7 +28,7 @@ import { LocalToolsAssetsMapping } from '@/services/tools-assets/tools-assets.ty
 import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query';
 import LoadingAssets from '@/components/LoadingAssets';
 import { DownloadProgress } from '@/helpers/download-progress';
-import useCountryLanguage from '@/hooks/useCountyLanguage';
+import useCountryLanguage from '@/hooks/useCountryLanguage';
 
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
