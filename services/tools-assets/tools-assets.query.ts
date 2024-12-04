@@ -14,13 +14,13 @@ import { DownloadProgress } from '@/helpers/download-progress';
  * @returns {UseQueryResult} Query result containing the media mapping or null if no mapping exists
  */
 export const useToolsAssetsMapper = (
-  countryCode: string,
-  languageCode: string,
+  countryCode: string | undefined,
+  languageCode: string | undefined,
   onProgress?: (progress: DownloadProgress) => void
 ) => {
   return useQuery({
     queryKey: ['toolsAssetsMapper', countryCode, languageCode],
-    queryFn: !countryCode ? skipToken : () => fetchToolsAssets(countryCode, languageCode, onProgress),
+    queryFn: !countryCode || !languageCode ? skipToken : () => fetchToolsAssets(countryCode, languageCode, onProgress),
     retry: false,
   });
 };

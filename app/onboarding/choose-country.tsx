@@ -46,7 +46,7 @@ const ChooseCountry = () => {
         mainActionLabel: t('next'),
         onMainAction: () => {
           if (selectedCountry) {
-            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
+            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry.toUpperCase());
             router.push('/onboarding/choose-language');
           }
         },

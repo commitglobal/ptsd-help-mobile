@@ -1,10 +1,9 @@
 import { useFonts } from 'expo-font';
-import { Slot, Stack } from 'expo-router';
+import { Slot } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
 import { PortalProvider, TamaguiProvider } from 'tamagui';
 import appConfig from '@/tamagui.config';
 
@@ -13,7 +12,6 @@ import db from '@/db/db';
 import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
 import { LogBox } from 'react-native';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -72,11 +70,7 @@ export default function RootLayout() {
     <TamaguiProvider config={appConfig}>
       <QueryClientProvider client={queryClient}>
         <PortalProvider>
-          <AssetsManagerContextProvider>
-            <ToolManagerContextProvider>
-              <Slot />
-            </ToolManagerContextProvider>
-          </AssetsManagerContextProvider>
+          <Slot />
         </PortalProvider>
       </QueryClientProvider>
     </TamaguiProvider>

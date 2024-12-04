@@ -28,6 +28,7 @@ import { LocalToolsAssetsMapping } from '@/services/tools-assets/tools-assets.ty
 import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query';
 import LoadingAssets from '@/components/LoadingAssets';
 import { DownloadProgress } from '@/helpers/download-progress';
+import useCountryLanguage from '@/hooks/useCountyLanguage';
 
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
@@ -38,8 +39,9 @@ type AssetsManagerContextType = {
 const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null);
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
-  const countryCode = 'RO';
-  const languageCode = 'ro';
+  console.log(FileSystem.documentDirectory);
+
+  const { data: countryLanguage } = useCountryLanguage();
 
   const [toolsAssetsTotalProgress, setToolsAssetsTotalProgress] = useState<DownloadProgress>();
   const [learnContentTotalProgress, setLearnContentTotalProgress] = useState<DownloadProgress>();
@@ -55,34 +57,37 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
     );
   }, [toolsAssetsTotalProgress, learnContentTotalProgress]);
 
-  console.log(FileSystem.documentDirectory);
   const { data: mediaMapping, isFetching: isFetchingMedia } = useToolsAssetsMapper(
-    countryCode,
-    languageCode,
+    countryLanguage?.countryCode,
+    countryLanguage?.languageCode,
     (progress) => setToolsAssetsTotalProgress(progress)
   );
 
-  const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
+  const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryLanguage?.countryCode);
   const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(
-    countryCode,
-    languageCode,
+    countryLanguage?.countryCode,
+    countryLanguage?.languageCode,
     (progress) => setLearnContentTotalProgress(progress)
   );
+
+  const toReturn = useMemo(() => {
+    return { mediaMapping, foggles, learnContent };
+  }, [mediaMapping, foggles, learnContent]);
 
   if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent) {
     return <LoadingAssets progress={totalAssetsProgress} />;
   }
 
-  if (!mediaMapping) {
+  if (!toReturn.mediaMapping) {
     return <Typography>FATAL: No media mapping found</Typography>;
   }
 
-  if (!learnContent) {
+  if (!toReturn.learnContent) {
     return <Typography>FATAL: No learn content found</Typography>;
   }
 
   return (
-    <AssetsManagerContext.Provider value={{ mediaMapping, foggles, learnContent }}>
+    <AssetsManagerContext.Provider value={toReturn as AssetsManagerContextType}>
       {children}
     </AssetsManagerContext.Provider>
   );
