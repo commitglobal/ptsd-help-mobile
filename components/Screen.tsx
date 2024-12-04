@@ -13,6 +13,7 @@ interface FooterProps {
   mainActionDisabled?: boolean;
   onSecondaryAction?: () => void;
   secondaryActionLabel?: string;
+  secondaryActionDisabled?: boolean;
   onPrev?: () => void;
   onNext?: () => void;
   onCustomAction?: () => void;
@@ -116,7 +117,10 @@ export const Screen = ({
                 </Button>
               )}
               {footerProps.onSecondaryAction && (
-                <Button preset='secondary' onPress={footerProps.onSecondaryAction} disabled={footerProps.isLoading}>
+                <Button
+                  preset='secondary'
+                  onPress={footerProps.onSecondaryAction}
+                  disabled={footerProps.secondaryActionDisabled || footerProps.isLoading}>
                   {footerProps.secondaryActionLabel}
                 </Button>
               )}
