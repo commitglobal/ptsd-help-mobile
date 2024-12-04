@@ -1,0 +1,1 @@
+ALTER TABLE `worries` ADD `notification_id` text;

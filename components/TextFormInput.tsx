@@ -1,9 +1,9 @@
-import React from "react";
-import { XStack, YStack } from "tamagui";
-import { Typography } from "./Typography";
-import TextareaInput from "./Inputs/Textarea";
-import { Icon } from "./Icon";
-import { FieldError } from "react-hook-form";
+import React from 'react';
+import { XStack, YStack } from 'tamagui';
+import { Typography } from './Typography';
+import TextareaInput from './Inputs/Textarea';
+import { Icon } from './Icon';
+import { FieldError } from 'react-hook-form';
 
 type FormInputProps = {
   label: string;
@@ -17,18 +17,17 @@ const TextFormInput = React.forwardRef<
   FormInputProps & React.ComponentProps<typeof TextareaInput>
 >(({ label, placeholder, infoMessage, onInfoMessagePress, errorMessage, ...props }, ref) => {
   return (
-    <YStack gap="$sm">
-      <XStack justifyContent="space-between" gap="$md">
+    <YStack gap='$sm'>
+      <XStack justifyContent='space-between' gap='$md'>
         <Typography flex={1}>{label}</Typography>
         {infoMessage && (
           <XStack
-            padding="$sm"
+            padding='$sm'
             margin={-12}
-            alignSelf="flex-start"
+            alignSelf='flex-start'
             onPress={onInfoMessagePress}
-            pressStyle={{ opacity: 0.5 }}
-          >
-            <Icon icon="info" width={18} height={18} color="$blue11" />
+            pressStyle={{ opacity: 0.5 }}>
+            <Icon icon='info' width={18} height={18} color='$blue11' />
           </XStack>
         )}
       </XStack>

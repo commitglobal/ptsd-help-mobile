@@ -14,6 +14,8 @@ import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
+import NotificationsContextProvider from '@/contexts/NotificationsContextProvider';
+import * as Notifications from 'expo-notifications';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -25,6 +27,14 @@ const queryClient = new QueryClient({
       staleTime: 0,
     },
   },
+});
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: false,
+  }),
 });
 
 export default function RootLayout() {
@@ -67,13 +77,15 @@ export default function RootLayout() {
   return (
     <TamaguiProvider config={appConfig}>
       <QueryClientProvider client={queryClient}>
-        <PortalProvider>
-          <AssetsManagerContextProvider>
-            <ToolManagerContextProvider>
-              <Slot />
-            </ToolManagerContextProvider>
-          </AssetsManagerContextProvider>
-        </PortalProvider>
+        <NotificationsContextProvider>
+          <PortalProvider>
+            <AssetsManagerContextProvider>
+              <ToolManagerContextProvider>
+                <Slot />
+              </ToolManagerContextProvider>
+            </AssetsManagerContextProvider>
+          </PortalProvider>
+        </NotificationsContextProvider>
       </QueryClientProvider>
     </TamaguiProvider>
   );

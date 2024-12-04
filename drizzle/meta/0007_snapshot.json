@@ -1,8 +1,8 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "77b0239c-35ec-4d3a-82f8-46b0e3ef0d53",
-  "prevId": "ff3bd48f-0b4f-41ef-a2b0-5cd5203e228c",
+  "id": "68502886-efc1-46df-9d6e-02890e5db83f",
+  "prevId": "f38c0d63-c816-4f03-bba5-7d434afc76c5",
   "tables": {
     "feelings": {
       "name": "feelings",
@@ -119,8 +119,8 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "sleep_activities": {
-      "name": "sleep_activities",
+    "worries": {
+      "name": "worries",
       "columns": {
         "id": {
           "name": "id",
@@ -129,15 +129,30 @@
           "notNull": true,
           "autoincrement": false
         },
-        "type": {
-          "name": "type",
+        "worry": {
+          "name": "worry",
           "type": "text",
           "primaryKey": false,
-          "notNull": true,
+          "notNull": false,
           "autoincrement": false
         },
-        "favorites": {
-          "name": "favorites",
+        "reminder_enabled": {
+          "name": "reminder_enabled",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false,
+          "default": false
+        },
+        "reminder_time": {
+          "name": "reminder_time",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false,
+          "autoincrement": false
+        },
+        "notification_id": {
+          "name": "notification_id",
           "type": "text",
           "primaryKey": false,
           "notNull": false,

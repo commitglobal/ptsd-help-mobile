@@ -3,7 +3,7 @@ import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
 import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
 import { useRouter } from 'expo-router';
-import React from 'react';
+import React, { useState } from 'react';
 import { Circle, ScrollView, Slider, XStack } from 'tamagui';
 import { useTranslation } from 'react-i18next';
 import Animated, { withTiming, useAnimatedStyle } from 'react-native-reanimated';
@@ -34,8 +34,9 @@ export default function DiscomfortMeter() {
   const { toolsTranslationKeys } = useTranslationKeys();
 
   const { discomfort, setDiscomfort, currentDiscomfortLevel } = useFeelingsContext();
+  const [sliderValue, setSliderValue] = useState<number>(discomfort);
 
-  const currentGradientColors = React.useMemo(() => getGradientColors(discomfort), [discomfort]);
+  const currentGradientColors = React.useMemo(() => getGradientColors(sliderValue), [sliderValue]);
 
   const animatedStyle = useAnimatedStyle(() => ({
     position: 'absolute',
@@ -47,6 +48,11 @@ export default function DiscomfortMeter() {
     backgroundColor: withTiming(currentGradientColors[0], { duration: 300 }),
   }));
 
+  const onSubmit = () => {
+    setDiscomfort(sliderValue);
+    router.push('/tools/my-feelings/feelings-summary');
+  };
+
   return (
     <Screen
       headerProps={{
@@ -55,7 +61,7 @@ export default function DiscomfortMeter() {
       }}
       contentContainerStyle={{ backgroundColor: 'white' }}
       footerProps={{
-        onMainAction: () => router.push('/tools/my-feelings/feelings-summary'),
+        onMainAction: onSubmit,
         mainActionLabel: t(toolsTranslationKeys.MY_FEELINGS.next),
       }}>
       <ScrollView
@@ -81,7 +87,7 @@ export default function DiscomfortMeter() {
             shadowOpacity={1}
             shadowRadius={20}>
             <Animated.View style={animatedStyle} />
-            <Typography preset='heading'>{`${discomfort}%`}</Typography>
+            <Typography preset='heading'>{`${sliderValue}%`}</Typography>
           </Circle>
         </XStack>
         <Typography textAlign='center' marginBottom='$lg'>
@@ -94,7 +100,7 @@ export default function DiscomfortMeter() {
           min={0}
           max={100}
           step={1}
-          onValueChange={(value) => setDiscomfort(value[0])}>
+          onValueChange={(value) => setSliderValue(value[0])}>
           <Slider.Track>
             <Slider.TrackActive backgroundColor='$blue7' />
           </Slider.Track>

@@ -14,11 +14,13 @@ import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsCont
 import { GenericError } from '@/components/GenericError';
 import { MainFeeling } from '@/enums/MainFeeling';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
 export default function MyFeelings() {
   const router = useRouter();
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
+  const { mediaMapping } = useAssetsManagerContext();
   const { finishTool } = useToolManagerContext();
 
   const { data: feelings, error, updatedAt } = useLiveQuery(feelingsRepository.getFeelings(), []);
@@ -26,7 +28,7 @@ export default function MyFeelings() {
   if (updatedAt !== undefined && error) {
     return (
       <ScreenWithImageHeader
-        imageUrl={require('@/assets/images/tools/my-feelings/my_feelings.jpg')}
+        imageUrl={mediaMapping['MY_FEELINGS.CATEGORY_ICON']}
         headerProps={{
           title: t(toolsTranslationKeys.MY_FEELINGS.label),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
@@ -39,7 +41,7 @@ export default function MyFeelings() {
 
   return (
     <ScreenWithImageHeader
-      imageUrl={require('@/assets/images/tools/my-feelings/my_feelings.jpg')}
+      imageUrl={mediaMapping['MY_FEELINGS.CATEGORY_ICON']}
       headerProps={{
         title: t(toolsTranslationKeys.MY_FEELINGS.label),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,

@@ -5,7 +5,7 @@ import { Modal } from '@/components/Modal';
 import { Screen } from '@/components/Screen';
 import TextFormInput from '@/components/TextFormInput';
 import { Typography } from '@/components/Typography';
-import { scrollToTextarea } from '@/helpers/scrollToTextarea';
+import { scrollToItem } from '@/helpers/scrollToItem';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
@@ -65,7 +65,7 @@ export default function Message() {
 
   const handleFocus = (ref: React.RefObject<any>) => {
     if (ref.current) {
-      scrollToTextarea(scrollViewRef, ref);
+      scrollToItem(scrollViewRef, ref);
     }
   };
 

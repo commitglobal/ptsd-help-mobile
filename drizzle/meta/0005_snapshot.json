@@ -1,8 +1,8 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "77b0239c-35ec-4d3a-82f8-46b0e3ef0d53",
-  "prevId": "ff3bd48f-0b4f-41ef-a2b0-5cd5203e228c",
+  "id": "365eb748-cdab-4fc6-977b-b9cc8d44d6c4",
+  "prevId": "4339f4f5-0d57-4068-bec8-8e306a610b88",
   "tables": {
     "feelings": {
       "name": "feelings",
@@ -119,8 +119,8 @@
       "uniqueConstraints": {},
       "checkConstraints": {}
     },
-    "sleep_activities": {
-      "name": "sleep_activities",
+    "worries": {
+      "name": "worries",
       "columns": {
         "id": {
           "name": "id",
@@ -129,15 +129,8 @@
           "notNull": true,
           "autoincrement": false
         },
-        "type": {
-          "name": "type",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true,
-          "autoincrement": false
-        },
-        "favorites": {
-          "name": "favorites",
+        "worry": {
+          "name": "worry",
           "type": "text",
           "primaryKey": false,
           "notNull": false,
@@ -178,7 +171,9 @@
   "enums": {},
   "_meta": {
     "schemas": {},
-    "tables": {},
+    "tables": {
+      "\"i_worry\"": "\"worries\""
+    },
     "columns": {}
   },
   "internal": {
