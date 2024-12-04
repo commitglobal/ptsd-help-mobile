@@ -48,6 +48,26 @@
       },
       "worry-time": {
         "enabled": true
+      },
+      "rid": {
+        "enabled": true
+      },
+      "sleep": {
+        "enabled": true,
+        "subcategories": {
+          "sleep-help": {
+            "enabled": true
+          },
+          "sleep-habits": {
+            "enabled": true
+          },
+          "sleep-perspective": {
+            "enabled": true
+          }
+        }
+      },
+      "my-strengths": {
+        "enabled": true
       }
     }
   }

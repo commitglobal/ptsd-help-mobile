@@ -231,6 +231,10 @@ const useTranslationKeys = () => {
       ptsdHelp: 'worry-time.ptsd-help',
       review: 'worry-time.review',
     },
+    MY_STRENGTHS: {
+      label: 'list.my-strengths',
+      title: 'my-strengths.title',
+    },
   };
 
   return {

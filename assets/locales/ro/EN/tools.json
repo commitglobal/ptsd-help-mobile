@@ -13,7 +13,8 @@
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
     "my-feelings": "RO/en: My Feelings",
-    "worry-time": "RO/en: Worry Time"
+    "worry-time": "RO/en: Worry Time",
+    "my-strengths": "RO/en: My Strengths"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -441,5 +442,8 @@
     "daily-reminder": "RO/en: Daily",
     "ptsd-help": "RO/en: PTSD Help",
     "review": "RO/en: Review the issues that are causing you to worry."
+  },
+  "my-strengths": {
+    "title": "RO/en: My Strengths"
   }
 }
