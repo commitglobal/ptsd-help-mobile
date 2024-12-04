@@ -1,26 +1,29 @@
-import { Icon } from '@/components/Icon';
-import { Screen } from '@/components/Screen';
-import { Typography } from '@/components/Typography';
-import { useRouter } from 'expo-router';
 import React, { useMemo, useState } from 'react';
+import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
-import { FlashList } from '@shopify/flash-list';
-import { RadioItem } from '@/components/RadioItem';
-import { YStack } from 'tamagui';
+import { useRouter } from 'expo-router';
+import { Icon } from '@/components/Icon';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+import { FlashList } from '@shopify/flash-list';
+import { Typography } from '@/components/Typography';
+import { YStack } from 'tamagui';
+import { RadioItem } from '@/components/RadioItem';
+import { Platform } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-const ChooseCountry = () => {
+export default function ChangeCountry() {
   const { t } = useTranslation();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
 
   const countriesArray = ['ro', 'am', 'ua'];
   const countryFlags = {
-    ro: require('../../assets/images/flags/ro.png'),
-    am: require('../../assets/images/flags/am.png'),
-    ua: require('../../assets/images/flags/ua.png'),
+    ro: require('../../../assets/images/flags/ro.png'),
+    am: require('../../../assets/images/flags/am.png'),
+    ua: require('../../../assets/images/flags/ua.png'),
   } as const;
 
   const countries = useMemo(
@@ -36,9 +39,10 @@ const ChooseCountry = () => {
   return (
     <Screen
       headerProps={{
-        title: t('choose-country.title'),
-        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
-        onLeftPress: router.back,
+        title: t('choose-country.choose'),
+        iconRight: <Icon icon='x' color='$gray12' width={24} height={24} />,
+        onRightPress: router.back,
+        paddingTop: Platform.OS === 'ios' ? '$md' : insets.top + 16,
       }}
       contentContainerStyle={{
         backgroundColor: 'white',
@@ -47,26 +51,22 @@ const ChooseCountry = () => {
         mainActionLabel: t('choose-country.next'),
         onMainAction: () => {
           if (selectedCountry) {
+            // TODO: do we leave the selection here?
             KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
-            router.push('/onboarding/choose-language');
+            router.push('/localization/change-language');
           }
         },
         mainActionDisabled: !selectedCountry,
       }}>
       <FlashList
         ListHeaderComponent={() => (
-          <>
-            <Typography preset='heading' textAlign='center' marginBottom='$md'>
-              {t('choose-country.choose')}
-            </Typography>
-            <Typography textAlign='center' marginBottom='$md'>
-              {t('choose-country.subtitle')}
-            </Typography>
-          </>
+          <Typography textAlign='center' marginBottom='$md'>
+            {t('choose-country.subtitle')}
+          </Typography>
         )}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{
-          padding: 24,
+          padding: 16,
         }}
         bounces={false}
         ItemSeparatorComponent={() => <YStack height={16} />}
@@ -78,6 +78,4 @@ const ChooseCountry = () => {
       />
     </Screen>
   );
-};
-
-export default ChooseCountry;
+}
