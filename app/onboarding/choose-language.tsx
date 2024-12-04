@@ -12,12 +12,12 @@ import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChooseLanguage() {
-  const { t } = useTranslation(['choose-language', 'languages']);
+  const { t } = useTranslation();
   const router = useRouter();
 
   const languages = i18n.languages.map((language) => ({
     id: language,
-    label: t(`${language}`, { ns: 'languages' }),
+    label: t(`languages.${language}`),
   }));
 
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
@@ -25,7 +25,7 @@ export default function ChooseLanguage() {
   return (
     <Screen
       headerProps={{
-        title: t('title'),
+        title: t('choose-language.title'),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: router.back,
       }}
@@ -33,7 +33,7 @@ export default function ChooseLanguage() {
         backgroundColor: 'white',
       }}
       footerProps={{
-        mainActionLabel: t('next'),
+        mainActionLabel: t('choose-language.next'),
         onMainAction: () => {
           if (selectedLanguage) {
             KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
@@ -45,10 +45,10 @@ export default function ChooseLanguage() {
         ListHeaderComponent={() => (
           <>
             <Typography preset='heading' textAlign='center' marginBottom='$md'>
-              {t('choose')}
+              {t('choose-language.choose')}
             </Typography>
             <Typography textAlign='center' marginBottom='$md'>
-              {t('subtitle')}
+              {t('choose-language.subtitle')}
             </Typography>
           </>
         )}
