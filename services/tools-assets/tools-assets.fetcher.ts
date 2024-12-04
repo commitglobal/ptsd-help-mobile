@@ -8,6 +8,7 @@ import {
 } from './tools-assets.helper';
 import * as FileSystem from 'expo-file-system';
 import { RemoteToolsAssetsMapping, LocalToolsAssetsMapping } from './tools-assets.type';
+import { DownloadProgress, DownloadProgressTracker } from '@/helpers/download-progress';
 
 const fetchRemoteToolsAssets = async (countryCode: string, languageCode: string) => {
   try {
@@ -36,27 +37,6 @@ const fetchLocalToolsAssets = async (countryCode: string, languageCode: string) 
   return localMapping;
 };
 
-// const cleanUpUnusedDirectories = async (validFolder: string) => {
-//   const assetFiles = await FileSystem.readDirectoryAsync(TOOLS_ASSETS_FOLDER);
-//   const unusedFiles = assetFiles.filter((file) => file !== validFolder);
-
-//   try {
-//     await Promise.all(
-//       unusedFiles.map(async (file) => {
-//         const filePath = `${TOOLS_ASSETS_FOLDER}/${file}`;
-//         try {
-//           await FileSystem.deleteAsync(filePath);
-//           console.log(`Deleted unused file: ${filePath}`);
-//         } catch (error) {
-//           console.error(`Error deleting file ${filePath}:`, error);
-//         }
-//       })
-//     );
-//   } catch (error) {
-//     console.error(`Error cleaning up unused directories:`, error);
-//   }
-// };
-
 const cleanUpUnusedDirectoriesOrFiles = async (workDir: string, validFilesOrFolders: string[]) => {
   const filesOrFolders = await FileSystem.readDirectoryAsync(workDir);
   const unusedFilesOrFolders = filesOrFolders.filter((fileOrFolder) => !validFilesOrFolders.includes(fileOrFolder));
@@ -68,17 +48,14 @@ const cleanUpUnusedDirectoriesOrFiles = async (workDir: string, validFilesOrFold
   }
 };
 
-// Prea obosit
-// 1. Salvez ToolsAssetsMapping_${countryCode}_${languageCode}.json in folderul ToolsAssets/${countryCode}_${languageCode} (vezi underscore)
-// 2. Caut in acelasi loc, si daca nu gasesc facem download.
-// 3. La final, sterg toate folderele din din ToolsAssets care nu sunt in ToolsAssetsMapping_${countryCode}_${languageCode}.json ca sa nu mai sterg fisier cu fisier
-
 export const processToolsAssets = async (
   cmsMapping: RemoteToolsAssetsMapping,
   localMapping: LocalToolsAssetsMapping | null,
   countryCode: string,
-  languageCode: string
+  languageCode: string,
+  onProgress?: (progress: DownloadProgress) => void
 ): Promise<LocalToolsAssetsMapping | null> => {
+  const progressTracker = new DownloadProgressTracker(onProgress);
   const updatedMapping: LocalToolsAssetsMapping = localMapping ? { ...localMapping } : ({} as LocalToolsAssetsMapping);
   const assetsFolder = getLocalToolsAssetsFolderPath(countryCode, languageCode);
 
@@ -88,6 +65,9 @@ export const processToolsAssets = async (
   }
 
   let hasChanges = false;
+
+  progressTracker.setTotalFiles(Object.keys(cmsMapping)?.length || 0);
+
   // Download and update mapping for each asset
   const timeStart = new Date().getTime();
 
@@ -106,11 +86,13 @@ export const processToolsAssets = async (
           console.log(`Downloading: ${uri}`);
           const result = await FileSystem.downloadAsync(uri, localFilePath);
           updatedMapping[key as keyof LocalToolsAssetsMapping] = result.uri;
+          progressTracker.incrementDownloaded();
         } catch (error) {
           console.error(`Error downloading ${uri}:`, error);
         }
       } else {
         updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
+        progressTracker.incrementDownloaded();
       }
     })
   );
@@ -158,7 +140,11 @@ export const processToolsAssets = async (
   return updatedMapping;
 };
 
-export const fetchToolsAssets = async (countryCode: string, languageCode: string) => {
+export const fetchToolsAssets = async (
+  countryCode: string,
+  languageCode: string,
+  onProgress?: (progress: DownloadProgress) => void
+) => {
   console.log('🔨 fetchToolsAssets', countryCode, languageCode);
   // Try to load existing local mapping
   const localMapping = await fetchLocalToolsAssets(countryCode, languageCode);
@@ -171,7 +157,7 @@ export const fetchToolsAssets = async (countryCode: string, languageCode: string
   }
 
   // Process remote mapping
-  const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode);
+  const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode, onProgress);
 
   return updatedMapping;
 };

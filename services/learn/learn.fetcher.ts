@@ -3,6 +3,7 @@ import * as FileSystem from 'expo-file-system';
 import { getS3CMSContentFolder } from '@/constants/cms';
 import { Category, Section, Topic } from '@/services/learn/learn.type';
 import { getLocalLearnContentDir, getLocalLearnContentFilePath } from './learn.helper';
+import { DownloadProgressTracker, DownloadProgress } from '@/helpers/download-progress';
 
 const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => {
   const existingFiles = new Set(await FileSystem.readDirectoryAsync(contentDir));
@@ -18,58 +19,102 @@ const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => 
   }
 };
 
-const downloadImage = async (imageSrc: string, contentDir: string): Promise<string> => {
-  const imageFileName = imageSrc.split('/').pop();
-  const localImagePath = `${contentDir}/${imageFileName}`;
-  try {
-    await FileSystem.downloadAsync(imageSrc, localImagePath);
-  } catch (error) {
-    console.error('Error downloading image:', error);
-    return '';
-  }
-  return localImagePath;
-};
+class LearnContentDownloader {
+  private progressTracker: DownloadProgressTracker;
 
-const processContentArray = async (contentArray: any[], contentDir: string) => {
-  return Promise.all(
-    contentArray.map(async (content) => {
-      if (content.type === 'image') {
+  constructor(progressTracker: DownloadProgressTracker) {
+    this.progressTracker = progressTracker;
+  }
+
+  private async downloadImage(imageSrc: string, contentDir: string): Promise<string> {
+    const imageFileName = imageSrc.split('/').pop();
+    const localImagePath = `${contentDir}/${imageFileName}`;
+    try {
+      await FileSystem.downloadAsync(imageSrc, localImagePath);
+      this.progressTracker.incrementDownloaded();
+    } catch (error) {
+      console.error('Error downloading image:', error);
+      return '';
+    }
+    return localImagePath;
+  }
+
+  private async processContentArray(contentArray: any[], contentDir: string) {
+    return Promise.all(
+      contentArray.map(async (content) => {
+        if (content.type === 'image') {
+          return {
+            ...content,
+            src: await this.downloadImage(content.src, contentDir),
+          };
+        }
+        return content;
+      })
+    );
+  }
+
+  private async processSection(section: Section, contentDir: string): Promise<Section> {
+    if (section.type === 'image') {
+      return {
+        ...section,
+        src: await this.downloadImage(section.src, contentDir),
+      };
+    }
+
+    if (section.type === 'multiContent') {
+      return {
+        ...section,
+        contentArray: await this.processContentArray(section.contentArray, contentDir),
+      };
+    }
+
+    if (section.type === 'multiPage') {
+      const processedPages = await Promise.all(
+        section.pageArray.map((page) => this.processContentArray(page, contentDir))
+      );
+
+      return {
+        ...section,
+        pageArray: processedPages,
+      };
+    }
+
+    return section;
+  }
+
+  async processCategories(remoteContent: any, contentDir: string): Promise<Category[]> {
+    return Promise.all(
+      remoteContent.categories.map(async (category: Category) => {
+        const processedIcon = category.icon ? await this.downloadImage(category.icon, contentDir) : category.icon;
+
+        const processedTopics: Topic[] = await Promise.all(
+          category.topics.map(async (topic: Topic) => {
+            const processedTopicIcon = topic.icon ? await this.downloadImage(topic.icon, contentDir) : topic.icon;
+
+            const processedSections: Section[] = await Promise.all(
+              topic.content.sections.map((section) => this.processSection(section, contentDir))
+            );
+
+            return {
+              ...topic,
+              icon: processedTopicIcon,
+              content: {
+                ...topic.content,
+                sections: processedSections,
+              },
+            };
+          })
+        );
+
         return {
-          ...content,
-          src: await downloadImage(content.src, contentDir),
+          ...category,
+          icon: processedIcon,
+          topics: processedTopics,
         };
-      }
-      return content;
-    })
-  );
-};
-
-const processSection = async (section: Section, contentDir: string): Promise<Section> => {
-  if (section.type === 'image') {
-    return {
-      ...section,
-      src: await downloadImage(section.src, contentDir),
-    };
+      })
+    );
   }
-
-  if (section.type === 'multiContent') {
-    return {
-      ...section,
-      contentArray: await processContentArray(section.contentArray, contentDir),
-    };
-  }
-
-  if (section.type === 'multiPage') {
-    const processedPages = await Promise.all(section.pageArray.map((page) => processContentArray(page, contentDir)));
-
-    return {
-      ...section,
-      pageArray: processedPages,
-    };
-  }
-
-  return section;
-};
+}
 
 const getLocalLearnContent = async (countryCode: string, languageCode: string) => {
   try {
@@ -112,9 +157,14 @@ function extractFileNames(jsonObj: any) {
   return fileNames;
 }
 
-// ! TODO: Delete unused folder like in MediaMapping
+export const fetchLearnContent = async (
+  countryCode: string,
+  languageCode: string,
+  onProgress?: (progress: DownloadProgress) => void
+) => {
+  const progressTracker = new DownloadProgressTracker(onProgress);
+  const downloader = new LearnContentDownloader(progressTracker);
 
-export const fetchLearnContent = async (countryCode: string, languageCode: string) => {
   const [localContent, remoteContent] = await Promise.all([
     getLocalLearnContent(countryCode, languageCode),
     getRemoteLearnContent(countryCode, languageCode),
@@ -129,59 +179,29 @@ export const fetchLearnContent = async (countryCode: string, languageCode: strin
     !localContent || new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt);
 
   const contentDir = getLocalLearnContentDir(countryCode, languageCode);
-  // Create content directory if it doesn't exist
   await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
 
   if (shouldUpdateLocal && remoteContent) {
-    // Process categories: Replace images URLs with downloaded local paths
-    const processedCategories: Category[] = await Promise.all(
-      remoteContent.categories.map(async (category: Category) => {
-        // Process category icon
-        const processedIcon = category.icon ? await downloadImage(category.icon, contentDir) : category.icon;
+    progressTracker.setTotalFiles(extractFileNames(remoteContent).length);
 
-        // Process topics within category
-        const processedTopics: Topic[] = await Promise.all(
-          category.topics.map(async (topic: Topic) => {
-            // Process topic icon
-            const processedTopicIcon = topic.icon ? await downloadImage(topic.icon, contentDir) : topic.icon;
-
-            const processedSections: Section[] = await Promise.all(
-              topic.content.sections.map((section) => processSection(section, contentDir))
-            );
-
-            return {
-              ...topic,
-              icon: processedTopicIcon,
-              content: {
-                ...topic.content,
-                sections: processedSections,
-              },
-            };
-          })
-        );
-
-        return {
-          ...category,
-          icon: processedIcon,
-          topics: processedTopics,
-        };
-      })
-    );
+    const processedCategories = await downloader.processCategories(remoteContent, contentDir);
 
     const toReturn: LearnContent = {
       ...remoteContent,
       categories: processedCategories,
     };
 
-    // Delete unused files in the learn directory (CountryCode-LanguageCode)
     const usedFiles = new Set(extractFileNames(toReturn));
     await deleteUnusedFiles(contentDir, usedFiles);
 
-    // Save processed content
     const localContentPath = getLocalLearnContentFilePath(countryCode, languageCode);
     await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(toReturn, null, 2));
 
     return toReturn;
+  }
+
+  if (!shouldUpdateLocal) {
+    progressTracker.setTotalFiles(0);
   }
 
   return localContent;

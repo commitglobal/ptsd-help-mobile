@@ -1,5 +1,6 @@
 import { useQuery, skipToken } from '@tanstack/react-query';
 import { fetchToolsAssets } from './tools-assets.fetcher';
+import { DownloadProgress } from '@/helpers/download-progress';
 
 /**
  * Custom hook that manages media asset mapping between CMS and local storage.
@@ -12,10 +13,14 @@ import { fetchToolsAssets } from './tools-assets.fetcher';
  *
  * @returns {UseQueryResult} Query result containing the media mapping or null if no mapping exists
  */
-export const useToolsAssetsMapper = (countryCode: string, languageCode: string) => {
+export const useToolsAssetsMapper = (
+  countryCode: string,
+  languageCode: string,
+  onProgress?: (progress: DownloadProgress) => void
+) => {
   return useQuery({
     queryKey: ['toolsAssetsMapper', countryCode, languageCode],
-    queryFn: !countryCode ? skipToken : () => fetchToolsAssets(countryCode, languageCode),
+    queryFn: !countryCode ? skipToken : () => fetchToolsAssets(countryCode, languageCode, onProgress),
     retry: false,
   });
 };

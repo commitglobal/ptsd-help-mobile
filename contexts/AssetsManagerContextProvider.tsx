@@ -17,7 +17,7 @@
  * 5. Provides mapping to components to resolve asset URIs
  */
 
-import { createContext, useContext } from 'react';
+import { createContext, useContext, useMemo, useState } from 'react';
 import * as FileSystem from 'expo-file-system';
 import { Typography } from '@/components/Typography';
 import { useFoggles } from '@/services/foggles/foggles.query';
@@ -26,6 +26,8 @@ import { useLearnContent } from '@/services/learn/learn.query';
 import { LearnContent } from '@/services/learn/learn.type';
 import { LocalToolsAssetsMapping } from '@/services/tools-assets/tools-assets.type';
 import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query';
+import LoadingAssets from '@/components/LoadingAssets';
+import { DownloadProgress } from '@/helpers/download-progress';
 
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
@@ -37,14 +39,38 @@ const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const countryCode = 'RO';
-  const languageCode = 'en';
+  const languageCode = 'ro';
+
+  const [toolsAssetsTotalProgress, setToolsAssetsTotalProgress] = useState<DownloadProgress>();
+  const [learnContentTotalProgress, setLearnContentTotalProgress] = useState<DownloadProgress>();
+
+  const totalAssetsProgress = useMemo(() => {
+    if (!toolsAssetsTotalProgress || !learnContentTotalProgress) {
+      return null;
+    }
+    return Math.round(
+      (((toolsAssetsTotalProgress?.filesDownloaded || 0) + (learnContentTotalProgress?.filesDownloaded || 0)) /
+        ((toolsAssetsTotalProgress?.totalNumberOfFiles || 0) + (learnContentTotalProgress?.totalNumberOfFiles || 0))) *
+        100
+    );
+  }, [toolsAssetsTotalProgress, learnContentTotalProgress]);
+
   console.log(FileSystem.documentDirectory);
-  const { data: mediaMapping, isFetching: isFetchingMedia } = useToolsAssetsMapper(countryCode, languageCode);
+  const { data: mediaMapping, isFetching: isFetchingMedia } = useToolsAssetsMapper(
+    countryCode,
+    languageCode,
+    (progress) => setToolsAssetsTotalProgress(progress)
+  );
+
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryCode);
-  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(countryCode, languageCode);
+  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(
+    countryCode,
+    languageCode,
+    (progress) => setLearnContentTotalProgress(progress)
+  );
 
   if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent) {
-    return <Typography>Loading...</Typography>;
+    return <LoadingAssets progress={totalAssetsProgress} />;
   }
 
   if (!mediaMapping) {

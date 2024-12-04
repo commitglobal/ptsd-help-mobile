@@ -4,7 +4,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
 import { ScrollView, XStack, YStack } from 'tamagui';
 import { Dimensions, Image, Linking } from 'react-native';
-import RenderHTML from '@builder.io/react-native-render-html';
+import RenderHTML from 'react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useMemo, useState } from 'react';

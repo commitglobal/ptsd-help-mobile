@@ -14,6 +14,7 @@ import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
+import { LogBox } from 'react-native';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -26,6 +27,9 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+// https://github.com/meliorence/react-native-render-html/issues/661#issuecomment-2453476566
+LogBox.ignoreLogs([/Support for defaultProps will be removed/]);
 
 export default function RootLayout() {
   const { success, error } = useMigrations(db, migrations);
