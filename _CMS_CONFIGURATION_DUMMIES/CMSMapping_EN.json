@@ -138,5 +138,9 @@
   "MY_FEELINGS.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/my-feelings/my_feelings.jpg",
     "lastUpdatedAt": 1732623322783
+  },
+  "WORRY_TIME.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/worry-time/schedule_worry_time.jpg",
+    "lastUpdatedAt": 1732623322783
   }
 }

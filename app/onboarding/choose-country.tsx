@@ -10,7 +10,7 @@ import { YStack } from 'tamagui';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 const ChooseCountry = () => {
-  const { t } = useTranslation('choose-country');
+  const { t } = useTranslation();
   const router = useRouter();
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
@@ -26,7 +26,7 @@ const ChooseCountry = () => {
     () =>
       countriesArray.map((country) => ({
         id: country,
-        label: t(`countries.${country}`),
+        label: t(`choose-country.countries.${country}`),
         avatar: countryFlags[country as keyof typeof countryFlags],
       })),
     [countriesArray, t]
@@ -35,7 +35,7 @@ const ChooseCountry = () => {
   return (
     <Screen
       headerProps={{
-        title: t('title'),
+        title: t('choose-country.title'),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: router.back,
       }}
@@ -43,7 +43,7 @@ const ChooseCountry = () => {
         backgroundColor: 'white',
       }}
       footerProps={{
-        mainActionLabel: t('next'),
+        mainActionLabel: t('choose-country.next'),
         onMainAction: () => {
           if (selectedCountry) {
             KVStore().set(STORE_KEYS.COUNTRY, selectedCountry.toUpperCase());
@@ -56,10 +56,10 @@ const ChooseCountry = () => {
         ListHeaderComponent={() => (
           <>
             <Typography preset='heading' textAlign='center' marginBottom='$md'>
-              {t('choose')}
+              {t('choose-country.choose')}
             </Typography>
             <Typography textAlign='center' marginBottom='$md'>
-              {t('subtitle')}
+              {t('choose-country.subtitle')}
             </Typography>
           </>
         )}

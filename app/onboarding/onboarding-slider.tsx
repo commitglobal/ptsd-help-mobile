@@ -1,14 +1,14 @@
-import React from "react";
-import { Screen } from "@/components/Screen";
-import { Animated, useWindowDimensions, FlatList } from "react-native";
-import { XStack, YStack } from "tamagui";
-import { ScalingDot } from "react-native-animated-pagination-dots";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { Icon } from "@/components/Icon";
-import { useTranslation } from "react-i18next";
-import { LinearGradient } from "tamagui/linear-gradient";
-import { OnboardingScreen } from "@/components/OnboardingScreen";
-import { OnboardingLastScreen } from "@/components/OnboardingLastScreen";
+import React from 'react';
+import { Screen } from '@/components/Screen';
+import { Animated, useWindowDimensions, FlatList } from 'react-native';
+import { XStack, YStack } from 'tamagui';
+import { ScalingDot } from 'react-native-animated-pagination-dots';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Icon } from '@/components/Icon';
+import { useTranslation } from 'react-i18next';
+import { LinearGradient } from 'tamagui/linear-gradient';
+import { OnboardingScreen } from '@/components/OnboardingScreen';
+import { OnboardingLastScreen } from '@/components/OnboardingLastScreen';
 
 export interface ItemProps {
   key: string;
@@ -19,37 +19,37 @@ export interface ItemProps {
 
 export default function Onboarding() {
   const { width } = useWindowDimensions();
-  const { t } = useTranslation("onboarding");
+  const { t } = useTranslation();
 
   const insets = useSafeAreaInsets();
 
   const INTRO_DATA = [
     {
-      key: "1",
-      icon: "openBook",
-      title: t("learn.title"),
-      description: t("learn.description"),
+      key: '1',
+      icon: 'openBook',
+      title: t('onboarding.learn.title'),
+      description: t('onboarding.learn.description'),
     },
     {
-      key: "2",
-      icon: "chart",
-      title: t("monitor-progress.title"),
-      description: t("monitor-progress.description"),
+      key: '2',
+      icon: 'chart',
+      title: t('onboarding.monitor-progress.title'),
+      description: t('onboarding.monitor-progress.description'),
     },
     {
-      key: "3",
-      icon: "puzzle",
-      title: t("manage-symptoms.title"),
-      description: t("manage-symptoms.description"),
+      key: '3',
+      icon: 'puzzle',
+      title: t('onboarding.manage-symptoms.title'),
+      description: t('onboarding.manage-symptoms.description'),
     },
     {
-      key: "4",
-      icon: "solidHeart",
-      title: t("get-support.title"),
-      description: t("get-support.description"),
+      key: '4',
+      icon: 'solidHeart',
+      title: t('onboarding.get-support.title'),
+      description: t('onboarding.get-support.description'),
     },
     {
-      key: "5",
+      key: '5',
     },
   ];
 
@@ -91,7 +91,7 @@ export default function Onboarding() {
 
       return <OnboardingScreen item={item} />;
     },
-    [width],
+    [width]
   );
 
   const keyExtractor = React.useCallback((item: ItemProps) => item.key, []);
@@ -100,7 +100,7 @@ export default function Onboarding() {
       <LinearGradient
         fullscreen
         top={-insets.top}
-        colors={["$blue1", "$blue3", "$blue5", "$blue11"]}
+        colors={['$blue1', '$blue3', '$blue5', '$blue11']}
         start={[0, 0]}
         end={[1, 1]}
       />
@@ -116,48 +116,44 @@ export default function Onboarding() {
         })}
         pagingEnabled
         horizontal
-        decelerationRate={"normal"}
+        decelerationRate={'normal'}
         scrollEventThrottle={16}
         renderItem={renderItem}
       />
-      <XStack paddingBottom={insets.bottom} justifyContent="space-around" alignItems="center">
+      <XStack paddingBottom={insets.bottom} justifyContent='space-around' alignItems='center'>
         <XStack
           flex={1}
-          padding="$md"
+          padding='$md'
           onPress={gotoPrevPage}
           pressStyle={{
             opacity: 0.5,
           }}
-          justifyContent="flex-end"
-        >
-          {activeIndex > 0 && <Icon icon="chevronLeft" color="white" width={24} height={24} />}
+          justifyContent='flex-end'>
+          {activeIndex > 0 && <Icon icon='chevronLeft' color='white' width={24} height={24} />}
         </XStack>
 
         <YStack flex={5}>
           <ScalingDot
             data={INTRO_DATA}
             scrollX={scrollX}
-            inActiveDotColor="white"
-            activeDotColor="white"
+            inActiveDotColor='white'
+            activeDotColor='white'
             containerStyle={{
-              position: "relative",
+              position: 'relative',
               bottom: 0,
-              flexDirection: "row",
+              flexDirection: 'row',
             }}
           />
         </YStack>
 
         <XStack
           flex={1}
-          padding="$md"
+          padding='$md'
           onPress={gotoNextPage}
           pressStyle={{
             opacity: 0.5,
-          }}
-        >
-          {activeIndex < INTRO_DATA.length - 1 && (
-            <Icon icon="chevronRight" color="white" width={24} height={24} />
-          )}
+          }}>
+          {activeIndex < INTRO_DATA.length - 1 && <Icon icon='chevronRight' color='white' width={24} height={24} />}
         </XStack>
       </XStack>
     </Screen>

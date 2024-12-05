@@ -218,6 +218,19 @@ const useTranslationKeys = () => {
         VULNERABLE: 'feelings.scared.vulnerable',
       },
     },
+    WORRY_TIME: {
+      label: 'list.worry-time',
+      title: 'worry-time.title',
+      help: 'worry-time.help',
+      description: 'worry-time.description',
+      writeHere: 'worry-time.write-here',
+      subjectsToThinkAbout: 'worry-time.subjects-to-think-about',
+      helpText: 'worry-time.help-text',
+      reminder: 'worry-time.reminder',
+      daily: 'worry-time.daily-reminder',
+      ptsdHelp: 'worry-time.ptsd-help',
+      review: 'worry-time.review',
+    },
   };
 
   return {

@@ -66,6 +66,7 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   );
 
   const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryLanguage?.countryCode);
+
   const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(
     countryLanguage?.countryCode,
     countryLanguage?.languageCode,

@@ -45,6 +45,9 @@
       },
       "my-feelings": {
         "enabled": true
+      },
+      "worry-time": {
+        "enabled": true
       }
     }
   }

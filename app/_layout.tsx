@@ -13,6 +13,7 @@ import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { LogBox } from 'react-native';
+import * as Notifications from 'expo-notifications';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
 SplashScreen.preventAutoHideAsync();
@@ -28,6 +29,14 @@ const queryClient = new QueryClient({
 
 // https://github.com/meliorence/react-native-render-html/issues/661#issuecomment-2453476566
 LogBox.ignoreLogs([/Support for defaultProps will be removed/]);
+
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: true,
+    shouldSetBadge: false,
+  }),
+});
 
 export default function RootLayout() {
   const { success, error } = useMigrations(db, migrations);
