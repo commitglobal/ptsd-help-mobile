@@ -5,64 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1732113480152,
-      "tag": "0000_messages-table",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1732188005337,
-      "tag": "0001_feelings-table",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "6",
-      "when": 1732534828427,
-      "tag": "0002_correct-discomfort-name",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "6",
-      "when": 1733234763216,
-      "tag": "0003_sleep-activities",
-      "breakpoints": true
-    },
-    {
-      "idx": 4,
-      "version": "6",
-      "when": 1732632913398,
-      "tag": "0004_worries-table",
-      "breakpoints": true
-    },
-    {
-      "idx": 5,
-      "version": "6",
-      "when": 1732633120335,
-      "tag": "0005_worries-table-rename",
-      "breakpoints": true
-    },
-    {
-      "idx": 6,
-      "version": "6",
-      "when": 1733146366261,
-      "tag": "0006_worries-table-reminder",
-      "breakpoints": true
-    },
-    {
-      "idx": 7,
-      "version": "6",
-      "when": 1733149383973,
-      "tag": "0007_worries-table-notificationId",
-      "breakpoints": true
-    },
-    {
-      "idx": 8,
-      "version": "6",
-      "when": 1733400271407,
-      "tag": "0008_sleep-notification",
+      "when": 1733401143203,
+      "tag": "0000_init",
       "breakpoints": true
     }
   ]

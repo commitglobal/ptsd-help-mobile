@@ -32,10 +32,10 @@ export default function RelaxingActivities() {
     const reminderTimeDate = time ? new Date(time) : new Date();
     const notificationData: Notifications.NotificationRequestInput = {
       content: {
-        title: t(toolsTranslationKeys.WORRY_TIME.ptsdHelp),
-        body: t(toolsTranslationKeys.WORRY_TIME.review),
+        title: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.relaxingActivitiesReminderTitle),
+        body: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.relaxingActivitiesReminderBody),
         data: {
-          url: '/tools/worry-time', // where to redirect to
+          url: '/tools/sleep/sleep-habits/relaxing-activities', // where to redirect to
         },
       },
       trigger: {
@@ -122,7 +122,7 @@ export default function RelaxingActivities() {
           activities={activities}
           description={t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.relaxingActivitiesDescription)}
           hasReminder={true}
-          reminderText={'AMINTESTE-MI DOAMNE'}
+          reminderText={t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.relaxingActivitiesReminderTitle)}
           update={handleOnUpdate}
           onReminderChange={handleOnReminderChange}
           onTimeChange={handleOnTimeChange}

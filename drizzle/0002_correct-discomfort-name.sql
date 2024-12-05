@@ -1,1 +1,0 @@
-ALTER TABLE `feelings` RENAME COLUMN "disconfort" TO "discomfort";

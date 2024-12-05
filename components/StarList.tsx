@@ -43,8 +43,12 @@ export default function StarList({
   const [time, setTime] = useState<Date | null>(null);
 
   useEffect(() => {
-    // setIsReminderChecked(sleepActivity?.reminderEnabled || false);
-    // setTime(sleepActivity?.reminderTime && new Date(sleepActivity?.reminderTime));
+    setIsReminderChecked(sleepActivity?.notificationId !== null);
+    setTime(sleepActivity?.reminderTime ? new Date(sleepActivity?.reminderTime) : null);
+    onReminderChange?.(sleepActivity?.notificationId !== null);
+    if (sleepActivity?.reminderTime) {
+      onTimeChange?.(new Date(sleepActivity.reminderTime));
+    }
   }, [sleepActivity]);
 
   const items = useMemo(

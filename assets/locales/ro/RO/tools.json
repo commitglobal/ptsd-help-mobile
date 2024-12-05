@@ -192,6 +192,8 @@
       },
       "relaxing-activities": {
         "description": "A avea o perioadă de timp pentru relaxare înainte de a merge la culcare te poate ajuta să îți liniștești mintea și corpul. Acest timp este o tranziție între activitățile zilei și momentul în care mergi la culcare. Citește activitățile de mai jos pentru a explora câteva idei pentru lucruri de făcut în perioada de relaxare. Dacă o activitate continuă să funcționeze pentru tine, îți recomandăm să atingi steaua de lângă ea pentru a o marca drept favorită.",
+        "reminder-title": "RO/ro: Activitatea de relaxare pentru somn",
+        "reminder-body": "RO/ro: Folosește o activitate de relaxare pentru somn pentru a te ajuta să adormi mai ușor.",
         "list": [
           {
             "id": 1,

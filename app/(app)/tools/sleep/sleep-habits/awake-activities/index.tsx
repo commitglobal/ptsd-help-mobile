@@ -40,6 +40,8 @@ export default function AwakeActivities() {
     } else {
       await sleepActivitiesRepository.updateSleepActivity(SleepActivityType.AWAKE, {
         favorites: Array.from(updatedItems),
+        reminderTime: null,
+        notificationId: null,
       });
     }
   };

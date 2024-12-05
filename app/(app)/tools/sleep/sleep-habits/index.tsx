@@ -8,10 +8,12 @@ import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useTranslation } from 'react-i18next';
 import { Typography } from '@/components/Typography';
 import { Href, router } from 'expo-router';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export default function SleepHabits() {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
+  const { finishTool } = useToolManagerContext();
 
   const items = [
     {
@@ -46,6 +48,9 @@ export default function SleepHabits() {
         title: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.label),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
         onLeftPress: () => router.back(),
+      }}
+      footerProps={{
+        onMainAction: () => finishTool(),
       }}
       contentContainerStyle={{ backgroundColor: 'transparent' }}>
       <Typography paddingHorizontal={16} paddingTop={16} preset='default'>
