@@ -1,5 +1,5 @@
 import { Icon } from '@/components/Icon';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Screen } from '@/components/Screen';
 import { FlashList } from '@shopify/flash-list';
 import { ListCard } from '@/components/ListCard';
@@ -15,32 +15,35 @@ export default function SleepHabits() {
   const { toolsTranslationKeys } = useTranslationKeys();
   const { finishTool } = useToolManagerContext();
 
-  const items = [
-    {
-      label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.relaxingActivities),
-      id: 'relaxing-activities',
-      icon: 'tv',
-      rightIcon: 'chevronRight',
-    },
-    {
-      label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.awakeActivities),
-      id: 'awake-activities',
-      icon: 'tasks',
-      rightIcon: 'chevronRight',
-    },
-    {
-      label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.noSleepActivities),
-      id: 'no-sleep-activities',
-      icon: 'book',
-      rightIcon: 'chevronRight',
-    },
-    {
-      label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.wakeUpActivities),
-      id: 'wake-up-activities',
-      icon: 'clock',
-      rightIcon: 'chevronRight',
-    },
-  ];
+  const items = useMemo(
+    () => [
+      {
+        label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.relaxingActivities),
+        id: 'relaxing-activities',
+        icon: 'tv',
+        rightIcon: 'chevronRight',
+      },
+      {
+        label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.awakeActivities),
+        id: 'awake-activities',
+        icon: 'tasks',
+        rightIcon: 'chevronRight',
+      },
+      {
+        label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.noSleepActivities),
+        id: 'no-sleep-activities',
+        icon: 'book',
+        rightIcon: 'chevronRight',
+      },
+      {
+        label: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.list.wakeUpActivities),
+        id: 'wake-up-activities',
+        icon: 'clock',
+        rightIcon: 'chevronRight',
+      },
+    ],
+    [t, toolsTranslationKeys]
+  );
 
   return (
     <Screen

@@ -3,7 +3,7 @@ import React, { useMemo, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useTranslation } from 'react-i18next';
-import { router, Stack } from 'expo-router';
+import { router } from 'expo-router';
 import sleepActivitiesRepository, { SleepActivityType } from '@/db/repositories/sleep-activities.repository';
 import StarList from '@/components/StarList';
 import { useSleepActivitiesByType } from '@/services/sleep-activities.service';
@@ -105,7 +105,6 @@ export default function RelaxingActivities() {
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
           title: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.label),

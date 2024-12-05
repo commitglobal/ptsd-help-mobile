@@ -129,7 +129,7 @@ export default function StarList({
         )}
         bounces={false}
         data={items}
-        contentContainerStyle={{ padding: 16, paddingBottom: 16 }}
+        contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <StarListCard item={item} onUpdate={onUpdate} />}
         ItemSeparatorComponent={() => <YStack height={8} />}
