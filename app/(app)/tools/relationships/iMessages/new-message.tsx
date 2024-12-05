@@ -11,7 +11,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import messagesRepository, { Message } from '@/db/repositories/messages.repository';
-import { scrollToItem } from '@/helpers/scrollToItem';
+import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
@@ -30,12 +30,6 @@ export default function NewMessage() {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
-  const handleFocus = (ref: React.RefObject<any>) => {
-    if (ref.current) {
-      scrollToItem(scrollViewRef, ref);
-    }
-  };
 
   const handleInfoModalOpen = (message: string) => {
     setInfoMessage(message);
@@ -102,7 +96,7 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder
                 )}
                 ref={annoyanceRef}
-                onFocus={() => handleFocus(annoyanceRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, annoyanceRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example
                 )}
@@ -136,7 +130,7 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder
                 )}
                 ref={feelRef}
-                onFocus={() => handleFocus(feelRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, feelRef)}
                 infoMessage={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
@@ -165,7 +159,7 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder
                 )}
                 ref={becauseRef}
-                onFocus={() => handleFocus(becauseRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, becauseRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example
                 )}

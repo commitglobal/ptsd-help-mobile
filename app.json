@@ -17,10 +17,15 @@
       "buildNumber": "1",
       "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
-        "com.apple.developer.applesignin": ["Default"]
+        "com.apple.developer.applesignin": [
+          "Default"
+        ]
       },
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"]
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
       },
       "config": {
         "usesNonExemptEncryption": false
@@ -46,7 +51,13 @@
           "launchMode": "most-recent"
         }
       ],
-      "expo-localization"
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow PTSDHelp to access your photos. The app uses them within the therapeutic tools."
+        }
+      ]
     ],
     "experiments": {
       "typedRoutes": true

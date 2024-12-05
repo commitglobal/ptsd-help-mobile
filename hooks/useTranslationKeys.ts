@@ -235,6 +235,11 @@ const useTranslationKeys = () => {
       label: 'list.my-strengths',
       title: 'my-strengths.title',
       description: 'my-strengths.description',
+      add: 'my-strengths.add',
+      done: 'my-strengths.done',
+      strengthLabel: 'my-strengths.strength-label',
+      placeholder: 'my-strengths.placeholder',
+      pickImage: 'my-strengths.pick-image',
     },
   };
 
