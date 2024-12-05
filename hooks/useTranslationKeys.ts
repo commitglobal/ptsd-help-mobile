@@ -234,6 +234,7 @@ const useTranslationKeys = () => {
     MY_STRENGTHS: {
       label: 'list.my-strengths',
       title: 'my-strengths.title',
+      description: 'my-strengths.description',
     },
   };
 
