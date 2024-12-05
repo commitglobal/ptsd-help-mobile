@@ -16,6 +16,7 @@ export default function AppLayout() {
             <Stack.Screen name='about' options={{ headerShown: false }} />
             <Stack.Screen name='settings' options={{ headerShown: false }} />
             <Stack.Screen name='profile' options={{ headerShown: false }} />
+            <Stack.Screen name='localization' options={{ headerShown: false, presentation: 'modal' }} />
             <Stack.Screen name='webview' options={{ headerShown: false, presentation: 'modal' }} />
           </Stack>
         </ToolManagerContextProvider>

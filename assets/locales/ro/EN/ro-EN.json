@@ -22,7 +22,7 @@
   },
   "languages": {
     "en": "RO/en: English",
-    "am": "RO/en: Armenian",
+    "ro": "RO/en: Romanian",
     "ua": "RO/en: Ukrainian"
   },
   "licence-agreement": {
@@ -48,7 +48,8 @@
     "title": "RO/en: Language",
     "choose": "RO/en: Choose the app language",
     "subtitle": "RO/en: Please choose the language of the app content.",
-    "next": "RO/en: Next"
+    "next": "RO/en: Next",
+    "done": "RO/en: Done"
   },
   "onboarding": {
     "learn": {
@@ -135,5 +136,9 @@
         "talk": "RO/en: Yes, I want to talk to someone"
       }
     }
+  },
+  "settings": {
+    "title": "RO/en: Settings",
+    "change-country-and-language": "RO/en: Change country and language"
   }
 }
