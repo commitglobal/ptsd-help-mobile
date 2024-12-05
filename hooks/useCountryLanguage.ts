@@ -5,7 +5,7 @@ import { useQuery } from '@tanstack/react-query';
 
 export default function useCountryLanguage() {
   return useQuery({
-    queryKey: ['county-language'],
+    queryKey: ['country-language'],
     queryFn: () => {
       const countryCode = KVStore().getString(STORE_KEYS.COUNTRY);
       const languageCode = KVStore().getString(STORE_KEYS.LANGUAGE);

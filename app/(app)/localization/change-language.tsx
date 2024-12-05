@@ -12,25 +12,27 @@ import { STORE_KEYS } from '@/constants/store-keys';
 import i18n from '@/common/config/i18n';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useQueryClient } from '@tanstack/react-query';
 
 export default function ChangeLanguage() {
   const { t } = useTranslation();
   const router = useRouter();
   const insets = useSafeAreaInsets();
+  const queryClient = useQueryClient();
 
   const languages = i18n.languages.map((language) => ({
     id: language,
     label: t(`languages.${language}`),
   }));
 
-  const { country } = useLocalSearchParams();
+  const { country } = useLocalSearchParams<{ country: string }>();
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
 
   const handleDone = () => {
     if (selectedLanguage && country) {
       KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
-      KVStore().set(STORE_KEYS.COUNTRY, country as string);
-      // todo: invalidate country/lang query
+      KVStore().set(STORE_KEYS.COUNTRY, country.toUpperCase());
+      queryClient.invalidateQueries({ queryKey: ['country-language'] });
       router.dismissAll();
       router.back();
     }

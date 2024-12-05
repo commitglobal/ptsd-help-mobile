@@ -142,7 +142,7 @@ export const useTools = () => {
     WORRY_TIME: {
       id: 'worry-time',
       label: toolsTranslationKeys.WORRY_TIME.label,
-      photoUrl: mediaMapping?.['WORRY_TIME.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['WORRY_TIME.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/worry-time',
       type: ToolType.TOOL,
     },
