@@ -3,8 +3,6 @@ import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'expo-router';
 import { Icon } from '@/components/Icon';
-import { KVStore } from '@/helpers/mmkv';
-import { STORE_KEYS } from '@/constants/store-keys';
 import { FlashList } from '@shopify/flash-list';
 import { Typography } from '@/components/Typography';
 import { YStack } from 'tamagui';
@@ -51,9 +49,7 @@ export default function ChangeCountry() {
         mainActionLabel: t('choose-country.next'),
         onMainAction: () => {
           if (selectedCountry) {
-            // TODO: do we leave the selection here?
-            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
-            router.push('/localization/change-language');
+            router.push(`/localization/change-language?country=${selectedCountry}`);
           }
         },
         mainActionDisabled: !selectedCountry,

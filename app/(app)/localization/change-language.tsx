@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Icon } from '@/components/Icon';
 import { FlashList } from '@shopify/flash-list';
 import { Typography } from '@/components/Typography';
@@ -23,7 +23,18 @@ export default function ChangeLanguage() {
     label: t(`languages.${language}`),
   }));
 
+  const { country } = useLocalSearchParams();
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
+
+  const handleDone = () => {
+    if (selectedLanguage && country) {
+      KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+      KVStore().set(STORE_KEYS.COUNTRY, country as string);
+      // todo: invalidate country/lang query
+      router.dismissAll();
+      router.back();
+    }
+  };
 
   return (
     <Screen
@@ -38,14 +49,7 @@ export default function ChangeLanguage() {
       }}
       footerProps={{
         mainActionLabel: t('choose-language.done'),
-        onMainAction: () => {
-          if (selectedLanguage) {
-            // TODO: do we leave the selection here?
-            KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
-            router.dismissAll();
-            router.back();
-          }
-        },
+        onMainAction: handleDone,
       }}>
       <FlashList
         ListHeaderComponent={() => (
