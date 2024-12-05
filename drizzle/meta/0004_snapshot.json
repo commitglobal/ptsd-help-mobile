@@ -2,7 +2,7 @@
   "version": "6",
   "dialect": "sqlite",
   "id": "4339f4f5-0d57-4068-bec8-8e306a610b88",
-  "prevId": "ff3bd48f-0b4f-41ef-a2b0-5cd5203e228c",
+  "prevId": "77b0239c-35ec-4d3a-82f8-46b0e3ef0d53",
   "tables": {
     "feelings": {
       "name": "feelings",

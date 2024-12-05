@@ -111,6 +111,7 @@ const useTranslationKeys = () => {
         SLEEP_HABITS: {
           label: 'list.sleep-habits',
           description: 'sleep.sleep-habits.description',
+          save: 'sleep.sleep-habits.save',
           list: {
             relaxingActivities: 'sleep.sleep-habits.list.relaxing-activities',
             awakeActivities: 'sleep.sleep-habits.list.awake-activities',

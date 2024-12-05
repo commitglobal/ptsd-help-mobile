@@ -183,6 +183,7 @@
     "sleep-habits": {
       "title": "Obiceiuri bune pentru somn",
       "description": "Încorporarea de noi obiceiuri în rutina de noapte poate ajuta la un somn mai lin. Folosește următoarele instrumente pentru a-ți modela programul actual într-unul care să conducă la un somn de calitate.",
+      "save": "Salvează",
       "list": {
         "relaxing-activities": "Activități de relaxare",
         "awake-activities": "Activități pentru a ma tine treaz",

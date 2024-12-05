@@ -342,6 +342,7 @@
     "sleep-habits": {
       "title": "Good Sleep Habits",
       "description": "Incorporating new habits into your nighttime routine can help achieve smoother sleep. Use the following tools to shape your current schedule into one that leads to quality sleep.",
+      "save": "RO/en: Save",
       "list": {
         "relaxing-activities": "Relaxing Activities",
         "awake-activities": "Activities to Stay Awake",

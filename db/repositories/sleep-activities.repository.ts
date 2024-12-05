@@ -36,6 +36,10 @@ class SleepActivitiesRepository {
     return this.databaseInstance.select().from(sleepActivities);
   };
 
+  private deleteAllSleepActivities = async () => {
+    await this.databaseInstance.delete(sleepActivities);
+  };
+
   public getSleepActivityByType = async (type: SleepActivityType): Promise<SleepActivity | null> => {
     try {
       const $sleepActivities = await this.databaseInstance
@@ -55,21 +59,26 @@ class SleepActivitiesRepository {
     }
   };
 
-  public createSleepActivity = async (sleepActivity: SleepActivity): Promise<void> => {
+  public createSleepActivity = async (sleepActivity: SleepActivity): Promise<any> => {
     try {
-      await this.databaseInstance.insert(sleepActivities).values(sleepActivity);
+      const result = await this.databaseInstance.insert(sleepActivities).values(sleepActivity);
+      return result;
     } catch (error) {
       console.error('Failed to create sleep activity:', error);
       throw new DatabaseError('Failed to create sleep activity in database');
     }
   };
 
-  public updateSleepActivity = async (sleepActivityType: SleepActivityType, favorites: string[]): Promise<void> => {
+  public updateSleepActivity = async (
+    sleepActivityType: SleepActivityType,
+    updates: Partial<SleepActivity>
+  ): Promise<any> => {
     try {
-      await this.databaseInstance
+      const result = await this.databaseInstance
         .update(sleepActivities)
-        .set({ favorites })
+        .set(updates)
         .where(eq(sleepActivities.type, sleepActivityType));
+      return result;
     } catch (error) {
       console.error('Failed to update sleep activity:', error);
       throw new DatabaseError('Failed to update sleep activity in database');
