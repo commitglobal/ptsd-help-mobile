@@ -3,12 +3,13 @@ import { Screen } from '@/components/Screen';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import { useRouter } from 'expo-router';
-import { Circle, ScrollView, XStack, YStack } from 'tamagui';
+import { ScrollView, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { useFeelingsContext } from '@/contexts/FeelingsContextProvider';
 import { format } from 'date-fns';
 import { MainFeeling } from '@/enums/MainFeeling';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { BulletPoint } from '@/components/BulletPoint';
 
 export default function FeelingsSummary() {
   const { t } = useTranslation('tools');
@@ -56,12 +57,7 @@ export default function FeelingsSummary() {
             </Typography>
             {feelings[mainFeeling as MainFeeling]?.length !== 0 &&
               feelings[mainFeeling as MainFeeling]?.map((secondaryFeeling) => {
-                return (
-                  <XStack key={secondaryFeeling} alignItems='center' gap='$xxs'>
-                    <Circle size={8} backgroundColor='$blue11' />
-                    <Typography>{t(secondaryFeeling)}</Typography>
-                  </XStack>
-                );
+                return <BulletPoint key={secondaryFeeling} text={t(secondaryFeeling)} />;
               })}
           </YStack>
         ))}

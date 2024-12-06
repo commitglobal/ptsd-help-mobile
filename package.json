@@ -16,6 +16,7 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "react-native-render-html": "^6.3.4",
     "@expo/vector-icons": "^14.0.2",
     "@floating-ui/react": "^0.26.25",
     "@react-native-community/slider": "4.5.2",
@@ -41,8 +42,10 @@
     "expo-sqlite": "~14.0.6",
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
+    "expo-updates": "~0.25.27",
     "expo-web-browser": "~13.0.3",
     "i18next": "^23.16.4",
+    "lottie-react-native": "^7.1.0",
     "moti": "^0.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -58,6 +61,7 @@
     "react-native-screens": "3.31.1",
     "react-native-svg": "15.2.0",
     "react-native-web": "~0.19.10",
+    "react-native-webview": "13.8.6",
     "tamagui": "^1.116.7",
     "expo-notifications": "~0.28.19",
     "expo-device": "~6.0.2"

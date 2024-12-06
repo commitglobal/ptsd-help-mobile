@@ -40,6 +40,9 @@ import Tasks from '../assets/icons/tasks.svg';
 import Book from '../assets/icons/book.svg';
 import Star from '../assets/icons/star.svg';
 import StarFilled from '../assets/icons/star-filled.svg';
+import Photo from '../assets/icons/photo.svg';
+import Music from '../assets/icons/music.svg';
+import Language from '../assets/icons/language.svg';
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -85,6 +88,9 @@ const iconRegistry: IconRegistry = {
   book: Book,
   star: Star,
   starFilled: StarFilled,
+  photo: Photo,
+  music: Music,
+  language: Language,
 };
 
 interface IconProps extends XStackProps {

@@ -4,7 +4,7 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
-import { ScrollView, XStack, YStack, Circle, Spinner } from 'tamagui';
+import { ScrollView, YStack, Spinner } from 'tamagui';
 import { format } from 'date-fns';
 import { useFeeling } from '@/services/feelings.service';
 import feelingsRepository from '@/db/repositories/feelings.repository';
@@ -13,6 +13,7 @@ import { getDiscomfortLevel, useDiscomfortLevels } from '@/contexts/FeelingsCont
 import { GenericError } from '@/components/GenericError';
 import { MainFeeling } from '@/enums/MainFeeling';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { BulletPoint } from '@/components/BulletPoint';
 
 export default function DeleteFeeling() {
   const { t } = useTranslation('tools');
@@ -86,12 +87,7 @@ export default function DeleteFeeling() {
                   </Typography>
                   {feeling.feelings[mainFeeling as MainFeeling]?.length !== 0 &&
                     feeling.feelings[mainFeeling as MainFeeling]?.map((secondaryFeeling) => {
-                      return (
-                        <XStack key={secondaryFeeling} alignItems='center' gap='$xxs'>
-                          <Circle size={8} backgroundColor='$blue11' />
-                          <Typography>{t(secondaryFeeling)}</Typography>
-                        </XStack>
-                      );
+                      return <BulletPoint key={secondaryFeeling} text={t(secondaryFeeling)} />;
                     })}
                 </YStack>
               ))}

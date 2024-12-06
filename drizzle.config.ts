@@ -5,4 +5,6 @@ export default defineConfig({
   out: './drizzle',
   dialect: 'sqlite',
   driver: 'expo',
+  verbose: true,
+  breakpoints: true,
 });

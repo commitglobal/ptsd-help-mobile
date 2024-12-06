@@ -12,7 +12,7 @@ enum ToolType {
 export type Tool = {
   id: string;
   label: string;
-  photoUrl: string;
+  icon: string;
   route: Href;
   type: ToolType;
   subcategories?: Partial<Record<ToolSubcategories, Tool>>;
@@ -27,7 +27,8 @@ type ToolCategories =
   | 'PAUSE'
   | 'MY_FEELINGS'
   | 'SLEEP'
-  | 'WORRY_TIME';
+  | 'WORRY_TIME'
+  | 'RID';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -50,35 +51,35 @@ export const useTools = () => {
     RELATIONSHIPS: {
       id: 'relationships',
       label: toolsTranslationKeys.RELATIONSHIPS.label,
-      photoUrl: mediaMapping?.['RELATIONSHIPS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['RELATIONSHIPS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/relationships',
       type: ToolType.CATEGORY,
       subcategories: {
         RECONNECT_WITH_PARTNER: {
           id: 'relationships-reconnect-with-partner',
           label: toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.label,
-          photoUrl: mediaMapping?.['RELATIONSHIPS.RECONNECT_WITH_PARTNER.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['RELATIONSHIPS.RECONNECT_WITH_PARTNER.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/relationships/reconnect-with-partner',
           type: ToolType.TOOL,
         },
         POSITIVE_COMMUNICATION: {
           id: 'relationships-positive-communication',
           label: toolsTranslationKeys.RELATIONSHIPS.subcategories.POSITIVE_COMMUNICATION.label,
-          photoUrl: mediaMapping?.['RELATIONSHIPS.POSITIVE_COMMUNICATION.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['RELATIONSHIPS.POSITIVE_COMMUNICATION.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/relationships/positive-communication',
           type: ToolType.TOOL,
         },
         I_MESSAGES: {
           id: 'relationships-i-messages',
           label: toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.label,
-          photoUrl: mediaMapping?.['RELATIONSHIPS.I_MESSAGES.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['RELATIONSHIPS.I_MESSAGES.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/relationships/iMessages',
           type: ToolType.TOOL,
         },
         HEALTHY_ARGUMENTS: {
           id: 'relationships-healthy-arguments',
           label: toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.label,
-          photoUrl: mediaMapping?.['RELATIONSHIPS.HEALTHY_ARGUMENTS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['RELATIONSHIPS.HEALTHY_ARGUMENTS.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/relationships/healthy-arguments',
           type: ToolType.TOOL,
         },
@@ -87,49 +88,49 @@ export const useTools = () => {
     AMBIENT_SOUNDS: {
       id: 'ambient-sounds',
       label: toolsTranslationKeys.AMBIENT_SOUNDS.label,
-      photoUrl: mediaMapping?.['AMBIENT_SOUNDS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['AMBIENT_SOUNDS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/ambient-sounds',
       type: ToolType.TOOL,
     },
     MINDFULNESS: {
       id: 'mindfulness',
       label: toolsTranslationKeys.MINDFULNESS.label,
-      photoUrl: mediaMapping?.['MINDFULNESS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['MINDFULNESS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/mindfulness',
       type: ToolType.CATEGORY,
       subcategories: {
         CONSCIOUS_BREATHING: {
           id: 'mindfulness-conscious-breathing',
           label: toolsTranslationKeys.MINDFULNESS.subcategories.CONSCIOUS_BREATHING.label,
-          photoUrl: mediaMapping?.['MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['MINDFULNESS.CONSCIOUS_BREATHING.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/mindfulness/conscious-breathing',
           type: ToolType.TOOL,
         },
         MINDFUL_WALKING: {
           id: 'mindfulness-mindful-walking',
           label: toolsTranslationKeys.MINDFULNESS.subcategories.MINDFUL_WALKING.label,
-          photoUrl: mediaMapping?.['MINDFULNESS.MINDFUL_WALKING.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['MINDFULNESS.MINDFUL_WALKING.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/mindfulness/mindful-walking',
           type: ToolType.TOOL,
         },
         EMOTIONAL_DISCOMFORT: {
           id: 'mindfulness-emotional-discomfort',
           label: toolsTranslationKeys.MINDFULNESS.subcategories.EMOTIONAL_DISCOMFORT.label,
-          photoUrl: mediaMapping?.['MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['MINDFULNESS.EMOTIONAL_DISCOMFORT.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/mindfulness/emotional-discomfort',
           type: ToolType.TOOL,
         },
         SENSE_AWARENESS: {
           id: 'mindfulness-sense-awareness',
           label: toolsTranslationKeys.MINDFULNESS.subcategories.SENSE_AWARENESS.label,
-          photoUrl: mediaMapping?.['MINDFULNESS.SENSE_AWARENESS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['MINDFULNESS.SENSE_AWARENESS.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/mindfulness/sense-awareness',
           type: ToolType.TOOL,
         },
         LOVING_KINDNESS: {
           id: 'mindfulness-loving-kindness',
           label: toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.label,
-          photoUrl: mediaMapping?.['MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/mindfulness/loving-kindness',
           type: ToolType.TOOL,
         },
@@ -138,35 +139,35 @@ export const useTools = () => {
     PAUSE: {
       id: 'pause',
       label: toolsTranslationKeys.PAUSE.label,
-      photoUrl: mediaMapping?.['PAUSE.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['PAUSE.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/pause',
       type: ToolType.TOOL,
     },
     MY_FEELINGS: {
       id: 'my-feelings',
       label: toolsTranslationKeys.MY_FEELINGS.label,
-      photoUrl: mediaMapping?.['MY_FEELINGS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['MY_FEELINGS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/my-feelings',
       type: ToolType.TOOL,
     },
     SLEEP: {
       id: 'sleep',
       label: toolsTranslationKeys.SLEEP.label,
-      photoUrl: mediaMapping?.['SLEEP.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['SLEEP.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/sleep',
       type: ToolType.CATEGORY,
       subcategories: {
         SLEEP_HELP: {
           id: 'sleep-help',
           label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_HELP.label,
-          photoUrl: mediaMapping?.['SLEEP.SLEEP_HELP.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['SLEEP.SLEEP_HELP.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/sleep/sleep-help',
           type: ToolType.TOOL,
         },
         SLEEP_HABITS: {
           id: 'sleep-habits',
           label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.label,
-          photoUrl: mediaMapping?.['SLEEP.SLEEP_HABITS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['SLEEP.SLEEP_HABITS.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/sleep/sleep-habits',
           type: ToolType.TOOL,
         },
@@ -174,7 +175,7 @@ export const useTools = () => {
         SLEEP_PERSPECTIVE: {
           id: 'sleep-perspective',
           label: toolsTranslationKeys.SLEEP.subcategories.SLEEP_PERSPECTIVE.label,
-          photoUrl: mediaMapping?.['SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          icon: mediaMapping?.['SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
           route: '/tools/sleep/sleep-perspective',
           type: ToolType.TOOL,
         },
@@ -183,8 +184,15 @@ export const useTools = () => {
     WORRY_TIME: {
       id: 'worry-time',
       label: toolsTranslationKeys.WORRY_TIME.label,
-      photoUrl: mediaMapping?.['WORRY_TIME.CATEGORY_ICON'] || DUMMY_PHOTO,
+      icon: mediaMapping?.['WORRY_TIME.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/worry-time',
+      type: ToolType.TOOL,
+    },
+    RID: {
+      id: 'rid',
+      label: toolsTranslationKeys.RID.label,
+      icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/rid',
       type: ToolType.TOOL,
     },
   };
