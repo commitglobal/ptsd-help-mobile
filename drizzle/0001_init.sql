@@ -1,6 +1,8 @@
-CREATE TABLE `i_worry` (
+CREATE TABLE `rid` (
 	`id` integer PRIMARY KEY NOT NULL,
-	`worry` text,
+	`trigger` text NOT NULL,
+	`difference` text NOT NULL,
+	`decision` text NOT NULL,
 	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	`deleted_at` text

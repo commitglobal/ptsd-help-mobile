@@ -100,6 +100,43 @@ const useTranslationKeys = () => {
         },
       },
     },
+    SLEEP: {
+      label: 'list.sleep',
+      subcategories: {
+        SLEEP_HELP: {
+          label: 'list.sleep-help',
+          header: 'sleep.sleep-help.header',
+          repeater: 'sleep.sleep-help.repeater',
+        },
+        SLEEP_HABITS: {
+          label: 'list.sleep-habits',
+          description: 'sleep.sleep-habits.description',
+          save: 'sleep.sleep-habits.save',
+          list: {
+            relaxingActivities: 'sleep.sleep-habits.list.relaxing-activities',
+            awakeActivities: 'sleep.sleep-habits.list.awake-activities',
+            noSleepActivities: 'sleep.sleep-habits.list.no-sleep-activities',
+            wakeUpActivities: 'sleep.sleep-habits.list.wake-up-activities',
+          },
+          relaxingActivities: 'sleep.sleep-habits.relaxing-activities.list',
+          relaxingActivitiesDescription: 'sleep.sleep-habits.relaxing-activities.description',
+          relaxingActivitiesReminderTitle: 'sleep.sleep-habits.relaxing-activities.reminder-title',
+          relaxingActivitiesReminderBody: 'sleep.sleep-habits.relaxing-activities.reminder-body',
+
+          awakeActivities: 'sleep.sleep-habits.awake-activities.list',
+          awakeActivitiesDescription: 'sleep.sleep-habits.awake-activities.description',
+          noSleepActivities: 'sleep.sleep-habits.no-sleep-activities.list',
+          noSleepActivitiesDescription: 'sleep.sleep-habits.no-sleep-activities.description',
+          wakeUpActivities: 'sleep.sleep-habits.wake-up-activities.list',
+          wakeUpActivitiesDescription: 'sleep.sleep-habits.wake-up-activities.description',
+        },
+        SLEEP_PERSPECTIVE: {
+          label: 'list.sleep-perspective',
+          description: 'sleep.sleep-perspective.description',
+          repeater: 'sleep.sleep-perspective.repeater',
+        },
+      },
+    },
     PAUSE: {
       label: 'list.pause',
       description: 'pause.pause.description',

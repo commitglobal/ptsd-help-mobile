@@ -3,6 +3,6 @@ import { openDatabaseSync } from 'expo-sqlite';
 
 // enableChangeListener - will enable live queries
 const expo = openDatabaseSync('db.db', { enableChangeListener: true });
-const db = drizzle(expo);
+const db = drizzle(expo, { logger: true });
 
 export default db;

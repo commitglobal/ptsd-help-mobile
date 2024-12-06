@@ -28,12 +28,15 @@ import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query
 import LoadingAssets from '@/components/LoadingAssets';
 import { DownloadProgress } from '@/helpers/download-progress';
 import useCountryLanguage from '@/hooks/useCountryLanguage';
+import * as FileSystem from 'expo-file-system';
 
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
   foggles: FogglesConfig;
   learnContent: LearnContent;
 };
+
+console.log(FileSystem.documentDirectory);
 
 const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null);
 

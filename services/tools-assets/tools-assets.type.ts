@@ -45,4 +45,8 @@ export type LocalToolsAssetsMapping = {
   'MY_FEELINGS.CATEGORY_ICON': string;
   'WORRY_TIME.CATEGORY_ICON': string;
   'RID.CATEGORY_ICON': string;
+  'SLEEP.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_HELP.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_HABITS.CATEGORY_ICON': string;
+  'SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON': string;
 };
