@@ -17,5 +17,6 @@ export const useLearnContent = (
             console.log('📕 useLearnContent');
             return fetchLearnContent(countryCode, languageCode, onProgress);
           },
+    retry: 0,
   });
 };

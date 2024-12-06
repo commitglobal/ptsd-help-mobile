@@ -41,8 +41,6 @@ const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null
 // TODO: Fallback to default country and language if there are no assets for the current country and language
 
 export const AssetsManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
-  console.log(FileSystem.documentDirectory);
-
   const { data: countryLanguage } = useCountryLanguage();
 
   const [toolsAssetsTotalProgress, setToolsAssetsTotalProgress] = useState<DownloadProgress>();
