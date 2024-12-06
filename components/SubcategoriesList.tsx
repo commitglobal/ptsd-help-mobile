@@ -1,7 +1,7 @@
 import { FlashList } from '@shopify/flash-list';
 import { ListCard } from './ListCard';
 import { YStack } from 'tamagui';
-import { Tool } from '@/_config/tools.config';
+import { Tool } from '@/hooks/useTools';
 
 const SubcategoriesList = ({
   subcategories,

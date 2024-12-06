@@ -1,31 +1,48 @@
 import React, { useState } from 'react';
-import { FlashList } from '@shopify/flash-list';
 import { Screen } from '@/components/Screen';
-import { Typography } from '@/components/Typography';
-import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
-import { useRouter } from 'expo-router';
-import i18n from '@/common/config/i18n';
+import { useLocalSearchParams, useRouter } from 'expo-router';
+import { Icon } from '@/components/Icon';
+import { FlashList } from '@shopify/flash-list';
+import { Typography } from '@/components/Typography';
 import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+import i18n from '@/common/config/i18n';
+import { Platform } from 'react-native';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useQueryClient } from '@tanstack/react-query';
 
-export default function ChooseLanguage() {
+export default function ChangeLanguage() {
   const { t } = useTranslation();
   const router = useRouter();
+  const insets = useSafeAreaInsets();
+  const queryClient = useQueryClient();
 
   const languages = i18n.languages.map((language) => ({
     id: language,
     label: t(`languages.${language}`),
   }));
 
+  const { country } = useLocalSearchParams<{ country: string }>();
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
+
+  const handleDone = () => {
+    if (selectedLanguage && country) {
+      KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+      KVStore().set(STORE_KEYS.COUNTRY, country.toUpperCase());
+      queryClient.invalidateQueries({ queryKey: ['country-language'] });
+      router.dismissAll();
+      router.back();
+    }
+  };
 
   return (
     <Screen
       headerProps={{
-        title: t('choose-language.title'),
+        title: t('choose-language.choose'),
+        paddingTop: Platform.OS === 'ios' ? '$md' : insets.top + 16,
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: router.back,
       }}
@@ -33,24 +50,14 @@ export default function ChooseLanguage() {
         backgroundColor: 'white',
       }}
       footerProps={{
-        mainActionLabel: t('choose-language.next'),
-        onMainAction: () => {
-          if (selectedLanguage) {
-            KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
-            router.push('/onboarding/onboarding-slider');
-          }
-        },
+        mainActionLabel: t('choose-language.done'),
+        onMainAction: handleDone,
       }}>
       <FlashList
         ListHeaderComponent={() => (
-          <>
-            <Typography preset='heading' textAlign='center' marginBottom='$md'>
-              {t('choose-language.choose')}
-            </Typography>
-            <Typography textAlign='center' marginBottom='$md'>
-              {t('choose-language.subtitle')}
-            </Typography>
-          </>
+          <Typography textAlign='center' marginBottom='$md'>
+            {t('choose-language.subtitle')}
+          </Typography>
         )}
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{

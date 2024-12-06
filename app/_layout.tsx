@@ -4,7 +4,6 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 
-import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
 import { PortalProvider, TamaguiProvider } from 'tamagui';
 import appConfig from '@/tamagui.config';
 
@@ -13,8 +12,7 @@ import db from '@/db/db';
 import migrations from '@/drizzle/migrations';
 import { Typography } from '@/components/Typography';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
-import NotificationsContextProvider from '@/contexts/NotificationsContextProvider';
+import { LogBox } from 'react-native';
 import * as Notifications from 'expo-notifications';
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -28,6 +26,9 @@ const queryClient = new QueryClient({
     },
   },
 });
+
+// https://github.com/meliorence/react-native-render-html/issues/661#issuecomment-2453476566
+LogBox.ignoreLogs([/Support for defaultProps will be removed/]);
 
 Notifications.setNotificationHandler({
   handleNotification: async () => ({
@@ -77,15 +78,9 @@ export default function RootLayout() {
   return (
     <TamaguiProvider config={appConfig}>
       <QueryClientProvider client={queryClient}>
-        <NotificationsContextProvider>
-          <PortalProvider>
-            <AssetsManagerContextProvider>
-              <ToolManagerContextProvider>
-                <Slot />
-              </ToolManagerContextProvider>
-            </AssetsManagerContextProvider>
-          </PortalProvider>
-        </NotificationsContextProvider>
+        <PortalProvider>
+          <Slot />
+        </PortalProvider>
       </QueryClientProvider>
     </TamaguiProvider>
   );

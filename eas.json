@@ -1,7 +1,7 @@
 {
   "cli": {
     "version": ">= 12.6.2",
-    "appVersionSource": "remote"
+    "appVersionSource": "local"
   },
   "build": {
     "development": {
@@ -17,6 +17,12 @@
     },
     "preview": {
       "distribution": "internal"
+    },
+    "staging": {
+      "channel": "staging",
+      "env": {
+        "EXPO_PUBLIC_ENVIRONMENT": "staging"
+      }
     },
     "production": {
       "autoIncrement": true

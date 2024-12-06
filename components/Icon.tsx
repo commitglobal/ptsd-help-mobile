@@ -35,6 +35,9 @@ import Calendar from '../assets/icons/calendar.svg';
 import Check from '../assets/icons/check.svg';
 import MusicalNote from '../assets/icons/musical-note.svg';
 import ExclamationCircle from '../assets/icons/exclamation-circle.svg';
+import Photo from '../assets/icons/photo.svg';
+import Music from '../assets/icons/music.svg';
+import Language from '../assets/icons/language.svg';
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -75,6 +78,9 @@ const iconRegistry: IconRegistry = {
   check: Check,
   musicalNote: MusicalNote,
   exclamationCircle: ExclamationCircle,
+  photo: Photo,
+  music: Music,
+  language: Language,
 };
 
 interface IconProps extends XStackProps {
