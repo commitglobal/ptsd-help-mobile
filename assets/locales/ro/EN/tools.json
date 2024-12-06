@@ -974,6 +974,8 @@
     "take-picture": "RO/en: Take a picture",
     "pick-from-library": "RO/en: Pick an image from the library",
     "delete-image": "RO/en: Delete image",
-    "modify-image": "RO/en: Modify image"
+    "modify-image": "RO/en: Modify image",
+    "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
+    "edit": "RO/en: Edit strength"
   }
 }

@@ -4,12 +4,13 @@ import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { Icon } from '@/components/Icon';
 import { useRouter } from 'expo-router';
-import { YStack, Image } from 'tamagui';
+import { YStack, Image, XStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import strengthsRepository, { Strength } from '@/db/repositories/strengths.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { FlashList } from '@shopify/flash-list';
+import { Card } from '@/components/Card';
 
 const MyStrengths = () => {
   const { t } = useTranslation('tools');
@@ -32,7 +33,7 @@ const MyStrengths = () => {
         mainActionLabel: t(toolsTranslationKeys.MY_STRENGTHS.done),
         onMainAction: finishTool,
         secondaryActionLabel: t(toolsTranslationKeys.MY_STRENGTHS.add),
-        onSecondaryAction: () => router.push('/tools/my-strengths/add-strength'),
+        onSecondaryAction: () => router.push('/tools/my-strengths/strength'),
       }}>
       <FlashList
         bounces={false}
@@ -42,7 +43,9 @@ const MyStrengths = () => {
         }
         contentContainerStyle={{ padding: 16 }}
         data={strengths}
-        renderItem={({ item }) => <StrengthItem strength={item} />}
+        renderItem={({ item }) => (
+          <StrengthItem strength={item} onPress={() => router.push(`/tools/my-strengths/strength?id=${item.id}`)} />
+        )}
         estimatedItemSize={400}
         ItemSeparatorComponent={() => <YStack height={16} />}
       />
@@ -52,12 +55,31 @@ const MyStrengths = () => {
 
 export default MyStrengths;
 
-const StrengthItem = ({ strength }: { strength: Strength }) => {
+const StrengthItem = ({ strength, onPress }: { strength: Strength; onPress: () => void }) => {
   const { strength: strengthText, image } = strength;
+  const [isPortrait, setIsPortrait] = React.useState<boolean | null>(null);
+
   return (
-    <YStack borderWidth={1}>
-      {image && <Image source={{ uri: image }} />}
-      <Typography>{strengthText}</Typography>
-    </YStack>
+    <Card onPress={onPress}>
+      {image && (
+        <XStack>
+          <Image
+            source={{ uri: image }}
+            onLoad={(e) => {
+              const { width, height } = e.nativeEvent.source;
+              setIsPortrait(height > width);
+            }}
+            objectFit='cover'
+            style={{ width: '100%', borderRadius: 9, aspectRatio: isPortrait ? 9 / 16 : 16 / 9 }}
+          />
+        </XStack>
+      )}
+
+      {strengthText && (
+        <YStack padding='$md'>
+          <Typography>{strengthText}</Typography>
+        </YStack>
+      )}
+    </Card>
   );
 };

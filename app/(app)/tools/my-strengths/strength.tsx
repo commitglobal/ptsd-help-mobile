@@ -1,33 +1,48 @@
-import React, { useMemo, useRef, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
-import { useRouter } from 'expo-router';
+import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Icon } from '@/components/Icon';
-import { ScrollView, YStack } from 'tamagui';
+import { ScrollView, YStack, Image } from 'tamagui';
 import TextFormInput from '@/components/TextFormInput';
 import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
-import { Image, TextInput } from 'react-native';
+import { TextInput } from 'react-native';
 import { pickImageFromLibrary, takePicture } from '@/common/utils/camera';
 import { BottomSheet } from '@/components/BottomSheet';
 import { Typography } from '@/components/Typography';
 import { ImageFormInput } from '@/components/ImageFormInput';
 import strengthsRepository from '@/db/repositories/strengths.repository';
+import { Modal } from '@/components/Modal';
+import { useStrength } from '@/services/strengths.service';
 
-const AddStrength = () => {
+const Strength = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const router = useRouter();
   const scrollViewRef = useRef<ScrollView>(null);
   const textareaRef = useRef<TextInput>(null);
 
+  const { id: strengthId } = useLocalSearchParams();
+  const { data: strength } = useStrength(Number(strengthId));
+
+  // sync state with strength in case it comes from dbs
+  useEffect(() => {
+    if (strength) {
+      setText(strength.strength || '');
+      setImage(strength.image || null);
+    }
+  }, [strength]);
+
   const [image, setImage] = useState<string | null>(null);
+  const [isPortrait, setIsPortrait] = useState<boolean | null>(null);
   const [text, setText] = useState('');
 
   const canSubmit = useMemo(() => image || text.trim().length > 0, [image, text]);
 
   const [optionsSheetOpen, setOptionsSheetOpen] = useState(false);
   const [imageOptionsSheetOpen, setImageOptionsSheetOpen] = useState(false);
+  const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
 
   const handlePickImageFromLibrary = async () => {
     setOptionsSheetOpen(false);
@@ -89,7 +104,10 @@ const AddStrength = () => {
             label={t(toolsTranslationKeys.MY_STRENGTHS.strengthLabel)}
             placeholder={t(toolsTranslationKeys.MY_STRENGTHS.placeholder)}
             onFocus={() => handleTextareaFocus(scrollViewRef, textareaRef)}
+            value={text}
             onChangeText={setText}
+            infoMessage={t(toolsTranslationKeys.MY_STRENGTHS.info)}
+            onInfoMessagePress={() => setIsInfoModalOpen(true)}
           />
           {image ? (
             <>
@@ -97,12 +115,17 @@ const AddStrength = () => {
               <YStack
                 alignItems='center'
                 justifyContent='center'
-                backgroundColor='white'
-                borderRadius={9}
-                padding='$md'
                 onPress={() => setImageOptionsSheetOpen(true)}
                 pressStyle={{ opacity: 0.8 }}>
-                <Image source={{ uri: image }} resizeMode='contain' style={{ width: '100%', height: 400 }} />
+                <Image
+                  source={{ uri: image }}
+                  onLoad={(e) => {
+                    const { width, height } = e.nativeEvent.source;
+                    setIsPortrait(height > width);
+                  }}
+                  objectFit='cover'
+                  style={{ width: '100%', borderRadius: 9, aspectRatio: isPortrait ? 9 / 16 : 16 / 9 }}
+                />
               </YStack>
             </>
           ) : (
@@ -128,11 +151,18 @@ const AddStrength = () => {
           handleModifyImage={handleModifyImage}
         />
       )}
+      {isInfoModalOpen && (
+        <Modal open onOpenChange={(open) => setIsInfoModalOpen(open)}>
+          <YStack minHeight={100}>
+            <Typography>{t(toolsTranslationKeys.MY_STRENGTHS.info)}</Typography>
+          </YStack>
+        </Modal>
+      )}
     </>
   );
 };
 
-export default AddStrength;
+export default Strength;
 
 const OptionsSheet = ({
   onOpenChange,

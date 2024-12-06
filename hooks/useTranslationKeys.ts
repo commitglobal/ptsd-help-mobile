@@ -317,6 +317,8 @@ const useTranslationKeys = () => {
       pickFromLibrary: 'my-strengths.pick-from-library',
       deleteImage: 'my-strengths.delete-image',
       modifyImage: 'my-strengths.modify-image',
+      info: 'my-strengths.info',
+      edit: 'my-strengths.edit',
     },
   };
 
