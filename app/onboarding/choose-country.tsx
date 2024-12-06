@@ -9,6 +9,7 @@ import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+
 const ChooseCountry = () => {
   const { t } = useTranslation();
   const router = useRouter();
@@ -46,7 +47,7 @@ const ChooseCountry = () => {
         mainActionLabel: t('choose-country.next'),
         onMainAction: () => {
           if (selectedCountry) {
-            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry);
+            KVStore().set(STORE_KEYS.COUNTRY, selectedCountry.toUpperCase());
             router.push('/onboarding/choose-language');
           }
         },

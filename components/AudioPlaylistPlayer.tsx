@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Typography } from './Typography';
 
 import { FlashList } from '@shopify/flash-list';
@@ -6,7 +6,6 @@ import { XStack, Card, YStack, YStackProps } from 'tamagui';
 import MediaPlayer from './MediaPlayer';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from './Icon';
-import { Asset } from 'expo-asset';
 import { useFocusEffect } from 'expo-router';
 
 export interface AudioFile {

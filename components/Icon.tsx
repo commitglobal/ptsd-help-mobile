@@ -36,6 +36,14 @@ import Check from '../assets/icons/check.svg';
 import MusicalNote from '../assets/icons/musical-note.svg';
 import ExclamationCircle from '../assets/icons/exclamation-circle.svg';
 import SolidPhoto from '../assets/icons/solid-photo.svg';
+import Tv from '../assets/icons/tv.svg';
+import Tasks from '../assets/icons/tasks.svg';
+import Book from '../assets/icons/book.svg';
+import Star from '../assets/icons/star.svg';
+import StarFilled from '../assets/icons/star-filled.svg';
+import Photo from '../assets/icons/photo.svg';
+import Music from '../assets/icons/music.svg';
+import Language from '../assets/icons/language.svg';
 
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
@@ -77,6 +85,14 @@ const iconRegistry: IconRegistry = {
   musicalNote: MusicalNote,
   exclamationCircle: ExclamationCircle,
   solidPhoto: SolidPhoto,
+  tv: Tv,
+  tasks: Tasks,
+  book: Book,
+  star: Star,
+  starFilled: StarFilled,
+  photo: Photo,
+  music: Music,
+  language: Language,
 };
 
 interface IconProps extends XStackProps {

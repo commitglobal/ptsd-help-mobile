@@ -1,9 +1,10 @@
+import { BulletPoint } from '@/components/BulletPoint';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
 import { useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Circle, Image, ScrollView, XStack } from 'tamagui';
+import { Image, ScrollView } from 'tamagui';
 
 export default function LicenceAgreement() {
   const { t } = useTranslation();
@@ -30,10 +31,7 @@ export default function LicenceAgreement() {
         </Typography>
         <Typography>{t('licence-agreement.p1')}</Typography>
         {list.map((item) => (
-          <XStack gap='$sm' key={item}>
-            <Circle size={5} backgroundColor='$blue11' marginTop='$sm' />
-            <Typography>{item}</Typography>
-          </XStack>
+          <BulletPoint key={item} text={item} />
         ))}
       </ScrollView>
     </Screen>

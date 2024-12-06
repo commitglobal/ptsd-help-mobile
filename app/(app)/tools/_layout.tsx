@@ -21,7 +21,9 @@ export default function ToolsLayout() {
 
       <Stack.Screen name='ambient-sounds' options={{ headerShown: false }} />
       <Stack.Screen name='my-feelings' options={{ headerShown: false }} />
+      <Stack.Screen name='sleep' options={{ headerShown: false }} />
       <Stack.Screen name='worry-time' options={{ headerShown: false }} />
+      <Stack.Screen name='rid' options={{ headerShown: false }} />
       <Stack.Screen name='my-strengths' options={{ headerShown: false }} />
     </Stack>
   );

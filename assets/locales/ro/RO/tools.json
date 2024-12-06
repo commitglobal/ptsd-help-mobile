@@ -11,7 +11,8 @@
     "emotional-discomfort": "RO/ro: Emotional Discomfort",
     "sense-awareness": "RO/ro: Sense Awareness",
     "loving-kindness": "RO/ro: Loving Kindness",
-    "pause": "RO/ro: Pause"
+    "pause": "RO/ro: Pause",
+    "sleep": "RO/ro: Instrumente pentru somn"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
@@ -93,6 +94,489 @@
   "mindfulness": {
     "conscious-breathing": {
       "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes."
+    }
+  },
+  "sleep": {
+    "sleep-help": {
+      "title": "RO/ro: Ajutor pentru a adormi",
+      "repeater": {
+        "1": {
+          "title": "Du-te la culcare numai când îți este somn."
+        },
+        "2": {
+          "title": "Dacă stai în pat timp de 20 de minute și încă nu dormi, ridică-te și fă altceva (fără a te expune la lumină puternică sau la un computer/telefon/ecran TV)."
+        },
+        "3": {
+          "title": "Ascultă muzică relaxantă."
+        },
+        "4": {
+          "title": "Citește ceva liniștitor."
+        },
+        "5": {
+          "title": "Bea o ceașcă de ceai decofeinizat."
+        },
+        "6": {
+          "title": "Bea o cană de lapte cald."
+        },
+        "7": {
+          "title": "Respiră lent și adânc pe nas - fă acest lucru timp de 10 minute. Poți folosi instrumentul de respirație din această aplicație dacă dorești."
+        },
+        "8": {
+          "title": "Mănâncă o gustare ușoară dacă îți este foame - ceva cu puțin zahăr sau deloc și fără alcool."
+        },
+        "9": {
+          "title": "Asigură-te că temperatura camerei este joasă."
+        },
+        "10": {
+          "title": "Încearcă să porți dopuri pentru urechi dacă există zgomot în jurul tău."
+        },
+        "11": {
+          "title": "Dacă există lumină în jur, încearcă să dormi cu o mască pentru ochi."
+        },
+        "12": {
+          "title": "Asigură-te că este întuneric în cameră."
+        },
+        "13": {
+          "title": "Încearcă să faci o baie caldă cu o oră sau 2 înainte de culcare."
+        },
+        "14": {
+          "title": "Asigură-te că ești confortabil și că îmbrăcămintea ta nu este incomodă."
+        },
+        "15": {
+          "title": "Evită să te uiți la ceas."
+        },
+        "16": {
+          "title": "Lasă-ți mintea să rătăcească. Nu te concentra prea mult asupra procesului de a adormi."
+        },
+        "17": {
+          "title": "Dacă te simți îngrijorat, ridică-te și notează-ți grijile, apoi încearcă să scapi de ele."
+        },
+        "18": {
+          "title": "Imaginează-ți un loc sigur și liniştitor: imaginează-te lângă un râu, un lac sau într-o poiană. Imaginează-ți toată scena, priveliștile, sunetele și mirosurile, în timp ce te relaxezi. Poți utiliza instrumentul de imagini pozitive din această aplicație dacă dorești."
+        },
+        "19": {
+          "title": "Simte toți mușchii corpului tău relaxați, ca și cum s-ar fi scufundat în saltea. Poți folosi instrumentul de relaxare musculară progresivă din această aplicație dacă dorești."
+        },
+        "20": {
+          "title": "Evită nicotina, cofeina și alcoolul seara."
+        },
+        "21": {
+          "title": "Evită prea multă sare în mâncare. Acest lucru te poate face să te trezești însetat pe tot parcursul nopții."
+        },
+        "22": {
+          "title": "Oprește calculatorul sau televizorul cu 30 de minute înainte de culcare."
+        },
+        "23": {
+          "title": "Creează-ți o rutină relaxantă la culcare."
+        },
+        "24": {
+          "title": "Ridică-te și bea un pahar cu apă."
+        },
+        "25": {
+          "title": "Asigură-te că cearșafurile sunt curate și că perna și salteaua sunt confortabile."
+        },
+        "26": {
+          "title": "Încearcă să nu îți faci griji din cauză că nu adormi. Continuă să încerci să te relaxezi."
+        }
+      }
+    },
+    "sleep-habits": {
+      "title": "Obiceiuri bune pentru somn",
+      "description": "Încorporarea de noi obiceiuri în rutina de noapte poate ajuta la un somn mai lin. Folosește următoarele instrumente pentru a-ți modela programul actual într-unul care să conducă la un somn de calitate.",
+      "save": "Salvează",
+      "list": {
+        "relaxing-activities": "Activități de relaxare",
+        "awake-activities": "Activități pentru a ma tine treaz",
+        "no-sleep-activities": "Activități pentru cand nu pot dormi",
+        "wake-up-activities": "Activități pentru a ma ajuta sa ma trezesc"
+      },
+      "relaxing-activities": {
+        "description": "A avea o perioadă de timp pentru relaxare înainte de a merge la culcare te poate ajuta să îți liniștești mintea și corpul. Acest timp este o tranziție între activitățile zilei și momentul în care mergi la culcare. Citește activitățile de mai jos pentru a explora câteva idei pentru lucruri de făcut în perioada de relaxare. Dacă o activitate continuă să funcționeze pentru tine, îți recomandăm să atingi steaua de lângă ea pentru a o marca drept favorită.",
+        "reminder-title": "RO/ro: Activitatea de relaxare pentru somn",
+        "reminder-body": "RO/ro: Folosește o activitate de relaxare pentru somn pentru a te ajuta să adormi mai ușor.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Alege hainele pe care să le porți a doua zi"
+          },
+          {
+            "id": 2,
+            "text": "Pregătește-ți prânzul pentru a doua zi"
+          },
+          {
+            "id": 3,
+            "text": "Pregătește cina pentru a doua zi și pune-o la frigider"
+          },
+          {
+            "id": 4,
+            "text": "Fă o baie sau un duș lung"
+          },
+          {
+            "id": 5,
+            "text": "Scrie note de mulțumire sau scurte mesaje către prieteni"
+          },
+          {
+            "id": 6,
+            "text": "Navighează pe internet (doar subiecte nestresante) sau fă research pentru viitoare cumpărături (mașini, electrocasnice, vacanțe)"
+          },
+          {
+            "id": 7,
+            "text": "Uită-te la filme sau episoade din emisiuni de televiziune pe care nu le-ai văzut de multă vreme (fără filme de acțiune sau thrillere)"
+          },
+          {
+            "id": 8,
+            "text": "Ieși cu câinele la o plimbare lungă"
+          },
+          {
+            "id": 9,
+            "text": "Îngrijește-ți animalele de companie"
+          },
+          {
+            "id": 10,
+            "text": "Ascultă muzică lentă, relaxantă sau instrumentală"
+          },
+          {
+            "id": 11,
+            "text": "Adună facturi și declarații vechi și aruncă-le dacă nu îți mai sunt utile"
+          },
+          {
+            "id": 12,
+            "text": "Fă ordine în colecții dacă ai - fotografii, scrisori vechi, cărți sau alte articole"
+          },
+          {
+            "id": 13,
+            "text": "Sortează rufele sau împăturește hainele"
+          },
+          {
+            "id": 14,
+            "text": "Lustruiește-ți pantofii"
+          },
+          {
+            "id": 15,
+            "text": "Calcă sau repară hainele"
+          },
+          {
+            "id": 16,
+            "text": "Scrie în jurnalul tău"
+          },
+          {
+            "id": 17,
+            "text": "Fă sport ușor pentru a-ți relaxa mușchii"
+          },
+          {
+            "id": 18,
+            "text": "Fă-ți pedichiura, manichiura sau un tratament facial"
+          },
+          {
+            "id": 19,
+            "text": "Mătură sau șterge podeaua bucătăriei"
+          },
+          {
+            "id": 20,
+            "text": "Curăță-ți dinții cu ață dentară"
+          },
+          {
+            "id": 21,
+            "text": "Tricotează"
+          },
+          {
+            "id": 22,
+            "text": "Pornește un alt proiect handmade"
+          }
+        ]
+      },
+      "awake-activities": {
+        "description": "Dacă ai probleme în a rămâne treaz până la ora la care vrei să mergi la culcare consultă secțiunea Activități care mă țin treaz de mai jos pentru idei care să te ajute cu senzațiile de somnolență profunde. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Lucrează la un hobby de care ești interesat"
+          },
+          {
+            "id": 2,
+            "text": "Citește o carte captivantă"
+          },
+          {
+            "id": 3,
+            "text": "Uită-te la un serial interesant"
+          },
+          {
+            "id": 4,
+            "text": "Scrie o scrisoare lungă"
+          },
+          {
+            "id": 5,
+            "text": "Sună un prieten"
+          },
+          {
+            "id": 6,
+            "text": "Fă exerciții ușoare "
+          },
+          {
+            "id": 7,
+            "text": "Ridică-te și fă câțiva pași"
+          },
+          {
+            "id": 8,
+            "text": "Fă treburi prin casă"
+          },
+          {
+            "id": 9,
+            "text": "Ascultă muzică veselă (cântă) "
+          },
+          {
+            "id": 10,
+            "text": "Dansează"
+          },
+          {
+            "id": 11,
+            "text": "Uită-te la o comedie"
+          },
+          {
+            "id": 12,
+            "text": "Aprinde toate luminile"
+          },
+          {
+            "id": 13,
+            "text": "Mergi afară (dacă este sigur să ieși din casă) "
+          },
+          {
+            "id": 14,
+            "text": "Pregătește prânzul pentru mâine"
+          },
+          {
+            "id": 15,
+            "text": "Pregătește mese pentru restul săptămânii"
+          },
+          {
+            "id": 16,
+            "text": "Aranjează rufele"
+          },
+          {
+            "id": 17,
+            "text": "Organizează fișiere pe calculator"
+          },
+          {
+            "id": 18,
+            "text": "Organizează sertare sau rafturi"
+          }
+        ]
+      },
+      "no-sleep-activities": {
+        "description": "Să te ridici din pat și să faci activități relaxante când nu poți să dormi te poate ajuta să asociezi patul doar cu somnul. Vezi secțiunea Activități pentru Miezul Nopții de mai jos pentru idei de lucruri pe care le poți face atunci când e greu să adormi. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Uită-te prin cataloage/reviste"
+          },
+          {
+            "id": 2,
+            "text": "Actualizează-ți agenda de contacte sau începe una online sau pe hârtie"
+          },
+          {
+            "id": 3,
+            "text": "Fă ordine prin mail-uri și facturi"
+          },
+          {
+            "id": 4,
+            "text": "Joacă solitaire online sau cu cărți de joc dacă nu ești o fire foarte competitivă"
+          },
+          {
+            "id": 5,
+            "text": "Citește"
+          },
+          {
+            "id": 6,
+            "text": "Fă o listă de cumpărături pentru săptămâna în curs"
+          },
+          {
+            "id": 7,
+            "text": "Planifică meniul pentru următoarele cine"
+          },
+          {
+            "id": 8,
+            "text": "Fă curat și organizează măsuța de cafea, locul de luat masa, blatul din bucătărie sau biroul"
+          },
+          {
+            "id": 9,
+            "text": "Creează o listă de activități pe care ți-ar plăcea să le faci în weekenduri sau în vacanță"
+          },
+          {
+            "id": 10,
+            "text": "Pune în ordine albumul foto sau jurnalul"
+          },
+          {
+            "id": 11,
+            "text": "Împăturește haine și pune-le la loc"
+          },
+          {
+            "id": 12,
+            "text": "Cumpără cadouri pentru zilele de naștere sau sărbători"
+          },
+          {
+            "id": 13,
+            "text": "Citește o revistă sau o carte ușoară"
+          },
+          {
+            "id": 14,
+            "text": "Fă o listă de materiale pentru un proiect do-it-yourself pentru casă"
+          },
+          {
+            "id": 15,
+            "text": "Alege două sertare în care să faci ordine (în birou, în baie sau în bucătărie)"
+          },
+          {
+            "id": 16,
+            "text": "Uită-te la showuri repetitive la televizor sau la reclame"
+          },
+          {
+            "id": 17,
+            "text": "Organizează-ți colecția de CD-uri sau DVD-uri și alege unele pentru a fi donate sau să le vinzi dacă nu mai ai nevoie de ele sau nu îți mai plac"
+          },
+          {
+            "id": 18,
+            "text": "Scrie gânduri pe un caiet pentru un timp. Folosește exercițiul ăsta pentru a scăpa de gânduri negative."
+          },
+          {
+            "id": 19,
+            "text": "Croșetează sau fă o activitate la care poți renunța ușor dacă ți se face somn"
+          },
+          {
+            "id": 20,
+            "text": "Citește o carte pentru copiii. Acestea sunt adesea liniștitoare și amuzante"
+          }
+        ]
+      },
+      "wake-up-activities": {
+        "description": "Dacă ai o activitate care te entuziasmează programată pentru dimineață, aceasta te poate ajuta să te ridici din pat mult mai energic. Vezi secțiunea Activități pentru dimineată de mai jos pentru idei de lucruri pe care să le faci dimineața. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "list": [
+          {
+            "id": 1,
+            "text": "Meditează sau roagă-te"
+          },
+          {
+            "id": 2,
+            "text": "Privește răsăritul"
+          },
+          {
+            "id": 3,
+            "text": "Scoate cățelul la o plimbare dacă ești într-o zonă sigură"
+          },
+          {
+            "id": 4,
+            "text": "Citește ziarul sau citește știrile online "
+          },
+          {
+            "id": 5,
+            "text": "Fă sport acasă sau mergi la sală"
+          },
+          {
+            "id": 6,
+            "text": "Mergi la magazin după cumpărături"
+          },
+          {
+            "id": 7,
+            "text": "Pregătește-ți prânzul pentru tine sau pentru toată familia"
+          },
+          {
+            "id": 8,
+            "text": "Bucură-te că te poți pregăti pentru mersul la lucru și că ai timp să pregătești copiii pentru școală fără să te grăbești"
+          },
+          {
+            "id": 9,
+            "text": "Fă ordine în jucăriile copiilor și alege lucruri de donat"
+          },
+          {
+            "id": 10,
+            "text": "Sortează hainele pentru pus la spălat sau calcă rufe"
+          },
+          {
+            "id": 11,
+            "text": "Planifică bugetul familiei într-un excel sau pe hârtie"
+          },
+          {
+            "id": 12,
+            "text": "Trimite emailuri către prieteni sau verifică emailul de lucru"
+          },
+          {
+            "id": 13,
+            "text": "Fă curat pe hard disk-uri vechi sau pe DVD-uri"
+          },
+          {
+            "id": 14,
+            "text": "Organizează facturi, documente sau alte hârtii"
+          },
+          {
+            "id": 15,
+            "text": "Pregătește ingredientele pentru cină (pune carne la marinat, taie legume etc)"
+          },
+          {
+            "id": 16,
+            "text": "Fă patul și curat în cameră"
+          },
+          {
+            "id": 17,
+            "text": "Trage draperiile și jaluzelele"
+          },
+          {
+            "id": 18,
+            "text": "Mătură prin casă sau în afara ei "
+          },
+          {
+            "id": 19,
+            "text": "Îngrijește puțin plantele din casă sau grădină, pune apă la flori "
+          },
+          {
+            "id": 20,
+            "text": "Verifică lista de taskuri pentru ziua în curs sau pentru săptămână"
+          }
+        ]
+      }
+    },
+    "sleep-perspective": {
+      "title": "RO/ro: Schimba perspectiva somnului",
+      "description": "RO/ro: Try these habits to improve your sleep quality",
+      "repeater": {
+        "1": {
+          "title": "Pot tolera asta."
+        },
+        "2": {
+          "title": "Voi supraviețui chiar dacă nu dorm deloc în noaptea asta."
+        },
+        "3": {
+          "title": "Am mai făcut asta, așa că știu că o pot face din nou."
+        },
+        "4": {
+          "title": "Nu trebuie să mă simt confortabil tot timpul. Sunt om."
+        },
+        "5": {
+          "title": "Aceasta este o altă provocare pe care o voi rezolva și o voi face față."
+        },
+        "6": {
+          "title": "Am mai trecut prin asta și am fost foarte bine."
+        },
+        "7": {
+          "title": "O noapte de somn prost nu este sfârșitul lumii."
+        },
+        "8": {
+          "title": "Această noapte agitată va trece."
+        },
+        "9": {
+          "title": "Deși se simte că nu voi dormi niciodată bine, s-ar putea să nu fie cazul. Anticiparea că s-ar putea să nu dorm bine îmi va înrăutăți probabil somnul. Am funcționat bine înainte chiar și după ce nu am dormit bine."
+        },
+        "10": {
+          "title": "Am funcționat prost înainte chiar și după ce am dormit bine."
+        },
+        "11": {
+          "title": "Deși anticipez un somn prost, ar putea fi bine... Am dormit bine înainte."
+        },
+        "12": {
+          "title": "Organismul reglează în mod natural somnul; chiar dacă îmi lipsește puțin somn, voi putea să funcționez."
+        },
+        "13": {
+          "title": "Dacă nu îmi fac griji în privința somnului, somnul prost într-o noapte îmi va îmbunătăți probabil somnul în noaptea următoare."
+        }
+      }
     }
   },
   "pause": {
