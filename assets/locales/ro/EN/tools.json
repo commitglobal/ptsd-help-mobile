@@ -13,7 +13,8 @@
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
     "my-feelings": "RO/en: My Feelings",
-    "worry-time": "RO/en: Worry Time"
+    "worry-time": "RO/en: Worry Time",
+    "rid": "RO/en: RID"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -441,5 +442,39 @@
     "daily-reminder": "RO/en: Daily",
     "ptsd-help": "RO/en: PTSD Help",
     "review": "RO/en: Review the issues that are causing you to worry."
+  },
+  "rid": {
+    "title": "RO/en: RID",
+    "start": "RO/en: Start",
+    "done": "RO/en: Done",
+    "description": "RO/en: The RID tool is designed for moments triggered by a reminder of past trauma. You will be guided through three steps to manage your state.",
+    "continue": "RO/en: Continue",
+    "relax": "RO/en: RID: Relax",
+    "relaxation": "RO/en: Relaxation",
+    "r": "R",
+    "i": "I",
+    "d": "D",
+    "rid-identify": "RO/en: RID: Identify",
+    "identify": "RO/en: Identify",
+    "identify-trigger": "RO/en: Identify trigger",
+    "breathe": "RO/en: Take 30 seconds to relax by breathing slowly and imagining that with every breath your tension is decreasing.",
+    "30-more": "Another 30 seconds of relaxation",
+    "review": "RO/en: Review the last few minutes or hours and see what reminders of your trauma you encountered. Triggers can be internal, such as thoughts or memories, or external, such as conversations, situations, or things we encounter in the world (for example, a certain person or place). Figuring out what is a trigger can sometimes be difficult. Don't worry if you can't identify the trigger, just focus on relaxing and calming yourself.\n\nOnce you have identified the trigger, if you can, it's important to notice that it is just a reminder and not the actual trauma repeating itself, despite your mind and body's reaction. Really notice how the current trigger is different from the trauma. Remind yourself of these differences again and again",
+    "trigger": "RO/en: What triggered your state?",
+    "trigger-placeholder": "RO/en: Something like: \"I was in a car accident\"",
+    "different": "RO/en: How is your current situation different than the traumatic experience?",
+    "placeholder": "Write your answer here...",
+    "rid-decide": "RO/en: RID: Decide",
+    "decide-next": "RO/en: Decide what to do next",
+    "final-step": "RO/en: You've reached the final step. If you feel stressed right now, you can try to reduce the power of the trigger by deciding to stay in place to see that you can cope and that the stress will decrease the longer you resist. If the trigger has made you very angry, it's best to decide to take a break. If you are in danger of hurting yourself or others, seek support and don't take any risks.",
+    "what-will-you-decide": "RO/en: What will you decide to do?",
+    "decision-placeholder": "RO/en: I will go back a few times until it stops triggering me so much.",
+    "rid-summary": "RO/en: RID Summary",
+    "triggered-how": "RO/en: How you were triggered:",
+    "different-situation": "RO/en: How your current situation is different than the traumatic experience:",
+    "you-decided": "RO/en: You decided:",
+    "empty": "RO/en: You haven't added any RIDs yet.",
+    "date": "Date:",
+    "delete": "RO/en: Delete RID"
   }
 }

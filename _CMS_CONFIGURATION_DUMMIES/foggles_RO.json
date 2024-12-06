@@ -48,6 +48,9 @@
       },
       "worry-time": {
         "enabled": true
+      },
+      "rid": {
+        "enabled": true
       }
     }
   }

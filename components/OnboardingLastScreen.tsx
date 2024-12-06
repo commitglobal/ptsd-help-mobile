@@ -1,11 +1,12 @@
 import React, { useMemo } from 'react';
-import { Circle, ScrollView, useWindowDimensions, XStack, YStack } from 'tamagui';
+import { ScrollView, useWindowDimensions, YStack } from 'tamagui';
 import { Typography } from './Typography';
 import { useTranslation } from 'react-i18next';
 import Button from './Button';
 import { useRouter } from 'expo-router';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+import { BulletPoint } from './BulletPoint';
 
 export const OnboardingLastScreen = () => {
   const { width } = useWindowDimensions();
@@ -43,10 +44,7 @@ export const OnboardingLastScreen = () => {
 
       <Typography preset='subheading'>{t('onboarding.welcome.personalize.title')}</Typography>
       {listItems.map((item) => (
-        <XStack key={item} gap='$sm'>
-          <Circle size={5} backgroundColor='$blue11' marginTop='$sm' />
-          <Typography>{item}</Typography>
-        </XStack>
+        <BulletPoint key={item} text={item} />
       ))}
       <Typography preset='helper'>{t('onboarding.welcome.personalize.modify_preferences')}</Typography>
 

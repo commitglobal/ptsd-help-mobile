@@ -20,7 +20,14 @@ export type Tool = {
 
 export type ToolConfigType = Record<ToolCategories, Tool>;
 
-type ToolCategories = 'RELATIONSHIPS' | 'AMBIENT_SOUNDS' | 'MINDFULNESS' | 'PAUSE' | 'MY_FEELINGS' | 'WORRY_TIME';
+type ToolCategories =
+  | 'RELATIONSHIPS'
+  | 'AMBIENT_SOUNDS'
+  | 'MINDFULNESS'
+  | 'PAUSE'
+  | 'MY_FEELINGS'
+  | 'WORRY_TIME'
+  | 'RID';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -144,6 +151,13 @@ export const useTools = () => {
       label: toolsTranslationKeys.WORRY_TIME.label,
       icon: mediaMapping?.['WORRY_TIME.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/worry-time',
+      type: ToolType.TOOL,
+    },
+    RID: {
+      id: 'rid',
+      label: toolsTranslationKeys.RID.label,
+      icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/rid',
       type: ToolType.TOOL,
     },
   };

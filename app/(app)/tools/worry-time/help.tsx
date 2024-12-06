@@ -7,6 +7,7 @@ import { Icon } from '@/components/Icon';
 import { useRouter } from 'expo-router';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { Platform } from 'react-native';
 
 export default function WorryTimeHelp() {
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -18,7 +19,8 @@ export default function WorryTimeHelp() {
     <Screen
       headerProps={{
         title: t(toolsTranslationKeys.WORRY_TIME.help),
-        paddingTop: '$md',
+        // this screen has a presentation type of modal, which is different on ios/android, therefore we need to adjust the paddingTop
+        paddingTop: Platform.OS === 'ios' ? '$md' : insets.top + 16,
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}

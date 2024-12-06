@@ -18,7 +18,6 @@
  */
 
 import { createContext, useContext, useMemo, useState } from 'react';
-import * as FileSystem from 'expo-file-system';
 import { Typography } from '@/components/Typography';
 import { useFoggles } from '@/services/foggles/foggles.query';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
