@@ -450,6 +450,10 @@
     "done": "RO/en: Done",
     "strength-label": "RO/en: What's something that you like or respect about yourself? What's something that you're doing well?",
     "placeholder": "RO/en: Write your strength here...",
-    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at."
+    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
+    "take-picture": "RO/en: Take a picture",
+    "pick-from-library": "RO/en: Pick an image from the library",
+    "delete-image": "RO/en: Delete image",
+    "modify-image": "RO/en: Modify image"
   }
 }

@@ -240,6 +240,10 @@ const useTranslationKeys = () => {
       strengthLabel: 'my-strengths.strength-label',
       placeholder: 'my-strengths.placeholder',
       pickImage: 'my-strengths.pick-image',
+      takePicture: 'my-strengths.take-picture',
+      pickFromLibrary: 'my-strengths.pick-from-library',
+      deleteImage: 'my-strengths.delete-image',
+      modifyImage: 'my-strengths.modify-image',
     },
   };
 
