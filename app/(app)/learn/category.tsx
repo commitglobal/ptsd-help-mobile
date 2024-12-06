@@ -3,23 +3,35 @@ import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
-import { router } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useMemo } from 'react';
+import { Typography } from '@/components/Typography';
 
-// TODOs:
-// - Take icons, imagesSrc, save them in the device and save the JSON with the local paths
+export default function LearnCategory() {
+  const { categoryId } = useLocalSearchParams<{ categoryId: string }>();
 
-export default function Learn() {
   const { learnContent } = useAssetsManagerContext();
+
+  const category = useMemo(
+    () => learnContent.categories.find((category) => category.id === categoryId),
+    [learnContent, categoryId]
+  );
+
+  if (!categoryId) {
+    return <Typography>CategoryId not passed as params</Typography>;
+  }
+
   return (
     <Screen
       headerProps={{
         title: learnContent.title,
-        iconRight: <Icon icon='info' color='white' width={24} height={24} />,
+        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
+        onLeftPress: () => router.back(),
       }}>
       <FlashList
         bounces={false}
-        data={learnContent.categories}
+        data={category?.topics}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
@@ -27,7 +39,7 @@ export default function Learn() {
             key={item.id}
             item={item}
             onPress={() => {
-              router.push({ pathname: '/learn/category', params: { categoryId: item.id } });
+              router.push({ pathname: '/learn/topic', params: { categoryId, topicId: item.id } });
             }}
           />
         )}
