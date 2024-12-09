@@ -19,16 +19,15 @@ export const StarListCard = ({ item, onUpdate, ...rest }: StarListCardProps) => 
   };
 
   return (
-    <Card {...rest} onPress={handlePress}>
-      <XStack alignItems='center'>
-        <XStack padding='$sm'>
-          <Icon
-            icon={isPressed ? 'starFilled' : 'star'}
-            color={isPressed ? '$orange9' : '$blue11'}
-            width={32}
-            height={32}
-          />
-        </XStack>
+    <Card {...rest} onPress={handlePress} padding='$sm'>
+      <XStack alignItems='center' gap='$sm'>
+        <Icon
+          icon={isPressed ? 'starFilled' : 'star'}
+          color={isPressed ? '$orange9' : '$blue11'}
+          width={32}
+          height={32}
+        />
+
         <Typography flex={1}>{item.label}</Typography>
       </XStack>
     </Card>
