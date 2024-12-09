@@ -7,6 +7,7 @@ import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export const MindfulWalkingPlayer = () => {
   const router = useRouter();
@@ -14,6 +15,8 @@ export const MindfulWalkingPlayer = () => {
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  const { finishTool } = useToolManagerContext();
 
   return (
     <>
@@ -24,6 +27,10 @@ export const MindfulWalkingPlayer = () => {
           title: t(toolsTranslationKeys.MINDFULNESS.subcategories.MINDFUL_WALKING.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
+        }}
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.MINDFUL_WALKING.done),
+          onMainAction: () => finishTool(),
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         <YStack>

@@ -7,6 +7,7 @@ import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export const SenseAwarenessPlayer = () => {
   const router = useRouter();
@@ -14,6 +15,8 @@ export const SenseAwarenessPlayer = () => {
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  const { finishTool } = useToolManagerContext();
 
   return (
     <>
@@ -25,7 +28,11 @@ export const SenseAwarenessPlayer = () => {
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
-        contentContainerStyle={{ backgroundColor: 'white' }}>
+        contentContainerStyle={{ backgroundColor: 'white' }}
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.SENSE_AWARENESS.done),
+          onMainAction: () => finishTool(),
+        }}>
         <YStack>
           <MediaPlayer mediaURI={mediaMapping['MINDFULNESS.SENSE_AWARENESS.soundURI']} isVideo={false} />
         </YStack>
