@@ -129,6 +129,7 @@ const useTranslationKeys = () => {
           relaxingActivitiesDescription: 'sleep.sleep-habits.relaxing-activities.description',
           relaxingActivitiesReminderTitle: 'sleep.sleep-habits.relaxing-activities.reminder-title',
           relaxingActivitiesReminderBody: 'sleep.sleep-habits.relaxing-activities.reminder-body',
+          relaxingActivitiesReminderTime: 'sleep.sleep-habits.relaxing-activities.reminder-time',
 
           awakeActivities: 'sleep.sleep-habits.awake-activities.list',
           awakeActivitiesDescription: 'sleep.sleep-habits.awake-activities.description',
