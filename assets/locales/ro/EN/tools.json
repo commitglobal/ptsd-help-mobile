@@ -354,6 +354,7 @@
         "description": "Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
         "reminder-title": "RO/en: Relaxing activity for sleep",
         "reminder-body": "RO/en: Use a relaxing activity for sleep to help you fall asleep easier.",
+        "reminder-time": "Daily",
         "list": [
           {
             "id": 1,

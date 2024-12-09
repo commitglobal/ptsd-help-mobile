@@ -1,5 +1,5 @@
 import { Icon } from '@/components/Icon';
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useTranslation } from 'react-i18next';
@@ -8,9 +8,8 @@ import sleepActivitiesRepository, { SleepActivityType } from '@/db/repositories/
 import StarList, { StarListItem } from '@/components/StarList';
 import { useSleepActivitiesByType } from '@/services/sleep-activities.service';
 import * as Notifications from 'expo-notifications';
-import { Separator } from 'tamagui';
 import { Typography } from '@/components/Typography';
-import { XStack, YStack } from 'tamagui';
+import { XStack, YStack, Separator } from 'tamagui';
 import { Switch } from '@/components/Switch';
 import { format } from 'date-fns';
 import { TimePicker } from '@/components/TimePicker';
@@ -163,7 +162,9 @@ export default function RelaxingActivities() {
                     <Separator />
 
                     <XStack justifyContent='space-between'>
-                      <Typography>{'ZILNIC'}</Typography>
+                      <Typography>
+                        {t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.relaxingActivitiesReminderTime)}
+                      </Typography>
                       <Typography>{format(time || new Date(), 'HH:mm')}</Typography>
                     </XStack>
 
