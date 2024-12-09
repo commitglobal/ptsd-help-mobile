@@ -17,6 +17,7 @@ const useTranslationKeys = () => {
         I_MESSAGES: {
           label: 'list.i-messages',
           title: 'relationships.tools.i-messages.title',
+          addMessage: 'relationships.tools.i-messages.add-message',
           findTime: 'relationships.tools.i-messages.find-time',
           text: 'relationships.tools.i-messages.text',
           when: 'relationships.tools.i-messages.when',

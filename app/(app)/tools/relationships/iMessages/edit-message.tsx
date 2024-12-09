@@ -115,17 +115,14 @@ export default function Message() {
       <Screen
         headerProps={{
           title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.edit.title),
-          iconLeft: <Icon icon='x' color='$gray12' width={24} height={24} />,
+          iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: handleGoBack,
-          iconRight: (
-            <Typography color='$gray12' fontWeight='bold'>
-              {t('common.save', { ns: 'translation' })}
-            </Typography>
-          ),
-          onRightPress: handleSubmit(onSubmit),
         }}
-        contentContainerStyle={{
-          backgroundColor: 'white',
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.save),
+          onMainAction: handleSubmit(onSubmit),
+          secondaryActionLabel: t('common.delete', { ns: 'translation' }),
+          onSecondaryAction: handleOpenDeleteMessageModal,
         }}>
         <ScrollView
           ref={scrollViewRef}
@@ -231,7 +228,6 @@ export default function Message() {
               />
             )}
           />
-          <Button onPress={handleOpenDeleteMessageModal}>{t('common.delete', { ns: 'translation' })}</Button>
         </ScrollView>
       </Screen>
       {infoMessage && (

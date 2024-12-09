@@ -7,7 +7,6 @@ import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ScrollView, YStack } from 'tamagui';
 import { Controller, useForm } from 'react-hook-form';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { Icon } from '@/components/Icon';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import messagesRepository, { Message } from '@/db/repositories/messages.repository';
@@ -15,7 +14,6 @@ import { scrollToItem } from '@/helpers/scrollToItem';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
-  const insets = useSafeAreaInsets();
 
   // using refs for scrolling capabilities
   const scrollViewRef = useRef<ScrollView>(null);
@@ -62,18 +60,12 @@ export default function NewMessage() {
       <Screen
         headerProps={{
           title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.title),
-          iconRight: (
-            <Typography color='$gray12' fontWeight='bold'>
-              {t('general.done', { ns: 'translation' })}
-            </Typography>
-          ),
-          onRightPress: handleSubmit(onSubmit),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: router.back,
         }}
-        contentContainerStyle={{
-          backgroundColor: 'white',
-          paddingBottom: insets.bottom,
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.save),
+          onMainAction: handleSubmit(onSubmit),
         }}>
         <ScrollView
           ref={scrollViewRef}
@@ -143,7 +135,7 @@ export default function NewMessage() {
                     t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)
                   )
                 }
-                errorMessage={errors.feel?.message as string}
+                errorMessage={errors.message?.message as string}
               />
             )}
           />
