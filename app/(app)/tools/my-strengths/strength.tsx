@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { Icon } from '@/components/Icon';
-import { ScrollView, YStack, Image } from 'tamagui';
+import { ScrollView, Spinner, YStack } from 'tamagui';
 import TextFormInput from '@/components/TextFormInput';
 import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
 import { TextInput } from 'react-native';
@@ -15,6 +15,7 @@ import { ImageFormInput } from '@/components/ImageFormInput';
 import strengthsRepository from '@/db/repositories/strengths.repository';
 import { Modal } from '@/components/Modal';
 import { useStrength } from '@/services/strengths.service';
+import { Image } from 'expo-image';
 
 const Strength = () => {
   const { t } = useTranslation('tools');
@@ -24,19 +25,24 @@ const Strength = () => {
   const textareaRef = useRef<TextInput>(null);
 
   const { id: strengthId } = useLocalSearchParams();
-  const { data: strength } = useStrength(Number(strengthId));
+  const { data: strengthData, isLoading: isLoadingStrength } = useStrength(Number(strengthId));
 
   // sync state with strength in case it comes from dbs
   useEffect(() => {
-    if (strength) {
-      setText(strength.strength || '');
-      setImage(strength.image || null);
+    if (strengthData) {
+      setText(strengthData.strength || '');
+      setImage(strengthData.image || null);
     }
-  }, [strength]);
+  }, [strengthData]);
 
-  const [image, setImage] = useState<string | null>(null);
+  const [image, setImage] = useState<string | null>(strengthData?.image || null);
+  const blurhash = useMemo(
+    () =>
+      '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[',
+    []
+  );
   const [isPortrait, setIsPortrait] = useState<boolean | null>(null);
-  const [text, setText] = useState('');
+  const [text, setText] = useState(strengthData?.strength || '');
 
   const canSubmit = useMemo(() => image || text.trim().length > 0, [image, text]);
 
@@ -70,7 +76,7 @@ const Strength = () => {
     setOptionsSheetOpen(true);
   };
 
-  const handleSubmit = async () => {
+  const handleAddStrength = async () => {
     await strengthsRepository.createStrength({
       strength: text,
       image,
@@ -81,60 +87,94 @@ const Strength = () => {
     router.back();
   };
 
+  const handleEditStrength = async () => {
+    try {
+      await strengthsRepository.updateStrength(Number(strengthId), {
+        strength: text,
+        image,
+        updatedAt: new Date().toISOString(),
+        createdAt: strengthData?.createdAt || new Date().toISOString(),
+        deletedAt: strengthData?.deletedAt || null,
+      });
+      router.back();
+    } catch (error) {
+      console.error('Error editing strength', error);
+    }
+  };
+
+  const handleDelete = async () => {
+    try {
+      await strengthsRepository.deleteStrength(Number(strengthId));
+      router.back();
+    } catch (error) {
+      console.error('Error deleting strength', error);
+    }
+  };
+
   return (
     <>
       <Screen
         headerProps={{
-          title: t(toolsTranslationKeys.MY_STRENGTHS.add),
+          title: strengthId ? t(toolsTranslationKeys.MY_STRENGTHS.titleEdit) : t(toolsTranslationKeys.MY_STRENGTHS.add),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: router.back,
         }}
         footerProps={{
           mainActionLabel: t(toolsTranslationKeys.MY_STRENGTHS.done),
-          onMainAction: handleSubmit,
+          onMainAction: strengthId ? handleEditStrength : handleAddStrength,
           mainActionDisabled: !canSubmit,
+          secondaryActionLabel: strengthId ? t(toolsTranslationKeys.MY_STRENGTHS.delete) : undefined,
+          onSecondaryAction: strengthId ? handleDelete : undefined,
         }}>
-        <ScrollView
-          ref={scrollViewRef}
-          bounces={false}
-          showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ padding: '$md', gap: '$md' }}>
-          <TextFormInput
-            ref={textareaRef}
-            label={t(toolsTranslationKeys.MY_STRENGTHS.strengthLabel)}
-            placeholder={t(toolsTranslationKeys.MY_STRENGTHS.placeholder)}
-            onFocus={() => handleTextareaFocus(scrollViewRef, textareaRef)}
-            value={text}
-            onChangeText={setText}
-            infoMessage={t(toolsTranslationKeys.MY_STRENGTHS.info)}
-            onInfoMessagePress={() => setIsInfoModalOpen(true)}
-          />
-          {image ? (
-            <>
-              <Typography>{t(toolsTranslationKeys.MY_STRENGTHS.pickImage)}</Typography>
-              <YStack
-                alignItems='center'
-                justifyContent='center'
-                onPress={() => setImageOptionsSheetOpen(true)}
-                pressStyle={{ opacity: 0.8 }}>
-                <Image
-                  source={{ uri: image }}
-                  onLoad={(e) => {
-                    const { width, height } = e.nativeEvent.source;
-                    setIsPortrait(height > width);
-                  }}
-                  objectFit='cover'
-                  style={{ width: '100%', borderRadius: 9, aspectRatio: isPortrait ? 9 / 16 : 16 / 9 }}
-                />
-              </YStack>
-            </>
-          ) : (
-            <ImageFormInput
-              label={t(toolsTranslationKeys.MY_STRENGTHS.pickImage)}
-              onPress={() => setOptionsSheetOpen(true)}
+        {isLoadingStrength ? (
+          <YStack>
+            <Spinner />
+          </YStack>
+        ) : (
+          <ScrollView
+            ref={scrollViewRef}
+            bounces={false}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{ padding: '$md', gap: '$md' }}>
+            <TextFormInput
+              ref={textareaRef}
+              label={t(toolsTranslationKeys.MY_STRENGTHS.strengthLabel)}
+              placeholder={t(toolsTranslationKeys.MY_STRENGTHS.placeholder)}
+              onFocus={() => handleTextareaFocus(scrollViewRef, textareaRef)}
+              value={text}
+              onChangeText={setText}
+              infoMessage={t(toolsTranslationKeys.MY_STRENGTHS.info)}
+              onInfoMessagePress={() => setIsInfoModalOpen(true)}
             />
-          )}
-        </ScrollView>
+            {image ? (
+              <>
+                <Typography>{t(toolsTranslationKeys.MY_STRENGTHS.pickImage)}</Typography>
+                <YStack
+                  alignItems='center'
+                  justifyContent='center'
+                  onPress={() => setImageOptionsSheetOpen(true)}
+                  pressStyle={{ opacity: 0.8 }}>
+                  <Image
+                    source={{ uri: image }}
+                    onLoad={(e) => {
+                      const { width, height } = e.source;
+                      setIsPortrait(height > width);
+                    }}
+                    placeholder={{ blurhash }}
+                    contentFit='cover'
+                    style={{ width: '100%', borderRadius: 9, aspectRatio: isPortrait ? 9 / 16 : 16 / 9 }}
+                    transition={1000}
+                  />
+                </YStack>
+              </>
+            ) : (
+              <ImageFormInput
+                label={t(toolsTranslationKeys.MY_STRENGTHS.pickImage)}
+                onPress={() => setOptionsSheetOpen(true)}
+              />
+            )}
+          </ScrollView>
+        )}
       </Screen>
 
       {optionsSheetOpen && (

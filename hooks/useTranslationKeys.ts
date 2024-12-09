@@ -307,6 +307,7 @@ const useTranslationKeys = () => {
     MY_STRENGTHS: {
       label: 'list.my-strengths',
       title: 'my-strengths.title',
+      titleEdit: 'my-strengths.title-edit',
       description: 'my-strengths.description',
       add: 'my-strengths.add',
       done: 'my-strengths.done',
@@ -319,6 +320,7 @@ const useTranslationKeys = () => {
       modifyImage: 'my-strengths.modify-image',
       info: 'my-strengths.info',
       edit: 'my-strengths.edit',
+      delete: 'my-strengths.delete',
     },
   };
 

@@ -965,6 +965,7 @@
   },
   "my-strengths": {
     "title": "RO/en: My Strengths",
+    "title-edit": "RO/en: Edit strength",
     "description": "RO/en: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
     "add": "RO/en: Add strength",
     "done": "RO/en: Done",
@@ -976,6 +977,7 @@
     "delete-image": "RO/en: Delete image",
     "modify-image": "RO/en: Modify image",
     "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
-    "edit": "RO/en: Edit strength"
+    "edit": "RO/en: Edit strength",
+    "delete": "RO/en: Delete strength"
   }
 }

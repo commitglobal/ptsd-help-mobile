@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { Icon } from '@/components/Icon';
 import { useRouter } from 'expo-router';
-import { YStack, Image, XStack } from 'tamagui';
+import { YStack, XStack, Spinner } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import strengthsRepository, { Strength } from '@/db/repositories/strengths.repository';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { FlashList } from '@shopify/flash-list';
 import { Card } from '@/components/Card';
+import { GenericError } from '@/components/GenericError';
+import { Image } from 'expo-image';
 
 const MyStrengths = () => {
   const { t } = useTranslation('tools');
@@ -18,9 +20,22 @@ const MyStrengths = () => {
   const router = useRouter();
 
   const { finishTool } = useToolManagerContext();
+  const { data: strengths, updatedAt, error } = useLiveQuery(strengthsRepository.getStrengths(), []);
 
-  // todo: loading and error
-  const { data: strengths } = useLiveQuery(strengthsRepository.getStrengths(), []);
+  // error screen
+  if (updatedAt !== undefined && error) {
+    return (
+      <Screen
+        headerProps={{
+          title: t(toolsTranslationKeys.MY_STRENGTHS.title),
+          iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
+          onLeftPress: router.back,
+        }}
+        contentContainerStyle={{ padding: 24 }}>
+        <GenericError />
+      </Screen>
+    );
+  }
 
   return (
     <Screen
@@ -35,20 +50,28 @@ const MyStrengths = () => {
         secondaryActionLabel: t(toolsTranslationKeys.MY_STRENGTHS.add),
         onSecondaryAction: () => router.push('/tools/my-strengths/strength'),
       }}>
-      <FlashList
-        bounces={false}
-        showsVerticalScrollIndicator={false}
-        ListHeaderComponent={
-          <Typography marginBottom={24}>{t(toolsTranslationKeys.MY_STRENGTHS.description)}</Typography>
-        }
-        contentContainerStyle={{ padding: 16 }}
-        data={strengths}
-        renderItem={({ item }) => (
-          <StrengthItem strength={item} onPress={() => router.push(`/tools/my-strengths/strength?id=${item.id}`)} />
-        )}
-        estimatedItemSize={400}
-        ItemSeparatorComponent={() => <YStack height={16} />}
-      />
+      {/* loading state */}
+      {updatedAt === undefined ? (
+        <YStack flex={1} justifyContent='center' alignItems='center'>
+          <Spinner color='$blue11' size='large' />
+        </YStack>
+      ) : (
+        // content
+        <FlashList
+          bounces={false}
+          showsVerticalScrollIndicator={false}
+          ListHeaderComponent={
+            <Typography marginBottom={24}>{t(toolsTranslationKeys.MY_STRENGTHS.description)}</Typography>
+          }
+          contentContainerStyle={{ padding: 16 }}
+          data={strengths}
+          renderItem={({ item }) => (
+            <StrengthItem strength={item} onPress={() => router.push(`/tools/my-strengths/strength?id=${item.id}`)} />
+          )}
+          estimatedItemSize={400}
+          ItemSeparatorComponent={() => <YStack height={16} />}
+        />
+      )}
     </Screen>
   );
 };
@@ -57,22 +80,39 @@ export default MyStrengths;
 
 const StrengthItem = ({ strength, onPress }: { strength: Strength; onPress: () => void }) => {
   const { strength: strengthText, image } = strength;
-  const [isPortrait, setIsPortrait] = React.useState<boolean | null>(null);
+  const [imageSize, setImageSize] = React.useState<{ width: number; height: number } | null>(null);
+
+  const isPortrait = useMemo(
+    () => (imageSize?.height && imageSize?.width ? imageSize.height > imageSize.width : null),
+    [imageSize?.height, imageSize?.width]
+  );
+  const blurhash = useMemo(
+    () =>
+      '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[',
+    []
+  );
 
   return (
-    <Card onPress={onPress}>
+    <Card onPress={onPress} pressStyle={{ opacity: 1 }}>
       {image && (
-        <XStack>
-          <Image
-            source={{ uri: image }}
-            onLoad={(e) => {
-              const { width, height } = e.nativeEvent.source;
-              setIsPortrait(height > width);
-            }}
-            objectFit='cover'
-            style={{ width: '100%', borderRadius: 9, aspectRatio: isPortrait ? 9 / 16 : 16 / 9 }}
-          />
-        </XStack>
+        <>
+          <XStack>
+            <Image
+              source={{ uri: image }}
+              onLoad={(e) => {
+                const { width, height } = e.source;
+                setImageSize({ width, height });
+              }}
+              contentFit='cover'
+              style={{
+                width: '100%',
+                borderRadius: 9,
+                aspectRatio: isPortrait ? 9 / 16 : 16 / 9,
+              }}
+              placeholder={{ blurhash }}
+            />
+          </XStack>
+        </>
       )}
 
       {strengthText && (
