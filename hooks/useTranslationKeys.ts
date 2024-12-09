@@ -315,7 +315,9 @@ const useTranslationKeys = () => {
       label: 'list.recreational-activities',
       subcategories: {
         RECREATIONAL_ACTIVITIES_ALONE: {
-          label: 'list.recreational-activities-alone',
+          label: 'recreational-activities-alone.label',
+          title: 'recreational-activities-alone.title',
+          repeater: 'recreational-activities-alone.repeater',
         },
         RECREATIONAL_ACTIVITIES_CITY: {
           label: 'list.recreational-activities-city',

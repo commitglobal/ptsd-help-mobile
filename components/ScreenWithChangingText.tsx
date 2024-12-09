@@ -3,7 +3,7 @@ import { Typography } from './Typography';
 import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithImageHeader';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
-  staticText: string;
+  staticText?: string;
   items: { id: string; title?: string; description?: string }[];
   children?: React.ReactNode;
 }
