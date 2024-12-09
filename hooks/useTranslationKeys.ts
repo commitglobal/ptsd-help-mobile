@@ -10,6 +10,7 @@ const useTranslationKeys = () => {
         },
         POSITIVE_COMMUNICATION: {
           label: 'list.positive-communication',
+          title: 'relationships.tools.positive-communication.title',
           helper: 'relationships.tools.positive-communication.helper',
           repeater: 'relationships.tools.positive-communication.repeater',
         },
