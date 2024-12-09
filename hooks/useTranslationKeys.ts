@@ -311,6 +311,20 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    RECREATIONAL_ACTIVITIES: {
+      label: 'list.recreational-activities',
+      subcategories: {
+        RECREATIONAL_ACTIVITIES_ALONE: {
+          label: 'list.recreational-activities-alone',
+        },
+        RECREATIONAL_ACTIVITIES_CITY: {
+          label: 'list.recreational-activities-city',
+        },
+        RECREATIONAL_ACTIVITIES_NATURE: {
+          label: 'list.recreational-activities-nature',
+        },
+      },
+    },
   };
 
   return {

@@ -18,7 +18,11 @@
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
     "worry-time": "RO/en: Worry Time",
-    "rid": "RO/en: RID"
+    "rid": "RO/en: RID",
+    "recreational-activities": "RO/en: Recreational Activities",
+    "recreational-activities-alone": "RO/en: Recreational Activities: Time Spent Alone",
+    "recreational-activities-city": "RO/en: Recreational Activities: In The City",
+    "recreational-activities-nature": "RO/en: Recreational Activities: In Nature"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1040,5 +1044,8 @@
     "empty": "RO/en: You haven't added any RIDs yet.",
     "date": "Date:",
     "delete": "RO/en: Delete RID"
+  },
+  "recreational-activities": {
+    "label": "RO/en: Recreational activities"
   }
 }
