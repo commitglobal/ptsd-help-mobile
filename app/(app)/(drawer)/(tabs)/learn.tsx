@@ -6,9 +6,6 @@ import { FlashList } from '@shopify/flash-list';
 import { router } from 'expo-router';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
-// TODOs:
-// - Take icons, imagesSrc, save them in the device and save the JSON with the local paths
-
 export default function Learn() {
   const { learnContent } = useAssetsManagerContext();
   return (
@@ -19,7 +16,7 @@ export default function Learn() {
       }}>
       <FlashList
         bounces={false}
-        data={learnContent.categories}
+        data={learnContent.pages}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
@@ -27,7 +24,11 @@ export default function Learn() {
             key={item.id}
             item={item}
             onPress={() => {
-              router.push({ pathname: '/learn/category', params: { categoryId: item.id } });
+              if (item.type === 'category') {
+                router.push({ pathname: '/content/category', params: { type: 'learn', pageId: item.id } });
+              } else {
+                router.push({ pathname: '/content/topic', params: { type: 'learn', topicId: item.id } });
+              }
             }}
           />
         )}
