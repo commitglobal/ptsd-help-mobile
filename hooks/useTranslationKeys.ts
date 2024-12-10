@@ -315,6 +315,20 @@ const useTranslationKeys = () => {
       label: 'list.soothe-senses',
       repeater: 'soothe-senses.repeater',
     },
+    CONNECT_WITH_OTHERS: {
+      label: 'list.connect-with-others',
+      title: 'connect-with-others.title',
+      done: 'connect-with-others.done',
+      staticText: 'connect-with-others.static-text',
+      repeater: 'connect-with-others.repeater',
+    },
+    CHANGE_PERSPECTIVE: {
+      label: 'list.change-perspective',
+      title: 'change-perspective.title',
+      done: 'change-perspective.done',
+      staticText: 'change-perspective.static-text',
+      repeater: 'change-perspective.repeater',
+    },
   };
 
   return {

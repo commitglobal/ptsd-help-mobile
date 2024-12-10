@@ -29,7 +29,9 @@ type ToolCategories =
   | 'SLEEP'
   | 'WORRY_TIME'
   | 'RID'
-  | 'SOOTHE_SENSES';
+  | 'SOOTHE_SENSES'
+  | 'CONNECT_WITH_OTHERS'
+  | 'CHANGE_PERSPECTIVE';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -201,6 +203,20 @@ export const useTools = () => {
       label: toolsTranslationKeys.SOOTHE_SENSES.label,
       icon: mediaMapping?.['SOOTHE_SENSES.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/soothe-senses',
+      type: ToolType.TOOL,
+    },
+    CONNECT_WITH_OTHERS: {
+      id: 'connect-with-others',
+      label: toolsTranslationKeys.CONNECT_WITH_OTHERS.label,
+      icon: mediaMapping?.['CONNECT_WITH_OTHERS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/connect-with-others',
+      type: ToolType.TOOL,
+    },
+    CHANGE_PERSPECTIVE: {
+      id: 'change-perspective',
+      label: toolsTranslationKeys.CHANGE_PERSPECTIVE.label,
+      icon: mediaMapping?.['CHANGE_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/change-perspective',
       type: ToolType.TOOL,
     },
   };
