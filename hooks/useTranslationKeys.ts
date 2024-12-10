@@ -320,8 +320,28 @@ const useTranslationKeys = () => {
     DEEP_BREATHING: {
       label: 'list.deep-breathing',
       description: 'deep-breathing.description',
-      sactionBtnLabel: 'deep-breathing.action-btn-label',
+      actionBtnLabel: 'deep-breathing.action-btn-label',
       done: 'deep-breathing.done',
+    },
+    BODY_SCAN: {
+      label: 'list.body-scan',
+      description: 'body-scan.description',
+      actionBtnLabel: 'body-scan.action-btn-label',
+      done: 'body-scan.done',
+      subcategories: {
+        JULIA: {
+          label: 'list.julia',
+          description: 'body-scan.julia.description',
+          actionBtnLabel: 'body-scan.julia.action-btn-label',
+          done: 'body-scan.julia.done',
+        },
+        ROBYN: {
+          label: 'list.robyn',
+          description: 'body-scan.robyn.description',
+          actionBtnLabel: 'body-scan.robyn.action-btn-label',
+          done: 'body-scan.robyn.done',
+        },
+      },
     },
   };
 

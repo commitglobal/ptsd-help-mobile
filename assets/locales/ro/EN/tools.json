@@ -20,7 +20,10 @@
     "worry-time": "RO/en: Worry Time",
     "rid": "RO/en: RID",
     "muscle-relaxation": "RO/en: Muscle Relaxation",
-    "deep-breathing": "RO/en: Deep Breathing"
+    "deep-breathing": "RO/en: Deep Breathing",
+    "body-scan": "RO/en: Body Scan",
+    "julia": "RO/en: Julia",
+    "robyn": "RO/en: Robyn"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1054,5 +1057,26 @@
     "description": "Slowing down and deepening your breathing can help you calm down when you feel distress. Put on your headphones or go somewhere private and quiet to be led through the exercise.",
     "action-btn-label": "RO/en: Start",
     "done": "RO/en: Done"
+  },
+  "body-scan": {
+    "title": "RO/en: Body Scan",
+    "description": "RO/en: Body Scan",
+    "action-btn-label": "RO/en: Start",
+    "done": "RO/en: Done",
+    "julia": {
+      "title": "RO/en: Julia",
+      "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. This mindfulness exercise will help you practice mindfulness of physical sensations. Please note that there will be pauses in the audio so you can practice without distraction.",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done"
+    },
+    "robyn": {
+      "title": "RO/en: Robyn",
+      "description": "RO/en: Robyn",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done"
+    }
   }
 }
+
+
+// MISSING TEXTE PENTRU JULIA SI ROBYN

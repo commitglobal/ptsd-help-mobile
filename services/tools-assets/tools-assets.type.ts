@@ -53,4 +53,9 @@ export type LocalToolsAssetsMapping = {
   'MUSCLE_RELAXATION.videoURI': string;
   'DEEP_BREATHING.CATEGORY_ICON': string;
   'DEEP_BREATHING.videoURI': string;
+  'BODY_SCAN.CATEGORY_ICON': string;
+  'BODY_SCAN.JULIA.CATEGORY_ICON': string;
+  'BODY_SCAN.JULIA.soundURI': string;
+  'BODY_SCAN.ROBYN.CATEGORY_ICON': string;
+  'BODY_SCAN.ROBYN.soundURI': string;
 };

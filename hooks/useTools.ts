@@ -30,7 +30,8 @@ type ToolCategories =
   | 'WORRY_TIME'
   | 'RID'
   | 'MUSCLE_RELAXATION'
-  | 'DEEP_BREATHING';
+  | 'DEEP_BREATHING'
+  | 'BODY_SCAN';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -44,12 +45,37 @@ type ToolSubcategories =
   | 'LOVING_KINDNESS'
   | 'SLEEP_HELP'
   | 'SLEEP_HABITS'
-  | 'SLEEP_PERSPECTIVE';
+  | 'SLEEP_PERSPECTIVE'
+  | 'JULIA'
+  | 'ROBYN';
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
   const TOOLS_CONFIG: ToolConfigType = {
+    BODY_SCAN: {
+      id: 'body-scan',
+      label: toolsTranslationKeys.BODY_SCAN.label,
+      icon: mediaMapping?.['BODY_SCAN.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/body-scan',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        JULIA: {
+          id: 'body-scan-julia',
+          label: toolsTranslationKeys.BODY_SCAN.subcategories.JULIA.label,
+          icon: mediaMapping?.['BODY_SCAN.JULIA.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/body-scan/julia',
+          type: ToolType.TOOL,
+        },
+        ROBYN: {
+          id: 'body-scan-roby',
+          label: toolsTranslationKeys.BODY_SCAN.subcategories.ROBYN.label,
+          icon: mediaMapping?.['BODY_SCAN.ROBYN.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/body-scan/robyn',
+          type: ToolType.TOOL,
+        },
+      },
+    },
     MUSCLE_RELAXATION: {
       id: 'muscle-relaxation',
       label: toolsTranslationKeys.MUSCLE_RELAXATION.label,
