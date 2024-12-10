@@ -65,6 +65,7 @@ export type MultiPage = BaseContent & {
 };
 
 export type Topic = {
+  type: 'topic';
   id: string;
   label: string;
   icon: string;
@@ -74,14 +75,17 @@ export type Topic = {
 };
 
 export type Category = {
+  type: 'category';
   id: string;
   label: string;
   icon: string;
   topics: Topic[];
 };
 
-export type LearnContent = {
+export type ContentPage = Category | Topic;
+
+export type ContentType = {
   lastUpdatedAt: string;
   title: string;
-  categories: Category[];
+  pages: ContentPage[];
 };
