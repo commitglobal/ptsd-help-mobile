@@ -311,6 +311,11 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    MUSCLE_RELAXATION: {
+      label: 'list.muscle-relaxation',
+      description: 'muscle-relaxation.description',
+      actionBtnLabel: 'muscle-relaxation.action-btn-label',
+    },
   };
 
   return {

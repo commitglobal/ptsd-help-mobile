@@ -18,7 +18,8 @@
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
     "worry-time": "RO/en: Worry Time",
-    "rid": "RO/en: RID"
+    "rid": "RO/en: RID",
+    "muscle-relaxation": "RO/en: Muscle Relaxation"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1040,5 +1041,10 @@
     "empty": "RO/en: You haven't added any RIDs yet.",
     "date": "Date:",
     "delete": "RO/en: Delete RID"
+  },
+  "muscle-relaxation": {
+    "title": "RO/en: Muscle Relaxation",
+    "description": "You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has accompanying audio, so you will need to find a quiet place or put on your headphones now.",
+    "action-btn-label": "RO/en: Start"
   }
 }

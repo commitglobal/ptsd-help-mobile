@@ -28,7 +28,8 @@ type ToolCategories =
   | 'MY_FEELINGS'
   | 'SLEEP'
   | 'WORRY_TIME'
-  | 'RID';
+  | 'RID'
+  | 'MUSCLE_RELAXATION';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -48,6 +49,13 @@ export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
   const TOOLS_CONFIG: ToolConfigType = {
+    MUSCLE_RELAXATION: {
+      id: 'muscle-relaxation',
+      label: toolsTranslationKeys.MUSCLE_RELAXATION.label,
+      icon: mediaMapping?.['MUSCLE_RELAXATION.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/muscle-relaxation',
+      type: ToolType.TOOL,
+    },
     RELATIONSHIPS: {
       id: 'relationships',
       label: toolsTranslationKeys.RELATIONSHIPS.label,

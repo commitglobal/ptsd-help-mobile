@@ -12,7 +12,8 @@
     "sense-awareness": "RO/ro: Sense Awareness",
     "loving-kindness": "RO/ro: Loving Kindness",
     "pause": "RO/ro: Pause",
-    "sleep": "RO/ro: Instrumente pentru somn"
+    "sleep": "RO/ro: Instrumente pentru somn",
+    "muscle-relaxation": "RO/ro: Muscle Relaxation"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
@@ -635,5 +636,10 @@
         "title": "Gândește-te la cum vrei să fii un exemplu pentru alții din viața ta - copiii etc."
       }
     }
+  },
+  "muscle-relaxation": {
+    "title": "RO/ro: Muscle Relaxation",
+    "description": "Urmează să fii ghidat printr-un exercițiu de relaxare musculară progresivă. Vei parcurge fiecare dintre grupele tale musculare principale, tensionându-le și relaxându-le pe rând. Acest exercițiu durează aproximativ 9 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
+    "action-btn-label": "RO/ro: Incepe"
   }
 }

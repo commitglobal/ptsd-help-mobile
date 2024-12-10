@@ -24,6 +24,7 @@ export default function ToolsLayout() {
       <Stack.Screen name='sleep' options={{ headerShown: false }} />
       <Stack.Screen name='worry-time' options={{ headerShown: false }} />
       <Stack.Screen name='rid' options={{ headerShown: false }} />
+      <Stack.Screen name='muscle-relaxation/index' options={{ headerShown: false }} />
     </Stack>
   );
 }
