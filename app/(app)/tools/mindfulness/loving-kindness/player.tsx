@@ -7,6 +7,7 @@ import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export const LovingKindnessPlayer = () => {
   const router = useRouter();
@@ -14,6 +15,8 @@ export const LovingKindnessPlayer = () => {
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  const { finishTool } = useToolManagerContext();
 
   return (
     <>
@@ -25,7 +28,11 @@ export const LovingKindnessPlayer = () => {
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
-        contentContainerStyle={{ backgroundColor: 'white' }}>
+        contentContainerStyle={{ backgroundColor: 'white' }}
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.done),
+          onMainAction: () => finishTool(),
+        }}>
         <YStack>
           <MediaPlayer mediaURI={mediaMapping['MINDFULNESS.LOVING_KINDNESS.soundURI']} isVideo={false} />
         </YStack>

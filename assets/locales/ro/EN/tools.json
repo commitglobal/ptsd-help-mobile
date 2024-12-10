@@ -27,6 +27,7 @@
     "tools": {
       "i-messages": {
         "title": "RO/en: Using 'I' messages",
+        "add-message": "RO/en: Add 'I' message",
         "find-time": "RO/en: Find time to share these messages with your partner.",
         "text": "RO/en: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
         "when": "RO/en: When my loved one",
@@ -76,7 +77,7 @@
       },
       "positive-communication": {
         "title": "RO/en: Positive Communication",
-        "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
+        "helper": "RO/en: Positive communication is the key to every good relationship. You may already be doing some of these, but consider trying out some of these suggestions to strengthen your relationship:",
         "repeater": {
           "1": {
             "title": "RO/en: Overcome your automatic negative thoughts",
@@ -85,6 +86,78 @@
           "2": {
             "title": "RO/en: Start a conversation with your partner",
             "description": "RO/en: Talk about your feelings and thoughts with your partner"
+          },
+          "3": {
+            "title": "Show Love",
+            "description": "Tell your loved one about 1 thing that you love or appreciate about them. Send a text or leave a note where you know they'll find it.\n\nDo it right now, if you can!"
+          },
+          "4": {
+            "title": "Show Admiration",
+            "description": "Tell your loved one 1 thing you admire about him or her."
+          },
+          "5": {
+            "title": "Start a Conversation",
+            "description": "Plan and start a conversation with your loved one about something that you know interests you both."
+          },
+          "6": {
+            "title": "First Impressions",
+            "description": "Can you remember your earliest impressions of your loved one? Without making comparisons to the present, share with your loved one what you first liked and appreciated about them after you met or really got to know one another."
+          },
+          "7": {
+            "title": "Shared Values",
+            "description": "What's at least one shared goal or value that you have in common with your loved one? Ask your loved one about their goals for the next month or year and how you can help meet that goal."
+          },
+          "8": {
+            "title": "Contributions",
+            "description": "Spend 2 minutes thinking about this: what's at least one thing your loved one does to contribute to the relationship you have with him or her? Try to identify at least one thing, even if it's small."
+          },
+          "9": {
+            "title": "Just Listen",
+            "description": "Ask your loved one to tell you about the best part of their day and the hardest part of their day. Focus on listening.\n\nAcknowledge what your loved one says without trying to solve anything."
+          },
+          "10": {
+            "title": "Overcoming Challenges",
+            "description": "Think about a time in your relationship with your loved one when you had to overcome something difficult together."
+          },
+          "11": {
+            "title": "Next Time you Talk",
+            "description": "Try to turn a few minutes with your loved one into a positive conversation- talk more than usually would about something you have in common."
+          },
+          "12": {
+            "title": "Listen Openly",
+            "description": "Plan a conversation about whatever your loved one would like to talk about that interests them. Listen as openly as you can. Don't change the subject!"
+          },
+          "13": {
+            "title": "Share Their Interests",
+            "description": "Plan and start a conversation with your loved one about something you know is interesting to them but normally isn't interesting to you."
+          },
+          "14": {
+            "title": "Noticing Niceness",
+            "description": "Find something nice, however big or small, that your loved one did recently. Share it with your loved one and tell him or her how it made you feel."
+          },
+          "15": {
+            "title": "Making Rituals",
+            "description": "Ask your loved one to start, or honor, a daily or weekly ritual with you. A ritual can be anything- a phone call, a meal, a hug, or anything else that you can share together."
+          },
+          "16": {
+            "title": "Sharing Problems",
+            "description": "Ask your loved one what they want you to do next time they're sharing a problem with you.\n\nTry saying this: \"Would you like for me to listen or would you like some advice?\" Don't give advice if your loved one doesn't want it."
+          },
+          "17": {
+            "title": "Fun Experiences",
+            "description": "Try to remember a fun experience that you shared with your loved one.\n\nPlan a fun activity and try to re-create that experience."
+          },
+          "18": {
+            "title": "Favorite Experiences",
+            "description": "Spend some time reminiscing with your loved one about some of your favorite experiences together."
+          },
+          "19": {
+            "title": "Write a Letter",
+            "description": "Write a letter to your loved one telling them what they mean to you, why you love them, or your hopes for the future with them.\n\nMake sure you give the letter to your loved one!"
+          },
+          "20": {
+            "title": "Leave a Note",
+            "description": "Leave a note where your loved one can find it that says \"I love when you…\" and then fill in the blank!"
           }
         }
       },
@@ -240,23 +313,28 @@
   "mindfulness": {
     "conscious-breathing": {
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
-      "action-btn-label": "RO/en: Continue"
+      "action-btn-label": "RO/en: Continue",
+      "done": "RO/en: Done"
     },
     "mindful-walking": {
       "description": "RO/en: For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
-      "action-btn-label": "RO/en: Continue"
+      "action-btn-label": "RO/en: Continue",
+      "done": "RO/en: Done"
     },
     "emotional-discomfort": {
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
-      "action-btn-label": "RO/en: Continue"
+      "action-btn-label": "RO/en: Continue",
+      "done": "RO/en: Done"
     },
     "sense-awareness": {
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
-      "action-btn-label": "RO/en: Continue"
+      "action-btn-label": "RO/en: Continue",
+      "done": "RO/en: Done"
     },
     "loving-kindness": {
       "description": "RO/en: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
-      "action-btn-label": "RO/en: Continue"
+      "action-btn-label": "RO/en: Continue",
+      "done": "RO/en: Done"
     }
   },
   "sleep": {
@@ -355,6 +433,7 @@
         "description": "Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
         "reminder-title": "RO/en: Relaxing activity for sleep",
         "reminder-body": "RO/en: Use a relaxing activity for sleep to help you fall asleep easier.",
+        "reminder-time": "Daily",
         "list": [
           {
             "id": 1,

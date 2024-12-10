@@ -18,7 +18,8 @@ import {
   RichTextContent,
   Section,
   TextContent,
-} from '@/services/learn/learn.type';
+  Topic,
+} from '@/services/content/content.type';
 
 type ContentRendererProps = {
   section: Section;
@@ -204,21 +205,44 @@ export function ContentRenderer({ section }: ContentRendererProps) {
 }
 
 export default function LearnTopic() {
-  const { categoryId, topicId } = useLocalSearchParams<{ categoryId: string; topicId: string }>();
+  const { type, categoryId, topicId } = useLocalSearchParams<{
+    type: 'support' | 'learn';
+    categoryId: string;
+    topicId: string;
+  }>();
 
-  const { learnContent } = useAssetsManagerContext();
+  const { learnContent, supportContent } = useAssetsManagerContext();
   const insets = useSafeAreaInsets();
 
-  const topic = useMemo(
-    () =>
-      learnContent.categories
-        .find((category) => category.id === categoryId)
-        ?.topics.find((topic) => topic.id === topicId),
-    [learnContent, categoryId, topicId]
-  );
+  const topic = useMemo(() => {
+    const contentManager = type === 'learn' ? learnContent : supportContent;
 
-  if (!categoryId || !topicId) {
-    return <Typography>CategoryId or TopicId not passed as params</Typography>;
+    // If no categoryId is provided, search for the topic directly in pages
+    if (!categoryId) {
+      const topic = contentManager.pages.find((page) => page.id === topicId);
+      if (!topic) {
+        return null;
+      }
+      return topic as Topic;
+    }
+
+    // Find the category page that matches the categoryId
+    const category = contentManager.pages.find((category) => category.id === categoryId);
+    if (!category) {
+      return null;
+    }
+
+    // If it's a category page, search for the topic in its topics array
+    if (category.type === 'category') {
+      return category.topics.find((topic) => topic.id === topicId);
+    }
+
+    // If not a category, return the page itself as it must be a topic
+    return category;
+  }, [learnContent, supportContent, categoryId, topicId, type]);
+
+  if (!topic) {
+    return <Typography>Topic not found</Typography>;
   }
 
   return (

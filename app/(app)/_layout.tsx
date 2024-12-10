@@ -11,7 +11,7 @@ export default function AppLayout() {
           <Stack>
             <Stack.Screen name='(drawer)' options={{ headerShown: false }} />
             <Stack.Screen name='tools' options={{ headerShown: false }} />
-            <Stack.Screen name='learn' options={{ headerShown: false }} />
+            <Stack.Screen name='content' options={{ headerShown: false }} />
 
             <Stack.Screen name='about' options={{ headerShown: false }} />
             <Stack.Screen name='settings' options={{ headerShown: false }} />

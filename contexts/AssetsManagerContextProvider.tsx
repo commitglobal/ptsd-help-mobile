@@ -21,8 +21,8 @@ import { createContext, useContext, useMemo, useState } from 'react';
 import { Typography } from '@/components/Typography';
 import { useFoggles } from '@/services/foggles/foggles.query';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
-import { useLearnContent } from '@/services/learn/learn.query';
-import { LearnContent } from '@/services/learn/learn.type';
+import { useLearnContent, useSupportContent } from '@/services/content/content.query';
+import { ContentType } from '@/services/content/content.type';
 import { LocalToolsAssetsMapping } from '@/services/tools-assets/tools-assets.type';
 import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query';
 import LoadingAssets from '@/components/LoadingAssets';
@@ -32,7 +32,8 @@ import useCountryLanguage from '@/hooks/useCountryLanguage';
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
   foggles: FogglesConfig;
-  learnContent: LearnContent;
+  learnContent: ContentType;
+  supportContent: ContentType;
 };
 
 const AssetsManagerContext = createContext<AssetsManagerContextType | null>(null);
@@ -44,46 +45,70 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
 
   const [toolsAssetsTotalProgress, setToolsAssetsTotalProgress] = useState<DownloadProgress>();
   const [learnContentTotalProgress, setLearnContentTotalProgress] = useState<DownloadProgress>();
-
+  const [supportContentTotalProgress, setSupportContentTotalProgress] = useState<DownloadProgress>();
   const totalAssetsProgress = useMemo(() => {
     if (!toolsAssetsTotalProgress || !learnContentTotalProgress) {
       return null;
     }
     return Math.round(
-      (((toolsAssetsTotalProgress?.filesDownloaded || 0) + (learnContentTotalProgress?.filesDownloaded || 0)) /
-        ((toolsAssetsTotalProgress?.totalNumberOfFiles || 0) + (learnContentTotalProgress?.totalNumberOfFiles || 0))) *
+      (((toolsAssetsTotalProgress?.filesDownloaded || 0) +
+        (learnContentTotalProgress?.filesDownloaded || 0) +
+        (supportContentTotalProgress?.filesDownloaded || 0)) /
+        ((toolsAssetsTotalProgress?.totalNumberOfFiles || 0) +
+          (learnContentTotalProgress?.totalNumberOfFiles || 0) +
+          (supportContentTotalProgress?.totalNumberOfFiles || 0))) *
         100
     );
-  }, [toolsAssetsTotalProgress, learnContentTotalProgress]);
+  }, [toolsAssetsTotalProgress, learnContentTotalProgress, supportContentTotalProgress]);
 
-  const { data: mediaMapping, isFetching: isFetchingMedia } = useToolsAssetsMapper(
-    countryLanguage?.countryCode,
-    countryLanguage?.languageCode,
-    (progress) => setToolsAssetsTotalProgress(progress)
+  const {
+    data: mediaMapping,
+    isFetching: isFetchingMedia,
+    error: mediaMappingError,
+  } = useToolsAssetsMapper(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setToolsAssetsTotalProgress(progress)
   );
 
-  const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryLanguage?.countryCode);
+  const {
+    data: foggles,
+    isFetching: isFetchingFoggles,
+    error: fogglesError,
+  } = useFoggles(countryLanguage?.countryCode);
 
-  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(
-    countryLanguage?.countryCode,
-    countryLanguage?.languageCode,
-    (progress) => setLearnContentTotalProgress(progress)
+  const {
+    data: learnContent,
+    isFetching: isFetchingLearnContent,
+    error: learnContentError,
+  } = useLearnContent(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setLearnContentTotalProgress(progress)
+  );
+
+  const {
+    data: supportContent,
+    isFetching: isFetchingSupportContent,
+    error: supportContentError,
+  } = useSupportContent(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setSupportContentTotalProgress(progress)
   );
 
   const toReturn = useMemo(() => {
-    return { mediaMapping, foggles, learnContent };
-  }, [mediaMapping, foggles, learnContent]);
+    return { mediaMapping, foggles, learnContent, supportContent };
+  }, [mediaMapping, foggles, learnContent, supportContent]);
 
-  if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent) {
+  if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent || isFetchingSupportContent) {
     return <LoadingAssets progress={totalAssetsProgress} />;
   }
 
   if (!toReturn.mediaMapping) {
-    return <Typography>FATAL: No media mapping found</Typography>;
+    return <Typography>FATAL: No media mapping found {mediaMappingError?.message}</Typography>;
   }
 
   if (!toReturn.learnContent) {
-    return <Typography>FATAL: No learn content found</Typography>;
+    return <Typography>FATAL: No learn content found {learnContentError?.message}</Typography>;
+  }
+
+  if (!toReturn.supportContent) {
+    return <Typography>FATAL: No support content found {supportContentError?.message}</Typography>;
   }
 
   return (

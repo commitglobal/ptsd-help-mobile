@@ -2,7 +2,7 @@
   "expo": {
     "name": "ptsd-help",
     "slug": "ptsd-help",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "ptsd-help",
@@ -14,7 +14,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "5",
+      "buildNumber": "6",
       "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
         "com.apple.developer.applesignin": [
@@ -33,7 +33,7 @@
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
-      "versionCode": 5,
+      "versionCode": 6,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"

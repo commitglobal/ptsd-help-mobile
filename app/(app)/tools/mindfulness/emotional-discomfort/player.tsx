@@ -7,13 +7,15 @@ import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
-
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 export const EmotionalDiscomfortPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  const { finishTool } = useToolManagerContext();
 
   return (
     <>
@@ -25,7 +27,11 @@ export const EmotionalDiscomfortPlayer = () => {
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
-        contentContainerStyle={{ backgroundColor: 'white' }}>
+        contentContainerStyle={{ backgroundColor: 'white' }}
+        footerProps={{
+          mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.EMOTIONAL_DISCOMFORT.done),
+          onMainAction: () => finishTool(),
+        }}>
         <YStack>
           <MediaPlayer mediaURI={mediaMapping['MINDFULNESS.EMOTIONAL_DISCOMFORT.soundURI']} isVideo={false} />
         </YStack>

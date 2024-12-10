@@ -1,5 +1,4 @@
 import useTranslationKeys from '@/hooks/useTranslationKeys';
-import Button from '@/components/Button';
 import { Card } from '@/components/Card';
 import { GenericError } from '@/components/GenericError';
 import { Icon } from '@/components/Icon';
@@ -11,19 +10,20 @@ import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Stack, useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Separator, Spinner, XStack, YStack } from 'tamagui';
+import { Separator, Spinner, YStack } from 'tamagui';
 
 export default function IMessages() {
   const { t } = useTranslation('tools');
-  const insets = useSafeAreaInsets();
   const router = useRouter();
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
   const { data: messages, error, updatedAt } = useLiveQuery(messagesRepository.getMessages(), []);
+
+  const handleAddMessage = () => {
+    router.push(`/tools/relationships/iMessages/new-message`);
+  };
 
   return (
     <>
@@ -34,6 +34,10 @@ export default function IMessages() {
           title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.title),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
+        }}
+        footerProps={{
+          onMainAction: handleAddMessage,
+          mainActionLabel: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.addMessage),
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         {updatedAt === undefined ? (
@@ -57,13 +61,6 @@ export default function IMessages() {
           </>
         )}
       </ScreenWithImageHeader>
-
-      <XStack position='absolute' bottom={insets.bottom + 16} right='$lg'>
-        <Button
-          icon={<Icon icon='plus' color='white' width={24} height={24} />}
-          onPress={() => router.push(`/tools/relationships/iMessages/new-message`)}
-        />
-      </XStack>
     </>
   );
 }
