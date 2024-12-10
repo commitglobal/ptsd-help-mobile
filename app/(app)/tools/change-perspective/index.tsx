@@ -27,7 +27,7 @@ export default function ChangePerspective() {
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}
-      staticText={t(toolsTranslationKeys.CONNECT_WITH_OTHERS.staticText)}
+      staticText={t(toolsTranslationKeys.CHANGE_PERSPECTIVE.staticText)}
       items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
       imageUrl={mediaMapping['CHANGE_PERSPECTIVE.CATEGORY_ICON']}
       footerProps={{ onMainAction: finishTool }}

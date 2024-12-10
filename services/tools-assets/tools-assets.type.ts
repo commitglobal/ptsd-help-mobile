@@ -52,4 +52,6 @@ export type LocalToolsAssetsMapping = {
   'SOOTHE_SENSES.CATEGORY_ICON': string;
   'CONNECT_WITH_OTHERS.CATEGORY_ICON': string;
   'CHANGE_PERSPECTIVE.CATEGORY_ICON': string;
+  'GROUNDING.CATEGORY_ICON': string;
+  'QUOTES.CATEGORY_ICON': string;
 };

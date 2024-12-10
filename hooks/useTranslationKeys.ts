@@ -329,6 +329,18 @@ const useTranslationKeys = () => {
       staticText: 'change-perspective.static-text',
       repeater: 'change-perspective.repeater',
     },
+    GROUNDING: {
+      label: 'list.grounding',
+      title: 'grounding.title',
+      done: 'grounding.done',
+      repeater: 'grounding.repeater',
+    },
+    QUOTES: {
+      label: 'list.quotes',
+      title: 'quotes.title',
+      done: 'quotes.done',
+      repeater: 'quotes.repeater',
+    },
   };
 
   return {

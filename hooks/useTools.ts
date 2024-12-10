@@ -31,7 +31,9 @@ type ToolCategories =
   | 'RID'
   | 'SOOTHE_SENSES'
   | 'CONNECT_WITH_OTHERS'
-  | 'CHANGE_PERSPECTIVE';
+  | 'CHANGE_PERSPECTIVE'
+  | 'GROUNDING'
+  | 'QUOTES';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -217,6 +219,20 @@ export const useTools = () => {
       label: toolsTranslationKeys.CHANGE_PERSPECTIVE.label,
       icon: mediaMapping?.['CHANGE_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/change-perspective',
+      type: ToolType.TOOL,
+    },
+    GROUNDING: {
+      id: 'grounding',
+      label: toolsTranslationKeys.GROUNDING.label,
+      icon: mediaMapping?.['GROUNDING.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/grounding',
+      type: ToolType.TOOL,
+    },
+    QUOTES: {
+      id: 'quotes',
+      label: toolsTranslationKeys.QUOTES.label,
+      icon: mediaMapping?.['QUOTES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/quotes',
       type: ToolType.TOOL,
     },
   };

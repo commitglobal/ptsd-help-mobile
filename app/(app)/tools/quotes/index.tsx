@@ -7,7 +7,7 @@ import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
-export default function ConnectWithOthers() {
+export default function Quotes() {
   const { t } = useTranslation('tools');
   const router = useRouter();
 
@@ -16,20 +16,19 @@ export default function ConnectWithOthers() {
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
-  const items = t(toolsTranslationKeys.CONNECT_WITH_OTHERS.repeater, {
+  const items = t(toolsTranslationKeys.QUOTES.repeater, {
     returnObjects: true,
   }) as Record<string, { title: string; description: string }>;
 
   return (
     <ScreenWithChangingText
       headerProps={{
-        title: t(toolsTranslationKeys.CONNECT_WITH_OTHERS.label),
+        title: t(toolsTranslationKeys.QUOTES.label),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}
-      staticText={t(toolsTranslationKeys.CONNECT_WITH_OTHERS.staticText)}
       items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
-      imageUrl={mediaMapping['CONNECT_WITH_OTHERS.CATEGORY_ICON']}
+      imageUrl={mediaMapping['QUOTES.CATEGORY_ICON']}
       footerProps={{ onMainAction: finishTool }}
     />
   );
