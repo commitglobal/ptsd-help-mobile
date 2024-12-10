@@ -49,4 +49,5 @@ export type LocalToolsAssetsMapping = {
   'SLEEP.SLEEP_HELP.CATEGORY_ICON': string;
   'SLEEP.SLEEP_HABITS.CATEGORY_ICON': string;
   'SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON': string;
+  'SHIFT_THOUGHTS.CATEGORY_ICON': string;
 };

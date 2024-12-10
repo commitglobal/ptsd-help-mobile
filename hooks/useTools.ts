@@ -28,7 +28,8 @@ type ToolCategories =
   | 'MY_FEELINGS'
   | 'SLEEP'
   | 'WORRY_TIME'
-  | 'RID';
+  | 'RID'
+  | 'SHIFT_THOUGHTS';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -193,6 +194,13 @@ export const useTools = () => {
       label: toolsTranslationKeys.RID.label,
       icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/rid',
+      type: ToolType.TOOL,
+    },
+    SHIFT_THOUGHTS: {
+      id: 'shift-thoughts',
+      label: toolsTranslationKeys.SHIFT_THOUGHTS.label,
+      icon: mediaMapping?.['SHIFT_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/shift-thoughts',
       type: ToolType.TOOL,
     },
   };

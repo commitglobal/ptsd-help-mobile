@@ -311,6 +311,13 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    SHIFT_THOUGHTS: {
+      label: 'list.shift-thoughts',
+      title: 'shift-thoughts.title',
+      helper: 'shift-thoughts.helper',
+      repeater: 'shift-thoughts.repeater',
+      start: 'shift-thoughts.start',
+    },
   };
 
   return {
