@@ -1,8 +1,6 @@
-import { LearnContent } from './learn.type';
+import { ContentType } from './content.type';
 import * as FileSystem from 'expo-file-system';
-import { getS3CMSContentFolder } from '@/constants/cms';
-import { Category, Section, Topic } from '@/services/learn/learn.type';
-import { getLocalLearnContentDir, getLocalLearnContentFilePath } from './learn.helper';
+import { ContentPage, Section, Topic } from './content.type';
 import { DownloadProgressTracker, DownloadProgress } from '@/helpers/download-progress';
 
 const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => {
@@ -82,13 +80,17 @@ class LearnContentDownloader {
     return section;
   }
 
-  async processCategories(remoteContent: any, contentDir: string): Promise<Category[]> {
+  async processCategories(remoteContent: ContentType, contentDir: string): Promise<ContentPage[]> {
     return Promise.all(
-      remoteContent.categories.map(async (category: Category) => {
-        const processedIcon = category.icon ? await this.downloadImage(category.icon, contentDir) : category.icon;
+      remoteContent.pages?.map(async (contentPage: ContentPage) => {
+        const processedIcon = contentPage.icon
+          ? await this.downloadImage(contentPage.icon, contentDir)
+          : contentPage.icon;
+
+        const topicsToProcess = contentPage.type === 'category' ? contentPage.topics : [contentPage];
 
         const processedTopics: Topic[] = await Promise.all(
-          category.topics.map(async (topic: Topic) => {
+          topicsToProcess.map(async (topic: Topic) => {
             const processedTopicIcon = topic.icon ? await this.downloadImage(topic.icon, contentDir) : topic.icon;
 
             const processedSections: Section[] = await Promise.all(
@@ -107,7 +109,7 @@ class LearnContentDownloader {
         );
 
         return {
-          ...category,
+          ...contentPage,
           icon: processedIcon,
           topics: processedTopics,
         };
@@ -116,10 +118,9 @@ class LearnContentDownloader {
   }
 }
 
-const getLocalLearnContent = async (countryCode: string, languageCode: string) => {
+const getLocalLearnContent = async (config: ContentFetcherConfig) => {
   try {
-    const localContentPath = getLocalLearnContentFilePath(countryCode, languageCode);
-    const localContentJson = await FileSystem.readAsStringAsync(localContentPath);
+    const localContentJson = await FileSystem.readAsStringAsync(config.localContentMappingFilePath);
     return JSON.parse(localContentJson);
   } catch (error) {
     console.log('No existing local learn content found', error);
@@ -127,9 +128,9 @@ const getLocalLearnContent = async (countryCode: string, languageCode: string) =
   }
 };
 
-const getRemoteLearnContent = async (countryCode: string, languageCode: string) => {
+const getRemoteLearnContent = async (config: ContentFetcherConfig): Promise<ContentType | null> => {
   try {
-    const response = await fetch(getS3CMSContentFolder(countryCode, languageCode));
+    const response = await fetch(config.remoteContentFolderUrl);
     if (!response.ok) return null;
     return await response.json();
   } catch (error) {
@@ -157,17 +158,23 @@ function extractFileNames(jsonObj: any) {
   return fileNames;
 }
 
-export const fetchLearnContent = async (
-  countryCode: string,
-  languageCode: string,
-  onProgress?: (progress: DownloadProgress) => void
-) => {
-  const progressTracker = new DownloadProgressTracker(onProgress);
+export type ContentFetcherConfig = {
+  type: 'learn' | 'support';
+  remoteContentFolderUrl: string;
+  localContentDir: string;
+  localContentMappingFilePath: string; // The file where the content mapping is saved
+  countryCode: string;
+  languageCode: string;
+  onProgress?: (progress: DownloadProgress) => void;
+};
+
+export const fetchLearnContent = async (config: ContentFetcherConfig) => {
+  const progressTracker = new DownloadProgressTracker(config.onProgress);
   const downloader = new LearnContentDownloader(progressTracker);
 
   const [localContent, remoteContent] = await Promise.all([
-    getLocalLearnContent(countryCode, languageCode),
-    getRemoteLearnContent(countryCode, languageCode),
+    getLocalLearnContent(config),
+    getRemoteLearnContent(config),
   ]);
 
   if (!localContent && !remoteContent) {
@@ -176,26 +183,25 @@ export const fetchLearnContent = async (
   }
 
   const shouldUpdateLocal =
-    !localContent || new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt);
+    !localContent ||
+    (remoteContent && new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt || ''));
 
-  const contentDir = getLocalLearnContentDir(countryCode, languageCode);
-  await FileSystem.makeDirectoryAsync(contentDir, { intermediates: true });
+  await FileSystem.makeDirectoryAsync(config.localContentDir, { intermediates: true });
 
   if (shouldUpdateLocal && remoteContent) {
     progressTracker.setTotalFiles(extractFileNames(remoteContent).length);
 
-    const processedCategories = await downloader.processCategories(remoteContent, contentDir);
+    const processedCategories = await downloader.processCategories(remoteContent, config.localContentDir);
 
-    const toReturn: LearnContent = {
+    const toReturn: ContentType = {
       ...remoteContent,
-      categories: processedCategories,
+      pages: processedCategories,
     };
 
     const usedFiles = new Set(extractFileNames(toReturn));
-    await deleteUnusedFiles(contentDir, usedFiles);
+    await deleteUnusedFiles(config.localContentDir, usedFiles);
 
-    const localContentPath = getLocalLearnContentFilePath(countryCode, languageCode);
-    await FileSystem.writeAsStringAsync(localContentPath, JSON.stringify(toReturn, null, 2));
+    await FileSystem.writeAsStringAsync(config.localContentMappingFilePath, JSON.stringify(toReturn, null, 2));
 
     return toReturn;
   }
