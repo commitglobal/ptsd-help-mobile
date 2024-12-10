@@ -64,24 +64,34 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
     );
   }, [toolsAssetsTotalProgress, learnContentTotalProgress, supportContentTotalProgress]);
 
-  const { data: mediaMapping, isFetching: isFetchingMedia } = useToolsAssetsMapper(
-    countryLanguage?.countryCode,
-    countryLanguage?.languageCode,
-    (progress) => setToolsAssetsTotalProgress(progress)
+  const {
+    data: mediaMapping,
+    isFetching: isFetchingMedia,
+    error: mediaMappingError,
+  } = useToolsAssetsMapper(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setToolsAssetsTotalProgress(progress)
   );
 
-  const { data: foggles, isFetching: isFetchingFoggles } = useFoggles(countryLanguage?.countryCode);
+  const {
+    data: foggles,
+    isFetching: isFetchingFoggles,
+    error: fogglesError,
+  } = useFoggles(countryLanguage?.countryCode);
 
-  const { data: learnContent, isFetching: isFetchingLearnContent } = useLearnContent(
-    countryLanguage?.countryCode,
-    countryLanguage?.languageCode,
-    (progress) => setLearnContentTotalProgress(progress)
+  const {
+    data: learnContent,
+    isFetching: isFetchingLearnContent,
+    error: learnContentError,
+  } = useLearnContent(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setLearnContentTotalProgress(progress)
   );
 
-  const { data: supportContent, isFetching: isFetchingSupportContent } = useSupportContent(
-    countryLanguage?.countryCode,
-    countryLanguage?.languageCode,
-    (progress) => setSupportContentTotalProgress(progress)
+  const {
+    data: supportContent,
+    isFetching: isFetchingSupportContent,
+    error: supportContentError,
+  } = useSupportContent(countryLanguage?.countryCode, countryLanguage?.languageCode, (progress) =>
+    setSupportContentTotalProgress(progress)
   );
 
   const toReturn = useMemo(() => {
@@ -93,15 +103,15 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   }
 
   if (!toReturn.mediaMapping) {
-    return <Typography>FATAL: No media mapping found</Typography>;
+    return <Typography>FATAL: No media mapping found {mediaMappingError?.message}</Typography>;
   }
 
   if (!toReturn.learnContent) {
-    return <Typography>FATAL: No learn content found</Typography>;
+    return <Typography>FATAL: No learn content found {learnContentError?.message}</Typography>;
   }
 
   if (!toReturn.supportContent) {
-    return <Typography>FATAL: No support content found</Typography>;
+    return <Typography>FATAL: No support content found {supportContentError?.message}</Typography>;
   }
 
   return (

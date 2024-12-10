@@ -6,7 +6,7 @@
       "id": "a82f310c-5de9-4342-99a8-25eef443a712",
       "type": "topic",
       "label": "Resurse de criză",
-      "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/crisis_resources.png",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/crisis_resources.png",
       "content": {
         "sections": [
           {
@@ -56,7 +56,7 @@
       "id": "a243e909-a625-4dc4-b545-0ae5493801cd",
       "type": "topic",
       "label": "Găsește îngrijire profesională",
-      "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/find_professional_care.png",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/find_professional_care.png",
       "content": {
         "sections": [
           {
@@ -154,12 +154,12 @@
       "id": "c7027a84-6049-4275-8bd2-638461817881",
       "type": "category",
       "label": "Mărește-ți grupul de sprijin",
-      "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/grow_your_support.png",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/grow_your_support.png",
       "topics": [
         {
           "id": "2f1c9083-72af-4d08-a3da-0e8fec54ffaf",
           "label": "Cineva în care ai încredere",
-          "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/someone_you_trust.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/someone_you_trust.png",
           "content": {
             "sections": [
               {
@@ -172,7 +172,7 @@
         {
           "id": "951050f0-ddb5-4e7d-aec3-aaea6199786e",
           "label": "Mă simt singur",
-          "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/you_feel_alone.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/you_feel_alone.png",
           "content": {
             "sections": [
               {
@@ -185,7 +185,7 @@
         {
           "id": "44da46f7-2aaf-400b-baae-41baa5d5f3f9",
           "label": "Mărește-ți grupul de sprijin",
-          "icon": "file:///Users/andrewradulescu/Library/Developer/CoreSimulator/Devices/8AF6B9B2-FEC7-4FB2-9CB8-95038513C33F/data/Containers/Data/Application/3A0B346E-B1C3-4842-8A4B-83AF9427BEBE/Documents/content/support/RO/ro/grow_your_support.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/grow_your_support.png",
           "content": {
             "sections": [
               {

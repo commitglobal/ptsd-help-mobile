@@ -1,6 +1,6 @@
 import { ContentType } from './content.type';
 import * as FileSystem from 'expo-file-system';
-import { ContentPage, Section, Topic } from '@/services/content/learn.type';
+import { ContentPage, Section, Topic } from './content.type';
 import { DownloadProgressTracker, DownloadProgress } from '@/helpers/download-progress';
 
 const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => {
@@ -80,9 +80,9 @@ class LearnContentDownloader {
     return section;
   }
 
-  async processCategories(remoteContent: any, contentDir: string): Promise<ContentPage[]> {
+  async processCategories(remoteContent: ContentType, contentDir: string): Promise<ContentPage[]> {
     return Promise.all(
-      remoteContent.categories.map(async (contentPage: ContentPage) => {
+      remoteContent.pages?.map(async (contentPage: ContentPage) => {
         const processedIcon = contentPage.icon
           ? await this.downloadImage(contentPage.icon, contentDir)
           : contentPage.icon;
@@ -128,7 +128,7 @@ const getLocalLearnContent = async (config: ContentFetcherConfig) => {
   }
 };
 
-const getRemoteLearnContent = async (config: ContentFetcherConfig) => {
+const getRemoteLearnContent = async (config: ContentFetcherConfig): Promise<ContentType | null> => {
   try {
     const response = await fetch(config.remoteContentFolderUrl);
     if (!response.ok) return null;
@@ -183,7 +183,8 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
   }
 
   const shouldUpdateLocal =
-    !localContent || new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt);
+    !localContent ||
+    (remoteContent && new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt || ''));
 
   await FileSystem.makeDirectoryAsync(config.localContentDir, { intermediates: true });
 
