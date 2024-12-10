@@ -9,7 +9,7 @@ import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
-export const MuscleRelaxationPlayer = () => {
+export const DeepBreathingPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -22,12 +22,12 @@ export const MuscleRelaxationPlayer = () => {
       <Stack.Screen options={{ headerShown: false }} />
       <Screen
         headerProps={{
-          title: t(toolsTranslationKeys.MUSCLE_RELAXATION.label),
+          title: t(toolsTranslationKeys.DEEP_BREATHING.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
         }}
         footerProps={{
-          mainActionLabel: t(toolsTranslationKeys.MUSCLE_RELAXATION.done),
+          mainActionLabel: t(toolsTranslationKeys.DEEP_BREATHING.done),
           onMainAction: () => finishTool(),
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
@@ -40,7 +40,7 @@ export const MuscleRelaxationPlayer = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack w='100%' h='50%'>
-            <MediaPlayer mediaURI={mediaMapping['MUSCLE_RELAXATION.videoURI']} isVideo={true} />
+            <MediaPlayer mediaURI={mediaMapping['DEEP_BREATHING.videoURI']} isVideo={true} />
           </YStack>
         </ScrollView>
       </Screen>
@@ -48,4 +48,4 @@ export const MuscleRelaxationPlayer = () => {
   );
 };
 
-export default MuscleRelaxationPlayer;
+export default DeepBreathingPlayer;

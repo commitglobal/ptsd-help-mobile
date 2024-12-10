@@ -51,4 +51,6 @@ export type LocalToolsAssetsMapping = {
   'SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON': string;
   'MUSCLE_RELAXATION.CATEGORY_ICON': string;
   'MUSCLE_RELAXATION.videoURI': string;
+  'DEEP_BREATHING.CATEGORY_ICON': string;
+  'DEEP_BREATHING.videoURI': string;
 };

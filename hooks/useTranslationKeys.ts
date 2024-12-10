@@ -315,6 +315,13 @@ const useTranslationKeys = () => {
       label: 'list.muscle-relaxation',
       description: 'muscle-relaxation.description',
       actionBtnLabel: 'muscle-relaxation.action-btn-label',
+      done: 'muscle-relaxation.done',
+    },
+    DEEP_BREATHING: {
+      label: 'list.deep-breathing',
+      description: 'deep-breathing.description',
+      sactionBtnLabel: 'deep-breathing.action-btn-label',
+      done: 'deep-breathing.done',
     },
   };
 

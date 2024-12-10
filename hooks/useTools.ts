@@ -29,7 +29,8 @@ type ToolCategories =
   | 'SLEEP'
   | 'WORRY_TIME'
   | 'RID'
-  | 'MUSCLE_RELAXATION';
+  | 'MUSCLE_RELAXATION'
+  | 'DEEP_BREATHING';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -54,6 +55,13 @@ export const useTools = () => {
       label: toolsTranslationKeys.MUSCLE_RELAXATION.label,
       icon: mediaMapping?.['MUSCLE_RELAXATION.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/muscle-relaxation',
+      type: ToolType.TOOL,
+    },
+    DEEP_BREATHING: {
+      id: 'deep-breathing',
+      label: toolsTranslationKeys.DEEP_BREATHING.label,
+      icon: mediaMapping?.['DEEP_BREATHING.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/deep-breathing',
       type: ToolType.TOOL,
     },
     RELATIONSHIPS: {

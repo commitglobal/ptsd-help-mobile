@@ -19,7 +19,8 @@
     "sleep-perspective": "RO/en: Change sleep perspective",
     "worry-time": "RO/en: Worry Time",
     "rid": "RO/en: RID",
-    "muscle-relaxation": "RO/en: Muscle Relaxation"
+    "muscle-relaxation": "RO/en: Muscle Relaxation",
+    "deep-breathing": "RO/en: Deep Breathing"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1045,6 +1046,13 @@
   "muscle-relaxation": {
     "title": "RO/en: Muscle Relaxation",
     "description": "You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has accompanying audio, so you will need to find a quiet place or put on your headphones now.",
-    "action-btn-label": "RO/en: Start"
+    "action-btn-label": "RO/en: Start",
+    "done": "RO/en: Done"
+  },
+  "deep-breathing": {
+    "title": "RO/en: Deep Breathing",
+    "description": "Slowing down and deepening your breathing can help you calm down when you feel distress. Put on your headphones or go somewhere private and quiet to be led through the exercise.",
+    "action-btn-label": "RO/en: Start",
+    "done": "RO/en: Done"
   }
 }

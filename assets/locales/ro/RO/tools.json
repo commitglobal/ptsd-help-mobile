@@ -13,7 +13,8 @@
     "loving-kindness": "RO/ro: Loving Kindness",
     "pause": "RO/ro: Pause",
     "sleep": "RO/ro: Instrumente pentru somn",
-    "muscle-relaxation": "RO/ro: Muscle Relaxation"
+    "muscle-relaxation": "RO/ro: Muscle Relaxation",
+    "deep-breathing": "RO/ro: Respirație profundă"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
@@ -638,8 +639,15 @@
     }
   },
   "muscle-relaxation": {
-    "title": "RO/ro: Muscle Relaxation",
+    "title": "Relaxare musculară",
     "description": "Urmează să fii ghidat printr-un exercițiu de relaxare musculară progresivă. Vei parcurge fiecare dintre grupele tale musculare principale, tensionându-le și relaxându-le pe rând. Acest exercițiu durează aproximativ 9 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
-    "action-btn-label": "RO/ro: Incepe"
+    "action-btn-label": "RO/ro: Incepe",
+    "done": "RO/ro: Gata"
+  },
+  "deep-breathing": {
+    "title": "Respirație profundă",
+    "description": "Încetinirea și adâncirea respirației te poate ajuta să te calmezi când te simți stresat. Pune-ți căștile sau mergi într-un loc privat și liniștit pentru a fi ghidat prin acest exercițiu.",
+    "action-btn-label": "Începe",
+    "done": "Gata"
   }
 }
