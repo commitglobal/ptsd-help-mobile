@@ -9,29 +9,33 @@ import { useMemo } from 'react';
 import { Typography } from '@/components/Typography';
 
 export default function LearnCategory() {
-  const { categoryId } = useLocalSearchParams<{ categoryId: string }>();
+  const { type, pageId } = useLocalSearchParams<{ type: 'learn' | 'support'; pageId: string }>();
 
-  const { learnContent } = useAssetsManagerContext();
+  const { learnContent, supportContent } = useAssetsManagerContext();
 
-  const category = useMemo(
-    () => learnContent.categories.find((category) => category.id === categoryId),
-    [learnContent, categoryId]
-  );
+  const page = useMemo(() => {
+    const contentManager = type === 'learn' ? learnContent : supportContent;
+    return contentManager.pages.find((page) => page.id === pageId);
+  }, [learnContent, supportContent, type, pageId]);
 
-  if (!categoryId) {
-    return <Typography>CategoryId not passed as params</Typography>;
+  if (!pageId) {
+    return <Typography>PageId not passed as params</Typography>;
+  }
+
+  if (page?.type !== 'category') {
+    return <Typography>Page is not a category</Typography>;
   }
 
   return (
     <Screen
       headerProps={{
-        title: learnContent.title,
+        title: page.label,
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
       }}>
       <FlashList
         bounces={false}
-        data={category?.topics}
+        data={page?.topics}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
@@ -39,7 +43,10 @@ export default function LearnCategory() {
             key={item.id}
             item={item}
             onPress={() => {
-              router.push({ pathname: '/learn/topic', params: { categoryId, topicId: item.id } });
+              router.push({
+                pathname: '/content/topic',
+                params: { type: 'learn', categoryId: pageId, topicId: item.id },
+              });
             }}
           />
         )}
