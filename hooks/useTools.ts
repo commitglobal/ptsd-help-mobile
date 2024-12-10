@@ -28,7 +28,8 @@ type ToolCategories =
   | 'MY_FEELINGS'
   | 'SLEEP'
   | 'WORRY_TIME'
-  | 'RID';
+  | 'RID'
+  | 'SOOTHE_SENSES';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -193,6 +194,13 @@ export const useTools = () => {
       label: toolsTranslationKeys.RID.label,
       icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/rid',
+      type: ToolType.TOOL,
+    },
+    SOOTHE_SENSES: {
+      id: 'soothe-senses',
+      label: toolsTranslationKeys.SOOTHE_SENSES.label,
+      icon: mediaMapping?.['SOOTHE_SENSES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/soothe-senses',
       type: ToolType.TOOL,
     },
   };

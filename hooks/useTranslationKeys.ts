@@ -311,6 +311,10 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    SOOTHE_SENSES: {
+      label: 'list.soothe-senses',
+      repeater: 'soothe-senses.repeater',
+    },
   };
 
   return {

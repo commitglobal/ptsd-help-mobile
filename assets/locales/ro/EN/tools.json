@@ -18,7 +18,8 @@
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
     "worry-time": "RO/en: Worry Time",
-    "rid": "RO/en: RID"
+    "rid": "RO/en: RID",
+    "soothe-senses": "RO/en: Soothe The Senses"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1040,5 +1041,139 @@
     "empty": "RO/en: You haven't added any RIDs yet.",
     "date": "Date:",
     "delete": "RO/en: Delete RID"
+  },
+  "soothe-senses": {
+    "title": "RO/en: Soothe The Senses",
+    "done": "RO/en: Done",
+    "repeater": {
+      "1": {
+        "title": "Sound",
+        "description": "RO/en: Sing your favorite songs, or play them and sing along."
+      },
+      "2": {
+        "title": "Sound",
+        "description": "RO/en: Listen to music, and let yourself get lost in the sounds."
+      },
+      "3": {
+        "title": "Sound",
+        "description": "RO/en: Listen to pleasurable sounds, like birds, or the ocean."
+      },
+      "4": {
+        "title": "Sound",
+        "description": "RO/en: Learn to play an instrument and play tunes for your own enjoyment."
+      },
+      "5": {
+        "title": "Sound",
+        "description": "RO/en: Be mindful of the sounds around you."
+      },
+      "6": {
+        "title": "Sound",
+        "description": "RO/en: Turn on a movie and listen to the sounds, tones and textures of human voices."
+      },
+      "7": {
+        "title": "Sound",
+        "description": "RO/en: Listen to an meditation or lecture online or on the radio about something interesting to you."
+      },
+      "8": {
+        "title": "Sound",
+        "description": "RO/en: Go for a walk in nature and listen to the sounds around you."
+      },
+      "9": {
+        "title": "Sight",
+        "description": "RO/en: Go for a walk in the park or a hike in nature. Take in the beauty around you."
+      },
+      "10": {
+        "title": "Sight",
+        "description": "RO/en: Go to a museum with beautiful art and enjoy what catches your eye."
+      },
+      "11": {
+        "title": "Sight",
+        "description": "RO/en: Sit in the lobby of a beautiful hotel and notice the details of the décor."
+      },
+      "12": {
+        "title": "Sight",
+        "description": "RO/en: Buy a beautiful flower or bouquet and make one space in a room pretty."
+      },
+      "13": {
+        "title": "Sight",
+        "description": "RO/en: Go outside at night in the fresh air and look at the stars."
+      },
+      "14": {
+        "title": "Sight",
+        "description": "RO/en: Look at good travel photos in a book or on the internet; let them inspire you."
+      },
+      "15": {
+        "title": "Taste",
+        "description": "RO/en: Eat your favorite meal; really pay attention as you savor it."
+      },
+      "16": {
+        "title": "Taste",
+        "description": "RO/en: Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
+      },
+      "17": {
+        "title": "Taste",
+        "description": "RO/en: Treat yourself to dessert and eat each bite mindfully, with pleasure."
+      },
+      "18": {
+        "title": "Taste",
+        "description": "RO/en: Suck on a piece of peppermint candy and let it melt in your mouth."
+      },
+      "19": {
+        "title": "Taste",
+        "description": "RO/en: Chew your favorite gum and savor its flavor."
+      },
+      "20": {
+        "title": "Taste",
+        "description": "RO/en: Sample flavors in an ice cream store and notice the subtle differences."
+      },
+      "21": {
+        "title": "Touch",
+        "description": "RO/en: Get a massage. Let yourself really focus on and enjoy the sensations."
+      },
+      "22": {
+        "title": "Touch",
+        "description": "RO/en: Sit in the sun (please use sunscreen), and enjoy the warmth."
+      },
+      "23": {
+        "title": "Touch",
+        "description": "RO/en: Pet a dog or cat, and focus on the softness and pleasant sensations."
+      },
+      "24": {
+        "title": "Touch",
+        "description": "RO/en: Soak your feet and allow any tension or soreness to melt away."
+      },
+      "25": {
+        "title": "Touch",
+        "description": "RO/en: Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
+      },
+      "26": {
+        "title": "Touch",
+        "description": "RO/en: Hug someone and feel the comfort of their touch."
+      },
+      "27": {
+        "title": "Smell",
+        "description": "RO/en: Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
+      },
+      "28": {
+        "title": "Smell",
+        "description": "RO/en: Light a scented candle and enjoy the fragrance in the air."
+      },
+      "29": {
+        "title": "Smell",
+        "description": "RO/en: Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
+      },
+      "30": {
+        "title": "Smell",
+        "description": "RO/en: Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
+      },
+      "31": {
+        "title": "Smell",
+        "description": "RO/en: Take a walk in a wooded area and breathe in the fresh smells of nature."
+      },
+      "32": {
+        "title": "Smell",
+        "description": "RO/en: Put lemon oil on your furniture and enjoy the scent."
+      }
+    }
   }
 }
