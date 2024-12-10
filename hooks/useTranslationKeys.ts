@@ -321,9 +321,13 @@ const useTranslationKeys = () => {
         },
         RECREATIONAL_ACTIVITIES_CITY: {
           label: 'list.recreational-activities-city',
+          title: 'recreational-activities-city.title',
+          repeater: 'recreational-activities-city.repeater',
         },
         RECREATIONAL_ACTIVITIES_NATURE: {
           label: 'list.recreational-activities-nature',
+          title: 'recreational-activities-nature.title',
+          repeater: 'recreational-activities-nature.repeater',
         },
       },
     },

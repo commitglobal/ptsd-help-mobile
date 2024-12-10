@@ -1152,5 +1152,123 @@
         "description": "RO/en: Write a poem or story."
       }
     }
+  },
+  "recreational-activities-city": {
+    "title": "RO/en: In The City",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Browse merchandise at an outdoor or hardware store."
+      },
+      "2": {
+        "description": "RO/en: Go window shopping."
+      },
+      "3": {
+        "description": "RO/en: Buy yourself a small gift."
+      },
+      "4": {
+        "description": "RO/en: Buy yourself a plant."
+      },
+      "5": {
+        "description": "RO/en: Buy yourself music."
+      },
+      "6": {
+        "description": "RO/en: Get a manicure and/or pedicure."
+      },
+      "7": {
+        "description": "RO/en: Get a massage."
+      },
+      "8": {
+        "description": "RO/en: Go bowling."
+      },
+      "9": {
+        "description": "RO/en: Go listen to music."
+      },
+      "10": {
+        "description": "RO/en: Go out for ice cream."
+      },
+      "11": {
+        "description": "RO/en: Go out to dinner."
+      },
+      "12": {
+        "description": "RO/en: Go sightseeing."
+      },
+      "13": {
+        "description": "RO/en: Go to a bookstore and read."
+      },
+      "14": {
+        "description": "RO/en: Go to a coffee shop to read and have coffee/tea."
+      },
+      "15": {
+        "description": "RO/en: Go to a live performance or play."
+      },
+      "16": {
+        "description": "RO/en: Go to a museum."
+      },
+      "17": {
+        "description": "RO/en: Go to church/temple/mosque."
+      },
+      "18": {
+        "description": "RO/en: Go to the movies."
+      },
+      "19": {
+        "description": "RO/en: Go watch horse racing or auto racing."
+      },
+      "20": {
+        "description": "RO/en: Play a sport."
+      },
+      "21": {
+        "description": "RO/en: Play pool."
+      },
+      "22": {
+        "description": "RO/en: Take a class in a craft, a language, or a dance."
+      },
+      "23": {
+        "description": "RO/en: Volunteer at a soup kitchen or animal shelter."
+      }
+    }
+  },
+  "recreational-activities-nature": {
+    "title": "RO/en: In Nature",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Buy some flowers and enjoy their beauty."
+      },
+      "2": {
+        "description": "RO/en: Do some gardening."
+      },
+      "3": {
+        "description": "RO/en: Go bird watching."
+      },
+      "4": {
+        "description": "RO/en: Go camping."
+      },
+      "5": {
+        "description": "RO/en: Go fishing."
+      },
+      "6": {
+        "description": "RO/en: Go for a drive or motorcycle ride in the countryside."
+      },
+      "7": {
+        "description": "RO/en: Go for a hike or bike ride on a nature trail."
+      },
+      "8": {
+        "description": "RO/en: Go for a picnic."
+      },
+      "9": {
+        "description": "RO/en: Go to a lake, river, or beach."
+      },
+      "10": {
+        "description": "RO/en: Take a stroll at a botanical garden or flower show."
+      },
+      "11": {
+        "description": "RO/en: Take a trip to a nature reserve or national park."
+      },
+      "12": {
+        "description": "RO/en: Take a walk in the park."
+      },
+      "13": {
+        "description": "RO/en: Spend time with animals in a safe way."
+      }
+    }
   }
 }
