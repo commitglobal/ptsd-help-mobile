@@ -1,5 +1,4 @@
 import React from 'react';
-import MediaPlayer from '@/components/MediaPlayer';
 import { Screen } from '@/components/Screen';
 import { Stack, useRouter } from 'expo-router';
 import { ScrollView, YStack } from 'tamagui';
@@ -8,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
+import VideoScreen from '@/components/VideoPlayer';
 
 export const MuscleRelaxationPlayer = () => {
   const router = useRouter();
@@ -40,7 +40,7 @@ export const MuscleRelaxationPlayer = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack w='100%' h='50%'>
-            <MediaPlayer mediaURI={mediaMapping['MUSCLE_RELAXATION.videoURI']} isVideo={true} />
+            <VideoScreen videoURI={mediaMapping['MUSCLE_RELAXATION.videoURI']} />
           </YStack>
         </ScrollView>
       </Screen>
