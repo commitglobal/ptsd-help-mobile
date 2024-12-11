@@ -10,19 +10,13 @@ import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import ridRepository, { RID } from '@/db/repositories/rid.repository';
 import { GenericError } from '@/components/GenericError';
 import { Card } from '@/components/Card';
-import { useFavouritesManager } from '@/hooks/useFavouritesManager';
-import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 const RIDIndex = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const router = useRouter();
 
-  const { TOOL_CONFIG } = useToolManagerContext();
-
   const { data: ridData, error, updatedAt } = useLiveQuery(ridRepository.getRIDs(), []);
-
-  const { favourite, handleAddToFavourites, removeFromFavourites } = useFavouritesManager(TOOL_CONFIG.RID.id);
 
   if (updatedAt !== undefined && error) {
     return (
@@ -43,8 +37,6 @@ const RIDIndex = () => {
         title: t(toolsTranslationKeys.RID.title),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} />,
         onLeftPress: router.back,
-        iconRight: <Icon icon={favourite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
-        onRightPress: favourite ? removeFromFavourites : handleAddToFavourites,
       }}
       footerProps={{
         mainActionLabel: t(toolsTranslationKeys.RID.start),

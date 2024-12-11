@@ -13,8 +13,7 @@
     "delete-confirmation": "RO/en: Are you sure you want to delete?",
     "yes": "RO/en: Yes",
     "no": "RO/en: No",
-    "generic-error": "RO/en: Something went wrong and we couldn't retrieve your data.",
-    "no-favorites": "RO/en: No favorites added yet"
+    "generic-error": "RO/en: Something went wrong and we couldn't retrieve your data."
   },
   "general": {
     "done": "RO/en: Done",

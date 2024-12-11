@@ -20,6 +20,7 @@ export const SenseAwareness = () => {
         title: t(toolsTranslationKeys.MINDFULNESS.subcategories.SENSE_AWARENESS.label),
         iconLeft: <Icon icon='chevronLeft' width={20} height={20} color='$gray12' />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon='heart' width={20} height={20} color='$gray12' />,
       }}
       footerProps={{
         mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.SENSE_AWARENESS.actionBtnLabel),

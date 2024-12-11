@@ -6,16 +6,11 @@ import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
-import { useFavouritesManager } from '@/hooks/useFavouritesManager';
 
 export default function AmbientSounds() {
   const router = useRouter();
-  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { finishTool } = useToolManagerContext();
   const { t } = useTranslation('tools');
-
-  const { favourite, handleAddToFavourites, removeFromFavourites } = useFavouritesManager(
-    TOOL_CONFIG.AMBIENT_SOUNDS.id
-  );
 
   const { mediaMapping } = useAssetsManagerContext();
 
@@ -115,8 +110,6 @@ export default function AmbientSounds() {
         title: t(toolsTranslationKeys.AMBIENT_SOUNDS.label, { ns: 'tools' }),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
-        iconRight: <Icon icon={favourite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
-        onRightPress: favourite ? removeFromFavourites : handleAddToFavourites,
       }}
       footerProps={{
         onMainAction: () => finishTool(),

@@ -16,7 +16,6 @@ import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { TimePicker } from '@/components/TimePicker';
 import { scrollToItem } from '@/helpers/scrollToItem';
 import * as Notifications from 'expo-notifications';
-import { useFavouritesManager } from '@/hooks/useFavouritesManager';
 
 export default function WorryTime() {
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -24,10 +23,9 @@ export default function WorryTime() {
   const router = useRouter();
   const scrollViewRef = useRef<ScrollView>(null);
   const textareaRef = useRef<React.ElementRef<typeof TextareaInput>>(null);
-  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { finishTool } = useToolManagerContext();
 
   const { data: worries } = useLiveQuery(worriesRepository.getWorries(), []);
-  const { favourite, handleAddToFavourites, removeFromFavourites } = useFavouritesManager(TOOL_CONFIG.WORRY_TIME.id);
 
   const [worryText, setWorryText] = useState(worries[0]?.worry || '');
   const [isReminderChecked, setIsReminderChecked] = useState(false);
@@ -124,8 +122,6 @@ export default function WorryTime() {
         title: t(toolsTranslationKeys.WORRY_TIME.title),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
-        iconRight: <Icon icon={favourite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
-        onRightPress: favourite ? removeFromFavourites : handleAddToFavourites,
       }}
       footerProps={{
         onMainAction: handleDone,

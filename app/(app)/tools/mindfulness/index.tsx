@@ -5,7 +5,6 @@ import { Icon } from '@/components/Icon';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
-import { useFavouritesManager } from '@/hooks/useFavouritesManager';
 
 const MindfulnessIndex = () => {
   const { startTool, TOOL_CONFIG } = useToolManagerContext();
@@ -13,16 +12,13 @@ const MindfulnessIndex = () => {
 
   const { toolsTranslationKeys } = useTranslationKeys();
 
-  const { favourite, handleAddToFavourites, removeFromFavourites } = useFavouritesManager(TOOL_CONFIG.MINDFULNESS.id);
   return (
     <Screen
       headerProps={{
         title: t(toolsTranslationKeys.MINDFULNESS.label),
-
+        iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
-        iconRight: <Icon icon={favourite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
-        onRightPress: favourite ? removeFromFavourites : handleAddToFavourites,
       }}>
       <SubcategoriesList
         subcategories={Object.values(TOOL_CONFIG.MINDFULNESS.subcategories || {}).map((subcategory) => ({

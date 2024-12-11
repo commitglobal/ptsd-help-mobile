@@ -9,7 +9,6 @@ import Button from '@/components/Button';
 import { useEffect, useState } from 'react';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
-import { useFavouritesManager } from '@/hooks/useFavouritesManager';
 
 const PAUSE_TIME = 5 * 60;
 export default function ShiftThoughts() {
@@ -18,11 +17,7 @@ export default function ShiftThoughts() {
   const { t } = useTranslation('tools');
   const router = useRouter();
 
-  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
-
-  const { favourite, handleAddToFavourites, removeFromFavourites } = useFavouritesManager(
-    TOOL_CONFIG.SHIFT_THOUGHTS.id
-  );
+  const { finishTool } = useToolManagerContext();
 
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -58,8 +53,6 @@ export default function ShiftThoughts() {
         title: t(toolsTranslationKeys.SHIFT_THOUGHTS.title),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
-        iconRight: <Icon icon={favourite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
-        onRightPress: favourite ? removeFromFavourites : handleAddToFavourites,
       }}
       staticText={t(toolsTranslationKeys.SHIFT_THOUGHTS.helper)}
       items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
