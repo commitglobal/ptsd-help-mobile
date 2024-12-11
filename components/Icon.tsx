@@ -43,7 +43,7 @@ import StarFilled from '../assets/icons/star-filled.svg';
 import Photo from '../assets/icons/photo.svg';
 import Music from '../assets/icons/music.svg';
 import Language from '../assets/icons/language.svg';
-
+import Chat from '../assets/icons/chat.svg';
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
 };
@@ -91,6 +91,7 @@ const iconRegistry: IconRegistry = {
   photo: Photo,
   music: Music,
   language: Language,
+  chat: Chat,
 };
 
 interface IconProps extends XStackProps {
