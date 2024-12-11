@@ -649,5 +649,23 @@
     "description": "Încetinirea și adâncirea respirației te poate ajuta să te calmezi când te simți stresat. Pune-ți căștile sau mergi într-un loc privat și liniștit pentru a fi ghidat prin acest exercițiu.",
     "action-btn-label": "Începe",
     "done": "Gata"
+  },
+  "body-scan": {
+    "title": "Scanarea corpului",
+    "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri. Durată: Aproximativ 10 minute.",
+    "action-btn-label": "Începe",
+    "done": "Gata",
+    "julia": {
+      "title": "Julia",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    },
+    "robyn": {
+      "title": "Robyn",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    }
   }
 }
