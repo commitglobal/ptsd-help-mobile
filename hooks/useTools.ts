@@ -28,6 +28,11 @@ type ToolCategories =
   | 'MY_FEELINGS'
   | 'WORRY_TIME'
   | 'RID'
+  | 'SOOTHE_SENSES'
+  | 'CONNECT_WITH_OTHERS'
+  | 'CHANGE_PERSPECTIVE'
+  | 'GROUNDING'
+  | 'QUOTES'
   | 'SLEEP'
   | 'MY_STRENGTHS'
   | 'SHIFT_THOUGHTS'
@@ -199,6 +204,41 @@ export const useTools = () => {
       label: toolsTranslationKeys.RID.label,
       icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/rid',
+      type: ToolType.TOOL,
+    },
+    SOOTHE_SENSES: {
+      id: 'soothe-senses',
+      label: toolsTranslationKeys.SOOTHE_SENSES.label,
+      icon: mediaMapping?.['SOOTHE_SENSES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/soothe-senses',
+      type: ToolType.TOOL,
+    },
+    CONNECT_WITH_OTHERS: {
+      id: 'connect-with-others',
+      label: toolsTranslationKeys.CONNECT_WITH_OTHERS.label,
+      icon: mediaMapping?.['CONNECT_WITH_OTHERS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/connect-with-others',
+      type: ToolType.TOOL,
+    },
+    CHANGE_PERSPECTIVE: {
+      id: 'change-perspective',
+      label: toolsTranslationKeys.CHANGE_PERSPECTIVE.label,
+      icon: mediaMapping?.['CHANGE_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/change-perspective',
+      type: ToolType.TOOL,
+    },
+    GROUNDING: {
+      id: 'grounding',
+      label: toolsTranslationKeys.GROUNDING.label,
+      icon: mediaMapping?.['GROUNDING.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/grounding',
+      type: ToolType.TOOL,
+    },
+    QUOTES: {
+      id: 'quotes',
+      label: toolsTranslationKeys.QUOTES.label,
+      icon: mediaMapping?.['QUOTES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/quotes',
       type: ToolType.TOOL,
     },
     MY_STRENGTHS: {

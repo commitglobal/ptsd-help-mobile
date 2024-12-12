@@ -312,6 +312,36 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    SOOTHE_SENSES: {
+      label: 'list.soothe-senses',
+      repeater: 'soothe-senses.repeater',
+    },
+    CONNECT_WITH_OTHERS: {
+      label: 'list.connect-with-others',
+      title: 'connect-with-others.title',
+      done: 'connect-with-others.done',
+      staticText: 'connect-with-others.static-text',
+      repeater: 'connect-with-others.repeater',
+    },
+    CHANGE_PERSPECTIVE: {
+      label: 'list.change-perspective',
+      title: 'change-perspective.title',
+      done: 'change-perspective.done',
+      staticText: 'change-perspective.static-text',
+      repeater: 'change-perspective.repeater',
+    },
+    GROUNDING: {
+      label: 'list.grounding',
+      title: 'grounding.title',
+      done: 'grounding.done',
+      repeater: 'grounding.repeater',
+    },
+    QUOTES: {
+      label: 'list.quotes',
+      title: 'quotes.title',
+      done: 'quotes.done',
+      repeater: 'quotes.repeater',
+    },
     RECREATIONAL_ACTIVITIES: {
       label: 'list.recreational-activities',
       subcategories: {

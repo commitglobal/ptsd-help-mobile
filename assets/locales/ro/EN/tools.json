@@ -13,18 +13,23 @@
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
     "my-feelings": "RO/en: My Feelings",
-    "worry-time": "RO/en: Worry Time",
     "sleep": "RO/en: Sleep Instruments",
     "sleep-help": "RO/en: Help to sleep",
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
+    "worry-time": "RO/en: Worry Time",
     "rid": "RO/en: RID",
+    "my-strengths": "RO/en: My Strengths",
+    "shift-thoughts": "RO/en: Shift Thoughts",
+    "soothe-senses": "RO/en: Soothe The Senses",
+    "connect-with-others": "RO/en: Connect With Others",
+    "change-perspective": "RO/en: Change Your Perspective",
+    "grounding": "RO/en: Grounding",
+    "quotes": "RO/en: Inspirational Quotes",
     "recreational-activities": "RO/en: Recreational Activities",
     "recreational-activities-alone": "RO/en: Recreational Activities: Time Spent Alone",
     "recreational-activities-city": "RO/en: Recreational Activities: In The City",
-    "recreational-activities-nature": "RO/en: Recreational Activities: In Nature",
-    "my-strengths": "RO/en: My Strengths",
-    "shift-thoughts": "RO/en: Shift Thoughts"
+    "recreational-activities-nature": "RO/en: Recreational Activities: In Nature"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1047,6 +1052,114 @@
     "date": "Date:",
     "delete": "RO/en: Delete RID"
   },
+  "my-strengths": {
+    "title": "RO/en: My Strengths",
+    "title-edit": "RO/en: Edit strength",
+    "description": "RO/en: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
+    "add": "RO/en: Add strength",
+    "done": "RO/en: Done",
+    "strength-label": "RO/en: What's something that you like or respect about yourself? What's something that you're doing well?",
+    "placeholder": "RO/en: Write your strength here...",
+    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
+    "take-picture": "RO/en: Take a picture",
+    "pick-from-library": "RO/en: Pick an image from the library",
+    "delete-image": "RO/en: Delete image",
+    "modify-image": "RO/en: Modify image",
+    "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
+    "edit": "RO/en: Edit strength",
+    "delete": "RO/en: Delete strength"
+  },
+  "shift-thoughts": {
+    "title": "RO/en: Shift Thoughts",
+    "helper": "RO/en: Find a thought from down below which you can repeat for 5 minutes:",
+    "start": "RO/en: Start",
+    "repeater": {
+      "1": {
+        "title": "RO/en: I can tolerate this."
+      },
+      "2": {
+        "title": "RO/en: Take a big breath."
+      },
+      "3": {
+        "title": "RO/en: Breathe"
+      },
+      "4": {
+        "title": "RO/en: Manage your anger"
+      },
+      "5": {
+        "title": "RO/en: I can't change the world."
+      },
+      "6": {
+        "title": "RO/en: Count to 10 and breathe."
+      },
+      "7": {
+        "title": "RO/en: Dig deep; find calm and stability."
+      },
+      "8": {
+        "title": "RO/en: Don't buy into this situation"
+      },
+      "9": {
+        "title": "RO/en: Don't let it get to you."
+      },
+      "10": {
+        "title": "RO/en: Don't pay attention"
+      },
+      "11": {
+        "title": "RO/en: Don't bite."
+      },
+      "12": {
+        "title": "RO/en: Don't go there."
+      },
+      "13": {
+        "title": "RO/en: Easy does it."
+      },
+      "14": {
+        "title": "RO/en: You can get through it."
+      },
+      "15": {
+        "title": "RO/en: How would (person you respect) handle this?"
+      },
+      "16": {
+        "title": "RO/en: I can't control what other people do."
+      },
+      "17": {
+        "title": "RO/en: It's in the past."
+      },
+      "18": {
+        "title": "RO/en: It's not a big thing; I don't need to get upset."
+      },
+      "19": {
+        "title": "RO/en: It's not worth it."
+      },
+      "20": {
+        "title": "RO/en: Keep your eye on the prize."
+      },
+      "21": {
+        "title": "RO/en: Leave it alone."
+      },
+      "22": {
+        "title": "RO/en: Let it be."
+      },
+      "23": {
+        "title": "RO/en: Let it go."
+      },
+      "24": {
+        "title": "RO/en: Slow down."
+      },
+      "25": {
+        "title": "RO/en: Stay the course."
+      },
+      "26": {
+        "title": "RO/en: Stop! Just stop."
+      },
+      "27": {
+        "title": "RO/en: This, too, will pass."
+      },
+      "28": {
+        "title": "RO/en: Use your tools!"
+      }
+    }
+  },
   "recreational-activities": {
     "label": "RO/en: Recreational activities"
   },
@@ -1273,111 +1386,612 @@
       }
     }
   },
-  "my-strengths": {
-    "title": "RO/en: My Strengths",
-    "title-edit": "RO/en: Edit strength",
-    "description": "RO/en: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
-    "add": "RO/en: Add strength",
+  "soothe-senses": {
+    "title": "RO/en: Soothe The Senses",
     "done": "RO/en: Done",
-    "strength-label": "RO/en: What's something that you like or respect about yourself? What's something that you're doing well?",
-    "placeholder": "RO/en: Write your strength here...",
-    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
-    "take-picture": "RO/en: Take a picture",
-    "pick-from-library": "RO/en: Pick an image from the library",
-    "delete-image": "RO/en: Delete image",
-    "modify-image": "RO/en: Modify image",
-    "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
-    "edit": "RO/en: Edit strength",
-    "delete": "RO/en: Delete strength"
-  },
-  "shift-thoughts": {
-    "title": "RO/en: Shift Thoughts",
-    "helper": "RO/en: Find a thought from down below which you can repeat for 5 minutes:",
-    "start": "RO/en: Start",
     "repeater": {
       "1": {
-        "title": "RO/en: I can tolerate this."
+        "title": "Sound",
+        "description": "RO/en: Sing your favorite songs, or play them and sing along."
       },
       "2": {
-        "title": "RO/en: Take a big breath."
+        "title": "Sound",
+        "description": "RO/en: Listen to music, and let yourself get lost in the sounds."
       },
       "3": {
-        "title": "RO/en: Breathe"
+        "title": "Sound",
+        "description": "RO/en: Listen to pleasurable sounds, like birds, or the ocean."
       },
       "4": {
-        "title": "RO/en: Manage your anger"
+        "title": "Sound",
+        "description": "RO/en: Learn to play an instrument and play tunes for your own enjoyment."
       },
       "5": {
-        "title": "RO/en: I can't change the world."
+        "title": "Sound",
+        "description": "RO/en: Be mindful of the sounds around you."
       },
       "6": {
-        "title": "RO/en: Count to 10 and breathe."
+        "title": "Sound",
+        "description": "RO/en: Turn on a movie and listen to the sounds, tones and textures of human voices."
       },
       "7": {
-        "title": "RO/en: Dig deep; find calm and stability."
+        "title": "Sound",
+        "description": "RO/en: Listen to an meditation or lecture online or on the radio about something interesting to you."
       },
       "8": {
-        "title": "RO/en: Don't buy into this situation"
+        "title": "Sound",
+        "description": "RO/en: Go for a walk in nature and listen to the sounds around you."
       },
       "9": {
-        "title": "RO/en: Don't let it get to you."
+        "title": "Sight",
+        "description": "RO/en: Go for a walk in the park or a hike in nature. Take in the beauty around you."
       },
       "10": {
-        "title": "RO/en: Don't pay attention"
+        "title": "Sight",
+        "description": "RO/en: Go to a museum with beautiful art and enjoy what catches your eye."
       },
       "11": {
-        "title": "RO/en: Don't bite."
+        "title": "Sight",
+        "description": "RO/en: Sit in the lobby of a beautiful hotel and notice the details of the décor."
       },
       "12": {
-        "title": "RO/en: Don't go there."
+        "title": "Sight",
+        "description": "RO/en: Buy a beautiful flower or bouquet and make one space in a room pretty."
       },
       "13": {
-        "title": "RO/en: Easy does it."
+        "title": "Sight",
+        "description": "RO/en: Go outside at night in the fresh air and look at the stars."
       },
       "14": {
-        "title": "RO/en: You can get through it."
+        "title": "Sight",
+        "description": "RO/en: Look at good travel photos in a book or on the internet; let them inspire you."
       },
       "15": {
-        "title": "RO/en: How would (person you respect) handle this?"
+        "title": "Taste",
+        "description": "RO/en: Eat your favorite meal; really pay attention as you savor it."
       },
       "16": {
-        "title": "RO/en: I can't control what other people do."
+        "title": "Taste",
+        "description": "RO/en: Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
       },
       "17": {
-        "title": "RO/en: It's in the past."
+        "title": "Taste",
+        "description": "RO/en: Treat yourself to dessert and eat each bite mindfully, with pleasure."
       },
       "18": {
-        "title": "RO/en: It's not a big thing; I don't need to get upset."
+        "title": "Taste",
+        "description": "RO/en: Suck on a piece of peppermint candy and let it melt in your mouth."
       },
       "19": {
-        "title": "RO/en: It's not worth it."
+        "title": "Taste",
+        "description": "RO/en: Chew your favorite gum and savor its flavor."
       },
       "20": {
-        "title": "RO/en: Keep your eye on the prize."
+        "title": "Taste",
+        "description": "RO/en: Sample flavors in an ice cream store and notice the subtle differences."
       },
       "21": {
-        "title": "RO/en: Leave it alone."
+        "title": "Touch",
+        "description": "RO/en: Get a massage. Let yourself really focus on and enjoy the sensations."
       },
       "22": {
-        "title": "RO/en: Let it be."
+        "title": "Touch",
+        "description": "RO/en: Sit in the sun (please use sunscreen), and enjoy the warmth."
       },
       "23": {
-        "title": "RO/en: Let it go."
+        "title": "Touch",
+        "description": "RO/en: Pet a dog or cat, and focus on the softness and pleasant sensations."
       },
       "24": {
-        "title": "RO/en: Slow down."
+        "title": "Touch",
+        "description": "RO/en: Soak your feet and allow any tension or soreness to melt away."
       },
       "25": {
-        "title": "RO/en: Stay the course."
+        "title": "Touch",
+        "description": "RO/en: Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
       },
       "26": {
-        "title": "RO/en: Stop! Just stop."
+        "title": "Touch",
+        "description": "RO/en: Hug someone and feel the comfort of their touch."
       },
       "27": {
-        "title": "RO/en: This, too, will pass."
+        "title": "Smell",
+        "description": "RO/en: Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
       },
       "28": {
-        "title": "RO/en: Use your tools!"
+        "title": "Smell",
+        "description": "RO/en: Light a scented candle and enjoy the fragrance in the air."
+      },
+      "29": {
+        "title": "Smell",
+        "description": "RO/en: Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
+      },
+      "30": {
+        "title": "Smell",
+        "description": "RO/en: Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
+      },
+      "31": {
+        "title": "Smell",
+        "description": "RO/en: Take a walk in a wooded area and breathe in the fresh smells of nature."
+      },
+      "32": {
+        "title": "Smell",
+        "description": "RO/en: Put lemon oil on your furniture and enjoy the scent."
+      }
+    }
+  },
+  "connect-with-others": {
+    "title": "RO/en: Connect With Others",
+    "done": "RO/en: Done",
+    "static-text": "RO/en: Getting support from others when you're dealing with physical or emotional distress can help. Try these:",
+    "repeater": {
+      "1": {
+        "title": "RO/en: Call a family member",
+        "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      "2": {
+        "title": "RO/en: Call a friend",
+        "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      "3": {
+        "title": "RO/en: Cook dinner for someone",
+        "description": ""
+      },
+      "4": {
+        "title": "RO/en: Go to a party",
+        "description": ""
+      },
+      "5": {
+        "title": "RO/en: Join a book club or reading group",
+        "description": ""
+      },
+      "6": {
+        "title": "RO/en: Join a sports club",
+        "description": "RO/en: Join a club to play a sport, such as bowling, basketball, or soccer."
+      },
+      "7": {
+        "title": "RO/en: Make a small gift for someone",
+        "description": ""
+      },
+      "8": {
+        "title": "RO/en: Visit a family member",
+        "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      "9": {
+        "title": "RO/en: Visit a friend",
+        "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      "10": {
+        "title": "RO/en: Write a letter",
+        "description": ""
+      }
+    }
+  },
+  "change-perspective": {
+    "title": "RO/en: Change Your Perspective",
+    "done": "RO/en: Done",
+    "static-text": "RO/en: Changing the way you think can change the way you feel. Focus on this useful thought:",
+    "repeater": {
+      "1": {
+        "description": "This is a hassle, not a horror."
+      },
+      "2": {
+        "description": "I have been through many hard things in my life and survived."
+      },
+      "3": {
+        "description": "I can tolerate this."
+      },
+      "4": {
+        "description": "I will survive even if I don't sleep at all tonight."
+      },
+      "5": {
+        "description": "This situation is different than what happened to me and I'm going to be fine."
+      },
+      "6": {
+        "description": "I am right here, right now."
+      },
+      "7": {
+        "description": "This may seem hard now, but it will get easier and easier over time."
+      },
+      "8": {
+        "description": "When this is over, I'll be glad I did it."
+      },
+      "9": {
+        "description": "I've done this before, so I know I can do it again."
+      },
+      "10": {
+        "description": "I know I'm in a safe place, even though my mind is telling me something else."
+      },
+      "11": {
+        "description": "I can feel my heart beating and my feet on the floor. I am alive and okay."
+      },
+      "12": {
+        "description": "I've been through worse before and made it through safely."
+      },
+      "13": {
+        "description": "My body is reacting to a memory. Right now I am safe"
+      },
+      "14": {
+        "description": "I don't have to feel comfortable all the time. That just proves I am human."
+      },
+      "15": {
+        "description": "This emotion will come and go. I will feel differently in twenty minutes."
+      },
+      "16": {
+        "description": "I am able to respond effectively. I have skills to handle this situation."
+      },
+      "17": {
+        "description": "I have been through this before and been just fine."
+      },
+      "18": {
+        "description": "This is another challenge that I will figure out and face."
+      },
+      "19": {
+        "description": "These emotions are telling me something. They won't hurt me."
+      },
+      "20": {
+        "description": "I am human. I can make mistakes. No one is perfect."
+      },
+      "21": {
+        "description": "I am able to protect myself."
+      },
+      "22": {
+        "description": "Slow down. I know there is more than one choice I can make."
+      },
+      "23": {
+        "description": "I can ask others for help."
+      },
+      "24": {
+        "description": "I have made the right decision before."
+      },
+      "25": {
+        "description": "My thoughts are just thoughts; they're not always right. Don't believe everything you think."
+      },
+      "26": {
+        "description": "I am strong. I am safe now."
+      },
+      "27": {
+        "description": "This feeling will pass."
+      },
+      "28": {
+        "description": "I will not feel this way forever. I have felt differently before and will feel differently soon."
+      },
+      "29": {
+        "description": "I am in a safe place."
+      },
+      "30": {
+        "description": "The emotions I feel right now are giving me information about how I feel but they're not necessarily based on facts."
+      },
+      "31": {
+        "description": "If I don't fight my emotions, they will go down on their own."
+      },
+      "32": {
+        "description": "I am a decent person."
+      },
+      "33": {
+        "description": "It is okay if it takes me time to figure this out."
+      },
+      "34": {
+        "description": "There is always time to learn."
+      },
+      "35": {
+        "description": "Learning will give me more options in the future."
+      },
+      "36": {
+        "description": "There are times when I will fall back into old patterns. I just need to catch myself and get back on track with what's effective."
+      },
+      "37": {
+        "description": "I know that I deserve love."
+      },
+      "38": {
+        "description": "I am my own unique person: special, talented, and worthwhile."
+      },
+      "39": {
+        "description": "One night of poor sleep is not the end of the world."
+      },
+      "40": {
+        "description": "This tossing and turning at night will pass."
+      },
+      "41": {
+        "description": "Nightmares are disturbing, but they're not real. I am safe."
+      },
+      "42": {
+        "description": "Although it feels like I will never get a good night's sleep, I have in the past and I will in the future."
+      },
+      "43": {
+        "description": "Although I am anticipating a poor night's sleep, it could be fine…I have slept well before."
+      }
+    }
+  },
+  "grounding": {
+    "title": "RO/en: Grounding",
+    "done": "RO/en: Done",
+    "repeater": {
+      "1": {
+        "title": "RO/en: Feel feet on floor",
+        "description": "RO/en: Focus all of your attention on your feet. Feel the floor under them."
+      },
+      "2": {
+        "title": "RO/en: Texture of a Pebble",
+        "description": "RO/en: Focus all of your attention on the feel of a pebble or coin in your hand."
+      },
+      "3": {
+        "title": "RO/en: Breathing",
+        "description": "RO/en: Sit quietly and focus all of your attention on your in-breath and then your out-breath."
+      },
+      "4": {
+        "title": "RO/en: The space around you – Colors",
+        "description": "RO/en: Look around and focus your attention on the colors around you, noticing as many colors as you can."
+      },
+      "5": {
+        "title": "RO/en: The space around you – Smells",
+        "description": "RO/en: Focus all of your attention on the smells in your environment."
+      },
+      "6": {
+        "title": "RO/en: The space around you – Sounds",
+        "description": "RO/en: Focus on and listen carefully to the many sounds in your environment."
+      },
+      "7": {
+        "title": "RO/en: The space around you – Temperature",
+        "description": "RO/en: Focus all of your attention of the temperature of the air on your skin."
+      },
+      "8": {
+        "title": "RO/en: Eating",
+        "description": "RO/en: While you are eating, focus all of your attention on the sensations of the food in your mouth while you chew very slowly."
+      },
+      "9": {
+        "title": "RO/en: Brushing your teeth",
+        "description": "RO/en: Brush your teeth and focus your attention on all of the sensations, tastes, and smells of this activity."
+      },
+      "10": {
+        "title": "RO/en: Walking",
+        "description": "RO/en: Walk slowly, focusing your attention on what it feels like to take each step."
+      },
+      "11": {
+        "title": "RO/en: Object",
+        "description": "RO/en: Pick up any small object off the ground and focus all of your attention on the texture of the object and the feel of it in your hand."
+      },
+      "12": {
+        "title": "RO/en: Pet an animal",
+        "description": "RO/en: Pet an animal that is quiet and calm. Focus all of your attention on the sensations on your hand."
+      },
+      "13": {
+        "title": "RO/en: Attach yourself to the earth",
+        "description": "RO/en: With your feet shoulder width apart, close your eyes and imagine that you are growing roots into the earth, making you strong and stable."
+      },
+      "14": {
+        "title": "RO/en: Ice cube",
+        "description": "RO/en: Grab an ice cube and focus all of your attention on the sensations that go with it, cold, wet, and tingling."
+      },
+      "15": {
+        "title": "RO/en: Name what you see",
+        "description": "RO/en: Look around you and name what you see. Start with large objects, then move to smaller and smaller objects."
+      },
+      "16": {
+        "title": "RO/en: Focus on touch",
+        "description": "RO/en: Rub your hands together, clap your hands. Focus all of your attention on the feelings and sounds that you experience."
+      },
+      "17": {
+        "title": "RO/en: Reorientation",
+        "description": "RO/en: Remind yourself where you are, what today's date is, when were you born, and what you did yesterday."
+      },
+      "18": {
+        "title": "RO/en: Call a friend",
+        "description": "RO/en: Call a friend and discuss some activity you did together recently."
+      },
+      "19": {
+        "title": "RO/en: Past success",
+        "description": "RO/en: Remember what you did to successfully get past a previous painful experience."
+      },
+      "20": {
+        "title": "RO/en: Baby steps",
+        "description": "RO/en: Ask yourself and answer: What would be a small sign that things are getting a little better?"
+      },
+      "21": {
+        "title": "RO/en: Suck on a peppermint",
+        "description": "RO/en: Slowly suck on a mint and describe the taste and your reaction in detail to yourself."
+      },
+      "22": {
+        "title": "RO/en: Stamp your feet on the ground",
+        "description": "RO/en: Stamp your feet on the ground. Feel the force. Hear the sounds. Notice."
+      },
+      "23": {
+        "title": "RO/en: Feel your clothes on your skin",
+        "description": "RO/en: Pay attention to the sensation of your clothes touching your skin."
+      },
+      "24": {
+        "title": "RO/en: Feel your hands",
+        "description": "RO/en: Put your hands together and notice the sensations of the skin-on-skin contact."
+      },
+      "25": {
+        "title": "RO/en: Hear Others",
+        "description": "RO/en: Tune into the voices of others around you. Only pay attention to the sounds of others' voices."
+      }
+    }
+  },
+  "quotes": {
+    "title": "RO/en: Inspirational Quotes",
+    "done": "RO/en: Done",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Helen Keller",
+        "title": "RO/en: Although the world is full of suffering, it is full also of the overcoming of it."
+      },
+      "2": {
+        "description": "RO/en: Jesse Jackson",
+        "title": "RO/en: You are not responsible for being down, but you are responsible for getting up."
+      },
+      "3": {
+        "description": "RO/en: Rainer Maria Rilke",
+        "title": "RO/en: No feeling is final."
+      },
+      "4": {
+        "description": "RO/en: Baruch Spinoza",
+        "title": "RO/en: Not to laugh, not to lament, not to judge, but to understand."
+      },
+      "5": {
+        "description": "RO/en: Erica Jong",
+        "title": "RO/en: And the trouble is, if you don't risk anything, you risk even more."
+      },
+      "6": {
+        "description": "RO/en: Janis Joplin",
+        "title": "RO/en: Don't compromise yourself. You are all you've got."
+      },
+      "7": {
+        "description": "RO/en: Buddha",
+        "title": "RO/en: You yourself, as much as anybody in the entire universe, deserve your love and affection."
+      },
+      "8": {
+        "description": "RO/en: Rainer Maria Rilke",
+        "title": "RO/en: ...be attentive to what is arising within you, and place that above everything else… What is happening in your innermost self is worthy of your entire love; somehow you must find a way to work at it."
+      },
+      "9": {
+        "description": "RO/en: Winston Churchill",
+        "title": "RO/en: Never, never, never, never, never give up."
+      },
+      "10": {
+        "description": "RO/en: Frank Outlaw",
+        "title": "RO/en: Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character; it becomes your destiny."
+      },
+      "11": {
+        "description": "RO/en: Theodore Roosevelt",
+        "title": "RO/en: Do what you can, with what you have, where you are."
+      },
+      "12": {
+        "description": "RO/en: Molly Goode",
+        "title": "RO/en: Let your heart guide you. It whispers, so listen closely."
+      },
+      "13": {
+        "description": "RO/en: Ellen Glasgow",
+        "title": "RO/en: Life is never what one dreams. It is seldom what one desires, but for the vital spirit and the eager mind, the future will always hold the search for buried treasure and the possibility of high adventure."
+      },
+      "14": {
+        "description": "RO/en: Henry David Thoreau",
+        "title": "RO/en: It takes two to speak the truth—one to speak, the other to hear."
+      },
+      "15": {
+        "description": "RO/en: Ralph Waldo Emerson",
+        "title": "RO/en: When you do a thing, do it with all your might. Put your whole soul into it. Stamp it with your personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object."
+      },
+      "16": {
+        "description": "RO/en: Mohandas K. Gandhi",
+        "title": "RO/en: The future depends on what we do in the present."
+      },
+      "17": {
+        "description": "RO/en: Jean Shinoda Bolen",
+        "title": "RO/en: If we change within, our outer life will change also."
+      },
+      "18": {
+        "description": "RO/en: Wallace Stevens",
+        "title": "RO/en: Perhaps the truth depends on a walk around the lake."
+      },
+      "19": {
+        "description": "RO/en: Charles Dickens",
+        "title": "RO/en: A loving heart is the truest wisdom."
+      },
+      "20": {
+        "description": "RO/en: Martin Luther King Jr.",
+        "title": "RO/en: Each of us is two selves, and the great challenge of life is to try to keep that higher self in command."
+      },
+      "21": {
+        "description": "RO/en: William Saroyan",
+        "title": "RO/en: In the time of your life, live."
+      },
+      "22": {
+        "description": "RO/en: Virginia Satir",
+        "title": "RO/en: Life is not what it's supposed to be. It's what it is. The way you cope with it is what makes the difference."
+      },
+      "23": {
+        "description": "RO/en: Tommy Lasorda",
+        "title": "RO/en: The difference between the impossible and the possible lies in a person's determination."
+      },
+      "24": {
+        "description": "RO/en: Scott Adams",
+        "title": "RO/en: Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end."
+      },
+      "25": {
+        "description": "RO/en: Robert Cushing",
+        "title": "RO/en: The fact is, that to do anything in the world worth doing, we must not stand back shivering and thinking of the cold and danger, but jump in and scramble through as well as we can."
+      },
+      "26": {
+        "description": "RO/en: William Thackeray",
+        "title": "RO/en: Follow your honest convictions, and stay strong."
+      },
+      "27": {
+        "description": "RO/en: Aristotle",
+        "title": "RO/en: Knowing yourself is the beginning of all wisdom."
+      },
+      "28": {
+        "description": "RO/en: A. Bronson Alcott",
+        "title": "RO/en: Your real influence is measured by your treatment of yourself."
+      },
+      "29": {
+        "description": "RO/en: Swedish Proverb",
+        "title": "RO/en: Fear less, hope more, eat less, chew more, whine less, breathe more, talk less, say more, hate less, love more, and good things will be yours."
+      },
+      "30": {
+        "description": "RO/en: Martha Washington",
+        "title": "RO/en: I have learned that the greater part of our misery or unhappiness is determined not by our circumstance but by our disposition."
+      },
+      "31": {
+        "description": "RO/en: Rainer Rilke",
+        "title": "RO/en: The only journey is the journey within."
+      },
+      "32": {
+        "description": "RO/en: Doug Firebaugh",
+        "title": "RO/en: Every day do something that will inch you closer to a better tomorrow."
+      },
+      "33": {
+        "description": "RO/en: Hamerton",
+        "title": "RO/en: The happiest life is that which constantly exercises and educates what is best in us."
+      },
+      "34": {
+        "description": "RO/en: Thomas Edison",
+        "title": "RO/en: If we all did the things we are capable of, we would astound ourselves."
+      },
+      "35": {
+        "description": "RO/en: John Clarke",
+        "title": "RO/en: Go back a little to leap further."
+      },
+      "36": {
+        "description": "RO/en: Thomas Edison",
+        "title": "RO/en: I failed my way to success."
+      },
+      "37": {
+        "description": "RO/en: Ralph Waldo Emerson",
+        "title": "RO/en: Don't waste your life in doubts and fears: spend yourself on the work before you, well assured that the right performance of this hour's duties will be the best preparation for the hours or ages that follow it."
+      },
+      "38": {
+        "description": "RO/en: Chas. Austin Bates",
+        "title": "RO/en: It is the trouble that never comes that causes the loss of sleep."
+      },
+      "39": {
+        "description": "RO/en: Helen Keller",
+        "title": "RO/en: When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us."
+      },
+      "40": {
+        "description": "RO/en: Horace Bushnell",
+        "title": "RO/en: The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be."
+      },
+      "41": {
+        "description": "RO/en: Berthold Auerbach",
+        "title": "RO/en: Years teach us more than books."
+      },
+      "42": {
+        "description": "RO/en: Helen Keller",
+        "title": "RO/en: Life is either a daring adventure or nothing."
+      },
+      "43": {
+        "description": "RO/en: St. Clement of Alexandra",
+        "title": "RO/en: If you do not hope, you will not find what is beyond your hopes."
+      },
+      "44": {
+        "description": "RO/en: Henry Ward Beecher",
+        "title": "RO/en: Men's best successes come after their disappointments."
+      },
+      "45": {
+        "description": "RO/en: Robert Frost",
+        "title": "RO/en: The best way out is always through."
       }
     }
   }
