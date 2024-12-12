@@ -45,7 +45,7 @@ export default function LearnCategory() {
             onPress={() => {
               router.push({
                 pathname: '/content/topic',
-                params: { type: type, categoryId: pageId, topicId: item.id },
+                params: { type, categoryId: pageId, topicId: item.id },
               });
             }}
           />

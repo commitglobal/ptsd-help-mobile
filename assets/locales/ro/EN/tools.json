@@ -19,11 +19,17 @@
     "sleep-perspective": "RO/en: Change sleep perspective",
     "worry-time": "RO/en: Worry Time",
     "rid": "RO/en: RID",
+    "my-strengths": "RO/en: My Strengths",
+    "shift-thoughts": "RO/en: Shift Thoughts",
     "soothe-senses": "RO/en: Soothe The Senses",
     "connect-with-others": "RO/en: Connect With Others",
     "change-perspective": "RO/en: Change Your Perspective",
     "grounding": "RO/en: Grounding",
-    "quotes": "RO/en: Inspirational Quotes"
+    "quotes": "RO/en: Inspirational Quotes",
+    "recreational-activities": "RO/en: Recreational Activities",
+    "recreational-activities-alone": "RO/en: Recreational Activities: Time Spent Alone",
+    "recreational-activities-city": "RO/en: Recreational Activities: In The City",
+    "recreational-activities-nature": "RO/en: Recreational Activities: In Nature"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1045,6 +1051,340 @@
     "empty": "RO/en: You haven't added any RIDs yet.",
     "date": "Date:",
     "delete": "RO/en: Delete RID"
+  },
+  "my-strengths": {
+    "title": "RO/en: My Strengths",
+    "title-edit": "RO/en: Edit strength",
+    "description": "RO/en: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
+    "add": "RO/en: Add strength",
+    "done": "RO/en: Done",
+    "strength-label": "RO/en: What's something that you like or respect about yourself? What's something that you're doing well?",
+    "placeholder": "RO/en: Write your strength here...",
+    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
+    "take-picture": "RO/en: Take a picture",
+    "pick-from-library": "RO/en: Pick an image from the library",
+    "delete-image": "RO/en: Delete image",
+    "modify-image": "RO/en: Modify image",
+    "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
+    "edit": "RO/en: Edit strength",
+    "delete": "RO/en: Delete strength"
+  },
+  "shift-thoughts": {
+    "title": "RO/en: Shift Thoughts",
+    "helper": "RO/en: Find a thought from down below which you can repeat for 5 minutes:",
+    "start": "RO/en: Start",
+    "repeater": {
+      "1": {
+        "title": "RO/en: I can tolerate this."
+      },
+      "2": {
+        "title": "RO/en: Take a big breath."
+      },
+      "3": {
+        "title": "RO/en: Breathe"
+      },
+      "4": {
+        "title": "RO/en: Manage your anger"
+      },
+      "5": {
+        "title": "RO/en: I can't change the world."
+      },
+      "6": {
+        "title": "RO/en: Count to 10 and breathe."
+      },
+      "7": {
+        "title": "RO/en: Dig deep; find calm and stability."
+      },
+      "8": {
+        "title": "RO/en: Don't buy into this situation"
+      },
+      "9": {
+        "title": "RO/en: Don't let it get to you."
+      },
+      "10": {
+        "title": "RO/en: Don't pay attention"
+      },
+      "11": {
+        "title": "RO/en: Don't bite."
+      },
+      "12": {
+        "title": "RO/en: Don't go there."
+      },
+      "13": {
+        "title": "RO/en: Easy does it."
+      },
+      "14": {
+        "title": "RO/en: You can get through it."
+      },
+      "15": {
+        "title": "RO/en: How would (person you respect) handle this?"
+      },
+      "16": {
+        "title": "RO/en: I can't control what other people do."
+      },
+      "17": {
+        "title": "RO/en: It's in the past."
+      },
+      "18": {
+        "title": "RO/en: It's not a big thing; I don't need to get upset."
+      },
+      "19": {
+        "title": "RO/en: It's not worth it."
+      },
+      "20": {
+        "title": "RO/en: Keep your eye on the prize."
+      },
+      "21": {
+        "title": "RO/en: Leave it alone."
+      },
+      "22": {
+        "title": "RO/en: Let it be."
+      },
+      "23": {
+        "title": "RO/en: Let it go."
+      },
+      "24": {
+        "title": "RO/en: Slow down."
+      },
+      "25": {
+        "title": "RO/en: Stay the course."
+      },
+      "26": {
+        "title": "RO/en: Stop! Just stop."
+      },
+      "27": {
+        "title": "RO/en: This, too, will pass."
+      },
+      "28": {
+        "title": "RO/en: Use your tools!"
+      }
+    }
+  },
+  "recreational-activities": {
+    "label": "RO/en: Recreational activities"
+  },
+  "recreational-activities-alone": {
+    "label": "RO/en: Recreational activities: Time Spent Alone",
+    "title": "RO/en: Time Spent Alone",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Bake something."
+      },
+      "2": {
+        "description": "RO/en: Cook a meal for yourself."
+      },
+      "3": {
+        "description": "RO/en: Dance."
+      },
+      "4": {
+        "description": "RO/en: Do a crossword or Sudoku puzzle."
+      },
+      "5": {
+        "description": "RO/en: Do a jigsaw puzzle."
+      },
+      "6": {
+        "description": "RO/en: Do arts and crafts."
+      },
+      "7": {
+        "description": "RO/en: Eat something delicious."
+      },
+      "8": {
+        "description": "RO/en: Have coffee or tea."
+      },
+      "9": {
+        "description": "RO/en: Knit or do needlepoint."
+      },
+      "10": {
+        "description": "RO/en: Light some candles."
+      },
+      "11": {
+        "description": "RO/en: List 5 things you like about yourself."
+      },
+      "12": {
+        "description": "RO/en: Listen to the radio."
+      },
+      "13": {
+        "description": "RO/en: Paint or draw."
+      },
+      "14": {
+        "description": "RO/en: Plan a trip."
+      },
+      "15": {
+        "description": "RO/en: Play a musical instrument."
+      },
+      "16": {
+        "description": "RO/en: Play cards."
+      },
+      "17": {
+        "description": "RO/en: Play with animals."
+      },
+      "18": {
+        "description": "RO/en: Practice a martial art."
+      },
+      "19": {
+        "description": "RO/en: Pray, meditate, or practice yoga."
+      },
+      "20": {
+        "description": "RO/en: Put on your favorite shirt to feel good."
+      },
+      "21": {
+        "description": "RO/en: Read a relaxing magazine or book."
+      },
+      "22": {
+        "description": "RO/en: Remember a fun vacation."
+      },
+      "23": {
+        "description": "RO/en: Remember someone being kind to you."
+      },
+      "24": {
+        "description": "RO/en: Build something with your hands."
+      },
+      "25": {
+        "description": "RO/en: Sing around the house."
+      },
+      "26": {
+        "description": "RO/en: Take a relaxing shower."
+      },
+      "27": {
+        "description": "RO/en: Take a warm bath or hot tub."
+      },
+      "28": {
+        "description": "RO/en: Take photographs."
+      },
+      "29": {
+        "description": "RO/en: Think about someone you love."
+      },
+      "30": {
+        "description": "RO/en: Watch a movie or TV show."
+      },
+      "31": {
+        "description": "RO/en: Watch funny videos."
+      },
+      "32": {
+        "description": "RO/en: Watch sports on TV."
+      },
+      "33": {
+        "description": "RO/en: Write a poem or story."
+      }
+    }
+  },
+  "recreational-activities-city": {
+    "title": "RO/en: In The City",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Browse merchandise at an outdoor or hardware store."
+      },
+      "2": {
+        "description": "RO/en: Go window shopping."
+      },
+      "3": {
+        "description": "RO/en: Buy yourself a small gift."
+      },
+      "4": {
+        "description": "RO/en: Buy yourself a plant."
+      },
+      "5": {
+        "description": "RO/en: Buy yourself music."
+      },
+      "6": {
+        "description": "RO/en: Get a manicure and/or pedicure."
+      },
+      "7": {
+        "description": "RO/en: Get a massage."
+      },
+      "8": {
+        "description": "RO/en: Go bowling."
+      },
+      "9": {
+        "description": "RO/en: Go listen to music."
+      },
+      "10": {
+        "description": "RO/en: Go out for ice cream."
+      },
+      "11": {
+        "description": "RO/en: Go out to dinner."
+      },
+      "12": {
+        "description": "RO/en: Go sightseeing."
+      },
+      "13": {
+        "description": "RO/en: Go to a bookstore and read."
+      },
+      "14": {
+        "description": "RO/en: Go to a coffee shop to read and have coffee/tea."
+      },
+      "15": {
+        "description": "RO/en: Go to a live performance or play."
+      },
+      "16": {
+        "description": "RO/en: Go to a museum."
+      },
+      "17": {
+        "description": "RO/en: Go to church/temple/mosque."
+      },
+      "18": {
+        "description": "RO/en: Go to the movies."
+      },
+      "19": {
+        "description": "RO/en: Go watch horse racing or auto racing."
+      },
+      "20": {
+        "description": "RO/en: Play a sport."
+      },
+      "21": {
+        "description": "RO/en: Play pool."
+      },
+      "22": {
+        "description": "RO/en: Take a class in a craft, a language, or a dance."
+      },
+      "23": {
+        "description": "RO/en: Volunteer at a soup kitchen or animal shelter."
+      }
+    }
+  },
+  "recreational-activities-nature": {
+    "title": "RO/en: In Nature",
+    "repeater": {
+      "1": {
+        "description": "RO/en: Buy some flowers and enjoy their beauty."
+      },
+      "2": {
+        "description": "RO/en: Do some gardening."
+      },
+      "3": {
+        "description": "RO/en: Go bird watching."
+      },
+      "4": {
+        "description": "RO/en: Go camping."
+      },
+      "5": {
+        "description": "RO/en: Go fishing."
+      },
+      "6": {
+        "description": "RO/en: Go for a drive or motorcycle ride in the countryside."
+      },
+      "7": {
+        "description": "RO/en: Go for a hike or bike ride on a nature trail."
+      },
+      "8": {
+        "description": "RO/en: Go for a picnic."
+      },
+      "9": {
+        "description": "RO/en: Go to a lake, river, or beach."
+      },
+      "10": {
+        "description": "RO/en: Take a stroll at a botanical garden or flower show."
+      },
+      "11": {
+        "description": "RO/en: Take a trip to a nature reserve or national park."
+      },
+      "12": {
+        "description": "RO/en: Take a walk in the park."
+      },
+      "13": {
+        "description": "RO/en: Spend time with animals in a safe way."
+      }
+    }
   },
   "soothe-senses": {
     "title": "RO/en: Soothe The Senses",

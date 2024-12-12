@@ -1,20 +1,7 @@
-import { DrizzleError, eq } from 'drizzle-orm';
+import { eq } from 'drizzle-orm';
 import db from '../db';
 import { feelings } from '../schema/feelings';
-
-class DatabaseError extends DrizzleError {
-  constructor(message: string) {
-    super({ message });
-    this.name = 'DatabaseError';
-  }
-}
-
-class NotFoundError extends DrizzleError {
-  constructor(message: string) {
-    super({ message });
-    this.name = 'NotFoundError';
-  }
-}
+import { DatabaseError, NotFoundError } from '../helpers';
 
 export type Feeling = Omit<typeof feelings.$inferSelect, 'id'>;
 
