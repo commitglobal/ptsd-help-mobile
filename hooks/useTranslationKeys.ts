@@ -276,6 +276,7 @@ const useTranslationKeys = () => {
       ptsdHelp: 'worry-time.ptsd-help',
       review: 'worry-time.review',
     },
+
     RID: {
       label: 'list.rid',
       title: 'rid.title',
@@ -330,6 +331,31 @@ const useTranslationKeys = () => {
           repeater: 'recreational-activities-nature.repeater',
         },
       },
+    },
+    MY_STRENGTHS: {
+      label: 'list.my-strengths',
+      title: 'my-strengths.title',
+      titleEdit: 'my-strengths.title-edit',
+      description: 'my-strengths.description',
+      add: 'my-strengths.add',
+      done: 'my-strengths.done',
+      strengthLabel: 'my-strengths.strength-label',
+      placeholder: 'my-strengths.placeholder',
+      pickImage: 'my-strengths.pick-image',
+      takePicture: 'my-strengths.take-picture',
+      pickFromLibrary: 'my-strengths.pick-from-library',
+      deleteImage: 'my-strengths.delete-image',
+      modifyImage: 'my-strengths.modify-image',
+      info: 'my-strengths.info',
+      edit: 'my-strengths.edit',
+      delete: 'my-strengths.delete',
+    },
+    SHIFT_THOUGHTS: {
+      label: 'list.shift-thoughts',
+      title: 'shift-thoughts.title',
+      helper: 'shift-thoughts.helper',
+      repeater: 'shift-thoughts.repeater',
+      start: 'shift-thoughts.start',
     },
   };
 

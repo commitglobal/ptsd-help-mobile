@@ -26,9 +26,11 @@ type ToolCategories =
   | 'MINDFULNESS'
   | 'PAUSE'
   | 'MY_FEELINGS'
-  | 'SLEEP'
   | 'WORRY_TIME'
   | 'RID'
+  | 'SLEEP'
+  | 'MY_STRENGTHS'
+  | 'SHIFT_THOUGHTS'
   | 'RECREATIONAL_ACTIVITIES';
 
 type ToolSubcategories =
@@ -197,6 +199,20 @@ export const useTools = () => {
       label: toolsTranslationKeys.RID.label,
       icon: mediaMapping?.['RID.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/rid',
+      type: ToolType.TOOL,
+    },
+    MY_STRENGTHS: {
+      id: 'my-strengths',
+      label: toolsTranslationKeys.MY_STRENGTHS.label,
+      icon: mediaMapping?.['MY_STRENGTHS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/my-strengths',
+      type: ToolType.TOOL,
+    },
+    SHIFT_THOUGHTS: {
+      id: 'shift-thoughts',
+      label: toolsTranslationKeys.SHIFT_THOUGHTS.label,
+      icon: mediaMapping?.['SHIFT_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/shift-thoughts',
       type: ToolType.TOOL,
     },
     RECREATIONAL_ACTIVITIES: {

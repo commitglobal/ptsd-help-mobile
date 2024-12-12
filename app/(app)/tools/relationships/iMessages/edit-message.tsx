@@ -5,7 +5,6 @@ import { Modal } from '@/components/Modal';
 import { Screen } from '@/components/Screen';
 import TextFormInput from '@/components/TextFormInput';
 import { Typography } from '@/components/Typography';
-import { scrollToItem } from '@/helpers/scrollToItem';
 import { router, Stack, useLocalSearchParams } from 'expo-router';
 import React, { useEffect, useRef, useState } from 'react';
 import { Controller, useForm } from 'react-hook-form';
@@ -16,6 +15,7 @@ import { ScrollView, XStack, YStack } from 'tamagui';
 import { useMessage } from '@/services/messages.service';
 import messagesRepository from '@/db/repositories/messages.repository';
 import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
+import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
 
 export default function Message() {
   const { t } = useTranslation('tools');
@@ -62,12 +62,6 @@ export default function Message() {
       });
     }
   }, [message]);
-
-  const handleFocus = (ref: React.RefObject<any>) => {
-    if (ref.current) {
-      scrollToItem(scrollViewRef, ref);
-    }
-  };
 
   const handleInfoModalOpen = (message: string) => {
     setInfoMessage(message);
@@ -152,7 +146,7 @@ export default function Message() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder
                 )}
                 ref={annoyanceRef}
-                onFocus={() => handleFocus(annoyanceRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, annoyanceRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example
                 )}
@@ -186,7 +180,7 @@ export default function Message() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder
                 )}
                 ref={feelRef}
-                onFocus={() => handleFocus(feelRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, feelRef)}
                 infoMessage={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
@@ -215,7 +209,7 @@ export default function Message() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder
                 )}
                 ref={becauseRef}
-                onFocus={() => handleFocus(becauseRef)}
+                onFocus={() => handleTextareaFocus(scrollViewRef, becauseRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example
                 )}

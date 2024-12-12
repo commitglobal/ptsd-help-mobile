@@ -1,6 +1,5 @@
-import { ContentType } from './content.type';
+import { ContentType, ContentPage, Section, Topic } from './content.type';
 import * as FileSystem from 'expo-file-system';
-import { ContentPage, Section, Topic } from './content.type';
 import { DownloadProgressTracker, DownloadProgress } from '@/helpers/download-progress';
 
 const deleteUnusedFiles = async (contentDir: string, usedFiles: Set<string>) => {
@@ -143,7 +142,7 @@ function extractFileNames(jsonObj: any) {
   const fileNames: string[] = [];
 
   function traverse(obj: any) {
-    for (let key in obj) {
+    for (const key in obj) {
       if (typeof obj[key] === 'object' && obj[key] !== null) {
         traverse(obj[key]);
       } else if (key === 'icon' || key === 'src') {

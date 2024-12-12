@@ -17,12 +17,31 @@ CREATE TABLE `i_message` (
 	`deleted_at` text
 );
 --> statement-breakpoint
+CREATE TABLE `rid` (
+	`id` integer PRIMARY KEY NOT NULL,
+	`trigger` text NOT NULL,
+	`difference` text NOT NULL,
+	`decision` text NOT NULL,
+	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`deleted_at` text
+);
+--> statement-breakpoint
 CREATE TABLE `sleep_activities` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`type` text NOT NULL,
 	`favorites` text,
 	`reminder_time` integer DEFAULT NULL,
 	`notification_id` text DEFAULT NULL,
+	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`deleted_at` text
+);
+--> statement-breakpoint
+CREATE TABLE `strengths` (
+	`id` integer PRIMARY KEY NOT NULL,
+	`strength` text,
+	`image` text,
 	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
 	`deleted_at` text

@@ -1,20 +1,7 @@
 import db from '../db';
 import { messages } from '../schema/messages';
-import { eq, DrizzleError, sql } from 'drizzle-orm';
-
-class DatabaseError extends DrizzleError {
-  constructor(message: string) {
-    super({ message });
-    this.name = 'DatabaseError';
-  }
-}
-
-class NotFoundError extends DrizzleError {
-  constructor(message: string) {
-    super({ message });
-    this.name = 'NotFoundError';
-  }
-}
+import { eq, sql } from 'drizzle-orm';
+import { DatabaseError, NotFoundError } from '../helpers';
 
 export type Message = typeof messages.$inferSelect;
 

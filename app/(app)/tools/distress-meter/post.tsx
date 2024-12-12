@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
-import { Href, router } from 'expo-router';
+import { router } from 'expo-router';
 import { ScrollView, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';

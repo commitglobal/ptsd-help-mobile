@@ -1,9 +1,8 @@
 import { ScrollView, XStack } from 'tamagui';
 import React from 'react';
-import Button from '@/components/Button';
 import { Typography } from '@/components/Typography';
 import { Icon } from '@/components/Icon';
-import { useRouter, useNavigation, Link } from 'expo-router';
+import { useRouter, useNavigation } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { Screen } from '@/components/Screen';
 import { DrawerActions } from '@react-navigation/native';
