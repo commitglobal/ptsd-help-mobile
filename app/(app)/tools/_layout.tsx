@@ -25,6 +25,7 @@ export default function ToolsLayout() {
       <Stack.Screen name='worry-time' options={{ headerShown: false }} />
       <Stack.Screen name='rid' options={{ headerShown: false }} />
       <Stack.Screen name='my-strengths' options={{ headerShown: false }} />
+      <Stack.Screen name='shift-thoughts' options={{ headerShown: false }} />
     </Stack>
   );
 }

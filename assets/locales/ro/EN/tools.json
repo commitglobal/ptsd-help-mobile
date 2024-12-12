@@ -19,7 +19,8 @@
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
     "rid": "RO/en: RID",
-    "my-strengths": "RO/en: My Strengths"
+    "my-strengths": "RO/en: My Strengths",
+    "shift-thoughts": "RO/en: Shift Thoughts"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1058,5 +1059,96 @@
     "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
     "edit": "RO/en: Edit strength",
     "delete": "RO/en: Delete strength"
+  },
+  "shift-thoughts": {
+    "title": "RO/en: Shift Thoughts",
+    "helper": "RO/en: Find a thought from down below which you can repeat for 5 minutes:",
+    "start": "RO/en: Start",
+    "repeater": {
+      "1": {
+        "title": "RO/en: I can tolerate this."
+      },
+      "2": {
+        "title": "RO/en: Take a big breath."
+      },
+      "3": {
+        "title": "RO/en: Breathe"
+      },
+      "4": {
+        "title": "RO/en: Manage your anger"
+      },
+      "5": {
+        "title": "RO/en: I can't change the world."
+      },
+      "6": {
+        "title": "RO/en: Count to 10 and breathe."
+      },
+      "7": {
+        "title": "RO/en: Dig deep; find calm and stability."
+      },
+      "8": {
+        "title": "RO/en: Don't buy into this situation"
+      },
+      "9": {
+        "title": "RO/en: Don't let it get to you."
+      },
+      "10": {
+        "title": "RO/en: Don't pay attention"
+      },
+      "11": {
+        "title": "RO/en: Don't bite."
+      },
+      "12": {
+        "title": "RO/en: Don't go there."
+      },
+      "13": {
+        "title": "RO/en: Easy does it."
+      },
+      "14": {
+        "title": "RO/en: You can get through it."
+      },
+      "15": {
+        "title": "RO/en: How would (person you respect) handle this?"
+      },
+      "16": {
+        "title": "RO/en: I can't control what other people do."
+      },
+      "17": {
+        "title": "RO/en: It's in the past."
+      },
+      "18": {
+        "title": "RO/en: It's not a big thing; I don't need to get upset."
+      },
+      "19": {
+        "title": "RO/en: It's not worth it."
+      },
+      "20": {
+        "title": "RO/en: Keep your eye on the prize."
+      },
+      "21": {
+        "title": "RO/en: Leave it alone."
+      },
+      "22": {
+        "title": "RO/en: Let it be."
+      },
+      "23": {
+        "title": "RO/en: Let it go."
+      },
+      "24": {
+        "title": "RO/en: Slow down."
+      },
+      "25": {
+        "title": "RO/en: Stay the course."
+      },
+      "26": {
+        "title": "RO/en: Stop! Just stop."
+      },
+      "27": {
+        "title": "RO/en: This, too, will pass."
+      },
+      "28": {
+        "title": "RO/en: Use your tools!"
+      }
+    }
   }
 }

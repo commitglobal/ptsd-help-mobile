@@ -72,7 +72,7 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   const {
     data: foggles,
     isFetching: isFetchingFoggles,
-    error: fogglesError,
+    // error: fogglesError,
   } = useFoggles(countryLanguage?.countryCode);
 
   const {
