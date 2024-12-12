@@ -42,7 +42,7 @@
     "expo-status-bar": "~1.12.1",
     "expo-system-ui": "~3.0.7",
     "expo-updates": "~0.25.27",
-    "expo-video": "^2.0.2",
+    "expo-video": "1.2.7",
     "expo-web-browser": "~13.0.3",
     "i18next": "^23.16.4",
     "lottie-react-native": "^7.1.0",
