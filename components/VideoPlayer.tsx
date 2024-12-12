@@ -31,7 +31,6 @@ const { width: DEVICE_WIDTH } = Dimensions.get('window');
 const BACKGROUND_COLOR = '#FFFFFF';
 const DISABLED_OPACITY = 0.5;
 const FONT_SIZE = 14;
-const LOADING_STRING = 'Loading ...';
 const BUFFERING_STRING = 'Buffering ...';
 
 export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
@@ -40,6 +39,7 @@ export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
   const [isMuted, setIsMuted] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
+  const [progress, setProgress] = useState(0);
 
   const player: VideoPlayer = useVideoPlayer(videoURI, (player) => {
     player.play();
@@ -55,6 +55,21 @@ export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
       subscription.remove();
     };
   }, [player]);
+
+  useEffect(() => {
+    let interval: NodeJS.Timeout | undefined;
+    if (isPlaying) {
+      interval = setInterval(() => {
+        setProgress(player.currentTime / player.duration);
+      }, 500);
+    } else {
+      clearInterval(interval);
+    }
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [isPlaying, player]);
 
   const handlePlayPause = () => {
     if (isPlaying) {
@@ -92,12 +107,8 @@ export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
     setIsMuted(!isMuted);
   };
 
-  const getProgress = () => {
-    return player.currentTime / player.duration;
-  };
-
-  const getTimestamp = () => {
-    const currentTime = Math.floor(player.currentTime);
+  const getTimestamp = (progress: number) => {
+    const currentTime = Math.floor(progress * player.duration);
     const duration = Math.floor(player.duration);
     const currentMinutes = Math.floor(currentTime / 60);
     const currentSeconds = currentTime % 60;
@@ -129,14 +140,16 @@ export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
           thumbImage={ICON_THUMB_1.module}
           minimumTrackTintColor='#000000'
           maximumTrackTintColor='gray'
-          value={getProgress()}
+          value={progress}
           onValueChange={handleSeekSliderValueChange}
           onSlidingComplete={handleSeekSliderSlidingComplete}
           disabled={isLoading}
         />
         <View style={styles.timestampRow}>
           <Text style={[styles.text, styles.buffering]}>{isLoading ? BUFFERING_STRING : ''}</Text>
-          <Text style={[styles.text, styles.timestamp]}>{getTimestamp()}</Text>
+          <Text style={[styles.text, styles.timestamp]} key={player.currentTime}>
+            {getTimestamp(progress)}
+          </Text>
         </View>
       </View>
       <View style={[styles.buttonsContainerBase, styles.buttonsContainerTopRow]}>
