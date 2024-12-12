@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MediaPlayer from '@/components/MediaPlayer';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -12,9 +12,18 @@ import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 export const BodyScanRobynPlayer = () => {
   const router = useRouter();
   const { t } = useTranslation('tools');
+  const [mediaURI, setMediaURI] = useState<string | null>(null);
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  useFocusEffect(() => {
+    setMediaURI(mediaMapping['BODY_SCAN.ROBYN.soundURI']);
+
+    return () => {
+      setMediaURI(null);
+    };
+  });
 
   const { finishTool } = useToolManagerContext();
 
@@ -34,7 +43,7 @@ export const BodyScanRobynPlayer = () => {
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         <YStack>
-          <MediaPlayer mediaURI={mediaMapping['BODY_SCAN.ROBYN.soundURI']} isVideo={false} />
+          <MediaPlayer mediaURI={mediaURI} isVideo={false} />
         </YStack>
       </ScreenWithImageHeader>
     </>
