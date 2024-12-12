@@ -51,6 +51,37 @@
       },
       "rid": {
         "enabled": true
+      },
+      "recreational-activities": {
+        "enabled": true,
+        "subcategories": {
+          "recreational-activities-alone": {
+            "enabled": true
+          },
+          "recreational-activities-city": {
+            "enabled": true
+          },
+          "recreational-activities-nature": {
+            "enabled": true
+          }
+        }
+      },
+      "sleep": {
+        "enabled": true,
+        "subcategories": {
+          "sleep-help": {
+            "enabled": true
+          },
+          "sleep-habits": {
+            "enabled": true
+          },
+          "sleep-perspective": {
+            "enabled": true
+          }
+        }
+      },
+      "my-strengths": {
+        "enabled": true
       }
     }
   }

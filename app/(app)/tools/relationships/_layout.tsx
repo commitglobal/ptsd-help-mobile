@@ -15,10 +15,6 @@ const RelationshipsLayout = () => {
       <Stack.Screen name='index' options={{ headerShown: false }} />
       <Stack.Screen name='reconnect-with-partner/index' options={{ headerShown: false }} />
       <Stack.Screen name='positive-communication/index' options={{ headerShown: false }} />
-
-      {/* <Stack.Screen name='iMessages/index' options={{ headerShown: false }} />
-      <Stack.Screen name='iMessages/new-message' options={{ headerShown: false }} />
-      <Stack.Screen name='iMessages/edit-message' options={{ headerShown: false }} /> */}
     </Stack>
   );
 };

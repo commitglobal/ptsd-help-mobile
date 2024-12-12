@@ -14,7 +14,7 @@ import { Switch } from '@/components/Switch';
 import { format } from 'date-fns';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { TimePicker } from '@/components/TimePicker';
-import { scrollToItem } from '@/helpers/scrollToItem';
+import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
 import * as Notifications from 'expo-notifications';
 
 export default function WorryTime() {
@@ -37,12 +37,6 @@ export default function WorryTime() {
     setIsReminderChecked(worries[0]?.reminderEnabled || false);
     setTime(worries[0]?.reminderTime && new Date(worries[0]?.reminderTime));
   }, [worries]);
-
-  const handleFocus = () => {
-    if (textareaRef.current && scrollViewRef.current) {
-      scrollToItem(scrollViewRef, textareaRef);
-    }
-  };
 
   const handleReminderChange = (checked: boolean) => {
     if (!checked) {
@@ -139,7 +133,7 @@ export default function WorryTime() {
           ref={textareaRef}
           placeholder={t(toolsTranslationKeys.WORRY_TIME.writeHere)}
           height={200}
-          onPress={handleFocus}
+          onFocus={() => handleTextareaFocus(scrollViewRef, textareaRef)}
           value={worryText}
           onChange={({ target: { value } }: any) => setWorryText(value)}
         />

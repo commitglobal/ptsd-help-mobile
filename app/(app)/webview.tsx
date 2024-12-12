@@ -1,5 +1,4 @@
 import { WebView } from 'react-native-webview';
-import Constants from 'expo-constants';
 import { StyleSheet } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';

@@ -1,8 +1,8 @@
 {
   "version": "6",
   "dialect": "sqlite",
-  "id": "86964048-c831-4f4b-8e96-6df31f7ba3fa",
-  "prevId": "647553a4-9a81-4032-9901-52604393a083",
+  "id": "1cf619ab-36b6-4991-9239-d755821834ae",
+  "prevId": "05bfac8a-9700-4947-ba5d-a4fe1fe94c83",
   "tables": {
     "feelings": {
       "name": "feelings",
