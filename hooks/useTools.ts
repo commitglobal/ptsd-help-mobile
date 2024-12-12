@@ -27,10 +27,11 @@ type ToolCategories =
   | 'PAUSE'
   | 'MY_FEELINGS'
   | 'WORRY_TIME'
-  | 'SLEEP'
   | 'RID'
+  | 'SLEEP'
   | 'MY_STRENGTHS'
-  | 'SHIFT_THOUGHTS';
+  | 'SHIFT_THOUGHTS'
+  | 'RECREATIONAL_ACTIVITIES';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -44,7 +45,10 @@ type ToolSubcategories =
   | 'LOVING_KINDNESS'
   | 'SLEEP_HELP'
   | 'SLEEP_HABITS'
-  | 'SLEEP_PERSPECTIVE';
+  | 'SLEEP_PERSPECTIVE'
+  | 'RECREATIONAL_ACTIVITIES_ALONE'
+  | 'RECREATIONAL_ACTIVITIES_CITY'
+  | 'RECREATIONAL_ACTIVITIES_NATURE';
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
@@ -210,6 +214,36 @@ export const useTools = () => {
       icon: mediaMapping?.['SHIFT_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/shift-thoughts',
       type: ToolType.TOOL,
+    },
+    RECREATIONAL_ACTIVITIES: {
+      id: 'recreational-activities',
+      label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.label,
+      icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/recreational-activities',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        RECREATIONAL_ACTIVITIES_ALONE: {
+          id: 'recreational-activities-alone',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_ALONE.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_ALONE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/alone',
+          type: ToolType.TOOL,
+        },
+        RECREATIONAL_ACTIVITIES_CITY: {
+          id: 'recreational-activities-city',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_CITY.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_CITY.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/city',
+          type: ToolType.TOOL,
+        },
+        RECREATIONAL_ACTIVITIES_NATURE: {
+          id: 'recreational-activities-nature',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_NATURE.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_NATURE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/nature',
+          type: ToolType.TOOL,
+        },
+      },
     },
   };
 

@@ -312,6 +312,26 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    RECREATIONAL_ACTIVITIES: {
+      label: 'list.recreational-activities',
+      subcategories: {
+        RECREATIONAL_ACTIVITIES_ALONE: {
+          label: 'recreational-activities-alone.label',
+          title: 'recreational-activities-alone.title',
+          repeater: 'recreational-activities-alone.repeater',
+        },
+        RECREATIONAL_ACTIVITIES_CITY: {
+          label: 'list.recreational-activities-city',
+          title: 'recreational-activities-city.title',
+          repeater: 'recreational-activities-city.repeater',
+        },
+        RECREATIONAL_ACTIVITIES_NATURE: {
+          label: 'list.recreational-activities-nature',
+          title: 'recreational-activities-nature.title',
+          repeater: 'recreational-activities-nature.repeater',
+        },
+      },
+    },
     MY_STRENGTHS: {
       label: 'list.my-strengths',
       title: 'my-strengths.title',
