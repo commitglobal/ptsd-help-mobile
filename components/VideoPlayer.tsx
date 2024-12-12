@@ -1,7 +1,6 @@
-import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import { useVideoPlayer, VideoPlayer, VideoView } from 'expo-video';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { PixelRatio, StyleSheet, View, Dimensions, TouchableHighlight, Image, Text } from 'react-native';
+import { useEffect, useRef, useState } from 'react';
+import { StyleSheet, View, Dimensions, TouchableHighlight, Image, Text } from 'react-native';
 import { Asset } from 'expo-asset';
 import Slider from '@react-native-community/slider';
 
@@ -35,13 +34,10 @@ const FONT_SIZE = 14;
 const LOADING_STRING = 'Loading ...';
 const BUFFERING_STRING = 'Buffering ...';
 
-export default function VideoScreen({ videoURI }: { videoURI: string }) {
-  const { mediaMapping } = useAssetsManagerContext();
-
+export default function VideoScreen({ videoURI }: { videoURI: string | null }) {
   const ref = useRef<VideoView>(null);
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(false);
-  const [volume, setVolume] = useState(1.0);
   const [isLoading, setIsLoading] = useState(true);
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -96,8 +92,18 @@ export default function VideoScreen({ videoURI }: { videoURI: string }) {
     setIsMuted(!isMuted);
   };
 
-  const getTimestamp = () => {
+  const getProgress = () => {
     return player.currentTime / player.duration;
+  };
+
+  const getTimestamp = () => {
+    const currentTime = Math.floor(player.currentTime);
+    const duration = Math.floor(player.duration);
+    const currentMinutes = Math.floor(currentTime / 60);
+    const currentSeconds = currentTime % 60;
+    const durationMinutes = Math.floor(duration / 60);
+    const durationSeconds = duration % 60;
+    return `${currentMinutes}:${currentSeconds.toString().padStart(2, '0')} / ${durationMinutes}:${durationSeconds.toString().padStart(2, '0')}`;
   };
 
   return (
@@ -123,13 +129,14 @@ export default function VideoScreen({ videoURI }: { videoURI: string }) {
           thumbImage={ICON_THUMB_1.module}
           minimumTrackTintColor='#000000'
           maximumTrackTintColor='gray'
-          value={getTimestamp()}
+          value={getProgress()}
           onValueChange={handleSeekSliderValueChange}
           onSlidingComplete={handleSeekSliderSlidingComplete}
           disabled={isLoading}
         />
         <View style={styles.timestampRow}>
           <Text style={[styles.text, styles.buffering]}>{isLoading ? BUFFERING_STRING : ''}</Text>
+          <Text style={[styles.text, styles.timestamp]}>{getTimestamp()}</Text>
         </View>
       </View>
       <View style={[styles.buttonsContainerBase, styles.buttonsContainerTopRow]}>

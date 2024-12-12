@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Screen } from '@/components/Screen';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { ScrollView, YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -14,6 +14,15 @@ export const MuscleRelaxationPlayer = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+
+  const [videoURI, setVideoURI] = useState<string | null>(mediaMapping['MUSCLE_RELAXATION.videoURI']);
+
+  useFocusEffect(() => {
+    setVideoURI(mediaMapping['MUSCLE_RELAXATION.videoURI']);
+    return () => {
+      setVideoURI(null);
+    };
+  });
 
   const { finishTool } = useToolManagerContext();
 
@@ -40,7 +49,7 @@ export const MuscleRelaxationPlayer = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack w='100%' h='50%'>
-            <VideoScreen videoURI={mediaMapping['MUSCLE_RELAXATION.videoURI']} />
+            <VideoScreen videoURI={videoURI} />
           </YStack>
         </ScrollView>
       </Screen>

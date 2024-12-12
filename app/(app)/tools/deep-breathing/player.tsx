@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Screen } from '@/components/Screen';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { ScrollView, YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -14,8 +14,16 @@ export const DeepBreathingPlayer = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+  const [videoURI, setVideoURI] = useState<string | null>(mediaMapping['DEEP_BREATHING.videoURI']);
 
   const { finishTool } = useToolManagerContext();
+
+  useFocusEffect(() => {
+    setVideoURI(mediaMapping['DEEP_BREATHING.videoURI']);
+    return () => {
+      setVideoURI(null);
+    };
+  });
 
   return (
     <>
@@ -40,7 +48,7 @@ export const DeepBreathingPlayer = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack w='100%' h='50%'>
-            <VideoScreen videoURI={mediaMapping['DEEP_BREATHING.videoURI']} />
+            <VideoScreen videoURI={videoURI} />
           </YStack>
         </ScrollView>
       </Screen>
