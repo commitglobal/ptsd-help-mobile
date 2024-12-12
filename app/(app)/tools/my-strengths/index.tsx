@@ -13,6 +13,7 @@ import { FlashList } from '@shopify/flash-list';
 import { Card } from '@/components/Card';
 import { GenericError } from '@/components/GenericError';
 import { Image } from 'expo-image';
+import { blurhash } from '@/helpers/blurhash';
 
 const MyStrengths = () => {
   const { t } = useTranslation('tools');
@@ -85,11 +86,6 @@ const StrengthItem = ({ strength, onPress }: { strength: Strength; onPress: () =
   const isPortrait = useMemo(
     () => (imageSize?.height && imageSize?.width ? imageSize.height > imageSize.width : null),
     [imageSize?.height, imageSize?.width]
-  );
-  const blurhash = useMemo(
-    () =>
-      '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[',
-    []
   );
 
   return (

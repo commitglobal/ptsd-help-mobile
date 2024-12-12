@@ -16,7 +16,7 @@ import strengthsRepository from '@/db/repositories/strengths.repository';
 import { Modal } from '@/components/Modal';
 import { useStrength } from '@/services/strengths.service';
 import { Image } from 'expo-image';
-
+import { blurhash } from '@/helpers/blurhash';
 const Strength = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -36,11 +36,6 @@ const Strength = () => {
   }, [strengthData]);
 
   const [image, setImage] = useState<string | null>(strengthData?.image || null);
-  const blurhash = useMemo(
-    () =>
-      '|rF?hV%2WCj[ayj[a|j[az_NaeWBj@ayfRayfQfQM{M|azj[azf6fQfQfQIpWXofj[ayj[j[fQayWCoeoeaya}j[ayfQa{oLj?j[WVj[ayayj[fQoff7azayj[ayj[j[ayofayayayj[fQj[ayayj[ayfjj[j[ayjuayj[',
-    []
-  );
   const [isPortrait, setIsPortrait] = useState<boolean | null>(null);
   const [text, setText] = useState(strengthData?.strength || '');
 
