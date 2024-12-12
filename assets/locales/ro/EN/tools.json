@@ -13,12 +13,13 @@
     "sense-awareness": "RO/en: Sense Awareness",
     "loving-kindness": "RO/en: Loving Kindness",
     "my-feelings": "RO/en: My Feelings",
+    "worry-time": "RO/en: Worry Time",
     "sleep": "RO/en: Sleep Instruments",
     "sleep-help": "RO/en: Help to sleep",
     "sleep-habits": "RO/en: Good sleep habits",
     "sleep-perspective": "RO/en: Change sleep perspective",
-    "worry-time": "RO/en: Worry Time",
     "rid": "RO/en: RID",
+    "my-strengths": "RO/en: My Strengths",
     "shift-thoughts": "RO/en: Shift Thoughts"
   },
   "relationships": {
@@ -1041,6 +1042,23 @@
     "empty": "RO/en: You haven't added any RIDs yet.",
     "date": "Date:",
     "delete": "RO/en: Delete RID"
+  },
+  "my-strengths": {
+    "title": "RO/en: My Strengths",
+    "title-edit": "RO/en: Edit strength",
+    "description": "RO/en: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
+    "add": "RO/en: Add strength",
+    "done": "RO/en: Done",
+    "strength-label": "RO/en: What's something that you like or respect about yourself? What's something that you're doing well?",
+    "placeholder": "RO/en: Write your strength here...",
+    "pick-image": "RO/en: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
+    "take-picture": "RO/en: Take a picture",
+    "pick-from-library": "RO/en: Pick an image from the library",
+    "delete-image": "RO/en: Delete image",
+    "modify-image": "RO/en: Modify image",
+    "info": "RO/en: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
+    "edit": "RO/en: Edit strength",
+    "delete": "RO/en: Delete strength"
   },
   "shift-thoughts": {
     "title": "RO/en: Shift Thoughts",

@@ -1,13 +1,7 @@
-import { DrizzleError, eq, sql } from 'drizzle-orm';
+import { eq, sql } from 'drizzle-orm';
 import db from '../db';
 import { worries } from '../schema/worries';
-
-class DatabaseError extends DrizzleError {
-  constructor(message: string) {
-    super({ message });
-    this.name = 'DatabaseError';
-  }
-}
+import { DatabaseError } from '../helpers';
 
 export type Worry = Omit<typeof worries.$inferSelect, 'id'>;
 

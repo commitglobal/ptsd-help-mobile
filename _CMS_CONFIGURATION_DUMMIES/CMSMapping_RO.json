@@ -146,5 +146,25 @@
   "RID.CATEGORY_ICON": {
     "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/rid/rid.jpg",
     "lastUpdatedAt": 1732623322783
+  },
+  "SLEEP.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/sleep/sleep_tools.jpg",
+    "lastUpdatedAt": "2024-12-03T11:19:40.251Z"
+  },
+  "SLEEP.SLEEP_HELP.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/sleep/help_asleep.jpg",
+    "lastUpdatedAt": "2024-12-03T11:19:40.251Z"
+  },
+  "SLEEP.SLEEP_HABITS.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/sleep/better_habits.jpg",
+    "lastUpdatedAt": "2024-12-03T11:19:40.251Z"
+  },
+  "SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/sleep/change_sleep_perspective.jpg",
+    "lastUpdatedAt": "2024-12-03T11:19:40.251Z"
+  },
+  "MY_STRENGTHS.CATEGORY_ICON": {
+    "uri": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/tools/my-strengths/seeing_my_strengths.jpg",
+    "lastUpdatedAt": "2024-12-03T11:19:40.251Z"
   }
 }

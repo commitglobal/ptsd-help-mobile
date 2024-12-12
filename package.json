@@ -64,7 +64,9 @@
     "react-native-webview": "13.8.6",
     "tamagui": "1.118.1",
     "expo-notifications": "~0.28.19",
-    "expo-device": "~6.0.2"
+    "expo-device": "~6.0.2",
+    "expo-image-picker": "~15.0.7",
+    "expo-image": "~1.13.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
