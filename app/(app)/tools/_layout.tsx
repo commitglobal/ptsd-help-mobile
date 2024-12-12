@@ -27,6 +27,8 @@ export default function ToolsLayout() {
       <Stack.Screen name='muscle-relaxation/index' options={{ headerShown: false }} />
 
       <Stack.Screen name='body-scan' options={{ headerShown: false }} />
+      <Stack.Screen name='positive-imagery' options={{ headerShown: false }} />
+      <Stack.Screen name='observe-thoughts' options={{ headerShown: false }} />
     </Stack>
   );
 }

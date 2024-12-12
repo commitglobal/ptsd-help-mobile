@@ -14,7 +14,17 @@
     "pause": "RO/ro: Pause",
     "sleep": "RO/ro: Instrumente pentru somn",
     "muscle-relaxation": "RO/ro: Muscle Relaxation",
-    "deep-breathing": "RO/ro: Respirație profundă"
+    "deep-breathing": "RO/ro: Respirație profundă",
+    "body-scan": "RO/ro: Body Scan",
+    "julia": "RO/ro: Julia",
+    "robyn": "RO/ro: Robyn",
+    "forest": "RO/ro: Forest",
+    "country-road": "RO/ro: Country Road",
+    "beach": "RO/ro: Beach",
+    "positive-imagery": "RO/ro: Positive Imagery",
+    "observe-thoughts": "RO/ro: Observa gândurile",
+    "clouds": "RO/ro: Nori",
+    "river": "RO/ro: Râul"
   },
   "relationships": {
     "title": "RO/ro: Relationships",
@@ -664,6 +674,48 @@
     "robyn": {
       "title": "Robyn",
       "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    }
+  },
+  "positive-imagery": {
+    "title": "Imagini pozitive",
+    "description": "Imagini pozitive",
+    "action-btn-label": "Începe",
+    "done": "Gata",
+    "beach": {
+      "title": "Plajă",
+      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    },
+    "country-road": {
+      "title": "Drum de țară",
+      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    },
+    "forest": {
+      "title": "Pădure",
+      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    }
+  },
+  "observe-thoughts": {
+    "title": "Observa gândurile",
+    "description": "Observa gândurile",
+    "action-btn-label": "Începe",
+    "done": "Gata",
+    "clouds": {
+      "title": "Nori",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
+      "action-btn-label": "Începe",
+      "done": "Gata"
+    },
+    "river": {
+      "title": "Râul",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
       "action-btn-label": "Începe",
       "done": "Gata"
     }

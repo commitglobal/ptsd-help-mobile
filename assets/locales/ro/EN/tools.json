@@ -23,7 +23,11 @@
     "deep-breathing": "RO/en: Deep Breathing",
     "body-scan": "RO/en: Body Scan",
     "julia": "RO/en: Julia",
-    "robyn": "RO/en: Robyn"
+    "robyn": "RO/en: Robyn",
+    "forest": "RO/en: Forest",
+    "country-road": "RO/en: Country Road",
+    "beach": "RO/en: Beach",
+    "positive-imagery": "RO/en: Positive Imagery"
   },
   "relationships": {
     "title": "RO/en: Relationships",
@@ -1074,6 +1078,48 @@
       "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. This mindfulness exercise will help you practice mindfulness of physical sensations. Please note that there will be pauses in the audio so you can practice without distraction.",
       "action-btn-label": "RO/en: Start",
       "done": "RO/en: Done"
+    }
+  },
+  "positive-imagery": {
+    "title": "RO/en: Positive Imagery",
+    "description": "RO/en: Positive Imagery",
+    "action-btn-label": "RO/en: Start",
+    "done": "RO/en: Done",
+    "beach": {
+      "title": "RO/en: Beach",
+      "description": "You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done"
+    },
+    "country-road": {
+      "title": "RO/en: Country Road",
+      "description": "You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done"
+    },
+    "forest": {
+      "title": "RO/en: Forest",
+      "description": "You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done"
+    },
+    "observe-thoughts": {
+      "title": "RO/en: Observe Thoughts",
+      "description": "RO/en: Observe Thoughts",
+      "action-btn-label": "RO/en: Start",
+      "done": "RO/en: Done",
+      "clouds": {
+        "title": "RO/en: Clouds",
+        "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. Please note that there will be pauses in the audio so you can practice without distraction.",
+        "action-btn-label": "RO/en: Start",
+        "done": "RO/en: Done"
+      },
+      "river": {
+        "title": "RO/en: River",
+        "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. Please note that there will be pauses in the audio so you can practice without distraction.",
+        "action-btn-label": "RO/en: Start",
+        "done": "RO/en: Done"
+      }
     }
   }
 }

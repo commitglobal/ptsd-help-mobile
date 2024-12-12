@@ -31,7 +31,9 @@ type ToolCategories =
   | 'RID'
   | 'MUSCLE_RELAXATION'
   | 'DEEP_BREATHING'
-  | 'BODY_SCAN';
+  | 'BODY_SCAN'
+  | 'POSTIVE_IMAGERY'
+  | 'OBSERVE_THOUGHTS';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -47,12 +49,70 @@ type ToolSubcategories =
   | 'SLEEP_HABITS'
   | 'SLEEP_PERSPECTIVE'
   | 'JULIA'
-  | 'ROBYN';
+  | 'ROBYN'
+  | 'BEACH'
+  | 'COUNTRY_ROAD'
+  | 'FOREST'
+  | 'CLOUDS'
+  | 'RIVER';
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
   const TOOLS_CONFIG: ToolConfigType = {
+    OBSERVE_THOUGHTS: {
+      id: 'observe-thoughts',
+      label: toolsTranslationKeys.OBSERVE_THOUGHTS.label,
+      icon: mediaMapping?.['OBSERVE_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/observe-thoughts',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        CLOUDS: {
+          id: 'observe-thoughts-clouds',
+          label: toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.CLOUDS.label,
+          icon: mediaMapping?.['OBSERVE_THOUGHTS.CLOUDS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/observe-thoughts/clouds',
+          type: ToolType.TOOL,
+        },
+        RIVER: {
+          id: 'observe-thoughts-river',
+          label: toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.RIVER.label,
+          icon: mediaMapping?.['OBSERVE_THOUGHTS.RIVER.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/observe-thoughts/river',
+          type: ToolType.TOOL,
+        },
+      },
+    },
+    POSTIVE_IMAGERY: {
+      id: 'positive-imagery',
+      label: toolsTranslationKeys.POSTIVE_IMAGERY.label,
+      icon: mediaMapping?.['POSTIVE_IMAGERY.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/positive-imagery',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        BEACH: {
+          id: 'positive-imagery-beach',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.BEACH.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.BEACH.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/beach',
+          type: ToolType.TOOL,
+        },
+        COUNTRY_ROAD: {
+          id: 'positive-imagery-country-road',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.COUNTRY_ROAD.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.COUNTRY_ROAD.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/country-road',
+          type: ToolType.TOOL,
+        },
+        FOREST: {
+          id: 'positive-imagery-forest',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.FOREST.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.FOREST.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/forest',
+          type: ToolType.TOOL,
+        },
+      },
+    },
     BODY_SCAN: {
       id: 'body-scan',
       label: toolsTranslationKeys.BODY_SCAN.label,
