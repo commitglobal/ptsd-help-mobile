@@ -14,13 +14,15 @@ import { Card } from '@/components/Card';
 import { GenericError } from '@/components/GenericError';
 import { Image } from 'expo-image';
 import { blurhash } from '@/helpers/blurhash';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 const MyStrengths = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const router = useRouter();
 
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.MY_STRENGTHS.id);
   const { data: strengths, updatedAt, error } = useLiveQuery(strengthsRepository.getStrengths(), []);
 
   // error screen
@@ -44,6 +46,8 @@ const MyStrengths = () => {
         title: t(toolsTranslationKeys.MY_STRENGTHS.title),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
         onLeftPress: router.back,
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       footerProps={{
         mainActionLabel: t(toolsTranslationKeys.MY_STRENGTHS.done),
