@@ -70,7 +70,7 @@ export type SymptomType = {
   id: SymptomIds;
   label: string;
   icon: string;
-  toolIds: (ToolIds | ToolSubcategoriesIds)[];
+  tools: Tool[];
 };
 
 export type ToolConfigType = Record<ToolCategories, Tool>;
@@ -359,187 +359,171 @@ export const useTools = () => {
 export const useSymptoms = () => {
   const { symptomsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
-  const TOOL_CONFIG = useTools();
+  const TOOLS_CONFIG = useTools();
 
   const SYMPOTOMS_CONFIG: SymptomsConfigType = {
     REMINDED_OF_TRAUMA: {
       id: SymptomIds.REMINDED_OF_TRAUMA,
       label: symptomsTranslationKeys.REMINDED_OF_TRAUMA.label,
       icon: mediaMapping?.['REMINDED_OF_TRAUMA.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.GROUNDING,
-        ToolIds.RID,
-        ToolIds.SOOTHE_SENSES,
-        ToolIds.QUOTES,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_ALONE,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_CITY,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_NATURE,
-        ToolSubcategoriesIds.CONSCIOUS_BREATHING,
-        ToolSubcategoriesIds.MINDFUL_WALKING,
-        ToolSubcategoriesIds.EMOTIONAL_DISCOMFORT,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.GROUNDING,
+        TOOLS_CONFIG.RID,
+        TOOLS_CONFIG.SOOTHE_SENSES,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_ALONE!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_CITY!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_NATURE!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.CONSCIOUS_BREATHING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.MINDFUL_WALKING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.EMOTIONAL_DISCOMFORT!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     AVOIDING_TRIGGERS: {
       id: SymptomIds.AVOIDING_TRIGGERS,
       label: symptomsTranslationKeys.AVOIDING_TRIGGERS.label,
       icon: mediaMapping?.['AVOIDING_TRIGGERS.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.QUOTES,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.CONSCIOUS_BREATHING,
-        ToolSubcategoriesIds.MINDFUL_WALKING,
-        ToolSubcategoriesIds.EMOTIONAL_DISCOMFORT,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.CONSCIOUS_BREATHING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.MINDFUL_WALKING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.EMOTIONAL_DISCOMFORT!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     DISCONNECTED_FROM_PEOPLE: {
       id: SymptomIds.DISCONNECTED_FROM_PEOPLE,
       label: symptomsTranslationKeys.DISCONNECTED_FROM_PEOPLE.label,
       icon: mediaMapping?.['DISCONNECTED_FROM_PEOPLE.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.CONNECT_WITH_OTHERS,
-        ToolIds.QUOTES,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.POSITIVE_COMMUNICATION,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.CONNECT_WITH_OTHERS,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.POSITIVE_COMMUNICATION!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     DISCONNECTED_FROM_REALITY: {
       id: SymptomIds.DISCONNECTED_FROM_REALITY,
       label: symptomsTranslationKeys.DISCONNECTED_FROM_REALITY.label,
       icon: mediaMapping?.['DISCONNECTED_FROM_REALITY.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.GROUNDING,
-        ToolIds.QUOTES,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.I_MESSAGES,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.HEALTHY_ARGUMENTS,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.GROUNDING,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.I_MESSAGES!,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.HEALTHY_ARGUMENTS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     SAD_HOPELESS: {
       id: SymptomIds.SAD_HOPELESS,
       label: symptomsTranslationKeys.SAD_HOPELESS.label,
       icon: mediaMapping?.['SAD_HOPELESS.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.CONNECT_WITH_OTHERS,
-        ToolIds.SOOTHE_SENSES,
-        ToolIds.QUOTES,
-        ToolIds.MY_STRENGTHS,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_ALONE,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_CITY,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_NATURE,
-        ToolSubcategoriesIds.CONSCIOUS_BREATHING,
-        ToolSubcategoriesIds.MINDFUL_WALKING,
-        ToolSubcategoriesIds.EMOTIONAL_DISCOMFORT,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.CONNECT_WITH_OTHERS,
+        TOOLS_CONFIG.SOOTHE_SENSES,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_STRENGTHS,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_ALONE!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_CITY!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_NATURE!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.CONSCIOUS_BREATHING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.MINDFUL_WALKING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.EMOTIONAL_DISCOMFORT!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     WORRIED_ANXIOUS: {
       id: SymptomIds.WORRIED_ANXIOUS,
       label: symptomsTranslationKeys.WORRIED_ANXIOUS.label,
       icon: mediaMapping?.['WORRIED_ANXIOUS.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.CONNECT_WITH_OTHERS,
-        ToolIds.GROUNDING,
-        ToolIds.SOOTHE_SENSES,
-        ToolIds.QUOTES,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_ALONE,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_CITY,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_NATURE,
-        ToolSubcategoriesIds.CONSCIOUS_BREATHING,
-        ToolSubcategoriesIds.MINDFUL_WALKING,
-        ToolSubcategoriesIds.EMOTIONAL_DISCOMFORT,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.CONNECT_WITH_OTHERS,
+        TOOLS_CONFIG.GROUNDING,
+        TOOLS_CONFIG.SOOTHE_SENSES,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_ALONE!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_CITY!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_NATURE!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.CONSCIOUS_BREATHING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.MINDFUL_WALKING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.EMOTIONAL_DISCOMFORT!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     ANGRY: {
       id: SymptomIds.ANGRY,
       label: symptomsTranslationKeys.ANGRY.label,
       icon: mediaMapping?.['ANGRY.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.CHANGE_PERSPECTIVE,
-        ToolIds.SOOTHE_SENSES,
-        ToolIds.SHIFT_THOUGHTS,
-        ToolIds.PAUSE,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_ALONE,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_CITY,
-        ToolSubcategoriesIds.RECREATIONAL_ACTIVITIES_NATURE,
-        ToolSubcategoriesIds.CONSCIOUS_BREATHING,
-        ToolSubcategoriesIds.MINDFUL_WALKING,
-        ToolSubcategoriesIds.EMOTIONAL_DISCOMFORT,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.CHANGE_PERSPECTIVE,
+        TOOLS_CONFIG.SOOTHE_SENSES,
+        TOOLS_CONFIG.SHIFT_THOUGHTS,
+        TOOLS_CONFIG.PAUSE,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_ALONE!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_CITY!,
+        TOOLS_CONFIG.RECREATIONAL_ACTIVITIES.subcategories!.RECREATIONAL_ACTIVITIES_NATURE!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.CONSCIOUS_BREATHING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.MINDFUL_WALKING!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.EMOTIONAL_DISCOMFORT!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
     SLEEP_PROBLEMS: {
       id: SymptomIds.SLEEP_PROBLEMS,
       label: symptomsTranslationKeys.SLEEP_PROBLEMS.label,
       icon: mediaMapping?.['SLEEP_PROBLEMS.CATEGORY_ICON'] || DUMMY_PHOTO,
-      toolIds: [
-        ToolIds.AMBIENT_SOUNDS,
-        ToolIds.GROUNDING,
-        ToolIds.QUOTES,
-        ToolIds.WORRY_TIME,
-        ToolIds.MY_FEELINGS,
-        ToolSubcategoriesIds.RECONNECT_WITH_PARTNER,
-        ToolSubcategoriesIds.SLEEP_HELP,
-        ToolSubcategoriesIds.SLEEP_HABITS,
-        ToolSubcategoriesIds.SLEEP_PERSPECTIVE,
-        ToolSubcategoriesIds.SENSE_AWARENESS,
-        ToolSubcategoriesIds.LOVING_KINDNESS,
+      tools: [
+        TOOLS_CONFIG.AMBIENT_SOUNDS,
+        TOOLS_CONFIG.GROUNDING,
+        TOOLS_CONFIG.QUOTES,
+        TOOLS_CONFIG.WORRY_TIME,
+        TOOLS_CONFIG.MY_FEELINGS,
+        TOOLS_CONFIG.RELATIONSHIPS.subcategories!.RECONNECT_WITH_PARTNER!,
+        TOOLS_CONFIG.SLEEP.subcategories!.SLEEP_HELP!,
+        TOOLS_CONFIG.SLEEP.subcategories!.SLEEP_HABITS!,
+        TOOLS_CONFIG.SLEEP.subcategories!.SLEEP_PERSPECTIVE!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.SENSE_AWARENESS!,
+        TOOLS_CONFIG.MINDFULNESS.subcategories!.LOVING_KINDNESS!,
       ],
     },
   };
 
   const getRandomToolForSymptom = (symptom: SymptomType) => {
-    const randomToolId = symptom.toolIds[Math.floor(Math.random() * symptom.toolIds.length)];
-
-    // if this is not a subcategory of a tool:
-    if (randomToolId in TOOL_CONFIG) {
-      return TOOL_CONFIG[randomToolId];
-    } else {
-      // if this is a subcategory, find the tool and start it
-      for (const mainTool of Object.values(TOOL_CONFIG)) {
-        if (mainTool.subcategories) {
-          const subcategoryTool = Object.values(mainTool.subcategories).find((sub) => sub.id === randomToolId);
-          if (subcategoryTool) {
-            return subcategoryTool;
-          }
-        } else {
-          console.log('TOOL NOT FOUND ⛔️');
-        }
-      }
-    }
+    const randomTool = symptom.tools[Math.floor(Math.random() * symptom.tools.length)];
+    return randomTool;
   };
 
   return { SYMPOTOMS_CONFIG, getRandomToolForSymptom };

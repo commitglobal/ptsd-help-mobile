@@ -110,7 +110,9 @@ export default function Manage() {
           })}
           onSymptomSelected={(symptom) => {
             const randomTool = getRandomToolForSymptom(symptom);
-            startTool(randomTool, `/manage?tabId=symptoms`);
+            if (randomTool) {
+              startTool(randomTool, `/manage?tabId=symptoms`);
+            }
           }}
         />
       );
