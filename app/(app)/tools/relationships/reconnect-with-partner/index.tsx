@@ -14,7 +14,7 @@ export default function ReconnectWithPartner() {
 
   const items = t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string; sms?: string; calendar?: string }>;
+  }) as Record<string, { title: string; description: string; sms?: string }>;
 
   return (
     <ScreenWithChangingText
