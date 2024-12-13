@@ -69,7 +69,7 @@ export default function Manage() {
   const { t } = useTranslation('translation');
   const router = useRouter();
   const { startTool, TOOL_CONFIG } = useToolManagerContext();
-  const SYMPOTOMS_CONFIG = useSymptoms();
+  const { SYMPOTOMS_CONFIG, getRandomToolForSymptom } = useSymptoms();
 
   const tabs = useMemo(
     () => [
@@ -109,24 +109,8 @@ export default function Manage() {
             };
           })}
           onSymptomSelected={(symptom) => {
-            const randomToolId = symptom.toolIds[Math.floor(Math.random() * symptom.toolIds.length)];
-
-            // if this is not a subcategory of a tool:
-            if (randomToolId in TOOL_CONFIG) {
-              startTool(TOOL_CONFIG[randomToolId], `/manage?tabId=symptoms`);
-            } else {
-              // if this is a subcategory, find the tool and start it
-              for (const mainTool of Object.values(TOOL_CONFIG)) {
-                if (mainTool.subcategories) {
-                  const subcategoryTool = Object.values(mainTool.subcategories).find((sub) => sub.id === randomToolId);
-                  if (subcategoryTool) {
-                    startTool(subcategoryTool, `/manage?tabId=symptoms`);
-                  }
-                } else {
-                  console.log('TOOL NOT FOUND ⛔️');
-                }
-              }
-            }
+            const randomTool = getRandomToolForSymptom(symptom);
+            startTool(randomTool, `/manage?tabId=symptoms`);
           }}
         />
       );

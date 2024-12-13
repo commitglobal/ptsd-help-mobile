@@ -359,6 +359,7 @@ export const useTools = () => {
 export const useSymptoms = () => {
   const { symptomsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+  const TOOL_CONFIG = useTools();
 
   const SYMPOTOMS_CONFIG: SymptomsConfigType = {
     REMINDED_OF_TRAUMA: {
@@ -520,5 +521,26 @@ export const useSymptoms = () => {
     },
   };
 
-  return SYMPOTOMS_CONFIG;
+  const getRandomToolForSymptom = (symptom: SymptomType) => {
+    const randomToolId = symptom.toolIds[Math.floor(Math.random() * symptom.toolIds.length)];
+
+    // if this is not a subcategory of a tool:
+    if (randomToolId in TOOL_CONFIG) {
+      return TOOL_CONFIG[randomToolId];
+    } else {
+      // if this is a subcategory, find the tool and start it
+      for (const mainTool of Object.values(TOOL_CONFIG)) {
+        if (mainTool.subcategories) {
+          const subcategoryTool = Object.values(mainTool.subcategories).find((sub) => sub.id === randomToolId);
+          if (subcategoryTool) {
+            return subcategoryTool;
+          }
+        } else {
+          console.log('TOOL NOT FOUND ⛔️');
+        }
+      }
+    }
+  };
+
+  return { SYMPOTOMS_CONFIG, getRandomToolForSymptom };
 };
