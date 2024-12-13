@@ -31,6 +31,16 @@
     "recreational-activities-city": "RO/en: Recreational Activities: In The City",
     "recreational-activities-nature": "RO/en: Recreational Activities: In Nature"
   },
+  "symptoms": {
+    "reminded_of_trauma": "RO/en: Reminded of Trauma",
+    "avoiding_triggers": "RO/en: Avoiding Triggers",
+    "disconnected_from_people": "RO/en: Disconnected from People",
+    "disconnected_from_reality": "RO/en: Disconnected from Reality",
+    "sad_hopeless": "RO/en: Sad/Hopeless",
+    "worried_anxious": "RO/en: Worried/Anxious",
+    "angry": "RO/en: Angry",
+    "sleep_problems": "RO/en: Sleep Problems"
+  },
   "relationships": {
     "title": "RO/en: Relationships",
     "description": "RO/en: Tools to help improve your relationships with loved ones",

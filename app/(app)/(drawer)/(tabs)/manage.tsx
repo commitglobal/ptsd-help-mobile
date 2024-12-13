@@ -6,13 +6,13 @@ import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
 import { Spinner, YStack } from 'tamagui';
 import ScreenTabs from '@/components/ScreenTabs';
-import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { Tool } from '@/hooks/useTools';
+import { SymptomType, Tool, useSymptoms } from '@/hooks/useTools';
 
 type SymptomListProps = {
-  onSymptomSelected: (symptom: unknown) => void;
+  data: SymptomType[];
+  onSymptomSelected: (symptom: SymptomType) => void;
 };
 
 type ToolListProps = {
@@ -21,11 +21,11 @@ type ToolListProps = {
 };
 
 const Lists = {
-  symptoms: ({ onSymptomSelected }: SymptomListProps) => {
+  symptoms: ({ data, onSymptomSelected }: SymptomListProps) => {
     return (
       <FlashList
         bounces={false}
-        data={symptoms}
+        data={data}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onSymptomSelected(item)} />}
@@ -69,6 +69,7 @@ export default function Manage() {
   const { t } = useTranslation('translation');
   const router = useRouter();
   const { startTool, TOOL_CONFIG } = useToolManagerContext();
+  const SYMPOTOMS_CONFIG = useSymptoms();
 
   const tabs = useMemo(
     () => [
@@ -101,16 +102,31 @@ export default function Manage() {
       const ListComponent = Lists[selectedTabId];
       return (
         <ListComponent
-          onSymptomSelected={(_symptom) => {
-            const allTools = Object.values(TOOL_CONFIG).flatMap((item) =>
-              item.subcategories
-                ? Object.values(item.subcategories).filter((sub) => sub.type === 'tool')
-                : item.type === 'tool'
-                  ? [item]
-                  : []
-            );
-            const randomTool = allTools[Math.floor(Math.random() * allTools.length)];
-            startTool(randomTool, `/manage?tabId=symptoms`);
+          data={Object.values(SYMPOTOMS_CONFIG).map((symptom) => {
+            return {
+              ...symptom,
+              label: t(symptom.label, { ns: 'tools' }),
+            };
+          })}
+          onSymptomSelected={(symptom) => {
+            const randomToolId = symptom.toolIds[Math.floor(Math.random() * symptom.toolIds.length)];
+
+            // if this is not a subcategory of a tool:
+            if (randomToolId in TOOL_CONFIG) {
+              startTool(TOOL_CONFIG[randomToolId], `/manage?tabId=symptoms`);
+            } else {
+              // if this is a subcategory, find the tool and start it
+              for (const mainTool of Object.values(TOOL_CONFIG)) {
+                if (mainTool.subcategories) {
+                  const subcategoryTool = Object.values(mainTool.subcategories).find((sub) => sub.id === randomToolId);
+                  if (subcategoryTool) {
+                    startTool(subcategoryTool, `/manage?tabId=symptoms`);
+                  }
+                } else {
+                  console.log('TOOL NOT FOUND ⛔️');
+                }
+              }
+            }
           }}
         />
       );
