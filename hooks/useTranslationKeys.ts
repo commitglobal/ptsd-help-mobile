@@ -276,6 +276,7 @@ const useTranslationKeys = () => {
       ptsdHelp: 'worry-time.ptsd-help',
       review: 'worry-time.review',
     },
+
     RID: {
       label: 'list.rid',
       title: 'rid.title',
@@ -310,6 +311,74 @@ const useTranslationKeys = () => {
       empty: 'rid.empty',
       date: 'rid.date',
       delete: 'rid.delete',
+    },
+    SOOTHE_SENSES: {
+      label: 'list.soothe-senses',
+      repeater: 'soothe-senses.repeater',
+    },
+    CONNECT_WITH_OTHERS: {
+      label: 'list.connect-with-others',
+      title: 'connect-with-others.title',
+      done: 'connect-with-others.done',
+      staticText: 'connect-with-others.static-text',
+      repeater: 'connect-with-others.repeater',
+    },
+    CHANGE_PERSPECTIVE: {
+      label: 'list.change-perspective',
+      title: 'change-perspective.title',
+      done: 'change-perspective.done',
+      staticText: 'change-perspective.static-text',
+      repeater: 'change-perspective.repeater',
+    },
+    GROUNDING: {
+      label: 'list.grounding',
+      title: 'grounding.title',
+      done: 'grounding.done',
+      repeater: 'grounding.repeater',
+    },
+    QUOTES: {
+      label: 'list.quotes',
+      title: 'quotes.title',
+      done: 'quotes.done',
+      repeater: 'quotes.repeater',
+    },
+    RECREATIONAL_ACTIVITIES: {
+      label: 'list.recreational-activities',
+      subcategories: {
+        RECREATIONAL_ACTIVITIES_ALONE: {
+          label: 'recreational-activities-alone.label',
+          title: 'recreational-activities-alone.title',
+          repeater: 'recreational-activities-alone.repeater',
+        },
+        RECREATIONAL_ACTIVITIES_CITY: {
+          label: 'list.recreational-activities-city',
+          title: 'recreational-activities-city.title',
+          repeater: 'recreational-activities-city.repeater',
+        },
+        RECREATIONAL_ACTIVITIES_NATURE: {
+          label: 'list.recreational-activities-nature',
+          title: 'recreational-activities-nature.title',
+          repeater: 'recreational-activities-nature.repeater',
+        },
+      },
+    },
+    MY_STRENGTHS: {
+      label: 'list.my-strengths',
+      title: 'my-strengths.title',
+      titleEdit: 'my-strengths.title-edit',
+      description: 'my-strengths.description',
+      add: 'my-strengths.add',
+      done: 'my-strengths.done',
+      strengthLabel: 'my-strengths.strength-label',
+      placeholder: 'my-strengths.placeholder',
+      pickImage: 'my-strengths.pick-image',
+      takePicture: 'my-strengths.take-picture',
+      pickFromLibrary: 'my-strengths.pick-from-library',
+      deleteImage: 'my-strengths.delete-image',
+      modifyImage: 'my-strengths.modify-image',
+      info: 'my-strengths.info',
+      edit: 'my-strengths.edit',
+      delete: 'my-strengths.delete',
     },
     SHIFT_THOUGHTS: {
       label: 'list.shift-thoughts',

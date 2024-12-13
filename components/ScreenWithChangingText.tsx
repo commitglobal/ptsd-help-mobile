@@ -2,12 +2,10 @@ import React, { useState } from 'react';
 import { Typography } from './Typography';
 import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithImageHeader';
 import { useSendSMS } from '@/hooks/useSMS';
-import { useCalendar } from '@/hooks/useCalendar';
-import * as Calendar from 'expo-calendar';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText: string;
-  items: { id: string; title?: string; description?: string; sms?: string; calendar?: string }[];
+  items: { id: string; title?: string; description?: string; sms?: string }[];
   children?: React.ReactNode;
 }
 
@@ -21,7 +19,6 @@ export const ScreenWithChangingText = ({
 }: ScreenWithChangingTextProps) => {
   const [renderedItem, setRenderedItem] = useState(items[0]);
   const { sendSMS } = useSendSMS();
-  const { openCalendarAddEvent } = useCalendar();
 
   const handleNextItem = () => {
     const currentIndex = items.findIndex((item) => item.id === renderedItem.id);
@@ -41,25 +38,6 @@ export const ScreenWithChangingText = ({
     }
   };
 
-  const handleAddEventToCalendar = async () => {
-    if (renderedItem.calendar) {
-      const { status, canAskAgain } = await Calendar.requestCalendarPermissionsAsync();
-      console.log('status 💐', status);
-      console.log('canAskAgain 💐', canAskAgain);
-      if (status === 'granted') {
-        const calendar = await Calendar.getDefaultCalendarAsync();
-        console.log('calendar 💐', calendar);
-        const eventData = {
-          title: renderedItem.calendar,
-          startDate: new Date(),
-          endDate: new Date(),
-        };
-        const eventId = await Calendar.createEventAsync(calendar.id, eventData);
-        console.log('eventId created 💐', eventId);
-      }
-    }
-  };
-
   return (
     <ScreenWithImageHeader
       imageUrl={imageUrl}
@@ -67,8 +45,8 @@ export const ScreenWithChangingText = ({
       footerProps={{
         onPrev: handlePreviousItem,
         onNext: handleNextItem,
-        onCustomAction: renderedItem.sms ? handleSendSMS : renderedItem.calendar ? handleAddEventToCalendar : undefined,
-        customActionIcon: renderedItem.sms ? 'chat' : renderedItem.calendar ? 'calendar' : undefined,
+        onCustomAction: renderedItem.sms ? handleSendSMS : undefined,
+        customActionIcon: renderedItem.sms ? 'chat' : undefined,
         ...footerProps,
       }}>
       <Typography preset='helper'>{staticText}</Typography>

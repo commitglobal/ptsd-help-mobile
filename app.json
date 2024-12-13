@@ -55,9 +55,9 @@
       ],
       "expo-localization",
       [
-        "expo-calendar",
+        "expo-image-picker",
         {
-          "calendarPermission": "The app needs to access your calendar."
+          "photosPermission": "Allow PTSDHelp to access your photos. The app uses them within the therapeutic tools."
         }
       ]
     ],

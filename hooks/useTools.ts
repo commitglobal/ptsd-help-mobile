@@ -26,10 +26,17 @@ type ToolCategories =
   | 'MINDFULNESS'
   | 'PAUSE'
   | 'MY_FEELINGS'
-  | 'SLEEP'
   | 'WORRY_TIME'
   | 'RID'
-  | 'SHIFT_THOUGHTS';
+  | 'SOOTHE_SENSES'
+  | 'CONNECT_WITH_OTHERS'
+  | 'CHANGE_PERSPECTIVE'
+  | 'GROUNDING'
+  | 'QUOTES'
+  | 'SLEEP'
+  | 'MY_STRENGTHS'
+  | 'SHIFT_THOUGHTS'
+  | 'RECREATIONAL_ACTIVITIES';
 
 type ToolSubcategories =
   | 'RECONNECT_WITH_PARTNER'
@@ -43,7 +50,10 @@ type ToolSubcategories =
   | 'LOVING_KINDNESS'
   | 'SLEEP_HELP'
   | 'SLEEP_HABITS'
-  | 'SLEEP_PERSPECTIVE';
+  | 'SLEEP_PERSPECTIVE'
+  | 'RECREATIONAL_ACTIVITIES_ALONE'
+  | 'RECREATIONAL_ACTIVITIES_CITY'
+  | 'RECREATIONAL_ACTIVITIES_NATURE';
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
@@ -196,12 +206,84 @@ export const useTools = () => {
       route: '/tools/rid',
       type: ToolType.TOOL,
     },
+    SOOTHE_SENSES: {
+      id: 'soothe-senses',
+      label: toolsTranslationKeys.SOOTHE_SENSES.label,
+      icon: mediaMapping?.['SOOTHE_SENSES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/soothe-senses',
+      type: ToolType.TOOL,
+    },
+    CONNECT_WITH_OTHERS: {
+      id: 'connect-with-others',
+      label: toolsTranslationKeys.CONNECT_WITH_OTHERS.label,
+      icon: mediaMapping?.['CONNECT_WITH_OTHERS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/connect-with-others',
+      type: ToolType.TOOL,
+    },
+    CHANGE_PERSPECTIVE: {
+      id: 'change-perspective',
+      label: toolsTranslationKeys.CHANGE_PERSPECTIVE.label,
+      icon: mediaMapping?.['CHANGE_PERSPECTIVE.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/change-perspective',
+      type: ToolType.TOOL,
+    },
+    GROUNDING: {
+      id: 'grounding',
+      label: toolsTranslationKeys.GROUNDING.label,
+      icon: mediaMapping?.['GROUNDING.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/grounding',
+      type: ToolType.TOOL,
+    },
+    QUOTES: {
+      id: 'quotes',
+      label: toolsTranslationKeys.QUOTES.label,
+      icon: mediaMapping?.['QUOTES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/quotes',
+      type: ToolType.TOOL,
+    },
+    MY_STRENGTHS: {
+      id: 'my-strengths',
+      label: toolsTranslationKeys.MY_STRENGTHS.label,
+      icon: mediaMapping?.['MY_STRENGTHS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/my-strengths',
+      type: ToolType.TOOL,
+    },
     SHIFT_THOUGHTS: {
       id: 'shift-thoughts',
       label: toolsTranslationKeys.SHIFT_THOUGHTS.label,
       icon: mediaMapping?.['SHIFT_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
       route: '/tools/shift-thoughts',
       type: ToolType.TOOL,
+    },
+    RECREATIONAL_ACTIVITIES: {
+      id: 'recreational-activities',
+      label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.label,
+      icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/recreational-activities',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        RECREATIONAL_ACTIVITIES_ALONE: {
+          id: 'recreational-activities-alone',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_ALONE.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_ALONE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/alone',
+          type: ToolType.TOOL,
+        },
+        RECREATIONAL_ACTIVITIES_CITY: {
+          id: 'recreational-activities-city',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_CITY.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_CITY.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/city',
+          type: ToolType.TOOL,
+        },
+        RECREATIONAL_ACTIVITIES_NATURE: {
+          id: 'recreational-activities-nature',
+          label: toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_NATURE.label,
+          icon: mediaMapping?.['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_NATURE.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/recreational-activities/nature',
+          type: ToolType.TOOL,
+        },
+      },
     },
   };
 

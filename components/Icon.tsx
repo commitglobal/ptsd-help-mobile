@@ -35,6 +35,7 @@ import Calendar from '../assets/icons/calendar.svg';
 import Check from '../assets/icons/check.svg';
 import MusicalNote from '../assets/icons/musical-note.svg';
 import ExclamationCircle from '../assets/icons/exclamation-circle.svg';
+import SolidPhoto from '../assets/icons/solid-photo.svg';
 import Tv from '../assets/icons/tv.svg';
 import Tasks from '../assets/icons/tasks.svg';
 import Book from '../assets/icons/book.svg';
@@ -83,6 +84,7 @@ const iconRegistry: IconRegistry = {
   check: Check,
   musicalNote: MusicalNote,
   exclamationCircle: ExclamationCircle,
+  solidPhoto: SolidPhoto,
   tv: Tv,
   tasks: Tasks,
   book: Book,
