@@ -10,6 +10,8 @@ import { DrawerActions, useNavigation } from '@react-navigation/native';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { DrawerItem } from '@/components/DrawerItem';
+import { Typography } from '@/components/Typography';
+import Constants from 'expo-constants';
 
 type DrawerContentProps = ScrollViewProps & {
   children?: React.ReactNode;
@@ -47,6 +49,10 @@ export const DrawerContent = (props: DrawerContentProps) => {
         onPress={() => router.push('/privacy-policy')}
       />
       <DrawerItem key={3} label={t('drawer.settings')} icon='settings' onPress={() => router.push('/settings')} />
+      <Typography
+        color='white'
+        marginTop='auto'
+        marginLeft='$lg'>{`v${Constants.expoConfig?.version}${Constants.expoConfig?.extra?.updateVersion ? ` (${Constants.expoConfig?.extra?.updateVersion})` : ''} `}</Typography>
     </DrawerContentScrollView>
   );
 };
