@@ -56,9 +56,9 @@ const SectionItem = ({ label, onPress, icon }: { label: string; onPress: () => v
       padding='$sm'
       pressStyle={{ backgroundColor: '$blue1' }}
       onPress={onPress}>
-      {icon && <Icon icon={icon} width={20} height={20} color='$blue11' />}
+      {icon && <Icon icon={icon} width={24} height={24} color='$blue11' />}
       <Typography flex={1}>{label}</Typography>
-      <Icon icon='chevronRight' color='$gray11' width={20} height={20} />
+      <Icon icon='chevronRight' color='$gray11' width={24} height={24} />
     </XStack>
   );
 };

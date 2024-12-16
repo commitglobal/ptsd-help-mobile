@@ -28,6 +28,11 @@ type ToolCategories =
   | 'MY_FEELINGS'
   | 'WORRY_TIME'
   | 'RID'
+  | 'MUSCLE_RELAXATION'
+  | 'DEEP_BREATHING'
+  | 'BODY_SCAN'
+  | 'POSTIVE_IMAGERY'
+  | 'OBSERVE_THOUGHTS'
   | 'SOOTHE_SENSES'
   | 'CONNECT_WITH_OTHERS'
   | 'CHANGE_PERSPECTIVE'
@@ -51,6 +56,13 @@ type ToolSubcategories =
   | 'SLEEP_HELP'
   | 'SLEEP_HABITS'
   | 'SLEEP_PERSPECTIVE'
+  | 'JULIA'
+  | 'ROBYN'
+  | 'BEACH'
+  | 'COUNTRY_ROAD'
+  | 'FOREST'
+  | 'CLOUDS'
+  | 'RIVER'
   | 'RECREATIONAL_ACTIVITIES_ALONE'
   | 'RECREATIONAL_ACTIVITIES_CITY'
   | 'RECREATIONAL_ACTIVITIES_NATURE';
@@ -59,6 +71,96 @@ export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
   const TOOLS_CONFIG: ToolConfigType = {
+    OBSERVE_THOUGHTS: {
+      id: 'observe-thoughts',
+      label: toolsTranslationKeys.OBSERVE_THOUGHTS.label,
+      icon: mediaMapping?.['OBSERVE_THOUGHTS.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/observe-thoughts',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        CLOUDS: {
+          id: 'observe-thoughts-clouds',
+          label: toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.CLOUDS.label,
+          icon: mediaMapping?.['OBSERVE_THOUGHTS.CLOUDS.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/observe-thoughts/clouds',
+          type: ToolType.TOOL,
+        },
+        RIVER: {
+          id: 'observe-thoughts-river',
+          label: toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.RIVER.label,
+          icon: mediaMapping?.['OBSERVE_THOUGHTS.RIVER.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/observe-thoughts/river',
+          type: ToolType.TOOL,
+        },
+      },
+    },
+    POSTIVE_IMAGERY: {
+      id: 'positive-imagery',
+      label: toolsTranslationKeys.POSTIVE_IMAGERY.label,
+      icon: mediaMapping?.['POSTIVE_IMAGERY.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/positive-imagery',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        BEACH: {
+          id: 'positive-imagery-beach',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.BEACH.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.BEACH.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/beach',
+          type: ToolType.TOOL,
+        },
+        COUNTRY_ROAD: {
+          id: 'positive-imagery-country-road',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.COUNTRY_ROAD.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.COUNTRY_ROAD.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/country-road',
+          type: ToolType.TOOL,
+        },
+        FOREST: {
+          id: 'positive-imagery-forest',
+          label: toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.FOREST.label,
+          icon: mediaMapping?.['POSTIVE_IMAGERY.FOREST.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/positive-imagery/forest',
+          type: ToolType.TOOL,
+        },
+      },
+    },
+    BODY_SCAN: {
+      id: 'body-scan',
+      label: toolsTranslationKeys.BODY_SCAN.label,
+      icon: mediaMapping?.['BODY_SCAN.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/body-scan',
+      type: ToolType.CATEGORY,
+      subcategories: {
+        JULIA: {
+          id: 'body-scan-julia',
+          label: toolsTranslationKeys.BODY_SCAN.subcategories.JULIA.label,
+          icon: mediaMapping?.['BODY_SCAN.JULIA.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/body-scan/julia',
+          type: ToolType.TOOL,
+        },
+        ROBYN: {
+          id: 'body-scan-roby',
+          label: toolsTranslationKeys.BODY_SCAN.subcategories.ROBYN.label,
+          icon: mediaMapping?.['BODY_SCAN.ROBYN.CATEGORY_ICON'] || DUMMY_PHOTO,
+          route: '/tools/body-scan/robyn',
+          type: ToolType.TOOL,
+        },
+      },
+    },
+    MUSCLE_RELAXATION: {
+      id: 'muscle-relaxation',
+      label: toolsTranslationKeys.MUSCLE_RELAXATION.label,
+      icon: mediaMapping?.['MUSCLE_RELAXATION.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/muscle-relaxation',
+      type: ToolType.TOOL,
+    },
+    DEEP_BREATHING: {
+      id: 'deep-breathing',
+      label: toolsTranslationKeys.DEEP_BREATHING.label,
+      icon: mediaMapping?.['DEEP_BREATHING.CATEGORY_ICON'] || DUMMY_PHOTO,
+      route: '/tools/deep-breathing',
+      type: ToolType.TOOL,
+    },
     RELATIONSHIPS: {
       id: 'relationships',
       label: toolsTranslationKeys.RELATIONSHIPS.label,

@@ -312,6 +312,84 @@ const useTranslationKeys = () => {
       date: 'rid.date',
       delete: 'rid.delete',
     },
+    MUSCLE_RELAXATION: {
+      label: 'list.muscle-relaxation',
+      description: 'muscle-relaxation.description',
+      actionBtnLabel: 'muscle-relaxation.action-btn-label',
+      done: 'muscle-relaxation.done',
+    },
+    DEEP_BREATHING: {
+      label: 'list.deep-breathing',
+      description: 'deep-breathing.description',
+      actionBtnLabel: 'deep-breathing.action-btn-label',
+      done: 'deep-breathing.done',
+    },
+    BODY_SCAN: {
+      label: 'list.body-scan',
+      description: 'body-scan.description',
+      actionBtnLabel: 'body-scan.action-btn-label',
+      done: 'body-scan.done',
+      subcategories: {
+        JULIA: {
+          label: 'list.julia',
+          description: 'body-scan.julia.description',
+          actionBtnLabel: 'body-scan.julia.action-btn-label',
+          done: 'body-scan.julia.done',
+        },
+        ROBYN: {
+          label: 'list.robyn',
+          description: 'body-scan.robyn.description',
+          actionBtnLabel: 'body-scan.robyn.action-btn-label',
+          done: 'body-scan.robyn.done',
+        },
+      },
+    },
+    POSTIVE_IMAGERY: {
+      label: 'list.positive-imagery',
+      description: 'positive-imagery.description',
+      actionBtnLabel: 'positive-imagery.action-btn-label',
+      done: 'positive-imagery.done',
+      subcategories: {
+        BEACH: {
+          label: 'list.beach',
+          description: 'positive-imagery.beach.description',
+          actionBtnLabel: 'positive-imagery.beach.action-btn-label',
+          done: 'positive-imagery.beach.done',
+        },
+        COUNTRY_ROAD: {
+          label: 'list.country-road',
+          description: 'positive-imagery.country-road.description',
+          actionBtnLabel: 'positive-imagery.country-road.action-btn-label',
+          done: 'positive-imagery.country-road.done',
+        },
+        FOREST: {
+          label: 'list.forest',
+          description: 'positive-imagery.forest.description',
+          actionBtnLabel: 'positive-imagery.forest.action-btn-label',
+          done: 'positive-imagery.forest.done',
+        },
+      },
+    },
+    OBSERVE_THOUGHTS: {
+      label: 'list.observe-thoughts',
+      description: 'observe-thoughts.description',
+      actionBtnLabel: 'observe-thoughts.action-btn-label',
+      done: 'observe-thoughts.done',
+      subcategories: {
+        CLOUDS: {
+          label: 'list.clouds',
+          description: 'observe-thoughts.clouds.description',
+          actionBtnLabel: 'observe-thoughts.clouds.action-btn-label',
+          done: 'observe-thoughts.clouds.done',
+        },
+        RIVER: {
+          label: 'list.river',
+          description: 'observe-thoughts.river.description',
+          actionBtnLabel: 'observe-thoughts.river.action-btn-label',
+          done: 'observe-thoughts.river.done',
+        },
+      },
+    },
     SOOTHE_SENSES: {
       label: 'list.soothe-senses',
       repeater: 'soothe-senses.repeater',

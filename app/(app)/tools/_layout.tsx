@@ -24,6 +24,11 @@ export default function ToolsLayout() {
       <Stack.Screen name='sleep' options={{ headerShown: false }} />
       <Stack.Screen name='worry-time' options={{ headerShown: false }} />
       <Stack.Screen name='rid' options={{ headerShown: false }} />
+      <Stack.Screen name='muscle-relaxation/index' options={{ headerShown: false }} />
+
+      <Stack.Screen name='body-scan' options={{ headerShown: false }} />
+      <Stack.Screen name='positive-imagery' options={{ headerShown: false }} />
+      <Stack.Screen name='observe-thoughts' options={{ headerShown: false }} />
       <Stack.Screen name='soothe-senses' options={{ headerShown: false }} />
       <Stack.Screen name='connect-with-others' options={{ headerShown: false }} />
       <Stack.Screen name='change-perspective' options={{ headerShown: false }} />

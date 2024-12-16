@@ -64,7 +64,7 @@ interface VideoReadyForDisplayEvent {
 
 interface AppState {
   showVideo: boolean;
-  playbackInstanceName: string;
+  playbackInstanceName: string | null;
   loopingType: number;
   muted: boolean;
   playbackInstancePosition: number | null;
@@ -88,7 +88,7 @@ interface AppState {
 }
 
 export type MediaPlayerProps = {
-  mediaURI: string;
+  mediaURI: string | null;
   isVideo: boolean;
 };
 
@@ -188,7 +188,7 @@ export default class MediaPlayer extends React.Component<MediaPlayerProps, AppSt
       return;
     }
 
-    const source = { uri: this.props.mediaURI };
+    const source = { uri: this.props.mediaURI || '' };
     const initialStatus = {
       shouldPlay: playing,
       rate: this.state.rate,
