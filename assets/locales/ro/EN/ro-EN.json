@@ -22,6 +22,12 @@
     "ptsd-help": "RO/en: PTSD Help",
     "required": "RO/en: This field is required"
   },
+  "drawer": {
+    "about": "RO/en: About the app",
+    "my-profile": "RO/en: My profile",
+    "settings": "RO/en: Settings",
+    "privacy-policy": "RO/en: Privacy policy"
+  },
   "languages": {
     "en": "RO/en: English",
     "ro": "RO/en: Romanian",
@@ -142,5 +148,13 @@
   "settings": {
     "title": "RO/en: Settings",
     "change-country-and-language": "RO/en: Change country and language"
+  },
+  "about": {
+    "title": "RO/en: About the app"
+  },
+  "privacy-policy": {
+    "title": "RO/en: Privacy policy",
+    "content": "When you use a Code for Romania mobile app, no data that could be used to identify you is sent to Code for Romania or third parties. Any information that you enter into the app, such as names, phone numbers, addresses, images, or music, cannot be accessed, stored, or shared by Code for Romania. Code for Romania mobile apps do collect anonymous information about how people use the app. It is only used to improve how well the app works. We can see what sections of the app people visit, for example. We often use this information to correct technical problems in the apps. This information cannot be linked to any personal information about you and will never be shared with a third party. If you would like to turn off sending this anonymous usage information, go to the Settings menu, look for “Anonymous Usage Data,” and flip the switch to the “off” setting.\n\nCode for Romania uses some software analysis tools to help identify and prevent app problems. Code for Romania mobile apps do not share personal or identifying information with any of the partners of this tool. In using a Code for Romania mobile app, it is your responsibility to protect any information in the app once it is installed on your device. Setting a passcode on your device is recommended to help keep your information safe.",
+    "open-privacy-policy": "RO/en: Open privacy policy"
   }
 }
