@@ -45,6 +45,8 @@ import Photo from '../assets/icons/photo.svg';
 import Music from '../assets/icons/music.svg';
 import Language from '../assets/icons/language.svg';
 import Chat from '../assets/icons/chat.svg';
+import LockClosed from '../assets/icons/lock-closed.svg';
+
 type IconRegistry = {
   [key: string]: React.ComponentType<SvgProps>;
 };
@@ -94,6 +96,7 @@ const iconRegistry: IconRegistry = {
   music: Music,
   language: Language,
   chat: Chat,
+  lockClosed: LockClosed,
 };
 
 interface IconProps extends XStackProps {

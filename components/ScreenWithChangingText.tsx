@@ -4,7 +4,7 @@ import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithI
 import { useSendSMS } from '@/hooks/useSMS';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
-  staticText: string;
+  staticText?: string;
   items: { id: string; title?: string; description?: string; sms?: string }[];
   children?: React.ReactNode;
 }

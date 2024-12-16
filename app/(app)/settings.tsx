@@ -10,6 +10,7 @@ import { Card } from '@/components/Card';
 export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
+
   return (
     <Screen
       contentContainerStyle={{ padding: '$md', backgroundColor: 'white', gap: '$md' }}
@@ -19,12 +20,7 @@ export default function Settings() {
         onLeftPress: router.back,
       }}>
       <Section>
-        <SectionItem label={'Alege imagini linistitoare'} onPress={() => {}} icon='photo' />
-        <SectionItem label={'Alege sunete linistitoare'} onPress={() => {}} icon='music' />
-      </Section>
-
-      <Section>
-        <SectionItem label='Alege contacte de sprijin' onPress={() => {}} icon='user' />
+        <SectionItem label={t('settings.pick-contacts')} onPress={() => {}} icon='user' />
       </Section>
 
       <Section>
