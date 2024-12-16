@@ -14,8 +14,9 @@ import { Switch } from '@/components/Switch';
 import { format } from 'date-fns';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { TimePicker } from '@/components/TimePicker';
-import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
+import { scrollToItem } from '@/helpers/scrollToItem';
 import * as Notifications from 'expo-notifications';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 export default function WorryTime() {
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -23,9 +24,10 @@ export default function WorryTime() {
   const router = useRouter();
   const scrollViewRef = useRef<ScrollView>(null);
   const textareaRef = useRef<React.ElementRef<typeof TextareaInput>>(null);
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
 
   const { data: worries } = useLiveQuery(worriesRepository.getWorries(), []);
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.WORRY_TIME.id);
 
   const [worryText, setWorryText] = useState(worries[0]?.worry || '');
   const [isReminderChecked, setIsReminderChecked] = useState(false);
@@ -37,6 +39,12 @@ export default function WorryTime() {
     setIsReminderChecked(worries[0]?.reminderEnabled || false);
     setTime(worries[0]?.reminderTime && new Date(worries[0]?.reminderTime));
   }, [worries]);
+
+  const handleFocus = () => {
+    if (textareaRef.current && scrollViewRef.current) {
+      scrollToItem(scrollViewRef, textareaRef);
+    }
+  };
 
   const handleReminderChange = (checked: boolean) => {
     if (!checked) {
@@ -116,6 +124,8 @@ export default function WorryTime() {
         title: t(toolsTranslationKeys.WORRY_TIME.title),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       footerProps={{
         onMainAction: handleDone,
@@ -133,7 +143,7 @@ export default function WorryTime() {
           ref={textareaRef}
           placeholder={t(toolsTranslationKeys.WORRY_TIME.writeHere)}
           height={200}
-          onFocus={() => handleTextareaFocus(scrollViewRef, textareaRef)}
+          onPress={handleFocus}
           value={worryText}
           onChange={({ target: { value } }: any) => setWorryText(value)}
         />

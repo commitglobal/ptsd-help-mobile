@@ -6,12 +6,14 @@ import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 export default function Quotes() {
   const { t } = useTranslation('tools');
   const router = useRouter();
 
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.QUOTES.id);
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
@@ -26,6 +28,8 @@ export default function Quotes() {
         title: t(toolsTranslationKeys.QUOTES.label),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
       imageUrl={mediaMapping['QUOTES.CATEGORY_ICON']}
