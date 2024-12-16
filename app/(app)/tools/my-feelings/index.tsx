@@ -15,15 +15,17 @@ import { GenericError } from '@/components/GenericError';
 import { MainFeeling } from '@/enums/MainFeeling';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 export default function MyFeelings() {
   const router = useRouter();
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
 
   const { data: feelings, error, updatedAt } = useLiveQuery(feelingsRepository.getFeelings(), []);
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.MY_FEELINGS.id);
 
   if (updatedAt !== undefined && error) {
     return (
@@ -46,6 +48,8 @@ export default function MyFeelings() {
         title: t(toolsTranslationKeys.MY_FEELINGS.label),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       footerProps={{
         mainActionLabel: t(toolsTranslationKeys.MY_FEELINGS.mainActionLabel),

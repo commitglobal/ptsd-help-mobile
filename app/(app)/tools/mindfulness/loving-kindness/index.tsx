@@ -18,9 +18,8 @@ export const LovingKindness = () => {
       imageUrl={mediaMapping['MINDFULNESS.LOVING_KINDNESS.CATEGORY_ICON']}
       headerProps={{
         title: t(toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.label),
-        iconLeft: <Icon icon='chevronLeft' width={20} height={20} color='$gray12' />,
+        iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
         onLeftPress: () => router.back(),
-        iconRight: <Icon icon='heart' width={20} height={20} color='$gray12' />,
       }}
       footerProps={{
         mainActionLabel: t(toolsTranslationKeys.MINDFULNESS.subcategories.LOVING_KINDNESS.actionBtnLabel),

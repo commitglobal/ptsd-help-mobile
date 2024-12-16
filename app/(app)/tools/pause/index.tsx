@@ -9,6 +9,7 @@ import Button from '@/components/Button';
 import { useEffect, useState } from 'react';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 const PAUSE_TIME = 5 * 60;
 export default function Pause() {
@@ -17,7 +18,8 @@ export default function Pause() {
   const { t } = useTranslation('tools');
   const router = useRouter();
 
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.PAUSE.id);
 
   const { mediaMapping } = useAssetsManagerContext();
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -55,6 +57,8 @@ export default function Pause() {
           title: t(toolsTranslationKeys.PAUSE.label),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
+          iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+          onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
         }}
         staticText={t(toolsTranslationKeys.PAUSE.helper)}
         items={Object.values(items).map((item) => ({ ...item, id: item.title }))}

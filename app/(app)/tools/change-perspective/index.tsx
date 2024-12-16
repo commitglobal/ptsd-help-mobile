@@ -6,12 +6,16 @@ import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 export default function ChangePerspective() {
   const { t } = useTranslation('tools');
   const router = useRouter();
 
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(
+    TOOL_CONFIG.CHANGE_PERSPECTIVE.id
+  );
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
@@ -26,6 +30,8 @@ export default function ChangePerspective() {
         title: t(toolsTranslationKeys.CHANGE_PERSPECTIVE.label),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       staticText={t(toolsTranslationKeys.CHANGE_PERSPECTIVE.staticText)}
       items={Object.values(items).map((item) => ({ ...item, id: item.description }))}

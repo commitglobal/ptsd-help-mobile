@@ -9,6 +9,9 @@ import ScreenTabs from '@/components/ScreenTabs';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { SymptomType, Tool, useSymptoms } from '@/hooks/useTools';
+import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
+import { Typography } from '@/components/Typography';
+import favoritesRepository, { Favorite } from '@/db/repositories/favorites.repository';
 
 type SymptomListProps = {
   data: SymptomType[];
@@ -50,11 +53,18 @@ const Lists = {
   },
 
   favorites: ({ data, onToolSelected }: ToolListProps) => {
+    const { t } = useTranslation();
+
     return (
       <FlashList
         bounces={false}
         data={data}
         contentContainerStyle={{ padding: 16 }}
+        ListEmptyComponent={() => (
+          <YStack flex={1} justifyContent='center' alignItems='center'>
+            <Typography>{t('common.no-favorites')}</Typography>
+          </YStack>
+        )}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onToolSelected(item)} />}
         ItemSeparatorComponent={() => <YStack height={8} />}
@@ -82,6 +92,8 @@ export default function Manage() {
 
   const [selectedTabId, setSelectedTabId] = useState<keyof typeof Lists>(tabId || (tabs[0].id as keyof typeof Lists));
   const [isLoading, setIsLoading] = useState(false);
+
+  const { data: favorites } = useLiveQuery(favoritesRepository.getFavorites(), []);
 
   useEffect(() => {
     if (tabId) {
@@ -113,6 +125,25 @@ export default function Manage() {
             if (randomTool) {
               startTool(randomTool, `/manage?tabId=symptoms`);
             }
+          }}
+        />
+      );
+    }
+
+    if (selectedTabId === 'favorites') {
+      const ListComponent = Lists[selectedTabId];
+      return (
+        <ListComponent
+          data={Object.values(TOOL_CONFIG)
+            .filter((tool) => favorites?.some((favorite: Favorite) => favorite.toolId === tool.id))
+            .map((tool) => {
+              return {
+                ...tool,
+                label: t(tool.label, { ns: 'tools' }),
+              };
+            })}
+          onToolSelected={(tool) => {
+            startTool(tool, `/manage?tabId=favorites`);
           }}
         />
       );

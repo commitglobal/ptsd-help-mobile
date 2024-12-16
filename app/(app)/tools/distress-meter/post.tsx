@@ -4,7 +4,7 @@ import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
 import { router } from 'expo-router';
-import { ScrollView, YStack } from 'tamagui';
+import { ScrollView, Sheet, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';
 import Button from '@/components/Button';
@@ -13,9 +13,9 @@ import { BottomSheet } from '@/components/BottomSheet';
 const DistressMeterPost = () => {
   console.log('🚀 DistressMeterPost');
 
-  const { t } = useTranslation('distress-meter');
+  const { t } = useTranslation();
 
-  const { setFinalDistressLevel, returnURL } = useToolManagerContext();
+  const { setFinalDistressLevel, getFeedback } = useToolManagerContext();
 
   const [stressValue, setStressValue] = useState(5);
   const [feedbackSheetOpen, setfeedbackSheetOpen] = useState(false);
@@ -43,14 +43,14 @@ const DistressMeterPost = () => {
     <>
       <Screen
         headerProps={{
-          title: t('header-title'),
+          title: t('distress-meter.header-title'),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
           iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
         }}
         contentContainerStyle={{ backgroundColor: 'transparent' }}
         footerProps={{
-          mainActionLabel: t('actions.finish'),
+          mainActionLabel: t('common.finish'),
           onMainAction: () => handleMainAction(),
         }}>
         <ScrollView
@@ -58,36 +58,62 @@ const DistressMeterPost = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack gap='$xxs'>
-            <Typography textAlign='center'>{t('title')}</Typography>
+            <Typography textAlign='center'>{t('distress-meter.title')}</Typography>
             <Typography textAlign='center' preset='helper'>
-              {t('scale', { min: 0, max: 10 })}
+              {t('distress-meter.scale', { min: 0, max: 10 })}
             </Typography>
             <Typography textAlign='center' preset='helper'>
-              {t('subtitle')}
+              {t('distress-meter.subtitle')}
             </Typography>
           </YStack>
 
           <DistressMeterComponent stressValue={stressValue} setStressValue={setStressValue} />
         </ScrollView>
       </Screen>
+
       {feedbackSheetOpen && (
-        <BottomSheet
-          onOpenChange={setfeedbackSheetOpen}
-          snapPoints={[60]}
-          frameProps={{ gap: '$md' }}
-          dismissOnSnapToBottom={false}
-          dismissOnOverlayPress={false}>
-          <Typography>Feedback goes here</Typography>
-          <Button
-            onPress={() => {
-              onFinishFeedback();
-            }}>
-            Close
-          </Button>
-        </BottomSheet>
+        <FeedbackSheet
+          setfeedbackSheetOpen={setfeedbackSheetOpen}
+          onFinishFeedback={onFinishFeedback}
+          getFeedback={getFeedback}
+        />
       )}
     </>
   );
 };
 
 export default DistressMeterPost;
+
+const FeedbackSheet = ({
+  setfeedbackSheetOpen,
+  onFinishFeedback,
+  getFeedback,
+}: {
+  setfeedbackSheetOpen: (open: boolean) => void;
+  onFinishFeedback: () => void;
+  getFeedback: () => { title: string; description: string };
+}) => {
+  const { t } = useTranslation();
+
+  return (
+    <BottomSheet
+      onOpenChange={setfeedbackSheetOpen}
+      snapPoints={[60]}
+      frameProps={{ gap: '$md' }}
+      dismissOnSnapToBottom={false}
+      dismissOnOverlayPress={false}>
+      <Sheet.ScrollView flex={1} bounces={false} showsVerticalScrollIndicator={false}>
+        <Typography preset='subheading' marginBottom='$md'>
+          {getFeedback().title}
+        </Typography>
+        <Typography>{getFeedback().description}</Typography>
+      </Sheet.ScrollView>
+      <Button
+        onPress={() => {
+          onFinishFeedback();
+        }}>
+        {t('common.close')}
+      </Button>
+    </BottomSheet>
+  );
+};
