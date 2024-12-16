@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MediaPlayer from '@/components/MediaPlayer';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
-import { Stack, useFocusEffect, useRouter } from 'expo-router';
+import { useFocusEffect, useRouter } from 'expo-router';
 import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -29,7 +29,6 @@ export const BeachPlayer = () => {
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithImageHeader
         imageUrl={mediaMapping['POSTIVE_IMAGERY.BEACH.CATEGORY_ICON']}
         headerProps={{

@@ -3,7 +3,7 @@ import { Icon } from '@/components/Icon';
 
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 import { Typography } from '@/components/Typography';
-import { Stack, useRouter } from 'expo-router';
+import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 
@@ -16,14 +16,13 @@ export default function CloudsPreview() {
 
   return (
     <>
-      <Stack.Screen options={{ headerShown: false }} />
       <ScreenWithImageHeader
         imageUrl={mediaMapping['OBSERVE_THOUGHTS.CATEGORY_ICON']}
         headerProps={{
           title: t(toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.CLOUDS.label),
-          iconLeft: <Icon icon='chevronLeft' width={20} height={20} color='$gray12' />,
+          iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: () => router.back(),
-          iconRight: <Icon icon='heart' width={20} height={20} color='$gray12' />,
+          iconRight: <Icon icon='heart' width={24} height={24} color='$gray12' />,
         }}
         footerProps={{
           mainActionLabel: t(toolsTranslationKeys.OBSERVE_THOUGHTS.subcategories.CLOUDS.actionBtnLabel),

@@ -13,21 +13,23 @@ const ObserveThoughtsIndex = () => {
   const { toolsTranslationKeys } = useTranslationKeys();
 
   return (
-    <Screen
-      headerProps={{
-        title: t(toolsTranslationKeys.OBSERVE_THOUGHTS.label),
-        iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
-        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
-        onLeftPress: () => router.back(),
-      }}>
-      <SubcategoriesList
-        subcategories={Object.values(TOOL_CONFIG.OBSERVE_THOUGHTS.subcategories || {}).map((subcategory) => ({
-          ...subcategory,
-          label: t(subcategory.label, { ns: 'tools' }),
-        }))}
-        onSelect={(subcategory) => startTool(subcategory, '/manage?tabId=tools')}
-      />
-    </Screen>
+    <>
+      <Screen
+        headerProps={{
+          title: t(toolsTranslationKeys.OBSERVE_THOUGHTS.label),
+          iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+          iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
+          onLeftPress: () => router.back(),
+        }}>
+        <SubcategoriesList
+          subcategories={Object.values(TOOL_CONFIG.OBSERVE_THOUGHTS.subcategories || {}).map((subcategory) => ({
+            ...subcategory,
+            label: t(subcategory.label, { ns: 'tools' }),
+          }))}
+          onSelect={(subcategory) => startTool(subcategory, '/manage?tabId=tools')}
+        />
+      </Screen>
+    </>
   );
 };
 

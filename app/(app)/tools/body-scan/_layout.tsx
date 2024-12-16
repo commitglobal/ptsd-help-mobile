@@ -4,6 +4,8 @@ const BodyScanLayout = () => {
   return (
     <Stack>
       <Stack.Screen name='index' options={{ headerShown: false }} />
+      <Stack.Screen name='julia-player' options={{ headerShown: false }} />
+      <Stack.Screen name='robyn-player' options={{ headerShown: false }} />
       <Stack.Screen name='julia' options={{ headerShown: false }} />
       <Stack.Screen name='robyn' options={{ headerShown: false }} />
     </Stack>
