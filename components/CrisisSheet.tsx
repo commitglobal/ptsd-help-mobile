@@ -1,10 +1,11 @@
-import React from "react";
-import { Typography } from "./Typography";
-import { BottomSheet } from "./BottomSheet";
-import Button from "./Button";
-import { useSafeAreaInsets } from "react-native-safe-area-context";
-import { useTranslation } from "react-i18next";
-import { Sheet, YStack } from "tamagui";
+import React from 'react';
+import { Typography } from './Typography';
+import { BottomSheet } from './BottomSheet';
+import Button from './Button';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useTranslation } from 'react-i18next';
+import { Sheet, YStack } from 'tamagui';
+import { useRouter } from 'expo-router';
 
 export const CrisisSheet = ({
   setCrisisSheetOpen,
@@ -14,33 +15,31 @@ export const CrisisSheet = ({
   onContinueToTool: () => void;
 }) => {
   const insets = useSafeAreaInsets();
-  const { t } = useTranslation("distress-meter");
+  const { t } = useTranslation();
+  const router = useRouter();
 
   return (
     <BottomSheet
       onOpenChange={setCrisisSheetOpen}
       snapPoints={[60]}
-      frameProps={{ gap: "$md" }}
+      frameProps={{ gap: '$md' }}
       dismissOnSnapToBottom={false}
-      dismissOnOverlayPress={false}
-    >
+      dismissOnOverlayPress={false}>
       <Sheet.ScrollView bounces={false}>
-        <Typography>{t("high-distress.text")}</Typography>
+        <Typography>{t('distress-meter.high-distress.text')}</Typography>
       </Sheet.ScrollView>
 
-      <YStack gap="$md" paddingBottom={insets.bottom} marginTop="auto">
-        <Button preset="secondary" onPress={onContinueToTool}>
-          {t("high-distress.actions.help")}
+      <YStack gap='$md' paddingBottom={insets.bottom} marginTop='auto'>
+        <Button preset='secondary' onPress={onContinueToTool}>
+          {t('distress-meter.high-distress.actions.help')}
         </Button>
 
-        {/* //todo: navigate to support screen */}
         <Button
           onPress={() => {
-            console.log("navigate to support screen");
             setCrisisSheetOpen(false);
-          }}
-        >
-          {t("high-distress.actions.talk")}
+            router.push('/(app)/(drawer)/(tabs)/support');
+          }}>
+          {t('distress-meter.high-distress.actions.talk')}
         </Button>
       </YStack>
     </BottomSheet>

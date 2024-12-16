@@ -5,6 +5,7 @@ import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 
 import '../common/config/i18n';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
+import { useTranslation } from 'react-i18next';
 
 type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
@@ -21,7 +22,7 @@ type ToolManagerContextType = {
   setInitialDistressLevel: (level: number | null) => void;
   setFinalDistressLevel: (level: number | null) => void;
 
-  getFeedback: () => string;
+  getFeedback: () => { title: string; description: string };
 
   startTool: (tool: Tool, returnURL: string) => void;
   finishTool: () => void;
@@ -69,6 +70,7 @@ const ToolManagerContext = createContext<ToolManagerContextType | null>(null);
 const ToolManagerContextProvider = ({ children }: { children: React.ReactNode }) => {
   const { foggles } = useAssetsManagerContext();
   const TOOLS_CONFIG = useTools();
+  const { t } = useTranslation();
 
   const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
 
@@ -83,7 +85,29 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   }, [foggles]);
 
   const getFeedback = () => {
-    return `Feedback from tool manager ${initialDistressLevel} to ${finalDistressLevel}`;
+    if (!initialDistressLevel || !finalDistressLevel) return { title: '', description: '' };
+
+    // stress level increased
+    if (finalDistressLevel > initialDistressLevel) {
+      return {
+        title: t('distress-meter.feedback.increased.title'),
+        description: t('distress-meter.feedback.increased.description', { toolName: selectedTool?.label }),
+      };
+    }
+    // stress level unchanged
+    else if (finalDistressLevel === initialDistressLevel) {
+      return {
+        title: t('distress-meter.feedback.unchanged.title'),
+        description: t('distress-meter.feedback.unchanged.description', { toolName: selectedTool?.label }),
+      };
+    }
+    // stress level decreased
+    else {
+      return {
+        title: t('distress-meter.feedback.decreased.title'),
+        description: t('distress-meter.feedback.decreased.description', { toolName: selectedTool?.label }),
+      };
+    }
   };
 
   const getToolById = (toolId: string) => {

@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { Typography } from './Typography';
 import { ScreenWithImageHeader, ScreenWithImageHeaderProps } from './ScreenWithImageHeader';
+import { useSendSMS } from '@/hooks/useSMS';
 
 interface ScreenWithChangingTextProps extends ScreenWithImageHeaderProps {
   staticText?: string;
-  items: { id: string; title?: string; description?: string }[];
+  items: { id: string; title?: string; description?: string; sms?: string }[];
   children?: React.ReactNode;
 }
 
@@ -17,6 +18,7 @@ export const ScreenWithChangingText = ({
   children,
 }: ScreenWithChangingTextProps) => {
   const [renderedItem, setRenderedItem] = useState(items[0]);
+  const { sendSMS } = useSendSMS();
 
   const handleNextItem = () => {
     const currentIndex = items.findIndex((item) => item.id === renderedItem.id);
@@ -30,11 +32,23 @@ export const ScreenWithChangingText = ({
     setRenderedItem(items[previousIndex]);
   };
 
+  const handleSendSMS = () => {
+    if (renderedItem.sms) {
+      sendSMS(renderedItem.sms);
+    }
+  };
+
   return (
     <ScreenWithImageHeader
       imageUrl={imageUrl}
       headerProps={headerProps}
-      footerProps={{ onPrev: handlePreviousItem, onNext: handleNextItem, ...footerProps }}>
+      footerProps={{
+        onPrev: handlePreviousItem,
+        onNext: handleNextItem,
+        onCustomAction: renderedItem.sms ? handleSendSMS : undefined,
+        customActionIcon: renderedItem.sms ? 'chat' : undefined,
+        ...footerProps,
+      }}>
       <Typography preset='helper'>{staticText}</Typography>
       {/* <Typography>{renderedItem.text}</Typography> */}
       {renderedItem.title && <Typography preset='subheading'>{renderedItem.title}</Typography>}

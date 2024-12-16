@@ -116,7 +116,7 @@ function MultiContentComponent({ content }: { content: MultiContent }) {
       <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom={insets.bottom + 16}>
         <Button
           preset='secondary'
-          icon={<Icon icon='chevronLeft' width={20} height={20} color='$gray12' />}
+          icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
           flex={1}
           onPress={() => {
             if (currentIndex === 0) {
@@ -129,7 +129,7 @@ function MultiContentComponent({ content }: { content: MultiContent }) {
 
         <Button
           preset='secondary'
-          icon={<Icon icon='chevronRight' width={20} height={20} color='$gray12' />}
+          icon={<Icon icon='chevronRight' width={24} height={24} color='$gray12' />}
           flex={1}
           onPress={() => {
             if (currentIndex === content.contentArray.length - 1) {
@@ -157,7 +157,7 @@ function MultiPageComponent({ content }: { content: MultiPage }) {
       <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom={insets.bottom + 16}>
         <Button
           preset='secondary'
-          icon={<Icon icon='chevronLeft' width={20} height={20} color='$gray12' />}
+          icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
           flex={1}
           onPress={() => {
             if (currentIndex === 0) {
@@ -170,7 +170,7 @@ function MultiPageComponent({ content }: { content: MultiPage }) {
 
         <Button
           preset='secondary'
-          icon={<Icon icon='chevronRight' width={20} height={20} color='$gray12' />}
+          icon={<Icon icon='chevronRight' width={24} height={24} color='$gray12' />}
           flex={1}
           onPress={() => {
             if (currentIndex === content.pageArray.length - 1) {

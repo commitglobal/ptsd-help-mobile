@@ -12,7 +12,7 @@ import { CrisisSheet } from '@/components/CrisisSheet';
 const DistressMeterPre = () => {
   console.log('🚀 DistressMeterPre');
 
-  const { t } = useTranslation('distress-meter');
+  const { t } = useTranslation();
 
   const { setInitialDistressLevel, selectedTool } = useToolManagerContext();
 
@@ -42,16 +42,16 @@ const DistressMeterPre = () => {
     <>
       <Screen
         headerProps={{
-          title: t('header-title'),
+          title: t('distress-meter.header-title'),
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
           iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
         }}
         contentContainerStyle={{ backgroundColor: 'transparent' }}
         footerProps={{
-          mainActionLabel: t('actions.start'),
+          mainActionLabel: t('distress-meter.actions.start'),
           onMainAction: () => handleMainAction(),
-          secondaryActionLabel: t('actions.skip'),
+          secondaryActionLabel: t('distress-meter.actions.skip'),
           onSecondaryAction: () => handleSecondaryAction(),
         }}>
         <ScrollView
@@ -59,12 +59,12 @@ const DistressMeterPre = () => {
           showsVerticalScrollIndicator={false}
           bounces={false}>
           <YStack gap='$xxs'>
-            <Typography textAlign='center'>{t('title')}</Typography>
+            <Typography textAlign='center'>{t('distress-meter.title')}</Typography>
             <Typography textAlign='center' preset='helper'>
-              {t('scale', { min: 0, max: 10 })}
+              {t('distress-meter.scale', { min: 0, max: 10 })}
             </Typography>
             <Typography textAlign='center' preset='helper'>
-              {t('subtitle')}
+              {t('distress-meter.subtitle')}
             </Typography>
           </YStack>
 

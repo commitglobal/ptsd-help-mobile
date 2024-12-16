@@ -14,7 +14,7 @@ export default function ReconnectWithPartner() {
 
   const items = t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as Record<string, { title: string; description: string; sms?: string }>;
 
   return (
     <ScreenWithChangingText
@@ -24,9 +24,11 @@ export default function ReconnectWithPartner() {
       headerProps={{
         title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.label),
         onLeftPress: () => router.back(),
-        iconLeft: <Icon icon='chevronLeft' width={20} height={20} color='$gray12' />,
+        iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
       }}
-      footerProps={{ onMainAction: () => finishTool() }}
+      footerProps={{
+        onMainAction: finishTool,
+      }}
     />
   );
 }

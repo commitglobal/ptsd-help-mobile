@@ -7,6 +7,7 @@
     "save": "RO/ro: Save",
     "cancel": "RO/ro: Cancel",
     "delete": "RO/en: Delete",
+    "close": "RO/en: Close",
     "unsaved-data": "RO/en: You have unsaved changes. Are you sure you want to leave this page?",
     "discard": "RO/en: Discard",
     "sure": "RO/en: Yes, I'm sure",
@@ -22,6 +23,12 @@
     "done": "RO/en: Done",
     "ptsd-help": "RO/en: PTSD Help",
     "required": "RO/en: This field is required"
+  },
+  "drawer": {
+    "about": "RO/en: About the app",
+    "my-profile": "RO/en: My profile",
+    "settings": "RO/en: Settings",
+    "privacy-policy": "RO/en: Privacy policy"
   },
   "languages": {
     "en": "RO/en: English",
@@ -81,7 +88,7 @@
       "personalize": {
         "title": "RO/en: Personalize the app by adding:",
         "l1": "RO/en: Contact information for friends, family or your support network",
-        "l2": "RO/en: Soothing photos of nature or places that are important to you",
+        "l2": "RO/en: Your favorite instruments for managing stress",
         "modify_preferences": "RO/en: You can always modify your preferences later from the settings menu."
       }
     }
@@ -127,7 +134,7 @@
     "header-title": "RO/en: Distress Meter",
     "title": "RO/en: What's your current level of distress?",
     "scale": "RO/en: {{min}} means no distress, {{max}} is the worst",
-    "subtitle": "RO/en: Tap on the up and down arrows to indicate how you are feeling.",
+    "subtitle": "RO/en: Tap on the '+' and '-' arrows to indicate how you are feeling.",
     "actions": {
       "start": "RO/en: Start using a tool",
       "skip": "RO/en: Skip"
@@ -138,10 +145,33 @@
         "help": "RO/en: No, continue to the support tool",
         "talk": "RO/en: Yes, I want to talk to someone"
       }
+    },
+    "feedback": {
+      "increased": {
+        "title": "RO/en: Distress increased",
+        "description": "RO/en: It seems that after {{toolName}} you are actually more distressed. It may be good to remember for the future, since you shouldn't do things that don't work for you. But remember, some of these tools need time or practice to work or can only improve certain types of problems, so don't remove it yet. \n\nAs you're still distressed, you may want to try another tool."
+      },
+      "decreased": {
+        "title": "RO/en: Distress decreased",
+        "description": "RO/en: Great! It seems that {{toolName}} has reduced your distress level. Try to remember this tool. Anything that works for you once can work again! \n\nIf a tool continues to work for you, you may want to mark it as a favorite by pressing the heart icon the next time this tool is offered. This way, it will be more likely to show up again. The tool will also be saved in 'Favorites'."
+      },
+      "unchanged": {
+        "title": "RO/en: Distress unchanged",
+        "description": "RO/en: OK, it seems that after {{toolName}} you have the same amount of stress. It may be enough for you – after all, nothing has gotten worse! – or maybe you expected a bigger improvement. But don't forget, some of these tools need time or practice to work or can only improve certain types of problems, so don't remove it yet. \n\nIf you want, you can safely try another tool now."
+      }
     }
   },
   "settings": {
     "title": "RO/en: Settings",
-    "change-country-and-language": "RO/en: Change country and language"
+    "change-country-and-language": "RO/en: Change country and language",
+    "pick-contacts": "RO/en: Pick support contacts"
+  },
+  "about": {
+    "title": "RO/en: About the app"
+  },
+  "privacy-policy": {
+    "title": "RO/en: Privacy policy",
+    "content": "When you use a Code for Romania mobile app, no data that could be used to identify you is sent to Code for Romania or third parties. Any information that you enter into the app, such as names, phone numbers, addresses, images, or music, cannot be accessed, stored, or shared by Code for Romania. Code for Romania mobile apps do collect anonymous information about how people use the app. It is only used to improve how well the app works. We can see what sections of the app people visit, for example. We often use this information to correct technical problems in the apps. This information cannot be linked to any personal information about you and will never be shared with a third party. If you would like to turn off sending this anonymous usage information, go to the Settings menu, look for “Anonymous Usage Data,” and flip the switch to the “off” setting.\n\nCode for Romania uses some software analysis tools to help identify and prevent app problems. Code for Romania mobile apps do not share personal or identifying information with any of the partners of this tool. In using a Code for Romania mobile app, it is your responsibility to protect any information in the app once it is installed on your device. Setting a passcode on your device is recommended to help keep your information safe.",
+    "open-privacy-policy": "RO/en: Open privacy policy"
   }
 }

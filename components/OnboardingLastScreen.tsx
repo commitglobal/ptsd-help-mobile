@@ -52,10 +52,6 @@ export const OnboardingLastScreen = () => {
         <Button preset='secondary' onPress={handleStart}>
           {t('onboarding.welcome.actions.start')}
         </Button>
-        {/* //todo: route to personalize screen */}
-        <Button preset='secondary' onPress={() => {}}>
-          {t('onboarding.welcome.actions.personalize')}
-        </Button>
       </YStack>
     </ScrollView>
   );
