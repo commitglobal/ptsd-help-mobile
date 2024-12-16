@@ -72,16 +72,98 @@
         "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
         "repeater": {
           "1": {
-            "title": "RO/en: Go for a walk or exercise together",
-            "description": "RO/en: Find time to go for a walk or exercise together"
+            "title": "RO/en: Notice The Nice Things",
+            "description": "RO/en: Notice 1 thing about your partner, every day for one week. It can be as simple as noticing a new hair style or a small gesture of love or support. Take a moment to share whatever you've noticed with your partner.",
+            "calendar": "RO/en: Notice something nice about my partner"
           },
           "2": {
-            "title": "RO/en: Prepare a delicious meal and have fun in the kitchen",
-            "description": "RO/en: Find time to prepare a delicious meal and have fun in the kitchen"
+            "title": "RO/en: Notice the Nice Things Together",
+            "description": "RO/en: Challenge your partner to see if you can both notice, and comment on, once nice thing about one another every day for a week.",
+            "sms": "RO/en: I'm making a commitment to notice something nice about you for the next week. Will you try to do the same for me?"
           },
           "3": {
-            "title": "RO/en: Organize a movie night at home with favorite films",
-            "description": "RO/en: Find time to organize a movie night at home with favorite films"
+            "title": "RO/en: Be Affectionate",
+            "description": "RO/en: Give your spouse or partner a hug or hold their hand at a time you normally wouldn't. Try to show your partner a small act of physical affection in a way you think he or she might appreciate.",
+            "calendar": "RO/en: Hug or hold my partner's hand"
+          },
+          "4": {
+            "title": "RO/en: Be Affectionate Together",
+            "description": "RO/en: Challenge your partner to make a commitment to hug or hold hands at least once a day for the next week.",
+            "sms": "RO/en: I'd like us to make a commitment to try to hug or hold hands at least once a day this week. Can we try to do this together and see what happens?"
+          },
+          "5": {
+            "title": "RO/en: Acts of Service",
+            "description": "RO/en: Find a small act of service that you can provide your partner. Something that they need to do or have done that you could take care of instead. Just one thing, even something small like taking out the garbage.",
+            "calendar": "RO/en: Do at least one thing today that is helpful to my partner"
+          },
+          "6": {
+            "title": "RO/en: Acts of Service Together",
+            "description": "RO/en: Challenge your partner to make a commitment to perform one small act of service for one another each day.",
+            "sms": "RO/en: I'd like us to make a commitment to try to do at least one thing each day that is helpful to the other person. Will you join me on this?"
+          },
+          "7": {
+            "title": "RO/en: Volunteering Together",
+            "description": "RO/en: Do something together to help the larger community!"
+          },
+          "8": {
+            "title": "RO/en: Who I Want to Be",
+            "description": "RO/en: Take a moment to come up with 3 words you would use to describe yourself as the partner you would ideally like to be. Maybe \"compassionate\" or \"fun\" or \"relaxed\" or something totally different! Write the words down and then over the next week, practice living those qualities as best you can. Notice how it feels."
+          },
+          "9": {
+            "title": "RO/en: Reflecting on your Partner",
+            "description": "RO/en: Spend a few minutes reflecting on these questions:\n\n- What did you find most attractive about your partner when you first met, besides looks?\n- What personal qualities did you most admire about your partner when you first met them?\n- What do you see as your partner's greatest strengths?"
+          },
+          "10": {
+            "title": "RO/en: Show Your Support",
+            "description": "RO/en: Focus on showing your partner that you're on their side. If your partner is upset about something, try to find ways to take their side and express your support."
+          },
+          "11": {
+            "title": "RO/en: Act of Service",
+            "description": "RO/en: Perform a substantial act of service for your partner. Go out of your way to find something helpful to do for them - something you think they are likely to really appreciate.",
+            "calendar": "RO/en: Perform an act of service for my partner"
+          },
+          "12": {
+            "title": "RO/en: Cultivate Appreciation",
+            "description": "RO/en: Spend 10 minutes sitting alone in a quiet sport. Close your eyes and try to generate a sense of warmth and appreciation for your partner. Think about their positive qualities. What happens when you take time to reflect on their strengths or positive qualities?"
+          },
+          "13": {
+            "title": "RO/en: Acting as a Team",
+            "description": "RO/en: Let your partner know that you're on a team and you can take things on together. This could be talking about your future, planning a future activity together, or taking on a small challenge together.",
+            "calendar": "RO/en: Plan a future activity with my partner"
+          },
+          "14": {
+            "title": "RO/en: Letting Go of Judgment",
+            "description": "RO/en: Designate 5 minutes to focus on trying not to judge your partner. See how it feels to let any judgment go for a few minutes."
+          },
+          "15": {
+            "title": "RO/en: Giving a Small Gift",
+            "description": "RO/en: Surprise your partner with a small gift - it could be anything: a short note, your time, flowers, or anything that's quick, easy, and shows you care.",
+            "calendar": "RO/en: Get a small gift for my partner"
+          },
+          "16": {
+            "title": "RO/en: Express Appreciation",
+            "description": "RO/en: Express your appreciation for your partner each time they do something that makes you feel good, feel appreciated, or makes your life easier!"
+          },
+          "17": {
+            "title": "RO/en: Stop Keeping Score",
+            "description": "RO/en: If you find yourself keeping track of how much you do for your partner without receiving anything in return, try to stop \"keeping score\" for at least one day. Sometimes, letting go of expectations can make it easier to re-connect, even if only for short periods of time."
+          },
+          "18": {
+            "title": "RO/en: Practice Non-Judgment",
+            "description": "RO/en: If you and your partner are in the middle of a conflict, try not to judge them for the entire conversation. This is tough to do! The important thing is to work toward non-judgment, and if you're having a hard time, that's okay."
+          },
+          "19": {
+            "title": "RO/en: Surprise Date",
+            "description": "RO/en: Surprise your partner with a planned activity or date. This could be something small like going for a walk or watching a movie together.",
+            "calendar": "RO/en: Surprise my partner with an activity together"
+          },
+          "20": {
+            "title": "RO/en: Reliving Fun Times",
+            "description": "RO/en: Think of a short activity (or conversation topic) that you and your partner did together when you first met. Choose something neutral, that's not likely to cause conflict and ask if they would like to make time to try it again."
+          },
+          "21": {
+            "title": "RO/en: Remind Yourself of the Positives",
+            "description": "RO/en: Make a list of all the positive qualities your partner has. Keep the list somewhere you'll see it and add to it every time you think of something new."
           }
         }
       },
