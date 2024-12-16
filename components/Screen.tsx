@@ -77,7 +77,7 @@ export const Screen = ({
                   {footerProps.onPrev && (
                     <Button
                       preset='secondary'
-                      icon={<Icon icon='chevronLeft' width={20} height={20} color='$gray12' />}
+                      icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
                       flex={1}
                       onPress={footerProps.onPrev}
                     />
@@ -88,8 +88,8 @@ export const Screen = ({
                       icon={
                         <Icon
                           icon={footerProps.customActionIcon ? footerProps.customActionIcon : 'arrowUpOnSquare'}
-                          width={20}
-                          height={20}
+                          width={24}
+                          height={24}
                           color='$gray12'
                         />
                       }
@@ -100,7 +100,7 @@ export const Screen = ({
                   {footerProps.onNext && (
                     <Button
                       preset='secondary'
-                      icon={<Icon icon='chevronRight' width={20} height={20} color='$gray12' />}
+                      icon={<Icon icon='chevronRight' width={24} height={24} color='$gray12' />}
                       flex={1}
                       onPress={footerProps.onNext}
                     />
