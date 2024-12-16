@@ -7,6 +7,7 @@
     "save": "RO/ro: Save",
     "cancel": "RO/ro: Cancel",
     "delete": "RO/en: Delete",
+    "close": "RO/en: Close",
     "unsaved-data": "RO/en: You have unsaved changes. Are you sure you want to leave this page?",
     "discard": "RO/en: Discard",
     "sure": "RO/en: Yes, I'm sure",
@@ -132,7 +133,7 @@
     "header-title": "RO/en: Distress Meter",
     "title": "RO/en: What's your current level of distress?",
     "scale": "RO/en: {{min}} means no distress, {{max}} is the worst",
-    "subtitle": "RO/en: Tap on the up and down arrows to indicate how you are feeling.",
+    "subtitle": "RO/en: Tap on the '+' and '-' arrows to indicate how you are feeling.",
     "actions": {
       "start": "RO/en: Start using a tool",
       "skip": "RO/en: Skip"
@@ -142,6 +143,20 @@
       "actions": {
         "help": "RO/en: No, continue to the support tool",
         "talk": "RO/en: Yes, I want to talk to someone"
+      }
+    },
+    "feedback": {
+      "increased": {
+        "title": "RO/en: Distress increased",
+        "description": "RO/en: It seems that after {{toolName}} you are actually more distressed. It may be good to remember for the future, since you shouldn't do things that don't work for you. But remember, some of these tools need time or practice to work or can only improve certain types of problems, so don't remove it yet. \n\nAs you're still distressed, you may want to try another tool."
+      },
+      "decreased": {
+        "title": "RO/en: Distress decreased",
+        "description": "RO/en: Great! It seems that {{toolName}} has reduced your distress level. Try to remember this tool. Anything that works for you once can work again! \n\nIf a tool continues to work for you, you may want to mark it as a favorite by pressing the heart icon the next time this tool is offered. This way, it will be more likely to show up again. The tool will also be saved in 'Favorites'."
+      },
+      "unchanged": {
+        "title": "RO/en: Distress unchanged",
+        "description": "RO/en: OK, it seems that after {{toolName}} you have the same amount of stress. It may be enough for you – after all, nothing has gotten worse! – or maybe you expected a bigger improvement. But don't forget, some of these tools need time or practice to work or can only improve certain types of problems, so don't remove it yet. \n\nIf you want, you can safely try another tool now."
       }
     }
   },
