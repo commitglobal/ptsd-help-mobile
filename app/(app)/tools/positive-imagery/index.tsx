@@ -5,21 +5,24 @@ import { Icon } from '@/components/Icon';
 import { router } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 const PositiveImageryIndex = () => {
-  const { startTool, TOOL_CONFIG } = useToolManagerContext();
   const { t } = useTranslation('tools');
-
   const { toolsTranslationKeys } = useTranslationKeys();
+
+  const { startTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.POSTIVE_IMAGERY.id);
 
   return (
     <>
       <Screen
         headerProps={{
           title: t(toolsTranslationKeys.POSTIVE_IMAGERY.label),
-          iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
+          iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+          onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
         }}>
         <SubcategoriesList
           subcategories={Object.values(TOOL_CONFIG.POSTIVE_IMAGERY.subcategories || {}).map((subcategory) => ({

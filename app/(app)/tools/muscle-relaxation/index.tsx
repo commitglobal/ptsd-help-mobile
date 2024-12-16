@@ -6,13 +6,17 @@ import { Typography } from '@/components/Typography';
 import { Stack, useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export default function MuscleRelaxation() {
   const router = useRouter();
   const { t } = useTranslation('tools');
-
   const { toolsTranslationKeys } = useTranslationKeys();
+
   const { mediaMapping } = useAssetsManagerContext();
+  const { TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.MUSCLE_RELAXATION.id);
 
   return (
     <>
@@ -23,7 +27,8 @@ export default function MuscleRelaxation() {
           title: t(toolsTranslationKeys.MUSCLE_RELAXATION.label),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: () => router.back(),
-          iconRight: <Icon icon='heart' width={24} height={24} color='$gray12' />,
+          iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+          onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
         }}
         footerProps={{
           mainActionLabel: t(toolsTranslationKeys.MUSCLE_RELAXATION.actionBtnLabel),
