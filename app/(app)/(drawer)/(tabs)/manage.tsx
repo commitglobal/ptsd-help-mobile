@@ -6,16 +6,16 @@ import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
 import { Spinner, YStack } from 'tamagui';
 import ScreenTabs from '@/components/ScreenTabs';
-import { symptoms } from '@/mocks/mocks';
 import { useLocalSearchParams, useRouter } from 'expo-router';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
-import { Tool } from '@/hooks/useTools';
+import { SymptomType, Tool, useSymptoms } from '@/hooks/useTools';
 import { useLiveQuery } from 'drizzle-orm/expo-sqlite';
 import { Typography } from '@/components/Typography';
 import favoritesRepository, { Favorite } from '@/db/repositories/favorites.repository';
 
 type SymptomListProps = {
-  onSymptomSelected: (symptom: unknown) => void;
+  data: SymptomType[];
+  onSymptomSelected: (symptom: SymptomType) => void;
 };
 
 type ToolListProps = {
@@ -24,11 +24,11 @@ type ToolListProps = {
 };
 
 const Lists = {
-  symptoms: ({ onSymptomSelected }: SymptomListProps) => {
+  symptoms: ({ data, onSymptomSelected }: SymptomListProps) => {
     return (
       <FlashList
         bounces={false}
-        data={symptoms}
+        data={data}
         contentContainerStyle={{ padding: 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => <ListCard key={item.id} item={item} onPress={() => onSymptomSelected(item)} />}
@@ -79,6 +79,7 @@ export default function Manage() {
   const { t } = useTranslation('translation');
   const router = useRouter();
   const { startTool, TOOL_CONFIG } = useToolManagerContext();
+  const { SYMPOTOMS_CONFIG, getRandomToolForSymptom } = useSymptoms();
 
   const tabs = useMemo(
     () => [
@@ -113,16 +114,17 @@ export default function Manage() {
       const ListComponent = Lists[selectedTabId];
       return (
         <ListComponent
-          onSymptomSelected={(_symptom) => {
-            const allTools = Object.values(TOOL_CONFIG).flatMap((item) =>
-              item.subcategories
-                ? Object.values(item.subcategories).filter((sub) => sub.type === 'tool')
-                : item.type === 'tool'
-                  ? [item]
-                  : []
-            );
-            const randomTool = allTools[Math.floor(Math.random() * allTools.length)];
-            startTool(randomTool, `/manage?tabId=symptoms`);
+          data={Object.values(SYMPOTOMS_CONFIG).map((symptom) => {
+            return {
+              ...symptom,
+              label: t(symptom.label, { ns: 'tools' }),
+            };
+          })}
+          onSymptomSelected={(symptom) => {
+            const randomTool = getRandomToolForSymptom(symptom);
+            if (randomTool) {
+              startTool(randomTool, `/manage?tabId=symptoms`);
+            }
           }}
         />
       );

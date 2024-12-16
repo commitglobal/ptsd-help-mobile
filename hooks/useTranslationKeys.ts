@@ -467,8 +467,36 @@ const useTranslationKeys = () => {
     },
   };
 
+  const symptomsTranslationKeys = {
+    REMINDED_OF_TRAUMA: {
+      label: 'symptoms.reminded_of_trauma',
+    },
+    AVOIDING_TRIGGERS: {
+      label: 'symptoms.avoiding_triggers',
+    },
+    DISCONNECTED_FROM_PEOPLE: {
+      label: 'symptoms.disconnected_from_people',
+    },
+    DISCONNECTED_FROM_REALITY: {
+      label: 'symptoms.disconnected_from_reality',
+    },
+    SAD_HOPELESS: {
+      label: 'symptoms.sad_hopeless',
+    },
+    WORRIED_ANXIOUS: {
+      label: 'symptoms.worried_anxious',
+    },
+    ANGRY: {
+      label: 'symptoms.angry',
+    },
+    SLEEP_PROBLEMS: {
+      label: 'symptoms.sleep_problems',
+    },
+  };
+
   return {
     toolsTranslationKeys,
+    symptomsTranslationKeys,
   };
 };
 
