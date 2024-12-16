@@ -40,15 +40,10 @@ export const DrawerContent = (props: DrawerContentProps) => {
         />
       </XStack>
 
-      <DrawerItem key={0} label={t('drawer.my-profile')} icon='user' onPress={() => router.push('/profile')} />
-      <DrawerItem key={1} label={t('drawer.about')} icon='info' onPress={() => router.push('/about')} />
-      <DrawerItem
-        key={2}
-        label={t('drawer.privacy-policy')}
-        icon='lockClosed'
-        onPress={() => router.push('/privacy-policy')}
-      />
-      <DrawerItem key={3} label={t('drawer.settings')} icon='settings' onPress={() => router.push('/settings')} />
+      <DrawerItem label={t('drawer.my-profile')} icon='user' onPress={() => router.push('/profile')} />
+      <DrawerItem label={t('drawer.about')} icon='info' onPress={() => router.push('/about')} />
+      <DrawerItem label={t('drawer.privacy-policy')} icon='lockClosed' onPress={() => router.push('/privacy-policy')} />
+      <DrawerItem label={t('drawer.settings')} icon='settings' onPress={() => router.push('/settings')} />
       <Typography
         color='white'
         marginTop='auto'
