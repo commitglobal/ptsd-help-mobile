@@ -21,10 +21,13 @@ export const ContactList = () => {
   const { data: contactsData } = useContacts();
 
   const handlePickContacts = async () => {
-    const contact = await Contacts.presentContactPickerAsync();
-    if (contact && contact.id) {
-      await createContact(contact.id);
-      queryClient.invalidateQueries({ queryKey: ['contacts'] });
+    const { status } = await Contacts.requestPermissionsAsync();
+    if (status === 'granted') {
+      const contact = await Contacts.presentContactPickerAsync();
+      if (contact && contact.id) {
+        await createContact(contact.id);
+        queryClient.invalidateQueries({ queryKey: ['contacts'] });
+      }
     }
   };
 
