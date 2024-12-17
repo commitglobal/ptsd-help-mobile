@@ -22,6 +22,13 @@
       "when": 1734004888535,
       "tag": "0002_strengths-table",
       "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "6",
+      "when": 1734362331619,
+      "tag": "0003_contacts",
+      "breakpoints": true
     }
   ]
 }
