@@ -3,7 +3,7 @@ import { Icon } from '@/components/Icon';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
 import { ScrollView, XStack, YStack } from 'tamagui';
-import { Dimensions, Image, Linking } from 'react-native';
+import { Dimensions, Image, Linking, Share } from 'react-native';
 import RenderHTML from 'react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
@@ -90,6 +90,12 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
         // Handle webview
         router.push({ pathname: '/(app)/webview', params: { url: content.action.url } });
         break;
+      case 'share': {
+        Share.share({
+          message: content.action.message,
+        });
+        break;
+      }
       default:
         console.error('❌ Unknown button action', content.action);
         break;
