@@ -165,6 +165,9 @@
     "change-country-and-language": "RO/en: Change country and language",
     "pick-contacts": "RO/en: Pick support contacts"
   },
+  "contact": {
+    "title": "RO/en: Contacts list"
+  },
   "about": {
     "title": "RO/en: About the app"
   },

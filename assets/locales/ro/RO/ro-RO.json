@@ -49,6 +49,9 @@
     "subtitle": "RO/ro: Please choose the language of the app content.",
     "next": "RO/ro: Next"
   },
+  "contact": {
+    "title": "RO/en: Contacts list"
+  },
   "onboarding": {
     "learn": {
       "title": "RO/ro: Learn",

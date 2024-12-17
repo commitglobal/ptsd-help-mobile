@@ -10,8 +10,10 @@ import { useQueryClient } from '@tanstack/react-query';
 import { DeleteConfirmationModal } from './DeleteConfirmationModal';
 import { Card } from './Card';
 import { Linking } from 'react-native';
+import { useTranslation } from 'react-i18next';
 
 export const ContactList = () => {
+  const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [contacts, setContacts] = useState<Contacts.Contact[]>([]);
   const [deleteContactModalOpen, setDeleteContactModalOpen] = useState(false);
@@ -92,7 +94,7 @@ export const ContactList = () => {
     <>
       <YStack>
         <XStack width='100%' justifyContent='space-between' alignItems='center'>
-          <Typography preset='subheading'>Lista de contacte</Typography>
+          <Typography preset='subheading'>{t('contact.title')}</Typography>
           <XStack
             flex={0.2}
             paddingLeft='$md'
