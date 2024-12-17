@@ -6,15 +6,17 @@ import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 import { useRouter } from 'expo-router';
 import { useTranslation } from 'react-i18next';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 export default function AmbientSounds() {
   const router = useRouter();
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
   const { t } = useTranslation('tools');
 
   const { mediaMapping } = useAssetsManagerContext();
 
   const { toolsTranslationKeys } = useTranslationKeys();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.AMBIENT_SOUNDS.id);
 
   const PLAYLIST: AudioFile[] = [
     {
@@ -110,6 +112,8 @@ export default function AmbientSounds() {
         title: t(toolsTranslationKeys.AMBIENT_SOUNDS.label, { ns: 'tools' }),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       footerProps={{
         onMainAction: () => finishTool(),

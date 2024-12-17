@@ -22,7 +22,7 @@
     "country-road": "RO/ro: Country Road",
     "beach": "RO/ro: Beach",
     "positive-imagery": "RO/ro: Positive Imagery",
-    "observe-thoughts": "RO/ro: Observa gândurile",
+    "observe-thoughts": "RO/ro: Observă gândurile",
     "clouds": "RO/ro: Nori",
     "river": "RO/ro: Râul"
   },
@@ -703,8 +703,8 @@
     }
   },
   "observe-thoughts": {
-    "title": "Observa gândurile",
-    "description": "Observa gândurile",
+    "title": "Observă gândurile",
+    "description": "Observă gândurile",
     "action-btn-label": "Începe",
     "done": "Gata",
     "clouds": {

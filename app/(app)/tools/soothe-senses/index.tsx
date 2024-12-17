@@ -2,6 +2,7 @@ import { Icon } from '@/components/Icon';
 import { ScreenWithChangingText } from '@/components/ScreenWithChangingText';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useRouter } from 'expo-router';
 import React from 'react';
@@ -13,7 +14,8 @@ const SootheSenses = () => {
   const router = useRouter();
 
   const { mediaMapping } = useAssetsManagerContext();
-  const { finishTool } = useToolManagerContext();
+  const { finishTool, TOOL_CONFIG } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.SOOTHE_SENSES.id);
 
   const items = t(toolsTranslationKeys.SOOTHE_SENSES.repeater, {
     returnObjects: true,
@@ -25,6 +27,8 @@ const SootheSenses = () => {
         title: t(toolsTranslationKeys.SOOTHE_SENSES.label),
         iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
         onLeftPress: () => router.back(),
+        iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
+        onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
       imageUrl={mediaMapping['SOOTHE_SENSES.CATEGORY_ICON']}

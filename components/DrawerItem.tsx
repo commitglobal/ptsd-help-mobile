@@ -3,21 +3,10 @@ import { DrawerItem as DrawerItemRN } from '@react-navigation/drawer';
 import { useTheme } from 'tamagui';
 import { Icon } from './Icon';
 
-export const DrawerItem = ({
-  label,
-  onPress,
-  icon,
-  key,
-}: {
-  label: string;
-  onPress: () => void;
-  icon: string;
-  key: number;
-}) => {
+export const DrawerItem = ({ label, onPress, icon }: { label: string; onPress: () => void; icon: string }) => {
   const theme = useTheme();
   return (
     <DrawerItemRN
-      key={key}
       label={label}
       focused={true}
       activeTintColor={theme.blue1?.val}

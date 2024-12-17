@@ -22,7 +22,6 @@ export default function CountryRoadPreview() {
           title: t(toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.COUNTRY_ROAD.label),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: () => router.back(),
-          iconRight: <Icon icon='heart' width={24} height={24} color='$gray12' />,
         }}
         footerProps={{
           mainActionLabel: t(toolsTranslationKeys.POSTIVE_IMAGERY.subcategories.COUNTRY_ROAD.actionBtnLabel),

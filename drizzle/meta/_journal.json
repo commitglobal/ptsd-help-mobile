@@ -5,29 +5,8 @@
     {
       "idx": 0,
       "version": "6",
-      "when": 1733491308732,
-      "tag": "0000_init-migration",
-      "breakpoints": true
-    },
-    {
-      "idx": 1,
-      "version": "6",
-      "when": 1734004798210,
-      "tag": "0001_no-strengths",
-      "breakpoints": true
-    },
-    {
-      "idx": 2,
-      "version": "6",
-      "when": 1734004888535,
-      "tag": "0002_strengths-table",
-      "breakpoints": true
-    },
-    {
-      "idx": 3,
-      "version": "6",
-      "when": 1734362331619,
-      "tag": "0003_contacts",
+      "when": 1734435669638,
+      "tag": "0000_init",
       "breakpoints": true
     }
   ]
