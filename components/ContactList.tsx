@@ -7,7 +7,6 @@ import { useContacts } from '@/services/contacts.service';
 import contactsRepository from '@/db/repositories/contacts.repository';
 import { Image } from 'expo-image';
 import { useQueryClient } from '@tanstack/react-query';
-import { DeleteConfirmationModal } from './DeleteConfirmationModal';
 import { Card } from './Card';
 import { Linking, Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
@@ -16,8 +15,6 @@ export const ContactList = () => {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
   const [contacts, setContacts] = useState<Contacts.Contact[]>([]);
-  const [deleteContactModalOpen, setDeleteContactModalOpen] = useState(false);
-  const [deleteContactId, setDeleteContactId] = useState<string | null>(null);
   const { data: contactsData } = useContacts();
 
   const handlePickContacts = async () => {
@@ -49,6 +46,11 @@ export const ContactList = () => {
   };
 
   const getContatctDetails = async (ids: string[]) => {
+    if (ids.length === 0) {
+      setContacts([]);
+      return;
+    }
+
     let contacts: any[] = [];
     if (Platform.OS === 'ios') {
       const contactsData = await Contacts.getContactsAsync({
@@ -63,30 +65,27 @@ export const ContactList = () => {
       }
     }
 
-    setContacts(contacts);
+    const availablecontacts = contacts.filter((contact) => contact !== undefined).map((contact) => contact.id);
+    if (availablecontacts.length !== contacts.length && contactsData?.[0].id) {
+      await contactsRepository.updateContact(contactsData?.[0].id, {
+        contactIds: availablecontacts,
+        updatedAt: new Date().toISOString(),
+      });
+    }
+
+    setContacts(contacts.filter((contact) => contact !== undefined));
   };
 
   useEffect(() => {
-    if (
-      contactsData &&
-      contactsData.length > 0 &&
-      contactsData[0].contactIds &&
-      contactsData[0].contactIds.length !== 0
-    ) {
+    if (contactsData && contactsData.length > 0 && contactsData[0].contactIds) {
       const ids = contactsData[0].contactIds;
       getContatctDetails(ids);
     }
   }, [contactsData]);
 
-  const handleDeleteContact = (id: string) => {
-    setDeleteContactModalOpen(true);
-    setDeleteContactId(id);
-  };
-
-  const handleDeleteContactConfirmation = async () => {
-    setDeleteContactModalOpen(false);
-    if (deleteContactId && contactsData?.[0].id) {
-      const ids = contactsData?.[0].contactIds?.filter((id) => id !== deleteContactId);
+  const handleDeleteContact = async (id: string) => {
+    if (contactsData?.[0].id) {
+      const ids = contactsData?.[0].contactIds?.filter((contactId) => contactId !== id);
       await contactsRepository.updateContact(contactsData?.[0].id, {
         contactIds: ids,
         updatedAt: new Date().toISOString(),
@@ -156,12 +155,6 @@ export const ContactList = () => {
           ))}
         </YStack>
       </YStack>
-      {deleteContactModalOpen && (
-        <DeleteConfirmationModal
-          setModalOpen={setDeleteContactModalOpen}
-          handleDelete={handleDeleteContactConfirmation}
-        />
-      )}
     </>
   );
 };
