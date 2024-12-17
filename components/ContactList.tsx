@@ -9,7 +9,7 @@ import { Image } from 'expo-image';
 import { useQueryClient } from '@tanstack/react-query';
 import { DeleteConfirmationModal } from './DeleteConfirmationModal';
 import { Card } from './Card';
-import { Linking } from 'react-native';
+import { Linking, Platform } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 export const ContactList = () => {
@@ -49,12 +49,21 @@ export const ContactList = () => {
   };
 
   const getContatctDetails = async (ids: string[]) => {
-    const contacts = await Contacts.getContactsAsync({
-      fields: [Contacts.Fields.PhoneNumbers, Contacts.Fields.Emails, Contacts.Fields.Name, Contacts.Fields.Image],
-      id: ids,
-    });
+    let contacts: any[] = [];
+    if (Platform.OS === 'ios') {
+      const contactsData = await Contacts.getContactsAsync({
+        fields: [Contacts.Fields.PhoneNumbers, Contacts.Fields.Emails, Contacts.Fields.Name, Contacts.Fields.Image],
+        id: ids,
+      });
+      contacts = contactsData.data;
+    } else {
+      for (const id of ids) {
+        const contact = await Contacts.getContactByIdAsync(id);
+        contacts.push(contact);
+      }
+    }
 
-    setContacts(contacts.data);
+    setContacts(contacts);
   };
 
   useEffect(() => {
