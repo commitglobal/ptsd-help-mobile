@@ -532,6 +532,7 @@
     },
     "sleep-habits": {
       "title": "Good Sleep Habits",
+      "info": "Info",
       "description": "Incorporating new habits into your nighttime routine can help achieve smoother sleep. Use the following tools to shape your current schedule into one that leads to quality sleep.",
       "save": "RO/en: Save",
       "list": {
@@ -542,6 +543,7 @@
       },
       "relaxing-activities": {
         "description": "Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
+        "info": "Including relaxation time in your sleep routine can help sleep come more easily. View the activity suggestions to find ways to engage in calming activities that prepare you for sleep.",
         "reminder-title": "RO/en: Relaxing activity for sleep",
         "reminder-body": "RO/en: Use a relaxing activity for sleep to help you fall asleep easier.",
         "reminder-time": "Daily",
@@ -638,6 +640,7 @@
       },
       "awake-activities": {
         "description": "If you have trouble staying awake until your desired bedtime, check the Activities to Keep Me Awake section below for ideas to help with deep drowsiness. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "Staying awake until you are truly sleepy can help build sleep drive and make it easier to fall asleep. Not sure about the difference between sleepy and tired? Check out 'Sleep 101' in the Learn More section. Use these activities to stay awake until bedtime. If you're not sleepy at that time, try using techniques to relax your body and quiet your mind. Remember not to stay awake when sleepy if it could interfere with activities or responsibilities where drowsiness could be dangerous.",
         "list": [
           {
             "id": 1,
@@ -715,6 +718,7 @@
       },
       "no-sleep-activities": {
         "description": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. See the Midnight Activities section below for ideas of things to do when it's hard to fall asleep. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. Use some of the activity ideas to stay relaxed and occupied until you become very sleepy and ready to return to bed. When you get up, you should do things that are engaging but calming. If it's difficult for you to get out of bed, prepare a quiet and comfortable place where you can go to make getting up easier.",
         "list": [
           {
             "id": 1,
@@ -800,6 +804,7 @@
       },
       "wake-up-activities": {
         "description": "If you have an exciting activity scheduled for the morning, it can help you get out of bed with more energy. See the Morning Activities section below for ideas of things to do in the morning. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "Getting up at your planned time in the morning helps maintain a consistent schedule and prevents associating being in bed with being awake. Use these ideas to help stay motivated to start your day. Consider setting a reminder that coincides with when you want to wake up.",
         "list": [
           {
             "id": 1,

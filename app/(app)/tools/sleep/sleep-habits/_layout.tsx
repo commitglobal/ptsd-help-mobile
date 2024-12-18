@@ -8,6 +8,7 @@ const SleepLayout = () => {
       <Stack.Screen name='no-sleep-activities' options={{ headerShown: false }} />
       <Stack.Screen name='relaxing-activities' options={{ headerShown: false }} />
       <Stack.Screen name='wake-up-activities' options={{ headerShown: false }} />
+      <Stack.Screen name='info' options={{ headerShown: false, presentation: 'modal' }} />
     </Stack>
   );
 };
