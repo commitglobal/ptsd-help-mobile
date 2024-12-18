@@ -7,9 +7,11 @@ import { router, useLocalSearchParams } from 'expo-router';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
 import { useMemo } from 'react';
 import { Typography } from '@/components/Typography';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 export default function LearnCategory() {
   const { type, pageId } = useLocalSearchParams<{ type: 'learn' | 'support'; pageId: string }>();
+  const insets = useSafeAreaInsets();
 
   const { learnContent, supportContent } = useAssetsManagerContext();
 
@@ -36,7 +38,7 @@ export default function LearnCategory() {
       <FlashList
         bounces={false}
         data={page?.topics}
-        contentContainerStyle={{ padding: 16 }}
+        contentContainerStyle={{ padding: 16, paddingBottom: insets.bottom + 16 }}
         showsVerticalScrollIndicator={false}
         renderItem={({ item }) => (
           <ListCard

@@ -10,7 +10,7 @@ export const MonthlyEvaluationCard = ({ ...props }: CardProps) => {
   const { t } = useTranslation();
 
   return (
-    <Card padding='$md' gap='$md' marginTop='$md' {...props}>
+    <Card padding='$md' gap='$md' {...props}>
       <LinearGradient fullscreen colors={['$blue7', '$blue9']} start={[1, 1]} end={[0, 0]} borderRadius='$4' />
       <XStack borderRadius='$4'>
         <YStack flex={1} gap='$xs'>
