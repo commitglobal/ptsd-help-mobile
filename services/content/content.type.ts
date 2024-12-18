@@ -1,4 +1,4 @@
-type ActionType = 'start_tool' | 'external' | 'phone' | 'webview';
+type ActionType = 'start_tool' | 'external' | 'phone' | 'webview' | 'share';
 
 type BaseAction = {
   type: ActionType;
@@ -24,7 +24,12 @@ type WebviewAction = BaseAction & {
   url: string;
 };
 
-type Action = StartToolAction | ExternalAction | PhoneAction | WebviewAction;
+type ShareAction = BaseAction & {
+  type: 'share';
+  message: string;
+};
+
+type Action = StartToolAction | ExternalAction | PhoneAction | WebviewAction | ShareAction;
 
 type BaseContent = {
   type: string;
