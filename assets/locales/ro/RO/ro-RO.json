@@ -49,6 +49,10 @@
     "subtitle": "RO/ro: Please choose the language of the app content.",
     "next": "RO/ro: Next"
   },
+  "contact": {
+    "title": "RO/ro: Contacts list",
+    "permission-denied": "RO/ro: Permission denied"
+  },
   "onboarding": {
     "learn": {
       "title": "RO/ro: Learn",

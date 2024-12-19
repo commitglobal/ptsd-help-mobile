@@ -131,6 +131,8 @@ export default function RelaxingActivities() {
           title: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.label),
           iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
           onLeftPress: () => router.back(),
+          iconRight: <Icon icon='info' width={24} height={24} color='$gray12' />,
+          onRightPress: () => router.push('/tools/sleep/sleep-habits/info?tool=relaxing-activities'),
         }}
         footerProps={{
           mainActionLabel: t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HABITS.save),

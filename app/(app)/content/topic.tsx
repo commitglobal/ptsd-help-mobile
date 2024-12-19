@@ -3,7 +3,7 @@ import { Icon } from '@/components/Icon';
 import { router, useLocalSearchParams } from 'expo-router';
 import { Typography } from '@/components/Typography';
 import { ScrollView, XStack, YStack } from 'tamagui';
-import { Dimensions, Image, Linking } from 'react-native';
+import { Dimensions, Image, Linking, Share } from 'react-native';
 import RenderHTML from 'react-native-render-html';
 import Button from '@/components/Button';
 import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
@@ -20,6 +20,7 @@ import {
   TextContent,
   Topic,
 } from '@/services/content/content.type';
+import { ContactList } from '@/components/ContactList';
 
 type ContentRendererProps = {
   section: Section;
@@ -48,6 +49,7 @@ function RichTextContentComponent({ content }: { content: RichTextContent }) {
         contentWidth={width - 32}
         // @ts-ignore
         tagsStyles={tagsStyles}
+        systemFonts={['DMSansRegular', 'DMSansBold']}
       />
     </XStack>
   );
@@ -63,7 +65,7 @@ function TextContentComponent({ content }: { content: TextContent }) {
 
 function ButtonContentComponent({ content }: { content: ButtonContent }) {
   const { startTool, getToolById } = useToolManagerContext();
-  const { topicId } = useLocalSearchParams();
+  const { learnContent } = useAssetsManagerContext();
 
   const handlePress = () => {
     switch (content.action.type) {
@@ -71,7 +73,7 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
         // Handle in-app navigation
         const tool = getToolById(content.action.toolId);
         if (tool) {
-          startTool(tool, `/learn/${topicId}`);
+          startTool(tool, `/content/category?type=learn&pageId=${learnContent.pages[0].id}`);
         } else {
           // TODO: Show toast
           console.error('❌ Tool not found', content.action.toolId);
@@ -90,6 +92,12 @@ function ButtonContentComponent({ content }: { content: ButtonContent }) {
         // Handle webview
         router.push({ pathname: '/(app)/webview', params: { url: content.action.url } });
         break;
+      case 'share': {
+        Share.share({
+          message: content.action.message,
+        });
+        break;
+      }
       default:
         console.error('❌ Unknown button action', content.action);
         break;
@@ -147,14 +155,13 @@ function MultiContentComponent({ content }: { content: MultiContent }) {
 function MultiPageComponent({ content }: { content: MultiPage }) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const currentPage = content.pageArray[currentIndex];
-  const insets = useSafeAreaInsets();
 
   return (
-    <YStack gap='$xs'>
+    <YStack gap='$xs' flex={1}>
       {currentPage.map((section: Section, index: number) => (
         <ContentRenderer key={index} section={section} />
       ))}
-      <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom={insets.bottom + 16}>
+      <XStack gap='$xs' paddingHorizontal='$md' marginTop='auto' paddingBottom='$md'>
         <Button
           preset='secondary'
           icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
@@ -185,6 +192,14 @@ function MultiPageComponent({ content }: { content: MultiPage }) {
   );
 }
 
+export function ContactListComponent() {
+  return (
+    <XStack paddingHorizontal='$md'>
+      <ContactList />
+    </XStack>
+  );
+}
+
 export function ContentRenderer({ section }: ContentRendererProps) {
   switch (section.type) {
     case 'image':
@@ -199,6 +214,8 @@ export function ContentRenderer({ section }: ContentRendererProps) {
       return <MultiContentComponent content={section} />;
     case 'multiPage':
       return <MultiPageComponent content={section} />;
+    case 'contact':
+      return <ContactListComponent />;
     default:
       return <Typography>{JSON.stringify(section)} Unknown type</Typography>;
   }
@@ -267,15 +284,17 @@ export default function LearnTopic() {
 
 const tagsStyles = {
   body: {
-    color: 'hsl(240, 5%, 34%)',
+    fontFamily: 'DMSansRegular',
+    lineHeight: 24,
   },
   p: {
     margin: 0,
     marginBottom: 8,
   },
   h1: {
-    fontSize: 24,
-    marginVertical: 16,
+    fontSize: 16,
+    lineHeight: 26,
+    fontFamily: 'DMSansBold',
   },
   a: {
     color: 'hsl(272, 56%, 45%)',

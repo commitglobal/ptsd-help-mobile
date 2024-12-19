@@ -181,7 +181,8 @@ export default function Manage() {
     <Screen
       headerProps={{
         title: 'Manage',
-        iconRight: <Icon icon='info' color='white' width={24} height={24} />,
+        iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+        onRightPress: () => router.push('/info'),
       }}
       contentContainerStyle={{ backgroundColor: 'transparent' }}>
       <ScreenTabs

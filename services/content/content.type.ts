@@ -1,4 +1,4 @@
-type ActionType = 'start_tool' | 'external' | 'phone' | 'webview';
+type ActionType = 'start_tool' | 'external' | 'phone' | 'webview' | 'share';
 
 type BaseAction = {
   type: ActionType;
@@ -24,7 +24,12 @@ type WebviewAction = BaseAction & {
   url: string;
 };
 
-type Action = StartToolAction | ExternalAction | PhoneAction | WebviewAction;
+type ShareAction = BaseAction & {
+  type: 'share';
+  message: string;
+};
+
+type Action = StartToolAction | ExternalAction | PhoneAction | WebviewAction | ShareAction;
 
 type BaseContent = {
   type: string;
@@ -57,11 +62,22 @@ export type MultiContent = BaseContent & {
   contentArray: (ImageContent | RichTextContent | TextContent | ButtonContent)[];
 };
 
-export type Section = ImageContent | TextContent | RichTextContent | ButtonContent | MultiContent | MultiPage;
+export type Section =
+  | ImageContent
+  | TextContent
+  | RichTextContent
+  | ButtonContent
+  | MultiContent
+  | MultiPage
+  | ContactContent;
 
 export type MultiPage = BaseContent & {
   type: 'multiPage';
   pageArray: Section[][];
+};
+
+export type ContactContent = BaseContent & {
+  type: 'contact';
 };
 
 export type Topic = {
