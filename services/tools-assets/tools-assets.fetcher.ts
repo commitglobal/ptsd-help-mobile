@@ -13,6 +13,11 @@ import { DownloadProgress, DownloadProgressTracker } from '@/helpers/download-pr
 const fetchRemoteToolsAssets = async (countryCode: string, languageCode: string) => {
   try {
     const response = await fetch(getRemoteToolsAssetsMappingFilePath(countryCode, languageCode));
+
+    if (!response.ok) {
+      throw new Error('Remote mapping not OK');
+    }
+
     const data = await response.json(); // { assets: { ... }, lastUpdated: "2024-11-20T12:00:00Z" }
     return data;
   } catch (error) {
@@ -55,6 +60,10 @@ export const processToolsAssets = async (
   languageCode: string,
   onProgress?: (progress: DownloadProgress) => void
 ): Promise<LocalToolsAssetsMapping | null> => {
+  if (!cmsMapping) {
+    return localMapping;
+  }
+
   const progressTracker = new DownloadProgressTracker(onProgress);
   const updatedMapping: LocalToolsAssetsMapping = localMapping ? { ...localMapping } : ({} as LocalToolsAssetsMapping);
   const assetsFolder = getLocalToolsAssetsFolderPath(countryCode, languageCode);
@@ -73,7 +82,16 @@ export const processToolsAssets = async (
 
   await Promise.all(
     Object.entries(cmsMapping).map(async ([key, { uri, lastUpdatedAt }]) => {
-      const fileName = uri.split('/').pop();
+      // Files from S3 can contain "+" signs instead of spaces in their names
+      // First decode the URI to handle any URL encoding
+      // Then extract filename, replace any spaces or + signs with underscores
+      // And remove any other special characters to ensure valid filenames
+      const fileName = decodeURIComponent(uri)
+        .split('/')
+        .pop()
+        ?.replace(/[\s+]+/g, '_') // Replace spaces and + signs with underscore
+        ?.replace(/[^a-zA-Z0-9._-]/g, ''); // Keep only alphanumeric, dots, underscores and hyphens
+
       const localFilePath = `${assetsFolder}/${fileName}`;
       const fileInfo = await FileSystem.getInfoAsync(localFilePath);
 
@@ -83,7 +101,6 @@ export const processToolsAssets = async (
       if (needsDownload) {
         hasChanges = true;
         try {
-          console.log(`Downloading: ${uri}`);
           const result = await FileSystem.downloadAsync(uri, localFilePath);
           updatedMapping[key as keyof LocalToolsAssetsMapping] = result.uri;
           progressTracker.incrementDownloaded();
@@ -91,13 +108,15 @@ export const processToolsAssets = async (
           console.error(`Error downloading ${uri}:`, error);
         }
       } else {
-        updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
+        // ! Commented by @radulescuandrew: Will overwrite the content for existing files even if the lastUpdatedAt is not changed, so maybe we don't want that
+        // updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
         progressTracker.incrementDownloaded();
       }
     })
   );
 
-  console.log(`Media mapping download time: ${new Date().getTime() - timeStart}ms`);
+  console.log(`🔄 [Assets] Media mapping download time: ${new Date().getTime() - timeStart}ms`);
+  console.log(`🔄 [Assets] Changes detected: ${hasChanges ? '🟢' : '🔴'}`);
 
   if (hasChanges) {
     // Clean up unused files in the assets folder
