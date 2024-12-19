@@ -31,7 +31,7 @@ const TextFormInput = React.forwardRef<
           </XStack>
         )}
       </XStack>
-      <TextareaInput ref={ref} placeholder={placeholder} errorMessage={errorMessage} {...props} />
+      <TextareaInput ref={ref} placeholder={placeholder} errorMessage={errorMessage} maxLength={1000} {...props} />
     </YStack>
   );
 });
