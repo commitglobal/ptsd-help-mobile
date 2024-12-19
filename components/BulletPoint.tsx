@@ -1,12 +1,14 @@
 import React from 'react';
-import { Circle, XStack } from 'tamagui';
+import { Circle, TextStyle, XStack } from 'tamagui';
 import { Typography } from './Typography';
 
-export const BulletPoint = ({ text, size = 6 }: { text: string; size?: number }) => {
+export const BulletPoint = ({ text, textStyle, size = 6 }: { text: string; textStyle?: TextStyle; size?: number }) => {
   return (
     <XStack gap={8}>
       <Circle size={size} backgroundColor='$blue11' marginTop='$xs' />
-      <Typography flex={1}>{text}</Typography>
+      <Typography flex={1} {...textStyle}>
+        {text}
+      </Typography>
     </XStack>
   );
 };
