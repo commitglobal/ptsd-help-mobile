@@ -168,6 +168,10 @@
     "change-country-and-language": "Change country and language",
     "pick-contacts": "Pick support contacts"
   },
+  "contact": {
+    "title": "RO/en: Contacts list",
+    "permission-denied": "RO/en: Permission denied"
+  },
   "about": {
     "title": "About the app"
   },

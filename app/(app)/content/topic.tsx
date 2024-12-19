@@ -20,6 +20,7 @@ import {
   TextContent,
   Topic,
 } from '@/services/content/content.type';
+import { ContactList } from '@/components/ContactList';
 
 type ContentRendererProps = {
   section: Section;
@@ -191,6 +192,14 @@ function MultiPageComponent({ content }: { content: MultiPage }) {
   );
 }
 
+export function ContactListComponent() {
+  return (
+    <XStack paddingHorizontal='$md'>
+      <ContactList />
+    </XStack>
+  );
+}
+
 export function ContentRenderer({ section }: ContentRendererProps) {
   switch (section.type) {
     case 'image':
@@ -205,6 +214,8 @@ export function ContentRenderer({ section }: ContentRendererProps) {
       return <MultiContentComponent content={section} />;
     case 'multiPage':
       return <MultiPageComponent content={section} />;
+    case 'contact':
+      return <ContactListComponent />;
     default:
       return <Typography>{JSON.stringify(section)} Unknown type</Typography>;
   }

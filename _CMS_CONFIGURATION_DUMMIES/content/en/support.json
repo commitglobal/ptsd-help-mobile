@@ -48,6 +48,10 @@
           {
             "type": "rich-text",
             "content": "<div>Contacte personale:</div>"
+          },
+          {
+            "type": "contact",
+            "label": "Contacte personale"
           }
         ]
       }

@@ -1,3 +1,19 @@
+CREATE TABLE `contacts` (
+	`id` integer PRIMARY KEY NOT NULL,
+	`contact_ids` text,
+	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`deleted_at` text
+);
+--> statement-breakpoint
+CREATE TABLE `favorites` (
+	`id` integer PRIMARY KEY NOT NULL,
+	`toolId` text NOT NULL,
+	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`created_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	`deleted_at` text
+);
+--> statement-breakpoint
 CREATE TABLE `feelings` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`feelings` text NOT NULL,

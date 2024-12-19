@@ -20,7 +20,7 @@ export default function Settings() {
         onLeftPress: router.back,
       }}>
       <Section>
-        <SectionItem label={t('settings.pick-contacts')} onPress={() => {}} icon='user' />
+        <SectionItem label={t('settings.pick-contacts')} onPress={() => router.push('/contacts')} icon='user' />
       </Section>
 
       <Section>
