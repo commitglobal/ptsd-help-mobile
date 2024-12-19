@@ -15,11 +15,14 @@ import { GenericError } from '@/components/GenericError';
 import { Image } from 'expo-image';
 import { blurhash } from '@/helpers/blurhash';
 import { useFavoritesManager } from '@/hooks/useFavoritesManager';
+import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
 
 const MyStrengths = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
   const router = useRouter();
+  const { mediaMapping } = useAssetsManagerContext();
 
   const { finishTool, TOOL_CONFIG } = useToolManagerContext();
   const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(TOOL_CONFIG.MY_STRENGTHS.id);
@@ -41,7 +44,8 @@ const MyStrengths = () => {
   }
 
   return (
-    <Screen
+    <ScreenWithImageHeader
+      imageUrl={mediaMapping['MY_STRENGTHS.CATEGORY_ICON']}
       headerProps={{
         title: t(toolsTranslationKeys.MY_STRENGTHS.title),
         iconLeft: <Icon icon='chevronLeft' width={24} height={24} color='$gray12' />,
@@ -68,7 +72,7 @@ const MyStrengths = () => {
           ListHeaderComponent={
             <Typography marginBottom={24}>{t(toolsTranslationKeys.MY_STRENGTHS.description)}</Typography>
           }
-          contentContainerStyle={{ padding: 16 }}
+          contentContainerStyle={{ padding: 8 }}
           data={strengths}
           renderItem={({ item }) => (
             <StrengthItem strength={item} onPress={() => router.push(`/tools/my-strengths/strength?id=${item.id}`)} />
@@ -77,7 +81,7 @@ const MyStrengths = () => {
           ItemSeparatorComponent={() => <YStack height={16} />}
         />
       )}
-    </Screen>
+    </ScreenWithImageHeader>
   );
 };
 
