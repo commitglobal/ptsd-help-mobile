@@ -167,7 +167,8 @@
     "pick-contacts": "RO/en: Pick support contacts"
   },
   "contact": {
-    "title": "RO/en: Contacts list"
+    "title": "RO/en: Contacts list",
+    "permission-denied": "RO/en: Permission denied"
   },
   "about": {
     "title": "RO/en: About the app"

@@ -50,7 +50,8 @@
     "next": "RO/ro: Next"
   },
   "contact": {
-    "title": "RO/en: Contacts list"
+    "title": "RO/ro: Contacts list",
+    "permission-denied": "RO/ro: Permission denied"
   },
   "onboarding": {
     "learn": {

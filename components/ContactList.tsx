@@ -2,20 +2,18 @@ import { Typography } from './Typography';
 import { Separator, XStack, YStack } from 'tamagui';
 import * as Contacts from 'expo-contacts';
 import { Icon } from './Icon';
-import { useEffect, useState } from 'react';
 import { useContacts } from '@/services/contacts.service';
 import contactsRepository from '@/db/repositories/contacts.repository';
 import { Image } from 'expo-image';
 import { useQueryClient } from '@tanstack/react-query';
 import { Card } from './Card';
-import { Linking, Platform } from 'react-native';
+import { Alert, Linking } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 export const ContactList = () => {
   const { t } = useTranslation();
   const queryClient = useQueryClient();
-  const [contacts, setContacts] = useState<Contacts.Contact[]>([]);
-  const { data: contactsData } = useContacts();
+  const { data: contacts } = useContacts();
 
   const handlePickContacts = async () => {
     const { status } = await Contacts.requestPermissionsAsync();
@@ -25,11 +23,13 @@ export const ContactList = () => {
         await createContact(contact.id);
         queryClient.invalidateQueries({ queryKey: ['contacts'] });
       }
+    } else {
+      Alert.alert(t('contact.permission-denied'));
     }
   };
 
   const createContact = async (contactId: string) => {
-    if (!contactsData || contactsData.length === 0) {
+    if (!contacts) {
       await contactsRepository.createContact({
         contactIds: [contactId],
         createdAt: new Date().toISOString(),
@@ -37,56 +37,20 @@ export const ContactList = () => {
         deletedAt: null,
       });
     } else {
-      const list = new Set([...(contactsData[0].contactIds || []), contactId]);
-      await contactsRepository.updateContact(contactsData[0].id, {
+      const contactData = await contactsRepository.getContacts();
+      const list = new Set([...(contactData[0].contactIds || []), contactId]);
+      await contactsRepository.updateContact(contactData[0].id, {
         contactIds: Array.from(list),
         updatedAt: new Date().toISOString(),
       });
     }
   };
 
-  const getContatctDetails = async (ids: string[]) => {
-    if (ids.length === 0) {
-      setContacts([]);
-      return;
-    }
-
-    let contacts: any[] = [];
-    if (Platform.OS === 'ios') {
-      const contactsData = await Contacts.getContactsAsync({
-        fields: [Contacts.Fields.PhoneNumbers, Contacts.Fields.Emails, Contacts.Fields.Name, Contacts.Fields.Image],
-        id: ids,
-      });
-      contacts = contactsData.data;
-    } else {
-      for (const id of ids) {
-        const contact = await Contacts.getContactByIdAsync(id);
-        contacts.push(contact);
-      }
-    }
-
-    const availablecontacts = contacts.filter((contact) => contact !== undefined).map((contact) => contact.id);
-    if (availablecontacts.length !== contacts.length && contactsData?.[0].id) {
-      await contactsRepository.updateContact(contactsData?.[0].id, {
-        contactIds: availablecontacts,
-        updatedAt: new Date().toISOString(),
-      });
-    }
-
-    setContacts(contacts.filter((contact) => contact !== undefined));
-  };
-
-  useEffect(() => {
-    if (contactsData && contactsData.length > 0 && contactsData[0].contactIds) {
-      const ids = contactsData[0].contactIds;
-      getContatctDetails(ids);
-    }
-  }, [contactsData]);
-
   const handleDeleteContact = async (id: string) => {
-    if (contactsData?.[0].id) {
-      const ids = contactsData?.[0].contactIds?.filter((contactId) => contactId !== id);
-      await contactsRepository.updateContact(contactsData?.[0].id, {
+    const contactData = await contactsRepository.getContacts();
+    if (contactData?.[0].id) {
+      const ids = contactData?.[0].contactIds?.filter((contactId: string) => contactId !== id);
+      await contactsRepository.updateContact(contactData?.[0].id, {
         contactIds: ids,
         updatedAt: new Date().toISOString(),
       });
@@ -95,7 +59,7 @@ export const ContactList = () => {
   };
 
   const handleCallContact = (id: string) => {
-    const contact = contacts.find((contact) => contact.id === id);
+    const contact = contacts?.find((contact) => contact.id === id);
     if (contact && contact.phoneNumbers && contact.phoneNumbers.length > 0) {
       Linking.openURL(`tel:${contact.phoneNumbers[0].number}`);
     }
