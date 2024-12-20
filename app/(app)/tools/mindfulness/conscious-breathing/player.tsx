@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MediaPlayer from '@/components/MediaPlayer';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -17,6 +17,16 @@ export const ConsciousBreathingPlayer = () => {
   const { mediaMapping } = useAssetsManagerContext();
 
   const { finishTool } = useToolManagerContext();
+
+  const [mediaURI, setMediaURI] = useState<string | null>(null);
+
+  useFocusEffect(() => {
+    setMediaURI(mediaMapping['MINDFULNESS.CONSCIOUS_BREATHING.soundURI']);
+
+    return () => {
+      setMediaURI(null);
+    };
+  });
 
   return (
     <>
@@ -34,7 +44,7 @@ export const ConsciousBreathingPlayer = () => {
           onMainAction: () => finishTool(),
         }}>
         <YStack>
-          <MediaPlayer mediaURI={mediaMapping?.['MINDFULNESS.CONSCIOUS_BREATHING.soundURI']} isVideo={false} />
+          <MediaPlayer mediaURI={mediaURI} isVideo={false} />
         </YStack>
       </ScreenWithImageHeader>
     </>

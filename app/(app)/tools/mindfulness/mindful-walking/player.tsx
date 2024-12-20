@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import MediaPlayer from '@/components/MediaPlayer';
 import { ScreenWithImageHeader } from '@/components/ScreenWithImageHeader';
-import { Stack, useRouter } from 'expo-router';
+import { Stack, useFocusEffect, useRouter } from 'expo-router';
 import { YStack } from 'tamagui';
 import { Icon } from '@/components/Icon';
 import { useTranslation } from 'react-i18next';
@@ -15,8 +15,17 @@ export const MindfulWalkingPlayer = () => {
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
+  const [mediaURI, setMediaURI] = useState<string | null>(null);
 
   const { finishTool } = useToolManagerContext();
+
+  useFocusEffect(() => {
+    setMediaURI(mediaMapping['MINDFULNESS.MINDFUL_WALKING.soundURI']);
+
+    return () => {
+      setMediaURI(null);
+    };
+  });
 
   return (
     <>
@@ -34,7 +43,7 @@ export const MindfulWalkingPlayer = () => {
         }}
         contentContainerStyle={{ backgroundColor: 'white' }}>
         <YStack>
-          <MediaPlayer mediaURI={mediaMapping['MINDFULNESS.MINDFUL_WALKING.soundURI']} isVideo={false} />
+          <MediaPlayer mediaURI={mediaURI} isVideo={false} />
         </YStack>
       </ScreenWithImageHeader>
     </>
