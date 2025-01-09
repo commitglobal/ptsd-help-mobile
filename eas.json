@@ -1,7 +1,8 @@
 {
   "cli": {
     "version": ">= 12.6.2",
-    "appVersionSource": "local"
+    "appVersionSource": "local",
+    "promptToConfigurePushNotifications": false
   },
   "build": {
     "development": {
