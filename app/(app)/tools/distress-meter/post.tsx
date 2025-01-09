@@ -34,8 +34,9 @@ const DistressMeterPost = () => {
   const onFinishFeedback = () => {
     setfeedbackSheetOpen(false);
     // TODO: this is a hack to get back to the screen which initiated the tool (router.replace/push are not winding back the navigation stack)
-    router.dismissAll();
-    router.back();
+    // router.dismissAll();
+    // router.back();
+    router.dismissTo('/(app)/(drawer)/(tabs)/manage');
     // router.replace(returnURL as Href);
   };
 
