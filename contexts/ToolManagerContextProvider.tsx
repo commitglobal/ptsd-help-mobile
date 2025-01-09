@@ -1,6 +1,7 @@
 import { Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
+
 import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 
 import '../common/config/i18n';
@@ -72,6 +73,8 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const TOOLS_CONFIG = useTools();
   const { t } = useTranslation();
 
+  
+
   const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
@@ -142,7 +145,8 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     if (initialDistressLevel && !finalDistressLevel) {
       router.push('/tools/distress-meter/post');
     } else {
-      router.replace(returnURL as Href);
+      // router.replace(returnURL as Href);
+      router.dismissTo(returnURL as Href);
     }
   };
 
