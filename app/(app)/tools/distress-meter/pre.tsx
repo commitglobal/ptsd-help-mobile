@@ -8,16 +8,23 @@ import { ScrollView, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';
 import { CrisisSheet } from '@/components/CrisisSheet';
+import { DistressMeterInfo } from '@/components/DistressMeterInfo';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { KVStore } from '@/helpers/mmkv';
+import { DistressMeterInfoPre } from '@/components/DistressMeterInfoPre';
 
 const DistressMeterPre = () => {
   console.log('🚀 DistressMeterPre');
 
   const { t } = useTranslation();
+  const distressMeterInfoShown = KVStore().getBoolean(STORE_KEYS.DISTRESS_METER_INFO_SHOWN) ?? false;
 
   const { setInitialDistressLevel, selectedTool } = useToolManagerContext();
 
   const [stressValue, setStressValue] = useState(5);
   const [crisisSheetOpen, setCrisisSheetOpen] = useState(false);
+  const [distressMeterInfoSheetOpen, setDistressMeterInfoSheetOpen] = useState(false);
+  const [distressMeterInfoPreOpen, setDistressMeterInfoPreOpen] = useState(!distressMeterInfoShown);
 
   useEffect(() => {
     return () => {
@@ -46,6 +53,7 @@ const DistressMeterPre = () => {
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
           iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+          onRightPress: () => setDistressMeterInfoSheetOpen(true),
         }}
         contentContainerStyle={{ backgroundColor: 'transparent' }}
         footerProps={{
@@ -81,6 +89,10 @@ const DistressMeterPre = () => {
           }}
         />
       )}
+      {distressMeterInfoSheetOpen && (
+        <DistressMeterInfo setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen} />
+      )}
+      {distressMeterInfoPreOpen && <DistressMeterInfoPre setDistressMeterInfoSheetOpen={setDistressMeterInfoPreOpen} />}
     </>
   );
 };

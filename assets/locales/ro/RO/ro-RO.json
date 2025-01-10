@@ -131,6 +131,11 @@
       "start": "RO/ro: Start using a tool",
       "skip": "RO/ro: Skip"
     },
+    "info": "RO/ro: Disconfortul poate include furie, tristete, teama, durere, stres, ingrijorare, orice sentiment negativ pe care il simti. Evalueaza-ti nivelul de disconfort inainte si dupa ce folosesti un instrument pe sprijin pentru a-ti da seama care dintre instrumente functioneaza cel mai bine pentru tine.",
+    "info-levels": {
+      "low": "RO/ro: 0 = niciun disconfort",
+      "high": "RO/ro: 10 = cel mai mare nivel de disconfort pe care ti-l poti imagina."
+    },
     "high-distress": {
       "text": "RO/ro: This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
       "actions": {

@@ -137,6 +137,11 @@
     "title": "What's your current level of distress?",
     "scale": "{{min}} means no distress, {{max}} is the worst",
     "subtitle": "Tap on the '+' and '-' arrows to indicate how you are feeling.",
+    "info": "Distress can include anger, sadness, fear, pain, stress, worry, or any negative feeling you experience. Evaluate your level of distress before and after using a support tool to figure out which tools work best for you.",
+    "info-levels": {
+      "low": "0 = no distress",
+      "high": "10 = the highest level of distress you can imagine"
+    },
     "actions": {
       "start": "Start using a tool",
       "skip": "Skip"
