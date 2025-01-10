@@ -21,7 +21,7 @@ export const DistressMeterInfoPost = ({
       dismissOnOverlayPress={true}>
       <Sheet.ScrollView bounces={false}>
         <YStack gap='$md'>
-          <Typography textAlign='justify'>{t('distress-meter.info')}</Typography>
+          <Typography textAlign='justify'>{t('distress-meter.info-post')}</Typography>
           <Typography textAlign='justify'>{t('distress-meter.info-levels.low')}</Typography>
           <Typography textAlign='justify'>{t('distress-meter.info-levels.high')}</Typography>
           <Button onPress={() => setDistressMeterInfoSheetOpen(false)}>Close</Button>
