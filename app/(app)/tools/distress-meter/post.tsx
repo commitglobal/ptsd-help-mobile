@@ -11,7 +11,6 @@ import Button from '@/components/Button';
 import { BottomSheet } from '@/components/BottomSheet';
 import { STORE_KEYS } from '@/constants/store-keys';
 import { KVStore } from '@/helpers/mmkv';
-import { DistressMeterInfoPost } from '@/components/DistressMeterInfoPost';
 import { DistressMeterInfo } from '@/components/DistressMeterInfo';
 
 const DistressMeterPost = () => {
@@ -94,10 +93,18 @@ const DistressMeterPost = () => {
         />
       )}
       {distressMeterInfoPostOpen && (
-        <DistressMeterInfoPost setDistressMeterInfoSheetOpen={onCloseDistressMeterInfoPost} />
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={onCloseDistressMeterInfoPost}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info-post')}
+        />
       )}
       {distressMeterInfoSheetOpen && (
-        <DistressMeterInfo setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen} />
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info')}
+        />
       )}
     </>
   );

@@ -136,6 +136,7 @@
       "low": "RO/ro: 0 = niciun disconfort",
       "high": "RO/ro: 10 = cel mai mare nivel de disconfort pe care ti-l poti imagina."
     },
+    "info-close": "RO/ro: Inchide",
     "info-pre": "RO/ro: Disconfortul poate include furie, tristete, teama, durere, stres, ingrijorare, orice sentiment negativ pe care il simti. Evalueaza-ti nivelul de disconfort inainte si dupa ce folosesti un instrument pe sprijin pentru a-ti da seama care dintre instrumente functioneaza cel mai bine pentru tine.",
     "info-post": "RO/ro: Ai facut o treaba buna in completare aacestui instrument, acum vei evalua nivelul de suferinta pe o scara de la 0 la 10 entru a vedea daca a existat o scadere a nivelului de disconfort.",
     "high-distress": {

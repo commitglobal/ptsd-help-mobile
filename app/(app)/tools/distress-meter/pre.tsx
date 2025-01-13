@@ -11,7 +11,6 @@ import { CrisisSheet } from '@/components/CrisisSheet';
 import { DistressMeterInfo } from '@/components/DistressMeterInfo';
 import { STORE_KEYS } from '@/constants/store-keys';
 import { KVStore } from '@/helpers/mmkv';
-import { DistressMeterInfoPre } from '@/components/DistressMeterInfoPre';
 
 const DistressMeterPre = () => {
   console.log('🚀 DistressMeterPre');
@@ -90,9 +89,19 @@ const DistressMeterPre = () => {
         />
       )}
       {distressMeterInfoSheetOpen && (
-        <DistressMeterInfo setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen} />
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info')}
+        />
       )}
-      {distressMeterInfoPreOpen && <DistressMeterInfoPre setDistressMeterInfoSheetOpen={setDistressMeterInfoPreOpen} />}
+      {distressMeterInfoPreOpen && (
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={setDistressMeterInfoPreOpen}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info-pre')}
+        />
+      )}
     </>
   );
 };

@@ -142,6 +142,7 @@
       "low": "0 = no distress",
       "high": "10 = the highest level of distress you can imagine"
     },
+    "info-close": "Close",
     "info-pre": "Distress can include anger, sadness, fear, pain, stress, worry, or any negative feeling you experience. Evaluate your level of distress before and after using a support tool to figure out which tools work best for you.",
     "info-post": "You've done a good job completing this tool, now you will evaluate your level of distress on a scale from 0 to 10 to see if there has been a decrease in your discomfort level.",
     "actions": {
