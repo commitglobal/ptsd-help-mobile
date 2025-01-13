@@ -1,8 +1,8 @@
 import * as FileSystem from 'expo-file-system';
 import { S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
 
-const TOOL_ASSETS_FOLDER = 'tools-assets';
-export const TOOLS_ASSETS_FOLDER = FileSystem.documentDirectory + TOOL_ASSETS_FOLDER;
+const TOOL_ASSETS_FOLDER_NAME = 'tools-assets';
+export const TOOLS_ASSETS_FOLDER = FileSystem.documentDirectory + TOOL_ASSETS_FOLDER_NAME;
 
 export const TOOLS_ASSETS_MAPPING_FILE_NAME = 'ToolsAssetsMapping';
 
@@ -18,5 +18,5 @@ export const getLocalToolsAssetsFolderPath = (countryCode: string, languageCode:
   `${TOOLS_ASSETS_FOLDER}/${getToolsAssetsFolderName(countryCode, languageCode)}`;
 
 export const getLocalToolsFileName = (countryCode: string, languageCode: string) => {
-  return `${TOOLS_ASSETS_FOLDER}/${getToolsAssetsFolderName(countryCode, languageCode)}`;
+  return `${TOOL_ASSETS_FOLDER_NAME}/${getToolsAssetsFolderName(countryCode, languageCode)}`;
 };
