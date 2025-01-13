@@ -9,6 +9,9 @@ import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';
 import Button from '@/components/Button';
 import { BottomSheet } from '@/components/BottomSheet';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { KVStore } from '@/helpers/mmkv';
+import { DistressMeterInfo } from '@/components/DistressMeterInfo';
 
 const DistressMeterPost = () => {
   console.log('🚀 DistressMeterPost');
@@ -19,6 +22,11 @@ const DistressMeterPost = () => {
 
   const [stressValue, setStressValue] = useState(5);
   const [feedbackSheetOpen, setfeedbackSheetOpen] = useState(false);
+
+  const [distressMeterInfoSheetOpen, setDistressMeterInfoSheetOpen] = useState(false);
+
+  const distressMeterInfoShown = KVStore().getBoolean(STORE_KEYS.DISTRESS_METER_INFO_SHOWN) ?? false;
+  const [distressMeterInfoPostOpen, setDistressMeterInfoPostOpen] = useState(!distressMeterInfoShown);
 
   useEffect(() => {
     return () => {
@@ -39,6 +47,11 @@ const DistressMeterPost = () => {
     // router.replace(returnURL as Href);
   };
 
+  const onCloseDistressMeterInfoPost = () => {
+    setDistressMeterInfoPostOpen(false);
+    KVStore().set(STORE_KEYS.DISTRESS_METER_INFO_SHOWN, true);
+  };
+
   return (
     <>
       <Screen
@@ -47,6 +60,7 @@ const DistressMeterPost = () => {
           iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
           onLeftPress: () => router.back(),
           iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
+          onRightPress: () => setDistressMeterInfoSheetOpen(true),
         }}
         contentContainerStyle={{ backgroundColor: 'transparent' }}
         footerProps={{
@@ -76,6 +90,20 @@ const DistressMeterPost = () => {
           setfeedbackSheetOpen={setfeedbackSheetOpen}
           onFinishFeedback={onFinishFeedback}
           getFeedback={getFeedback}
+        />
+      )}
+      {distressMeterInfoPostOpen && (
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={onCloseDistressMeterInfoPost}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info-post')}
+        />
+      )}
+      {distressMeterInfoSheetOpen && (
+        <DistressMeterInfo
+          setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen}
+          snapPoints={[45]}
+          infoText={t('distress-meter.info')}
         />
       )}
     </>
