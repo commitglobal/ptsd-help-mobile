@@ -28,6 +28,7 @@ import { useToolsAssetsMapper } from '@/services/tools-assets/tools-assets.query
 import LoadingAssets from '@/components/LoadingAssets';
 import { DownloadProgress } from '@/helpers/download-progress';
 import useCountryLanguage from '@/hooks/useCountryLanguage';
+import * as FileSystem from 'expo-file-system';
 
 type AssetsManagerContextType = {
   mediaMapping: LocalToolsAssetsMapping;
@@ -92,7 +93,11 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
   );
 
   const toReturn = useMemo(() => {
-    return { mediaMapping, foggles, learnContent, supportContent };
+    const mappedMediaMapping = mediaMapping
+      ? Object.fromEntries(Object.entries(mediaMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
+      : null;
+
+    return { mediaMapping: mappedMediaMapping, foggles, learnContent, supportContent };
   }, [mediaMapping, foggles, learnContent, supportContent]);
 
   if (isFetchingMedia || isFetchingFoggles || isFetchingLearnContent || isFetchingSupportContent) {
@@ -124,4 +129,8 @@ export const useAssetsManagerContext = () => {
     throw new Error('useAssetsManagerContext must be used within an AssetsManagerContextProvider');
   }
   return context;
+};
+
+const addDocumentDirectory = (path: string) => {
+  return `${FileSystem.documentDirectory}${path}`;
 };

@@ -1,6 +1,7 @@
 import {
   getLocalToolsAssetsFolderPath,
   getLocalToolsAssetsMappingFilePath,
+  getLocalToolsFileName,
   getRemoteToolsAssetsMappingFilePath,
   getToolsAssetsFolderName,
   TOOLS_ASSETS_FOLDER,
@@ -100,9 +101,11 @@ export const processToolsAssets = async (
 
       if (needsDownload) {
         hasChanges = true;
+        // Save only the folder name and the filename not the full path as it changes over updates.
+        const localFileName = `${getLocalToolsFileName(countryCode, languageCode)}/${fileName}`;
         try {
-          const result = await FileSystem.downloadAsync(uri, localFilePath);
-          updatedMapping[key as keyof LocalToolsAssetsMapping] = result.uri;
+          await FileSystem.downloadAsync(uri, localFilePath);
+          updatedMapping[key as keyof LocalToolsAssetsMapping] = localFileName;
           progressTracker.incrementDownloaded();
         } catch (error) {
           console.error(`Error downloading ${uri}:`, error);
