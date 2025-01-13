@@ -5,8 +5,12 @@ import { ContentFetcherConfig } from './content.fetcher';
 const LEARN_CONTENT_DIR = 'content/learn';
 const LEARN_CONTENT_FILE = 'learn.json';
 
+export const getLocalRelativeLearnContentDir = (countryCode: string, languageCode: string) => {
+  return `${LEARN_CONTENT_DIR}/${countryCode}/${languageCode}`;
+};
+
 export const getLocalLearnContentDir = (countryCode: string, languageCode: string) => {
-  return `${FileSystem.documentDirectory}${LEARN_CONTENT_DIR}/${countryCode}/${languageCode}`;
+  return `${FileSystem.documentDirectory}${getLocalRelativeLearnContentDir(countryCode, languageCode)}`;
 };
 
 export const getLocalLearnContentMappingFilePath = (countryCode: string, languageCode: string) => {
@@ -19,6 +23,7 @@ export const getLearnContentConfig = (countryCode: string, languageCode: string)
     remoteContentFolderUrl: getS3CMSContentFolderLearnJSON(countryCode, languageCode),
     localContentDir: getLocalLearnContentDir(countryCode, languageCode),
     localContentMappingFilePath: getLocalLearnContentMappingFilePath(countryCode, languageCode),
+    localRelativeContentDir: getLocalRelativeLearnContentDir(countryCode, languageCode),
     countryCode,
     languageCode,
   };
@@ -43,7 +48,12 @@ export const getSupportContentConfig = (countryCode: string, languageCode: strin
     remoteContentFolderUrl: getS3CMSContentFolderSupportJSON(countryCode, languageCode),
     localContentDir: getLocalSupportContentDir(countryCode, languageCode),
     localContentMappingFilePath: getLocalSupportContentMappingFilePath(countryCode, languageCode),
+    localRelativeContentDir: getLocalRelativeLearnContentDir(countryCode, languageCode),
     countryCode,
     languageCode,
   };
+};
+
+export const getLocalContentFilePath = (relativeFilePath: string) => {
+  return `${FileSystem.documentDirectory}/${relativeFilePath}`;
 };

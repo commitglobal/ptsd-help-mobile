@@ -21,6 +21,7 @@ import {
   Topic,
 } from '@/services/content/content.type';
 import { ContactList } from '@/components/ContactList';
+import { getLocalContentFilePath } from '@/services/content/content.helper';
 
 type ContentRendererProps = {
   section: Section;
@@ -29,7 +30,7 @@ type ContentRendererProps = {
 function ImageContentComponent({ content }: { content: ImageContent }) {
   return (
     <Image
-      source={{ uri: content.src }}
+      source={{ uri: getLocalContentFilePath(content.src) }}
       style={{ width: '100%', height: 200 }}
       resizeMode='cover'
       accessibilityLabel={content.alt}
