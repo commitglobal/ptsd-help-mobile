@@ -1,6 +1,7 @@
 import {
   getLocalToolsAssetsFolderPath,
   getLocalToolsAssetsMappingFilePath,
+  getLocalToolsFileName,
   getRemoteToolsAssetsMappingFilePath,
   getToolsAssetsFolderName,
   TOOLS_ASSETS_FOLDER,
@@ -100,9 +101,11 @@ export const processToolsAssets = async (
 
       if (needsDownload) {
         hasChanges = true;
+        // Save only the folder name and the filename not the full path as it changes over updates.
+        const localFileName = `${getLocalToolsFileName(countryCode, languageCode)}/${fileName}`;
         try {
-          const result = await FileSystem.downloadAsync(uri, localFilePath);
-          updatedMapping[key as keyof LocalToolsAssetsMapping] = result.uri;
+          await FileSystem.downloadAsync(uri, localFilePath);
+          updatedMapping[key as keyof LocalToolsAssetsMapping] = localFileName;
           progressTracker.incrementDownloaded();
         } catch (error) {
           console.error(`Error downloading ${uri}:`, error);
@@ -178,5 +181,13 @@ export const fetchToolsAssets = async (
   // Process remote mapping
   const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode, onProgress);
 
-  return updatedMapping;
+  const mappedMediaMapping = updatedMapping
+    ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
+    : null;
+
+  return mappedMediaMapping;
+};
+
+const addDocumentDirectory = (path: string) => {
+  return `${FileSystem.documentDirectory}${path}`;
 };

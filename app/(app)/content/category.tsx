@@ -8,7 +8,7 @@ import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider
 import { useMemo } from 'react';
 import { Typography } from '@/components/Typography';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-
+import { getLocalContentFilePath } from '@/services/content/content.helper';
 export default function LearnCategory() {
   const { type, pageId } = useLocalSearchParams<{ type: 'learn' | 'support'; pageId: string }>();
   const insets = useSafeAreaInsets();
@@ -43,7 +43,7 @@ export default function LearnCategory() {
         renderItem={({ item }) => (
           <ListCard
             key={item.id}
-            item={item}
+            item={{ ...item, icon: getLocalContentFilePath(item.icon) }}
             onPress={() => {
               router.push({
                 pathname: '/content/topic',
