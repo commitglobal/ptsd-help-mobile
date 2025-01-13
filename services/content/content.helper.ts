@@ -34,8 +34,12 @@ export const getLearnContentConfig = (countryCode: string, languageCode: string)
 const SUPPORT_CONTENT_DIR = 'content/support';
 const SUPPORT_CONTENT_FILE = 'support.json';
 
+export const getLocalRelativeSupportContentDir = (countryCode: string, languageCode: string) => {
+  return `${SUPPORT_CONTENT_DIR}/${countryCode}/${languageCode}`;
+};
+
 export const getLocalSupportContentDir = (countryCode: string, languageCode: string) => {
-  return `${FileSystem.documentDirectory}${SUPPORT_CONTENT_DIR}/${countryCode}/${languageCode}`;
+  return `${FileSystem.documentDirectory}${getLocalRelativeSupportContentDir(countryCode, languageCode)}`;
 };
 
 export const getLocalSupportContentMappingFilePath = (countryCode: string, languageCode: string) => {
@@ -48,12 +52,12 @@ export const getSupportContentConfig = (countryCode: string, languageCode: strin
     remoteContentFolderUrl: getS3CMSContentFolderSupportJSON(countryCode, languageCode),
     localContentDir: getLocalSupportContentDir(countryCode, languageCode),
     localContentMappingFilePath: getLocalSupportContentMappingFilePath(countryCode, languageCode),
-    localRelativeContentDir: getLocalRelativeLearnContentDir(countryCode, languageCode),
+    localRelativeContentDir: getLocalRelativeSupportContentDir(countryCode, languageCode),
     countryCode,
     languageCode,
   };
 };
 
 export const getLocalContentFilePath = (relativeFilePath: string) => {
-  return `${FileSystem.documentDirectory}/${relativeFilePath}`;
+  return `${FileSystem.documentDirectory}${relativeFilePath}`;
 };

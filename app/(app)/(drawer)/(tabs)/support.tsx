@@ -5,6 +5,7 @@ import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
 import { router } from 'expo-router';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { getLocalContentFilePath } from '@/services/content/content.helper';
 
 export default function Support() {
   const { supportContent } = useAssetsManagerContext();
@@ -22,7 +23,7 @@ export default function Support() {
         renderItem={({ item }) => (
           <ListCard
             key={item.id}
-            item={item}
+            item={{ ...item, icon: getLocalContentFilePath(item.icon) }}
             onPress={() => {
               console.log('🚀 ~ Support ~ item:', item);
               if (item.type === 'category') {
