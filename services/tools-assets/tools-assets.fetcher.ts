@@ -181,5 +181,13 @@ export const fetchToolsAssets = async (
   // Process remote mapping
   const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode, onProgress);
 
-  return updatedMapping;
+  const mappedMediaMapping = updatedMapping
+    ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
+    : null;
+
+  return mappedMediaMapping;
+};
+
+const addDocumentDirectory = (path: string) => {
+  return `${FileSystem.documentDirectory}${path}`;
 };
