@@ -48,7 +48,7 @@ export default function Settings() {
         <XStack alignItems='center' justifyContent='space-between' paddingRight='$sm'>
           <XStack alignItems='center' gap='$md'>
             <Icon icon='chart' width={24} height={24} color='$blue11' />
-            <Typography>Enable stress meter</Typography>
+            <Typography>{t('settings.enable-stress-meter')}</Typography>
           </XStack>
           <Switch
             checked={isEnabled}

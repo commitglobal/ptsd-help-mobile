@@ -53,6 +53,12 @@
     "title": "RO/ro: Contacts list",
     "permission-denied": "RO/ro: Permission denied"
   },
+  "settings": {
+    "title": "Settings",
+    "change-country-and-language": "Change country and language",
+    "pick-contacts": "Pick support contacts",
+    "enable-stress-meter": "Enable stress meter"
+  },
   "onboarding": {
     "learn": {
       "title": "RO/ro: Learn",
