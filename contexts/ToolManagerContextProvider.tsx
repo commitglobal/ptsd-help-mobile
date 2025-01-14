@@ -1,4 +1,4 @@
-import { Tool, ToolConfigType, useTools } from '@/hooks/useTools';
+import { SymptomType, Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
 
@@ -12,6 +12,8 @@ type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
 
   selectedTool: Tool | null;
+
+  symptom: SymptomType | null;
 
   isDistressMeterActive: boolean;
 
@@ -27,6 +29,8 @@ type ToolManagerContextType = {
 
   startTool: (tool: Tool, returnURL: string) => void;
   finishTool: () => void;
+
+  setSelectedSymptom: (symptom: SymptomType) => void;
   resetToolManagerContext: () => void;
   getToolById: (toolId: string) => Tool | undefined;
 };
@@ -73,8 +77,6 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const TOOLS_CONFIG = useTools();
   const { t } = useTranslation();
 
-  
-
   const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
 
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
@@ -82,6 +84,8 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
 
   const [initialDistressLevel, setInitialDistressLevel] = useState<number | null>(null);
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
+
+  const [symptom, setSymptom] = useState<SymptomType | null>(null);
 
   const TOOL_CONFIG = useMemo(() => {
     return filterToolsWithFoggles(TOOLS_CONFIG, foggles);
@@ -150,8 +154,13 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     }
   };
 
+  const setSelectedSymptom = (symptom: SymptomType) => {
+    setSymptom(symptom);
+  };
+
   const resetToolManagerContext = () => {
     setSelectedTool(null);
+    setSymptom(null);
     setInitialDistressLevel(null);
     setFinalDistressLevel(null);
   };
@@ -159,6 +168,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const contextValue: ToolManagerContextType = {
     TOOL_CONFIG,
     selectedTool,
+    symptom,
     isDistressMeterActive,
     initialDistressLevel,
     finalDistressLevel,
@@ -168,6 +178,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     getFeedback,
     startTool,
     finishTool,
+    setSelectedSymptom,
     resetToolManagerContext,
     getToolById,
   };

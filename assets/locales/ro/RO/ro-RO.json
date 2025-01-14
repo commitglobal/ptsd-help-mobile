@@ -131,6 +131,12 @@
       "start": "RO/ro: Start using a tool",
       "skip": "RO/ro: Skip"
     },
+    "post-buttons": {
+      "try-again": "Incearca acest instrument din nou",
+      "another-tool": "Încearcă un alt instrument",
+      "remove-from-favorites": "Șterge din favorite",
+      "add-to-favorites": "Adaugă la favorite"
+    },
     "high-distress": {
       "text": "RO/ro: This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
       "actions": {
