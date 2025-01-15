@@ -1,19 +1,20 @@
-import { Tool, ToolConfigType, useTools } from '@/hooks/useTools';
+import { SymptomType, Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
-
-import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 
 import '../common/config/i18n';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
 import { useTranslation } from 'react-i18next';
 import { STORE_KEYS } from '@/constants/store-keys';
 import { KVStore } from '@/helpers/mmkv';
+import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 
 type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
 
   selectedTool: Tool | null;
+
+  symptom: SymptomType | null;
 
   initialDistressLevel: number | null;
   finalDistressLevel: number | null;
@@ -27,6 +28,8 @@ type ToolManagerContextType = {
 
   startTool: (tool: Tool, returnURL: string) => void;
   finishTool: () => void;
+
+  setSelectedSymptom: (symptom: SymptomType) => void;
   resetToolManagerContext: () => void;
   getToolById: (toolId: string) => Tool | undefined;
 
@@ -81,6 +84,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const [initialDistressLevel, setInitialDistressLevel] = useState<number | null>(null);
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
 
+  const [symptom, setSymptom] = useState<SymptomType | null>(null);
   const [isDistressMeterActive, setIsDistressMeterActive] = useState<boolean>(
     KVStore().getBoolean(STORE_KEYS.STRESS_METER) ?? true
   );
@@ -152,8 +156,13 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     }
   };
 
+  const setSelectedSymptom = (symptom: SymptomType) => {
+    setSymptom(symptom);
+  };
+
   const resetToolManagerContext = () => {
     setSelectedTool(null);
+    setSymptom(null);
     setInitialDistressLevel(null);
     setFinalDistressLevel(null);
   };
@@ -161,6 +170,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const contextValue: ToolManagerContextType = {
     TOOL_CONFIG,
     selectedTool,
+    symptom,
     initialDistressLevel,
     finalDistressLevel,
     returnURL,
@@ -170,6 +180,7 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     getFeedback,
     startTool,
     finishTool,
+    setSelectedSymptom,
     resetToolManagerContext,
     getToolById,
   };

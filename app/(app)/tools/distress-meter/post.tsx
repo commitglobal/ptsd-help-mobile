@@ -3,19 +3,22 @@ import React, { useEffect, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
-import { router } from 'expo-router';
-import { ScrollView, Sheet, YStack } from 'tamagui';
+import { Href, router } from 'expo-router';
+import { ScrollView, Sheet, XStack, YStack } from 'tamagui';
 import { Typography } from '@/components/Typography';
 import { DistressMeter as DistressMeterComponent } from '@/components/DistressMeter';
 import Button from '@/components/Button';
 import { BottomSheet } from '@/components/BottomSheet';
+import { TouchableHighlight } from 'react-native';
+import { useSymptoms } from '@/hooks/useTools';
+import { useFavoritesManager } from '@/hooks/useFavoritesManager';
 
 const DistressMeterPost = () => {
   console.log('🚀 DistressMeterPost');
 
   const { t } = useTranslation();
 
-  const { setFinalDistressLevel, getFeedback } = useToolManagerContext();
+  const { setFinalDistressLevel, getFeedback, selectedTool } = useToolManagerContext();
 
   const [stressValue, setStressValue] = useState(5);
   const [feedbackSheetOpen, setfeedbackSheetOpen] = useState(false);
@@ -33,11 +36,7 @@ const DistressMeterPost = () => {
 
   const onFinishFeedback = () => {
     setfeedbackSheetOpen(false);
-    // TODO: this is a hack to get back to the screen which initiated the tool (router.replace/push are not winding back the navigation stack)
-    // router.dismissAll();
-    // router.back();
     router.dismissTo('/(app)/(drawer)/(tabs)/manage');
-    // router.replace(returnURL as Href);
   };
 
   return (
@@ -72,7 +71,7 @@ const DistressMeterPost = () => {
         </ScrollView>
       </Screen>
 
-      {feedbackSheetOpen && (
+      {feedbackSheetOpen && selectedTool && (
         <FeedbackSheet
           setfeedbackSheetOpen={setfeedbackSheetOpen}
           onFinishFeedback={onFinishFeedback}
@@ -95,11 +94,33 @@ const FeedbackSheet = ({
   getFeedback: () => { title: string; description: string };
 }) => {
   const { t } = useTranslation();
+  const { selectedTool, symptom, setFinalDistressLevel } = useToolManagerContext();
+  const { favorite, handleAddToFavorites, removeFromFavorites } = useFavoritesManager(selectedTool?.id || '');
+  const { getRandomToolForSymptom } = useSymptoms();
+
+  const handleAnotherTool = () => {
+    if (symptom) {
+      const randomTool = getRandomToolForSymptom(symptom);
+      if (randomTool) {
+        setFinalDistressLevel(null);
+        router.dismissTo('/(app)/tools/distress-meter/pre');
+        router.push(randomTool.route as Href);
+      }
+    }
+  };
+
+  const handleTryAgain = () => {
+    if (selectedTool) {
+      setfeedbackSheetOpen(false);
+      router.dismissAll();
+      router.dismissTo(selectedTool.route as Href);
+    }
+  };
 
   return (
     <BottomSheet
       onOpenChange={setfeedbackSheetOpen}
-      snapPoints={[60]}
+      snapPoints={[70]}
       frameProps={{ gap: '$md' }}
       dismissOnSnapToBottom={false}
       dismissOnOverlayPress={false}>
@@ -109,7 +130,64 @@ const FeedbackSheet = ({
         </Typography>
         <Typography>{getFeedback().description}</Typography>
       </Sheet.ScrollView>
+
+      <TouchableHighlight>
+        <XStack
+          backgroundColor='$blue9'
+          padding='$sm'
+          borderRadius={10}
+          pressStyle={{ backgroundColor: '$blue11' }}
+          className='flex-row items-center justify-center'
+          gap='$sm'
+          alignItems='center'
+          justifyContent='center'
+          onPress={favorite ? () => removeFromFavorites() : () => handleAddToFavorites()}>
+          <Icon icon={favorite ? 'solidHeart' : 'heart'} color='white' width={24} height={24} />
+          <Typography preset='subheading' color='white'>
+            {favorite
+              ? t('distress-meter.post-buttons.remove-from-favorites')
+              : t('distress-meter.post-buttons.add-to-favorites')}
+          </Typography>
+        </XStack>
+      </TouchableHighlight>
+      <TouchableHighlight>
+        <XStack
+          backgroundColor='$blue9'
+          padding='$sm'
+          borderRadius={10}
+          pressStyle={{ backgroundColor: '$blue11' }}
+          className='flex-row items-center justify-center'
+          gap='$sm'
+          alignItems='center'
+          justifyContent='center'
+          onPress={handleTryAgain}>
+          <Icon icon='arrowLeft' color='white' width={24} height={24} />
+          <Typography preset='subheading' color='white'>
+            {t('distress-meter.post-buttons.try-again')}
+          </Typography>
+        </XStack>
+      </TouchableHighlight>
+      {symptom && (
+        <TouchableHighlight>
+          <XStack
+            backgroundColor='$blue9'
+            padding='$sm'
+            borderRadius={10}
+            pressStyle={{ backgroundColor: '$blue11' }}
+            className='flex-row items-center justify-center'
+            gap='$sm'
+            alignItems='center'
+            justifyContent='center'
+            onPress={handleAnotherTool}>
+            <Icon icon='zap' color='white' width={24} height={24} />
+            <Typography preset='subheading' color='white'>
+              {t('distress-meter.post-buttons.another-tool')}
+            </Typography>
+          </XStack>
+        </TouchableHighlight>
+      )}
       <Button
+        preset='secondary'
         onPress={() => {
           onFinishFeedback();
         }}>
