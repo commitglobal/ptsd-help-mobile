@@ -2,11 +2,12 @@ import { SymptomType, Tool, ToolConfigType, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
 
-import { useAssetsManagerContext } from './AssetsManagerContextProvider';
-
 import '../common/config/i18n';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
 import { useTranslation } from 'react-i18next';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { KVStore } from '@/helpers/mmkv';
+import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 
 type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
@@ -14,8 +15,6 @@ type ToolManagerContextType = {
   selectedTool: Tool | null;
 
   symptom: SymptomType | null;
-
-  isDistressMeterActive: boolean;
 
   initialDistressLevel: number | null;
   finalDistressLevel: number | null;
@@ -33,6 +32,8 @@ type ToolManagerContextType = {
   setSelectedSymptom: (symptom: SymptomType) => void;
   resetToolManagerContext: () => void;
   getToolById: (toolId: string) => Tool | undefined;
+
+  setIsDistressMeterActive: (active: boolean) => void;
 };
 
 const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
@@ -77,8 +78,6 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const TOOLS_CONFIG = useTools();
   const { t } = useTranslation();
 
-  const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
-
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [returnURL, setReturnURL] = useState<string | null>(null);
 
@@ -86,6 +85,9 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
 
   const [symptom, setSymptom] = useState<SymptomType | null>(null);
+  const [isDistressMeterActive, setIsDistressMeterActive] = useState<boolean>(
+    KVStore().getBoolean(STORE_KEYS.STRESS_METER) ?? true
+  );
 
   const TOOL_CONFIG = useMemo(() => {
     return filterToolsWithFoggles(TOOLS_CONFIG, foggles);
@@ -169,10 +171,10 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
     TOOL_CONFIG,
     selectedTool,
     symptom,
-    isDistressMeterActive,
     initialDistressLevel,
     finalDistressLevel,
     returnURL,
+    setIsDistressMeterActive,
     setInitialDistressLevel,
     setFinalDistressLevel,
     getFeedback,

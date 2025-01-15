@@ -172,7 +172,8 @@
   "settings": {
     "title": "Settings",
     "change-country-and-language": "Change country and language",
-    "pick-contacts": "Pick support contacts"
+    "pick-contacts": "Pick support contacts",
+    "enable-stress-meter": "Enable stress meter"
   },
   "contact": {
     "title": "RO/en: Contacts list",
