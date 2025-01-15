@@ -12,6 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { DrawerItem } from '@/components/DrawerItem';
 import { Typography } from '@/components/Typography';
 import Constants from 'expo-constants';
+import { useNotifications } from '@/hooks/useNotifications';
 
 type DrawerContentProps = ScrollViewProps & {
   children?: React.ReactNode;
@@ -23,6 +24,8 @@ export const DrawerContent = (props: DrawerContentProps) => {
   const insets = useSafeAreaInsets();
   const navigation = useNavigation();
   const { t } = useTranslation();
+
+  useNotifications();
 
   return (
     <DrawerContentScrollView
