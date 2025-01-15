@@ -7,13 +7,13 @@ import { useAssetsManagerContext } from './AssetsManagerContextProvider';
 import '../common/config/i18n';
 import { FogglesConfig } from '@/services/foggles/foggles.type';
 import { useTranslation } from 'react-i18next';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { KVStore } from '@/helpers/mmkv';
 
 type ToolManagerContextType = {
   TOOL_CONFIG: ToolConfigType;
 
   selectedTool: Tool | null;
-
-  isDistressMeterActive: boolean;
 
   initialDistressLevel: number | null;
   finalDistressLevel: number | null;
@@ -29,6 +29,8 @@ type ToolManagerContextType = {
   finishTool: () => void;
   resetToolManagerContext: () => void;
   getToolById: (toolId: string) => Tool | undefined;
+
+  setIsDistressMeterActive: (active: boolean) => void;
 };
 
 const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
@@ -73,15 +75,15 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const TOOLS_CONFIG = useTools();
   const { t } = useTranslation();
 
-  
-
-  const isDistressMeterActive = true; // TODO: Change to RQ, get from DB
-
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
   const [returnURL, setReturnURL] = useState<string | null>(null);
 
   const [initialDistressLevel, setInitialDistressLevel] = useState<number | null>(null);
   const [finalDistressLevel, setFinalDistressLevel] = useState<number | null>(null);
+
+  const [isDistressMeterActive, setIsDistressMeterActive] = useState<boolean>(
+    KVStore().getBoolean(STORE_KEYS.STRESS_METER) ?? true
+  );
 
   const TOOL_CONFIG = useMemo(() => {
     return filterToolsWithFoggles(TOOLS_CONFIG, foggles);
@@ -159,10 +161,10 @@ const ToolManagerContextProvider = ({ children }: { children: React.ReactNode })
   const contextValue: ToolManagerContextType = {
     TOOL_CONFIG,
     selectedTool,
-    isDistressMeterActive,
     initialDistressLevel,
     finalDistressLevel,
     returnURL,
+    setIsDistressMeterActive,
     setInitialDistressLevel,
     setFinalDistressLevel,
     getFeedback,
