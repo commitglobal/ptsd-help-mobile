@@ -60,74 +60,72 @@ export const Screen = ({
     <YStack paddingTop={headerProps ? 0 : insets.top} flex={1} backgroundColor={backgroundColor}>
       {headerProps && <Header {...headerProps} />}
 
-      <KeyboardAvoidingView behavior={isIos ? 'padding' : 'height'} style={{ flex: 1 }}>
-        <YStack {...contentContainerStyle} flex={1} flexGrow={1}>
-          {children}
+      <YStack {...contentContainerStyle} flex={1} flexGrow={1}>
+        {children}
 
-          {hasFooterButtons && (
-            <AnimatedYStack
-              marginTop='auto'
-              paddingBottom={paddingBottom}
-              paddingHorizontal='$md'
-              gap='$xs'
-              backgroundColor={footerBackgroundColor}
-              {...footerContainerStyle}>
-              {hasSmallButtons && (
-                <XStack gap='$xs'>
-                  {footerProps.onPrev && (
-                    <Button
-                      preset='secondary'
-                      icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
-                      flex={1}
-                      onPress={footerProps.onPrev}
-                    />
-                  )}
-                  {footerProps.onCustomAction && (
-                    <Button
-                      preset='secondary'
-                      icon={
-                        <Icon
-                          icon={footerProps.customActionIcon ? footerProps.customActionIcon : 'arrowUpOnSquare'}
-                          width={24}
-                          height={24}
-                          color='$gray12'
-                        />
-                      }
-                      flex={1}
-                      onPress={footerProps.onCustomAction}
-                    />
-                  )}
-                  {footerProps.onNext && (
-                    <Button
-                      preset='secondary'
-                      icon={<Icon icon='chevronRight' width={24} height={24} color='$gray12' />}
-                      flex={1}
-                      onPress={footerProps.onNext}
-                    />
-                  )}
-                </XStack>
-              )}
+        {hasFooterButtons && (
+          <AnimatedYStack
+            marginTop='auto'
+            paddingBottom={paddingBottom}
+            paddingHorizontal='$md'
+            gap='$xs'
+            backgroundColor={footerBackgroundColor}
+            {...footerContainerStyle}>
+            {hasSmallButtons && (
+              <XStack gap='$xs'>
+                {footerProps.onPrev && (
+                  <Button
+                    preset='secondary'
+                    icon={<Icon icon='chevronLeft' width={24} height={24} color='$gray12' />}
+                    flex={1}
+                    onPress={footerProps.onPrev}
+                  />
+                )}
+                {footerProps.onCustomAction && (
+                  <Button
+                    preset='secondary'
+                    icon={
+                      <Icon
+                        icon={footerProps.customActionIcon ? footerProps.customActionIcon : 'arrowUpOnSquare'}
+                        width={24}
+                        height={24}
+                        color='$gray12'
+                      />
+                    }
+                    flex={1}
+                    onPress={footerProps.onCustomAction}
+                  />
+                )}
+                {footerProps.onNext && (
+                  <Button
+                    preset='secondary'
+                    icon={<Icon icon='chevronRight' width={24} height={24} color='$gray12' />}
+                    flex={1}
+                    onPress={footerProps.onNext}
+                  />
+                )}
+              </XStack>
+            )}
 
-              {footerProps.onMainAction && (
-                <Button
-                  onPress={footerProps.onMainAction}
-                  disabled={footerProps.mainActionDisabled || footerProps.isLoading}
-                  icon={footerProps.isLoading ? <Spinner size='small' color='$blue11' /> : null}>
-                  {footerProps.mainActionLabel || 'Done'}
-                </Button>
-              )}
-              {footerProps.onSecondaryAction && (
-                <Button
-                  preset='secondary'
-                  onPress={footerProps.onSecondaryAction}
-                  disabled={footerProps.secondaryActionDisabled || footerProps.isLoading}>
-                  {footerProps.secondaryActionLabel}
-                </Button>
-              )}
-            </AnimatedYStack>
-          )}
-        </YStack>
-      </KeyboardAvoidingView>
+            {footerProps.onMainAction && (
+              <Button
+                onPress={footerProps.onMainAction}
+                disabled={footerProps.mainActionDisabled || footerProps.isLoading}
+                icon={footerProps.isLoading ? <Spinner size='small' color='$blue11' /> : null}>
+                {footerProps.mainActionLabel || 'Done'}
+              </Button>
+            )}
+            {footerProps.onSecondaryAction && (
+              <Button
+                preset='secondary'
+                onPress={footerProps.onSecondaryAction}
+                disabled={footerProps.secondaryActionDisabled || footerProps.isLoading}>
+                {footerProps.secondaryActionLabel}
+              </Button>
+            )}
+          </AnimatedYStack>
+        )}
+      </YStack>
     </YStack>
   );
 };

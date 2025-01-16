@@ -5,18 +5,17 @@ import { Typography } from '@/components/Typography';
 import { router, Stack } from 'expo-router';
 import React, { useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ScrollView, YStack } from 'tamagui';
+import { YStack } from 'tamagui';
 import { Controller, useForm } from 'react-hook-form';
 import { Icon } from '@/components/Icon';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import messagesRepository, { Message } from '@/db/repositories/messages.repository';
-import { handleTextareaFocus } from '@/helpers/handleTextareaFocus';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 
 export default function NewMessage() {
   const { t } = useTranslation('tools');
 
   // using refs for scrolling capabilities
-  const scrollViewRef = useRef<ScrollView>(null);
   const annoyanceRef = useRef(null);
   const feelRef = useRef(null);
   const becauseRef = useRef(null);
@@ -61,15 +60,14 @@ export default function NewMessage() {
           mainActionLabel: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.save),
           onMainAction: handleSubmit(onSubmit),
         }}>
-        <ScrollView
-          ref={scrollViewRef}
+        <KeyboardAwareScrollView
           contentContainerStyle={{
-            gap: '$lg',
-            flexGrow: 1,
-            padding: '$lg',
+            padding: 16,
           }}
-          bounces={false}
-          showsVerticalScrollIndicator={false}>
+          scrollEnabled={true}
+          enableAutomaticScroll={true}
+          extraHeight={40}
+          extraScrollHeight={40}>
           <Controller
             control={control}
             name='annoyance'
@@ -88,7 +86,6 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.placeholder
                 )}
                 ref={annoyanceRef}
-                onFocus={() => handleTextareaFocus(scrollViewRef, annoyanceRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.annoyance.example
                 )}
@@ -122,7 +119,6 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.placeholder
                 )}
                 ref={feelRef}
-                onFocus={() => handleTextareaFocus(scrollViewRef, feelRef)}
                 infoMessage={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.iFeel.example)}
                 onInfoMessagePress={() =>
                   handleInfoModalOpen(
@@ -151,7 +147,6 @@ export default function NewMessage() {
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.placeholder
                 )}
                 ref={becauseRef}
-                onFocus={() => handleTextareaFocus(scrollViewRef, becauseRef)}
                 infoMessage={t(
                   toolsTranslationKeys.RELATIONSHIPS.subcategories.I_MESSAGES.newMessage.becauseInput.example
                 )}
@@ -164,7 +159,7 @@ export default function NewMessage() {
               />
             )}
           />
-        </ScrollView>
+        </KeyboardAwareScrollView>
       </Screen>
       {infoMessage && (
         <Modal open onOpenChange={handleInfoModalClose}>
