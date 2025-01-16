@@ -1,6 +1,6 @@
 import db from '../db';
 import { messages } from '../schema/messages';
-import { eq, sql } from 'drizzle-orm';
+import { eq, sql, desc } from 'drizzle-orm';
 import { DatabaseError, NotFoundError } from '../helpers';
 
 export type Message = typeof messages.$inferSelect;
@@ -13,7 +13,7 @@ class MessagesRepository {
   }
 
   public getMessages = () => {
-    return this.databaseInstance.select().from(messages);
+    return this.databaseInstance.select().from(messages).orderBy(desc(messages.createdAt));
   };
 
   public getMessageById = async (id: number): Promise<Message> => {

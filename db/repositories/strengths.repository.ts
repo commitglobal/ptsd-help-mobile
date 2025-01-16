@@ -1,4 +1,4 @@
-import { eq, sql } from 'drizzle-orm';
+import { eq, sql, desc } from 'drizzle-orm';
 import db from '../db';
 import { strengths } from '../schema/strengths';
 import { DatabaseError, NotFoundError } from '../helpers';
@@ -13,7 +13,7 @@ class StrengthsRepository {
   }
 
   public getStrengths = () => {
-    return this.databaseInstance.select().from(strengths);
+    return this.databaseInstance.select().from(strengths).orderBy(desc(strengths.createdAt));
   };
 
   public getStrengthById = async (id: number): Promise<Strength> => {
