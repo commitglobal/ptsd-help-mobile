@@ -1,4 +1,4 @@
-import { eq } from 'drizzle-orm';
+import { eq, desc } from 'drizzle-orm';
 import db from '../db';
 import { rid } from '../schema/rid';
 import { DatabaseError, NotFoundError } from '../helpers';
@@ -13,7 +13,7 @@ class RIDRepository {
   }
 
   public getRIDs = () => {
-    return this.databaseInstance.select().from(rid);
+    return this.databaseInstance.select().from(rid).orderBy(desc(rid.createdAt));
   };
 
   public getRIDById = async (id: number): Promise<RID> => {
