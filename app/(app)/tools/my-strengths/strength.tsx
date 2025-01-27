@@ -17,6 +17,7 @@ import { Modal } from '@/components/Modal';
 import { useStrength } from '@/services/strengths.service';
 import { Image } from 'expo-image';
 import { blurhash } from '@/helpers/blurhash';
+import { DeleteConfirmationModal } from '@/components/DeleteConfirmationModal';
 const Strength = () => {
   const { t } = useTranslation('tools');
   const { toolsTranslationKeys } = useTranslationKeys();
@@ -44,6 +45,8 @@ const Strength = () => {
   const [optionsSheetOpen, setOptionsSheetOpen] = useState(false);
   const [imageOptionsSheetOpen, setImageOptionsSheetOpen] = useState(false);
   const [isInfoModalOpen, setIsInfoModalOpen] = useState(false);
+
+  const [isDeleteConfirmationModalOpen, setIsDeleteConfirmationModalOpen] = useState(false);
 
   const handlePickImageFromLibrary = async () => {
     setOptionsSheetOpen(false);
@@ -119,7 +122,7 @@ const Strength = () => {
           onMainAction: strengthId ? handleEditStrength : handleAddStrength,
           mainActionDisabled: !canSubmit,
           secondaryActionLabel: strengthId ? t(toolsTranslationKeys.MY_STRENGTHS.delete) : undefined,
-          onSecondaryAction: strengthId ? handleDelete : undefined,
+          onSecondaryAction: strengthId ? () => setIsDeleteConfirmationModalOpen(true) : undefined,
         }}>
         {isLoadingStrength ? (
           <YStack>
@@ -171,6 +174,9 @@ const Strength = () => {
           </ScrollView>
         )}
       </Screen>
+      {isDeleteConfirmationModalOpen && (
+        <DeleteConfirmationModal setModalOpen={setIsDeleteConfirmationModalOpen} handleDelete={handleDelete} />
+      )}
 
       {optionsSheetOpen && (
         <OptionsSheet
