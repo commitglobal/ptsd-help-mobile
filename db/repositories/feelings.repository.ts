@@ -1,4 +1,4 @@
-import { eq } from 'drizzle-orm';
+import { eq, desc } from 'drizzle-orm';
 import db from '../db';
 import { feelings } from '../schema/feelings';
 import { DatabaseError, NotFoundError } from '../helpers';
@@ -13,7 +13,7 @@ class FeelingsRepository {
   }
 
   public getFeelings = () => {
-    return this.databaseInstance.select().from(feelings);
+    return this.databaseInstance.select().from(feelings).orderBy(desc(feelings.createdAt));
   };
 
   public getFeelingById = async (id: number): Promise<Feeling> => {
