@@ -23,9 +23,10 @@ class LearnContentDownloader {
     this.progressTracker = progressTracker;
   }
 
-  private async downloadImage(imageSrc: string, contentDir: string): Promise<string> {
+  private async downloadImage(imageSrc: string, contentDir: string, relativeContentDir: string): Promise<string> {
     const imageFileName = imageSrc.split('/').pop();
     const localImagePath = `${contentDir}/${imageFileName}`;
+    const localRelativeImagePath = `${relativeContentDir}/${imageFileName}`;
     try {
       await FileSystem.downloadAsync(imageSrc, localImagePath);
       this.progressTracker.incrementDownloaded();
@@ -33,16 +34,16 @@ class LearnContentDownloader {
       console.error('Error downloading image:', error);
       return '';
     }
-    return localImagePath;
+    return localRelativeImagePath;
   }
 
-  private async processContentArray(contentArray: any[], contentDir: string) {
+  private async processContentArray(contentArray: any[], contentDir: string, relativeContentDir: string) {
     return Promise.all(
       contentArray.map(async (content) => {
         if (content.type === 'image') {
           return {
             ...content,
-            src: await this.downloadImage(content.src, contentDir),
+            src: await this.downloadImage(content.src, contentDir, relativeContentDir),
           };
         }
         return content;
@@ -50,24 +51,24 @@ class LearnContentDownloader {
     );
   }
 
-  private async processSection(section: Section, contentDir: string): Promise<Section> {
+  private async processSection(section: Section, contentDir: string, relativeContentDir: string): Promise<Section> {
     if (section.type === 'image') {
       return {
         ...section,
-        src: await this.downloadImage(section.src, contentDir),
+        src: await this.downloadImage(section.src, contentDir, relativeContentDir),
       };
     }
 
     if (section.type === 'multiContent') {
       return {
         ...section,
-        contentArray: await this.processContentArray(section.contentArray, contentDir),
+        contentArray: await this.processContentArray(section.contentArray, contentDir, relativeContentDir),
       };
     }
 
     if (section.type === 'multiPage') {
       const processedPages = await Promise.all(
-        section.pageArray.map((page) => this.processContentArray(page, contentDir))
+        section.pageArray.map((page) => this.processContentArray(page, contentDir, relativeContentDir))
       );
 
       return {
@@ -79,21 +80,27 @@ class LearnContentDownloader {
     return section;
   }
 
-  async processCategories(remoteContent: ContentType, contentDir: string): Promise<ContentPage[]> {
+  async processCategories(
+    remoteContent: ContentType,
+    contentDir: string,
+    relativeContentDir: string
+  ): Promise<ContentPage[]> {
     return Promise.all(
       remoteContent.pages?.map(async (contentPage: ContentPage) => {
         const processedIcon = contentPage.icon
-          ? await this.downloadImage(contentPage.icon, contentDir)
+          ? await this.downloadImage(contentPage.icon, contentDir, relativeContentDir)
           : contentPage.icon;
 
         const topicsToProcess = contentPage.type === 'category' ? contentPage.topics : [contentPage];
 
         const processedTopics: Topic[] = await Promise.all(
           topicsToProcess.map(async (topic: Topic) => {
-            const processedTopicIcon = topic.icon ? await this.downloadImage(topic.icon, contentDir) : topic.icon;
+            const processedTopicIcon = topic.icon
+              ? await this.downloadImage(topic.icon, contentDir, relativeContentDir)
+              : topic.icon;
 
             const processedSections: Section[] = await Promise.all(
-              topic.content.sections.map((section) => this.processSection(section, contentDir))
+              topic.content.sections.map((section) => this.processSection(section, contentDir, relativeContentDir))
             );
 
             return {
@@ -162,6 +169,7 @@ export type ContentFetcherConfig = {
   remoteContentFolderUrl: string;
   localContentDir: string;
   localContentMappingFilePath: string; // The file where the content mapping is saved
+  localRelativeContentDir: string;
   countryCode: string;
   languageCode: string;
   onProgress?: (progress: DownloadProgress) => void;
@@ -190,7 +198,11 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
   if (shouldUpdateLocal && remoteContent) {
     progressTracker.setTotalFiles(extractFileNames(remoteContent).length);
 
-    const processedCategories = await downloader.processCategories(remoteContent, config.localContentDir);
+    const processedCategories = await downloader.processCategories(
+      remoteContent,
+      config.localContentDir,
+      config.localRelativeContentDir
+    );
 
     const toReturn: ContentType = {
       ...remoteContent,

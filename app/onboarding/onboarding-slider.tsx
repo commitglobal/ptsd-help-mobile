@@ -59,7 +59,7 @@ export default function Onboarding() {
   const flatListRef = React.useRef(null);
   // Flatlist props that calculates current item index
   const onViewRef = React.useRef(({ viewableItems }: any) => {
-    setActiveIndex(viewableItems[0].index);
+    setActiveIndex(viewableItems[0]?.index);
   });
   const viewConfigRef = React.useRef({ viewAreaCoveragePercentThreshold: 50 });
 

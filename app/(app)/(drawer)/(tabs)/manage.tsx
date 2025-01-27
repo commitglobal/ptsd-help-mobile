@@ -78,7 +78,7 @@ export default function Manage() {
   const { tabId } = useLocalSearchParams<{ tabId: keyof typeof Lists }>();
   const { t } = useTranslation('translation');
   const router = useRouter();
-  const { startTool, TOOL_CONFIG } = useToolManagerContext();
+  const { startTool, TOOL_CONFIG, setSelectedSymptom } = useToolManagerContext();
   const { SYMPOTOMS_CONFIG, getRandomToolForSymptom } = useSymptoms();
 
   const tabs = useMemo(
@@ -101,6 +101,14 @@ export default function Manage() {
     }
   }, [tabId]);
 
+  const getSymptomTool = (symptom: SymptomType) => {
+    const randomTool = getRandomToolForSymptom(symptom);
+    if (randomTool) {
+      setSelectedSymptom(symptom);
+      startTool(randomTool, `/manage?tabId=symptoms`);
+    }
+  };
+
   const renderList = useCallback(() => {
     if (isLoading) {
       return (
@@ -120,12 +128,7 @@ export default function Manage() {
               label: t(symptom.label, { ns: 'tools' }),
             };
           })}
-          onSymptomSelected={(symptom) => {
-            const randomTool = getRandomToolForSymptom(symptom);
-            if (randomTool) {
-              startTool(randomTool, `/manage?tabId=symptoms`);
-            }
-          }}
+          onSymptomSelected={getSymptomTool}
         />
       );
     }

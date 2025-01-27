@@ -5,7 +5,7 @@ import { ListCard } from '@/components/ListCard';
 import { FlashList } from '@shopify/flash-list';
 import { router } from 'expo-router';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
-
+import { getLocalContentFilePath } from '@/services/content/content.helper';
 export default function Learn() {
   const { learnContent } = useAssetsManagerContext();
   return (
@@ -22,7 +22,7 @@ export default function Learn() {
         renderItem={({ item }) => (
           <ListCard
             key={item.id}
-            item={item}
+            item={{ ...item, icon: getLocalContentFilePath(item.icon) }}
             onPress={() => {
               if (item.type === 'category') {
                 router.push({ pathname: '/content/category', params: { type: 'learn', pageId: item.id } });

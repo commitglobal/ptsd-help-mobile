@@ -4,12 +4,25 @@ import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/Icon';
 import { useRouter } from 'expo-router';
 import { Typography } from '@/components/Typography';
-import { Separator, XStack } from 'tamagui';
+import { Separator, Switch, XStack } from 'tamagui';
 import { Card } from '@/components/Card';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { KVStore } from '@/helpers/mmkv';
+import { useToolManagerContext } from '@/contexts/ToolManagerContextProvider';
 
 export default function Settings() {
   const { t } = useTranslation();
   const router = useRouter();
+  const stressMeterEnabled = KVStore().getBoolean(STORE_KEYS.STRESS_METER) ?? true;
+  const [isEnabled, setIsEnabled] = React.useState(stressMeterEnabled);
+
+  const { setIsDistressMeterActive } = useToolManagerContext();
+
+  const handleToggleStressMeter = () => {
+    setIsEnabled(!isEnabled);
+    KVStore().set(STORE_KEYS.STRESS_METER, !isEnabled);
+    setIsDistressMeterActive(!isEnabled);
+  };
 
   return (
     <Screen
@@ -29,6 +42,22 @@ export default function Settings() {
           onPress={() => router.push('/localization/change-country')}
           icon='language'
         />
+      </Section>
+
+      <Section>
+        <XStack alignItems='center' justifyContent='space-between' paddingRight='$sm'>
+          <XStack alignItems='center' gap='$md'>
+            <Icon icon='chart' width={24} height={24} color='$blue11' />
+            <Typography>{t('settings.enable-stress-meter')}</Typography>
+          </XStack>
+          <Switch
+            checked={isEnabled}
+            onCheckedChange={handleToggleStressMeter}
+            size='$4'
+            backgroundColor={isEnabled ? '$blue8' : '$gray1'}>
+            <Switch.Thumb animation='quick' backgroundColor='$blue11' />
+          </Switch>
+        </XStack>
       </Section>
     </Screen>
   );

@@ -53,6 +53,12 @@
     "title": "RO/ro: Contacts list",
     "permission-denied": "RO/ro: Permission denied"
   },
+  "settings": {
+    "title": "Settings",
+    "change-country-and-language": "Change country and language",
+    "pick-contacts": "Pick support contacts",
+    "enable-stress-meter": "Enable stress meter"
+  },
   "onboarding": {
     "learn": {
       "title": "RO/ro: Learn",
@@ -130,6 +136,12 @@
     "actions": {
       "start": "RO/ro: Start using a tool",
       "skip": "RO/ro: Skip"
+    },
+    "post-buttons": {
+      "try-again": "Incearca acest instrument din nou",
+      "another-tool": "Încearcă un alt instrument",
+      "remove-from-favorites": "Șterge din favorite",
+      "add-to-favorites": "Adaugă la favorite"
     },
     "info": "RO/ro: Disconfortul poate include furie, tristete, teama, durere, stres, ingrijorare, orice sentiment negativ pe care il simti. Evalueaza-ti nivelul de disconfort inainte si dupa ce folosesti un instrument pe sprijin pentru a-ti da seama care dintre instrumente functioneaza cel mai bine pentru tine.",
     "info-levels": {
