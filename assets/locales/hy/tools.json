@@ -7,19 +7,19 @@
     "i-messages": "«Ես» հաղորդագրությունների օգտագործումը",
     "mindfulness": "Mindfulness",
     "ambient-sounds": "շրջակա միջավայրի ձայներ/բնաձայններ",
-    "conscious-breathing": "Conscious Breathing",
-    "mindful-walking": "Mindful Walking",
-    "emotional-discomfort": "Emotional Discomfort",
-    "sense-awareness": "Sense Awareness",
-    "loving-kindness": "Loving Kindness",
-    "my-feelings": "My Feelings",
-    "sleep": "Sleep Instruments",
-    "sleep-help": "Help to sleep",
-    "sleep-habits": "Good sleep habits",
-    "sleep-perspective": "Change sleep perspective",
+    "conscious-breathing": "Գիտակցված շնչառություն",
+    "mindful-walking": "գիտակցված զբոսանք",
+    "emotional-discomfort": "զգացմունքային անհարմարություն",
+    "sense-awareness": "զգացմունքների գիտակցում",
+    "loving-kindness": "սիրառատ բարություն",
+    "my-feelings": "իմ զգացմունքները",
+    "sleep": "քնի գործիքակազմ",
+    "sleep-help": "օգնել քնել",
+    "sleep-habits": "լավ քնի սովորություններ",
+    "sleep-perspective": "քնի տեսանկյունների փոփոխություն",
     "worry-time": "Worry Time",
     "rid": "RID",
-    "muscle-relaxation": "Muscle Relaxation",
+    "muscle-relaxation": "մկանների թուլացում",
     "deep-breathing": "Deep Breathing",
     "body-scan": "մարմնի սկանավորում",
     "julia": "Մարմնի սքանավորում Քեյթի հետ",
@@ -51,7 +51,7 @@
     "sleep_problems": "Sleep Problems"
   },
   "relationships": {
-    "title": "Relationships",
+    "title": "հարաբերությունների գործիքներ",
     "description": "Tools to help improve your relationships with loved ones",
     "tools": {
       "i-messages": {
@@ -401,7 +401,7 @@
       "previous": "Previous",
       "finish": "Finish",
       "save": "պահպանել",
-      "cancel": "Cancel"
+      "cancel": "չեղարկել"
     }
   },
   "ambient-sounds": {
@@ -423,111 +423,111 @@
   },
   "mindfulness": {
     "conscious-breathing": {
-      "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+      "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 9 minutes.",
       "action-btn-label": "շարունակել",
       "done": "կատարված"
     },
     "mindful-walking": {
-      "description": "For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
+      "description": "Այս վարժության համար կարող եք զբոսնել տանը, ձեր բակում, ձեր թաղամասում, այգում կամ ցանկացած այլ վայրում, որտեղ ձեզ հարմարավետ և անվտանգ կզգաք: Փորձեք լուռ մնալ զբոսանքի ժամանակ, որպեսզի ավելի հեշտությամբ կարողանաք ուշադրություն դարձնել ձեր զգացողություններին և մտքին։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 6 րոպե։",
       "action-btn-label": "շարունակել",
       "done": "կատարված"
     },
     "emotional-discomfort": {
-      "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
+      "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 7 minutes.",
       "action-btn-label": "շարունակել",
       "done": "կատարված"
     },
     "sense-awareness": {
-      "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
+      "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 11 minutes.",
       "action-btn-label": "շարունակել",
       "done": "կատարված"
     },
     "loving-kindness": {
-      "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
+      "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 10 minutes.",
       "action-btn-label": "շարունակել",
       "done": "կատարված"
     }
   },
   "sleep": {
-    "title": "Help to sleep",
+    "title": "քնել",
     "repeater": {
       "1": {
-        "title": "Only go to bed when you feel sleepy."
+        "title": "Գնացեք քնելու միայն այն ժամանակ, երբ քնկոտ եք"
       },
       "2": {
-        "title": "If you lie in bed for 20 minutes and still can't sleep, get up and do something else (without exposing yourself to bright light or computer/phone/TV screens)."
+        "title": "Եթե 20 րոպե անկողնում եք և դեռ չեք քնում, վեր կացեք և զբաղվեք ինչ-որ այլ բանով (առանց լույս կամ համակարգչի /հեռախոս/հեռուստացույց միացնելու):"
       },
       "3": {
-        "title": "Listen to relaxing music."
+        "title": "լսեք հանգստաղնող երաժշտություն"
       },
       "4": {
-        "title": "Read something calming."
+        "title": "կարդացեք ինչ-որ հանգստացնող բան"
       },
       "5": {
-        "title": "Drink a cup of decaffeinated tea."
+        "title": "առանց կոֆեինի թեյ խմեք"
       },
       "6": {
-        "title": "Drink a cup of warm milk."
+        "title": "մեկ տաք բաժակ կաթ խմեք"
       },
       "7": {
-        "title": "Breathe slowly and deeply through your nose - do this for 10 minutes. You can use the breathing tool in this app if you wish."
+        "title": "Դանդաղ խորը շունչ քաշեք քթով- 10 րոպե արեք։ Կարող եք օգտագործել այս հավելվածի շնչառական գործիքը, եթե ցանկանում եք։"
       },
       "8": {
-        "title": "Eat a light snack if you're hungry - something with little or no sugar and no alcohol."
+        "title": "Եթե քաղցած եք, թեթև նախուտեստ կերեք՝ փորձեք շաքարի ցածր պարունակությամբ և ալկոհոլ չպարունակող ինչ-որ բան:"
       },
       "9": {
-        "title": "Make sure the room temperature is cool."
+        "title": "Համոզվեք, որ սենյակը զով է:"
       },
       "10": {
-        "title": "Try wearing earplugs if there is noise around you."
+        "title": "Փորձեք ականջի խցաններ կրել, եթե ձեր շրջապատում աղմուկ կա։"
       },
       "11": {
-        "title": "If there is light around, try sleeping with an eye mask."
+        "title": "Եթե ձեր միջավայրում լույս կա, փորձեք աչքի կապիչ։"
       },
       "12": {
-        "title": "Make sure the room is dark."
+        "title": "Վստահ եղեք, որ սենյակը մութ է։"
       },
       "13": {
-        "title": "Try taking a warm bath an hour or 2 before bedtime."
+        "title": "Անկողին մտնելուց մեկ կամ 2 ժամ առաջ տաք լոգանք ընդունեք։"
       },
       "14": {
-        "title": "Make sure you are comfortable and your clothes aren't uncomfortable."
+        "title": "Համոզվեք, որ հարմարավետ եք, և հագուստը չի սահմանափակում ձեզ։"
       },
       "15": {
-        "title": "Avoid looking at the clock."
+        "title": "Խուսափեք նայել ժամացույցին։"
       },
       "16": {
-        "title": "Let your mind wander. Don't focus too much on the process of falling asleep."
+        "title": "Թողեք միտքը թափառի։ Չափազանց շատ մի կենտրոնացեք քնելու գործընթացի վրա։"
       },
       "17": {
-        "title": "If you feel worried, get up and write down your worries, then try to let them go."
+        "title": "Եթե անհանգստանում եք, վեր կացեք և գրի առեք ձեր անհանգստությունները, ապա թողեք դրանք անցնեն։"
       },
       "18": {
-        "title": "Imagine a safe and peaceful place: picture yourself by a river, lake or in a meadow. Imagine the whole scene, the sights, sounds and smells, while you relax. You can use the positive imagery tool in this app if you wish."
+        "title": "Պատկերացրեք հանգստացնող, անվտանգ վայր. պատկերացրեք ձեզ գետի, գետակի կամ մարգագետնի մոտ։ Պատկերացրեք տեսարան, տեսարժան վայրեր, ձայները և հոտերը, երբ քնում եք։ Կարող եք օգտագործել այս հավելվածի դրական պատկերացման գործիքը, եթե ցանկանում եք։"
       },
       "19": {
-        "title": "Feel all your body muscles relaxed, as if they've sunk into the mattress. You can use the progressive muscle relaxation tool in this app if you wish."
+        "title": "Զգացեք, թե ինչպես են ձեր մարմնի բոլոր մկանները թուլանում, երբ ընկղմվում/պառկում եք ներքնակի մեջ։ Կարող եք օգտագործել այս հավելվածի պրոգրեսիվ մկանների թուլացման գործիքը, եթե ցանկանում եք։"
       },
       "20": {
-        "title": "Avoid nicotine, caffeine and alcohol in the evening."
+        "title": "Երեկոյան խուսափեք նիկոտինից, կոֆեինից և ալկոհոլից։"
       },
       "21": {
-        "title": "Avoid too much salt in food. This can make you wake up thirsty throughout the night."
+        "title": "Խուսափեք սննդի մեջ չափից շատ աղ օգտագործելուց։ Սա կարող է հանգեցնել նրան, որ դուք ամբողջ գիշեր ծարավից արթնանաք։"
       },
       "22": {
-        "title": "Turn off the computer or TV 30 minutes before bedtime."
+        "title": "Անջատեք հեռուստացույցը և համակարգիչը քնելուց 30 րոպե առաջ։"
       },
       "23": {
-        "title": "Create a relaxing bedtime routine."
+        "title": "Մշակեք հանգստացնող քնելու ռեժիմ:"
       },
       "24": {
-        "title": "Get up and drink a glass of water."
+        "title": "Վեր կաց և մի բաժակ ջուր խմիր:"
       },
       "25": {
-        "title": "Make sure the sheets are clean and the pillow and mattress are comfortable."
+        "title": "Համոզվեք, որ ձեր սավանները մաքուր են, իսկ բարձն ու ներքնակը հարմարավետ և ամուր են։"
       },
       "26": {
-        "title": "Try not to worry about not falling asleep. Keep trying to relax."
+        "title": "Փորձեք չանհանգստանալ քնելու համար, պարզապես թույլ տվեք, որ դա պատահի:"
       }
     },
     "sleep-habits": {
@@ -936,7 +936,7 @@
     }
   },
   "pause": {
-    "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+    "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 9 minutes.",
     "action-btn-label": "շարունակել",
     "helper": "Try to do this for 5 minutes",
     "take_break": "դադար վերցնել",
