@@ -55,30 +55,30 @@
     "description": "Tools to help improve your relationships with loved ones",
     "tools": {
       "i-messages": {
-        "title": "Using 'I' messages",
+        "title": "օգտագործել ԵՍ ուղերձ",
         "add-message": "Add 'I' message",
         "find-time": "Find time to share these messages with your partner.",
-        "text": "Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "text": "«Ես» ուղերձները օգնում են նվազեցնել հարաբերություններում առկա կոնֆլիկտները՝ միաժամանակ փոխանցելով ձեր կարիքները: Սովորեք ստեղծել «ես» ուղերձներ ձեր ամենօրյա փոխհարաբերություններում օգտագործելու համար:",
         "when": "When my loved one",
         "feel": "I feel",
-        "because": "because",
+        "because": "որովհետև",
         "new-message": {
-          "title": "New 'I' message",
+          "title": "Նոր «ԵՍ» ուղերձ",
           "save": "պահպանել",
           "annoyance": {
-            "label": "What's something that your partner does that truly annoys you?",
-            "placeholder": "Something that my partner does that annoys me is...",
+            "label": "Ինչ-որ բան է որ ձեր սիրելիին անում է և որոնք ձեզ իսկապես անհանգստացնում են։",
+            "placeholder": "Մուտքագրեք տեքստը այստեղ",
             "example": "Example: Drinks a lot and then gets angry"
           },
-          "declaration": "Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+          "declaration": "Այժմ օգտագործեք ստորև բերված դաշտերը՝ «ես»-ի մասին հայտարարություն կազմելու համար, որը ձեր սիրելիին կասի, թե ինչ եք զգում: Հիշե՛ք սկսել «ես»-ով, արտահայտել ձեր զգացողությունը, ապա փորձել կիսվել, թե ինչն է ձեզ այդպես զգալ տալիս։ Այս դեպքում փորձեք խուսափել «դու» բառն օգտագործելուց (դա կարող է բարդ լինել):",
           "i-feel": {
-            "label": "When my partner does this, I feel...",
-            "placeholder": "I feel...",
+            "label": "Երբ իմ սիրելին անում է այսինչ բանը, ես զգում եմ․․․",
+            "placeholder": "Մուտքագրեք տեքստը այստեղ",
             "example": "Example: sad and disappointed"
           },
           "because-input": {
-            "label": "Because...",
-            "placeholder": "Because...",
+            "label": "որովհետև...",
+            "placeholder": "Գրեք, թե ինչ կարող են նշանակել ձեր սիրելիի արարքները ձեզ համար։",
             "example": "Example: Because I am worried about the future"
           }
         },
@@ -187,8 +187,8 @@
         }
       },
       "positive-communication": {
-        "title": "Positive Communication",
-        "helper": "Positive communication is the key to every good relationship. You may already be doing some of these, but consider trying out some of these suggestions to strengthen your relationship:",
+        "title": "դրական հաղորդակցում",
+        "helper": "Դրական հաղորդակցությունը յուրաքանչյուր լավ հարաբերությունների բանալին է: Փորձեք այս առաջարկներից մի քանիսը:",
         "repeater": {
           "1": {
             "title": "Overcome your automatic negative thoughts",
@@ -199,76 +199,76 @@
             "description": "Talk about your feelings and thoughts with your partner"
           },
           "3": {
-            "title": "Show Love",
-            "description": "Tell your loved one about 1 thing that you love or appreciate about them. Send a text or leave a note where you know they'll find it.\n\nDo it right now, if you can!"
+            "title": "ցույց տուր սեր",
+            "description": "Ասեք ձեր սիրելիին մեկ բանի մասին, որը դուք սիրում կամ գնահատում եք նրա մեջ: Ուղարկեք հաղորդագրություն կամ թողեք մի գրություն, որտեղ գիտեք, որ նա կգտնի այն:\n\nԵթե կարող եք, արեք դա հենց հիմա:"
           },
           "4": {
-            "title": "Show Admiration",
-            "description": "Tell your loved one 1 thing you admire about him or her."
+            "title": "ցույց տվեք հիացմունք",
+            "description": "Ասեք ձեր սիրելիին 1 բան, որը հիացնում է ձեզ նրա մեջ։"
           },
           "5": {
-            "title": "Start a Conversation",
-            "description": "Plan and start a conversation with your loved one about something that you know interests you both."
+            "title": "սկսեք զրույց",
+            "description": "Պլանավորեք և սկսեք զրույց ձեր սիրելիի հետ այն բանի մասին, որը, ինչպես գիտեք, հետաքրքրում է ձեզ երկուսին էլ։"
           },
           "6": {
-            "title": "First Impressions",
-            "description": "Can you remember your earliest impressions of your loved one? Without making comparisons to the present, share with your loved one what you first liked and appreciated about them after you met or really got to know one another."
+            "title": "առաջին տպաավորություններ",
+            "description": "Կարո՞ղ եք հիշել ձեր սիրելիի հետ կապված ձեր ամենավաղ տպավորությունները։ Առանց ներկայի հետ համեմատություններ անելու, կիսվեք ձեր սիրելիի հետ այն մասին, թե ինչն եք առաջին անգամ սիրել և գնահատել նրա մեջ, երբ հանդիպել եք կամ իսկապես ճանաչել եք միմյանց։"
           },
           "7": {
-            "title": "Shared Values",
-            "description": "What's at least one shared goal or value that you have in common with your loved one? Ask your loved one about their goals for the next month or year and how you can help meet that goal."
+            "title": "ընդհանուր արժեքներ",
+            "description": "Ի՞նչ ընդհանուր նպատակ կամ արժեք ունեք դուք և ձեր սիրելին։ Հարցրեք ձեր սիրելիին նրա հաջորդ ամսվա կամ տարվա նպատակների և այն մասին, թե ինչպես կարող եք օգնել այդ նպատակին հասնելու հարցում։"
           },
           "8": {
-            "title": "Contributions",
-            "description": "Spend 2 minutes thinking about this: what's at least one thing your loved one does to contribute to the relationship you have with him or her? Try to identify at least one thing, even if it's small."
+            "title": "նվիրում",
+            "description": "2 րոպե մտածեք այս մասին. ի՞նչ է անում ձեր սիրելին առնվազն մեկ բան, որը նպաստում է ձեր և նրա հարաբերություններին: Փորձեք նշել առնվազն մեկ բան, նույնիսկ եթե այն փոքր է:"
           },
           "9": {
-            "title": "Just Listen",
-            "description": "Ask your loved one to tell you about the best part of their day and the hardest part of their day. Focus on listening.\n\nAcknowledge what your loved one says without trying to solve anything."
+            "title": "ուղղակի լսիր",
+            "description": "Խնդրեք ձեր սիրելիին պատմել ձեզ իր օրվա լավագույն և ամենադժվար հատվածների մասին։ Կենտրոնացեք իր օրվա և ամենադժվար հատվածների վրա։ Կենտրոնացեք լսելու վրա։\n\nՀաշվի առեք ձեր սիրելիի ասածը՝ առանց որևէ բան լուծելու փորձելու։"
           },
           "10": {
-            "title": "Overcoming Challenges",
-            "description": "Think about a time in your relationship with your loved one when you had to overcome something difficult together."
+            "title": "մարտահրավերների հաղթահարում",
+            "description": "Մտածեք ձեր սիրելիի հետ հարաբերությունների այն ժամանակի մասին, երբ դուք միասին ստիպված եք եղել հաղթահարել ինչ-որ դժվարություն։"
           },
           "11": {
-            "title": "Next Time you Talk",
-            "description": "Try to turn a few minutes with your loved one into a positive conversation- talk more than usually would about something you have in common."
+            "title": "հաջորդ անգամ, երբ դուք խոսեք",
+            "description": "Փորձեք ձեր սիրելիի հետ անցկացրած մի քանի րոպեները վերածել դրական զրույցի՝ ավելի շատ խոսեք ձեզ համար ընդհանուր թեմաների մասին, քան սովորաբար անում էիք։"
           },
           "12": {
-            "title": "Listen Openly",
-            "description": "Plan a conversation about whatever your loved one would like to talk about that interests them. Listen as openly as you can. Don't change the subject!"
+            "title": "լսելք բացահայտ",
+            "description": "Պլանավորեք զրույց այն մասին, թե ինչի մասին է ձեր սիրելին ուզում խոսել և որը նրան հետաքրքրում է: Լսեք որքան հնարավոր է անկեղծորեն: Մի փոխեք թեման:"
           },
           "13": {
-            "title": "Share Their Interests",
-            "description": "Plan and start a conversation with your loved one about something you know is interesting to them but normally isn't interesting to you."
+            "title": "կիսվեք նրանց հետաքրքրություններով",
+            "description": "Պլանավորեք և սկսեք զրույց ձեր սիրելիի հետ այն բանի մասին, որը, ինչպես գիտեք, հետաքրքիր է նրա համար, բայց սովորաբար հետաքրքիր չէ ձեզ համար։"
           },
           "14": {
-            "title": "Noticing Niceness",
-            "description": "Find something nice, however big or small, that your loved one did recently. Share it with your loved one and tell him or her how it made you feel."
+            "title": "նրբանկատություն",
+            "description": "Գտեք մի հաճելի բան, անկախ նրանից, թե մեծ թե փոքր, որ ձեր սիրելին վերջերս արել է։ Կիսվեք դրանով ձեր սիրելիի հետ և պատմեք նրան, թե ինչ զգացողություններ է դա առաջացրել ձեզ մոտ։"
           },
           "15": {
-            "title": "Making Rituals",
-            "description": "Ask your loved one to start, or honor, a daily or weekly ritual with you. A ritual can be anything- a phone call, a meal, a hug, or anything else that you can share together."
+            "title": "կատարել ծեսեր",
+            "description": "Խնդրեք ձեր սիրելիին սկսել կամ հետևել ձեզ հետ ամենօրյա կամ շաբաթական ծես: Ծեսը կարող է լինել ցանկացած բան՝ հեռախոսազանգ, ճաշ, գրկախառնություն կամ այլ բան, որը կարող եք միասին կիսել:"
           },
           "16": {
-            "title": "Sharing Problems",
-            "description": "Ask your loved one what they want you to do next time they're sharing a problem with you.\n\nTry saying this: \"Would you like for me to listen or would you like some advice?\" Don't give advice if your loved one doesn't want it."
+            "title": "կիսվեք խնդիրներով",
+            "description": "Հարցրեք ձեր սիրելիին, թե ինչ է ուզում, որ դուք անեք հաջորդ անգամ, երբ նա ձեզ հետ խնդրով կիսվի։ Փորձեք ասել հետևյալը. «Կցանկանաս, որ ես լսեմ քեզ, թե՞ խորհուրդ կուզենաս»։ Խորհուրդ մի տվեք, եթե ձեր սիրելին դա չի ուզում։"
           },
           "17": {
-            "title": "Fun Experiences",
-            "description": "Try to remember a fun experience that you shared with your loved one.\n\nPlan a fun activity and try to re-create that experience."
+            "title": "զվարճալի դեպք/փորձ",
+            "description": "Փորձեք հիշել ձեր սիրելիի հետ կիսած որևէ զվարճալի դեպք: Ընտրեք զվարճալի զբաղմունք և փորձեք վերստեղծել այդ դեպքը:"
           },
           "18": {
-            "title": "Favorite Experiences",
-            "description": "Spend some time reminiscing with your loved one about some of your favorite experiences together."
+            "title": "սիրելի դեպք/փորձ",
+            "description": "Որոշ ժամանակ անցկացրեք ձեր սիրելիի հետ՝ հիշելով ձեր համատեղ անցկացրած սիրելի դեպքերը։"
           },
           "19": {
-            "title": "Write a Letter",
-            "description": "Write a letter to your loved one telling them what they mean to you, why you love them, or your hopes for the future with them.\n\nMake sure you give the letter to your loved one!"
+            "title": "գրեք նամակ",
+            "description": "Գրեք նամակ ձեր սիրելիին, պատմեք, թե ինչ է նա նշանակում ձեզ համար, ինչու եք սիրում նրան, պատմեք ձեր ապագայի հույսերի մասին կապված նրա հետ։ Համոզվեք, որ նամակը տալիս եք ձեր սիրելիին։"
           },
           "20": {
-            "title": "Leave a Note",
-            "description": "Leave a note where your loved one can find it that says \"I love when you…\" and then fill in the blank!"
+            "title": "թողեք նշում",
+            "description": "Թողեք մի գրություն այնտեղ, որտեղ ձեր սիրելին կարող է գտնել այն՝ «Ես սիրում եմ, երբ դու» գրությամբ… և այնուհետև լրացրեք բաց թողնվածը։"
           }
         }
       },
