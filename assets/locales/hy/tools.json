@@ -273,124 +273,124 @@
         }
       },
       "healthy-arguments": {
-        "title": "Healthy Arguments",
-        "helper": "Every relationship has its conflicts. Here are a few strategies that you can try when you find yourself in an argument with your partner.",
+        "title": "դարձրեք փաստարկները ավելի առողջ",
+        "helper": "Բոլոր հարաբերություններում էլ լինում են կոնֆլիկտներ։ Ահա մի քանի ռազմավարություններ, որոնք կարող եք փորձել, երբ վիճաբանում եք։",
         "repeater": {
           "1": {
-            "title": "Managing 'Sensitive Topics'",
-            "description": "Approach sensitive topics carefully. Make sure you feel calm enough. Take time to reflect and choose your words more carefully!"
+            "title": "գործ ունենալ «թեժ թեմաների» հետ",
+            "description": "Զգուշորեն մոտեցեք թեժ թեմաներին։ Համոզվեք, որ բավականաչափ հանգիստ եք։ Ժամանակ հատկացրեք մտորելուն և ավելի ուշադիր ընտրեք ձեր խոսքերը։"
           },
           "2": {
-            "title": "How to spend a break outside of conflict",
-            "description": "Find something relaxing to do, like a walk, talk to a friend, exercise or read."
+            "title": "ինչպես անցկացնել դադարները",
+            "description": "Գտեք հանգստացնող մի բան, օրինակ՝ զբոսանք, ընկերոջը զանգահարել, մարզվել կամ կարդալ:"
           },
           "3": {
-            "title": "How to spend a break outside of conflict",
-            "description": "Which are the activities you and your partner can do together that don't involve talking?"
+            "title": "ինչպես անցկացնել դադարները",
+            "description": "Կա՞ն արդյոք գործողություններ, որոնք դուք և ձեր սիրելին կարող եք միասին անել, որոնք չեն ենթադրում զրույց։"
           },
           "4": {
-            "title": "Take a break",
-            "description": "Make sure you have favourite activities that relax and soothe you. Spend time doing things that you like instead of reliving the conflict."
+            "title": "դադար վերցնել",
+            "description": "Համոզվեք, որ ունեք մի քանի սիրված զբաղմունքներ, որոնք թուլացնում կամ հանգստացնում են ձեզ: Զբաղվեք ձեզ դուր եկող բաներով, այլ ոչ թե մտքում կրկնեք այդ վեճը:"
           },
           "5": {
-            "title": "Have a break",
-            "description": "Here's what you can say to your partner: 'I care about this problem and I want to fix it. I just need time to think and I'll be back when I have a clear head.'"
+            "title": "դադարի կոչ",
+            "description": "Ահա թե ինչ կարող եք ասել ձեր սիրելիին. «Ես հոգ եմ տանում այս խնդրի մասին և ուզում եմ լուծել այն։ Բայց ինձ ժամանակ է պետք մտածելու և վերադառնալու, երբ ավելի պարզ միտք ունենամ»։"
           },
           "6": {
-            "title": "Have perspective",
-            "description": "Every relationship has its conflicts. Tolerating or dealing with them successfully, even if they're small, is a way of consolidating the relationship."
+            "title": "պահպանեք հեռանկարը",
+            "description": "Բոլոր հարաբերություններում էլ լինում են կոնֆլիկտներ։ Կոնֆլիկտները հանդուրժելը կամ դրանց հաջողությամբ հաղթահարելը, նույնիսկ եթե դրանք աննշան են, կարող է ամրապնդել հարաբերությունները։"
           },
           "7": {
-            "title": "Try not to criticize your partner",
-            "description": "Critique can make you feel judged or rejected and it's not the best way of driving change. Instead of criticizing your partner, use the affirmations that contain 'I' for expressing your feelings."
+            "title": "խուսափեք քննադատել ձեր սիրելիին",
+            "description": "Քննադատությունը կարող է թվալ մեղադրության կամ մերժման նման, և դա փոփոխություն խրախուսելու լավագույն գործիքը չէ։"
           },
           "8": {
-            "title": "Feeling guilty?",
-            "description": "Try not to be defensive if you feel blamed by your loved one. Try to understand what they need from you before responding or trying to defend yourself."
+            "title": "զգալ մեղավոր",
+            "description": "Փորձեք չպաշտպանվել, եթե ձեզ մեղադրում է ձեր սիրելին։ Փորձեք հասկանալ, թե ինչ է ձեր սիրելին ձեզանից պահանջում, նախքան արձագանքելը կամ ինքներդ ձեզ պաշտպանելու փորձը։"
           },
           "9": {
-            "title": "Ask and offer respect",
-            "description": "In any conflict, there needs to be a basic level of trust and respect for each other. Don't tolerate insults, ridicule, disrespect or disgust. Take a break if you feel disrespected."
+            "title": "ցույց տվեք և խնդրեք հարգանք",
+            "description": "Ցանկացած հակամարտության հիմքում պետք է լինի միմյանց նկատմամբ վստահության և հարգանքի տարրական մակարդակ։ Մի՛ հանդուրժեք վիրավորական խոսքերը, ծաղրը, անհարգալից վերաբերմունքը կամ զզվանքը։ Դադար տվեք, եթե անհարգալից եք զգում։"
           },
           "10": {
-            "title": "Be there for your partner",
-            "description": "Don't run away from a conflict, unless one of you needs to take a break."
+            "title": "եղեք ներկա ձեր սիրելիի հետ",
+            "description": "Մի հեռացեք կոնֆլիկտից, եթե միայն ձեզանից մեկը կարիք չունի որոշ ժամանակով հեռանալու իրավիճակից։"
           },
           "11": {
-            "title": "Practice understanding",
-            "description": "Slow down and listen - don't interrupt."
+            "title": "հասկանալու պրակտիկա",
+            "description": "Դանդաղեցրեք և լսեք մի ընդհատեք:"
           },
           "12": {
-            "title": "Practice understanding",
-            "description": "Focus on your partner's words and body language."
+            "title": "հասկանալու պրակտիկա",
+            "description": "Կենտրոնացեք բառերի և շարժումների վրա որոնք ձեր զուգընկերը օգտագործում է։ "
           },
           "13": {
-            "title": "Practice understanding",
-            "description": "Show interest, even during a conflict."
+            "title": "հասկանալու պրակտիկա",
+            "description": "Ցուցաբերեք հետաքրքրվածություն անգամ վեճի ժամանակ։"
           },
           "14": {
-            "title": "Accept your partner",
-            "description": "Give your loved one the benefit of the doubt."
+            "title": "ընդունեք ձեր սիրելիին",
+            "description": "Տվեք հնարավորություն ձեր սիրելիին արդարանալու համար։"
           },
           "15": {
-            "title": "Accept your partner",
-            "description": "Try not to judge."
+            "title": "ընդունեք ձեր սիրելիին",
+            "description": "Փորձեք չդատել"
           },
           "16": {
-            "title": "Understand your partner",
-            "description": "Use your own words to repeat what you think your loved one is really trying to say."
+            "title": "հասկացեք ձեր սիրելիին",
+            "description": "Օգտագործեք ձեր սեփական խոսքերը՝ կրկնելու համար այն, ինչ կարծում եք, որ ձեր սիրելին իրականում փորձում է ասել։"
           },
           "17": {
-            "title": "Understand your partner",
-            "description": "Don't read minds. Don't assume you know what your loved one is thinking."
+            "title": "հասկացեք ձեր սիրելիին",
+            "description": "Խուսափեք մտքեր կարդալուց։ Մի ենթադրեք, որ գիտեք, թե ինչ է մտածում ձեր սիրելին"
           },
           "18": {
-            "title": "Understand your partner",
-            "description": "Make sure your loved one knows you can't read their mind, and ask them to help you understand their needs through open conversation."
+            "title": "հասկացեք ձեր սիրելիին",
+            "description": "Համոզվեք, որ ձեր սիրելին գիտի, որ դուք չեք կարող մտքեր կարդալ, և խնդրեք նրան օգնել ձեզ հասկանալ նրա կարիքները՝ խոսելով նրա հետ։"
           },
           "19": {
-            "title": "Understand your partner",
-            "description": "Trying to understand how your loved one feels doesn't mean you have to agree with them. Understanding their perspective is key to moving the discussion forward."
+            "title": "հասկացեք ձեր սիրելիին",
+            "description": "Փորձել հասկանալ, թե ինչպես է զգում ձեր սիրելին, չի նշանակում, որ դուք համաձայն եք նրա հետ։ Նրա տեսակետը իսկապես հասկանալը առաջ շարժվելու բանալին է։"
           },
           "20": {
-            "title": "Understand your partner",
-            "description": "Ask as many questions as possible. Make sure you understand what your loved one is telling you. Correct yourself when you make mistakes."
+            "title": "հասկացեք ձեր սիրելիին",
+            "description": "Շատ հարցեր տվեք։ Համոզվեք, որ հասկանում եք, թե ինչ է ասում ձեր սիրելին։ Ուղղեք ինքներդ ձեզ, երբ սխալներ եք թույլ տալիս։"
           },
           "21": {
-            "title": "When your partner is angry",
-            "description": "Always make sure you are safe. If needed, don't hesitate to call 911."
+            "title": "երբ սիրելիդ բարկացած է",
+            "description": "Միշտ համոզվեք, որ անվտանգ եք։ Անհրաժեշտության դեպքում մի՛ հապաղեք զանգահարել 911։"
           },
           "22": {
-            "title": "When you're angry",
-            "description": "Stop and take a deep breath."
+            "title": "երբ դու բարկացած ես",
+            "description": "Կանգնեք և խորը շունչ քաշեք"
           },
           "23": {
-            "title": "When you're angry",
-            "description": "Take a break. Leave the difficult situation until you can resume the conversation when you're not angry."
+            "title": "երբ դու բարկացած ես",
+            "description": "Ընդմիջում արեք։  Դուրս եկեք իրավիճակից մինչև կրկին փորձեք, երբ ավելի քիչ զայրացած լինեք։"
           },
           "24": {
-            "title": "When you're angry",
-            "description": "Discuss with your partner in advance about when to take breaks during a certain conflict or disagreement."
+            "title": "երբ դու բարկացած ես",
+            "description": "Նախապես խոսեք ձեր սիրելիի հետ այն մասին, թե երբ է պետք դադար վերցնել վեճի կամ անհամաձայնության ժամանակ։"
           },
           "25": {
-            "title": "When your partner is angry",
-            "description": "Stop and take a deep breath. Ask your loved one to do the same."
+            "title": "երբ սիրելիդ բարկացած է",
+            "description": "Կանգնեք և խորը շունչ քաշեք; Ասեք ձեր սիրելիին անի նույնը։"
           },
           "26": {
-            "title": "If you take a break",
-            "description": "When both of you feel less angry, try to resume the conversation and find a solution that works for both of you."
+            "title": "երբ դադար վերցնեք",
+            "description": "Երբ երկուսդ էլ ավելի քիչ զայրույթ զգաք, փորձեք վերադառնալ զրույցին և գտնել լուծում, որը կհամապատասխանի ձեզ երկուսին էլ։"
           },
           "27": {
-            "title": "When your partner is angry",
-            "description": "Try to recognize the triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+            "title": "երբ սիրելիդ բարկացած է",
+            "description": "Փորձեք ճանաչել նրանց զայրույթի գրգռիչները կամ նախազգուշացնող նշանները: Կազմեք ծրագիր, թե ինչ անել, երբ նկատեք այդ գրգռիչներից կամ նշաններից մեկը:"
           },
           "28": {
-            "title": "When you're angry",
-            "description": "Try to recognize your own triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+            "title": "երբ դու բարկացած ես",
+            "description": "Փորձեք ճանաչել ձեր սեփական զայրույթի գրգռիչները կամ նախազգուշացնող նշանները: Կազմեք ծրագիր, թե ինչ անել, երբ նկատեք այդ գրգռիչներից կամ նշաններից մեկը:"
           },
           "29": {
-            "title": "Know your 'Sensitive Topics'",
-            "description": "What are the things that come up and cause tension and conflict with your loved one? When they come up, treat 'sensitive topics' with care."
+            "title": "իմացեք ձեր «թեժ թեմաները»",
+            "description": "Որո՞նք են այն բաները, որոնք սովորաբար հանգեցնում են կոնֆլիկտի ձեր սիրելիի հետ։ Երբ դրանք ի հայտ են գալիս, զգուշորեն վարվեք «թեժ թեմաների» հետ։"
           }
         }
       }
@@ -939,7 +939,7 @@
     "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
     "action-btn-label": "շարունակել",
     "helper": "Try to do this for 5 minutes",
-    "take_break": "Take a break",
+    "take_break": "դադար վերցնել",
     "repeater": {
       "1": {
         "title": "Take a walk to relax and clear your thoughts"
