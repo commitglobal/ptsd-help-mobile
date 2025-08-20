@@ -24,13 +24,13 @@
     "body-scan": "մարմնի սկանավորում",
     "julia": "Մարմնի սքանավորում Քեյթի հետ",
     "robyn": "Մարմնի սքանավորում Էրիկայի հետ",
-    "forest": "Forest",
-    "country-road": "Country Road",
-    "beach": "լողափ",
-    "positive-imagery": "Positive Imagery",
-    "my-strengths": "My Strengths",
+    "forest": "Դրական պատկերներ` անտառ",
+    "country-road": "Դրական պատկերներ` գյուղական ճանապարհ",
+    "beach": "Դրական պատկերներ՝ լողափ",
+    "positive-imagery": "Դրական պատկերներ",
+    "my-strengths": "տեսնել իմ ներուժը",
     "shift-thoughts": "Shift Thoughts",
-    "soothe-senses": "Soothe The Senses",
+    "soothe-senses": "հանգստացնել զգայարանները",
     "connect-with-others": "կապ/շփում ուրիշների հետ",
     "change-perspective": "տեսակետ",
     "grounding": "հողանցում",
@@ -1247,93 +1247,90 @@
     "delete": "Delete strength"
   },
   "shift-thoughts": {
-    "title": "Shift Thoughts",
-    "helper": "Find a thought from down below which you can repeat for 5 minutes:",
-    "start": "Start",
+    "title": "մտքի փոփոխություն",
+    "helper": "Ստորև գտեք մի միտք, որը կարող եք կրկնել ինքներդ ձեզ համար 5 րոպե։",
+    "start": "սկսել",
     "repeater": [
       {
-        "title": "I can tolerate this."
+        "title": "խորը շունչ քաշել"
       },
       {
-        "title": "Take a big breath."
+        "title": "շնչել"
       },
       {
-        "title": "Breathe"
+        "title": "կառավարել զայրույթդ"
       },
       {
-        "title": "Manage your anger"
+        "title": "ես չեմ կարող փոխել աշխարհը"
       },
       {
-        "title": "I can't change the world."
+        "title": "հաշվիր մինչև 10-ը և շնչիր"
       },
       {
-        "title": "Count to 10 and breathe."
+        "title": "խորը փորիր, գտիր հանգստություն և կայունություն"
       },
       {
-        "title": "Dig deep; find calm and stability."
+        "title": "մի հավատա այս իրավիճակին"
       },
       {
-        "title": "Don't buy into this situation"
+        "title": "Մի թող, որ դա քեզ վրա ազդի"
       },
       {
-        "title": "Don't let it get to you."
+        "title": "ուշադրություն մի դարձրու"
       },
       {
-        "title": "Don't pay attention"
+        "title": "մի կծիր"
       },
       {
-        "title": "Don't bite."
+        "title": "մի գնա այդտեղ"
       },
       {
-        "title": "Don't go there."
+        "title": "հեշտ է արդյոք"
       },
       {
-        "title": "Easy does it."
+        "title": "դու կարող ես անցնել դրա միջով"
       },
       {
-        "title": "You can get through it."
+        "title": "Ինչպե՞ս կհաղթահարեր դա (մարդը ում դուք հարգում եք)"
       },
       {
-        "title": "How would (person you respect) handle this?"
+        "title": "ես չեմ կարող կառավարել այն ինչ անում են այլ մարդիկ"
       },
       {
-        "title": "I can't control what other people do."
+        "title": "դա անցյալում է"
       },
       {
-        "title": "It's in the past."
+        "title": "Դա մեծ բան չէ, ես նեղվելու կարիք չկա"
       },
       {
-        "title": "It's not a big thing; I don't need to get upset."
+        "title": "արժանի չի"
       },
       {
-        "title": "It's not worth it."
+        "title": "աչքդ պահիր մրցանակի վրա"
       },
       {
-        "title": "Keep your eye on the prize."
+        "title": "հանգիստ թողեք"
       },
       {
-        "title": "Leave it alone."
+        "title": "թող լինի"
       },
       {
-        "title": "Let it be."
+        "title": "թող գնա"
       },
       {
-        "title": "Let it go."
+        "title": "դանդաղիր"
       },
       {
-        "title": "Slow down."
+        "title": "դանմնացեք ճիշտ ուղու վրադաղիր"
       },
       {
-        "title": "Stay the course."
+        "title": "կանգնիր, պարզապես կանգնիր"
       },
       {
-        "title": "Stop! Just stop."
+        "title": "սա նույնպես կանցնի"
       },
       {
-        "title": "This, too, will pass."
-      },
-      {
-        "title": "Use your tools!"
+        "title": "Օգտագործիր քո գործիքները"
       }
     ]
   },
