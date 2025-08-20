@@ -22,7 +22,7 @@ export default function ConnectWithOthers() {
 
   const items = t(toolsTranslationKeys.CONNECT_WITH_OTHERS.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <ScreenWithChangingText
@@ -34,7 +34,7 @@ export default function ConnectWithOthers() {
         onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       staticText={t(toolsTranslationKeys.CONNECT_WITH_OTHERS.staticText)}
-      items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+      items={items.map((item) => ({ ...item, id: item.title }))}
       imageUrl={mediaMapping['CONNECT_WITH_OTHERS.CATEGORY_ICON']}
       footerProps={{ onMainAction: finishTool }}
     />

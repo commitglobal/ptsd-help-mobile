@@ -17,7 +17,7 @@ export default function SleepPerspective() {
 
   const items = t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_PERSPECTIVE.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function SleepPerspective() {
           onLeftPress: () => router.back(),
         }}
         staticText={t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_PERSPECTIVE.description)}
-        items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+        items={items.map((item) => ({ ...item, id: item.title }))}
         imageUrl={mediaMapping['SLEEP.SLEEP_PERSPECTIVE.CATEGORY_ICON']}
         footerProps={{ onMainAction: () => finishTool() }}></ScreenWithChangingText>
     </>

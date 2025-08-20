@@ -20,7 +20,7 @@ export default function Grounding() {
 
   const items = t(toolsTranslationKeys.GROUNDING.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <ScreenWithChangingText
@@ -31,7 +31,7 @@ export default function Grounding() {
         iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
         onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
-      items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+      items={items.map((item) => ({ ...item, id: item.title }))}
       imageUrl={mediaMapping['GROUNDING.CATEGORY_ICON']}
       footerProps={{ onMainAction: finishTool }}
     />

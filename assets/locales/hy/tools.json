@@ -89,310 +89,310 @@
       "reconnect-with-partner": {
         "title": "վերամիավորվել իմ զուգընկերոջ հետ",
         "helper": "Փորձեք այս ռազմավարությունները՝ կամ ինքնուրույն, կամ ավելի լավ է՝ ձեր զուգընկերոջ հետ։",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "նկատեք լավ/հաճելի բան",
             "description": "Մեկ շաբաթ շարունակ, ամեն օր, ձեր զուգընկերոջ մեջ նկատեք մեկ բան։ Դա կարող է լինել այնքան պարզ որքան օրինակ նոր սանրվածք կամ սիրո և կամ աջակցության նկատելը։ Մի պահ հատկացրեք ձեր զուգընկերոջ հետ կիսվելու ձեր նկատածով։",
             "calendar": "Notice something nice about my partner"
           },
-          "2": {
+          {
             "title": "միասին նկատեք հաճելի բաները",
             "description": "Մարտահրավեր նետեք ձեր զուգընկերոջը, որպեսզի երկուսդ էլ  տեսնեք, թե արդյոք կարող եք նկատել և մեկնաբանել միմյանց մեջ մեկ լավ բան ամեն օր շաբաթվա ընթացքում։",
             "sms": "I'm making a commitment to notice something nice about you for the next week. Will you try to do the same for me?"
           },
-          "3": {
+          {
             "title": "եղեք սիրալիր",
             "description": "Գրկեք կամ բռնեք ձեր ամուսնու կամ զուգընկերոջ ձեռքը այնպիսի ժամանակ, որը սովորաբար չէիք անի։ Փորձեք ձեր զուգընկերոջը ցույց տալ ֆիզիկական ջերմության փոքրիկ դրսևորում այնպես, ինչպես կարծում եք, որ նա կգնահատի։",
             "calendar": "Hug or hold my partner's hand"
           },
-          "4": {
+          {
             "title": "եղեք սիրալիր միասին",
             "description": "Խրախուսեք ձեր զուգընկերոջը պարտավորվել գրկախառնվել կամ ձեռք ձեռքի բռնել հաջորդ շաբաթվա ընթացքում օրական առնվազն մեկ անգամ։",
             "sms": "I'd like us to make a commitment to try to hug or hold hands at least once a day this week. Can we try to do this together and see what happens?"
           },
-          "5": {
+          {
             "title": "ծառայության մասին ակտ",
             "description": "Գտեք մի փոքրիկ ծառայություն, որը կարող եք մատուցել ձեր զուգընկերոջը։ Ինչ-որ բան, որ նա պետք է անի կամ արել է, փոխարենը արեք դուք։ Պարզապես մեկ բան, նույնիսկ ինչ-որ փոքր բան, օրինակ՝ աղբը դուրս հանելը։",
             "calendar": "Do at least one thing today that is helpful to my partner"
           },
-          "6": {
+          {
             "title": "ծառայության մասին ակտ միասին",
             "description": "Մարտահրավեր նետեք ձեր զուգընկերոջը պարտավորվել ամեն օր միմյանց համար մեկ փոքրիկ ծառայություն կատարել։",
             "sms": "I'd like us to make a commitment to try to do at least one thing each day that is helpful to the other person. Will you join me on this?"
           },
-          "7": {
+          {
             "title": "կամավորել միասին",
             "description": "Միասին ինչ-որ բան արեք՝ ավելի լայն համայնքին օգնելու համար:"
           },
-          "8": {
+          {
             "title": "ով եմ ես ուզում լինել",
             "description": "Մի պահ մտածեք 3 բառ, որոնք կօգտագործեիք՝ նկարագրելու համար ձեզ որպես այն զուգընկերոջ, որը իդեալականորեն կցանկանայիք լինել: Գուցե «կարեկից», «զվարճալի», «հանգիստ» կամ բոլորովին այլ բան: Գրեք բառերը, ապա հաջորդ շաբաթվա ընթացքում հնարավորինս լավ կիրառեք այդ հատկանիշները: Ուշադրություն դարձրեք, թե ինչպես է դա զգացվում:"
           },
-          "9": {
+          {
             "title": "անդրադառնալով ձեր զուգընկերոջը",
             "description": "Մի փաքր ժամանակ տրամադրեք անդրադառնալու համար հետևյալ հարցերին։\n\n- Առաջին հանդիպման ժամանակ, արտաքին տեսքից բացի, ի՞նչն է ամենաշատը գրավել ձեզ ձեր զուգընկերոջ մեջ։\n\n- Ի՞նչ անձնային հատկանիշներ են քեզ գրավել զուգընկերոջդ մեջ երբ դու առաջին անգամ հանդիպեցիր նրան։ \n\n- Որո՞նք եք համարում ձեր զուգընկերոջ ամենամեծ ուժեղ կողմերը։"
           },
-          "10": {
+          {
             "title": "ցույց տուր աջակցությունդ",
             "description": "Կենտրոնացեք ձեր զուգընկերոջը ցույց տալու, որ դուք նրա կողմից եք։ Եթե ձեր զուգընկերը ինչ-որ բանից նեղված է, փորձեք գտնել նրա կողմը բռնելու և ձեր աջակցությունը հայտնելու եղանակներ։"
           },
-          "11": {
+          {
             "title": "ծառայության մասին ակտ",
             "description": "Ամեն ինչ արեք ՝ նրա համար օգտակար մի բան անելու համար, մի բան, որը, ձեր կարծիքով, նա իսկապես կգնահատի:",
             "calendar": "Perform an act of service for my partner"
           },
-          "12": {
+          {
             "title": "զարգացրեք գնահատանքը",
             "description": "10 րոպե անցկացրեք մենակ նստած հանգիստ տեղում։ Փակեք աչքերը և փորձեք ջերմության և գնահատանքի զգացում առաջացնել ձեր զուգընկերոջ նկատմամբ։ Մտածեք նրա դրական հատկանիշների մասին։ Ի՞նչ է պատահում, երբ ժամանակ եք հատկացնում նրա ուժեղ կողմերի կամ դրական հատկանիշների մասին մտորելուն։"
           },
-          "13": {
+          {
             "title": "գործեք որպես թիմ",
             "description": "Թող ձեր զուգընկերը իմանա, որ դուք թիմի անդամ եք և կարող եք միասին ինչ-որ բան անել։ Սա կարող է լինել ձեր ապագայի մասին խոսելը, ապագայի համատեղ միջոցառում պլանավորելը կամ միասին փոքր մարտահրավերի ձեռնարկումը։",
             "calendar": "Plan a future activity with my partner"
           },
-          "14": {
+          {
             "title": "քննադատումից հրաժարում",
             "description": "Հատկացրեք 5 րոպե՝ կենտրոնանալու ձեր զուգընկերոջը չքննադատելու փորձերի վրա: Տեսեք, թե ինչպես է զգացվում մի քանի րոպեով անտեսել ցանկացած դատողություն:"
           },
-          "15": {
+          {
             "title": "նվիրեք փոքր նվեր",
             "description": "Զարմացրեք ձեր զուգընկերոջը փոքրիկ նվերով՝ դա կարող է լինել ցանկացած բան՝ կարճ նամակ, ձեր ժամանակը, ծաղիկներ կամ ցանկացած այլ բան, որը արագ, հեշտ է և ցույց է տալիս ձեր հոգատարությունը։",
             "calendar": "Get a small gift for my partner"
           },
-          "16": {
+          {
             "title": "արտահայտեք գնահատանք",
             "description": "Ամեն անգամ արտահայտեք ձեր երախտագիտությունը ձեր զուգընկերոջ նկատմամբ՝ անելով մի բան, որից լավ եք զգում, զգում եք գնահատաված կամ ձեր կյանքը հեշտացված։"
           },
-          "17": {
+          {
             "title": "դադարեցրեք հաշիվը պահելը",
             "description": "Եթե նկատում եք, հաշիվը կորցնում եք, թե որքան եք անում ձեր զուգընկերոջ համար՝ փոխարենը ոչինչ չստանալով, փորձեք դադարեցնել «հաշվի պահել» առնվազն մեկ օր առաջ։ Երբեմն սպասումներից հրաժարվելը կարող է հեշտացնել կապի վերականգնումը, նույնիսկ եթե միայն կարճ ժամանակով։"
           },
-          "18": {
+          {
             "title": "զբաղվեք չդատելով",
             "description": "Եթե դուք և ձեր զուգընկերը կոնֆլիկտի մեջ եք, փորձեք չդատել նրան ամբողջ զրույցի ընթացքում։ Սա դժվար է անել։ Կարևորը չդատելու ուղղությամբ աշխատելն է, և եթե դժվարություններ եք ունենում, դա նորմալ է։"
           },
-          "19": {
+          {
             "title": "անակընկալ հանդիպում",
             "description": "Զարմացրեք ձեր զուգընկերոջը պլանավորված գործունեությամբ կամ ժամադրությամբ։ Դա կարող է լինել ինչ-որ փոքր բան, օրինակ՝ միասին զբոսանք կամ ֆիլմ դիտելը։",
             "calendar": "Surprise my partner with an activity together"
           },
-          "20": {
+          {
             "title": "Reliving Fun Times",
             "description": "Think of a short activity (or conversation topic) that you and your partner did together when you first met. Choose something neutral, that's not likely to cause conflict and ask if they would like to make time to try it again."
           },
-          "21": {
+          {
             "title": "Remind Yourself of the Positives",
             "description": "Make a list of all the positive qualities your partner has. Keep the list somewhere you'll see it and add to it every time you think of something new."
           }
-        }
+        ]
       },
       "positive-communication": {
         "title": "դրական հաղորդակցում",
         "helper": "Դրական հաղորդակցությունը յուրաքանչյուր լավ հարաբերությունների բանալին է: Փորձեք այս առաջարկներից մի քանիսը:",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "Overcome your automatic negative thoughts",
             "description": "Think about positive things about your partner"
           },
-          "2": {
+          {
             "title": "Start a conversation with your partner",
             "description": "Talk about your feelings and thoughts with your partner"
           },
-          "3": {
+          {
             "title": "ցույց տուր սեր",
             "description": "Ասեք ձեր սիրելիին մեկ բանի մասին, որը դուք սիրում կամ գնահատում եք նրա մեջ: Ուղարկեք հաղորդագրություն կամ թողեք մի գրություն, որտեղ գիտեք, որ նա կգտնի այն:\n\nԵթե կարող եք, արեք դա հենց հիմա:"
           },
-          "4": {
+          {
             "title": "ցույց տվեք հիացմունք",
             "description": "Ասեք ձեր սիրելիին 1 բան, որը հիացնում է ձեզ նրա մեջ։"
           },
-          "5": {
+          {
             "title": "սկսեք զրույց",
             "description": "Պլանավորեք և սկսեք զրույց ձեր սիրելիի հետ այն բանի մասին, որը, ինչպես գիտեք, հետաքրքրում է ձեզ երկուսին էլ։"
           },
-          "6": {
+          {
             "title": "առաջին տպաավորություններ",
             "description": "Կարո՞ղ եք հիշել ձեր սիրելիի հետ կապված ձեր ամենավաղ տպավորությունները։ Առանց ներկայի հետ համեմատություններ անելու, կիսվեք ձեր սիրելիի հետ այն մասին, թե ինչն եք առաջին անգամ սիրել և գնահատել նրա մեջ, երբ հանդիպել եք կամ իսկապես ճանաչել եք միմյանց։"
           },
-          "7": {
+          {
             "title": "ընդհանուր արժեքներ",
             "description": "Ի՞նչ ընդհանուր նպատակ կամ արժեք ունեք դուք և ձեր սիրելին։ Հարցրեք ձեր սիրելիին նրա հաջորդ ամսվա կամ տարվա նպատակների և այն մասին, թե ինչպես կարող եք օգնել այդ նպատակին հասնելու հարցում։"
           },
-          "8": {
+          {
             "title": "նվիրում",
             "description": "2 րոպե մտածեք այս մասին. ի՞նչ է անում ձեր սիրելին առնվազն մեկ բան, որը նպաստում է ձեր և նրա հարաբերություններին: Փորձեք նշել առնվազն մեկ բան, նույնիսկ եթե այն փոքր է:"
           },
-          "9": {
+          {
             "title": "ուղղակի լսիր",
             "description": "Խնդրեք ձեր սիրելիին պատմել ձեզ իր օրվա լավագույն և ամենադժվար հատվածների մասին։ Կենտրոնացեք իր օրվա և ամենադժվար հատվածների վրա։ Կենտրոնացեք լսելու վրա։\n\nՀաշվի առեք ձեր սիրելիի ասածը՝ առանց որևէ բան լուծելու փորձելու։"
           },
-          "10": {
+          {
             "title": "մարտահրավերների հաղթահարում",
             "description": "Մտածեք ձեր սիրելիի հետ հարաբերությունների այն ժամանակի մասին, երբ դուք միասին ստիպված եք եղել հաղթահարել ինչ-որ դժվարություն։"
           },
-          "11": {
+          {
             "title": "հաջորդ անգամ, երբ դուք խոսեք",
             "description": "Փորձեք ձեր սիրելիի հետ անցկացրած մի քանի րոպեները վերածել դրական զրույցի՝ ավելի շատ խոսեք ձեզ համար ընդհանուր թեմաների մասին, քան սովորաբար անում էիք։"
           },
-          "12": {
+          {
             "title": "լսելք բացահայտ",
             "description": "Պլանավորեք զրույց այն մասին, թե ինչի մասին է ձեր սիրելին ուզում խոսել և որը նրան հետաքրքրում է: Լսեք որքան հնարավոր է անկեղծորեն: Մի փոխեք թեման:"
           },
-          "13": {
+          {
             "title": "կիսվեք նրանց հետաքրքրություններով",
             "description": "Պլանավորեք և սկսեք զրույց ձեր սիրելիի հետ այն բանի մասին, որը, ինչպես գիտեք, հետաքրքիր է նրա համար, բայց սովորաբար հետաքրքիր չէ ձեզ համար։"
           },
-          "14": {
+          {
             "title": "նրբանկատություն",
             "description": "Գտեք մի հաճելի բան, անկախ նրանից, թե մեծ թե փոքր, որ ձեր սիրելին վերջերս արել է։ Կիսվեք դրանով ձեր սիրելիի հետ և պատմեք նրան, թե ինչ զգացողություններ է դա առաջացրել ձեզ մոտ։"
           },
-          "15": {
+          {
             "title": "կատարել ծեսեր",
             "description": "Խնդրեք ձեր սիրելիին սկսել կամ հետևել ձեզ հետ ամենօրյա կամ շաբաթական ծես: Ծեսը կարող է լինել ցանկացած բան՝ հեռախոսազանգ, ճաշ, գրկախառնություն կամ այլ բան, որը կարող եք միասին կիսել:"
           },
-          "16": {
+          {
             "title": "կիսվեք խնդիրներով",
             "description": "Հարցրեք ձեր սիրելիին, թե ինչ է ուզում, որ դուք անեք հաջորդ անգամ, երբ նա ձեզ հետ խնդրով կիսվի։ Փորձեք ասել հետևյալը. «Կցանկանաս, որ ես լսեմ քեզ, թե՞ խորհուրդ կուզենաս»։ Խորհուրդ մի տվեք, եթե ձեր սիրելին դա չի ուզում։"
           },
-          "17": {
+          {
             "title": "զվարճալի դեպք/փորձ",
             "description": "Փորձեք հիշել ձեր սիրելիի հետ կիսած որևէ զվարճալի դեպք: Ընտրեք զվարճալի զբաղմունք և փորձեք վերստեղծել այդ դեպքը:"
           },
-          "18": {
+          {
             "title": "սիրելի դեպք/փորձ",
             "description": "Որոշ ժամանակ անցկացրեք ձեր սիրելիի հետ՝ հիշելով ձեր համատեղ անցկացրած սիրելի դեպքերը։"
           },
-          "19": {
+          {
             "title": "գրեք նամակ",
             "description": "Գրեք նամակ ձեր սիրելիին, պատմեք, թե ինչ է նա նշանակում ձեզ համար, ինչու եք սիրում նրան, պատմեք ձեր ապագայի հույսերի մասին կապված նրա հետ։ Համոզվեք, որ նամակը տալիս եք ձեր սիրելիին։"
           },
-          "20": {
+          {
             "title": "թողեք նշում",
             "description": "Թողեք մի գրություն այնտեղ, որտեղ ձեր սիրելին կարող է գտնել այն՝ «Ես սիրում եմ, երբ դու» գրությամբ… և այնուհետև լրացրեք բաց թողնվածը։"
           }
-        }
+        ]
       },
       "healthy-arguments": {
         "title": "դարձրեք փաստարկները ավելի առողջ",
         "helper": "Բոլոր հարաբերություններում էլ լինում են կոնֆլիկտներ։ Ահա մի քանի ռազմավարություններ, որոնք կարող եք փորձել, երբ վիճաբանում եք։",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "գործ ունենալ «թեժ թեմաների» հետ",
             "description": "Զգուշորեն մոտեցեք թեժ թեմաներին։ Համոզվեք, որ բավականաչափ հանգիստ եք։ Ժամանակ հատկացրեք մտորելուն և ավելի ուշադիր ընտրեք ձեր խոսքերը։"
           },
-          "2": {
+          {
             "title": "ինչպես անցկացնել դադարները",
             "description": "Գտեք հանգստացնող մի բան, օրինակ՝ զբոսանք, ընկերոջը զանգահարել, մարզվել կամ կարդալ:"
           },
-          "3": {
+          {
             "title": "ինչպես անցկացնել դադարները",
             "description": "Կա՞ն արդյոք գործողություններ, որոնք դուք և ձեր սիրելին կարող եք միասին անել, որոնք չեն ենթադրում զրույց։"
           },
-          "4": {
+          {
             "title": "դադար վերցնել",
             "description": "Համոզվեք, որ ունեք մի քանի սիրված զբաղմունքներ, որոնք թուլացնում կամ հանգստացնում են ձեզ: Զբաղվեք ձեզ դուր եկող բաներով, այլ ոչ թե մտքում կրկնեք այդ վեճը:"
           },
-          "5": {
+          {
             "title": "դադարի կոչ",
             "description": "Ահա թե ինչ կարող եք ասել ձեր սիրելիին. «Ես հոգ եմ տանում այս խնդրի մասին և ուզում եմ լուծել այն։ Բայց ինձ ժամանակ է պետք մտածելու և վերադառնալու, երբ ավելի պարզ միտք ունենամ»։"
           },
-          "6": {
+          {
             "title": "պահպանեք հեռանկարը",
             "description": "Բոլոր հարաբերություններում էլ լինում են կոնֆլիկտներ։ Կոնֆլիկտները հանդուրժելը կամ դրանց հաջողությամբ հաղթահարելը, նույնիսկ եթե դրանք աննշան են, կարող է ամրապնդել հարաբերությունները։"
           },
-          "7": {
+          {
             "title": "խուսափեք քննադատել ձեր սիրելիին",
             "description": "Քննադատությունը կարող է թվալ մեղադրության կամ մերժման նման, և դա փոփոխություն խրախուսելու լավագույն գործիքը չէ։"
           },
-          "8": {
+          {
             "title": "զգալ մեղավոր",
             "description": "Փորձեք չպաշտպանվել, եթե ձեզ մեղադրում է ձեր սիրելին։ Փորձեք հասկանալ, թե ինչ է ձեր սիրելին ձեզանից պահանջում, նախքան արձագանքելը կամ ինքներդ ձեզ պաշտպանելու փորձը։"
           },
-          "9": {
+          {
             "title": "ցույց տվեք և խնդրեք հարգանք",
             "description": "Ցանկացած հակամարտության հիմքում պետք է լինի միմյանց նկատմամբ վստահության և հարգանքի տարրական մակարդակ։ Մի՛ հանդուրժեք վիրավորական խոսքերը, ծաղրը, անհարգալից վերաբերմունքը կամ զզվանքը։ Դադար տվեք, եթե անհարգալից եք զգում։"
           },
-          "10": {
+          {
             "title": "եղեք ներկա ձեր սիրելիի հետ",
             "description": "Մի հեռացեք կոնֆլիկտից, եթե միայն ձեզանից մեկը կարիք չունի որոշ ժամանակով հեռանալու իրավիճակից։"
           },
-          "11": {
+          {
             "title": "հասկանալու պրակտիկա",
             "description": "Դանդաղեցրեք և լսեք մի ընդհատեք:"
           },
-          "12": {
+          {
             "title": "հասկանալու պրակտիկա",
             "description": "Կենտրոնացեք բառերի և շարժումների վրա որոնք ձեր զուգընկերը օգտագործում է։ "
           },
-          "13": {
+          {
             "title": "հասկանալու պրակտիկա",
             "description": "Ցուցաբերեք հետաքրքրվածություն անգամ վեճի ժամանակ։"
           },
-          "14": {
+          {
             "title": "ընդունեք ձեր սիրելիին",
             "description": "Տվեք հնարավորություն ձեր սիրելիին արդարանալու համար։"
           },
-          "15": {
+          {
             "title": "ընդունեք ձեր սիրելիին",
             "description": "Փորձեք չդատել"
           },
-          "16": {
+          {
             "title": "հասկացեք ձեր սիրելիին",
             "description": "Օգտագործեք ձեր սեփական խոսքերը՝ կրկնելու համար այն, ինչ կարծում եք, որ ձեր սիրելին իրականում փորձում է ասել։"
           },
-          "17": {
+          {
             "title": "հասկացեք ձեր սիրելիին",
             "description": "Խուսափեք մտքեր կարդալուց։ Մի ենթադրեք, որ գիտեք, թե ինչ է մտածում ձեր սիրելին"
           },
-          "18": {
+          {
             "title": "հասկացեք ձեր սիրելիին",
             "description": "Համոզվեք, որ ձեր սիրելին գիտի, որ դուք չեք կարող մտքեր կարդալ, և խնդրեք նրան օգնել ձեզ հասկանալ նրա կարիքները՝ խոսելով նրա հետ։"
           },
-          "19": {
+          {
             "title": "հասկացեք ձեր սիրելիին",
             "description": "Փորձել հասկանալ, թե ինչպես է զգում ձեր սիրելին, չի նշանակում, որ դուք համաձայն եք նրա հետ։ Նրա տեսակետը իսկապես հասկանալը առաջ շարժվելու բանալին է։"
           },
-          "20": {
+          {
             "title": "հասկացեք ձեր սիրելիին",
             "description": "Շատ հարցեր տվեք։ Համոզվեք, որ հասկանում եք, թե ինչ է ասում ձեր սիրելին։ Ուղղեք ինքներդ ձեզ, երբ սխալներ եք թույլ տալիս։"
           },
-          "21": {
+          {
             "title": "երբ սիրելիդ բարկացած է",
             "description": "Միշտ համոզվեք, որ անվտանգ եք։ Անհրաժեշտության դեպքում մի՛ հապաղեք զանգահարել 911։"
           },
-          "22": {
+          {
             "title": "երբ դու բարկացած ես",
             "description": "Կանգնեք և խորը շունչ քաշեք"
           },
-          "23": {
+          {
             "title": "երբ դու բարկացած ես",
             "description": "Ընդմիջում արեք։  Դուրս եկեք իրավիճակից մինչև կրկին փորձեք, երբ ավելի քիչ զայրացած լինեք։"
           },
-          "24": {
+          {
             "title": "երբ դու բարկացած ես",
             "description": "Նախապես խոսեք ձեր սիրելիի հետ այն մասին, թե երբ է պետք դադար վերցնել վեճի կամ անհամաձայնության ժամանակ։"
           },
-          "25": {
+          {
             "title": "երբ սիրելիդ բարկացած է",
             "description": "Կանգնեք և խորը շունչ քաշեք; Ասեք ձեր սիրելիին անի նույնը։"
           },
-          "26": {
+          {
             "title": "երբ դադար վերցնեք",
             "description": "Երբ երկուսդ էլ ավելի քիչ զայրույթ զգաք, փորձեք վերադառնալ զրույցին և գտնել լուծում, որը կհամապատասխանի ձեզ երկուսին էլ։"
           },
-          "27": {
+          {
             "title": "երբ սիրելիդ բարկացած է",
             "description": "Փորձեք ճանաչել նրանց զայրույթի գրգռիչները կամ նախազգուշացնող նշանները: Կազմեք ծրագիր, թե ինչ անել, երբ նկատեք այդ գրգռիչներից կամ նշաններից մեկը:"
           },
-          "28": {
+          {
             "title": "երբ դու բարկացած ես",
             "description": "Փորձեք ճանաչել ձեր սեփական զայրույթի գրգռիչները կամ նախազգուշացնող նշանները: Կազմեք ծրագիր, թե ինչ անել, երբ նկատեք այդ գրգռիչներից կամ նշաններից մեկը:"
           },
-          "29": {
+          {
             "title": "իմացեք ձեր «թեժ թեմաները»",
             "description": "Որո՞նք են այն բաները, որոնք սովորաբար հանգեցնում են կոնֆլիկտի ձեր սիրելիի հետ։ Երբ դրանք ի հայտ են գալիս, զգուշորեն վարվեք «թեժ թեմաների» հետ։"
           }
-        }
+        ]
       }
     },
     "common": {
@@ -450,86 +450,86 @@
   },
   "sleep": {
     "title": "քնել",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Գնացեք քնելու միայն այն ժամանակ, երբ քնկոտ եք"
       },
-      "2": {
+      {
         "title": "Եթե 20 րոպե անկողնում եք և դեռ չեք քնում, վեր կացեք և զբաղվեք ինչ-որ այլ բանով (առանց լույս կամ համակարգչի /հեռախոս/հեռուստացույց միացնելու):"
       },
-      "3": {
+      {
         "title": "լսեք հանգստաղնող երաժշտություն"
       },
-      "4": {
+      {
         "title": "կարդացեք ինչ-որ հանգստացնող բան"
       },
-      "5": {
+      {
         "title": "առանց կոֆեինի թեյ խմեք"
       },
-      "6": {
+      {
         "title": "մեկ տաք բաժակ կաթ խմեք"
       },
-      "7": {
+      {
         "title": "Դանդաղ խորը շունչ քաշեք քթով- 10 րոպե արեք։ Կարող եք օգտագործել այս հավելվածի շնչառական գործիքը, եթե ցանկանում եք։"
       },
-      "8": {
+      {
         "title": "Եթե քաղցած եք, թեթև նախուտեստ կերեք՝ փորձեք շաքարի ցածր պարունակությամբ և ալկոհոլ չպարունակող ինչ-որ բան:"
       },
-      "9": {
+      {
         "title": "Համոզվեք, որ սենյակը զով է:"
       },
-      "10": {
+      {
         "title": "Փորձեք ականջի խցաններ կրել, եթե ձեր շրջապատում աղմուկ կա։"
       },
-      "11": {
+      {
         "title": "Եթե ձեր միջավայրում լույս կա, փորձեք աչքի կապիչ։"
       },
-      "12": {
+      {
         "title": "Վստահ եղեք, որ սենյակը մութ է։"
       },
-      "13": {
+      {
         "title": "Անկողին մտնելուց մեկ կամ 2 ժամ առաջ տաք լոգանք ընդունեք։"
       },
-      "14": {
+      {
         "title": "Համոզվեք, որ հարմարավետ եք, և հագուստը չի սահմանափակում ձեզ։"
       },
-      "15": {
+      {
         "title": "Խուսափեք նայել ժամացույցին։"
       },
-      "16": {
+      {
         "title": "Թողեք միտքը թափառի։ Չափազանց շատ մի կենտրոնացեք քնելու գործընթացի վրա։"
       },
-      "17": {
+      {
         "title": "Եթե անհանգստանում եք, վեր կացեք և գրի առեք ձեր անհանգստությունները, ապա թողեք դրանք անցնեն։"
       },
-      "18": {
+      {
         "title": "Պատկերացրեք հանգստացնող, անվտանգ վայր. պատկերացրեք ձեզ գետի, գետակի կամ մարգագետնի մոտ։ Պատկերացրեք տեսարան, տեսարժան վայրեր, ձայները և հոտերը, երբ քնում եք։ Կարող եք օգտագործել այս հավելվածի դրական պատկերացման գործիքը, եթե ցանկանում եք։"
       },
-      "19": {
+      {
         "title": "Զգացեք, թե ինչպես են ձեր մարմնի բոլոր մկանները թուլանում, երբ ընկղմվում/պառկում եք ներքնակի մեջ։ Կարող եք օգտագործել այս հավելվածի պրոգրեսիվ մկանների թուլացման գործիքը, եթե ցանկանում եք։"
       },
-      "20": {
+      {
         "title": "Երեկոյան խուսափեք նիկոտինից, կոֆեինից և ալկոհոլից։"
       },
-      "21": {
+      {
         "title": "Խուսափեք սննդի մեջ չափից շատ աղ օգտագործելուց։ Սա կարող է հանգեցնել նրան, որ դուք ամբողջ գիշեր ծարավից արթնանաք։"
       },
-      "22": {
+      {
         "title": "Անջատեք հեռուստացույցը և համակարգիչը քնելուց 30 րոպե առաջ։"
       },
-      "23": {
+      {
         "title": "Մշակեք հանգստացնող քնելու ռեժիմ:"
       },
-      "24": {
+      {
         "title": "Վեր կաց և մի բաժակ ջուր խմիր:"
       },
-      "25": {
+      {
         "title": "Համոզվեք, որ ձեր սավանները մաքուր են, իսկ բարձն ու ներքնակը հարմարավետ և ամուր են։"
       },
-      "26": {
+      {
         "title": "Փորձեք չանհանգստանալ քնելու համար, պարզապես թույլ տվեք, որ դա պատահի:"
       }
-    },
+    ],
     "sleep-habits": {
       "title": "լավ քնի սովորություններ",
       "info": "Info",
@@ -892,47 +892,47 @@
     "sleep-perspective": {
       "title": "Change your sleep perspective",
       "description": "Try these habits to improve your sleep quality",
-      "repeater": {
-        "1": {
+      "repeater": [
+        {
           "title": "I can tolerate this."
         },
-        "2": {
+        {
           "title": "I will survive even if I don't sleep at all tonight."
         },
-        "3": {
+        {
           "title": "I've done this before, so I know I can do it again."
         },
-        "4": {
+        {
           "title": "I don't have to feel comfortable all the time. I'm human."
         },
-        "5": {
+        {
           "title": "This is just another challenge that I will solve and cope with."
         },
-        "6": {
+        {
           "title": "I've been through this before and I was fine."
         },
-        "7": {
+        {
           "title": "One bad night of sleep is not the end of the world."
         },
-        "8": {
+        {
           "title": "This restless night will pass."
         },
-        "9": {
+        {
           "title": "Although it feels like I'll never sleep well, that might not be the case. Anticipating that I might not sleep well will probably make my sleep worse. I've functioned well before even after not sleeping well."
         },
-        "10": {
+        {
           "title": "I've functioned poorly before even after sleeping well."
         },
-        "11": {
+        {
           "title": "Although I'm anticipating poor sleep, it could be fine... I've slept well before."
         },
-        "12": {
+        {
           "title": "The body naturally regulates sleep; even if I miss some sleep, I'll be able to function."
         },
-        "13": {
+        {
           "title": "If I don't worry about sleep, one bad night will probably improve my sleep the next night."
         }
-      }
+      ]
     }
   },
   "pause": {
@@ -940,56 +940,56 @@
     "action-btn-label": "շարունակել",
     "helper": "Try to do this for 5 minutes",
     "take_break": "դադար վերցնել",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Take a walk to relax and clear your thoughts"
       },
-      "2": {
+      {
         "title": "Breathe deeply for 10 minutes or more"
       },
-      "3": {
+      {
         "title": "Exercise (bike riding, hiking, weight lifting, swimming, running)"
       },
-      "4": {
+      {
         "title": "Garden or do yard work"
       },
-      "5": {
+      {
         "title": "Tell yourself positive things like \"I can handle this situation without losing my cool\""
       },
-      "6": {
+      {
         "title": "Draw or paint to express your emotions"
       },
-      "7": {
+      {
         "title": "Call a friend or loved one for support"
       },
-      "8": {
+      {
         "title": "Call your therapist for support"
       },
-      "9": {
+      {
         "title": "Stretch and breathe deeply and slowly"
       },
-      "10": {
+      {
         "title": "Remember that you can cope"
       },
-      "11": {
+      {
         "title": "Meditate to calm your mind"
       },
-      "12": {
+      {
         "title": "Pray for guidance and support"
       },
-      "13": {
+      {
         "title": "Think about what advice someone you trust would give you"
       },
-      "14": {
+      {
         "title": "Spend time with a pet for comfort and peace"
       },
-      "15": {
+      {
         "title": "Take a shower or bath to relax"
       },
-      "16": {
+      {
         "title": "Think about how you want to be a role model for others in your life - children etc."
       }
-    }
+    ]
   },
   "my-feelings": {
     "done": "կատարված",
@@ -1002,19 +1002,19 @@
     "discomfort-meter": "Discomfort Meter",
     "discomfort-intensity": "How intense is your discomfort right now?",
     "stress": "Stress",
-    "repeater": {
-      "0": "Total peace and quiet",
-      "1": "Relaxed and not stressed",
-      "2": "Mild sadness",
-      "3": "A little sad and without tension",
-      "4": "Mild stress",
-      "5": "Stressed, but not too much",
-      "6": "Moderate stress",
-      "7": "Moderately high stress",
-      "8": "High stress and tension",
-      "9": "Very high to extreme stress",
-      "10": "Extreme stress and panic"
-    },
+    "repeater": [
+      "Total peace and quiet",
+      "Relaxed and not stressed",
+      "Mild sadness",
+      "A little sad and without tension",
+      "Mild stress",
+      "Stressed, but not too much",
+      "Moderate stress",
+      "Moderately high stress",
+      "High stress and tension",
+      "Very high to extreme stress",
+      "Extreme stress and panic"
+    ],
     "feelings-summary": "Feelings Summary",
     "feelings-summary-description": "Here's a summary of your feelings for: ",
     "my-feelings": "My feelings",
@@ -1250,92 +1250,92 @@
     "title": "Shift Thoughts",
     "helper": "Find a thought from down below which you can repeat for 5 minutes:",
     "start": "Start",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "I can tolerate this."
       },
-      "2": {
+      {
         "title": "Take a big breath."
       },
-      "3": {
+      {
         "title": "Breathe"
       },
-      "4": {
+      {
         "title": "Manage your anger"
       },
-      "5": {
+      {
         "title": "I can't change the world."
       },
-      "6": {
+      {
         "title": "Count to 10 and breathe."
       },
-      "7": {
+      {
         "title": "Dig deep; find calm and stability."
       },
-      "8": {
+      {
         "title": "Don't buy into this situation"
       },
-      "9": {
+      {
         "title": "Don't let it get to you."
       },
-      "10": {
+      {
         "title": "Don't pay attention"
       },
-      "11": {
+      {
         "title": "Don't bite."
       },
-      "12": {
+      {
         "title": "Don't go there."
       },
-      "13": {
+      {
         "title": "Easy does it."
       },
-      "14": {
+      {
         "title": "You can get through it."
       },
-      "15": {
+      {
         "title": "How would (person you respect) handle this?"
       },
-      "16": {
+      {
         "title": "I can't control what other people do."
       },
-      "17": {
+      {
         "title": "It's in the past."
       },
-      "18": {
+      {
         "title": "It's not a big thing; I don't need to get upset."
       },
-      "19": {
+      {
         "title": "It's not worth it."
       },
-      "20": {
+      {
         "title": "Keep your eye on the prize."
       },
-      "21": {
+      {
         "title": "Leave it alone."
       },
-      "22": {
+      {
         "title": "Let it be."
       },
-      "23": {
+      {
         "title": "Let it go."
       },
-      "24": {
+      {
         "title": "Slow down."
       },
-      "25": {
+      {
         "title": "Stay the course."
       },
-      "26": {
+      {
         "title": "Stop! Just stop."
       },
-      "27": {
+      {
         "title": "This, too, will pass."
       },
-      "28": {
+      {
         "title": "Use your tools!"
       }
-    }
+    ]
   },
   "recreational-activities": {
     "label": "Recreational activities"
@@ -1343,833 +1343,833 @@
   "recreational-activities-alone": {
     "label": "Recreational activities: Time Spent Alone",
     "title": "Time Spent Alone",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "Bake something."
       },
-      "2": {
+      {
         "description": "Cook a meal for yourself."
       },
-      "3": {
+      {
         "description": "Dance."
       },
-      "4": {
+      {
         "description": "Do a crossword or Sudoku puzzle."
       },
-      "5": {
+      {
         "description": "Do a jigsaw puzzle."
       },
-      "6": {
+      {
         "description": "Do arts and crafts."
       },
-      "7": {
+      {
         "description": "Eat something delicious."
       },
-      "8": {
+      {
         "description": "Have coffee or tea."
       },
-      "9": {
+      {
         "description": "Knit or do needlepoint."
       },
-      "10": {
+      {
         "description": "Light some candles."
       },
-      "11": {
+      {
         "description": "List 5 things you like about yourself."
       },
-      "12": {
+      {
         "description": "Listen to the radio."
       },
-      "13": {
+      {
         "description": "Paint or draw."
       },
-      "14": {
+      {
         "description": "Plan a trip."
       },
-      "15": {
+      {
         "description": "Play a musical instrument."
       },
-      "16": {
+      {
         "description": "Play cards."
       },
-      "17": {
+      {
         "description": "Play with animals."
       },
-      "18": {
+      {
         "description": "Practice a martial art."
       },
-      "19": {
+      {
         "description": "Pray, meditate, or practice yoga."
       },
-      "20": {
+      {
         "description": "Put on your favorite shirt to feel good."
       },
-      "21": {
+      {
         "description": "Read a relaxing magazine or book."
       },
-      "22": {
+      {
         "description": "Remember a fun vacation."
       },
-      "23": {
+      {
         "description": "Remember someone being kind to you."
       },
-      "24": {
+      {
         "description": "Build something with your hands."
       },
-      "25": {
+      {
         "description": "Sing around the house."
       },
-      "26": {
+      {
         "description": "Take a relaxing shower."
       },
-      "27": {
+      {
         "description": "Take a warm bath or hot tub."
       },
-      "28": {
+      {
         "description": "Take photographs."
       },
-      "29": {
+      {
         "description": "Think about someone you love."
       },
-      "30": {
+      {
         "description": "Watch a movie or TV show."
       },
-      "31": {
+      {
         "description": "Watch funny videos."
       },
-      "32": {
+      {
         "description": "Watch sports on TV."
       },
-      "33": {
+      {
         "description": "Write a poem or story."
       }
-    }
+    ]
   },
   "recreational-activities-city": {
     "title": "In The City",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "Browse merchandise at an outdoor or hardware store."
       },
-      "2": {
+      {
         "description": "Go window shopping."
       },
-      "3": {
+      {
         "description": "Buy yourself a small gift."
       },
-      "4": {
+      {
         "description": "Buy yourself a plant."
       },
-      "5": {
+      {
         "description": "Buy yourself music."
       },
-      "6": {
+      {
         "description": "Get a manicure and/or pedicure."
       },
-      "7": {
+      {
         "description": "Get a massage."
       },
-      "8": {
+      {
         "description": "Go bowling."
       },
-      "9": {
+      {
         "description": "Go listen to music."
       },
-      "10": {
+      {
         "description": "Go out for ice cream."
       },
-      "11": {
+      {
         "description": "Go out to dinner."
       },
-      "12": {
+      {
         "description": "Go sightseeing."
       },
-      "13": {
+      {
         "description": "Go to a bookstore and read."
       },
-      "14": {
+      {
         "description": "Go to a coffee shop to read and have coffee/tea."
       },
-      "15": {
+      {
         "description": "Go to a live performance or play."
       },
-      "16": {
+      {
         "description": "Go to a museum."
       },
-      "17": {
+      {
         "description": "Go to church/temple/mosque."
       },
-      "18": {
+      {
         "description": "Go to the movies."
       },
-      "19": {
+      {
         "description": "Go watch horse racing or auto racing."
       },
-      "20": {
+      {
         "description": "Play a sport."
       },
-      "21": {
+      {
         "description": "Play pool."
       },
-      "22": {
+      {
         "description": "Take a class in a craft, a language, or a dance."
       },
-      "23": {
+      {
         "description": "Volunteer at a soup kitchen or animal shelter."
       }
-    }
+    ]
   },
   "recreational-activities-nature": {
     "title": "In Nature",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "Buy some flowers and enjoy their beauty."
       },
-      "2": {
+      {
         "description": "Do some gardening."
       },
-      "3": {
+      {
         "description": "Go bird watching."
       },
-      "4": {
+      {
         "description": "Go camping."
       },
-      "5": {
+      {
         "description": "Go fishing."
       },
-      "6": {
+      {
         "description": "Go for a drive or motorcycle ride in the countryside."
       },
-      "7": {
+      {
         "description": "Go for a hike or bike ride on a nature trail."
       },
-      "8": {
+      {
         "description": "Go for a picnic."
       },
-      "9": {
+      {
         "description": "Go to a lake, river, or beach."
       },
-      "10": {
+      {
         "description": "Take a stroll at a botanical garden or flower show."
       },
-      "11": {
+      {
         "description": "Take a trip to a nature reserve or national park."
       },
-      "12": {
+      {
         "description": "Take a walk in the park."
       },
-      "13": {
+      {
         "description": "Spend time with animals in a safe way."
       }
-    }
+    ]
   },
   "soothe-senses": {
     "title": "Soothe The Senses",
     "done": "կատարված",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Sound",
         "description": "Sing your favorite songs, or play them and sing along."
       },
-      "2": {
+      {
         "title": "Sound",
         "description": "Listen to music, and let yourself get lost in the sounds."
       },
-      "3": {
+      {
         "title": "Sound",
         "description": "Listen to pleasurable sounds, like birds, or the ocean."
       },
-      "4": {
+      {
         "title": "Sound",
         "description": "Learn to play an instrument and play tunes for your own enjoyment."
       },
-      "5": {
+      {
         "title": "Sound",
         "description": "Be mindful of the sounds around you."
       },
-      "6": {
+      {
         "title": "Sound",
         "description": "Turn on a movie and listen to the sounds, tones and textures of human voices."
       },
-      "7": {
+      {
         "title": "Sound",
         "description": "Listen to an meditation or lecture online or on the radio about something interesting to you."
       },
-      "8": {
+      {
         "title": "Sound",
         "description": "Go for a walk in nature and listen to the sounds around you."
       },
-      "9": {
+      {
         "title": "Sight",
         "description": "Go for a walk in the park or a hike in nature. Take in the beauty around you."
       },
-      "10": {
+      {
         "title": "Sight",
         "description": "Go to a museum with beautiful art and enjoy what catches your eye."
       },
-      "11": {
+      {
         "title": "Sight",
         "description": "Sit in the lobby of a beautiful hotel and notice the details of the décor."
       },
-      "12": {
+      {
         "title": "Sight",
         "description": "Buy a beautiful flower or bouquet and make one space in a room pretty."
       },
-      "13": {
+      {
         "title": "Sight",
         "description": "Go outside at night in the fresh air and look at the stars."
       },
-      "14": {
+      {
         "title": "Sight",
         "description": "Look at good travel photos in a book or on the internet; let them inspire you."
       },
-      "15": {
+      {
         "title": "Taste",
         "description": "Eat your favorite meal; really pay attention as you savor it."
       },
-      "16": {
+      {
         "title": "Taste",
         "description": "Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
       },
-      "17": {
+      {
         "title": "Taste",
         "description": "Treat yourself to dessert and eat each bite mindfully, with pleasure."
       },
-      "18": {
+      {
         "title": "Taste",
         "description": "Suck on a piece of peppermint candy and let it melt in your mouth."
       },
-      "19": {
+      {
         "title": "Taste",
         "description": "Chew your favorite gum and savor its flavor."
       },
-      "20": {
+      {
         "title": "Taste",
         "description": "Sample flavors in an ice cream store and notice the subtle differences."
       },
-      "21": {
+      {
         "title": "Touch",
         "description": "Get a massage. Let yourself really focus on and enjoy the sensations."
       },
-      "22": {
+      {
         "title": "Touch",
         "description": "Sit in the sun (please use sunscreen), and enjoy the warmth."
       },
-      "23": {
+      {
         "title": "Touch",
         "description": "Pet a dog or cat, and focus on the softness and pleasant sensations."
       },
-      "24": {
+      {
         "title": "Touch",
         "description": "Soak your feet and allow any tension or soreness to melt away."
       },
-      "25": {
+      {
         "title": "Touch",
         "description": "Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
       },
-      "26": {
+      {
         "title": "Touch",
         "description": "Hug someone and feel the comfort of their touch."
       },
-      "27": {
+      {
         "title": "Smell",
         "description": "Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
       },
-      "28": {
+      {
         "title": "Smell",
         "description": "Light a scented candle and enjoy the fragrance in the air."
       },
-      "29": {
+      {
         "title": "Smell",
         "description": "Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
       },
-      "30": {
+      {
         "title": "Smell",
         "description": "Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
       },
-      "31": {
+      {
         "title": "Smell",
         "description": "Take a walk in a wooded area and breathe in the fresh smells of nature."
       },
-      "32": {
+      {
         "title": "Smell",
         "description": "Put lemon oil on your furniture and enjoy the scent."
       }
-    }
+    ]
   },
   "connect-with-others": {
     "title": "կապ/շփում",
     "done": "կատարված",
     "static-text": "Այն կարող է օգնել ձեզ աջակցություն ստանալ վստահելի մարդկանցից, երբ սթրեսի ֆիզիկական և հուզական ախտանիշներ եք ունենում։ Փորձեք սա",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "զանգել ընտանիքի անդամներին։",
         "description": "Մեկ այլ անձի հետ ձեր խնդիրների մասին խոսելը կամ մեկ ուրիշի խնդիրները որոշ ժամանակ լսելը կարող է օգնել ձեզ բարելավել ձեր տրամադրությունը կամ փոխել ձեր մտածելակերպը։"
       },
-      "2": {
+      {
         "title": "զանգել ընկերներին։",
         "description": "Ձեր խնդիրների մասին մեկ ուրիշի հետ խոսելը կամ մեկ ուրիշի խնդիրները որոշ ժամանակ լսելը կարող է օգնել բարելավել ձեր տրամադրությունը կամ փոխել ձեր մտածելակերպը։"
       },
-      "3": {
+      {
         "title": "Ընթրիք պատրաստեք ինչ-որ մեկի համար։",
         "description": ""
       },
-      "4": {
+      {
         "title": "Գնա խնջույքի։",
         "description": ""
       },
-      "5": {
+      {
         "title": "անդամակցիր գրքերի կամ ընթերցողների ակումբին։",
         "description": ""
       },
-      "6": {
+      {
         "title": "անդամակցիր սպորտային ակումբներին",
         "description": "Միացիր որևէ ակումբի՝ որևէ սպորտաձևով զբաղվելու համար, օրինակ բոուլինգ, բասկետբոլ կամ ֆուտբոլ։"
       },
-      "7": {
+      {
         "title": "Պատրաստիր փոքրիկ նվեր ինչ-որ մեկի համար:",
         "description": ""
       },
-      "8": {
+      {
         "title": "Այցելիր ընտանիքի անդամներին",
         "description": "Ձեր խնդիրների մասին մեկ ուրիշի հետ խոսելը կամ մեկ ուրիշի խնդիրները որոշ ժամանակ լսելը կարող է օգնել ձեզ բարելավել ձեր տրամադրությունը կամ փոխել ձեր մտածելակերպը։"
       },
-      "9": {
+      {
         "title": "այցելիր ընկերոջդ",
         "description": "Ձեր խնդիրների մասին մեկ ուրիշի հետ խոսելը կամ մեկ ուրիշի խնդիրները որոշ ժամանակ լսելը կարող է օգնել ձեզ բարելավել ձեր տրամադրությունը կամ փոխել ձեր մտածելակերպը։"
       },
-      "10": {
+      {
         "title": "Նամակ գրիր։",
         "description": ""
       }
-    }
+    ]
   },
   "change-perspective": {
     "title": "տեսակետ",
     "done": "կատարված",
     "static-text": "Մտածելու ձևը փոխելը կարող է փոխել ձեր զգացողությունները։ Կենտրոնացեք այս ավելի օգտակար մտքի վրա։",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "Սա խնդիր է, ոչ թե սարսափ."
       },
-      "2": {
+      {
         "description": "Ես կյանքումս շատ դժվարությունների միջով եմ անցել և գոյատևել։"
       },
-      "3": {
+      {
         "description": "Ես կարող եմ հանդուրժել սա:"
       },
-      "4": {
+      {
         "description": "Ես կգոյատևեմ, նույնիսկ եթե այսօր գիշեր ընդհանրապես չքնեմ:"
       },
-      "5": {
+      {
         "description": "Այս իրավիճակը տարբերվում է ինձ հետ պատահած այլ իրավիճակներից, և ես լավ կլինեմ:"
       },
-      "6": {
+      {
         "description": "Ես այստեղ եմ, հենց հիմա:"
       },
-      "7": {
+      {
         "description": "Թվում է դժվար հիմա, բայց ժամանակի հետ ավելի ու ավելի հեշտ կլինի։"
       },
-      "8": {
+      {
         "description": "Երբ սա ավարտվի, ես ուրախ կլինեմ, որ դա արեցի:"
       },
-      "9": {
+      {
         "description": "Ես սա արել եմ առաջ, ուստի ես գիտեմ, որ կարող եմ նորից անել։"
       },
-      "10": {
+      {
         "description": "Ես գիտեմ, որ ապահով վայրում եմ չնայած նրա, որ իմ միտքը այլ բան է ասում։"
       },
-      "11": {
+      {
         "description": "Ես զգում եմ սրտխփոցս և ոտքերս գետնին։ Ես ողջ եմ և լավ եմ։"
       },
-      "12": {
+      {
         "description": "Ես ավելի վատ բաների միջով անցել եմ նախկինում և անվտանգ դուրս եմ եկել։"
       },
-      "13": {
+      {
         "description": "Իմ մարմինը արձագանքում է հիշողությանը։ Այս պահին ես անվտանգ եմ։"
       },
-      "14": {
+      {
         "description": "Ես պարտավոր չեմ միշտ հարմարավետ զգալ։ Դա պարզապես ապացուցում է, որ ես մարդ եմ։"
       },
-      "15": {
+      {
         "description": "յս հուզմունքը կգա և կգնա։ 20 րեպեից այլ կերպ կզգամ ինձ։"
       },
-      "16": {
+      {
         "description": "Ես կարողանում եմ արդյունավետորեն արձագանքել։ Ես ունեմ հմտություններ այս իրավիճակը կառավարելու համար։"
       },
-      "17": {
+      {
         "description": "Ես արդեն անցել եմ սրա միջով և ինձ շատ լավ էի զգում:"
       },
-      "18": {
+      {
         "description": "Սա ևս մեկ մարտահրավեր է, որը ես կհասկանամ և կհանդիպեմ։"
       },
-      "19": {
+      {
         "description": "Այս զգացմունքներն ինձ ինչ-որ բան են ասում։ Դրանք ինձ չեն վնասի։"
       },
-      "20": {
+      {
         "description": "Ես մարդ եմ:  Կարող եմ սխալվել: Ոչ մեկ կատարյալ չէ։ "
       },
-      "21": {
+      {
         "description": "Ես ի վիճակի եմ ինձ պաշտպանել։ "
       },
-      "22": {
+      {
         "description": "Հանգիստ, գիտեմ, որ կա մեկից ավելի ընտրություն, որը կարող եմ անել։"
       },
-      "23": {
+      {
         "description": "Ես կարող եմ օգնություն խնդրել այլ մարդկանցից։"
       },
-      "24": {
+      {
         "description": "Ես առաջ էլ ճիշտ որոշում եմ կայացրել։"
       },
-      "25": {
+      {
         "description": "Իմ մտքերը ուղղակի մտքեր են, մի հավատա որ դրանք միշտ ճիշտ են։"
       },
-      "26": {
+      {
         "description": "Ես ուժեղ եմ, ես ապահով եմ հիմա։"
       },
-      "27": {
+      {
         "description": "Այս զգացմունքը կանցնի։"
       },
-      "28": {
+      {
         "description": "Ես հավերժ այսպես չեմ զգալու, Ես նախկինում այլ կերպ եմ զգացել և շուտով այլ կերպ կզգամ"
       },
-      "29": {
+      {
         "description": "Ես ապահով վայրում եմ։ "
       },
-      "30": {
+      {
         "description": "Այս պահին զգացած զգացմունքներն ինձ տեղեկություններ են տալիս այն մասին, թե ինչպես եմ զգում, բայց դրանք պարտադիր չէ, որ հիմնված լինեն փաստերի վրա։"
       },
-      "31": {
+      {
         "description": "Եթե ես չպայքարեմ իմ զգացմունքների դեմ, դրանք ինքնուրույն կանցնեն։"
       },
-      "32": {
+      {
         "description": "Ես պարկեշտ մարդ եմ:"
       },
-      "33": {
+      {
         "description": "Ոչինչ, եթե ինձ ժամանակ է պետք սա հասկանալու համար։"
       },
-      "34": {
+      {
         "description": "Միշտ սովորելու ժամանակ կա։"
       },
-      "35": {
+      {
         "description": "Սովորելը ապագայում ինձ ավելի շատ տարբերակներ կտա:"
       },
-      "36": {
+      {
         "description": "Լինում են պահեր, երբ ես վերադառնում եմ հին սովորություններին։ Պարզապես պետք է սթափվեմ և վերադառնամ նրան ինչ արդյունավետ է։"
       },
-      "37": {
+      {
         "description": "Ես գիտեմ, որ արժանի եմ սիրուն։"
       },
-      "38": {
+      {
         "description": "Ես ինքս ինձ համար յուրահատուկ մարդ եմ՝ յուրահատուկ, տաղանդավոր և արժեքավոր։"
       },
-      "39": {
+      {
         "description": "Մեկ գիշեր չքնելը աշխարհի վերջը չի։"
       },
-      "40": {
+      {
         "description": "Գիշերային այս շուռումուռը կանցնի։"
       },
-      "41": {
+      {
         "description": "Մղձավանջները անհանգստացնող են, բայց դրանք իրական չեն։ Ես անվտանգ եմ։"
       },
-      "42": {
+      {
         "description": "Չնայած ինձ թվում է, թե երբեք լավ չեմ քնի, անցյալում էլ եմ քնել և ապագայում էլ կքնեմ։"
       },
-      "43": {
+      {
         "description": "Չնայած ես գիշերները վատ եմ քնում, ամեն ինչ կարող է լավ լինել… Ես առաջ էլ լավ եմ քնել։"
       }
-    }
+    ]
   },
   "grounding": {
     "title": "հողանցում",
     "done": "կատարված",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "զգա ոտքերդ գետնի վրա",
         "description": "Ուշադրությունդ կենտրոնացրու ոտքերիդ վրա։ Զգա գետինը ոտքերիդ տակ։ "
       },
-      "2": {
+      {
         "title": "Խճաքարի էֆֆեկտ",
         "description": "Կենտրոնացրեք ձեր ամբողջ ուշադրությունը ձեր ձեռքում գտնվող խճաքարի կամ մետաղադրամի վրա։"
       },
-      "3": {
+      {
         "title": "շնչառություն",
         "description": "Հանգիստ նստեք և ամբողջ ուշադրությունը կենտրոնացրեք նախ ներշնչման, ապա արտաշնչման վրա։"
       },
-      "4": {
+      {
         "title": "Ձեր շուրջը գտնվող տարածությունը – Գույներ",
         "description": "Նայիր շուրջդ և կենտրոնացրու ուշադրությունդ շրջապատող գույների վրա՝ նկատելով որքան հնարավոր է շատ գույներ։"
       },
-      "5": {
+      {
         "title": "Ձեր շուրջը գտնվող տարածությունը – Բույրեր",
         "description": "Կենտրոնացրու ամբողջ ուշադրությունդ շրջակա միջավայրի հոտերի վրա"
       },
-      "6": {
+      {
         "title": "Ձեր շուրջը գտնվող տարածությունը – Ձայներ",
         "description": "Կենտրոնացիր և ուշադիր լսիր շրջապատիդ շատ ձայները։"
       },
-      "7": {
+      {
         "title": "Ձեր շուրջը գտնվող տարածությունը – Ջերմաստիաճան",
         "description": "Կենտրոնացրու ամբողջ  ուշադրությունդ օդի ջերմաստիճանի վրա՝ զգալով մաշկիդ վրա։ "
       },
-      "8": {
+      {
         "title": "ուտել",
         "description": "Ուտելիս ամբողջ ուշադրությունդ կենտրոնացրու բերանում սննդի զգացողությունների վրա՝ միաժամանակ շատ դանդաղ ծամելով։"
       },
-      "9": {
+      {
         "title": "լվանալ ատամները",
         "description": "Մաքրելիս ատամները  կենտրոնացրու ուշադրությունդ այս գործողության հետ կապված բոլոր զգացողությունների, համերի և հոտերի վրա։"
       },
-      "10": {
+      {
         "title": "քայլել",
         "description": "Քայլիր դանդաղ, կենտրոնացնելով ուշադրությունդ ամեն դրած քայլի զգացողության վրա։"
       },
-      "11": {
+      {
         "title": "առարկա",
         "description": "Վերցրու գետնից ցանկացած փոքր առարկա և կենտրոնացրու ամբողջ ուշադրությունդ դրա հյուսվածքի և ձեռքում այն զգացողության վրա։"
       },
-      "12": {
+      {
         "title": "շոյել կենդանու",
         "description": "Շոյիր հանդարտ և հանգիստ կենդանու։ Կենտրոնացրու ամբողջ ուշադրությունդ ձեռքիդ զգացողությունների վրա։"
       },
-      "13": {
+      {
         "title": "կապվիր երկրի հետ",
         "description": "Ոտքերը ուսերի լայնությամբ բացած՝ փակիր աչքերդ և պատկերացրու, որ արմատներ ես աճեցնում հողի մեջ, ինչը քեզ ուժեղ և կայուն է դարձնում։"
       },
-      "14": {
+      {
         "title": "սառցե խորանարդ",
         "description": "Վերցրու սառույցի խորանարդիկ և կենտրոնացրու  ամբողջ ուշադրությունդ դրա հետ կապված զգացողությունների վրա՝ ցրտի, խոնավության և ծակծկոցի։"
       },
-      "15": {
+      {
         "title": "անվանիր/թվարկիր ինչ տեսնում ես",
         "description": "Նայիր շուրջդ և անվանիր այն, ինչ տեսնում ես։ Սկսիր մեծ առարկաներից, ապա անցիր ավելի ու ավելի փոքր առարկաների։"
       },
-      "16": {
+      {
         "title": "կենտրոնացում հպման վրա",
         "description": "Շփիր ձեռքերդ միմյանց, ծափահարիր։ Կենտրոնացրու ամբողջ ուշադրությունդ զգացողությունների և ձայների վրա։"
       },
-      "17": {
+      {
         "title": "վերակողմնորոշում",
         "description": "Հիշիր ով ես դու, այսօրվա ամսաթիվը, երբ ես ծնվել, և ինչ ես արել երեկ։"
       },
-      "18": {
+      {
         "title": "զանգիր ընկերոջդ",
         "description": "Զանգիր ընկերոջդ և քննարկիր վերջերս միասին արած գործողությունները։"
       },
-      "19": {
+      {
         "title": "անցյալի հաջողություն",
         "description": "Հիշիր թե ինչ արեցիր անցյալի ցավոտ փորձը հաջողությամբ հաղթահարելու համար։"
       },
-      "20": {
+      {
         "title": "փոքր քայլեր",
         "description": "Ինքդ քեզ հարցրու, ի՞նչը կարող է լինել փոքր նշան, որ ամեն ինչ ավելի լավ է դառնալու/լինելու։"
       },
-      "21": {
+      {
         "title": "ծծեք անանուխի տերև",
         "description": "Դանդաղ ծծիր անանուխ և մանրամասն նկարագրիր ինքդ քեզ այդ համը և քո արձագանքը։"
       },
-      "22": {
+      {
         "title": "Ոտքերդ դիր գետնին",
         "description": "Ոտքերդ դիր գետնին, զգա ուժ, լսիր ձայներ,նկատիր։"
       },
-      "23": {
+      {
         "title": "զգա հագուստդ մաշկիդ վրա",
         "description": "Ուշադրություն դարձրու հագուստի մաշկին դիպչելու զգացողությանը։"
       },
-      "24": {
+      {
         "title": "զգա ձեռքերդ",
         "description": "Ձեռքերդ միացրու և զգա մաշկը մաշկի վրա շփման զգացողությունը։"
       },
-      "25": {
+      {
         "title": "լսիր ուրիշներին",
         "description": "Լսիր  շրջապատիդ մարդկանց ձայները։ Ուշադրություն դարձրու միայն ուրիշների ձայներին։"
       }
-    }
+    ]
   },
   "quotes": {
-    "title": "Inspirational Quotes",
+    "title": "մեջբերումներ",
     "done": "կատարված",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "Helen Keller",
         "title": "Although the world is full of suffering, it is full also of the overcoming of it."
       },
-      "2": {
+      {
         "description": "Jesse Jackson",
         "title": "You are not responsible for being down, but you are responsible for getting up."
       },
-      "3": {
+      {
         "description": "Rainer Maria Rilke",
         "title": "No feeling is final."
       },
-      "4": {
+      {
         "description": "Baruch Spinoza",
         "title": "Not to laugh, not to lament, not to judge, but to understand."
       },
-      "5": {
+      {
         "description": "Erica Jong",
         "title": "And the trouble is, if you don't risk anything, you risk even more."
       },
-      "6": {
+      {
         "description": "Janis Joplin",
         "title": "Don't compromise yourself. You are all you've got."
       },
-      "7": {
+      {
         "description": "Buddha",
         "title": "You yourself, as much as anybody in the entire universe, deserve your love and affection."
       },
-      "8": {
+      {
         "description": "Rainer Maria Rilke",
         "title": "...be attentive to what is arising within you, and place that above everything else… What is happening in your innermost self is worthy of your entire love; somehow you must find a way to work at it."
       },
-      "9": {
+      {
         "description": "Winston Churchill",
         "title": "Never, never, never, never, never give up."
       },
-      "10": {
+      {
         "description": "Frank Outlaw",
         "title": "Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character; it becomes your destiny."
       },
-      "11": {
+      {
         "description": "Theodore Roosevelt",
         "title": "Do what you can, with what you have, where you are."
       },
-      "12": {
+      {
         "description": "Molly Goode",
         "title": "Let your heart guide you. It whispers, so listen closely."
       },
-      "13": {
+      {
         "description": "Ellen Glasgow",
         "title": "Life is never what one dreams. It is seldom what one desires, but for the vital spirit and the eager mind, the future will always hold the search for buried treasure and the possibility of high adventure."
       },
-      "14": {
+      {
         "description": "Henry David Thoreau",
         "title": "It takes two to speak the truth—one to speak, the other to hear."
       },
-      "15": {
+      {
         "description": "Ralph Waldo Emerson",
         "title": "When you do a thing, do it with all your might. Put your whole soul into it. Stamp it with your personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object."
       },
-      "16": {
+      {
         "description": "Mohandas K. Gandhi",
         "title": "The future depends on what we do in the present."
       },
-      "17": {
+      {
         "description": "Jean Shinoda Bolen",
         "title": "If we change within, our outer life will change also."
       },
-      "18": {
+      {
         "description": "Wallace Stevens",
         "title": "Perhaps the truth depends on a walk around the lake."
       },
-      "19": {
+      {
         "description": "Charles Dickens",
         "title": "A loving heart is the truest wisdom."
       },
-      "20": {
+      {
         "description": "Martin Luther King Jr.",
         "title": "Each of us is two selves, and the great challenge of life is to try to keep that higher self in command."
       },
-      "21": {
+      {
         "description": "William Saroyan",
         "title": "In the time of your life, live."
       },
-      "22": {
+      {
         "description": "Virginia Satir",
         "title": "Life is not what it's supposed to be. It's what it is. The way you cope with it is what makes the difference."
       },
-      "23": {
+      {
         "description": "Tommy Lasorda",
         "title": "The difference between the impossible and the possible lies in a person's determination."
       },
-      "24": {
+      {
         "description": "Scott Adams",
         "title": "Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end."
       },
-      "25": {
+      {
         "description": "Robert Cushing",
         "title": "The fact is, that to do anything in the world worth doing, we must not stand back shivering and thinking of the cold and danger, but jump in and scramble through as well as we can."
       },
-      "26": {
+      {
         "description": "William Thackeray",
         "title": "Follow your honest convictions, and stay strong."
       },
-      "27": {
+      {
         "description": "Aristotle",
         "title": "Knowing yourself is the beginning of all wisdom."
       },
-      "28": {
+      {
         "description": "A. Bronson Alcott",
         "title": "Your real influence is measured by your treatment of yourself."
       },
-      "29": {
+      {
         "description": "Swedish Proverb",
         "title": "Fear less, hope more, eat less, chew more, whine less, breathe more, talk less, say more, hate less, love more, and good things will be yours."
       },
-      "30": {
+      {
         "description": "Martha Washington",
         "title": "I have learned that the greater part of our misery or unhappiness is determined not by our circumstance but by our disposition."
       },
-      "31": {
+      {
         "description": "Rainer Rilke",
         "title": "The only journey is the journey within."
       },
-      "32": {
+      {
         "description": "Doug Firebaugh",
         "title": "Every day do something that will inch you closer to a better tomorrow."
       },
-      "33": {
+      {
         "description": "Hamerton",
         "title": "The happiest life is that which constantly exercises and educates what is best in us."
       },
-      "34": {
+      {
         "description": "Thomas Edison",
         "title": "If we all did the things we are capable of, we would astound ourselves."
       },
-      "35": {
+      {
         "description": "John Clarke",
         "title": "Go back a little to leap further."
       },
-      "36": {
+      {
         "description": "Thomas Edison",
         "title": "I failed my way to success."
       },
-      "37": {
+      {
         "description": "Ralph Waldo Emerson",
         "title": "Don't waste your life in doubts and fears: spend yourself on the work before you, well assured that the right performance of this hour's duties will be the best preparation for the hours or ages that follow it."
       },
-      "38": {
+      {
         "description": "Chas. Austin Bates",
         "title": "It is the trouble that never comes that causes the loss of sleep."
       },
-      "39": {
+      {
         "description": "Helen Keller",
         "title": "When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us."
       },
-      "40": {
+      {
         "description": "Horace Bushnell",
         "title": "The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be."
       },
-      "41": {
+      {
         "description": "Berthold Auerbach",
         "title": "Years teach us more than books."
       },
-      "42": {
+      {
         "description": "Helen Keller",
         "title": "Life is either a daring adventure or nothing."
       },
-      "43": {
+      {
         "description": "St. Clement of Alexandra",
         "title": "If you do not hope, you will not find what is beyond your hopes."
       },
-      "44": {
+      {
         "description": "Henry Ward Beecher",
         "title": "Men's best successes come after their disappointments."
       },
-      "45": {
+      {
         "description": "Robert Frost",
         "title": "The best way out is always through."
       }
-    }
+    ]
   }
 }

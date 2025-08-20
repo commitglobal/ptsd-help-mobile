@@ -22,7 +22,7 @@ export default function ChangePerspective() {
 
   const items = t(toolsTranslationKeys.CHANGE_PERSPECTIVE.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <ScreenWithChangingText
@@ -34,7 +34,7 @@ export default function ChangePerspective() {
         onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       staticText={t(toolsTranslationKeys.CHANGE_PERSPECTIVE.staticText)}
-      items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
+      items={items.map((item) => ({ ...item, id: item.description }))}
       imageUrl={mediaMapping['CHANGE_PERSPECTIVE.CATEGORY_ICON']}
       footerProps={{ onMainAction: finishTool }}
     />

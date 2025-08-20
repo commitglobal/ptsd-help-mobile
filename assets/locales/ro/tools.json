@@ -64,34 +64,34 @@
       "reconnect-with-partner": {
         "title": "RO/ro: Reconnect with your partner",
         "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "RO/ro: Go for a walk or exercise together",
             "description": "RO/ro: Find time to go for a walk or exercise together"
           },
-          "2": {
+          {
             "title": "RO/ro: Prepare a delicious meal and have fun in the kitchen",
             "description": "RO/ro: Find time to prepare a delicious meal and have fun in the kitchen"
           },
-          "3": {
+          {
             "title": "RO/ro: Organize a movie night at home with favorite films",
             "description": "RO/ro: Find time to organize a movie night at home with favorite films"
           }
-        }
+        ]
       },
       "positive-communication": {
         "title": "RO/ro: Positive Communication",
         "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "RO/ro: Overcome your automatic negative thoughts",
             "description": "RO/ro: Think about positive things about your partner"
           },
-          "2": {
+          {
             "title": "RO/ro: Start a conversation with your partner",
             "description": "RO/ro: Talk about your feelings and thoughts with your partner"
           }
-        }
+        ]
       }
     },
     "common": {
@@ -111,86 +111,86 @@
   "sleep": {
     "sleep-help": {
       "title": "RO/ro: Ajutor pentru a adormi",
-      "repeater": {
-        "1": {
+      "repeater": [
+        {
           "title": "Du-te la culcare numai când îți este somn."
         },
-        "2": {
+        {
           "title": "Dacă stai în pat timp de 20 de minute și încă nu dormi, ridică-te și fă altceva (fără a te expune la lumină puternică sau la un computer/telefon/ecran TV)."
         },
-        "3": {
+        {
           "title": "Ascultă muzică relaxantă."
         },
-        "4": {
+        {
           "title": "Citește ceva liniștitor."
         },
-        "5": {
+        {
           "title": "Bea o ceașcă de ceai decofeinizat."
         },
-        "6": {
+        {
           "title": "Bea o cană de lapte cald."
         },
-        "7": {
+        {
           "title": "Respiră lent și adânc pe nas - fă acest lucru timp de 10 minute. Poți folosi instrumentul de respirație din această aplicație dacă dorești."
         },
-        "8": {
+        {
           "title": "Mănâncă o gustare ușoară dacă îți este foame - ceva cu puțin zahăr sau deloc și fără alcool."
         },
-        "9": {
+        {
           "title": "Asigură-te că temperatura camerei este joasă."
         },
-        "10": {
+        {
           "title": "Încearcă să porți dopuri pentru urechi dacă există zgomot în jurul tău."
         },
-        "11": {
+        {
           "title": "Dacă există lumină în jur, încearcă să dormi cu o mască pentru ochi."
         },
-        "12": {
+        {
           "title": "Asigură-te că este întuneric în cameră."
         },
-        "13": {
+        {
           "title": "Încearcă să faci o baie caldă cu o oră sau 2 înainte de culcare."
         },
-        "14": {
+        {
           "title": "Asigură-te că ești confortabil și că îmbrăcămintea ta nu este incomodă."
         },
-        "15": {
+        {
           "title": "Evită să te uiți la ceas."
         },
-        "16": {
+        {
           "title": "Lasă-ți mintea să rătăcească. Nu te concentra prea mult asupra procesului de a adormi."
         },
-        "17": {
+        {
           "title": "Dacă te simți îngrijorat, ridică-te și notează-ți grijile, apoi încearcă să scapi de ele."
         },
-        "18": {
+        {
           "title": "Imaginează-ți un loc sigur și liniştitor: imaginează-te lângă un râu, un lac sau într-o poiană. Imaginează-ți toată scena, priveliștile, sunetele și mirosurile, în timp ce te relaxezi. Poți utiliza instrumentul de imagini pozitive din această aplicație dacă dorești."
         },
-        "19": {
+        {
           "title": "Simte toți mușchii corpului tău relaxați, ca și cum s-ar fi scufundat în saltea. Poți folosi instrumentul de relaxare musculară progresivă din această aplicație dacă dorești."
         },
-        "20": {
+        {
           "title": "Evită nicotina, cofeina și alcoolul seara."
         },
-        "21": {
+        {
           "title": "Evită prea multă sare în mâncare. Acest lucru te poate face să te trezești însetat pe tot parcursul nopții."
         },
-        "22": {
+        {
           "title": "Oprește calculatorul sau televizorul cu 30 de minute înainte de culcare."
         },
-        "23": {
+        {
           "title": "Creează-ți o rutină relaxantă la culcare."
         },
-        "24": {
+        {
           "title": "Ridică-te și bea un pahar cu apă."
         },
-        "25": {
+        {
           "title": "Asigură-te că cearșafurile sunt curate și că perna și salteaua sunt confortabile."
         },
-        "26": {
+        {
           "title": "Încearcă să nu îți faci griji din cauză că nu adormi. Continuă să încerci să te relaxezi."
         }
-      }
+      ]
     },
     "sleep-habits": {
       "title": "Obiceiuri bune pentru somn",
@@ -549,47 +549,47 @@
     "sleep-perspective": {
       "title": "RO/ro: Schimba perspectiva somnului",
       "description": "RO/ro: Try these habits to improve your sleep quality",
-      "repeater": {
-        "1": {
+      "repeater": [
+        {
           "title": "Pot tolera asta."
         },
-        "2": {
+        {
           "title": "Voi supraviețui chiar dacă nu dorm deloc în noaptea asta."
         },
-        "3": {
+        {
           "title": "Am mai făcut asta, așa că știu că o pot face din nou."
         },
-        "4": {
+        {
           "title": "Nu trebuie să mă simt confortabil tot timpul. Sunt om."
         },
-        "5": {
+        {
           "title": "Aceasta este o altă provocare pe care o voi rezolva și o voi face față."
         },
-        "6": {
+        {
           "title": "Am mai trecut prin asta și am fost foarte bine."
         },
-        "7": {
+        {
           "title": "O noapte de somn prost nu este sfârșitul lumii."
         },
-        "8": {
+        {
           "title": "Această noapte agitată va trece."
         },
-        "9": {
+        {
           "title": "Deși se simte că nu voi dormi niciodată bine, s-ar putea să nu fie cazul. Anticiparea că s-ar putea să nu dorm bine îmi va înrăutăți probabil somnul. Am funcționat bine înainte chiar și după ce nu am dormit bine."
         },
-        "10": {
+        {
           "title": "Am funcționat prost înainte chiar și după ce am dormit bine."
         },
-        "11": {
+        {
           "title": "Deși anticipez un somn prost, ar putea fi bine... Am dormit bine înainte."
         },
-        "12": {
+        {
           "title": "Organismul reglează în mod natural somnul; chiar dacă îmi lipsește puțin somn, voi putea să funcționez."
         },
-        "13": {
+        {
           "title": "Dacă nu îmi fac griji în privința somnului, somnul prost într-o noapte îmi va îmbunătăți probabil somnul în noaptea următoare."
         }
-      }
+      ]
     }
   },
   "pause": {
@@ -597,56 +597,56 @@
     "action-btn-label": "Continuă",
     "helper": "RO/ro: Incearca sa faci asta pentru 5 minute",
     "take_break": "RO/ro: Ia o pauză",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Fă o plimbare pentru a te relaxa și a-ți limpezi gândurile"
       },
-      "2": {
+      {
         "title": "Respiră adânc timp de 10 minute sau mai mult"
       },
-      "3": {
+      {
         "title": "Fă sport (mergi cu bicileta, mergi în drumeții, ridică greutăți, înoată, aleargă)"
       },
-      "4": {
+      {
         "title": "Grădinărește sau fă curat prin curte"
       },
-      "5": {
+      {
         "title": "Spune-ți lucruri pozitive precum \"Pot să fac față acestei situații fără să îmi pierd cumpătul\""
       },
-      "6": {
+      {
         "title": "Desenează sau pictează pentru a-ți exprima emoțiile"
       },
-      "7": {
+      {
         "title": "Sună un prieten sau o persoană iubită pentru sprijin"
       },
-      "8": {
+      {
         "title": "Sună-ți terapeutul pentru sprijin"
       },
-      "9": {
+      {
         "title": "Întinde-te și respiră adânc și lent"
       },
-      "10": {
+      {
         "title": "Amintește-ți că poți să faci față"
       },
-      "11": {
+      {
         "title": "Meditează pentru a-ți liniști mintea"
       },
-      "12": {
+      {
         "title": "Roagă-te pentru îndrumare și sprijin"
       },
-      "13": {
+      {
         "title": "Gândește-te ce sfat ți-ar da cineva în care ai încredere"
       },
-      "14": {
+      {
         "title": "Petrece timp cu un animal pentru confort și liniște"
       },
-      "15": {
+      {
         "title": "Fă un duș sau o baie pentru a te relaxa"
       },
-      "16": {
+      {
         "title": "Gândește-te la cum vrei să fii un exemplu pentru alții din viața ta - copiii etc."
       }
-    }
+    ]
   },
   "muscle-relaxation": {
     "title": "Relaxare musculară",
