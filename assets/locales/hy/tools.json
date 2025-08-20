@@ -35,10 +35,10 @@
     "change-perspective": "տեսակետ",
     "grounding": "հողանցում",
     "quotes": "Ոգեշնչող մեջբերումներ",
-    "recreational-activities": "Recreational Activities",
-    "recreational-activities-alone": "Recreational Activities: Time Spent Alone",
-    "recreational-activities-city": "Recreational Activities: In The City",
-    "recreational-activities-nature": "Recreational Activities: In Nature"
+    "recreational-activities": "ժամանց",
+    "recreational-activities-alone": "Հանգիստ մենակ",
+    "recreational-activities-city": "Հանգիստ քաղաքում",
+    "recreational-activities-nature": "Հանգիստ բնության մեջ"
   },
   "symptoms": {
     "reminded_of_trauma": "Reminded of Trauma",
@@ -1338,110 +1338,110 @@
     ]
   },
   "recreational-activities": {
-    "label": "Recreational activities"
+    "label": "ժամանց"
   },
   "recreational-activities-alone": {
-    "label": "Recreational activities: Time Spent Alone",
-    "title": "Time Spent Alone",
+    "label": "Հանգիստ մենակ",
+    "title": "Հանգիստ մենակ",
     "repeater": [
       {
-        "description": "Bake something."
+        "description": "Թխել ինչ-որ բան"
       },
       {
-        "description": "Cook a meal for yourself."
+        "description": "Պատրաստիր քո համար ճաշ"
       },
       {
-        "description": "Dance."
+        "description": "պարիր"
       },
       {
-        "description": "Do a crossword or Sudoku puzzle."
+        "description": "Լուծիր խաչբառ կամ սուդոկու հանելուկ"
       },
       {
-        "description": "Do a jigsaw puzzle."
+        "description": "հավքիր փազզլ"
       },
       {
-        "description": "Do arts and crafts."
+        "description": "զբաղվիր արվեստով և արհեստներով"
       },
       {
-        "description": "Eat something delicious."
+        "description": "Կեր ինչ-որ համեղ բան"
       },
       {
-        "description": "Have coffee or tea."
+        "description": "խմիր շուրճ կամ թեյ"
       },
       {
-        "description": "Knit or do needlepoint."
+        "description": "կարի կամ ասեղնագործի"
       },
       {
-        "description": "Light some candles."
+        "description": "մոմ վառիր"
       },
       {
-        "description": "List 5 things you like about yourself."
+        "description": "Թվիր 5 բան քո մասին"
       },
       {
-        "description": "Listen to the radio."
+        "description": "լսիր ռադիո"
       },
       {
-        "description": "Paint or draw."
+        "description": "նկարել"
       },
       {
-        "description": "Plan a trip."
+        "description": "պլանավորիր ուղևորություն"
       },
       {
-        "description": "Play a musical instrument."
+        "description": "նվագիր երաժշտական գործիք"
       },
       {
-        "description": "Play cards."
+        "description": "խաղա թղթախաղ"
       },
       {
-        "description": "Play with animals."
+        "description": "խաղա կենդանիների հետ"
       },
       {
-        "description": "Practice a martial art."
+        "description": "զբաղվիր մարտարվեստով"
       },
       {
-        "description": "Pray, meditate, or practice yoga."
+        "description": "աղոթիր, մեդիտացիա արա կամ զբաղվիր յոգայով"
       },
       {
-        "description": "Put on your favorite shirt to feel good."
+        "description": "հագիր քո սիրած վերնաշապիկը քեզ լավ զգալու համար"
       },
       {
-        "description": "Read a relaxing magazine or book."
+        "description": "կարդա հանգստացնող ամսագիր կամ գիրք"
       },
       {
-        "description": "Remember a fun vacation."
+        "description": "հիշիր զվարճալի արձակուրդը"
       },
       {
-        "description": "Remember someone being kind to you."
+        "description": "հիշիր ինչ-որ մեկին ով բարի է եղել քո հանդեպ"
       },
       {
-        "description": "Build something with your hands."
+        "description": "քո ձեռքով ինչ-որ բան պատրաստիր/սարքիր"
       },
       {
-        "description": "Sing around the house."
+        "description": "երգիր տանը"
       },
       {
-        "description": "Take a relaxing shower."
+        "description": "ընդունիր հանգստացնող լոգանք"
       },
       {
-        "description": "Take a warm bath or hot tub."
+        "description": "Ընդունիր տաք լոգանք կամ ջակուզի"
       },
       {
-        "description": "Take photographs."
+        "description": "լուսանկարիր"
       },
       {
-        "description": "Think about someone you love."
+        "description": "Մտածիր նրա մասին ում սիրում ես"
       },
       {
-        "description": "Watch a movie or TV show."
+        "description": "Նայիր կինո կամ հեռուստաշոու"
       },
       {
-        "description": "Watch funny videos."
+        "description": "նայիր զվարճալի վիդեոներ"
       },
       {
-        "description": "Watch sports on TV."
+        "description": "նայիր հեռուստացույցով սպորտային հաղորդումներ"
       },
       {
-        "description": "Write a poem or story."
+        "description": "գրի բանաստեղծություն կամ պատմվածք"
       }
     ]
   },
