@@ -1113,13 +1113,13 @@
     }
   },
   "worry-time": {
-    "title": "Worry Time",
+    "title": "Անհանգստության ժամանակ",
     "help": "Help",
-    "description": "A strategy that has proven helpful in calming anxious thoughts is scheduling a worry period. Although this may seem counterintuitive for people struggling with anxiety, it can actually help gain control over obsessive thoughts. If you find yourself worrying at night, schedule a time below when you can think about the issues on your mind.",
+    "description": "Անհանգստացնող մտքերը հանդարտեցնելու օգտակար ռազմավարություններից մեկը անհանգստանալու ժամ պլանավորելն է: Չնայած սա կարող է թվալ օգտակար նպատակի հակառակը անհանգստությունից տառապող մարդկանց համար, այն իրականում կարող է օգնել վերահսկել մտորումները: Եթե գիշերը անհանգստանում եք, փորձեք ստորև մուտքագրել օր և ժամ, որտեղ կարող եք մտածել ձեր մտքում եղած խնդիրների մասին:",
     "write-here": "Use this space to write subjects to think about...",
-    "subjects-to-think-about": "Subjects to think about",
+    "subjects-to-think-about": "թեմա՝ մտածելու համար",
     "help-text": "Being preoccupied with small and big worries, meditating on problems, or planning future events while in bed can keep you awake. Scheduling a time for worries can help people gain control over anxious thoughts that may keep them awake.\n\nChoose a time during the day to think, worry, solve problems and plan what you need to do. Then, if intrusive thoughts appear during your sleep period, postpone them for the \"thinking and worrying time\" the next day. Make sure you don't choose a time too close to bedtime, so you have a chance to relax afterwards.\n\nBy scheduling a daily period to focus on your concerns, you'll notice that you have fewer worrying thoughts while in bed.\n\nMany people catch themselves worrying that they can't fall asleep, which unfortunately can keep them even more awake. Remember that while lack of sleep can be uncomfortable, your body is designed to tolerate less good nights. In fact, sleep loss can increase sleep desire, which can lead to improved sleep quality in subsequent nights. It's important to reduce nighttime anxiety to improve your chances of getting quality sleep.",
-    "reminder": "Reminder for worry time",
+    "reminder": "Անհանգստության ժամանակի հիշեցում",
     "daily-reminder": "Daily",
     "ptsd-help": "PTSD Help",
     "review": "Review the issues that are causing you to worry."
