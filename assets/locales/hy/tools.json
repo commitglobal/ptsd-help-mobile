@@ -1991,184 +1991,260 @@
     "done": "կատարված",
     "repeater": [
       {
-        "description": "Helen Keller",
-        "title": "Although the world is full of suffering, it is full also of the overcoming of it."
+        "description": "Լինդա Հոգան",
+        "title": "Ոմանք տեսնում են սպիները, և հիշում վերքը։ Ինձ համար դրանք ապացույցն են այն փաստի, որ կա բուժում։"
       },
       {
-        "description": "Jesse Jackson",
-        "title": "You are not responsible for being down, but you are responsible for getting up."
+        "description": "Ռոբերտ Ֆրոստ",
+        "title": "Լավագույն ելքը միշտ միջով անցնելն է։"
       },
       {
-        "description": "Rainer Maria Rilke",
-        "title": "No feeling is final."
+        "description": "Կոնֆուցիոս",
+        "title": "Մեր ամենամեծ փառքը/հաղթանակը երբեք չընկնելը չէ, այլ ամեն անգամ անկումից հետո վեր կենալը։"
       },
       {
-        "description": "Baruch Spinoza",
-        "title": "Not to laugh, not to lament, not to judge, but to understand."
+        "description": "Նելսոն Մանդելա",
+        "title": "Թող ձեր ընտրությունները արտացոլեն ձեր հույսերը, այլ ոչ թե ձեր վախերը։"
       },
       {
-        "description": "Erica Jong",
-        "title": "And the trouble is, if you don't risk anything, you risk even more."
+        "description": "Թ. Ս. Էլիոթ",
+        "title": "Յուրաքանչյուր պահ նոր սկիզբ է:"
       },
       {
-        "description": "Janis Joplin",
-        "title": "Don't compromise yourself. You are all you've got."
+        "description": "Դոկտոր Մարտին Լյութեր Քինգ կրտսեր",
+        "title": "Եթե ես չեմ կարող մեծ բաներ անել, ես կարող եմ փոքր բաներ անել մեծ ձևով։"
       },
       {
-        "description": "Buddha",
-        "title": "You yourself, as much as anybody in the entire universe, deserve your love and affection."
+        "description": "Ուինսթոն Չերչիլ",
+        "title": "Հաջողությունը վերջնական չէ, ձախողումը մահացու չէ։ Կարևորը շարունակելու քաջությունն է։"
       },
       {
-        "description": "Rainer Maria Rilke",
-        "title": "...be attentive to what is arising within you, and place that above everything else… What is happening in your innermost self is worthy of your entire love; somehow you must find a way to work at it."
+        "description": "Բոբ Մարլի",
+        "title": "Դու երբեք չգիտես, թե որքան ուժեղ ես, մինչդեռ ուժեղ լինելը քո միակ ընտրությունն է։"
       },
       {
-        "description": "Winston Churchill",
-        "title": "Never, never, never, never, never give up."
+        "description": "Հորասիո Ջոնս",
+        "title": "«Փոխանակ ասելու՝ «ես վնասված եմ, կոտրված եմ, վստահության խնդիրներ ունեմ», ես ասում եմ՝ «ես ապաքինվում եմ, վերագտնում եմ ինձ, սկսում եմ նորից»։"
       },
       {
-        "description": "Frank Outlaw",
-        "title": "Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character; it becomes your destiny."
+        "description": "Անհայտ",
+        "title": "«Դու ավելի ուժեղ ես, քան կարծում ես։ Դու հաղթահարել ես կյանքիդ բոլոր վատ օրերը և անպարտելի ես»:"
       },
       {
-        "description": "Theodore Roosevelt",
-        "title": "Do what you can, with what you have, where you are."
+        "description": "Մել Ռոբինս",
+        "title": "Ձեր հոգեկան առողջությունը ամեն ինչ է՝ առաջնահերթություն տվեք դրան։ Ժամանակը դարձրեք այնպես, կարծես ձեր կյանքը կախված է դրանից, որովհետև դա այդպես։"
       },
       {
-        "description": "Molly Goode",
-        "title": "Let your heart guide you. It whispers, so listen closely."
+        "description": "Ջենիֆեր Լեյն",
+        "title": "Զգացմունքները չպետք է ճնշել կամ ֆիքսել, դրանք պետք է ընդունել։"
       },
       {
-        "description": "Ellen Glasgow",
-        "title": "Life is never what one dreams. It is seldom what one desires, but for the vital spirit and the eager mind, the future will always hold the search for buried treasure and the possibility of high adventure."
+        "description": "Սթիվ Պավլինա",
+        "title": "Ընդունեք փշերի առկայությունը, բայց թող վարդը ոգեշնչի ձեզ։"
       },
       {
-        "description": "Henry David Thoreau",
-        "title": "It takes two to speak the truth—one to speak, the other to hear."
+        "description": "Դոկտոր Ֆիլ Մաք Գրոու",
+        "title": "Փոխանակ ամաչելու այն ամենից, ինչի միջով անցել ես, հպարտացիր նրանով, ինչ հաղթահարել ես։"
       },
       {
-        "description": "Ralph Waldo Emerson",
-        "title": "When you do a thing, do it with all your might. Put your whole soul into it. Stamp it with your personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object."
+        "description": "Մարկ Տվեն",
+        "title": "Քաջությունը վախի դիմադրությունն է, վախի տիրապետումը, այլ ոչ թե վախի բացակայությունը։"
       },
       {
-        "description": "Mohandas K. Gandhi",
-        "title": "The future depends on what we do in the present."
+        "description": "Քրիստի Անն Մարտին",
+        "title": "Ես թույլ չեմ տա, որ ցավը սիրտս տգեղ դարձնի։ Ես ձեզ կցույց տամ, որ գոյատևելը կարող է գեղեցիկ լինել։"
       },
       {
-        "description": "Jean Shinoda Bolen",
-        "title": "If we change within, our outer life will change also."
+        "description": "Կ.Գ. Յունգ",
+        "title": "«Ես այն չեմ, ինչ ինձ հետ պատահել է։ Ես այն եմ, ինչ ես ընտրել եմ դառնալ»։"
       },
       {
-        "description": "Wallace Stevens",
-        "title": "Perhaps the truth depends on a walk around the lake."
+        "description": "Մեյսոն Քուլի",
+        "title": "«Ամեն օր սկսվում է քաջության և հույսի մի արարքով՝ անկողնուց վեր կենալով»։"
       },
       {
-        "description": "Charles Dickens",
-        "title": "A loving heart is the truest wisdom."
+        "description": "Թիչ Նհատ Հան",
+        "title": "«Քո մեջ տառապանքի սերմը կարող է ուժեղ լինել, բայց մի սպասիր, մինչև այլևս տառապանք չունենաս, նախքան թույլ տալ քեզ երջանիկ լինել»։"
       },
       {
-        "description": "Martin Luther King Jr.",
-        "title": "Each of us is two selves, and the great challenge of life is to try to keep that higher self in command."
+        "description": "Դիպակ Չոպրա",
+        "title": "«Ինչ-որ բանի կառչելը նույնն է, ինչ շունչդ պահելը։ Դու կխեղդվես։ Ֆիզիկական տիեզերքում ինչ-որ բան ստանալու միակ ճանապարհը դրա մեջ ընկնելն է։ Բաց թող, և այն ընդմիշտ քոնը կլինի»։"
       },
       {
-        "description": "William Saroyan",
-        "title": "In the time of your life, live."
+        "description": "Ռ.Մ. Դրեյք",
+        "title": "«Դու գեղեցիկ ես, որովհետև գիտես քո սեփական խավարը, և միայն դա չի խանգարում քեզ գտնել քո սեփական լույսը»։"
       },
       {
-        "description": "Virginia Satir",
-        "title": "Life is not what it's supposed to be. It's what it is. The way you cope with it is what makes the difference."
+        "description": "Ռոբերտ Ֆրոստ",
+        "title": "Լավագույն ելքը միշտ միջով անցնելն է։"
       },
       {
-        "description": "Tommy Lasorda",
-        "title": "The difference between the impossible and the possible lies in a person's determination."
+        "description": "Հենրի Ուորդ Բիչեր",
+        "title": "Մարդու լավագույն հաջողությունները գալիս են հիասթափություններից հետո։"
       },
       {
-        "description": "Scott Adams",
-        "title": "Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end."
+        "description": "Սուրբ Կղեմես Ալեքսանդրացի",
+        "title": "Եթե հույս չունես, չես գտնի այն, ինչ քո հույսերից վեր է։"
       },
       {
-        "description": "Robert Cushing",
-        "title": "The fact is, that to do anything in the world worth doing, we must not stand back shivering and thinking of the cold and danger, but jump in and scramble through as well as we can."
+        "description": "Հելեն Քելլեր",
+        "title": "Կյանքը կամ համարձակ արկած է, կամ ոչինչ։"
       },
       {
-        "description": "William Thackeray",
-        "title": "Follow your honest convictions, and stay strong."
+        "description": "Բերտոլդ Աուերբախ",
+        "title": "Տարիները մեզ ավելին են սովորեցնում, քան գրքերը։"
       },
       {
-        "description": "Aristotle",
-        "title": "Knowing yourself is the beginning of all wisdom."
+        "description": "Հորաս Բուշնել",
+        "title": "Որքան շատ դժվարությունների է մարդ հանդիպում՝ ներսում և դրսում, այնքան ավելի նշանակալից և ոգեշնչող կլինի նրա կյանքը։"
       },
       {
-        "description": "A. Bronson Alcott",
-        "title": "Your real influence is measured by your treatment of yourself."
+        "description": "Հելեն Քելլեր",
+        "title": "Երբ երջանկության մի դուռը փակվում է, մյուսը բացվում է, բայց հաճախ մենք այնքան երկար ենք նայում փակ դռանը, որ չենք տեսնում այն մեկը, որը բացվել է մեզ համար։"
       },
       {
-        "description": "Swedish Proverb",
-        "title": "Fear less, hope more, eat less, chew more, whine less, breathe more, talk less, say more, hate less, love more, and good things will be yours."
+        "description": "Չաս Օսթին Բեյթս",
+        "title": "Քնի կորստի պատճառ դառնում են անգամ երբեք չեկող խնդիրները։"
       },
       {
-        "description": "Martha Washington",
-        "title": "I have learned that the greater part of our misery or unhappiness is determined not by our circumstance but by our disposition."
+        "description": "Ռալֆ Ուոլդո Էմերսոն",
+        "title": "Մի՛ վատնեք ձեր կյանքը կասկածների և վախերի մեջ. նվիրվեք ձեր առջև դրված աշխատանքին, վստահ լինելով, որ այս ժամի պարտականությունների ճիշտ կատարումը լավագույն նախապատրաստությունը կլինի դրան հաջորդող ժամերի կամ դարաշրջանների համար։"
       },
       {
-        "description": "Rainer Rilke",
-        "title": "The only journey is the journey within."
+        "description": "Թոմաս Էդիսոն",
+        "title": "Ես ձախողեցի հաջողության հասնելու ճանապարհին։"
       },
       {
-        "description": "Doug Firebaugh",
-        "title": "Every day do something that will inch you closer to a better tomorrow."
+        "description": "Ջոն Քլարկ",
+        "title": "Մի փոքր հետ գնա՝ ավելի հեռու ցատկելու համար։"
       },
       {
-        "description": "Hamerton",
-        "title": "The happiest life is that which constantly exercises and educates what is best in us."
+        "description": "Թոմաս Էդիսոն",
+        "title": "Եթե մենք բոլորս անեինք այն, ինչի ընդունակ ենք, մենք կզարմանայինք ինքներս մեզ վրա։"
       },
       {
-        "description": "Thomas Edison",
-        "title": "If we all did the things we are capable of, we would astound ourselves."
+        "description": "Համերտոն",
+        "title": "Ամենաերջանիկ կյանքն այն է, որը անընդհատ մարզում և կրթում է մեր մեջ եղած լավագույնը։"
       },
       {
-        "description": "John Clarke",
-        "title": "Go back a little to leap further."
+        "description": "Դուգ Ֆայրբո",
+        "title": "Ամեն օր արա մի բան, որը քեզ կմոտեցնի ավելի լավ վաղվա օրվան։"
       },
       {
-        "description": "Thomas Edison",
-        "title": "I failed my way to success."
+        "description": "Ռայներ Ռիլկե",
+        "title": "Միակ ճանապարհորդությունը ներքին ճանապարհորդությունն է։"
       },
       {
-        "description": "Ralph Waldo Emerson",
-        "title": "Don't waste your life in doubts and fears: spend yourself on the work before you, well assured that the right performance of this hour's duties will be the best preparation for the hours or ages that follow it."
+        "description": "Մարթա Վաշինգտոն",
+        "title": "Ես հասկացա, որ մեր տառապանքի կամ դժբախտության մեծ մասը որոշվում է ոչ թե մեր դեպքերով, այլ մեր բնավորությամբ։"
       },
       {
-        "description": "Chas. Austin Bates",
-        "title": "It is the trouble that never comes that causes the loss of sleep."
+        "description": "Շվեդական ասացվածք",
+        "title": "«Ավելի քիչ վախեցիր, ավելի շատ հույսդ դիր, ավելի քիչ կեր, ավելի շատ ծամիր, ավելի քիչ տնքա, ավելի շատ շնչիր, ավելի քիչ խոսիր, ավելի շատ ասա, ավելի քիչ ատիր, ավելի շատ սիրիր, և լավ բաները քոնը կլինեն»։"
       },
       {
-        "description": "Helen Keller",
-        "title": "When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us."
+        "description": "Ա. Բրոնսոն Ալկոտ",
+        "title": "«Քո իրական ազդեցությունը չափվում է քո վերաբերմունքով ինքդ քո նկատմամբ»։"
       },
       {
-        "description": "Horace Bushnell",
-        "title": "The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be."
+        "description": "Արիստոտել",
+        "title": "Ինքդ քեզ ճանաչելը բոլոր իմաստությունների սկիզբն է։"
       },
       {
-        "description": "Berthold Auerbach",
-        "title": "Years teach us more than books."
+        "description": "Ուիլյամ Թաքերեյ",
+        "title": "Հետևեք ձեր ազնիվ համոզմունքներին և մնացեք ուժեղ։"
       },
       {
-        "description": "Helen Keller",
-        "title": "Life is either a daring adventure or nothing."
+        "description": "Ռոբերտ Քաշինգ",
+        "title": "Փաստն այն է, որ աշխարհում ինչ-որ արժեքավոր բան անելու համար մենք չպետք է դողանք և մտածենք ցրտի ու վտանգի մասին, այլ պետք է ցատկենք և հնարավորինս լավ հաղթահարենք այն։"
       },
       {
-        "description": "St. Clement of Alexandra",
-        "title": "If you do not hope, you will not find what is beyond your hopes."
+        "description": "Թոմի Լասորդա",
+        "title": "Անհնարինի և հնարավորի միջև տարբերությունը մարդու վճռականության մեջ է։"
       },
       {
-        "description": "Henry Ward Beecher",
-        "title": "Men's best successes come after their disappointments."
+        "description": "Վիրջինիա Սատիր",
+        "title": "Կյանքն այն չէ, ինչ պետք է լինի։ Այն է, ինչ կա։ Այն, թե ինչպես ես հաղթահարում՝ դա էլ, ստեղծում է տարբերություն։"
       },
       {
-        "description": "Robert Frost",
-        "title": "The best way out is always through."
+        "description": "Վիլյամ Սարոյան",
+        "title": "Կյանքիդ ժամերին ապրիր։"
+      },
+      {
+        "description": "Մարտին Լյութեր Քինգ կրտսեր",
+        "title": "Մեզանից յուրաքանչյուրը երկու «ես»-ից է, և կյանքի մեծ մարտահրավերն այդ բարձրագույն «ես»-ը պահելն է:"
+      },
+      {
+        "description": "Չարլզ Դիքենս",
+        "title": "Սիրող սիրտը ամենաճշմարիտ իմաստությունն է։"
+      },
+      {
+        "description": "Ուոլաս Սթիվենս",
+        "title": "Միգուցե ճշմարտությունը կախված է լճի շուրջը զբոսանքից։"
+      },
+      {
+        "description": "Ժան Շինոդա Բոլեն",
+        "title": "Եթե մենք փոխվենք ներքուստ, մեր արտաքուստ կյանքը նույնպես կփոխվի։"
+      },
+      {
+        "description": "Մոհանդաս Կ. Գանդի",
+        "title": "Ապագան կախված է նրանից, թե ինչ ենք անում ներկայում։"
+      },
+      {
+        "description": "Ռալֆ Ուոլդո Էմերսոն",
+        "title": "Երբ ինչ-որ բան ես անում, արա դա քո ողջ ուժով։ Ներդրիր դրա մեջ քո ամբողջ հոգին։ Դրոշմիր այն քո անհատականությամբ։ Եղիր ակտիվ, եռանդուն, ոգևորված և հավատարիմ, և դու կհասնես քո նպատակին։"
+      },
+      {
+        "description": "Հենրի Դեյվիդ Թորո",
+        "title": "Ճշմարտությունն ասելու համար երկու բան է պետք՝ մեկը՝ խոսել, մյուսը՝ լսել։"
+      },
+      {
+        "description": "Էլեն Գլազգո",
+        "title": "Կյանքը երբեք այն չէ, ինչ մարդ երազում է։ Այն հազվադեպ է լինում այն, ինչ մարդ ցանկանում է, բայց կենսունակ ոգու և եռանդուն մտքի համար ապագան միշտ կփնտրի թաղված գանձերը և մեծ արկածների հնարավորությունը։"
+      },
+      {
+        "description": "Մոլի Գուդ",
+        "title": "Թող սիրտդ առաջնորդի քեզ։ Այն շշնջում է, այնպես որ ուշադիր լսիր։"
+      },
+      {
+        "description": "Թեոդոր Ռուզվելտ",
+        "title": "Արա այն, ինչ կարող ես, նրանով, ինչ ունես, այնտեղ, որտեղ գտնվում ես։"
+      },
+      {
+        "description": "Ֆրենկ Աութլոու",
+        "title": "Հետևեք ձեր մտքերին, դրանք դառնում են ձեր խոսքերը։ Հետևեք ձեր խոսքերին, դրանք դառնում են ձեր գործողությունները։ Հետևեք ձեր գործողություններին, դրանք դառնում են ձեր սովորությունները։ Հետևեք ձեր սովորություններին, դրանք դառնում են ձեր բնավորությունը։ Հետևեք ձեր բնավորությանը, այն դառնում է ձեր ճակատագիրը։"
+      },
+      {
+        "description": "Ուինսթոն Չերչիլ",
+        "title": "Երբեք, երբեք, երբեք, երբեք, երբեք մի հանձնվիր։"
+      },
+      {
+        "description": "Ռայներ Մարիա Ռիլկե",
+        "title": "Ուշադիր եղիր քո ներսում ծագողին և դա դիր ամեն ինչից վեր… Այն, ինչ կատարվում է քո ներքին էության մեջ, արժանի է քո ողջ սիրուն, դու պետք է ինչ-որ կերպ գտնես դրա վրա աշխատելու միջոց։"
+      },
+      {
+        "description": "Բուդդա",
+        "title": "Դուք ինքներդ, ինչպես ամբողջ տիեզերքում ցանկացած մեկը, արժանի եք ձեր սիրուն և գուրգուրանքին։"
+      },
+      {
+        "description": "Էրիկա Ջանգ",
+        "title": "Եվ խնդիրն այն է, որ եթե ոչինչ ռիսկի չես դնում ապա ավելի շատ ես ռիսկի դիմում։"
+      },
+      {
+        "description": "Բարուխ Սպինոզա",
+        "title": "Չծիծաղել, չողբալ, չդատել, այլ հասկանալ։"
+      },
+      {
+        "description": "Ռայներ Մարիա Ռիլկե",
+        "title": "Ոչ մի զգացմունք վերջնական չէ։"
+      },
+      {
+        "description": "Ջեսի Ջեքսոն",
+        "title": "Դու պատասխանատու չես ընկնելու համար բայց պատասխանատու ես վեր կենալու/կանգնելու համար։"
+      },
+      {
+        "description": "Հելեն Քելլեր",
+        "title": "Թեև աշխարհը լի է տառապանքով, այն լի է նաև դրա հաղթահարմամբ։"
       }
     ]
   }
