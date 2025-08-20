@@ -1520,46 +1520,46 @@
     ]
   },
   "recreational-activities-nature": {
-    "title": "In Nature",
+    "title": "Հանգիստ բնության մեջ",
     "repeater": [
       {
-        "description": "Buy some flowers and enjoy their beauty."
+        "description": "գնիր ծաղիկներ և վայելիր նրանց գեղեցկությունը"
       },
       {
-        "description": "Do some gardening."
+        "description": "զբաղվիր այգեգործությամբ"
       },
       {
-        "description": "Go bird watching."
+        "description": "գնա թռչուն նայելու"
       },
       {
-        "description": "Go camping."
+        "description": "գնա ճամբար"
       },
       {
-        "description": "Go fishing."
+        "description": "գնա ձկնորսության"
       },
       {
-        "description": "Go for a drive or motorcycle ride in the countryside."
+        "description": "գնա մեքենայով կամ մոտոցիկլետով զբոսանքի գյուղական վայրերում"
       },
       {
-        "description": "Go for a hike or bike ride on a nature trail."
+        "description": "գնա արշավի կամ հեծանիվ քշելու՝ բնության արահետով"
       },
       {
-        "description": "Go for a picnic."
+        "description": "գնա պիկնիկի"
       },
       {
-        "description": "Go to a lake, river, or beach."
+        "description": "գնա լիճ, գետ, կամ լողափ"
       },
       {
-        "description": "Take a stroll at a botanical garden or flower show."
+        "description": "գնա զբոսանքի բուսաբանական այգում կամ ծաղիկների ցուցահանդեսում"
       },
       {
-        "description": "Take a trip to a nature reserve or national park."
+        "description": "գնա արգելոց կամ ազգային պարկ"
       },
       {
-        "description": "Take a walk in the park."
+        "description": "գնա այգի զբոսանքի"
       },
       {
-        "description": "Spend time with animals in a safe way."
+        "description": "ժամանակ անցկացրու կենդանիների հետ ապահով ձևով"
       }
     ]
   },
