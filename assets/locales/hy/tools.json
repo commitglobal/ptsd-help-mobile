@@ -542,449 +542,449 @@
         "wake-up-activities": "Activities to Help Me Wake Up"
       },
       "relaxing-activities": {
-        "description": "Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
+        "description": "Քնելուց առաջ հանգստանալը կարող է օգնել թուլացնել ձեր միտքն ու մարմինը։ Այն ապահովում է անցում օրվա գործունեության և ավելի հանգիստ, խաղաղ քնի միջև։\n\nՏեսեք ստորև բերված երեկոյան զբաղմունքները՝բացահայտելու համար որոշ գաղափարներ բուֆերային գոտում անելու համար: Եթե որևէ զբաղմունք շարունակում է ձեզ համար օգտակար լինել, կարող եք սեղմել դրա կողքին գտնվող աստղի վրա՝ այն որպես սիրելի նշելու համար: Կարող եք նաև օգտագործել գործիքները՝ մարմինը թուլացնելու և միտքը հանգստացնելու համար, որպեսզի օգնեն ձեզ հանգստանալ:",
         "info": "Including relaxation time in your sleep routine can help sleep come more easily. View the activity suggestions to find ways to engage in calming activities that prepare you for sleep.",
-        "reminder-title": "Relaxing activity for sleep",
+        "reminder-title": "Հանգստի հիշեցում",
         "reminder-body": "Use a relaxing activity for sleep to help you fall asleep easier.",
         "reminder-time": "Daily",
         "list": [
           {
             "id": 1,
-            "text": "Choose clothes to wear tomorrow"
+            "text": "ընտրեք հագուստ հաջորդ օրը հագնելու համար"
           },
           {
             "id": 2,
-            "text": "Prepare lunch for tomorrow"
+            "text": "պատրաստեք նախաճաշ հաջորդ օրվա համար"
           },
           {
             "id": 3,
-            "text": "Prepare dinner for tomorrow and put it in the fridge"
+            "text": "հաջորդ օրվա ճաշի նախապատրաստություն տեսեք և այն տեղավորեք սառնարանում"
           },
           {
             "id": 4,
-            "text": "Take a long bath or shower"
+            "text": "լոգանք կամ երկարատև ցնցուղ ընդունեք"
           },
           {
             "id": 5,
-            "text": "Write thank you notes or short messages to friends"
+            "text": "գրեք շնրոհակալական գրառումներ կամ կարճ էլ․ նամակներ ձեր ընկերներին"
           },
           {
             "id": 6,
-            "text": "Browse the internet (only non-stressful topics) or research future purchases (cars, appliances, vacations)"
+            "text": "Զննեք ինտերնետը (միայն ոչ սթրեսային թեմաներով) կամ ուսումնասիրեք խոշոր գնումները (մեքենաներ, կենցաղային տեխնիկա, արձակուրդներ):"
           },
           {
             "id": 7,
-            "text": "Watch movies or TV show episodes you haven't seen in a long time (no action movies or thrillers)"
+            "text": "Դիտեք ֆիլմեր կամ հեռուստաշոուների դրվագներ, որոնք վաղուց չեք տեսել (ոչ մի մարտաֆիլմ կամ թրիլեր):"
           },
           {
             "id": 8,
-            "text": "Take the dog for a long walk"
+            "text": "Տարեք շանը երկար զբոսանքի"
           },
           {
             "id": 9,
-            "text": "Take care of your pets"
+            "text": "Խնամեք ձեր ընտանի կենդանիներին"
           },
           {
             "id": 10,
-            "text": "Listen to slow, relaxing or instrumental music"
+            "text": "Լսեք դանդաղ, հանգստացնող կամ գործիքային երաժշտություն"
           },
           {
             "id": 11,
-            "text": "Gather old bills and statements and throw them away if no longer needed"
+            "text": "Հավաքեք հին հաշիվներն ու քաղվածքները և մանրացրեք դրանք"
           },
           {
             "id": 12,
-            "text": "Organize collections if you have any - photos, old letters, books or other items"
+            "text": "Կազմակերպեք հավաքածուներ՝ լուսանկարներ, հին նամակներ, գրքեր կամ այլ իրեր"
           },
           {
             "id": 13,
-            "text": "Sort laundry or fold clothes"
+            "text": "Լվացեք կամ ծալեք հագուստը"
           },
           {
             "id": 14,
-            "text": "Polish your shoes"
+            "text": "Փայլեցրեք ձեր կոշիկները"
           },
           {
             "id": 15,
-            "text": "Iron or repair clothes"
+            "text": "Արդուկեք կամ նորոգեք հագուստները"
           },
           {
             "id": 16,
-            "text": "Write in your journal"
+            "text": "Գրեք ձեր օրագրում"
           },
           {
             "id": 17,
-            "text": "Do light exercise to relax your muscles"
+            "text": "Կատարեք մի քանի ձգումներ՝ մկանները թուլացնելու համար"
           },
           {
             "id": 18,
-            "text": "Do a pedicure, manicure or facial treatment"
+            "text": "Մանիկյուր, պեդիկյուր կամ դեմքի խնամք արեք"
           },
           {
             "id": 19,
-            "text": "Sweep or mop the kitchen floor"
+            "text": "Ավլեք կամ շորով մաքրեք խոհանոցի հատակը, քանի դեռ ոչ ոք չկա դրա վրա լաց լինելու համար։"
           },
           {
             "id": 20,
-            "text": "Floss your teeth"
+            "text": "Թել"
           },
           {
             "id": 21,
-            "text": "Knit"
+            "text": "Գործել"
           },
           {
             "id": 22,
-            "text": "Start another handmade project"
+            "text": "Ծածկոց"
           }
         ]
       },
       "awake-activities": {
-        "description": "If you have trouble staying awake until your desired bedtime, check the Activities to Keep Me Awake section below for ideas to help with deep drowsiness. If any of these activities help you, press the star next to the activity to mark it.",
+        "description": "Եթե դժվարանում եք արթուն մնալ մինչև խորհուրդ տրվող քնելու ժամը, տե՛ս ստորև բերված վարժությունները՝ ձեզ արթուն պահելու համար, որպեսզի ստանաք գաղափարներ, թե ինչպես արթուն մնալ մինչև քնելու ժամը։\n\nԵթե որևէ գործունեություն շարունակում է աշխատել ձեզ համար, սեղմեք դրա կողքին գտնվող աստղի վրա՝ այն ընդգծելու համար։",
         "info": "Staying awake until you are truly sleepy can help build sleep drive and make it easier to fall asleep. Not sure about the difference between sleepy and tired? Check out 'Sleep 101' in the Learn More section. Use these activities to stay awake until bedtime. If you're not sleepy at that time, try using techniques to relax your body and quiet your mind. Remember not to stay awake when sleepy if it could interfere with activities or responsibilities where drowsiness could be dangerous.",
         "list": [
           {
             "id": 1,
-            "text": "Work on a hobby you're interested in"
+            "text": "աշխատեք նախագծի կամ զբաղմունիք/հոբբի վրա որը գտնում եք, որ հետաքրքիր է"
           },
           {
             "id": 2,
-            "text": "Read an engaging book"
+            "text": "կարդացեք գիրք, որը դժվար է վայր դնել"
           },
           {
             "id": 3,
-            "text": "Watch an interesting series"
+            "text": "դիտեք առեղծվածային շոու"
           },
           {
             "id": 4,
-            "text": "Write a long letter"
+            "text": "գրեք երկար նամակ"
           },
           {
             "id": 5,
-            "text": "Call a friend"
+            "text": "զանգեք ձեր ընկերոջը"
           },
           {
             "id": 6,
-            "text": "Do light exercises"
+            "text": "կատարեք ձգվող վարժություններ"
           },
           {
             "id": 7,
-            "text": "Get up and take a few steps"
+            "text": "կանգնիր և շրջիր"
           },
           {
             "id": 8,
-            "text": "Do household chores"
+            "text": "տնային գործեր արեք"
           },
           {
             "id": 9,
-            "text": "Listen to upbeat music (sing)"
+            "text": "լսեք ուրախ երաժշտություն (երգեք կամ մրմնջացեք միասին)"
           },
           {
             "id": 10,
-            "text": "Dance"
+            "text": "պարեք ուրախ երաժշտության տակ"
           },
           {
             "id": 11,
-            "text": "Watch a comedy"
+            "text": "դիտեք կատակերգական շոու"
           },
           {
             "id": 12,
-            "text": "Turn on all the lights"
+            "text": "միացրեք բոլոր լույսերը"
           },
           {
             "id": 13,
-            "text": "Go outside (if it's safe to leave the house)"
+            "text": "գնացեք դուրս՝ միայն ապահով վայր"
           },
           {
             "id": 14,
-            "text": "Prepare lunch for tomorrow"
+            "text": "հավաքեք/պատրաստեք վաղվա ճաշը"
           },
           {
             "id": 15,
-            "text": "Prepare meals for the rest of the week"
+            "text": "պատրաստեք շաբաթվա մնացած օրերի համար նախատեսված կերակուրները"
           },
           {
             "id": 16,
-            "text": "Organize laundry"
+            "text": "տեսակավորեք լվացքը"
           },
           {
             "id": 17,
-            "text": "Organize files on computer"
+            "text": "կազմակերպեք/համակարգեք համակարգչային ֆայլերը"
           },
           {
             "id": 18,
-            "text": "Organize drawers or shelves"
+            "text": "կազմակերպեք/դասավորեք դարակները/պահարաները"
           }
         ]
       },
       "no-sleep-activities": {
-        "description": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. See the Midnight Activities section below for ideas of things to do when it's hard to fall asleep. If any of these activities help you, press the star next to the activity to mark it.",
+        "description": "Երբ չեք կարում քնել՝ անկողնուց վեր կենալը և որոշակի հանգաստացնող գործողություններ անելը կարող է օգնել ձեր մարմինը կապել քնի հետ։ Ստորև տե՛ս գիշերվա կեսի համար նախատեսված գործողությունները՝ քնելու հետ կապված խնդիրների մասին գաղափարներ ստանալու համար: Եթե որևէ գործողություն շարունակում է ձեզ համար աշխատել, սեղմեք դրա կողքին գտնվող աստղի վրա՝ այն ընդգծելու համար:",
         "info": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. Use some of the activity ideas to stay relaxed and occupied until you become very sleepy and ready to return to bed. When you get up, you should do things that are engaging but calming. If it's difficult for you to get out of bed, prepare a quiet and comfortable place where you can go to make getting up easier.",
         "list": [
           {
             "id": 1,
-            "text": "Look through catalogs/magazines"
+            "text": "դիտեք ամսագրեր"
           },
           {
             "id": 2,
-            "text": "Update your contact list or start one online or on paper"
+            "text": "թարմացրեք ձեր հասցեների գիրքը կամ սկսեք այն առցանց կամ թղթային տարբերակով"
           },
           {
             "id": 3,
-            "text": "Organize emails and bills"
+            "text": "դասավորեք անցանկալի փոստը և հաշիվները (բայց մի՛ վճարեք հաշիվները)"
           },
           {
             "id": 4,
-            "text": "Play solitaire online or with cards if you're not very competitive"
+            "text": "Խաղացեք սոլիտեր առցանց կամ քարտերով տանը, եթե չափազանց մրցակցային չեք դրա հարցում։"
           },
           {
             "id": 5,
-            "text": "Read"
+            "text": "շարունակեք կարդալ"
           },
           {
             "id": 6,
-            "text": "Make a shopping list for the current week"
+            "text": "կազմեք շաբաթվա համար մթերային գնումների ցուցակ"
           },
           {
             "id": 7,
-            "text": "Plan the menu for upcoming dinners"
+            "text": "կազմեք մանրամասն ճաշացանկ ընթրիքի համար"
           },
           {
             "id": 8,
-            "text": "Clean and organize the coffee table, dining area, kitchen counter or desk"
+            "text": "ազատվեք ավելորդ իրերից ձեր սուրճի սեղանից, ճաշասենյակի սեղանից, խոհանոցի սեղանից կամ գրասեղանից"
           },
           {
             "id": 9,
-            "text": "Create a list of activities you'd like to do on weekends or vacation"
+            "text": "կազմեք այն գործողությունների ցանկ, որոնք կցանկանայիք անել հանգստյան օրերին և արձակուրդներին"
           },
           {
             "id": 10,
-            "text": "Organize photo album or journal"
+            "text": "աշխատեք լուսանկարչական ալբոմների կամ գրանցամատյանների վրա"
           },
           {
             "id": 11,
-            "text": "Fold clothes and put them away"
+            "text": "հագուստը ծալեք, հագուստը դրեք տեղում"
           },
           {
             "id": 12,
-            "text": "Buy gifts for birthdays or holidays"
+            "text": "գնեք տոնական, հարսանեկան կամ ծննդյան նվերներ առցանց"
           },
           {
             "id": 13,
-            "text": "Read a magazine or light book"
+            "text": "կարդացեք ամսագրեր կամ այլ թեթև նյութեր"
           },
           {
             "id": 14,
-            "text": "Make a materials list for a home do-it-yourself project"
+            "text": "կազմեք տան համար անհրաժեշտ նյութերի ցանկ"
           },
           {
             "id": 15,
-            "text": "Choose two drawers to organize (in office, bathroom or kitchen)"
+            "text": "ընտրեք մեկ կամ երկու դարակ մաքրելու համար (ձեր սեղանի, խոհանոցի, լոգարանի)"
           },
           {
             "id": 16,
-            "text": "Watch repetitive TV shows or commercials"
+            "text": "դիտեք գովազդային հոլովակներ, C-SPAN, եղանակի ալիք կամ այլ կրկնվող հեռուստաշոուներ"
           },
           {
             "id": 17,
-            "text": "Organize your CD or DVD collection and choose some to donate or sell if you no longer need them or don't like them"
+            "text": "կազմակերպեք CD-ների կամ DVD-ների հավաքածուներ և ընտրեք մի քանիսը նվիրաբերելու կամ վաճառելու համար, եթե դրանք այլևս դուր չեն գալիս ձեզ։"
           },
           {
             "id": 18,
-            "text": "Write thoughts in a notebook for a while. Use this exercise to get rid of negative thoughts."
+            "text": "գրի առեք մտքերը տետրում որոշակի ժամանակահատվածի համար: Օգտագործեք այս վարժությունը՝ գիշերային մտքերն ու անհանգստությունները նվազեցնելու համար:"
           },
           {
             "id": 19,
-            "text": "Crochet or do an activity you can easily stop if you get sleepy"
+            "text": "գործեք կամ արեք այլ աշխատանքներ/ այլ արհեստներ, որոնց վրա կարող եք դադարեցնել աշխատելը, երբ քնկոտ եք զգում"
           },
           {
             "id": 20,
-            "text": "Read a children's book. These are often soothing and amusing"
+            "text": "կարդացե՛ք ձեր երեխաների համար նախատեսված գրքերը. դրանք հաճախ շատ հանգստացնող են, հեշտ ընթերցվող և զվարճալի։"
           }
         ]
       },
       "wake-up-activities": {
-        "description": "If you have an exciting activity scheduled for the morning, it can help you get out of bed with more energy. See the Morning Activities section below for ideas of things to do in the morning. If any of these activities help you, press the star next to the activity to mark it.",
+        "description": "Առավոտյան մի զբաղմունք ունենալը, որին անհամբեր սպասում ես, կարող է օգնել ամեն օր նույն ժամին անկողնուց վեր կենալն ավելի իրագործելի թվալ: Առավոտյան անելիքների գաղափարների համար տե՛ս ստորև՝ առավոտյան զբաղմունքների բաժինը: Եթե որևէ զբաղմունք շարունակում է ձեզ համար աշխատել, կարող եք սեղմել դրա կողքին գտնվող աստղի վրա՝ այն ընդգծելու համար:",
         "info": "Getting up at your planned time in the morning helps maintain a consistent schedule and prevents associating being in bed with being awake. Use these ideas to help stay motivated to start your day. Consider setting a reminder that coincides with when you want to wake up.",
         "list": [
           {
             "id": 1,
-            "text": "Meditate or pray"
+            "text": "մեդիտացիա արա կամ աղոթիր"
           },
           {
             "id": 2,
-            "text": "Watch the sunrise"
+            "text": "դիտիր արևածագը"
           },
           {
             "id": 3,
-            "text": "Take the dog for a walk if you're in a safe area"
+            "text": "տար շանը ման տալու"
           },
           {
             "id": 4,
-            "text": "Read the newspaper or read news online"
+            "text": "կարդա թերթ կամ լուրերը առցանց"
           },
           {
             "id": 5,
-            "text": "Exercise at home or go to the gym"
+            "text": "գնա քո մարզասրահ կամ պարապիր տանը"
           },
           {
             "id": 6,
-            "text": "Go shopping at the store"
+            "text": "գնա մթերային խանութ կամ այլ խանութներ, որոնք շուտ են բացվում"
           },
           {
             "id": 7,
-            "text": "Prepare lunch for yourself or the whole family"
+            "text": "նախաճաշ պատրաստրի քո կամ ընտանիքի անդամների համար"
           },
           {
             "id": 8,
-            "text": "Enjoy being able to prepare for work and having time to get children ready for school without rushing"
+            "text": "վայելեք աշխատանքին պատրաստվելը, իսկ երեխաներին՝ դպրոցին՝ առանց շտապելու։"
           },
           {
             "id": 9,
-            "text": "Organize children's toys and choose items to donate"
+            "text": "դասավորեք երեխաների խաղալիքները և ընտրեք իրեր բարեգործության կամ բակի վաճառքի համար"
           },
           {
             "id": 10,
-            "text": "Sort clothes for washing or iron laundry"
+            "text": "դասավորեք և սկսեք լվացքը կամ արդուկեք աշխատանքի համար նախատեսված հագուստը"
           },
           {
             "id": 11,
-            "text": "Plan family budget in excel or on paper"
+            "text": "սկսեք ձեր ընտանիքի համար բյուջե կազմել աղյուսակի կամ տետրակի վրա"
           },
           {
             "id": 12,
-            "text": "Send emails to friends or check work email"
+            "text": "էլ նամակներ ուղարկիր կամ ստուգիր փոստդ"
           },
           {
             "id": 13,
-            "text": "Clean up old hard drives or DVDs"
+            "text": "ոչնչացրեք կամ ջնջեք հին համակարգչային սկավառակները, DVD-ները և այլն"
           },
           {
             "id": 14,
-            "text": "Organize bills, documents or other papers"
+            "text": "կազմակերպեք ձեր բոլոր հաշիվները, կտրոնները, կուպոնները և երաշխիքային կտրոնները արխիվային պահարանում կամ թղթապանակներում։"
           },
           {
             "id": 15,
-            "text": "Prepare ingredients for dinner (marinate meat, cut vegetables etc)"
+            "text": "սկսեք ուտեստների պատրաստման որոշ աշխատանքներ (մարինացնել, բանջարեղեն կտրատել և այլն):"
           },
           {
             "id": 16,
-            "text": "Make the bed and clean the room"
+            "text": "հավաքեք մահճակալը և կարգի բերեք ձեր ննջասենյակը"
           },
           {
             "id": 17,
-            "text": "Pull back curtains and blinds"
+            "text": "բացեք վարագույրները և լուսավորեք տունը"
           },
           {
             "id": 18,
-            "text": "Sweep inside or outside the house"
+            "text": "մաքրեք ձեր մայթեզրը կամ աստիճանները, կամ մաքրեք ձյունը"
           },
           {
             "id": 19,
-            "text": "Take care of indoor plants or garden, water the flowers"
+            "text": "զբաղվեք այգեգործությամբ կամ ջրեք սենյակային բույսերը կամ ձեր պատշգամբի շուրջը աճեցրած բույսերը"
           },
           {
             "id": 20,
-            "text": "Check task list for the current day or week"
+            "text": "վերանայեք ձեր անելիքների ցանկը օրվա կամ շաբաթվա համար։"
           }
         ]
       }
     },
     "sleep-perspective": {
-      "title": "Change your sleep perspective",
+      "title": "Մտածելակերպի փոփոխությունը կարող է փոխել ձեր ինքնազգացողությունը և քնի որակը։ Դիտարկեք այս այլընտրանքային միտքը.",
       "description": "Try these habits to improve your sleep quality",
       "repeater": [
         {
-          "title": "I can tolerate this."
+          "title": "Ես կարող եմ հանդուրժել սա"
         },
         {
-          "title": "I will survive even if I don't sleep at all tonight."
+          "title": "Ես կգոյատևեմ, նույնիսկ եթե այսօր գիշեր ընդհանրապես չքնեմ"
         },
         {
-          "title": "I've done this before, so I know I can do it again."
+          "title": "Ես սա արել եմ առաջ, այնպես որ գիտեմ, որ կարող եմ նորից անել"
         },
         {
-          "title": "I don't have to feel comfortable all the time. I'm human."
+          "title": "Ես պարտավոր չեմ միշտ հարմարավետ զգալ։ Ես մարդ եմ։"
         },
         {
-          "title": "This is just another challenge that I will solve and cope with."
+          "title": "Սա ևս մեկ մարտահրավեր է, որը ես կհասկանամ և կառերեսվեմ"
         },
         {
-          "title": "I've been through this before and I was fine."
+          "title": "Ես արդեն անցել եմ սրա միջով և ինձ շատ լավ եմ զգացել"
         },
         {
-          "title": "One bad night of sleep is not the end of the world."
+          "title": "Մեկ վատ քունը աշխարհի վերջը չէ"
         },
         {
-          "title": "This restless night will pass."
+          "title": "Գիշերային այս շուռ ու մուռը կանցնի"
         },
         {
-          "title": "Although it feels like I'll never sleep well, that might not be the case. Anticipating that I might not sleep well will probably make my sleep worse. I've functioned well before even after not sleeping well."
+          "title": "Չնայած ինձ թվում է, թե երբեք լավ չեմ քնի, հնարավոր է, որ այդպես չէ։ Այն կանխատեսումը, որ լավ չեմ քնի, հավանաբար կվատացնի իմ քունը։ Ես նախկինում լավ եմ զգացել նույնիսկ վատ քնելուց հետո։"
         },
         {
-          "title": "I've functioned poorly before even after sleeping well."
+          "title": "Ես նախկինում վատ եմ զգացելլ, նույնիսկ լավ քնելուց հետո։"
         },
         {
-          "title": "Although I'm anticipating poor sleep, it could be fine... I've slept well before."
+          "title": "Չնայած ես վատ գիշերային քուն եմ կանխատեսում, ամեն ինչ կարող է լավ լինել… Ես առաջ էլ լավ եմ քնել"
         },
         {
-          "title": "The body naturally regulates sleep; even if I miss some sleep, I'll be able to function."
+          "title": "Մարմինը բնականաբար կարգավորում է քունը. նույնիսկ եթե ես որոշ ժամանակ քունս բաց թողնեմ, կկարողանամ գործել/լավ զգալ։"
         },
         {
-          "title": "If I don't worry about sleep, one bad night will probably improve my sleep the next night."
+          "title": "Եթե ես չանհանգստանամ քնի համար, մեկ գիշեր վատ քունը, հավանաբար, կբարելավի իմ քունը հաջորդ գիշերը։"
         }
       ]
     }
   },
   "pause": {
-    "description": "Այս վարժության համար գտեք հարմարավետ և հանգիստ տեղ նստելու համար, որտեղ ձեզ չեն խանգարի։\n\nԽնդրում ենք նկատի ունենալ, որ ձայնագրության մեջ կլինեն դադարներ, որպեսզի կարողանաք մարզվել առանց շեղումների։\n\nԺամանակը՝ մոտ 9 րոպե\n\nTime: About 9 minutes.",
+    "description": "Մտածեք այն մասին, թե ինչպիսի օրինակ եք ուզում լինել ձեր կյանքում ուրիշների համար՝ երեխաների և այլն:",
     "action-btn-label": "շարունակել",
-    "helper": "Try to do this for 5 minutes",
+    "helper": "Փորձեք սա անել 5 րոպեում",
     "take_break": "դադար վերցնել",
     "repeater": [
       {
-        "title": "Take a walk to relax and clear your thoughts"
+        "title": "գնա զբոսանքի"
       },
       {
-        "title": "Breathe deeply for 10 minutes or more"
+        "title": "Խորը շնչառական վարժանք արեք 10 րոպե կամ ավելի"
       },
       {
-        "title": "Exercise (bike riding, hiking, weight lifting, swimming, running)"
+        "title": "Մարզումներ/վարժանք (հեծանվորդություն, լեռնագնացություն, ծանրամարզություն, լող, վազք)"
       },
       {
-        "title": "Garden or do yard work"
+        "title": "զբաղվեք բակի կամ այգեգործության աշխատանքներով"
       },
       {
-        "title": "Tell yourself positive things like \"I can handle this situation without losing my cool\""
+        "title": "Ասա ինքդ քեզ ինչ-որ զորացնող բան, օրինակ՝ «Ես կարող եմ հաղթահարել սա՝ առանց զայրանալու»։"
       },
       {
-        "title": "Draw or paint to express your emotions"
+        "title": "նկարիր"
       },
       {
-        "title": "Call a friend or loved one for support"
+        "title": "զանգահարիր ընկերոջդ կամ սիրելիիդ աջակցության համար"
       },
       {
-        "title": "Call your therapist for support"
+        "title": "զանգահարիր թերապևտիդ աջակցության համար"
       },
       {
-        "title": "Stretch and breathe deeply and slowly"
+        "title": "ձգվեք և դանդաղ, խորը շնչեք"
       },
       {
-        "title": "Remember that you can cope"
+        "title": "հիշեցրեք ինքներդ ձեզ, որ կարող եք հաղթահարել սա"
       },
       {
-        "title": "Meditate to calm your mind"
+        "title": "մեդիտացիա արեք"
       },
       {
-        "title": "Pray for guidance and support"
+        "title": "աղոթիր"
       },
       {
-        "title": "Think about what advice someone you trust would give you"
+        "title": "մտածիր ինչ խորհուրդ կտար այն մարդը ում վստահում ես"
       },
       {
-        "title": "Spend time with a pet for comfort and peace"
+        "title": "ժամանակ անցկացրու կենդանու հետ"
       },
       {
-        "title": "Take a shower or bath to relax"
+        "title": "հանգստանալու համար ցնցուղ կամ լոգանք ընդունիր"
       },
       {
         "title": "Think about how you want to be a role model for others in your life - children etc."
@@ -995,10 +995,10 @@
     "done": "կատարված",
     "next": "Next",
     "delete": "Delete feelings",
-    "main-action-label": "Add a feeling",
+    "main-action-label": "ընտրել հիմնական զգացողություն",
     "no-feelings": "You haven't added any feelings yet.",
-    "choose-main-feelings": "Firstly, pick one or more feelings that describe how you're feeling right now.",
-    "choose-secondary-feelings": "Pick any feelings that you feel right now.",
+    "choose-main-feelings": "Նախ, ընտրեք մեկ կամ մի քանի զգացողություններ, որոնք համապատասխանում են հենց հիմա",
+    "choose-secondary-feelings": "Ընտրեք ցանկացած լրացուցիչ զգացողություն, որը համապատասխանում է հենց հիմա:",
     "discomfort-meter": "Discomfort Meter",
     "discomfort-intensity": "How intense is your discomfort right now?",
     "stress": "Stress",
@@ -1023,93 +1023,93 @@
   },
   "feelings": {
     "angry": {
-      "main": "Angry",
-      "betrayed": "Betrayed",
-      "bitter": "Bitter",
-      "critical": "Critical",
-      "devastated": "Devastated",
-      "disgusted": "Disgusted",
-      "frustrated": "Frustrated",
-      "angry": "Angry",
-      "detestable": "Detestable",
-      "hostile": "Hostile",
-      "hurt": "Hurt",
-      "irritated": "Irritated",
-      "indignant": "Indignant"
+      "main": "զայրույթ",
+      "betrayed": "դավաճանված",
+      "bitter": "դառնացած",
+      "critical": "կրիտիկական",
+      "devastated": "ավերված/ոչնչացված",
+      "disgusted": "զզված",
+      "frustrated": "հիասթափված",
+      "angry": "կատաղած",
+      "detestable": "ատելի",
+      "hostile": "թշնամական",
+      "hurt": "վիրավորված",
+      "irritated": "նարդայնացած",
+      "indignant": "զայրացած"
     },
     "happy": {
-      "main": "Happy",
+      "main": "ուրախալի/ուրախ",
       "energetic": "Energetic",
-      "cheerful": "Cheerful",
-      "creative": "Creative",
-      "curious": "Curious",
-      "daring": "Daring",
-      "hopeful": "Hopeful",
-      "full_of_imagination": "Full of imagination",
-      "light": "Light",
-      "optimistic": "Optimistic",
-      "playful": "Playful",
+      "cheerful": "ուրախ",
+      "creative": "ստեղծագործ",
+      "curious": "հետաքրքրասեր",
+      "daring": "խիզախ",
+      "hopeful": "հույսով լի",
+      "full_of_imagination": "երևակայական",
+      "light": "անհոգ",
+      "optimistic": "լավատես",
+      "playful": "խաղային",
       "thin_skinned": "Thin-skinned",
-      "provocative": "Provocative"
+      "provocative": "զգայական"
     },
     "strong": {
-      "main": "Strong",
-      "appreciated": "Appreciated",
-      "confident": "Confident",
-      "discerning": "Discerning",
-      "energetic": "Energetic",
-      "nourishing": "Nourishing",
-      "proud": "Proud",
-      "respected": "Respected",
-      "receptive": "Receptive",
-      "successful": "Successful",
-      "grateful": "Grateful",
-      "cherished": "Cherished",
-      "valuable": "Valuable"
+      "main": "հզոր/ուժեղ",
+      "appreciated": "գնահատված",
+      "confident": "վստահ",
+      "discerning": "խորաթափանց",
+      "energetic": "եռանդուն",
+      "nourishing": "հոգատար",
+      "proud": "հպարտ",
+      "respected": "հարգված",
+      "receptive": "հասնող",
+      "successful": "հաջողակ",
+      "grateful": "շնորհակալ",
+      "cherished": "գնահատված",
+      "valuable": "արժանի"
     },
     "sad": {
-      "main": "Sad",
-      "embarrassed": "Embarrassed",
-      "bored": "Bored",
-      "cold": "Cold",
-      "depressed": "Depressed",
-      "desperate": "Desperate",
-      "disconnected": "Disconnected",
-      "empty": "Empty",
-      "hopeless": "Hopeless",
-      "humiliated": "Humiliated",
-      "lonely": "Lonely",
-      "tired": "Tired",
-      "worthless": "Worthless"
+      "main": "տխուր",
+      "embarrassed": "ամոթալի",
+      "bored": "ձանրացած",
+      "cold": "սառը",
+      "depressed": "ընկճված",
+      "desperate": "անջատված",
+      "disconnected": "դատարկ",
+      "empty": "հուսահատ",
+      "hopeless": "հուսահատ",
+      "humiliated": "նվաստացած",
+      "lonely": "միայնակ",
+      "tired": "հոգնած",
+      "worthless": "անարժեք"
     },
     "safe": {
-      "main": "Safe",
-      "accepted": "Accepted",
-      "calm": "Calm",
-      "loved": "Loved",
-      "open": "Open",
-      "peaceful": "Peaceful",
-      "protected": "Protected",
-      "silent": "Silent",
-      "relaxed": "Relaxed",
+      "main": "ապահով",
+      "accepted": "ընդունված",
+      "calm": "հանգիստ",
+      "loved": "սիրված",
+      "open": "բաց",
+      "peaceful": "խաղաղ",
+      "protected": "պաշտպանված",
+      "silent": "հանգիստ",
+      "relaxed": "հանգիստ",
       "caring": "Caring",
-      "understood": "Understood",
-      "warm": "Warm"
+      "understood": "հասկացված",
+      "warm": "ջերմ"
     },
     "scared": {
-      "main": "Scared",
-      "abandoned": "Abandoned",
-      "anxious": "Anxious",
-      "perplexed": "Perplexed",
-      "helpless": "Helpless",
-      "inadequate": "Inadequate",
-      "insignificant": "Insignificant",
-      "numb": "Numb",
-      "overwhelmed": "Overwhelmed",
-      "paralyzed": "Paralyzed",
-      "shocked": "Shocked",
-      "blocked": "Blocked",
-      "vulnerable": "Vulnerable"
+      "main": "վախեցած",
+      "abandoned": "լքված",
+      "anxious": "անհանգիստ",
+      "perplexed": "շփոթված",
+      "helpless": "անօգնական",
+      "inadequate": "անադեկվատ",
+      "insignificant": "աննշան",
+      "numb": "թմրած",
+      "overwhelmed": "ծանրաբեռնված",
+      "paralyzed": "կաթվածահար",
+      "shocked": "շոկահար",
+      "blocked": "թակարդված",
+      "vulnerable": "խոցված/խոցելի"
     }
   },
   "worry-time": {
@@ -1159,8 +1159,8 @@
     "delete": "Delete RID"
   },
   "muscle-relaxation": {
-    "title": "Muscle Relaxation",
-    "description": "You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has accompanying audio, so you will need to find a quiet place or put on your headphones now.",
+    "title": "մկանների թուլացում",
+    "description": "Դուք պատրաստվում եք անցնել մկանների պրոգրեսիվ թուլացման վարժություն։ Դուք աստիճանաբար կաշխատեցնեք հիմնական մկանային խմբերից յուրաքանչյուրը՝ լարելով և թուլացնելով դրանք վարժության ընթացքում։ Այս վարժությունը տևում է մոտ 9 րոպե։ Այն ունի ուղեկցող աուդիո, ուստի դուք պետք է գտնեք հանգիստ տեղ կամ դնեք ականջակալները։\n\nՆստեք հարմարավետ աթոռին կամ պառկեք։ Մի՛ կատարեք այս վարժությունը մեքենա վարելիս։\n\nԽնդրում ենք նկատի ունենալ, որ եթե դուք ունեք վնասվածքներ, ինչպիսիք են մեջքի ցավը կամ ծնկի վնասվածքը, պետք է խուսափեք մկանների լարումից, որոնք կարող են ազդել այդ վնասվածքի վրա։",
     "action-btn-label": "Start",
     "done": "կատարված"
   },
