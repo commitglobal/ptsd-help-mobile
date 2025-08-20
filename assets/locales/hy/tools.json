@@ -1561,136 +1561,136 @@
     ]
   },
   "soothe-senses": {
-    "title": "Soothe The Senses",
+    "title": "հանգստացնել զգայարանները",
     "done": "կատարված",
     "repeater": [
       {
-        "title": "Sound",
-        "description": "Sing your favorite songs, or play them and sing along."
+        "title": "ձայն/լսողական",
+        "description": "երգեք ձեր սիրելի երգերը կամ նվագեք և երգեք միասին"
       },
       {
-        "title": "Sound",
-        "description": "Listen to music, and let yourself get lost in the sounds."
+        "title": "ձայն/լսողական",
+        "description": "լսեք երաժշտություն և թույլ տվեք ձեզ կորչել ձայների մեջ"
       },
       {
-        "title": "Sound",
-        "description": "Listen to pleasurable sounds, like birds, or the ocean."
+        "title": "ձայն/լսողական",
+        "description": "լսեք հաճելի ձայներ, ինչպիսիք են թռչունների կամ օվկիանոսի ձայները"
       },
       {
-        "title": "Sound",
-        "description": "Learn to play an instrument and play tunes for your own enjoyment."
+        "title": "ձայն/լսողական",
+        "description": "սովորեք նվագել որևէ գործիք և նվագել մեղեդիներ ձեր սեփական հաճույքի համար"
       },
       {
-        "title": "Sound",
-        "description": "Be mindful of the sounds around you."
+        "title": "ձայն/լսողական",
+        "description": "ուշադիր եղեք ձեր շուրջը լսվող ձայներին"
       },
       {
-        "title": "Sound",
-        "description": "Turn on a movie and listen to the sounds, tones and textures of human voices."
+        "title": "ձայն/լսողական",
+        "description": "միացրեք ֆիլմը և լսեք մարդկային ձայների հնչյունները, հնչերանգները և կառուցվածքը"
       },
       {
-        "title": "Sound",
-        "description": "Listen to an meditation or lecture online or on the radio about something interesting to you."
+        "title": "ձայն/լսողական",
+        "description": "լսեք մեդիտացիա կամ դասախոսություն առցանց կամ ռադիոյով ձեզ համար հետաքրքիր մի բանի մասին"
       },
       {
-        "title": "Sound",
-        "description": "Go for a walk in nature and listen to the sounds around you."
+        "title": "ձայն/լսողական",
+        "description": "գնացեք զբոսանքի և լսեք ձեր շուրջը լսվող ձայները"
       },
       {
-        "title": "Sight",
-        "description": "Go for a walk in the park or a hike in nature. Take in the beauty around you."
+        "title": "տեսողություն/տեսողական",
+        "description": "գնացեք զբոսանքի այգում կամ արշավի։ Վայելեք ձեր շրջապատի գեղեցկությունը։"
       },
       {
-        "title": "Sight",
-        "description": "Go to a museum with beautiful art and enjoy what catches your eye."
+        "title": "տեսողություն/տեսողական",
+        "description": "գնացեք թանգարան, որտեղ գեղեցիկ արվեստ կա և վայելեք այն, ինչ գրավում է ձեր ուշադրությունը"
       },
       {
-        "title": "Sight",
-        "description": "Sit in the lobby of a beautiful hotel and notice the details of the décor."
+        "title": "տեսողություն/տեսողական",
+        "description": "նստեք գեղեցիկ հյուրանոցի նախասրահում և ուշադրություն դարձրեք դեկորի դետալներին"
       },
       {
-        "title": "Sight",
-        "description": "Buy a beautiful flower or bouquet and make one space in a room pretty."
+        "title": "տեսողություն/տեսողական",
+        "description": "գնեք գեղեցիկ ծաղիկ կամ ծաղկեփունջ և գեղեցիկ դարձրեք սենյակի մեկ տարածքը։"
       },
       {
-        "title": "Sight",
-        "description": "Go outside at night in the fresh air and look at the stars."
+        "title": "տեսողություն/տեսողական",
+        "description": "գիշերը դուրս եկեք մաքուր օդի և նայեք աստղերին"
       },
       {
-        "title": "Sight",
-        "description": "Look at good travel photos in a book or on the internet; let them inspire you."
+        "title": "տեսողություն/տեսողական",
+        "description": "նայեք լավ ճանապարհորդական լուսանկարներ գրքում կամ ինտերնետում, թող դրանք ոգեշնչեն ձեզ"
       },
       {
-        "title": "Taste",
-        "description": "Eat your favorite meal; really pay attention as you savor it."
+        "title": "համ/համային",
+        "description": "կերեք ձեր սիրելի ուտեստը։ Իսկապես ուշադիր եղեք, երբ վայելում եք այն։"
       },
       {
-        "title": "Taste",
-        "description": "Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
+        "title": "համ/համային",
+        "description": "խմեք հանգստացնող ըմպելիք, ինչպիսիք են բուսական թեյը կամ տաք շոկոլադը, և վայելեք համը"
       },
       {
-        "title": "Taste",
-        "description": "Treat yourself to dessert and eat each bite mindfully, with pleasure."
+        "title": "համ/համային",
+        "description": "աղանդեր համտեսեք և կերեք յուրաքանչյուր կտորը գիտակցաբար, հաճույքով"
       },
       {
-        "title": "Taste",
-        "description": "Suck on a piece of peppermint candy and let it melt in your mouth."
+        "title": "համ/համային",
+        "description": "ծծեք մի կտոր անանուխի կոնֆետ և թողեք, որ այն հալվի ձեր բերանում"
       },
       {
-        "title": "Taste",
-        "description": "Chew your favorite gum and savor its flavor."
+        "title": "համ/համային",
+        "description": "ծամեք ձեր սիրելի մաստակը և վայելեք դրա համը"
       },
       {
-        "title": "Taste",
-        "description": "Sample flavors in an ice cream store and notice the subtle differences."
+        "title": "համ/համային",
+        "description": "համեր փորձեք պաղպաղակի խանութում և նկատեք նուրբ տարբերությունները"
       },
       {
-        "title": "Touch",
-        "description": "Get a massage. Let yourself really focus on and enjoy the sensations."
+        "title": "հպում/զգայական",
+        "description": "մերսում ստացեք։ Թույլ տվեք ինքներդ ձեզ իսկապես կենտրոնանալ և վայելել զգացողությունները։"
       },
       {
-        "title": "Touch",
-        "description": "Sit in the sun (please use sunscreen), and enjoy the warmth."
+        "title": "հպում/զգայական",
+        "description": "նստեք արևի տակ (խնդրում ենք օգտագործել արևապաշտպան քսուք) և վայելեք ջերմությունը"
       },
       {
-        "title": "Touch",
-        "description": "Pet a dog or cat, and focus on the softness and pleasant sensations."
+        "title": "հպում/զգայական",
+        "description": "շոյեք շանը կամ կատվին և կենտրոնացեք քնքշության և հաճելի զգացողությունների վրա"
       },
       {
-        "title": "Touch",
-        "description": "Soak your feet and allow any tension or soreness to melt away."
+        "title": "հպում/զգայական",
+        "description": "թրջեք ոտքերը և թույլ տվեք, որ լարվածությունն ու ցավը անհետանան"
       },
       {
-        "title": "Touch",
-        "description": "Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
+        "title": "հպում/զգայական",
+        "description": "նստեք հարմարավետ աթոռին կամ բազմոցին՝ տանը կամ շքեղ հյուրանոցի նախասրահում, և թույլ տվեք ձեր մարմնին հանգստանա դրա մեջ։"
       },
       {
-        "title": "Touch",
-        "description": "Hug someone and feel the comfort of their touch."
+        "title": "հպում/զգայական",
+        "description": "գրկեք մեկին և զգացեք նրա հպման հարմարավետությունը"
       },
       {
-        "title": "Smell",
-        "description": "Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
+        "title": "հոտ/շնչառական",
+        "description": "հոտոտեք հաճելի բաներ, ինչպիսիք են օծանելիքը, օվկիանոսը կամ նարինջը։ Ուշադրություն դարձրեք, երբ վայելում եք բույրերը։"
       },
       {
-        "title": "Smell",
-        "description": "Light a scented candle and enjoy the fragrance in the air."
+        "title": "հոտ/շնչառական",
+        "description": "վառեք բուրավետ մոմ և վայելեք օդում տիրող բույրը։"
       },
       {
-        "title": "Smell",
-        "description": "Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
+        "title": "հոտ/շնչառական",
+        "description": "գնեք ձեզ համար հաճելի բույր ունեցող ծաղիկ և թույլ տվեք ինքներդ ձեզ թեքվել ու հոտ քաշել, երբ տանը անցնում եք դրա կողքով։"
       },
       {
-        "title": "Smell",
-        "description": "Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
+        "title": "հոտ/շնչառական",
+        "description": "20 րոպե եփեք մի քիչ դարչին վառարանի վրա և վայելեք բույրը, որը լցնում է ձեր տունը:"
       },
       {
-        "title": "Smell",
-        "description": "Take a walk in a wooded area and breathe in the fresh smells of nature."
+        "title": "հոտ/շնչառական",
+        "description": "զբոսնեք անտառապատ տարածքում և շնչեք բնության թարմ բույրերը։"
       },
       {
-        "title": "Smell",
-        "description": "Put lemon oil on your furniture and enjoy the scent."
+        "title": "հոտ/շնչառական",
+        "description": "կիտրոնի յուղ քսեք ձեր կահույքին և վայելեք բույրը։"
       }
     ]
   },
