@@ -1446,76 +1446,76 @@
     ]
   },
   "recreational-activities-city": {
-    "title": "In The City",
+    "title": "Հանգիստ քաղաքում",
     "repeater": [
       {
-        "description": "Browse merchandise at an outdoor or hardware store."
+        "description": "նայեք ապրանքներ բացօթյա կամ շինանյութերի խանութում"
       },
       {
-        "description": "Go window shopping."
+        "description": "գնա ցուցափեղկերի դիտման"
       },
       {
-        "description": "Buy yourself a small gift."
+        "description": "գնիր քո համար փոքր նվերներ"
       },
       {
-        "description": "Buy yourself a plant."
+        "description": "գնիր քո համար բույս"
       },
       {
-        "description": "Buy yourself music."
+        "description": "գնիր քո համար երաժշտություն"
       },
       {
-        "description": "Get a manicure and/or pedicure."
+        "description": "գնա/արա մանիկյուր/կամ պեդիկյուր"
       },
       {
-        "description": "Get a massage."
+        "description": "գնա մերսման"
       },
       {
-        "description": "Go bowling."
+        "description": "գնա բոուլինգի"
       },
       {
-        "description": "Go listen to music."
+        "description": "լսիր երաժշտություն"
       },
       {
-        "description": "Go out for ice cream."
+        "description": "գնա դուրս պաղպաղակ ուտելու համար"
       },
       {
-        "description": "Go out to dinner."
+        "description": "գնա դրսում ընթրելու"
       },
       {
-        "description": "Go sightseeing."
+        "description": "գնա տեսարժան վայրեր"
       },
       {
-        "description": "Go to a bookstore and read."
+        "description": "գնա գրախանութ և կարդա"
       },
       {
-        "description": "Go to a coffee shop to read and have coffee/tea."
+        "description": "գնա սրճարան սուրճ կամ թեյ խմելու"
       },
       {
-        "description": "Go to a live performance or play."
+        "description": "գնա կենդանի ներկայացման կամ խաղի"
       },
       {
-        "description": "Go to a museum."
+        "description": "գնա թանգարան"
       },
       {
-        "description": "Go to church/temple/mosque."
+        "description": "գնա եկեղեցի/տաճար, մզկիթ"
       },
       {
-        "description": "Go to the movies."
+        "description": "գնա կինո նայելու"
       },
       {
-        "description": "Go watch horse racing or auto racing."
+        "description": "գնա ձիարշավ կամ ավտոմրցարշավ նայելու"
       },
       {
-        "description": "Play a sport."
+        "description": "զբաղվիր սպորտով"
       },
       {
-        "description": "Play pool."
+        "description": "զբաղվիր լողով"
       },
       {
-        "description": "Take a class in a craft, a language, or a dance."
+        "description": "վերցրու արհեստի, լեզվի կամ պարի դասեր"
       },
       {
-        "description": "Volunteer at a soup kitchen or animal shelter."
+        "description": "դարձիր կամավոր ապուրի խոհանոցում կամ կենդանիների ապաստարանում"
       }
     ]
   },
