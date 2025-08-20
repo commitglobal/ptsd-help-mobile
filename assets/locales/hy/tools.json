@@ -5,7 +5,7 @@
     "positive-communication": "դրական հաղորդակցում",
     "healthy-arguments": "դարձնել փաստարկները ավելի առողջ",
     "i-messages": "«Ես» հաղորդագրությունների օգտագործումը",
-    "mindfulness": "Mindfulness",
+    "mindfulness": "կենտրոնացում",
     "ambient-sounds": "շրջակա միջավայրի ձայներ/բնաձայններ",
     "conscious-breathing": "Գիտակցված շնչառություն",
     "mindful-walking": "գիտակցված զբոսանք",
@@ -17,10 +17,10 @@
     "sleep-help": "օգնել քնել",
     "sleep-habits": "լավ քնի սովորություններ",
     "sleep-perspective": "քնի տեսանկյունների փոփոխություն",
-    "worry-time": "Worry Time",
-    "rid": "RID",
+    "worry-time": "անհանգստության ժամանակի պլանավորում",
+    "rid": "ազդակների հաղթահարում",
     "muscle-relaxation": "մկանների թուլացում",
-    "deep-breathing": "Deep Breathing",
+    "deep-breathing": "խորը շունչ",
     "body-scan": "մարմնի սկանավորում",
     "julia": "Մարմնի սքանավորում Քեյթի հետ",
     "robyn": "Մարմնի սքանավորում Էրիկայի հետ",
@@ -31,10 +31,10 @@
     "my-strengths": "My Strengths",
     "shift-thoughts": "Shift Thoughts",
     "soothe-senses": "Soothe The Senses",
-    "connect-with-others": "Connect With Others",
+    "connect-with-others": "կապ/շփում ուրիշների հետ",
     "change-perspective": "տեսակետ",
-    "grounding": "Grounding",
-    "quotes": "Inspirational Quotes",
+    "grounding": "հողանցում",
+    "quotes": "Ոգեշնչող մեջբերումներ",
     "recreational-activities": "Recreational Activities",
     "recreational-activities-alone": "Recreational Activities: Time Spent Alone",
     "recreational-activities-city": "Recreational Activities: In The City",
@@ -51,7 +51,7 @@
     "sleep_problems": "Sleep Problems"
   },
   "relationships": {
-    "title": "հարաբերությունների գործիքներ",
+    "title": "հարաբերությունների գործիքակազմ",
     "description": "Tools to help improve your relationships with loved ones",
     "tools": {
       "i-messages": {
@@ -531,7 +531,7 @@
       }
     },
     "sleep-habits": {
-      "title": "Good Sleep Habits",
+      "title": "լավ քնի սովորություններ",
       "info": "Info",
       "description": "Incorporating new habits into your nighttime routine can help achieve smoother sleep. Use the following tools to shape your current schedule into one that leads to quality sleep.",
       "save": "պահպանել",
@@ -1211,7 +1211,7 @@
       "done": "կատարված"
     },
     "observe-thoughts": {
-      "title": "Observe Thoughts",
+      "title": "հետևել մտքերին",
       "description": "Observe Thoughts",
       "action-btn-label": "Start",
       "done": "կատարված",
@@ -1881,108 +1881,108 @@
     }
   },
   "grounding": {
-    "title": "Grounding",
+    "title": "հողանցում",
     "done": "կատարված",
     "repeater": {
       "1": {
-        "title": "Feel feet on floor",
-        "description": "Focus all of your attention on your feet. Feel the floor under them."
+        "title": "զգա ոտքերդ գետնի վրա",
+        "description": "Ուշադրությունդ կենտրոնացրու ոտքերիդ վրա։ Զգա գետինը ոտքերիդ տակ։ "
       },
       "2": {
-        "title": "Texture of a Pebble",
-        "description": "Focus all of your attention on the feel of a pebble or coin in your hand."
+        "title": "Խճաքարի էֆֆեկտ",
+        "description": "Կենտրոնացրեք ձեր ամբողջ ուշադրությունը ձեր ձեռքում գտնվող խճաքարի կամ մետաղադրամի վրա։"
       },
       "3": {
-        "title": "Breathing",
-        "description": "Sit quietly and focus all of your attention on your in-breath and then your out-breath."
+        "title": "շնչառություն",
+        "description": "Հանգիստ նստեք և ամբողջ ուշադրությունը կենտրոնացրեք նախ ներշնչման, ապա արտաշնչման վրա։"
       },
       "4": {
-        "title": "The space around you – Colors",
-        "description": "Look around and focus your attention on the colors around you, noticing as many colors as you can."
+        "title": "Ձեր շուրջը գտնվող տարածությունը – Գույներ",
+        "description": "Նայիր շուրջդ և կենտրոնացրու ուշադրությունդ շրջապատող գույների վրա՝ նկատելով որքան հնարավոր է շատ գույներ։"
       },
       "5": {
-        "title": "The space around you – Smells",
-        "description": "Focus all of your attention on the smells in your environment."
+        "title": "Ձեր շուրջը գտնվող տարածությունը – Բույրեր",
+        "description": "Կենտրոնացրու ամբողջ ուշադրությունդ շրջակա միջավայրի հոտերի վրա"
       },
       "6": {
-        "title": "The space around you – Sounds",
-        "description": "Focus on and listen carefully to the many sounds in your environment."
+        "title": "Ձեր շուրջը գտնվող տարածությունը – Ձայներ",
+        "description": "Կենտրոնացիր և ուշադիր լսիր շրջապատիդ շատ ձայները։"
       },
       "7": {
-        "title": "The space around you – Temperature",
-        "description": "Focus all of your attention of the temperature of the air on your skin."
+        "title": "Ձեր շուրջը գտնվող տարածությունը – Ջերմաստիաճան",
+        "description": "Կենտրոնացրու ամբողջ  ուշադրությունդ օդի ջերմաստիճանի վրա՝ զգալով մաշկիդ վրա։ "
       },
       "8": {
-        "title": "Eating",
-        "description": "While you are eating, focus all of your attention on the sensations of the food in your mouth while you chew very slowly."
+        "title": "ուտել",
+        "description": "Ուտելիս ամբողջ ուշադրությունդ կենտրոնացրու բերանում սննդի զգացողությունների վրա՝ միաժամանակ շատ դանդաղ ծամելով։"
       },
       "9": {
-        "title": "Brushing your teeth",
-        "description": "Brush your teeth and focus your attention on all of the sensations, tastes, and smells of this activity."
+        "title": "լվանալ ատամները",
+        "description": "Մաքրելիս ատամները  կենտրոնացրու ուշադրությունդ այս գործողության հետ կապված բոլոր զգացողությունների, համերի և հոտերի վրա։"
       },
       "10": {
-        "title": "Walking",
-        "description": "Walk slowly, focusing your attention on what it feels like to take each step."
+        "title": "քայլել",
+        "description": "Քայլիր դանդաղ, կենտրոնացնելով ուշադրությունդ ամեն դրած քայլի զգացողության վրա։"
       },
       "11": {
-        "title": "Object",
-        "description": "Pick up any small object off the ground and focus all of your attention on the texture of the object and the feel of it in your hand."
+        "title": "առարկա",
+        "description": "Վերցրու գետնից ցանկացած փոքր առարկա և կենտրոնացրու ամբողջ ուշադրությունդ դրա հյուսվածքի և ձեռքում այն զգացողության վրա։"
       },
       "12": {
-        "title": "Pet an animal",
-        "description": "Pet an animal that is quiet and calm. Focus all of your attention on the sensations on your hand."
+        "title": "շոյել կենդանու",
+        "description": "Շոյիր հանդարտ և հանգիստ կենդանու։ Կենտրոնացրու ամբողջ ուշադրությունդ ձեռքիդ զգացողությունների վրա։"
       },
       "13": {
-        "title": "Attach yourself to the earth",
-        "description": "With your feet shoulder width apart, close your eyes and imagine that you are growing roots into the earth, making you strong and stable."
+        "title": "կապվիր երկրի հետ",
+        "description": "Ոտքերը ուսերի լայնությամբ բացած՝ փակիր աչքերդ և պատկերացրու, որ արմատներ ես աճեցնում հողի մեջ, ինչը քեզ ուժեղ և կայուն է դարձնում։"
       },
       "14": {
-        "title": "Ice cube",
-        "description": "Grab an ice cube and focus all of your attention on the sensations that go with it, cold, wet, and tingling."
+        "title": "սառցե խորանարդ",
+        "description": "Վերցրու սառույցի խորանարդիկ և կենտրոնացրու  ամբողջ ուշադրությունդ դրա հետ կապված զգացողությունների վրա՝ ցրտի, խոնավության և ծակծկոցի։"
       },
       "15": {
-        "title": "Name what you see",
-        "description": "Look around you and name what you see. Start with large objects, then move to smaller and smaller objects."
+        "title": "անվանիր/թվարկիր ինչ տեսնում ես",
+        "description": "Նայիր շուրջդ և անվանիր այն, ինչ տեսնում ես։ Սկսիր մեծ առարկաներից, ապա անցիր ավելի ու ավելի փոքր առարկաների։"
       },
       "16": {
-        "title": "Focus on touch",
-        "description": "Rub your hands together, clap your hands. Focus all of your attention on the feelings and sounds that you experience."
+        "title": "կենտրոնացում հպման վրա",
+        "description": "Շփիր ձեռքերդ միմյանց, ծափահարիր։ Կենտրոնացրու ամբողջ ուշադրությունդ զգացողությունների և ձայների վրա։"
       },
       "17": {
-        "title": "Reorientation",
-        "description": "Remind yourself where you are, what today's date is, when were you born, and what you did yesterday."
+        "title": "վերակողմնորոշում",
+        "description": "Հիշիր ով ես դու, այսօրվա ամսաթիվը, երբ ես ծնվել, և ինչ ես արել երեկ։"
       },
       "18": {
-        "title": "Call a friend",
-        "description": "Call a friend and discuss some activity you did together recently."
+        "title": "զանգիր ընկերոջդ",
+        "description": "Զանգիր ընկերոջդ և քննարկիր վերջերս միասին արած գործողությունները։"
       },
       "19": {
-        "title": "Past success",
-        "description": "Remember what you did to successfully get past a previous painful experience."
+        "title": "անցյալի հաջողություն",
+        "description": "Հիշիր թե ինչ արեցիր անցյալի ցավոտ փորձը հաջողությամբ հաղթահարելու համար։"
       },
       "20": {
-        "title": "Baby steps",
-        "description": "Ask yourself and answer: What would be a small sign that things are getting a little better?"
+        "title": "փոքր քայլեր",
+        "description": "Ինքդ քեզ հարցրու, ի՞նչը կարող է լինել փոքր նշան, որ ամեն ինչ ավելի լավ է դառնալու/լինելու։"
       },
       "21": {
-        "title": "Suck on a peppermint",
-        "description": "Slowly suck on a mint and describe the taste and your reaction in detail to yourself."
+        "title": "ծծեք անանուխի տերև",
+        "description": "Դանդաղ ծծիր անանուխ և մանրամասն նկարագրիր ինքդ քեզ այդ համը և քո արձագանքը։"
       },
       "22": {
-        "title": "Stamp your feet on the ground",
-        "description": "Stamp your feet on the ground. Feel the force. Hear the sounds. Notice."
+        "title": "Ոտքերդ դիր գետնին",
+        "description": "Ոտքերդ դիր գետնին, զգա ուժ, լսիր ձայներ,նկատիր։"
       },
       "23": {
-        "title": "Feel your clothes on your skin",
-        "description": "Pay attention to the sensation of your clothes touching your skin."
+        "title": "զգա հագուստդ մաշկիդ վրա",
+        "description": "Ուշադրություն դարձրու հագուստի մաշկին դիպչելու զգացողությանը։"
       },
       "24": {
-        "title": "Feel your hands",
-        "description": "Put your hands together and notice the sensations of the skin-on-skin contact."
+        "title": "զգա ձեռքերդ",
+        "description": "Ձեռքերդ միացրու և զգա մաշկը մաշկի վրա շփման զգացողությունը։"
       },
       "25": {
-        "title": "Hear Others",
-        "description": "Tune into the voices of others around you. Only pay attention to the sounds of others' voices."
+        "title": "լսիր ուրիշներին",
+        "description": "Լսիր  շրջապատիդ մարդկանց ձայները։ Ուշադրություն դարձրու միայն ուրիշների ձայներին։"
       }
     }
   },
