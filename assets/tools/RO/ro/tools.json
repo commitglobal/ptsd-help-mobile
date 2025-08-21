@@ -31,34 +31,34 @@
     "description": "RO/ro: Tools to help improve your relationships with loved ones",
     "tools": {
       "i-messages": {
-        "title": "RO/en: Using 'I' messages",
-        "find-time": "RO/en: Find time to share these messages with your partner.",
-        "text": "RO/en: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
-        "when": "RO/en: When my loved one",
-        "feel": "RO/en: I feel",
-        "because": "RO/en: because",
+        "title": "RO/ro: Using 'I' messages",
+        "find-time": "RO/ro: Find time to share these messages with your partner.",
+        "text": "RO/ro: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "when": "RO/ro: When my loved one",
+        "feel": "RO/ro: I feel",
+        "because": "RO/ro: because",
         "new-message": {
-          "title": "RO/en: New 'I' message",
-          "save": "RO/en: Save",
+          "title": "RO/ro: New 'I' message",
+          "save": "RO/ro: Save",
           "annoyance": {
-            "label": "RO/en: What's something that your partner does that truly annoys you?",
-            "placeholder": "RO/en: Something that my partner does that annoys me is...",
-            "example": "RO/en: Example: Drinks a lot and then gets angry"
+            "label": "RO/ro: What's something that your partner does that truly annoys you?",
+            "placeholder": "RO/ro: Something that my partner does that annoys me is...",
+            "example": "RO/ro: Example: Drinks a lot and then gets angry"
           },
-          "declaration": "RO/en: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+          "declaration": "RO/ro: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
           "i-feel": {
-            "label": "RO/en: When my partner does this, I feel...",
-            "placeholder": "RO/en: I feel...",
-            "example": "RO/en: Example: sad and disappointed"
+            "label": "RO/ro: When my partner does this, I feel...",
+            "placeholder": "RO/ro: I feel...",
+            "example": "RO/ro: Example: sad and disappointed"
           },
           "because-input": {
-            "label": "RO/en: Because...",
-            "placeholder": "RO/en: Because...",
-            "example": "RO/en: Example: Because I am worried about the future"
+            "label": "RO/ro: Because...",
+            "placeholder": "RO/ro: Because...",
+            "example": "RO/ro: Example: Because I am worried about the future"
           }
         },
         "edit": {
-          "title": "RO/en: Edit 'I' message"
+          "title": "RO/ro: Edit 'I' message"
         }
       },
       "reconnect-with-partner": {

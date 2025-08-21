@@ -1,0 +1,2175 @@
+{
+  "list": {
+    "relationships": "RO/uk: Relationships",
+    "reconnect-with-partner": "RO/uk: Reconnect with your partner",
+    "positive-communication": "RO/uk: Positive Communication",
+    "healthy-arguments": "RO/uk: Healthy Arguments",
+    "i-messages": "RO/uk: I Messages",
+    "mindfulness": "RO/uk: Mindfulness",
+    "ambient-sounds": "RO/uk: Ambient Sounds",
+    "conscious-breathing": "RO/uk: Conscious Breathing",
+    "mindful-walking": "RO/uk: Mindful Walking",
+    "emotional-discomfort": "RO/uk: Emotional Discomfort",
+    "sense-awareness": "RO/uk: Sense Awareness",
+    "loving-kindness": "RO/uk: Loving Kindness",
+    "my-feelings": "RO/uk: My Feelings",
+    "sleep": "RO/uk: Sleep Instruments",
+    "sleep-help": "RO/uk: Help to sleep",
+    "sleep-habits": "RO/uk: Good sleep habits",
+    "sleep-perspective": "RO/uk: Change sleep perspective",
+    "worry-time": "RO/uk: Worry Time",
+    "rid": "RO/uk: RID",
+    "muscle-relaxation": "RO/uk: Muscle Relaxation",
+    "deep-breathing": "RO/uk: Deep Breathing",
+    "body-scan": "RO/uk: Body Scan",
+    "julia": "RO/uk: Julia",
+    "robyn": "RO/uk: Robyn",
+    "forest": "RO/uk: Forest",
+    "country-road": "RO/uk: Country Road",
+    "beach": "RO/uk: Beach",
+    "positive-imagery": "RO/uk: Positive Imagery",
+    "my-strengths": "RO/uk: My Strengths",
+    "shift-thoughts": "RO/uk: Shift Thoughts",
+    "soothe-senses": "RO/uk: Soothe The Senses",
+    "connect-with-others": "RO/uk: Connect With Others",
+    "change-perspective": "RO/uk: Change Your Perspective",
+    "grounding": "RO/uk: Grounding",
+    "quotes": "RO/uk: Inspirational Quotes",
+    "recreational-activities": "RO/uk: Recreational Activities",
+    "recreational-activities-alone": "RO/uk: Recreational Activities: Time Spent Alone",
+    "recreational-activities-city": "RO/uk: Recreational Activities: In The City",
+    "recreational-activities-nature": "RO/uk: Recreational Activities: In Nature"
+  },
+  "symptoms": {
+    "reminded_of_trauma": "RO/uk: Reminded of Trauma",
+    "avoiding_triggers": "RO/uk: Avoiding Triggers",
+    "disconnected_from_people": "RO/uk: Disconnected from People",
+    "disconnected_from_reality": "RO/uk: Disconnected from Reality",
+    "sad_hopeless": "RO/uk: Sad/Hopeless",
+    "worried_anxious": "RO/uk: Worried/Anxious",
+    "angry": "RO/uk: Angry",
+    "sleep_problems": "RO/uk: Sleep Problems"
+  },
+  "relationships": {
+    "title": "RO/uk: Relationships",
+    "description": "RO/uk: Tools to help improve your relationships with loved ones",
+    "tools": {
+      "i-messages": {
+        "title": "RO/uk: Using 'I' messages",
+        "add-message": "RO/uk: Add 'I' message",
+        "find-time": "RO/uk: Find time to share these messages with your partner.",
+        "text": "RO/uk: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
+        "when": "RO/uk: When my loved one",
+        "feel": "RO/uk: I feel",
+        "because": "RO/uk: because",
+        "new-message": {
+          "title": "RO/uk: New 'I' message",
+          "save": "RO/uk: Save",
+          "annoyance": {
+            "label": "RO/uk: What's something that your partner does that truly annoys you?",
+            "placeholder": "RO/uk: Something that my partner does that annoys me is...",
+            "example": "RO/uk: Example: Drinks a lot and then gets angry"
+          },
+          "declaration": "RO/uk: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+          "i-feel": {
+            "label": "RO/uk: When my partner does this, I feel...",
+            "placeholder": "RO/uk: I feel...",
+            "example": "RO/uk: Example: sad and disappointed"
+          },
+          "because-input": {
+            "label": "RO/uk: Because...",
+            "placeholder": "RO/uk: Because...",
+            "example": "RO/uk: Example: Because I am worried about the future"
+          }
+        },
+        "edit": {
+          "title": "RO/uk: Edit 'I' message"
+        }
+      },
+      "reconnect-with-partner": {
+        "title": "RO/uk: Reconnect with your partner",
+        "helper": "RO/uk: Try these strategies - either on your own or, better, with your partner!",
+        "repeater": [
+          {
+            "title": "RO/uk: Notice The Nice Things",
+            "description": "RO/uk: Notice 1 thing about your partner, every day for one week. It can be as simple as noticing a new hair style or a small gesture of love or support. Take a moment to share whatever you've noticed with your partner.",
+            "calendar": "RO/uk: Notice something nice about my partner"
+          },
+          {
+            "title": "RO/uk: Notice the Nice Things Together",
+            "description": "RO/uk: Challenge your partner to see if you can both notice, and comment on, once nice thing about one another every day for a week.",
+            "sms": "RO/uk: I'm making a commitment to notice something nice about you for the next week. Will you try to do the same for me?"
+          },
+          {
+            "title": "RO/uk: Be Affectionate",
+            "description": "RO/uk: Give your spouse or partner a hug or hold their hand at a time you normally wouldn't. Try to show your partner a small act of physical affection in a way you think he or she might appreciate.",
+            "calendar": "RO/uk: Hug or hold my partner's hand"
+          },
+          {
+            "title": "RO/uk: Be Affectionate Together",
+            "description": "RO/uk: Challenge your partner to make a commitment to hug or hold hands at least once a day for the next week.",
+            "sms": "RO/uk: I'd like us to make a commitment to try to hug or hold hands at least once a day this week. Can we try to do this together and see what happens?"
+          },
+          {
+            "title": "RO/uk: Acts of Service",
+            "description": "RO/uk: Find a small act of service that you can provide your partner. Something that they need to do or have done that you could take care of instead. Just one thing, even something small like taking out the garbage.",
+            "calendar": "RO/uk: Do at least one thing today that is helpful to my partner"
+          },
+          {
+            "title": "RO/uk: Acts of Service Together",
+            "description": "RO/uk: Challenge your partner to make a commitment to perform one small act of service for one another each day.",
+            "sms": "RO/uk: I'd like us to make a commitment to try to do at least one thing each day that is helpful to the other person. Will you join me on this?"
+          },
+          {
+            "title": "RO/uk: Volunteering Together",
+            "description": "RO/uk: Do something together to help the larger community!"
+          },
+          {
+            "title": "RO/uk: Who I Want to Be",
+            "description": "RO/uk: Take a moment to come up with 3 words you would use to describe yourself as the partner you would ideally like to be. Maybe \"compassionate\" or \"fun\" or \"relaxed\" or something totally different! Write the words down and then over the next week, practice living those qualities as best you can. Notice how it feels."
+          },
+          {
+            "title": "RO/uk: Reflecting on your Partner",
+            "description": "RO/uk: Spend a few minutes reflecting on these questions:\n\n- What did you find most attractive about your partner when you first met, besides looks?\n- What personal qualities did you most admire about your partner when you first met them?\n- What do you see as your partner's greatest strengths?"
+          },
+          {
+            "title": "RO/uk: Show Your Support",
+            "description": "RO/uk: Focus on showing your partner that you're on their side. If your partner is upset about something, try to find ways to take their side and express your support."
+          },
+          {
+            "title": "RO/uk: Act of Service",
+            "description": "RO/uk: Perform a substantial act of service for your partner. Go out of your way to find something helpful to do for them - something you think they are likely to really appreciate.",
+            "calendar": "RO/uk: Perform an act of service for my partner"
+          },
+          {
+            "title": "RO/uk: Cultivate Appreciation",
+            "description": "RO/uk: Spend 10 minutes sitting alone in a quiet sport. Close your eyes and try to generate a sense of warmth and appreciation for your partner. Think about their positive qualities. What happens when you take time to reflect on their strengths or positive qualities?"
+          },
+          {
+            "title": "RO/uk: Acting as a Team",
+            "description": "RO/uk: Let your partner know that you're on a team and you can take things on together. This could be talking about your future, planning a future activity together, or taking on a small challenge together.",
+            "calendar": "RO/uk: Plan a future activity with my partner"
+          },
+          {
+            "title": "RO/uk: Letting Go of Judgment",
+            "description": "RO/uk: Designate 5 minutes to focus on trying not to judge your partner. See how it feels to let any judgment go for a few minutes."
+          },
+          {
+            "title": "RO/uk: Giving a Small Gift",
+            "description": "RO/uk: Surprise your partner with a small gift - it could be anything: a short note, your time, flowers, or anything that's quick, easy, and shows you care.",
+            "calendar": "RO/uk: Get a small gift for my partner"
+          },
+          {
+            "title": "RO/uk: Express Appreciation",
+            "description": "RO/uk: Express your appreciation for your partner each time they do something that makes you feel good, feel appreciated, or makes your life easier!"
+          },
+          {
+            "title": "RO/uk: Stop Keeping Score",
+            "description": "RO/uk: If you find yourself keeping track of how much you do for your partner without receiving anything in return, try to stop \"keeping score\" for at least one day. Sometimes, letting go of expectations can make it easier to re-connect, even if only for short periods of time."
+          },
+          {
+            "title": "RO/uk: Practice Non-Judgment",
+            "description": "RO/uk: If you and your partner are in the middle of a conflict, try not to judge them for the entire conversation. This is tough to do! The important thing is to work toward non-judgment, and if you're having a hard time, that's okay."
+          },
+          {
+            "title": "RO/uk: Surprise Date",
+            "description": "RO/uk: Surprise your partner with a planned activity or date. This could be something small like going for a walk or watching a movie together.",
+            "calendar": "RO/uk: Surprise my partner with an activity together"
+          },
+          {
+            "title": "RO/uk: Reliving Fun Times",
+            "description": "RO/uk: Think of a short activity (or conversation topic) that you and your partner did together when you first met. Choose something neutral, that's not likely to cause conflict and ask if they would like to make time to try it again."
+          },
+          {
+            "title": "RO/uk: Remind Yourself of the Positives",
+            "description": "RO/uk: Make a list of all the positive qualities your partner has. Keep the list somewhere you'll see it and add to it every time you think of something new."
+          }
+        ]
+      },
+      "positive-communication": {
+        "title": "RO/uk: Positive Communication",
+        "helper": "RO/uk: Positive communication is the key to every good relationship. You may already be doing some of these, but consider trying out some of these suggestions to strengthen your relationship:",
+        "repeater": [
+          {
+            "title": "RO/uk: Overcome your automatic negative thoughts",
+            "description": "RO/uk: Think about positive things about your partner"
+          },
+          {
+            "title": "RO/uk: Start a conversation with your partner",
+            "description": "RO/uk: Talk about your feelings and thoughts with your partner"
+          },
+          {
+            "title": "RO/uk: Show Love",
+            "description": "RO/uk: Tell your loved one about 1 thing that you love or appreciate about them. Send a text or leave a note where you know they'll find it.\n\nDo it right now, if you can!"
+          },
+          {
+            "title": "RO/uk: Show Admiration",
+            "description": "RO/uk: Tell your loved one 1 thing you admire about him or her."
+          },
+          {
+            "title": "RO/uk: Start a Conversation",
+            "description": "RO/uk: Plan and start a conversation with your loved one about something that you know interests you both."
+          },
+          {
+            "title": "RO/uk: First Impressions",
+            "description": "RO/uk: Can you remember your earliest impressions of your loved one? Without making comparisons to the present, share with your loved one what you first liked and appreciated about them after you met or really got to know one another."
+          },
+          {
+            "title": "RO/uk: Shared Values",
+            "description": "RO/uk: What's at least one shared goal or value that you have in common with your loved one? Ask your loved one about their goals for the next month or year and how you can help meet that goal."
+          },
+          {
+            "title": "RO/uk: Contributions",
+            "description": "RO/uk: Spend 2 minutes thinking about this: what's at least one thing your loved one does to contribute to the relationship you have with him or her? Try to identify at least one thing, even if it's small."
+          },
+          {
+            "title": "RO/uk: Just Listen",
+            "description": "RO/uk: Ask your loved one to tell you about the best part of their day and the hardest part of their day. Focus on listening.\n\nAcknowledge what your loved one says without trying to solve anything."
+          },
+          {
+            "title": "RO/uk: Overcoming Challenges",
+            "description": "RO/uk: Think about a time in your relationship with your loved one when you had to overcome something difficult together."
+          },
+          {
+            "title": "RO/uk: Next Time you Talk",
+            "description": "RO/uk: Try to turn a few minutes with your loved one into a positive conversation- talk more than usually would about something you have in common."
+          },
+          {
+            "title": "RO/uk: Listen Openly",
+            "description": "RO/uk: Plan a conversation about whatever your loved one would like to talk about that interests them. Listen as openly as you can. Don't change the subject!"
+          },
+          {
+            "title": "RO/uk: Share Their Interests",
+            "description": "RO/uk: Plan and start a conversation with your loved one about something you know is interesting to them but normally isn't interesting to you."
+          },
+          {
+            "title": "RO/uk: Noticing Niceness",
+            "description": "RO/uk: Find something nice, however big or small, that your loved one did recently. Share it with your loved one and tell him or her how it made you feel."
+          },
+          {
+            "title": "RO/uk: Making Rituals",
+            "description": "RO/uk: Ask your loved one to start, or honor, a daily or weekly ritual with you. A ritual can be anything- a phone call, a meal, a hug, or anything else that you can share together."
+          },
+          {
+            "title": "RO/uk: Sharing Problems",
+            "description": "RO/uk: Ask your loved one what they want you to do next time they're sharing a problem with you.\n\nTry saying this: \"Would you like for me to listen or would you like some advice?\" Don't give advice if your loved one doesn't want it."
+          },
+          {
+            "title": "RO/uk: Fun Experiences",
+            "description": "RO/uk: Try to remember a fun experience that you shared with your loved one.\n\nPlan a fun activity and try to re-create that experience."
+          },
+          {
+            "title": "RO/uk: Favorite Experiences",
+            "description": "RO/uk: Spend some time reminiscing with your loved one about some of your favorite experiences together."
+          },
+          {
+            "title": "RO/uk: Write a Letter",
+            "description": "RO/uk: Write a letter to your loved one telling them what they mean to you, why you love them, or your hopes for the future with them.\n\nMake sure you give the letter to your loved one!"
+          },
+          {
+            "title": "RO/uk: Leave a Note",
+            "description": "RO/uk: Leave a note where your loved one can find it that says \"I love when you…\" and then fill in the blank!"
+          }
+        ]
+      },
+      "healthy-arguments": {
+        "title": "RO/uk: Healthy Arguments",
+        "helper": "RO/uk: Every relationship has its conflicts. Here are a few strategies that you can try when you find yourself in an argument with your partner.",
+        "repeater": [
+          {
+            "title": "RO/uk: Managing 'Sensitive Topics'",
+            "description": "RO/uk: Approach sensitive topics carefully. Make sure you feel calm enough. Take time to reflect and choose your words more carefully!"
+          },
+          {
+            "title": "RO/uk: How to spend a break outside of conflict",
+            "description": "RO/uk: Find something relaxing to do, like a walk, talk to a friend, exercise or read."
+          },
+          {
+            "title": "RO/uk: How to spend a break outside of conflict",
+            "description": "RO/uk: Which are the activities you and your partner can do together that don't involve talking?"
+          },
+          {
+            "title": "RO/uk: Take a break",
+            "description": "RO/uk: Make sure you have favourite activities that relax and soothe you. Spend time doing things that you like instead of reliving the conflict."
+          },
+          {
+            "title": "RO/uk: Have a break",
+            "description": "RO/uk: Here's what you can say to your partner: 'I care about this problem and I want to fix it. I just need time to think and I'll be back when I have a clear head.'"
+          },
+          {
+            "title": "RO/uk: Have perspective",
+            "description": "RO/uk: Every relationship has its conflicts. Tolerating or dealing with them successfully, even if they're small, is a way of consolidating the relationship."
+          },
+          {
+            "title": "RO/uk: Try not to criticize your partner",
+            "description": "RO/uk: Critique can make you feel judged or rejected and it's not the best way of driving change. Instead of criticizing your partner, use the affirmations that contain 'I' for expressing your feelings."
+          },
+          {
+            "title": "RO/uk: Feeling guilty?",
+            "description": "RO/uk: Try not to be defensive if you feel blamed by your loved one. Try to understand what they need from you before responding or trying to defend yourself."
+          },
+          {
+            "title": "RO/uk: Ask and offer respect",
+            "description": "RO/uk: In any conflict, there needs to be a basic level of trust and respect for each other. Don't tolerate insults, ridicule, disrespect or disgust. Take a break if you feel disrespected."
+          },
+          {
+            "title": "RO/uk: Be there for your partner",
+            "description": "RO/uk: Don't run away from a conflict, unless one of you needs to take a break."
+          },
+          {
+            "title": "RO/uk: Practice understanding",
+            "description": "RO/uk: Slow down and listen - don't interrupt."
+          },
+          {
+            "title": "RO/uk: Practice understanding",
+            "description": "RO/uk: Focus on your partner's words and body language."
+          },
+          {
+            "title": "RO/uk: Practice understanding",
+            "description": "RO/uk: Show interest, even during a conflict."
+          },
+          {
+            "title": "RO/uk: Accept your partner",
+            "description": "RO/uk: Give your loved one the benefit of the doubt."
+          },
+          {
+            "title": "RO/uk: Accept your partner",
+            "description": "RO/uk: Try not to judge."
+          },
+          {
+            "title": "RO/uk: Understand your partner",
+            "description": "RO/uk: Use your own words to repeat what you think your loved one is really trying to say."
+          },
+          {
+            "title": "RO/uk: Understand your partner",
+            "description": "RO/uk: Don't read minds. Don't assume you know what your loved one is thinking."
+          },
+          {
+            "title": "RO/uk: Understand your partner",
+            "description": "RO/uk: Make sure your loved one knows you can't read their mind, and ask them to help you understand their needs through open conversation."
+          },
+          {
+            "title": "RO/uk: Understand your partner",
+            "description": "RO/uk: Trying to understand how your loved one feels doesn't mean you have to agree with them. Understanding their perspective is key to moving the discussion forward."
+          },
+          {
+            "title": "RO/uk: Understand your partner",
+            "description": "RO/uk: Ask as many questions as possible. Make sure you understand what your loved one is telling you. Correct yourself when you make mistakes."
+          },
+          {
+            "title": "RO/uk: When your partner is angry",
+            "description": "RO/uk: Always make sure you are safe. If needed, don't hesitate to call 911."
+          },
+          {
+            "title": "RO/uk: When you're angry",
+            "description": "RO/uk: Stop and take a deep breath."
+          },
+          {
+            "title": "RO/uk: When you're angry",
+            "description": "RO/uk: Take a break. Leave the difficult situation until you can resume the conversation when you're not angry."
+          },
+          {
+            "title": "RO/uk: When you're angry",
+            "description": "RO/uk: Discuss with your partner in advance about when to take breaks during a certain conflict or disagreement."
+          },
+          {
+            "title": "RO/uk: When your partner is angry",
+            "description": "RO/uk: Stop and take a deep breath. Ask your loved one to do the same."
+          },
+          {
+            "title": "RO/uk: If you take a break",
+            "description": "RO/uk: When both of you feel less angry, try to resume the conversation and find a solution that works for both of you."
+          },
+          {
+            "title": "RO/uk: When your partner is angry",
+            "description": "RO/uk: Try to recognize the triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+          },
+          {
+            "title": "RO/uk: When you're angry",
+            "description": "RO/uk: Try to recognize your own triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
+          },
+          {
+            "title": "RO/uk: Know your 'Sensitive Topics'",
+            "description": "RO/uk: What are the things that come up and cause tension and conflict with your loved one? When they come up, treat 'sensitive topics' with care."
+          }
+        ]
+      }
+    },
+    "common": {
+      "start": "RO/uk: Start",
+      "next": "RO/uk: Next",
+      "previous": "RO/uk: Previous",
+      "finish": "RO/uk: Finish",
+      "save": "RO/uk: Save",
+      "cancel": "RO/uk: Cancel"
+    }
+  },
+  "ambient-sounds": {
+    "select": "RO/uk: Select an audio to play",
+    "beach": "RO/uk: Beach",
+    "birds": "RO/uk: Birds",
+    "country-road": "RO/uk: Country Road",
+    "crickets": "RO/uk: Crickets",
+    "dripping-water": "RO/uk: Dripping Water",
+    "forest": "RO/uk: Forest",
+    "frogs": "RO/uk: Frogs",
+    "marsh": "RO/uk: Marsh",
+    "public-pool": "RO/uk: Public Pool",
+    "rain": "RO/uk: Rain",
+    "running-water": "RO/uk: Running Water",
+    "stream-water": "RO/uk: Stream Water",
+    "waterfall": "RO/uk: Waterfall",
+    "wind": "RO/uk: Wind"
+  },
+  "mindfulness": {
+    "conscious-breathing": {
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+      "action-btn-label": "RO/uk: Continue",
+      "done": "RO/uk: Done"
+    },
+    "mindful-walking": {
+      "description": "RO/uk: For this exercise, you can walk around the house, the yard, in the neighborhood, in a park or wherever you feel safe and comfortable. Try to not speak during the walk, so that you can focus on your feelings and your mind.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 6 minutes.",
+      "action-btn-label": "RO/uk: Continue",
+      "done": "RO/uk: Done"
+    },
+    "emotional-discomfort": {
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 7 minutes.",
+      "action-btn-label": "RO/uk: Continue",
+      "done": "RO/uk: Done"
+    },
+    "sense-awareness": {
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 11 minutes.",
+      "action-btn-label": "RO/uk: Continue",
+      "done": "RO/uk: Done"
+    },
+    "loving-kindness": {
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 10 minutes.",
+      "action-btn-label": "RO/uk: Continue",
+      "done": "RO/uk: Done"
+    }
+  },
+  "sleep": {
+    "title": "RO/uk: Help to sleep",
+    "repeater": [
+      {
+        "title": "RO/uk: Only go to bed when you feel sleepy."
+      },
+      {
+        "title": "RO/uk: If you lie in bed for 20 minutes and still can't sleep, get up and do something else (without exposing yourself to bright light or computer/phone/TV screens)."
+      },
+      {
+        "title": "RO/uk: Listen to relaxing music."
+      },
+      {
+        "title": "RO/uk: Read something calming."
+      },
+      {
+        "title": "RO/uk: Drink a cup of decaffeinated tea."
+      },
+      {
+        "title": "RO/uk: Drink a cup of warm milk."
+      },
+      {
+        "title": "RO/uk: Breathe slowly and deeply through your nose - do this for 10 minutes. You can use the breathing tool in this app if you wish."
+      },
+      {
+        "title": "RO/uk: Eat a light snack if you're hungry - something with little or no sugar and no alcohol."
+      },
+      {
+        "title": "RO/uk: Make sure the room temperature is cool."
+      },
+      {
+        "title": "RO/uk: Try wearing earplugs if there is noise around you."
+      },
+      {
+        "title": "RO/uk: If there is light around, try sleeping with an eye mask."
+      },
+      {
+        "title": "RO/uk: Make sure the room is dark."
+      },
+      {
+        "title": "RO/uk: Try taking a warm bath an hour or 2 before bedtime."
+      },
+      {
+        "title": "RO/uk: Make sure you are comfortable and your clothes aren't uncomfortable."
+      },
+      {
+        "title": "RO/uk: Avoid looking at the clock."
+      },
+      {
+        "title": "RO/uk: Let your mind wander. Don't focus too much on the process of falling asleep."
+      },
+      {
+        "title": "RO/uk: If you feel worried, get up and write down your worries, then try to let them go."
+      },
+      {
+        "title": "RO/uk: Imagine a safe and peaceful place: picture yourself by a river, lake or in a meadow. Imagine the whole scene, the sights, sounds and smells, while you relax. You can use the positive imagery tool in this app if you wish."
+      },
+      {
+        "title": "RO/uk: Feel all your body muscles relaxed, as if they've sunk into the mattress. You can use the progressive muscle relaxation tool in this app if you wish."
+      },
+      {
+        "title": "RO/uk: Avoid nicotine, caffeine and alcohol in the evening."
+      },
+      {
+        "title": "RO/uk: Avoid too much salt in food. This can make you wake up thirsty throughout the night."
+      },
+      {
+        "title": "RO/uk: Turn off the computer or TV 30 minutes before bedtime."
+      },
+      {
+        "title": "RO/uk: Create a relaxing bedtime routine."
+      },
+      {
+        "title": "RO/uk: Get up and drink a glass of water."
+      },
+      {
+        "title": "RO/uk: Make sure the sheets are clean and the pillow and mattress are comfortable."
+      },
+      {
+        "title": "RO/uk: Try not to worry about not falling asleep. Keep trying to relax."
+      }
+    ],
+    "sleep-habits": {
+      "title": "RO/uk: Good Sleep Habits",
+      "info": "RO/uk: Info",
+      "description": "RO/uk: Incorporating new habits into your nighttime routine can help achieve smoother sleep. Use the following tools to shape your current schedule into one that leads to quality sleep.",
+      "save": "RO/uk: Save",
+      "list": {
+        "relaxing-activities": "RO/uk: Relaxing Activities",
+        "awake-activities": "RO/uk: Activities to Stay Awake",
+        "no-sleep-activities": "RO/uk: Activities When I Can't Sleep",
+        "wake-up-activities": "RO/uk: Activities to Help Me Wake Up"
+      },
+      "relaxing-activities": {
+        "description": "RO/uk: Having time to relax before going to bed can help calm your mind and body. This time is a transition between daily activities and bedtime. Read the activities below to explore some ideas for things to do during relaxation time. If an activity continues to work for you, we recommend tapping the star next to it to mark it as a favorite.",
+        "info": "RO/uk: Including relaxation time in your sleep routine can help sleep come more easily. View the activity suggestions to find ways to engage in calming activities that prepare you for sleep.",
+        "reminder-title": "RO/uk: Relaxing activity for sleep",
+        "reminder-body": "RO/uk: Use a relaxing activity for sleep to help you fall asleep easier.",
+        "reminder-time": "RO/uk: Daily",
+        "list": [
+          {
+            "id": 1,
+            "text": "RO/uk: Choose clothes to wear tomorrow"
+          },
+          {
+            "id": 2,
+            "text": "RO/uk: Prepare lunch for tomorrow"
+          },
+          {
+            "id": 3,
+            "text": "RO/uk: Prepare dinner for tomorrow and put it in the fridge"
+          },
+          {
+            "id": 4,
+            "text": "RO/uk: Take a long bath or shower"
+          },
+          {
+            "id": 5,
+            "text": "RO/uk: Write thank you notes or short messages to friends"
+          },
+          {
+            "id": 6,
+            "text": "RO/uk: Browse the internet (only non-stressful topics) or research future purchases (cars, appliances, vacations)"
+          },
+          {
+            "id": 7,
+            "text": "RO/uk: Watch movies or TV show episodes you haven't seen in a long time (no action movies or thrillers)"
+          },
+          {
+            "id": 8,
+            "text": "RO/uk: Take the dog for a long walk"
+          },
+          {
+            "id": 9,
+            "text": "RO/uk: Take care of your pets"
+          },
+          {
+            "id": 10,
+            "text": "RO/uk: Listen to slow, relaxing or instrumental music"
+          },
+          {
+            "id": 11,
+            "text": "RO/uk: Gather old bills and statements and throw them away if no longer needed"
+          },
+          {
+            "id": 12,
+            "text": "RO/uk: Organize collections if you have any - photos, old letters, books or other items"
+          },
+          {
+            "id": 13,
+            "text": "RO/uk: Sort laundry or fold clothes"
+          },
+          {
+            "id": 14,
+            "text": "RO/uk: Polish your shoes"
+          },
+          {
+            "id": 15,
+            "text": "RO/uk: Iron or repair clothes"
+          },
+          {
+            "id": 16,
+            "text": "RO/uk: Write in your journal"
+          },
+          {
+            "id": 17,
+            "text": "RO/uk: Do light exercise to relax your muscles"
+          },
+          {
+            "id": 18,
+            "text": "RO/uk: Do a pedicure, manicure or facial treatment"
+          },
+          {
+            "id": 19,
+            "text": "RO/uk: Sweep or mop the kitchen floor"
+          },
+          {
+            "id": 20,
+            "text": "RO/uk: Floss your teeth"
+          },
+          {
+            "id": 21,
+            "text": "RO/uk: Knit"
+          },
+          {
+            "id": 22,
+            "text": "RO/uk: Start another handmade project"
+          }
+        ]
+      },
+      "awake-activities": {
+        "description": "RO/uk: If you have trouble staying awake until your desired bedtime, check the Activities to Keep Me Awake section below for ideas to help with deep drowsiness. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "RO/uk: Staying awake until you are truly sleepy can help build sleep drive and make it easier to fall asleep. Not sure about the difference between sleepy and tired? Check out 'Sleep 101' in the Learn More section. Use these activities to stay awake until bedtime. If you're not sleepy at that time, try using techniques to relax your body and quiet your mind. Remember not to stay awake when sleepy if it could interfere with activities or responsibilities where drowsiness could be dangerous.",
+        "list": [
+          {
+            "id": 1,
+            "text": "RO/uk: Work on a hobby you're interested in"
+          },
+          {
+            "id": 2,
+            "text": "RO/uk: Read an engaging book"
+          },
+          {
+            "id": 3,
+            "text": "RO/uk: Watch an interesting series"
+          },
+          {
+            "id": 4,
+            "text": "RO/uk: Write a long letter"
+          },
+          {
+            "id": 5,
+            "text": "RO/uk: Call a friend"
+          },
+          {
+            "id": 6,
+            "text": "RO/uk: Do light exercises"
+          },
+          {
+            "id": 7,
+            "text": "RO/uk: Get up and take a few steps"
+          },
+          {
+            "id": 8,
+            "text": "RO/uk: Do household chores"
+          },
+          {
+            "id": 9,
+            "text": "RO/uk: Listen to upbeat music (sing)"
+          },
+          {
+            "id": 10,
+            "text": "RO/uk: Dance"
+          },
+          {
+            "id": 11,
+            "text": "RO/uk: Watch a comedy"
+          },
+          {
+            "id": 12,
+            "text": "RO/uk: Turn on all the lights"
+          },
+          {
+            "id": 13,
+            "text": "RO/uk: Go outside (if it's safe to leave the house)"
+          },
+          {
+            "id": 14,
+            "text": "RO/uk: Prepare lunch for tomorrow"
+          },
+          {
+            "id": 15,
+            "text": "RO/uk: Prepare meals for the rest of the week"
+          },
+          {
+            "id": 16,
+            "text": "RO/uk: Organize laundry"
+          },
+          {
+            "id": 17,
+            "text": "RO/uk: Organize files on computer"
+          },
+          {
+            "id": 18,
+            "text": "RO/uk: Organize drawers or shelves"
+          }
+        ]
+      },
+      "no-sleep-activities": {
+        "description": "RO/uk: Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. See the Midnight Activities section below for ideas of things to do when it's hard to fall asleep. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "RO/uk: Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. Use some of the activity ideas to stay relaxed and occupied until you become very sleepy and ready to return to bed. When you get up, you should do things that are engaging but calming. If it's difficult for you to get out of bed, prepare a quiet and comfortable place where you can go to make getting up easier.",
+        "list": [
+          {
+            "id": 1,
+            "text": "RO/uk: Look through catalogs/magazines"
+          },
+          {
+            "id": 2,
+            "text": "RO/uk: Update your contact list or start one online or on paper"
+          },
+          {
+            "id": 3,
+            "text": "RO/uk: Organize emails and bills"
+          },
+          {
+            "id": 4,
+            "text": "RO/uk: Play solitaire online or with cards if you're not very competitive"
+          },
+          {
+            "id": 5,
+            "text": "RO/uk: Read"
+          },
+          {
+            "id": 6,
+            "text": "RO/uk: Make a shopping list for the current week"
+          },
+          {
+            "id": 7,
+            "text": "RO/uk: Plan the menu for upcoming dinners"
+          },
+          {
+            "id": 8,
+            "text": "RO/uk: Clean and organize the coffee table, dining area, kitchen counter or desk"
+          },
+          {
+            "id": 9,
+            "text": "RO/uk: Create a list of activities you'd like to do on weekends or vacation"
+          },
+          {
+            "id": 10,
+            "text": "RO/uk: Organize photo album or journal"
+          },
+          {
+            "id": 11,
+            "text": "RO/uk: Fold clothes and put them away"
+          },
+          {
+            "id": 12,
+            "text": "RO/uk: Buy gifts for birthdays or holidays"
+          },
+          {
+            "id": 13,
+            "text": "RO/uk: Read a magazine or light book"
+          },
+          {
+            "id": 14,
+            "text": "RO/uk: Make a materials list for a home do-it-yourself project"
+          },
+          {
+            "id": 15,
+            "text": "RO/uk: Choose two drawers to organize (in office, bathroom or kitchen)"
+          },
+          {
+            "id": 16,
+            "text": "RO/uk: Watch repetitive TV shows or commercials"
+          },
+          {
+            "id": 17,
+            "text": "RO/uk: Organize your CD or DVD collection and choose some to donate or sell if you no longer need them or don't like them"
+          },
+          {
+            "id": 18,
+            "text": "RO/uk: Write thoughts in a notebook for a while. Use this exercise to get rid of negative thoughts."
+          },
+          {
+            "id": 19,
+            "text": "RO/uk: Crochet or do an activity you can easily stop if you get sleepy"
+          },
+          {
+            "id": 20,
+            "text": "RO/uk: Read a children's book. These are often soothing and amusing"
+          }
+        ]
+      },
+      "wake-up-activities": {
+        "description": "RO/uk: If you have an exciting activity scheduled for the morning, it can help you get out of bed with more energy. See the Morning Activities section below for ideas of things to do in the morning. If any of these activities help you, press the star next to the activity to mark it.",
+        "info": "RO/uk: Getting up at your planned time in the morning helps maintain a consistent schedule and prevents associating being in bed with being awake. Use these ideas to help stay motivated to start your day. Consider setting a reminder that coincides with when you want to wake up.",
+        "list": [
+          {
+            "id": 1,
+            "text": "RO/uk: Meditate or pray"
+          },
+          {
+            "id": 2,
+            "text": "RO/uk: Watch the sunrise"
+          },
+          {
+            "id": 3,
+            "text": "RO/uk: Take the dog for a walk if you're in a safe area"
+          },
+          {
+            "id": 4,
+            "text": "RO/uk: Read the newspaper or read news online"
+          },
+          {
+            "id": 5,
+            "text": "RO/uk: Exercise at home or go to the gym"
+          },
+          {
+            "id": 6,
+            "text": "RO/uk: Go shopping at the store"
+          },
+          {
+            "id": 7,
+            "text": "RO/uk: Prepare lunch for yourself or the whole family"
+          },
+          {
+            "id": 8,
+            "text": "RO/uk: Enjoy being able to prepare for work and having time to get children ready for school without rushing"
+          },
+          {
+            "id": 9,
+            "text": "RO/uk: Organize children's toys and choose items to donate"
+          },
+          {
+            "id": 10,
+            "text": "RO/uk: Sort clothes for washing or iron laundry"
+          },
+          {
+            "id": 11,
+            "text": "RO/uk: Plan family budget in excel or on paper"
+          },
+          {
+            "id": 12,
+            "text": "RO/uk: Send emails to friends or check work email"
+          },
+          {
+            "id": 13,
+            "text": "RO/uk: Clean up old hard drives or DVDs"
+          },
+          {
+            "id": 14,
+            "text": "RO/uk: Organize bills, documents or other papers"
+          },
+          {
+            "id": 15,
+            "text": "RO/uk: Prepare ingredients for dinner (marinate meat, cut vegetables etc)"
+          },
+          {
+            "id": 16,
+            "text": "RO/uk: Make the bed and clean the room"
+          },
+          {
+            "id": 17,
+            "text": "RO/uk: Pull back curtains and blinds"
+          },
+          {
+            "id": 18,
+            "text": "RO/uk: Sweep inside or outside the house"
+          },
+          {
+            "id": 19,
+            "text": "RO/uk: Take care of indoor plants or garden, water the flowers"
+          },
+          {
+            "id": 20,
+            "text": "RO/uk: Check task list for the current day or week"
+          }
+        ]
+      }
+    },
+    "sleep-perspective": {
+      "title": "RO/uk: Change your sleep perspective",
+      "description": "RO/uk: Try these habits to improve your sleep quality",
+      "repeater": [
+        {
+          "title": "RO/uk: I can tolerate this."
+        },
+        {
+          "title": "RO/uk: I will survive even if I don't sleep at all tonight."
+        },
+        {
+          "title": "RO/uk: I've done this before, so I know I can do it again."
+        },
+        {
+          "title": "RO/uk: I don't have to feel comfortable all the time. I'm human."
+        },
+        {
+          "title": "RO/uk: This is just another challenge that I will solve and cope with."
+        },
+        {
+          "title": "RO/uk: I've been through this before and I was fine."
+        },
+        {
+          "title": "RO/uk: One bad night of sleep is not the end of the world."
+        },
+        {
+          "title": "RO/uk: This restless night will pass."
+        },
+        {
+          "title": "RO/uk: Although it feels like I'll never sleep well, that might not be the case. Anticipating that I might not sleep well will probably make my sleep worse. I've functioned well before even after not sleeping well."
+        },
+        {
+          "title": "RO/uk: I've functioned poorly before even after sleeping well."
+        },
+        {
+          "title": "RO/uk: Although I'm anticipating poor sleep, it could be fine... I've slept well before."
+        },
+        {
+          "title": "RO/uk: The body naturally regulates sleep; even if I miss some sleep, I'll be able to function."
+        },
+        {
+          "title": "RO/uk: If I don't worry about sleep, one bad night will probably improve my sleep the next night."
+        }
+      ]
+    }
+  },
+  "pause": {
+    "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes.",
+    "action-btn-label": "RO/uk: Continue",
+    "helper": "RO/uk: Try to do this for 5 minutes",
+    "take_break": "RO/uk: Take a break",
+    "repeater": [
+      {
+        "title": "RO/uk: Take a walk to relax and clear your thoughts"
+      },
+      {
+        "title": "RO/uk: Breathe deeply for 10 minutes or more"
+      },
+      {
+        "title": "RO/uk: Exercise (bike riding, hiking, weight lifting, swimming, running)"
+      },
+      {
+        "title": "RO/uk: Garden or do yard work"
+      },
+      {
+        "title": "RO/uk: Tell yourself positive things like \"I can handle this situation without losing my cool\""
+      },
+      {
+        "title": "RO/uk: Draw or paint to express your emotions"
+      },
+      {
+        "title": "RO/uk: Call a friend or loved one for support"
+      },
+      {
+        "title": "RO/uk: Call your therapist for support"
+      },
+      {
+        "title": "RO/uk: Stretch and breathe deeply and slowly"
+      },
+      {
+        "title": "RO/uk: Remember that you can cope"
+      },
+      {
+        "title": "RO/uk: Meditate to calm your mind"
+      },
+      {
+        "title": "RO/uk: Pray for guidance and support"
+      },
+      {
+        "title": "RO/uk: Think about what advice someone you trust would give you"
+      },
+      {
+        "title": "RO/uk: Spend time with a pet for comfort and peace"
+      },
+      {
+        "title": "RO/uk: Take a shower or bath to relax"
+      },
+      {
+        "title": "RO/uk: Think about how you want to be a role model for others in your life - children etc."
+      }
+    ]
+  },
+  "my-feelings": {
+    "done": "RO/uk: Done",
+    "next": "RO/uk: Next",
+    "delete": "RO/uk: Delete feelings",
+    "main-action-label": "RO/uk: Add a feeling",
+    "no-feelings": "RO/uk: You haven't added any feelings yet.",
+    "choose-main-feelings": "RO/uk: Firstly, pick one or more feelings that describe how you're feeling right now.",
+    "choose-secondary-feelings": "RO/uk: Pick any feelings that you feel right now.",
+    "discomfort-meter": "RO/uk: Discomfort Meter",
+    "discomfort-intensity": "RO/uk: How intense is your discomfort right now?",
+    "stress": "RO/uk: Stress",
+    "repeater": [
+      "Total peace and quiet",
+      "Relaxed and not stressed",
+      "Mild sadness",
+      "A little sad and without tension",
+      "Mild stress",
+      "Stressed, but not too much",
+      "Moderate stress",
+      "Moderately high stress",
+      "High stress and tension",
+      "Very high to extreme stress",
+      "Extreme stress and panic"
+    ],
+    "feelings-summary": "RO/uk: Feelings Summary",
+    "feelings-summary-description": "RO/uk: Here's a summary of your feelings for: ",
+    "my-feelings": "RO/uk: My feelings",
+    "emotion-intensity": "RO/uk: Emotion intensity",
+    "ok": "RO/uk: Ok"
+  },
+  "feelings": {
+    "angry": {
+      "main": "RO/uk: Angry",
+      "betrayed": "RO/uk: Betrayed",
+      "bitter": "RO/uk: Bitter",
+      "critical": "RO/uk: Critical",
+      "devastated": "RO/uk: Devastated",
+      "disgusted": "RO/uk: Disgusted",
+      "frustrated": "RO/uk: Frustrated",
+      "angry": "RO/uk: Angry",
+      "detestable": "RO/uk: Detestable",
+      "hostile": "RO/uk: Hostile",
+      "hurt": "RO/uk: Hurt",
+      "irritated": "RO/uk: Irritated",
+      "indignant": "RO/uk: Indignant"
+    },
+    "happy": {
+      "main": "RO/uk: Happy",
+      "energetic": "RO/uk: Energetic",
+      "cheerful": "RO/uk: Cheerful",
+      "creative": "RO/uk: Creative",
+      "curious": "RO/uk: Curious",
+      "daring": "RO/uk: Daring",
+      "hopeful": "RO/uk: Hopeful",
+      "full_of_imagination": "RO/uk: Full of imagination",
+      "light": "RO/uk: Light",
+      "optimistic": "RO/uk: Optimistic",
+      "playful": "RO/uk: Playful",
+      "thin_skinned": "RO/uk: Thin-skinned",
+      "provocative": "RO/uk: Provocative"
+    },
+    "strong": {
+      "main": "RO/uk: Strong",
+      "appreciated": "RO/uk: Appreciated",
+      "confident": "RO/uk: Confident",
+      "discerning": "RO/uk: Discerning",
+      "energetic": "RO/uk: Energetic",
+      "nourishing": "RO/uk: Nourishing",
+      "proud": "RO/uk: Proud",
+      "respected": "RO/uk: Respected",
+      "receptive": "RO/uk: Receptive",
+      "successful": "RO/uk: Successful",
+      "grateful": "RO/uk: Grateful",
+      "cherished": "RO/uk: Cherished",
+      "valuable": "RO/uk: Valuable"
+    },
+    "sad": {
+      "main": "RO/uk: Sad",
+      "embarrassed": "RO/uk: Embarrassed",
+      "bored": "RO/uk: Bored",
+      "cold": "RO/uk: Cold",
+      "depressed": "RO/uk: Depressed",
+      "desperate": "RO/uk: Desperate",
+      "disconnected": "RO/uk: Disconnected",
+      "empty": "RO/uk: Empty",
+      "hopeless": "RO/uk: Hopeless",
+      "humiliated": "RO/uk: Humiliated",
+      "lonely": "RO/uk: Lonely",
+      "tired": "RO/uk: Tired",
+      "worthless": "RO/uk: Worthless"
+    },
+    "safe": {
+      "main": "RO/uk: Safe",
+      "accepted": "RO/uk: Accepted",
+      "calm": "RO/uk: Calm",
+      "loved": "RO/uk: Loved",
+      "open": "RO/uk: Open",
+      "peaceful": "RO/uk: Peaceful",
+      "protected": "RO/uk: Protected",
+      "silent": "RO/uk: Silent",
+      "relaxed": "RO/uk: Relaxed",
+      "caring": "RO/uk: Caring",
+      "understood": "RO/uk: Understood",
+      "warm": "RO/uk: Warm"
+    },
+    "scared": {
+      "main": "RO/uk: Scared",
+      "abandoned": "RO/uk: Abandoned",
+      "anxious": "RO/uk: Anxious",
+      "perplexed": "RO/uk: Perplexed",
+      "helpless": "RO/uk: Helpless",
+      "inadequate": "RO/uk: Inadequate",
+      "insignificant": "RO/uk: Insignificant",
+      "numb": "RO/uk: Numb",
+      "overwhelmed": "RO/uk: Overwhelmed",
+      "paralyzed": "RO/uk: Paralyzed",
+      "shocked": "RO/uk: Shocked",
+      "blocked": "RO/uk: Blocked",
+      "vulnerable": "RO/uk: Vulnerable"
+    }
+  },
+  "worry-time": {
+    "title": "RO/uk: Worry Time",
+    "help": "RO/uk: Help",
+    "description": "RO/uk: A strategy that has proven helpful in calming anxious thoughts is scheduling a worry period. Although this may seem counterintuitive for people struggling with anxiety, it can actually help gain control over obsessive thoughts. If you find yourself worrying at night, schedule a time below when you can think about the issues on your mind.",
+    "write-here": "RO/uk: Use this space to write subjects to think about...",
+    "subjects-to-think-about": "RO/uk: Subjects to think about",
+    "help-text": "RO/uk: Being preoccupied with small and big worries, meditating on problems, or planning future events while in bed can keep you awake. Scheduling a time for worries can help people gain control over anxious thoughts that may keep them awake.\n\nChoose a time during the day to think, worry, solve problems and plan what you need to do. Then, if intrusive thoughts appear during your sleep period, postpone them for the \"thinking and worrying time\" the next day. Make sure you don't choose a time too close to bedtime, so you have a chance to relax afterwards.\n\nBy scheduling a daily period to focus on your concerns, you'll notice that you have fewer worrying thoughts while in bed.\n\nMany people catch themselves worrying that they can't fall asleep, which unfortunately can keep them even more awake. Remember that while lack of sleep can be uncomfortable, your body is designed to tolerate less good nights. In fact, sleep loss can increase sleep desire, which can lead to improved sleep quality in subsequent nights. It's important to reduce nighttime anxiety to improve your chances of getting quality sleep.",
+    "reminder": "RO/uk: Reminder for worry time",
+    "daily-reminder": "RO/uk: Daily",
+    "ptsd-help": "RO/uk: PTSD Help",
+    "review": "RO/uk: Review the issues that are causing you to worry."
+  },
+  "rid": {
+    "title": "RO/uk: RID",
+    "start": "RO/uk: Start",
+    "done": "RO/uk: Done",
+    "description": "RO/uk: The RID tool is designed for moments triggered by a reminder of past trauma. You will be guided through three steps to manage your state.",
+    "continue": "RO/uk: Continue",
+    "relax": "RO/uk: RID: Relax",
+    "relaxation": "RO/uk: Relaxation",
+    "r": "RO/uk: R",
+    "i": "RO/uk: I",
+    "d": "RO/uk: D",
+    "rid-identify": "RO/uk: RID: Identify",
+    "identify": "RO/uk: Identify",
+    "identify-trigger": "RO/uk: Identify trigger",
+    "breathe": "RO/uk: Take 30 seconds to relax by breathing slowly and imagining that with every breath your tension is decreasing.",
+    "30-more": "RO/uk: Another 30 seconds of relaxation",
+    "review": "RO/uk: Review the last few minutes or hours and see what reminders of your trauma you encountered. Triggers can be internal, such as thoughts or memories, or external, such as conversations, situations, or things we encounter in the world (for example, a certain person or place). Figuring out what is a trigger can sometimes be difficult. Don't worry if you can't identify the trigger, just focus on relaxing and calming yourself.\n\nOnce you have identified the trigger, if you can, it's important to notice that it is just a reminder and not the actual trauma repeating itself, despite your mind and body's reaction. Really notice how the current trigger is different from the trauma. Remind yourself of these differences again and again",
+    "trigger": "RO/uk: What triggered your state?",
+    "trigger-placeholder": "RO/uk: Something like: \"I was in a car accident\"",
+    "different": "RO/uk: How is your current situation different than the traumatic experience?",
+    "placeholder": "RO/uk: Write your answer here...",
+    "rid-decide": "RO/uk: RID: Decide",
+    "decide-next": "RO/uk: Decide what to do next",
+    "final-step": "RO/uk: You've reached the final step. If you feel stressed right now, you can try to reduce the power of the trigger by deciding to stay in place to see that you can cope and that the stress will decrease the longer you resist. If the trigger has made you very angry, it's best to decide to take a break. If you are in danger of hurting yourself or others, seek support and don't take any risks.",
+    "what-will-you-decide": "RO/uk: What will you decide to do?",
+    "decision-placeholder": "RO/uk: I will go back a few times until it stops triggering me so much.",
+    "rid-summary": "RO/uk: RID Summary",
+    "triggered-how": "RO/uk: How you were triggered:",
+    "different-situation": "RO/uk: How your current situation is different than the traumatic experience:",
+    "you-decided": "RO/uk: You decided:",
+    "empty": "RO/uk: You haven't added any RIDs yet.",
+    "date": "RO/uk: Date:",
+    "delete": "RO/uk: Delete RID"
+  },
+  "muscle-relaxation": {
+    "title": "RO/uk: Muscle Relaxation",
+    "description": "RO/uk: You are about to be led through a progressive muscle relaxation exercise. You will progress through each of your major muscle groups, tensing and relaxing as you go. This exercise takes about 9 minutes. It has accompanying audio, so you will need to find a quiet place or put on your headphones now.",
+    "action-btn-label": "RO/uk: Start",
+    "done": "RO/uk: Done"
+  },
+  "deep-breathing": {
+    "title": "RO/uk: Deep Breathing",
+    "description": "RO/uk: Slowing down and deepening your breathing can help you calm down when you feel distress. Put on your headphones or go somewhere private and quiet to be led through the exercise.",
+    "action-btn-label": "RO/uk: Start",
+    "done": "RO/uk: Done"
+  },
+  "body-scan": {
+    "title": "RO/uk: Body Scan",
+    "action-btn-label": "RO/uk: Start",
+    "done": "RO/uk: Done",
+    "julia": {
+      "title": "RO/uk: Julia",
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. This mindfulness exercise will help you practice mindfulness of physical sensations. Please note that there will be pauses in the audio so you can practice without distraction.",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done"
+    },
+    "robyn": {
+      "title": "RO/uk: Robyn",
+      "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. This mindfulness exercise will help you practice mindfulness of physical sensations. Please note that there will be pauses in the audio so you can practice without distraction.",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done"
+    }
+  },
+  "positive-imagery": {
+    "title": "RO/uk: Positive Imagery",
+    "description": "RO/uk: Positive Imagery",
+    "action-btn-label": "RO/uk: Start",
+    "done": "RO/uk: Done",
+    "beach": {
+      "title": "RO/uk: Beach",
+      "description": "RO/uk: You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done"
+    },
+    "country-road": {
+      "title": "RO/uk: Country Road",
+      "description": "RO/uk: You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done"
+    },
+    "forest": {
+      "title": "RO/uk: Forest",
+      "description": "RO/uk: You are about to be led through a relaxation exercise focused on visualizing something pleasant. This exercise takes about 4 minutes. It has accompanying audio, so you will have to find a quiet place or put on your headphones now.",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done"
+    },
+    "observe-thoughts": {
+      "title": "RO/uk: Observe Thoughts",
+      "description": "RO/uk: Observe Thoughts",
+      "action-btn-label": "RO/uk: Start",
+      "done": "RO/uk: Done",
+      "clouds": {
+        "title": "RO/uk: Clouds",
+        "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. Please note that there will be pauses in the audio so you can practice without distraction.",
+        "action-btn-label": "RO/uk: Start",
+        "done": "RO/uk: Done"
+      },
+      "river": {
+        "title": "RO/uk: River",
+        "description": "RO/uk: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. Please note that there will be pauses in the audio so you can practice without distraction.",
+        "action-btn-label": "RO/uk: Start",
+        "done": "RO/uk: Done"
+      }
+    }
+  },
+  "my-strengths": {
+    "title": "RO/uk: My Strengths",
+    "title-edit": "RO/uk: Edit strength",
+    "description": "RO/uk: In the middle of everything you have to do in a day, it is important to take a step back and observe your strengths.\n\nReminding yourself of all your good qualities and experiences can help improve your mood and perspective.",
+    "add": "RO/uk: Add strength",
+    "done": "RO/uk: Done",
+    "strength-label": "RO/uk: What's something that you like or respect about yourself? What's something that you're doing well?",
+    "placeholder": "RO/uk: Write your strength here...",
+    "pick-image": "RO/uk: Pick an image that reminds you of one of your strengths - it can be a person, something you've done, or something you're good at.",
+    "take-picture": "RO/uk: Take a picture",
+    "pick-from-library": "RO/uk: Pick an image from the library",
+    "delete-image": "RO/uk: Delete image",
+    "modify-image": "RO/uk: Modify image",
+    "info": "RO/uk: Examples:\n- I'm a good person\n- I have good intentions\n- I created a beautiful painting today\n- I'm a good friend",
+    "edit": "RO/uk: Edit strength",
+    "delete": "RO/uk: Delete strength"
+  },
+  "shift-thoughts": {
+    "title": "RO/uk: Shift Thoughts",
+    "helper": "RO/uk: Find a thought from down below which you can repeat for 5 minutes:",
+    "start": "RO/uk: Start",
+    "repeater": [
+      {
+        "title": "RO/uk: I can tolerate this."
+      },
+      {
+        "title": "RO/uk: Take a big breath."
+      },
+      {
+        "title": "RO/uk: Breathe"
+      },
+      {
+        "title": "RO/uk: Manage your anger"
+      },
+      {
+        "title": "RO/uk: I can't change the world."
+      },
+      {
+        "title": "RO/uk: Count to 10 and breathe."
+      },
+      {
+        "title": "RO/uk: Dig deep; find calm and stability."
+      },
+      {
+        "title": "RO/uk: Don't buy into this situation"
+      },
+      {
+        "title": "RO/uk: Don't let it get to you."
+      },
+      {
+        "title": "RO/uk: Don't pay attention"
+      },
+      {
+        "title": "RO/uk: Don't bite."
+      },
+      {
+        "title": "RO/uk: Don't go there."
+      },
+      {
+        "title": "RO/uk: Easy does it."
+      },
+      {
+        "title": "RO/uk: You can get through it."
+      },
+      {
+        "title": "RO/uk: How would (person you respect) handle this?"
+      },
+      {
+        "title": "RO/uk: I can't control what other people do."
+      },
+      {
+        "title": "RO/uk: It's in the past."
+      },
+      {
+        "title": "RO/uk: It's not a big thing; I don't need to get upset."
+      },
+      {
+        "title": "RO/uk: It's not worth it."
+      },
+      {
+        "title": "RO/uk: Keep your eye on the prize."
+      },
+      {
+        "title": "RO/uk: Leave it alone."
+      },
+      {
+        "title": "RO/uk: Let it be."
+      },
+      {
+        "title": "RO/uk: Let it go."
+      },
+      {
+        "title": "RO/uk: Slow down."
+      },
+      {
+        "title": "RO/uk: Stay the course."
+      },
+      {
+        "title": "RO/uk: Stop! Just stop."
+      },
+      {
+        "title": "RO/uk: This, too, will pass."
+      },
+      {
+        "title": "RO/uk: Use your tools!"
+      }
+    ]
+  },
+  "recreational-activities": {
+    "label": "RO/uk: Recreational activities"
+  },
+  "recreational-activities-alone": {
+    "label": "RO/uk: Recreational activities: Time Spent Alone",
+    "title": "RO/uk: Time Spent Alone",
+    "repeater": [
+      {
+        "description": "RO/uk: Bake something."
+      },
+      {
+        "description": "RO/uk: Cook a meal for yourself."
+      },
+      {
+        "description": "RO/uk: Dance."
+      },
+      {
+        "description": "RO/uk: Do a crossword or Sudoku puzzle."
+      },
+      {
+        "description": "RO/uk: Do a jigsaw puzzle."
+      },
+      {
+        "description": "RO/uk: Do arts and crafts."
+      },
+      {
+        "description": "RO/uk: Eat something delicious."
+      },
+      {
+        "description": "RO/uk: Have coffee or tea."
+      },
+      {
+        "description": "RO/uk: Knit or do needlepoint."
+      },
+      {
+        "description": "RO/uk: Light some candles."
+      },
+      {
+        "description": "RO/uk: List 5 things you like about yourself."
+      },
+      {
+        "description": "RO/uk: Listen to the radio."
+      },
+      {
+        "description": "RO/uk: Paint or draw."
+      },
+      {
+        "description": "RO/uk: Plan a trip."
+      },
+      {
+        "description": "RO/uk: Play a musical instrument."
+      },
+      {
+        "description": "RO/uk: Play cards."
+      },
+      {
+        "description": "RO/uk: Play with animals."
+      },
+      {
+        "description": "RO/uk: Practice a martial art."
+      },
+      {
+        "description": "RO/uk: Pray, meditate, or practice yoga."
+      },
+      {
+        "description": "RO/uk: Put on your favorite shirt to feel good."
+      },
+      {
+        "description": "RO/uk: Read a relaxing magazine or book."
+      },
+      {
+        "description": "RO/uk: Remember a fun vacation."
+      },
+      {
+        "description": "RO/uk: Remember someone being kind to you."
+      },
+      {
+        "description": "RO/uk: Build something with your hands."
+      },
+      {
+        "description": "RO/uk: Sing around the house."
+      },
+      {
+        "description": "RO/uk: Take a relaxing shower."
+      },
+      {
+        "description": "RO/uk: Take a warm bath or hot tub."
+      },
+      {
+        "description": "RO/uk: Take photographs."
+      },
+      {
+        "description": "RO/uk: Think about someone you love."
+      },
+      {
+        "description": "RO/uk: Watch a movie or TV show."
+      },
+      {
+        "description": "RO/uk: Watch funny videos."
+      },
+      {
+        "description": "RO/uk: Watch sports on TV."
+      },
+      {
+        "description": "RO/uk: Write a poem or story."
+      }
+    ]
+  },
+  "recreational-activities-city": {
+    "title": "RO/uk: In The City",
+    "repeater": [
+      {
+        "description": "RO/uk: Browse merchandise at an outdoor or hardware store."
+      },
+      {
+        "description": "RO/uk: Go window shopping."
+      },
+      {
+        "description": "RO/uk: Buy yourself a small gift."
+      },
+      {
+        "description": "RO/uk: Buy yourself a plant."
+      },
+      {
+        "description": "RO/uk: Buy yourself music."
+      },
+      {
+        "description": "RO/uk: Get a manicure and/or pedicure."
+      },
+      {
+        "description": "RO/uk: Get a massage."
+      },
+      {
+        "description": "RO/uk: Go bowling."
+      },
+      {
+        "description": "RO/uk: Go listen to music."
+      },
+      {
+        "description": "RO/uk: Go out for ice cream."
+      },
+      {
+        "description": "RO/uk: Go out to dinner."
+      },
+      {
+        "description": "RO/uk: Go sightseeing."
+      },
+      {
+        "description": "RO/uk: Go to a bookstore and read."
+      },
+      {
+        "description": "RO/uk: Go to a coffee shop to read and have coffee/tea."
+      },
+      {
+        "description": "RO/uk: Go to a live performance or play."
+      },
+      {
+        "description": "RO/uk: Go to a museum."
+      },
+      {
+        "description": "RO/uk: Go to church/temple/mosque."
+      },
+      {
+        "description": "RO/uk: Go to the movies."
+      },
+      {
+        "description": "RO/uk: Go watch horse racing or auto racing."
+      },
+      {
+        "description": "RO/uk: Play a sport."
+      },
+      {
+        "description": "RO/uk: Play pool."
+      },
+      {
+        "description": "RO/uk: Take a class in a craft, a language, or a dance."
+      },
+      {
+        "description": "RO/uk: Volunteer at a soup kitchen or animal shelter."
+      }
+    ]
+  },
+  "recreational-activities-nature": {
+    "title": "RO/uk: In Nature",
+    "repeater": [
+      {
+        "description": "RO/uk: Buy some flowers and enjoy their beauty."
+      },
+      {
+        "description": "RO/uk: Do some gardening."
+      },
+      {
+        "description": "RO/uk: Go bird watching."
+      },
+      {
+        "description": "RO/uk: Go camping."
+      },
+      {
+        "description": "RO/uk: Go fishing."
+      },
+      {
+        "description": "RO/uk: Go for a drive or motorcycle ride in the countryside."
+      },
+      {
+        "description": "RO/uk: Go for a hike or bike ride on a nature trail."
+      },
+      {
+        "description": "RO/uk: Go for a picnic."
+      },
+      {
+        "description": "RO/uk: Go to a lake, river, or beach."
+      },
+      {
+        "description": "RO/uk: Take a stroll at a botanical garden or flower show."
+      },
+      {
+        "description": "RO/uk: Take a trip to a nature reserve or national park."
+      },
+      {
+        "description": "RO/uk: Take a walk in the park."
+      },
+      {
+        "description": "RO/uk: Spend time with animals in a safe way."
+      }
+    ]
+  },
+  "soothe-senses": {
+    "title": "RO/uk: Soothe The Senses",
+    "done": "RO/uk: Done",
+    "repeater": [
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Sing your favorite songs, or play them and sing along."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Listen to music, and let yourself get lost in the sounds."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Listen to pleasurable sounds, like birds, or the ocean."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Learn to play an instrument and play tunes for your own enjoyment."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Be mindful of the sounds around you."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Turn on a movie and listen to the sounds, tones and textures of human voices."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Listen to an meditation or lecture online or on the radio about something interesting to you."
+      },
+      {
+        "title": "RO/uk: Sound",
+        "description": "RO/uk: Go for a walk in nature and listen to the sounds around you."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Go for a walk in the park or a hike in nature. Take in the beauty around you."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Go to a museum with beautiful art and enjoy what catches your eye."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Sit in the lobby of a beautiful hotel and notice the details of the décor."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Buy a beautiful flower or bouquet and make one space in a room pretty."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Go outside at night in the fresh air and look at the stars."
+      },
+      {
+        "title": "RO/uk: Sight",
+        "description": "RO/uk: Look at good travel photos in a book or on the internet; let them inspire you."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Eat your favorite meal; really pay attention as you savor it."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Treat yourself to dessert and eat each bite mindfully, with pleasure."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Suck on a piece of peppermint candy and let it melt in your mouth."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Chew your favorite gum and savor its flavor."
+      },
+      {
+        "title": "RO/uk: Taste",
+        "description": "RO/uk: Sample flavors in an ice cream store and notice the subtle differences."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Get a massage. Let yourself really focus on and enjoy the sensations."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Sit in the sun (please use sunscreen), and enjoy the warmth."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Pet a dog or cat, and focus on the softness and pleasant sensations."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Soak your feet and allow any tension or soreness to melt away."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
+      },
+      {
+        "title": "RO/uk: Touch",
+        "description": "RO/uk: Hug someone and feel the comfort of their touch."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Light a scented candle and enjoy the fragrance in the air."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Take a walk in a wooded area and breathe in the fresh smells of nature."
+      },
+      {
+        "title": "RO/uk: Smell",
+        "description": "RO/uk: Put lemon oil on your furniture and enjoy the scent."
+      }
+    ]
+  },
+  "connect-with-others": {
+    "title": "RO/uk: Connect With Others",
+    "done": "RO/uk: Done",
+    "static-text": "RO/uk: Getting support from others when you're dealing with physical or emotional distress can help. Try these:",
+    "repeater": [
+      {
+        "title": "RO/uk: Call a family member",
+        "description": "RO/uk: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      {
+        "title": "RO/uk: Call a friend",
+        "description": "RO/uk: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      {
+        "title": "RO/uk: Cook dinner for someone",
+        "description": "RO/uk: "
+      },
+      {
+        "title": "RO/uk: Go to a party",
+        "description": "RO/uk: "
+      },
+      {
+        "title": "RO/uk: Join a book club or reading group",
+        "description": "RO/uk: "
+      },
+      {
+        "title": "RO/uk: Join a sports club",
+        "description": "RO/uk: Join a club to play a sport, such as bowling, basketball, or soccer."
+      },
+      {
+        "title": "RO/uk: Make a small gift for someone",
+        "description": "RO/uk: "
+      },
+      {
+        "title": "RO/uk: Visit a family member",
+        "description": "RO/uk: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      {
+        "title": "RO/uk: Visit a friend",
+        "description": "RO/uk: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
+      },
+      {
+        "title": "RO/uk: Write a letter",
+        "description": "RO/uk: "
+      }
+    ]
+  },
+  "change-perspective": {
+    "title": "RO/uk: Change Your Perspective",
+    "done": "RO/uk: Done",
+    "static-text": "RO/uk: Changing the way you think can change the way you feel. Focus on this useful thought:",
+    "repeater": [
+      {
+        "description": "RO/uk: This is a hassle, not a horror."
+      },
+      {
+        "description": "RO/uk: I have been through many hard things in my life and survived."
+      },
+      {
+        "description": "RO/uk: I can tolerate this."
+      },
+      {
+        "description": "RO/uk: I will survive even if I don't sleep at all tonight."
+      },
+      {
+        "description": "RO/uk: This situation is different than what happened to me and I'm going to be fine."
+      },
+      {
+        "description": "RO/uk: I am right here, right now."
+      },
+      {
+        "description": "RO/uk: This may seem hard now, but it will get easier and easier over time."
+      },
+      {
+        "description": "RO/uk: When this is over, I'll be glad I did it."
+      },
+      {
+        "description": "RO/uk: I've done this before, so I know I can do it again."
+      },
+      {
+        "description": "RO/uk: I know I'm in a safe place, even though my mind is telling me something else."
+      },
+      {
+        "description": "RO/uk: I can feel my heart beating and my feet on the floor. I am alive and okay."
+      },
+      {
+        "description": "RO/uk: I've been through worse before and made it through safely."
+      },
+      {
+        "description": "RO/uk: My body is reacting to a memory. Right now I am safe"
+      },
+      {
+        "description": "RO/uk: I don't have to feel comfortable all the time. That just proves I am human."
+      },
+      {
+        "description": "RO/uk: This emotion will come and go. I will feel differently in twenty minutes."
+      },
+      {
+        "description": "RO/uk: I am able to respond effectively. I have skills to handle this situation."
+      },
+      {
+        "description": "RO/uk: I have been through this before and been just fine."
+      },
+      {
+        "description": "RO/uk: This is another challenge that I will figure out and face."
+      },
+      {
+        "description": "RO/uk: These emotions are telling me something. They won't hurt me."
+      },
+      {
+        "description": "RO/uk: I am human. I can make mistakes. No one is perfect."
+      },
+      {
+        "description": "RO/uk: I am able to protect myself."
+      },
+      {
+        "description": "RO/uk: Slow down. I know there is more than one choice I can make."
+      },
+      {
+        "description": "RO/uk: I can ask others for help."
+      },
+      {
+        "description": "RO/uk: I have made the right decision before."
+      },
+      {
+        "description": "RO/uk: My thoughts are just thoughts; they're not always right. Don't believe everything you think."
+      },
+      {
+        "description": "RO/uk: I am strong. I am safe now."
+      },
+      {
+        "description": "RO/uk: This feeling will pass."
+      },
+      {
+        "description": "RO/uk: I will not feel this way forever. I have felt differently before and will feel differently soon."
+      },
+      {
+        "description": "RO/uk: I am in a safe place."
+      },
+      {
+        "description": "RO/uk: The emotions I feel right now are giving me information about how I feel but they're not necessarily based on facts."
+      },
+      {
+        "description": "RO/uk: If I don't fight my emotions, they will go down on their own."
+      },
+      {
+        "description": "RO/uk: I am a decent person."
+      },
+      {
+        "description": "RO/uk: It is okay if it takes me time to figure this out."
+      },
+      {
+        "description": "RO/uk: There is always time to learn."
+      },
+      {
+        "description": "RO/uk: Learning will give me more options in the future."
+      },
+      {
+        "description": "RO/uk: There are times when I will fall back into old patterns. I just need to catch myself and get back on track with what's effective."
+      },
+      {
+        "description": "RO/uk: I know that I deserve love."
+      },
+      {
+        "description": "RO/uk: I am my own unique person: special, talented, and worthwhile."
+      },
+      {
+        "description": "RO/uk: One night of poor sleep is not the end of the world."
+      },
+      {
+        "description": "RO/uk: This tossing and turning at night will pass."
+      },
+      {
+        "description": "RO/uk: Nightmares are disturbing, but they're not real. I am safe."
+      },
+      {
+        "description": "RO/uk: Although it feels like I will never get a good night's sleep, I have in the past and I will in the future."
+      },
+      {
+        "description": "RO/uk: Although I am anticipating a poor night's sleep, it could be fine…I have slept well before."
+      }
+    ]
+  },
+  "grounding": {
+    "title": "RO/uk: Grounding",
+    "done": "RO/uk: Done",
+    "repeater": [
+      {
+        "title": "RO/uk: Feel feet on floor",
+        "description": "RO/uk: Focus all of your attention on your feet. Feel the floor under them."
+      },
+      {
+        "title": "RO/uk: Texture of a Pebble",
+        "description": "RO/uk: Focus all of your attention on the feel of a pebble or coin in your hand."
+      },
+      {
+        "title": "RO/uk: Breathing",
+        "description": "RO/uk: Sit quietly and focus all of your attention on your in-breath and then your out-breath."
+      },
+      {
+        "title": "RO/uk: The space around you – Colors",
+        "description": "RO/uk: Look around and focus your attention on the colors around you, noticing as many colors as you can."
+      },
+      {
+        "title": "RO/uk: The space around you – Smells",
+        "description": "RO/uk: Focus all of your attention on the smells in your environment."
+      },
+      {
+        "title": "RO/uk: The space around you – Sounds",
+        "description": "RO/uk: Focus on and listen carefully to the many sounds in your environment."
+      },
+      {
+        "title": "RO/uk: The space around you – Temperature",
+        "description": "RO/uk: Focus all of your attention of the temperature of the air on your skin."
+      },
+      {
+        "title": "RO/uk: Eating",
+        "description": "RO/uk: While you are eating, focus all of your attention on the sensations of the food in your mouth while you chew very slowly."
+      },
+      {
+        "title": "RO/uk: Brushing your teeth",
+        "description": "RO/uk: Brush your teeth and focus your attention on all of the sensations, tastes, and smells of this activity."
+      },
+      {
+        "title": "RO/uk: Walking",
+        "description": "RO/uk: Walk slowly, focusing your attention on what it feels like to take each step."
+      },
+      {
+        "title": "RO/uk: Object",
+        "description": "RO/uk: Pick up any small object off the ground and focus all of your attention on the texture of the object and the feel of it in your hand."
+      },
+      {
+        "title": "RO/uk: Pet an animal",
+        "description": "RO/uk: Pet an animal that is quiet and calm. Focus all of your attention on the sensations on your hand."
+      },
+      {
+        "title": "RO/uk: Attach yourself to the earth",
+        "description": "RO/uk: With your feet shoulder width apart, close your eyes and imagine that you are growing roots into the earth, making you strong and stable."
+      },
+      {
+        "title": "RO/uk: Ice cube",
+        "description": "RO/uk: Grab an ice cube and focus all of your attention on the sensations that go with it, cold, wet, and tingling."
+      },
+      {
+        "title": "RO/uk: Name what you see",
+        "description": "RO/uk: Look around you and name what you see. Start with large objects, then move to smaller and smaller objects."
+      },
+      {
+        "title": "RO/uk: Focus on touch",
+        "description": "RO/uk: Rub your hands together, clap your hands. Focus all of your attention on the feelings and sounds that you experience."
+      },
+      {
+        "title": "RO/uk: Reorientation",
+        "description": "RO/uk: Remind yourself where you are, what today's date is, when were you born, and what you did yesterday."
+      },
+      {
+        "title": "RO/uk: Call a friend",
+        "description": "RO/uk: Call a friend and discuss some activity you did together recently."
+      },
+      {
+        "title": "RO/uk: Past success",
+        "description": "RO/uk: Remember what you did to successfully get past a previous painful experience."
+      },
+      {
+        "title": "RO/uk: Baby steps",
+        "description": "RO/uk: Ask yourself and answer: What would be a small sign that things are getting a little better?"
+      },
+      {
+        "title": "RO/uk: Suck on a peppermint",
+        "description": "RO/uk: Slowly suck on a mint and describe the taste and your reaction in detail to yourself."
+      },
+      {
+        "title": "RO/uk: Stamp your feet on the ground",
+        "description": "RO/uk: Stamp your feet on the ground. Feel the force. Hear the sounds. Notice."
+      },
+      {
+        "title": "RO/uk: Feel your clothes on your skin",
+        "description": "RO/uk: Pay attention to the sensation of your clothes touching your skin."
+      },
+      {
+        "title": "RO/uk: Feel your hands",
+        "description": "RO/uk: Put your hands together and notice the sensations of the skin-on-skin contact."
+      },
+      {
+        "title": "RO/uk: Hear Others",
+        "description": "RO/uk: Tune into the voices of others around you. Only pay attention to the sounds of others' voices."
+      }
+    ]
+  },
+  "quotes": {
+    "title": "RO/uk: Inspirational Quotes",
+    "done": "RO/uk: Done",
+    "repeater": [
+      {
+        "description": "RO/uk: Helen Keller",
+        "title": "RO/uk: Although the world is full of suffering, it is full also of the overcoming of it."
+      },
+      {
+        "description": "RO/uk: Jesse Jackson",
+        "title": "RO/uk: You are not responsible for being down, but you are responsible for getting up."
+      },
+      {
+        "description": "RO/uk: Rainer Maria Rilke",
+        "title": "RO/uk: No feeling is final."
+      },
+      {
+        "description": "RO/uk: Baruch Spinoza",
+        "title": "RO/uk: Not to laugh, not to lament, not to judge, but to understand."
+      },
+      {
+        "description": "RO/uk: Erica Jong",
+        "title": "RO/uk: And the trouble is, if you don't risk anything, you risk even more."
+      },
+      {
+        "description": "RO/uk: Janis Joplin",
+        "title": "RO/uk: Don't compromise yourself. You are all you've got."
+      },
+      {
+        "description": "RO/uk: Buddha",
+        "title": "RO/uk: You yourself, as much as anybody in the entire universe, deserve your love and affection."
+      },
+      {
+        "description": "RO/uk: Rainer Maria Rilke",
+        "title": "RO/uk: ...be attentive to what is arising within you, and place that above everything else… What is happening in your innermost self is worthy of your entire love; somehow you must find a way to work at it."
+      },
+      {
+        "description": "RO/uk: Winston Churchill",
+        "title": "RO/uk: Never, never, never, never, never give up."
+      },
+      {
+        "description": "RO/uk: Frank Outlaw",
+        "title": "RO/uk: Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character; it becomes your destiny."
+      },
+      {
+        "description": "RO/uk: Theodore Roosevelt",
+        "title": "RO/uk: Do what you can, with what you have, where you are."
+      },
+      {
+        "description": "RO/uk: Molly Goode",
+        "title": "RO/uk: Let your heart guide you. It whispers, so listen closely."
+      },
+      {
+        "description": "RO/uk: Ellen Glasgow",
+        "title": "RO/uk: Life is never what one dreams. It is seldom what one desires, but for the vital spirit and the eager mind, the future will always hold the search for buried treasure and the possibility of high adventure."
+      },
+      {
+        "description": "RO/uk: Henry David Thoreau",
+        "title": "RO/uk: It takes two to speak the truth—one to speak, the other to hear."
+      },
+      {
+        "description": "RO/uk: Ralph Waldo Emerson",
+        "title": "RO/uk: When you do a thing, do it with all your might. Put your whole soul into it. Stamp it with your personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object."
+      },
+      {
+        "description": "RO/uk: Mohandas K. Gandhi",
+        "title": "RO/uk: The future depends on what we do in the present."
+      },
+      {
+        "description": "RO/uk: Jean Shinoda Bolen",
+        "title": "RO/uk: If we change within, our outer life will change also."
+      },
+      {
+        "description": "RO/uk: Wallace Stevens",
+        "title": "RO/uk: Perhaps the truth depends on a walk around the lake."
+      },
+      {
+        "description": "RO/uk: Charles Dickens",
+        "title": "RO/uk: A loving heart is the truest wisdom."
+      },
+      {
+        "description": "RO/uk: Martin Luther King Jr.",
+        "title": "RO/uk: Each of us is two selves, and the great challenge of life is to try to keep that higher self in command."
+      },
+      {
+        "description": "RO/uk: William Saroyan",
+        "title": "RO/uk: In the time of your life, live."
+      },
+      {
+        "description": "RO/uk: Virginia Satir",
+        "title": "RO/uk: Life is not what it's supposed to be. It's what it is. The way you cope with it is what makes the difference."
+      },
+      {
+        "description": "RO/uk: Tommy Lasorda",
+        "title": "RO/uk: The difference between the impossible and the possible lies in a person's determination."
+      },
+      {
+        "description": "RO/uk: Scott Adams",
+        "title": "RO/uk: Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end."
+      },
+      {
+        "description": "RO/uk: Robert Cushing",
+        "title": "RO/uk: The fact is, that to do anything in the world worth doing, we must not stand back shivering and thinking of the cold and danger, but jump in and scramble through as well as we can."
+      },
+      {
+        "description": "RO/uk: William Thackeray",
+        "title": "RO/uk: Follow your honest convictions, and stay strong."
+      },
+      {
+        "description": "RO/uk: Aristotle",
+        "title": "RO/uk: Knowing yourself is the beginning of all wisdom."
+      },
+      {
+        "description": "RO/uk: A. Bronson Alcott",
+        "title": "RO/uk: Your real influence is measured by your treatment of yourself."
+      },
+      {
+        "description": "RO/uk: Swedish Proverb",
+        "title": "RO/uk: Fear less, hope more, eat less, chew more, whine less, breathe more, talk less, say more, hate less, love more, and good things will be yours."
+      },
+      {
+        "description": "RO/uk: Martha Washington",
+        "title": "RO/uk: I have learned that the greater part of our misery or unhappiness is determined not by our circumstance but by our disposition."
+      },
+      {
+        "description": "RO/uk: Rainer Rilke",
+        "title": "RO/uk: The only journey is the journey within."
+      },
+      {
+        "description": "RO/uk: Doug Firebaugh",
+        "title": "RO/uk: Every day do something that will inch you closer to a better tomorrow."
+      },
+      {
+        "description": "RO/uk: Hamerton",
+        "title": "RO/uk: The happiest life is that which constantly exercises and educates what is best in us."
+      },
+      {
+        "description": "RO/uk: Thomas Edison",
+        "title": "RO/uk: If we all did the things we are capable of, we would astound ourselves."
+      },
+      {
+        "description": "RO/uk: John Clarke",
+        "title": "RO/uk: Go back a little to leap further."
+      },
+      {
+        "description": "RO/uk: Thomas Edison",
+        "title": "RO/uk: I failed my way to success."
+      },
+      {
+        "description": "RO/uk: Ralph Waldo Emerson",
+        "title": "RO/uk: Don't waste your life in doubts and fears: spend yourself on the work before you, well assured that the right performance of this hour's duties will be the best preparation for the hours or ages that follow it."
+      },
+      {
+        "description": "RO/uk: Chas. Austin Bates",
+        "title": "RO/uk: It is the trouble that never comes that causes the loss of sleep."
+      },
+      {
+        "description": "RO/uk: Helen Keller",
+        "title": "RO/uk: When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us."
+      },
+      {
+        "description": "RO/uk: Horace Bushnell",
+        "title": "RO/uk: The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be."
+      },
+      {
+        "description": "RO/uk: Berthold Auerbach",
+        "title": "RO/uk: Years teach us more than books."
+      },
+      {
+        "description": "RO/uk: Helen Keller",
+        "title": "RO/uk: Life is either a daring adventure or nothing."
+      },
+      {
+        "description": "RO/uk: St. Clement of Alexandra",
+        "title": "RO/uk: If you do not hope, you will not find what is beyond your hopes."
+      },
+      {
+        "description": "RO/uk: Henry Ward Beecher",
+        "title": "RO/uk: Men's best successes come after their disappointments."
+      },
+      {
+        "description": "RO/uk: Robert Frost",
+        "title": "RO/uk: The best way out is always through."
+      }
+    ]
+  }
+}

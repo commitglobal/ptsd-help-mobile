@@ -13,8 +13,8 @@ import { STORE_KEYS } from '@/constants/store-keys';
 import { Countries } from '@/constants/countries';
 
 const CountryLanguageMap: Record<Countries, string[]> = {
-  [Countries.Ukraine]: ['ua'],
-  [Countries.Romania]: ['ro', 'ua'],
+  [Countries.Ukraine]: ['uk'],
+  [Countries.Romania]: ['ro', 'uk'],
   [Countries.Armenia]: ['hy'],
 };
 

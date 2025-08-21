@@ -3,13 +3,9 @@ import i18n, { ResourceLanguage } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
 import en from '../../assets/locales/en/translations.json';
-import toolsEn from '../../assets/locales/en/tools.json';
-
 import ro from '../../assets/locales/ro/translations.json';
-import toolsRo from '../../assets/locales/ro/tools.json';
-
 import hy from '../../assets/locales/hy/translations.json';
-import toolsHy from '../../assets/locales/hy/tools.json';
+import uk from '../../assets/locales/uk/translations.json';
 
 import { STORE_KEYS } from '@/constants/store-keys';
 
@@ -25,21 +21,21 @@ export const isRTL = language?.textDirection === 'rtl';
 
 i18n.use(initReactI18next).init<ResourceLanguage>({
   lng: systemLocale || 'en',
-  fallbackLng: ['en', 'ro', 'hy'],
+  fallbackLng: ['en', 'ro', 'hy', 'uk'],
   compatibilityJSON: 'v3',
-  supportedLngs: ['en', 'ro', 'hy'],
+  supportedLngs: ['en', 'ro', 'hy', 'uk'],
   resources: {
     en: {
       translation: en,
-      tools: toolsEn,
     },
     ro: {
       translation: ro,
-      tools: toolsRo,
     },
     hy: {
       translation: hy,
-      tools: toolsHy,
+    },
+    uk: {
+      translation: uk,
     },
   },
   defaultNS: 'translation',

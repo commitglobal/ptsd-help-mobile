@@ -9,6 +9,7 @@ import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { Countries } from '@/constants/countries';
 
 export default function ChangeCountry() {
   const { t } = useTranslation();
@@ -17,11 +18,11 @@ export default function ChangeCountry() {
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
 
-  const countriesArray = ['ro', 'am', 'ua'];
+  const countriesArray = [Countries.Romania, Countries.Armenia, Countries.Ukraine];
   const countryFlags = {
-    ro: require('../../../assets/images/flags/ro.png'),
-    am: require('../../../assets/images/flags/am.png'),
-    ua: require('../../../assets/images/flags/ua.png'),
+    [Countries.Romania]: require('../../assets/images/flags/ro.png'),
+    [Countries.Armenia]: require('../../assets/images/flags/am.png'),
+    [Countries.Ukraine]: require('../../assets/images/flags/ua.png'),
   } as const;
 
   const countries = useMemo(
