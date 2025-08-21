@@ -36,5 +36,5 @@ You can start developing by editing the files inside the **app** directory. This
 1. Generate locale files from excel
 
    ```bash
-   npm run excel-to-locales --filePath <path-to-translations-xlsx-file>
+   npm run excel-to-locales <path-to-translations-xlsx-file>
    ```

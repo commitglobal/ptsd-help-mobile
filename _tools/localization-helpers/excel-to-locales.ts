@@ -39,21 +39,17 @@ async function importLocalesFromExcel() {
   const start = Date.now();
 
   const options = yargs(hideBin(process.argv))
-    .usage('Usage: -f <path-to-excel-with-translations>')
-    .option('filePath', {
-      alias: 'f',
-      type: 'string',
-      default: './locales.xlsx',
-      describe: 'Excel file containing translations',
-    })
+    .usage('Usage: $0 <filePath>')
+    .demandCommand(1, 'You must provide the Excel file path')
     .parseSync();
 
-  if (!existsSync(options.f as string)) {
-    throw new Error(`Could not find translations Excel file: ${options.f}`);
+  if (!existsSync(options._[0] as string)) {
+    console.log(`Could not find translations Excel file: ${options._[0]}`);
+    process.exit(0);
   }
 
   const workbook = new ExcelJS.Workbook();
-  await workbook.xlsx.readFile(options.f as string);
+  await workbook.xlsx.readFile(options._[0] as string);
 
   // Process locale_* sheets
   for (const languageLocaleSheet of workbook.worksheets.filter((worksheet) => worksheet.name.includes('locale_'))) {
@@ -90,7 +86,7 @@ async function importLocalesFromExcel() {
     });
 
     const [countryCode, languageCode] = countryLanguageToolsSheet.name.replace('tools_', '').split('_');
-    const outPath = path.join('./assets/tools', countryCode, languageCode, 'translations.json');
+    const outPath = path.join('./assets/tools', countryCode, languageCode, 'tools.json');
 
     await fs.mkdir(path.dirname(outPath), { recursive: true });
     console.log(`📝 Writing translations to ${outPath}`);
