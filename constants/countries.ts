@@ -1,4 +1,4 @@
-export enum Countries {
+export enum Country {
   // Afghanistan = 'AF',
   // AlandIslands = 'AX',
   // Albania = 'AL',
@@ -249,3 +249,10 @@ export enum Countries {
   // Zambia = 'ZM',
   // Zimbabwe = 'ZW',
 }
+
+export const AppCountries = [Country.Romania, Country.Armenia, Country.Ukraine] as const;
+export const CountryFlagMap = {
+  [Country.Romania]: require('../assets/images/flags/ro.png'),
+  [Country.Armenia]: require('../assets/images/flags/am.png'),
+  [Country.Ukraine]: require('../assets/images/flags/ua.png'),
+} as const;

@@ -10,13 +10,8 @@ import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
-import { Countries } from '@/constants/countries';
-
-const CountryLanguageMap: Record<Countries, string[]> = {
-  [Countries.Ukraine]: ['uk'],
-  [Countries.Romania]: ['ro', 'uk'],
-  [Countries.Armenia]: ['hy'],
-};
+import { Country } from '@/constants/countries';
+import { CountryLanguageMap } from '@/constants/languages';
 
 export default function ChooseLanguage() {
   const { t } = useTranslation();
@@ -25,7 +20,7 @@ export default function ChooseLanguage() {
 
   const languages = useMemo(
     () =>
-      CountryLanguageMap[country as Countries]?.map((language) => ({
+      CountryLanguageMap[country as Country]?.map((language) => ({
         id: language,
         label: t(`languages.${language}`),
       })) ??

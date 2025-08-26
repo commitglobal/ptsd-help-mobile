@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Screen } from '@/components/Screen';
 import { useTranslation } from 'react-i18next';
 import { useLocalSearchParams, useRouter } from 'expo-router';
@@ -13,6 +13,17 @@ import i18n from '@/common/config/i18n';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useQueryClient } from '@tanstack/react-query';
+import { Country } from '@/constants/countries';
+import { CountryLanguageMap } from '@/constants/languages';
+
+const toolsMap: Record<Country, Record<string, any>> = {
+  [Country.Romania]: {
+    ro: require('../../../assets/tools/RO/ro/tools.json'),
+    uk: require('../../../assets/tools/RO/uk/tools.json'),
+  },
+  [Country.Ukraine]: { ua: require('../../../assets/tools/UA/uk/tools.json') },
+  [Country.Armenia]: { hy: require('../../../assets/tools/AM/hy/tools.json') },
+} as const;
 
 export default function ChangeLanguage() {
   const { t } = useTranslation();
@@ -20,18 +31,29 @@ export default function ChangeLanguage() {
   const insets = useSafeAreaInsets();
   const queryClient = useQueryClient();
 
-  const languages = i18n.languages.map((language) => ({
-    id: language,
-    label: t(`languages.${language}`),
-  }));
-
   const { country } = useLocalSearchParams<{ country: string }>();
+  const languages = useMemo(
+    () =>
+      CountryLanguageMap[country as Country]?.map((language) => ({
+        id: language,
+        label: t(`languages.${language}`),
+      })) ??
+      i18n.languages.map((language) => ({
+        id: language,
+        label: t(`languages.${language}`),
+      })),
+    [country, i18n.languages]
+  );
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
 
-  const handleDone = () => {
+  const handleDone = async () => {
     if (selectedLanguage && country) {
       KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
       KVStore().set(STORE_KEYS.COUNTRY, country.toUpperCase());
+      const tools: any = toolsMap[country.toUpperCase() as Country][selectedLanguage];
+
+      i18n.addResources(selectedLanguage, 'tools', tools);
+
       queryClient.invalidateQueries({ queryKey: ['country-language'] });
       router.dismissAll();
       router.back();

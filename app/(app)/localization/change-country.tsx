@@ -9,7 +9,7 @@ import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Countries } from '@/constants/countries';
+import { AppCountries, Country, CountryFlagMap } from '@/constants/countries';
 
 export default function ChangeCountry() {
   const { t } = useTranslation();
@@ -18,23 +18,20 @@ export default function ChangeCountry() {
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
 
-  const countriesArray = [Countries.Romania, Countries.Armenia, Countries.Ukraine];
-  const countryFlags = {
-    [Countries.Romania]: require('../../assets/images/flags/ro.png'),
-    [Countries.Armenia]: require('../../assets/images/flags/am.png'),
-    [Countries.Ukraine]: require('../../assets/images/flags/ua.png'),
-  } as const;
-
   const countries = useMemo(
     () =>
-      countriesArray.map((country) => ({
+      AppCountries.map((country) => ({
         id: country,
         label: t(`choose-country.countries.${country}`),
-        avatar: countryFlags[country as keyof typeof countryFlags],
+        avatar: CountryFlagMap[country as Country],
       })),
-    [countriesArray, t]
+    [AppCountries, t]
   );
 
+  function handleSetSelectedCountry(country: string) {
+    console.log(country);
+    setSelectedCountry(country);
+  }
   return (
     <Screen
       headerProps={{
@@ -69,7 +66,7 @@ export default function ChangeCountry() {
         ItemSeparatorComponent={() => <YStack height={16} />}
         data={countries}
         renderItem={({ item }) => (
-          <RadioItem item={item} selectedItem={selectedCountry} onSelectItem={setSelectedCountry} />
+          <RadioItem item={item} selectedItem={selectedCountry} onSelectItem={handleSetSelectedCountry} />
         )}
         estimatedItemSize={60}
       />
