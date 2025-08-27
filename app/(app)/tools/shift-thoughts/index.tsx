@@ -26,7 +26,7 @@ export default function ShiftThoughts() {
 
   const items = t(toolsTranslationKeys.SHIFT_THOUGHTS.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -59,7 +59,7 @@ export default function ShiftThoughts() {
         onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
       staticText={t(toolsTranslationKeys.SHIFT_THOUGHTS.helper)}
-      items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+      items={items.map((item) => ({ ...item, id: item.title }))}
       imageUrl={mediaMapping['SHIFT_THOUGHTS.CATEGORY_ICON']}
       footerProps={{ onMainAction: () => finishTool() }}>
       <YStack alignItems='center' justifyContent='center' gap='$4' marginBottom='$12' marginTop='auto'>

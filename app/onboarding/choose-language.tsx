@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { FlashList } from '@shopify/flash-list';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
@@ -10,15 +10,26 @@ import { YStack } from 'tamagui';
 import { RadioItem } from '@/components/RadioItem';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+import { Country } from '@/constants/countries';
+import { CountryLanguageMap } from '@/constants/languages';
 
 export default function ChooseLanguage() {
   const { t } = useTranslation();
   const router = useRouter();
+  const country = KVStore().getString(STORE_KEYS.COUNTRY);
 
-  const languages = i18n.languages.map((language) => ({
-    id: language,
-    label: t(`languages.${language}`),
-  }));
+  const languages = useMemo(
+    () =>
+      CountryLanguageMap[country as Country]?.map((language) => ({
+        id: language,
+        label: t(`languages.${language}`),
+      })) ??
+      i18n.languages.map((language) => ({
+        id: language,
+        label: t(`languages.${language}`),
+      })),
+    [country, i18n.languages]
+  );
 
   const [selectedLanguage, setSelectedLanguage] = useState<string>(languages[0].id);
 

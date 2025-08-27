@@ -19,7 +19,7 @@ const SootheSenses = () => {
 
   const items = t(toolsTranslationKeys.SOOTHE_SENSES.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <ScreenWithChangingText
@@ -30,7 +30,7 @@ const SootheSenses = () => {
         iconRight: <Icon icon={favorite ? 'solidHeart' : 'heart'} color='$gray12' width={24} height={24} />,
         onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
       }}
-      items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
+      items={items.map((item) => ({ ...item, id: item.description }))}
       imageUrl={mediaMapping['SOOTHE_SENSES.CATEGORY_ICON']}
       footerProps={{ onMainAction: () => finishTool() }}
     />

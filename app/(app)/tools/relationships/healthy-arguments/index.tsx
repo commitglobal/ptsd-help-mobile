@@ -18,7 +18,7 @@ const HealthyArguments = () => {
 
   const items = t(toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <>
@@ -30,7 +30,7 @@ const HealthyArguments = () => {
           onLeftPress: () => router.back(),
         }}
         staticText={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.HEALTHY_ARGUMENTS.helper)}
-        items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
+        items={items.map((item) => ({ ...item, id: item.description }))}
         imageUrl={mediaMapping['RELATIONSHIPS.HEALTHY_ARGUMENTS.headerImage']}
         footerProps={{ onMainAction: () => finishTool() }}
       />

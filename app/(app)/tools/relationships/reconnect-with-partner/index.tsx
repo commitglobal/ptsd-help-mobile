@@ -16,12 +16,12 @@ export default function ReconnectWithPartner() {
 
   const items = t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string; sms?: string }>;
+  }) as { title: string; description: string; sms?: string }[];
 
   return (
     <ScreenWithChangingText
       staticText={t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.helper)}
-      items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+      items={items.map((item) => ({ ...item, id: item.title }))}
       imageUrl={mediaMapping['RELATIONSHIPS.RECONNECT_WITH_PARTNER.CATEGORY_ICON']}
       headerProps={{
         title: t(toolsTranslationKeys.RELATIONSHIPS.subcategories.RECONNECT_WITH_PARTNER.label),

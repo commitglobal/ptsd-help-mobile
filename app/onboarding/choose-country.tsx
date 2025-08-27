@@ -9,6 +9,7 @@ import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
+import { Country } from '@/constants/countries';
 
 const ChooseCountry = () => {
   const { t } = useTranslation();
@@ -16,11 +17,11 @@ const ChooseCountry = () => {
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
 
-  const countriesArray = ['ro', 'am', 'ua'];
+  const countriesArray = [Country.Romania, Country.Armenia, Country.Ukraine];
   const countryFlags = {
-    ro: require('../../assets/images/flags/ro.png'),
-    am: require('../../assets/images/flags/am.png'),
-    ua: require('../../assets/images/flags/ua.png'),
+    [Country.Romania]: require('../../assets/images/flags/ro.png'),
+    [Country.Armenia]: require('../../assets/images/flags/am.png'),
+    [Country.Ukraine]: require('../../assets/images/flags/ua.png'),
   } as const;
 
   const countries = useMemo(

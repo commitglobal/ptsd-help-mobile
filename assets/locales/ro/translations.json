@@ -22,7 +22,8 @@
   "languages": {
     "en": "RO/ro: English",
     "am": "RO/ro: Armenian",
-    "ua": "RO/ro: Ukrainian"
+    "uk": "RO/ro: Ukrainian",
+    "hy": "RO/ro: Armenian"
   },
   "licence-agreement": {
     "header-title": "RO/ro: Licence Agreement",
@@ -38,9 +39,9 @@
     "subtitle": "RO/ro: Please choose the country you are in right now or the country for which you wish to view resources.",
     "next": "RO/ro: Next",
     "countries": {
-      "ro": "RO/ro: Romania",
-      "am": "RO/ro: Armenia",
-      "ua": "RO/ro: Ukraine"
+      "RO": "RO/ro: Romania",
+      "AM": "RO/ro: Armenia",
+      "UA": "RO/ro: Ukraine"
     }
   },
   "choose-language": {

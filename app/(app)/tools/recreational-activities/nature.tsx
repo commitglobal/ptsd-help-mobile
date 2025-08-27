@@ -16,7 +16,7 @@ const RecreationalActivitiesNature = () => {
 
   const items = t(toolsTranslationKeys.RECREATIONAL_ACTIVITIES.subcategories.RECREATIONAL_ACTIVITIES_NATURE.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <ScreenWithChangingText
@@ -26,7 +26,7 @@ const RecreationalActivitiesNature = () => {
         onLeftPress: () => router.back(),
       }}
       footerProps={{ onMainAction: finishTool }}
-      items={Object.values(items).map((item) => ({ ...item, id: item.description }))}
+      items={items.map((item) => ({ ...item, id: item.description }))}
       imageUrl={
         mediaMapping['RECREATIONAL_ACTIVITIES.RECREATIONAL_ACTIVITIES_NATURE.CATEGORY_ICON']
       }></ScreenWithChangingText>

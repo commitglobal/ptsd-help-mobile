@@ -26,7 +26,7 @@ export default function Pause() {
 
   const items = t(toolsTranslationKeys.PAUSE.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   useEffect(() => {
     let interval: NodeJS.Timeout;
@@ -61,7 +61,7 @@ export default function Pause() {
           onRightPress: favorite ? removeFromFavorites : handleAddToFavorites,
         }}
         staticText={t(toolsTranslationKeys.PAUSE.helper)}
-        items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+        items={items.map((item) => ({ ...item, id: item.title }))}
         imageUrl={mediaMapping['PAUSE.CATEGORY_ICON']}
         footerProps={{ onMainAction: () => finishTool() }}>
         <YStack alignItems='center' justifyContent='center' gap='$4' marginBottom='$12' marginTop='auto'>

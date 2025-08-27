@@ -89,310 +89,310 @@
       "reconnect-with-partner": {
         "title": "RO/en: Reconnect with your partner",
         "helper": "RO/en: Try these strategies - either on your own or, better, with your partner!",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "RO/en: Notice The Nice Things",
             "description": "RO/en: Notice 1 thing about your partner, every day for one week. It can be as simple as noticing a new hair style or a small gesture of love or support. Take a moment to share whatever you've noticed with your partner.",
             "calendar": "RO/en: Notice something nice about my partner"
           },
-          "2": {
+          {
             "title": "RO/en: Notice the Nice Things Together",
             "description": "RO/en: Challenge your partner to see if you can both notice, and comment on, once nice thing about one another every day for a week.",
             "sms": "RO/en: I'm making a commitment to notice something nice about you for the next week. Will you try to do the same for me?"
           },
-          "3": {
+          {
             "title": "RO/en: Be Affectionate",
             "description": "RO/en: Give your spouse or partner a hug or hold their hand at a time you normally wouldn't. Try to show your partner a small act of physical affection in a way you think he or she might appreciate.",
             "calendar": "RO/en: Hug or hold my partner's hand"
           },
-          "4": {
+          {
             "title": "RO/en: Be Affectionate Together",
             "description": "RO/en: Challenge your partner to make a commitment to hug or hold hands at least once a day for the next week.",
             "sms": "RO/en: I'd like us to make a commitment to try to hug or hold hands at least once a day this week. Can we try to do this together and see what happens?"
           },
-          "5": {
+          {
             "title": "RO/en: Acts of Service",
             "description": "RO/en: Find a small act of service that you can provide your partner. Something that they need to do or have done that you could take care of instead. Just one thing, even something small like taking out the garbage.",
             "calendar": "RO/en: Do at least one thing today that is helpful to my partner"
           },
-          "6": {
+          {
             "title": "RO/en: Acts of Service Together",
             "description": "RO/en: Challenge your partner to make a commitment to perform one small act of service for one another each day.",
             "sms": "RO/en: I'd like us to make a commitment to try to do at least one thing each day that is helpful to the other person. Will you join me on this?"
           },
-          "7": {
+          {
             "title": "RO/en: Volunteering Together",
             "description": "RO/en: Do something together to help the larger community!"
           },
-          "8": {
+          {
             "title": "RO/en: Who I Want to Be",
             "description": "RO/en: Take a moment to come up with 3 words you would use to describe yourself as the partner you would ideally like to be. Maybe \"compassionate\" or \"fun\" or \"relaxed\" or something totally different! Write the words down and then over the next week, practice living those qualities as best you can. Notice how it feels."
           },
-          "9": {
+          {
             "title": "RO/en: Reflecting on your Partner",
             "description": "RO/en: Spend a few minutes reflecting on these questions:\n\n- What did you find most attractive about your partner when you first met, besides looks?\n- What personal qualities did you most admire about your partner when you first met them?\n- What do you see as your partner's greatest strengths?"
           },
-          "10": {
+          {
             "title": "RO/en: Show Your Support",
             "description": "RO/en: Focus on showing your partner that you're on their side. If your partner is upset about something, try to find ways to take their side and express your support."
           },
-          "11": {
+          {
             "title": "RO/en: Act of Service",
             "description": "RO/en: Perform a substantial act of service for your partner. Go out of your way to find something helpful to do for them - something you think they are likely to really appreciate.",
             "calendar": "RO/en: Perform an act of service for my partner"
           },
-          "12": {
+          {
             "title": "RO/en: Cultivate Appreciation",
             "description": "RO/en: Spend 10 minutes sitting alone in a quiet sport. Close your eyes and try to generate a sense of warmth and appreciation for your partner. Think about their positive qualities. What happens when you take time to reflect on their strengths or positive qualities?"
           },
-          "13": {
+          {
             "title": "RO/en: Acting as a Team",
             "description": "RO/en: Let your partner know that you're on a team and you can take things on together. This could be talking about your future, planning a future activity together, or taking on a small challenge together.",
             "calendar": "RO/en: Plan a future activity with my partner"
           },
-          "14": {
+          {
             "title": "RO/en: Letting Go of Judgment",
             "description": "RO/en: Designate 5 minutes to focus on trying not to judge your partner. See how it feels to let any judgment go for a few minutes."
           },
-          "15": {
+          {
             "title": "RO/en: Giving a Small Gift",
             "description": "RO/en: Surprise your partner with a small gift - it could be anything: a short note, your time, flowers, or anything that's quick, easy, and shows you care.",
             "calendar": "RO/en: Get a small gift for my partner"
           },
-          "16": {
+          {
             "title": "RO/en: Express Appreciation",
             "description": "RO/en: Express your appreciation for your partner each time they do something that makes you feel good, feel appreciated, or makes your life easier!"
           },
-          "17": {
+          {
             "title": "RO/en: Stop Keeping Score",
             "description": "RO/en: If you find yourself keeping track of how much you do for your partner without receiving anything in return, try to stop \"keeping score\" for at least one day. Sometimes, letting go of expectations can make it easier to re-connect, even if only for short periods of time."
           },
-          "18": {
+          {
             "title": "RO/en: Practice Non-Judgment",
             "description": "RO/en: If you and your partner are in the middle of a conflict, try not to judge them for the entire conversation. This is tough to do! The important thing is to work toward non-judgment, and if you're having a hard time, that's okay."
           },
-          "19": {
+          {
             "title": "RO/en: Surprise Date",
             "description": "RO/en: Surprise your partner with a planned activity or date. This could be something small like going for a walk or watching a movie together.",
             "calendar": "RO/en: Surprise my partner with an activity together"
           },
-          "20": {
+          {
             "title": "RO/en: Reliving Fun Times",
             "description": "RO/en: Think of a short activity (or conversation topic) that you and your partner did together when you first met. Choose something neutral, that's not likely to cause conflict and ask if they would like to make time to try it again."
           },
-          "21": {
+          {
             "title": "RO/en: Remind Yourself of the Positives",
             "description": "RO/en: Make a list of all the positive qualities your partner has. Keep the list somewhere you'll see it and add to it every time you think of something new."
           }
-        }
+        ]
       },
       "positive-communication": {
         "title": "RO/en: Positive Communication",
         "helper": "RO/en: Positive communication is the key to every good relationship. You may already be doing some of these, but consider trying out some of these suggestions to strengthen your relationship:",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "RO/en: Overcome your automatic negative thoughts",
             "description": "RO/en: Think about positive things about your partner"
           },
-          "2": {
+          {
             "title": "RO/en: Start a conversation with your partner",
             "description": "RO/en: Talk about your feelings and thoughts with your partner"
           },
-          "3": {
+          {
             "title": "Show Love",
             "description": "Tell your loved one about 1 thing that you love or appreciate about them. Send a text or leave a note where you know they'll find it.\n\nDo it right now, if you can!"
           },
-          "4": {
+          {
             "title": "Show Admiration",
             "description": "Tell your loved one 1 thing you admire about him or her."
           },
-          "5": {
+          {
             "title": "Start a Conversation",
             "description": "Plan and start a conversation with your loved one about something that you know interests you both."
           },
-          "6": {
+          {
             "title": "First Impressions",
             "description": "Can you remember your earliest impressions of your loved one? Without making comparisons to the present, share with your loved one what you first liked and appreciated about them after you met or really got to know one another."
           },
-          "7": {
+          {
             "title": "Shared Values",
             "description": "What's at least one shared goal or value that you have in common with your loved one? Ask your loved one about their goals for the next month or year and how you can help meet that goal."
           },
-          "8": {
+          {
             "title": "Contributions",
             "description": "Spend 2 minutes thinking about this: what's at least one thing your loved one does to contribute to the relationship you have with him or her? Try to identify at least one thing, even if it's small."
           },
-          "9": {
+          {
             "title": "Just Listen",
             "description": "Ask your loved one to tell you about the best part of their day and the hardest part of their day. Focus on listening.\n\nAcknowledge what your loved one says without trying to solve anything."
           },
-          "10": {
+          {
             "title": "Overcoming Challenges",
             "description": "Think about a time in your relationship with your loved one when you had to overcome something difficult together."
           },
-          "11": {
+          {
             "title": "Next Time you Talk",
             "description": "Try to turn a few minutes with your loved one into a positive conversation- talk more than usually would about something you have in common."
           },
-          "12": {
+          {
             "title": "Listen Openly",
             "description": "Plan a conversation about whatever your loved one would like to talk about that interests them. Listen as openly as you can. Don't change the subject!"
           },
-          "13": {
+          {
             "title": "Share Their Interests",
             "description": "Plan and start a conversation with your loved one about something you know is interesting to them but normally isn't interesting to you."
           },
-          "14": {
+          {
             "title": "Noticing Niceness",
             "description": "Find something nice, however big or small, that your loved one did recently. Share it with your loved one and tell him or her how it made you feel."
           },
-          "15": {
+          {
             "title": "Making Rituals",
             "description": "Ask your loved one to start, or honor, a daily or weekly ritual with you. A ritual can be anything- a phone call, a meal, a hug, or anything else that you can share together."
           },
-          "16": {
+          {
             "title": "Sharing Problems",
             "description": "Ask your loved one what they want you to do next time they're sharing a problem with you.\n\nTry saying this: \"Would you like for me to listen or would you like some advice?\" Don't give advice if your loved one doesn't want it."
           },
-          "17": {
+          {
             "title": "Fun Experiences",
             "description": "Try to remember a fun experience that you shared with your loved one.\n\nPlan a fun activity and try to re-create that experience."
           },
-          "18": {
+          {
             "title": "Favorite Experiences",
             "description": "Spend some time reminiscing with your loved one about some of your favorite experiences together."
           },
-          "19": {
+          {
             "title": "Write a Letter",
             "description": "Write a letter to your loved one telling them what they mean to you, why you love them, or your hopes for the future with them.\n\nMake sure you give the letter to your loved one!"
           },
-          "20": {
+          {
             "title": "Leave a Note",
             "description": "Leave a note where your loved one can find it that says \"I love when you…\" and then fill in the blank!"
           }
-        }
+        ]
       },
       "healthy-arguments": {
         "title": "RO/en: Healthy Arguments",
         "helper": "RO/en: Every relationship has its conflicts. Here are a few strategies that you can try when you find yourself in an argument with your partner.",
-        "repeater": {
-          "1": {
+        "repeater": [
+          {
             "title": "RO/en: Managing 'Sensitive Topics'",
             "description": "RO/en: Approach sensitive topics carefully. Make sure you feel calm enough. Take time to reflect and choose your words more carefully!"
           },
-          "2": {
+          {
             "title": "RO/en: How to spend a break outside of conflict",
             "description": "RO/en: Find something relaxing to do, like a walk, talk to a friend, exercise or read."
           },
-          "3": {
+          {
             "title": "RO/en: How to spend a break outside of conflict",
             "description": "RO/en: Which are the activities you and your partner can do together that don't involve talking?"
           },
-          "4": {
+          {
             "title": "RO/en: Take a break",
             "description": "RO/en: Make sure you have favourite activities that relax and soothe you. Spend time doing things that you like instead of reliving the conflict."
           },
-          "5": {
+          {
             "title": "RO/en: Have a break",
             "description": "RO/en: Here's what you can say to your partner: 'I care about this problem and I want to fix it. I just need time to think and I'll be back when I have a clear head.'"
           },
-          "6": {
+          {
             "title": "RO/en: Have perspective",
             "description": "RO/en: Every relationship has its conflicts. Tolerating or dealing with them successfully, even if they're small, is a way of consolidating the relationship."
           },
-          "7": {
+          {
             "title": "RO/en: Try not to criticize your partner",
             "description": "RO/en: Critique can make you feel judged or rejected and it's not the best way of driving change. Instead of criticizing your partner, use the affirmations that contain 'I' for expressing your feelings."
           },
-          "8": {
+          {
             "title": "RO/en: Feeling guilty?",
             "description": "RO/en: Try not to be defensive if you feel blamed by your loved one. Try to understand what they need from you before responding or trying to defend yourself."
           },
-          "9": {
+          {
             "title": "RO/en: Ask and offer respect",
             "description": "RO/en: In any conflict, there needs to be a basic level of trust and respect for each other. Don't tolerate insults, ridicule, disrespect or disgust. Take a break if you feel disrespected."
           },
-          "10": {
+          {
             "title": "RO/en: Be there for your partner",
             "description": "RO/en: Don't run away from a conflict, unless one of you needs to take a break."
           },
-          "11": {
+          {
             "title": "RO/en: Practice understanding",
             "description": "RO/en: Slow down and listen - don't interrupt."
           },
-          "12": {
+          {
             "title": "RO/en: Practice understanding",
             "description": "RO/en: Focus on your partner's words and body language."
           },
-          "13": {
+          {
             "title": "RO/en: Practice understanding",
             "description": "RO/en: Show interest, even during a conflict."
           },
-          "14": {
+          {
             "title": "RO/en: Accept your partner",
             "description": "RO/en: Give your loved one the benefit of the doubt."
           },
-          "15": {
+          {
             "title": "RO/en: Accept your partner",
             "description": "RO/en: Try not to judge."
           },
-          "16": {
+          {
             "title": "RO/en: Understand your partner",
             "description": "RO/en: Use your own words to repeat what you think your loved one is really trying to say."
           },
-          "17": {
+          {
             "title": "RO/en: Understand your partner",
             "description": "RO/en: Don't read minds. Don't assume you know what your loved one is thinking."
           },
-          "18": {
+          {
             "title": "RO/en: Understand your partner",
             "description": "RO/en: Make sure your loved one knows you can't read their mind, and ask them to help you understand their needs through open conversation."
           },
-          "19": {
+          {
             "title": "RO/en: Understand your partner",
             "description": "RO/en: Trying to understand how your loved one feels doesn't mean you have to agree with them. Understanding their perspective is key to moving the discussion forward."
           },
-          "20": {
+          {
             "title": "RO/en: Understand your partner",
             "description": "RO/en: Ask as many questions as possible. Make sure you understand what your loved one is telling you. Correct yourself when you make mistakes."
           },
-          "21": {
+          {
             "title": "RO/en: When your partner is angry",
             "description": "RO/en: Always make sure you are safe. If needed, don't hesitate to call 911."
           },
-          "22": {
+          {
             "title": "RO/en: When you're angry",
             "description": "RO/en: Stop and take a deep breath."
           },
-          "23": {
+          {
             "title": "RO/en: When you're angry",
             "description": "RO/en: Take a break. Leave the difficult situation until you can resume the conversation when you're not angry."
           },
-          "24": {
+          {
             "title": "RO/en: When you're angry",
             "description": "RO/en: Discuss with your partner in advance about when to take breaks during a certain conflict or disagreement."
           },
-          "25": {
+          {
             "title": "RO/en: When your partner is angry",
             "description": "RO/en: Stop and take a deep breath. Ask your loved one to do the same."
           },
-          "26": {
+          {
             "title": "RO/en: If you take a break",
             "description": "RO/en: When both of you feel less angry, try to resume the conversation and find a solution that works for both of you."
           },
-          "27": {
+          {
             "title": "RO/en: When your partner is angry",
             "description": "RO/en: Try to recognize the triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
           },
-          "28": {
+          {
             "title": "RO/en: When you're angry",
             "description": "RO/en: Try to recognize your own triggers or warning signs for anger. Make a plan for what you will do when you notice one of these triggers or signs."
           },
-          "29": {
+          {
             "title": "RO/en: Know your 'Sensitive Topics'",
             "description": "RO/en: What are the things that come up and cause tension and conflict with your loved one? When they come up, treat 'sensitive topics' with care."
           }
-        }
+        ]
       }
     },
     "common": {
@@ -450,86 +450,86 @@
   },
   "sleep": {
     "title": "RO/en: Help to sleep",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "RO/en: Only go to bed when you feel sleepy."
       },
-      "2": {
+      {
         "title": "RO/en: If you lie in bed for 20 minutes and still can't sleep, get up and do something else (without exposing yourself to bright light or computer/phone/TV screens)."
       },
-      "3": {
+      {
         "title": "RO/en: Listen to relaxing music."
       },
-      "4": {
+      {
         "title": "RO/en: Read something calming."
       },
-      "5": {
+      {
         "title": "RO/en: Drink a cup of decaffeinated tea."
       },
-      "6": {
+      {
         "title": "RO/en: Drink a cup of warm milk."
       },
-      "7": {
+      {
         "title": "RO/en: Breathe slowly and deeply through your nose - do this for 10 minutes. You can use the breathing tool in this app if you wish."
       },
-      "8": {
+      {
         "title": "RO/en: Eat a light snack if you're hungry - something with little or no sugar and no alcohol."
       },
-      "9": {
+      {
         "title": "RO/en: Make sure the room temperature is cool."
       },
-      "10": {
+      {
         "title": "RO/en: Try wearing earplugs if there is noise around you."
       },
-      "11": {
+      {
         "title": "RO/en: If there is light around, try sleeping with an eye mask."
       },
-      "12": {
+      {
         "title": "RO/en: Make sure the room is dark."
       },
-      "13": {
+      {
         "title": "RO/en: Try taking a warm bath an hour or 2 before bedtime."
       },
-      "14": {
+      {
         "title": "RO/en: Make sure you are comfortable and your clothes aren't uncomfortable."
       },
-      "15": {
+      {
         "title": "RO/en: Avoid looking at the clock."
       },
-      "16": {
+      {
         "title": "RO/en: Let your mind wander. Don't focus too much on the process of falling asleep."
       },
-      "17": {
+      {
         "title": "RO/en: If you feel worried, get up and write down your worries, then try to let them go."
       },
-      "18": {
+      {
         "title": "RO/en: Imagine a safe and peaceful place: picture yourself by a river, lake or in a meadow. Imagine the whole scene, the sights, sounds and smells, while you relax. You can use the positive imagery tool in this app if you wish."
       },
-      "19": {
+      {
         "title": "RO/en: Feel all your body muscles relaxed, as if they've sunk into the mattress. You can use the progressive muscle relaxation tool in this app if you wish."
       },
-      "20": {
+      {
         "title": "RO/en: Avoid nicotine, caffeine and alcohol in the evening."
       },
-      "21": {
+      {
         "title": "RO/en: Avoid too much salt in food. This can make you wake up thirsty throughout the night."
       },
-      "22": {
+      {
         "title": "RO/en: Turn off the computer or TV 30 minutes before bedtime."
       },
-      "23": {
+      {
         "title": "RO/en: Create a relaxing bedtime routine."
       },
-      "24": {
+      {
         "title": "RO/en: Get up and drink a glass of water."
       },
-      "25": {
+      {
         "title": "RO/en: Make sure the sheets are clean and the pillow and mattress are comfortable."
       },
-      "26": {
+      {
         "title": "RO/en: Try not to worry about not falling asleep. Keep trying to relax."
       }
-    },
+    ],
     "sleep-habits": {
       "title": "Good Sleep Habits",
       "info": "Info",
@@ -892,47 +892,47 @@
     "sleep-perspective": {
       "title": "RO/en: Change your sleep perspective",
       "description": "RO/en: Try these habits to improve your sleep quality",
-      "repeater": {
-        "1": {
+      "repeater": [
+        {
           "title": "I can tolerate this."
         },
-        "2": {
+        {
           "title": "I will survive even if I don't sleep at all tonight."
         },
-        "3": {
+        {
           "title": "I've done this before, so I know I can do it again."
         },
-        "4": {
+        {
           "title": "I don't have to feel comfortable all the time. I'm human."
         },
-        "5": {
+        {
           "title": "This is just another challenge that I will solve and cope with."
         },
-        "6": {
+        {
           "title": "I've been through this before and I was fine."
         },
-        "7": {
+        {
           "title": "One bad night of sleep is not the end of the world."
         },
-        "8": {
+        {
           "title": "This restless night will pass."
         },
-        "9": {
+        {
           "title": "Although it feels like I'll never sleep well, that might not be the case. Anticipating that I might not sleep well will probably make my sleep worse. I've functioned well before even after not sleeping well."
         },
-        "10": {
+        {
           "title": "I've functioned poorly before even after sleeping well."
         },
-        "11": {
+        {
           "title": "Although I'm anticipating poor sleep, it could be fine... I've slept well before."
         },
-        "12": {
+        {
           "title": "The body naturally regulates sleep; even if I miss some sleep, I'll be able to function."
         },
-        "13": {
+        {
           "title": "If I don't worry about sleep, one bad night will probably improve my sleep the next night."
         }
-      }
+      ]
     }
   },
   "pause": {
@@ -940,56 +940,56 @@
     "action-btn-label": "RO/en: Continue",
     "helper": "RO/en: Try to do this for 5 minutes",
     "take_break": "RO/en: Take a break",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Take a walk to relax and clear your thoughts"
       },
-      "2": {
+      {
         "title": "Breathe deeply for 10 minutes or more"
       },
-      "3": {
+      {
         "title": "Exercise (bike riding, hiking, weight lifting, swimming, running)"
       },
-      "4": {
+      {
         "title": "Garden or do yard work"
       },
-      "5": {
+      {
         "title": "Tell yourself positive things like \"I can handle this situation without losing my cool\""
       },
-      "6": {
+      {
         "title": "Draw or paint to express your emotions"
       },
-      "7": {
+      {
         "title": "Call a friend or loved one for support"
       },
-      "8": {
+      {
         "title": "Call your therapist for support"
       },
-      "9": {
+      {
         "title": "Stretch and breathe deeply and slowly"
       },
-      "10": {
+      {
         "title": "Remember that you can cope"
       },
-      "11": {
+      {
         "title": "Meditate to calm your mind"
       },
-      "12": {
+      {
         "title": "Pray for guidance and support"
       },
-      "13": {
+      {
         "title": "Think about what advice someone you trust would give you"
       },
-      "14": {
+      {
         "title": "Spend time with a pet for comfort and peace"
       },
-      "15": {
+      {
         "title": "Take a shower or bath to relax"
       },
-      "16": {
+      {
         "title": "Think about how you want to be a role model for others in your life - children etc."
       }
-    }
+    ]
   },
   "my-feelings": {
     "done": "RO/en: Done",
@@ -1002,19 +1002,19 @@
     "discomfort-meter": "RO/en: Discomfort Meter",
     "discomfort-intensity": "RO/en: How intense is your discomfort right now?",
     "stress": "RO/en: Stress",
-    "repeater": {
-      "0": "RO/en: Total peace and quiet",
-      "1": "RO/en: Relaxed and not stressed",
-      "2": "RO/en: Mild sadness",
-      "3": "RO/en: A little sad and without tension",
-      "4": "RO/en: Mild stress",
-      "5": "RO/en: Stressed, but not too much",
-      "6": "RO/en: Moderate stress",
-      "7": "RO/en: Moderately high stress",
-      "8": "RO/en: High stress and tension",
-      "9": "RO/en: Very high to extreme stress",
-      "10": "RO/en: Extreme stress and panic"
-    },
+    "repeater": [
+      "RO/en: Total peace and quiet",
+      "RO/en: Relaxed and not stressed",
+      "RO/en: Mild sadness",
+      "RO/en: A little sad and without tension",
+      "RO/en: Mild stress",
+      "RO/en: Stressed, but not too much",
+      "RO/en: Moderate stress",
+      "RO/en: Moderately high stress",
+      "RO/en: High stress and tension",
+      "RO/en: Very high to extreme stress",
+      "RO/en: Extreme stress and panic"
+    ],
     "feelings-summary": "RO/en: Feelings Summary",
     "feelings-summary-description": "RO/en: Here's a summary of your feelings for: ",
     "my-feelings": "RO/en: My feelings",
@@ -1172,7 +1172,6 @@
   },
   "body-scan": {
     "title": "RO/en: Body Scan",
-    "description": "For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed. This mindfulness exercise will help you practice mindfulness of physical sensations. Please note that there will be pauses in the audio so you can practice without distraction. Time: About 10 minutes.",
     "action-btn-label": "RO/en: Start",
     "done": "RO/en: Done",
     "julia": {
@@ -1251,92 +1250,92 @@
     "title": "RO/en: Shift Thoughts",
     "helper": "RO/en: Find a thought from down below which you can repeat for 5 minutes:",
     "start": "RO/en: Start",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "RO/en: I can tolerate this."
       },
-      "2": {
+      {
         "title": "RO/en: Take a big breath."
       },
-      "3": {
+      {
         "title": "RO/en: Breathe"
       },
-      "4": {
+      {
         "title": "RO/en: Manage your anger"
       },
-      "5": {
+      {
         "title": "RO/en: I can't change the world."
       },
-      "6": {
+      {
         "title": "RO/en: Count to 10 and breathe."
       },
-      "7": {
+      {
         "title": "RO/en: Dig deep; find calm and stability."
       },
-      "8": {
+      {
         "title": "RO/en: Don't buy into this situation"
       },
-      "9": {
+      {
         "title": "RO/en: Don't let it get to you."
       },
-      "10": {
+      {
         "title": "RO/en: Don't pay attention"
       },
-      "11": {
+      {
         "title": "RO/en: Don't bite."
       },
-      "12": {
+      {
         "title": "RO/en: Don't go there."
       },
-      "13": {
+      {
         "title": "RO/en: Easy does it."
       },
-      "14": {
+      {
         "title": "RO/en: You can get through it."
       },
-      "15": {
+      {
         "title": "RO/en: How would (person you respect) handle this?"
       },
-      "16": {
+      {
         "title": "RO/en: I can't control what other people do."
       },
-      "17": {
+      {
         "title": "RO/en: It's in the past."
       },
-      "18": {
+      {
         "title": "RO/en: It's not a big thing; I don't need to get upset."
       },
-      "19": {
+      {
         "title": "RO/en: It's not worth it."
       },
-      "20": {
+      {
         "title": "RO/en: Keep your eye on the prize."
       },
-      "21": {
+      {
         "title": "RO/en: Leave it alone."
       },
-      "22": {
+      {
         "title": "RO/en: Let it be."
       },
-      "23": {
+      {
         "title": "RO/en: Let it go."
       },
-      "24": {
+      {
         "title": "RO/en: Slow down."
       },
-      "25": {
+      {
         "title": "RO/en: Stay the course."
       },
-      "26": {
+      {
         "title": "RO/en: Stop! Just stop."
       },
-      "27": {
+      {
         "title": "RO/en: This, too, will pass."
       },
-      "28": {
+      {
         "title": "RO/en: Use your tools!"
       }
-    }
+    ]
   },
   "recreational-activities": {
     "label": "RO/en: Recreational activities"
@@ -1344,833 +1343,833 @@
   "recreational-activities-alone": {
     "label": "RO/en: Recreational activities: Time Spent Alone",
     "title": "RO/en: Time Spent Alone",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "RO/en: Bake something."
       },
-      "2": {
+      {
         "description": "RO/en: Cook a meal for yourself."
       },
-      "3": {
+      {
         "description": "RO/en: Dance."
       },
-      "4": {
+      {
         "description": "RO/en: Do a crossword or Sudoku puzzle."
       },
-      "5": {
+      {
         "description": "RO/en: Do a jigsaw puzzle."
       },
-      "6": {
+      {
         "description": "RO/en: Do arts and crafts."
       },
-      "7": {
+      {
         "description": "RO/en: Eat something delicious."
       },
-      "8": {
+      {
         "description": "RO/en: Have coffee or tea."
       },
-      "9": {
+      {
         "description": "RO/en: Knit or do needlepoint."
       },
-      "10": {
+      {
         "description": "RO/en: Light some candles."
       },
-      "11": {
+      {
         "description": "RO/en: List 5 things you like about yourself."
       },
-      "12": {
+      {
         "description": "RO/en: Listen to the radio."
       },
-      "13": {
+      {
         "description": "RO/en: Paint or draw."
       },
-      "14": {
+      {
         "description": "RO/en: Plan a trip."
       },
-      "15": {
+      {
         "description": "RO/en: Play a musical instrument."
       },
-      "16": {
+      {
         "description": "RO/en: Play cards."
       },
-      "17": {
+      {
         "description": "RO/en: Play with animals."
       },
-      "18": {
+      {
         "description": "RO/en: Practice a martial art."
       },
-      "19": {
+      {
         "description": "RO/en: Pray, meditate, or practice yoga."
       },
-      "20": {
+      {
         "description": "RO/en: Put on your favorite shirt to feel good."
       },
-      "21": {
+      {
         "description": "RO/en: Read a relaxing magazine or book."
       },
-      "22": {
+      {
         "description": "RO/en: Remember a fun vacation."
       },
-      "23": {
+      {
         "description": "RO/en: Remember someone being kind to you."
       },
-      "24": {
+      {
         "description": "RO/en: Build something with your hands."
       },
-      "25": {
+      {
         "description": "RO/en: Sing around the house."
       },
-      "26": {
+      {
         "description": "RO/en: Take a relaxing shower."
       },
-      "27": {
+      {
         "description": "RO/en: Take a warm bath or hot tub."
       },
-      "28": {
+      {
         "description": "RO/en: Take photographs."
       },
-      "29": {
+      {
         "description": "RO/en: Think about someone you love."
       },
-      "30": {
+      {
         "description": "RO/en: Watch a movie or TV show."
       },
-      "31": {
+      {
         "description": "RO/en: Watch funny videos."
       },
-      "32": {
+      {
         "description": "RO/en: Watch sports on TV."
       },
-      "33": {
+      {
         "description": "RO/en: Write a poem or story."
       }
-    }
+    ]
   },
   "recreational-activities-city": {
     "title": "RO/en: In The City",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "RO/en: Browse merchandise at an outdoor or hardware store."
       },
-      "2": {
+      {
         "description": "RO/en: Go window shopping."
       },
-      "3": {
+      {
         "description": "RO/en: Buy yourself a small gift."
       },
-      "4": {
+      {
         "description": "RO/en: Buy yourself a plant."
       },
-      "5": {
+      {
         "description": "RO/en: Buy yourself music."
       },
-      "6": {
+      {
         "description": "RO/en: Get a manicure and/or pedicure."
       },
-      "7": {
+      {
         "description": "RO/en: Get a massage."
       },
-      "8": {
+      {
         "description": "RO/en: Go bowling."
       },
-      "9": {
+      {
         "description": "RO/en: Go listen to music."
       },
-      "10": {
+      {
         "description": "RO/en: Go out for ice cream."
       },
-      "11": {
+      {
         "description": "RO/en: Go out to dinner."
       },
-      "12": {
+      {
         "description": "RO/en: Go sightseeing."
       },
-      "13": {
+      {
         "description": "RO/en: Go to a bookstore and read."
       },
-      "14": {
+      {
         "description": "RO/en: Go to a coffee shop to read and have coffee/tea."
       },
-      "15": {
+      {
         "description": "RO/en: Go to a live performance or play."
       },
-      "16": {
+      {
         "description": "RO/en: Go to a museum."
       },
-      "17": {
+      {
         "description": "RO/en: Go to church/temple/mosque."
       },
-      "18": {
+      {
         "description": "RO/en: Go to the movies."
       },
-      "19": {
+      {
         "description": "RO/en: Go watch horse racing or auto racing."
       },
-      "20": {
+      {
         "description": "RO/en: Play a sport."
       },
-      "21": {
+      {
         "description": "RO/en: Play pool."
       },
-      "22": {
+      {
         "description": "RO/en: Take a class in a craft, a language, or a dance."
       },
-      "23": {
+      {
         "description": "RO/en: Volunteer at a soup kitchen or animal shelter."
       }
-    }
+    ]
   },
   "recreational-activities-nature": {
     "title": "RO/en: In Nature",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "RO/en: Buy some flowers and enjoy their beauty."
       },
-      "2": {
+      {
         "description": "RO/en: Do some gardening."
       },
-      "3": {
+      {
         "description": "RO/en: Go bird watching."
       },
-      "4": {
+      {
         "description": "RO/en: Go camping."
       },
-      "5": {
+      {
         "description": "RO/en: Go fishing."
       },
-      "6": {
+      {
         "description": "RO/en: Go for a drive or motorcycle ride in the countryside."
       },
-      "7": {
+      {
         "description": "RO/en: Go for a hike or bike ride on a nature trail."
       },
-      "8": {
+      {
         "description": "RO/en: Go for a picnic."
       },
-      "9": {
+      {
         "description": "RO/en: Go to a lake, river, or beach."
       },
-      "10": {
+      {
         "description": "RO/en: Take a stroll at a botanical garden or flower show."
       },
-      "11": {
+      {
         "description": "RO/en: Take a trip to a nature reserve or national park."
       },
-      "12": {
+      {
         "description": "RO/en: Take a walk in the park."
       },
-      "13": {
+      {
         "description": "RO/en: Spend time with animals in a safe way."
       }
-    }
+    ]
   },
   "soothe-senses": {
     "title": "RO/en: Soothe The Senses",
     "done": "RO/en: Done",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "Sound",
         "description": "RO/en: Sing your favorite songs, or play them and sing along."
       },
-      "2": {
+      {
         "title": "Sound",
         "description": "RO/en: Listen to music, and let yourself get lost in the sounds."
       },
-      "3": {
+      {
         "title": "Sound",
         "description": "RO/en: Listen to pleasurable sounds, like birds, or the ocean."
       },
-      "4": {
+      {
         "title": "Sound",
         "description": "RO/en: Learn to play an instrument and play tunes for your own enjoyment."
       },
-      "5": {
+      {
         "title": "Sound",
         "description": "RO/en: Be mindful of the sounds around you."
       },
-      "6": {
+      {
         "title": "Sound",
         "description": "RO/en: Turn on a movie and listen to the sounds, tones and textures of human voices."
       },
-      "7": {
+      {
         "title": "Sound",
         "description": "RO/en: Listen to an meditation or lecture online or on the radio about something interesting to you."
       },
-      "8": {
+      {
         "title": "Sound",
         "description": "RO/en: Go for a walk in nature and listen to the sounds around you."
       },
-      "9": {
+      {
         "title": "Sight",
         "description": "RO/en: Go for a walk in the park or a hike in nature. Take in the beauty around you."
       },
-      "10": {
+      {
         "title": "Sight",
         "description": "RO/en: Go to a museum with beautiful art and enjoy what catches your eye."
       },
-      "11": {
+      {
         "title": "Sight",
         "description": "RO/en: Sit in the lobby of a beautiful hotel and notice the details of the décor."
       },
-      "12": {
+      {
         "title": "Sight",
         "description": "RO/en: Buy a beautiful flower or bouquet and make one space in a room pretty."
       },
-      "13": {
+      {
         "title": "Sight",
         "description": "RO/en: Go outside at night in the fresh air and look at the stars."
       },
-      "14": {
+      {
         "title": "Sight",
         "description": "RO/en: Look at good travel photos in a book or on the internet; let them inspire you."
       },
-      "15": {
+      {
         "title": "Taste",
         "description": "RO/en: Eat your favorite meal; really pay attention as you savor it."
       },
-      "16": {
+      {
         "title": "Taste",
         "description": "RO/en: Have a soothing drink like herbal tea or hot chocolate and enjoy the flavors."
       },
-      "17": {
+      {
         "title": "Taste",
         "description": "RO/en: Treat yourself to dessert and eat each bite mindfully, with pleasure."
       },
-      "18": {
+      {
         "title": "Taste",
         "description": "RO/en: Suck on a piece of peppermint candy and let it melt in your mouth."
       },
-      "19": {
+      {
         "title": "Taste",
         "description": "RO/en: Chew your favorite gum and savor its flavor."
       },
-      "20": {
+      {
         "title": "Taste",
         "description": "RO/en: Sample flavors in an ice cream store and notice the subtle differences."
       },
-      "21": {
+      {
         "title": "Touch",
         "description": "RO/en: Get a massage. Let yourself really focus on and enjoy the sensations."
       },
-      "22": {
+      {
         "title": "Touch",
         "description": "RO/en: Sit in the sun (please use sunscreen), and enjoy the warmth."
       },
-      "23": {
+      {
         "title": "Touch",
         "description": "RO/en: Pet a dog or cat, and focus on the softness and pleasant sensations."
       },
-      "24": {
+      {
         "title": "Touch",
         "description": "RO/en: Soak your feet and allow any tension or soreness to melt away."
       },
-      "25": {
+      {
         "title": "Touch",
         "description": "RO/en: Sink into a comfortable chair or couch, at home or in a luxurious hotel lobby, and let your body relax back into it."
       },
-      "26": {
+      {
         "title": "Touch",
         "description": "RO/en: Hug someone and feel the comfort of their touch."
       },
-      "27": {
+      {
         "title": "Smell",
         "description": "RO/en: Smell things that are pleasant, like perfume, the ocean, or oranges. Pay close attention as you enjoy the scents."
       },
-      "28": {
+      {
         "title": "Smell",
         "description": "RO/en: Light a scented candle and enjoy the fragrance in the air."
       },
-      "29": {
+      {
         "title": "Smell",
         "description": "RO/en: Buy yourself a flower that has a nice smell, and allow yourself to lean in and smell when you walk by it at home."
       },
-      "30": {
+      {
         "title": "Smell",
         "description": "RO/en: Boil some cinnamon on the stove for 20 minutes and enjoy the smell as it fills your home."
       },
-      "31": {
+      {
         "title": "Smell",
         "description": "RO/en: Take a walk in a wooded area and breathe in the fresh smells of nature."
       },
-      "32": {
+      {
         "title": "Smell",
         "description": "RO/en: Put lemon oil on your furniture and enjoy the scent."
       }
-    }
+    ]
   },
   "connect-with-others": {
     "title": "RO/en: Connect With Others",
     "done": "RO/en: Done",
     "static-text": "RO/en: Getting support from others when you're dealing with physical or emotional distress can help. Try these:",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "RO/en: Call a family member",
         "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
       },
-      "2": {
+      {
         "title": "RO/en: Call a friend",
         "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
       },
-      "3": {
+      {
         "title": "RO/en: Cook dinner for someone",
         "description": ""
       },
-      "4": {
+      {
         "title": "RO/en: Go to a party",
         "description": ""
       },
-      "5": {
+      {
         "title": "RO/en: Join a book club or reading group",
         "description": ""
       },
-      "6": {
+      {
         "title": "RO/en: Join a sports club",
         "description": "RO/en: Join a club to play a sport, such as bowling, basketball, or soccer."
       },
-      "7": {
+      {
         "title": "RO/en: Make a small gift for someone",
         "description": ""
       },
-      "8": {
+      {
         "title": "RO/en: Visit a family member",
         "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
       },
-      "9": {
+      {
         "title": "RO/en: Visit a friend",
         "description": "RO/en: Talking to another person about your problems, or listening to someone else's problems for a while, can help improve your mood or change the way you think."
       },
-      "10": {
+      {
         "title": "RO/en: Write a letter",
         "description": ""
       }
-    }
+    ]
   },
   "change-perspective": {
     "title": "RO/en: Change Your Perspective",
     "done": "RO/en: Done",
     "static-text": "RO/en: Changing the way you think can change the way you feel. Focus on this useful thought:",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "This is a hassle, not a horror."
       },
-      "2": {
+      {
         "description": "I have been through many hard things in my life and survived."
       },
-      "3": {
+      {
         "description": "I can tolerate this."
       },
-      "4": {
+      {
         "description": "I will survive even if I don't sleep at all tonight."
       },
-      "5": {
+      {
         "description": "This situation is different than what happened to me and I'm going to be fine."
       },
-      "6": {
+      {
         "description": "I am right here, right now."
       },
-      "7": {
+      {
         "description": "This may seem hard now, but it will get easier and easier over time."
       },
-      "8": {
+      {
         "description": "When this is over, I'll be glad I did it."
       },
-      "9": {
+      {
         "description": "I've done this before, so I know I can do it again."
       },
-      "10": {
+      {
         "description": "I know I'm in a safe place, even though my mind is telling me something else."
       },
-      "11": {
+      {
         "description": "I can feel my heart beating and my feet on the floor. I am alive and okay."
       },
-      "12": {
+      {
         "description": "I've been through worse before and made it through safely."
       },
-      "13": {
+      {
         "description": "My body is reacting to a memory. Right now I am safe"
       },
-      "14": {
+      {
         "description": "I don't have to feel comfortable all the time. That just proves I am human."
       },
-      "15": {
+      {
         "description": "This emotion will come and go. I will feel differently in twenty minutes."
       },
-      "16": {
+      {
         "description": "I am able to respond effectively. I have skills to handle this situation."
       },
-      "17": {
+      {
         "description": "I have been through this before and been just fine."
       },
-      "18": {
+      {
         "description": "This is another challenge that I will figure out and face."
       },
-      "19": {
+      {
         "description": "These emotions are telling me something. They won't hurt me."
       },
-      "20": {
+      {
         "description": "I am human. I can make mistakes. No one is perfect."
       },
-      "21": {
+      {
         "description": "I am able to protect myself."
       },
-      "22": {
+      {
         "description": "Slow down. I know there is more than one choice I can make."
       },
-      "23": {
+      {
         "description": "I can ask others for help."
       },
-      "24": {
+      {
         "description": "I have made the right decision before."
       },
-      "25": {
+      {
         "description": "My thoughts are just thoughts; they're not always right. Don't believe everything you think."
       },
-      "26": {
+      {
         "description": "I am strong. I am safe now."
       },
-      "27": {
+      {
         "description": "This feeling will pass."
       },
-      "28": {
+      {
         "description": "I will not feel this way forever. I have felt differently before and will feel differently soon."
       },
-      "29": {
+      {
         "description": "I am in a safe place."
       },
-      "30": {
+      {
         "description": "The emotions I feel right now are giving me information about how I feel but they're not necessarily based on facts."
       },
-      "31": {
+      {
         "description": "If I don't fight my emotions, they will go down on their own."
       },
-      "32": {
+      {
         "description": "I am a decent person."
       },
-      "33": {
+      {
         "description": "It is okay if it takes me time to figure this out."
       },
-      "34": {
+      {
         "description": "There is always time to learn."
       },
-      "35": {
+      {
         "description": "Learning will give me more options in the future."
       },
-      "36": {
+      {
         "description": "There are times when I will fall back into old patterns. I just need to catch myself and get back on track with what's effective."
       },
-      "37": {
+      {
         "description": "I know that I deserve love."
       },
-      "38": {
+      {
         "description": "I am my own unique person: special, talented, and worthwhile."
       },
-      "39": {
+      {
         "description": "One night of poor sleep is not the end of the world."
       },
-      "40": {
+      {
         "description": "This tossing and turning at night will pass."
       },
-      "41": {
+      {
         "description": "Nightmares are disturbing, but they're not real. I am safe."
       },
-      "42": {
+      {
         "description": "Although it feels like I will never get a good night's sleep, I have in the past and I will in the future."
       },
-      "43": {
+      {
         "description": "Although I am anticipating a poor night's sleep, it could be fine…I have slept well before."
       }
-    }
+    ]
   },
   "grounding": {
     "title": "RO/en: Grounding",
     "done": "RO/en: Done",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "title": "RO/en: Feel feet on floor",
         "description": "RO/en: Focus all of your attention on your feet. Feel the floor under them."
       },
-      "2": {
+      {
         "title": "RO/en: Texture of a Pebble",
         "description": "RO/en: Focus all of your attention on the feel of a pebble or coin in your hand."
       },
-      "3": {
+      {
         "title": "RO/en: Breathing",
         "description": "RO/en: Sit quietly and focus all of your attention on your in-breath and then your out-breath."
       },
-      "4": {
+      {
         "title": "RO/en: The space around you – Colors",
         "description": "RO/en: Look around and focus your attention on the colors around you, noticing as many colors as you can."
       },
-      "5": {
+      {
         "title": "RO/en: The space around you – Smells",
         "description": "RO/en: Focus all of your attention on the smells in your environment."
       },
-      "6": {
+      {
         "title": "RO/en: The space around you – Sounds",
         "description": "RO/en: Focus on and listen carefully to the many sounds in your environment."
       },
-      "7": {
+      {
         "title": "RO/en: The space around you – Temperature",
         "description": "RO/en: Focus all of your attention of the temperature of the air on your skin."
       },
-      "8": {
+      {
         "title": "RO/en: Eating",
         "description": "RO/en: While you are eating, focus all of your attention on the sensations of the food in your mouth while you chew very slowly."
       },
-      "9": {
+      {
         "title": "RO/en: Brushing your teeth",
         "description": "RO/en: Brush your teeth and focus your attention on all of the sensations, tastes, and smells of this activity."
       },
-      "10": {
+      {
         "title": "RO/en: Walking",
         "description": "RO/en: Walk slowly, focusing your attention on what it feels like to take each step."
       },
-      "11": {
+      {
         "title": "RO/en: Object",
         "description": "RO/en: Pick up any small object off the ground and focus all of your attention on the texture of the object and the feel of it in your hand."
       },
-      "12": {
+      {
         "title": "RO/en: Pet an animal",
         "description": "RO/en: Pet an animal that is quiet and calm. Focus all of your attention on the sensations on your hand."
       },
-      "13": {
+      {
         "title": "RO/en: Attach yourself to the earth",
         "description": "RO/en: With your feet shoulder width apart, close your eyes and imagine that you are growing roots into the earth, making you strong and stable."
       },
-      "14": {
+      {
         "title": "RO/en: Ice cube",
         "description": "RO/en: Grab an ice cube and focus all of your attention on the sensations that go with it, cold, wet, and tingling."
       },
-      "15": {
+      {
         "title": "RO/en: Name what you see",
         "description": "RO/en: Look around you and name what you see. Start with large objects, then move to smaller and smaller objects."
       },
-      "16": {
+      {
         "title": "RO/en: Focus on touch",
         "description": "RO/en: Rub your hands together, clap your hands. Focus all of your attention on the feelings and sounds that you experience."
       },
-      "17": {
+      {
         "title": "RO/en: Reorientation",
         "description": "RO/en: Remind yourself where you are, what today's date is, when were you born, and what you did yesterday."
       },
-      "18": {
+      {
         "title": "RO/en: Call a friend",
         "description": "RO/en: Call a friend and discuss some activity you did together recently."
       },
-      "19": {
+      {
         "title": "RO/en: Past success",
         "description": "RO/en: Remember what you did to successfully get past a previous painful experience."
       },
-      "20": {
+      {
         "title": "RO/en: Baby steps",
         "description": "RO/en: Ask yourself and answer: What would be a small sign that things are getting a little better?"
       },
-      "21": {
+      {
         "title": "RO/en: Suck on a peppermint",
         "description": "RO/en: Slowly suck on a mint and describe the taste and your reaction in detail to yourself."
       },
-      "22": {
+      {
         "title": "RO/en: Stamp your feet on the ground",
         "description": "RO/en: Stamp your feet on the ground. Feel the force. Hear the sounds. Notice."
       },
-      "23": {
+      {
         "title": "RO/en: Feel your clothes on your skin",
         "description": "RO/en: Pay attention to the sensation of your clothes touching your skin."
       },
-      "24": {
+      {
         "title": "RO/en: Feel your hands",
         "description": "RO/en: Put your hands together and notice the sensations of the skin-on-skin contact."
       },
-      "25": {
+      {
         "title": "RO/en: Hear Others",
         "description": "RO/en: Tune into the voices of others around you. Only pay attention to the sounds of others' voices."
       }
-    }
+    ]
   },
   "quotes": {
     "title": "RO/en: Inspirational Quotes",
     "done": "RO/en: Done",
-    "repeater": {
-      "1": {
+    "repeater": [
+      {
         "description": "RO/en: Helen Keller",
         "title": "RO/en: Although the world is full of suffering, it is full also of the overcoming of it."
       },
-      "2": {
+      {
         "description": "RO/en: Jesse Jackson",
         "title": "RO/en: You are not responsible for being down, but you are responsible for getting up."
       },
-      "3": {
+      {
         "description": "RO/en: Rainer Maria Rilke",
         "title": "RO/en: No feeling is final."
       },
-      "4": {
+      {
         "description": "RO/en: Baruch Spinoza",
         "title": "RO/en: Not to laugh, not to lament, not to judge, but to understand."
       },
-      "5": {
+      {
         "description": "RO/en: Erica Jong",
         "title": "RO/en: And the trouble is, if you don't risk anything, you risk even more."
       },
-      "6": {
+      {
         "description": "RO/en: Janis Joplin",
         "title": "RO/en: Don't compromise yourself. You are all you've got."
       },
-      "7": {
+      {
         "description": "RO/en: Buddha",
         "title": "RO/en: You yourself, as much as anybody in the entire universe, deserve your love and affection."
       },
-      "8": {
+      {
         "description": "RO/en: Rainer Maria Rilke",
         "title": "RO/en: ...be attentive to what is arising within you, and place that above everything else… What is happening in your innermost self is worthy of your entire love; somehow you must find a way to work at it."
       },
-      "9": {
+      {
         "description": "RO/en: Winston Churchill",
         "title": "RO/en: Never, never, never, never, never give up."
       },
-      "10": {
+      {
         "description": "RO/en: Frank Outlaw",
         "title": "RO/en: Watch your thoughts; they become your words. Watch your words; they become your actions. Watch your actions; they become your habits. Watch your habits; they become your character. Watch your character; it becomes your destiny."
       },
-      "11": {
+      {
         "description": "RO/en: Theodore Roosevelt",
         "title": "RO/en: Do what you can, with what you have, where you are."
       },
-      "12": {
+      {
         "description": "RO/en: Molly Goode",
         "title": "RO/en: Let your heart guide you. It whispers, so listen closely."
       },
-      "13": {
+      {
         "description": "RO/en: Ellen Glasgow",
         "title": "RO/en: Life is never what one dreams. It is seldom what one desires, but for the vital spirit and the eager mind, the future will always hold the search for buried treasure and the possibility of high adventure."
       },
-      "14": {
+      {
         "description": "RO/en: Henry David Thoreau",
         "title": "RO/en: It takes two to speak the truth—one to speak, the other to hear."
       },
-      "15": {
+      {
         "description": "RO/en: Ralph Waldo Emerson",
         "title": "RO/en: When you do a thing, do it with all your might. Put your whole soul into it. Stamp it with your personality. Be active, be energetic, be enthusiastic and faithful, and you will accomplish your object."
       },
-      "16": {
+      {
         "description": "RO/en: Mohandas K. Gandhi",
         "title": "RO/en: The future depends on what we do in the present."
       },
-      "17": {
+      {
         "description": "RO/en: Jean Shinoda Bolen",
         "title": "RO/en: If we change within, our outer life will change also."
       },
-      "18": {
+      {
         "description": "RO/en: Wallace Stevens",
         "title": "RO/en: Perhaps the truth depends on a walk around the lake."
       },
-      "19": {
+      {
         "description": "RO/en: Charles Dickens",
         "title": "RO/en: A loving heart is the truest wisdom."
       },
-      "20": {
+      {
         "description": "RO/en: Martin Luther King Jr.",
         "title": "RO/en: Each of us is two selves, and the great challenge of life is to try to keep that higher self in command."
       },
-      "21": {
+      {
         "description": "RO/en: William Saroyan",
         "title": "RO/en: In the time of your life, live."
       },
-      "22": {
+      {
         "description": "RO/en: Virginia Satir",
         "title": "RO/en: Life is not what it's supposed to be. It's what it is. The way you cope with it is what makes the difference."
       },
-      "23": {
+      {
         "description": "RO/en: Tommy Lasorda",
         "title": "RO/en: The difference between the impossible and the possible lies in a person's determination."
       },
-      "24": {
+      {
         "description": "RO/en: Scott Adams",
         "title": "RO/en: Remember there's no such thing as a small act of kindness. Every act creates a ripple with no logical end."
       },
-      "25": {
+      {
         "description": "RO/en: Robert Cushing",
         "title": "RO/en: The fact is, that to do anything in the world worth doing, we must not stand back shivering and thinking of the cold and danger, but jump in and scramble through as well as we can."
       },
-      "26": {
+      {
         "description": "RO/en: William Thackeray",
         "title": "RO/en: Follow your honest convictions, and stay strong."
       },
-      "27": {
+      {
         "description": "RO/en: Aristotle",
         "title": "RO/en: Knowing yourself is the beginning of all wisdom."
       },
-      "28": {
+      {
         "description": "RO/en: A. Bronson Alcott",
         "title": "RO/en: Your real influence is measured by your treatment of yourself."
       },
-      "29": {
+      {
         "description": "RO/en: Swedish Proverb",
         "title": "RO/en: Fear less, hope more, eat less, chew more, whine less, breathe more, talk less, say more, hate less, love more, and good things will be yours."
       },
-      "30": {
+      {
         "description": "RO/en: Martha Washington",
         "title": "RO/en: I have learned that the greater part of our misery or unhappiness is determined not by our circumstance but by our disposition."
       },
-      "31": {
+      {
         "description": "RO/en: Rainer Rilke",
         "title": "RO/en: The only journey is the journey within."
       },
-      "32": {
+      {
         "description": "RO/en: Doug Firebaugh",
         "title": "RO/en: Every day do something that will inch you closer to a better tomorrow."
       },
-      "33": {
+      {
         "description": "RO/en: Hamerton",
         "title": "RO/en: The happiest life is that which constantly exercises and educates what is best in us."
       },
-      "34": {
+      {
         "description": "RO/en: Thomas Edison",
         "title": "RO/en: If we all did the things we are capable of, we would astound ourselves."
       },
-      "35": {
+      {
         "description": "RO/en: John Clarke",
         "title": "RO/en: Go back a little to leap further."
       },
-      "36": {
+      {
         "description": "RO/en: Thomas Edison",
         "title": "RO/en: I failed my way to success."
       },
-      "37": {
+      {
         "description": "RO/en: Ralph Waldo Emerson",
         "title": "RO/en: Don't waste your life in doubts and fears: spend yourself on the work before you, well assured that the right performance of this hour's duties will be the best preparation for the hours or ages that follow it."
       },
-      "38": {
+      {
         "description": "RO/en: Chas. Austin Bates",
         "title": "RO/en: It is the trouble that never comes that causes the loss of sleep."
       },
-      "39": {
+      {
         "description": "RO/en: Helen Keller",
         "title": "RO/en: When one door of happiness closes, another opens, but often we look so long at the closed door that we do not see the one that has been opened for us."
       },
-      "40": {
+      {
         "description": "RO/en: Horace Bushnell",
         "title": "RO/en: The more difficulties one has to encounter, within and without, the more significant and the higher in inspiration his life will be."
       },
-      "41": {
+      {
         "description": "RO/en: Berthold Auerbach",
         "title": "RO/en: Years teach us more than books."
       },
-      "42": {
+      {
         "description": "RO/en: Helen Keller",
         "title": "RO/en: Life is either a daring adventure or nothing."
       },
-      "43": {
+      {
         "description": "RO/en: St. Clement of Alexandra",
         "title": "RO/en: If you do not hope, you will not find what is beyond your hopes."
       },
-      "44": {
+      {
         "description": "RO/en: Henry Ward Beecher",
         "title": "RO/en: Men's best successes come after their disappointments."
       },
-      "45": {
+      {
         "description": "RO/en: Robert Frost",
         "title": "RO/en: The best way out is always through."
       }
-    }
+    ]
   }
 }

@@ -2,11 +2,11 @@
 import i18n, { ResourceLanguage } from 'i18next';
 import { initReactI18next } from 'react-i18next';
 
-import roEN from '../../assets/locales/ro/EN/ro-EN.json';
-import toolsRoEn from '../../assets/locales/ro/EN/tools.json';
+import en from '../../assets/locales/en/translations.json';
+import ro from '../../assets/locales/ro/translations.json';
+import hy from '../../assets/locales/hy/translations.json';
+import uk from '../../assets/locales/uk/translations.json';
 
-import roRO from '../../assets/locales/ro/RO/ro-RO.json';
-import toolsRoRo from '../../assets/locales/ro/RO/tools.json';
 import { STORE_KEYS } from '@/constants/store-keys';
 
 import { KVStore } from '@/helpers/mmkv';
@@ -21,17 +21,21 @@ export const isRTL = language?.textDirection === 'rtl';
 
 i18n.use(initReactI18next).init<ResourceLanguage>({
   lng: systemLocale || 'en',
-  fallbackLng: ['en', 'ro'],
+  fallbackLng: ['en', 'ro', 'hy', 'uk'],
   compatibilityJSON: 'v3',
-  supportedLngs: ['en', 'ro'],
+  supportedLngs: ['en', 'ro', 'hy', 'uk'],
   resources: {
     en: {
-      translation: roEN,
-      tools: toolsRoEn,
+      translation: en,
     },
     ro: {
-      translation: roRO,
-      tools: toolsRoRo,
+      translation: ro,
+    },
+    hy: {
+      translation: hy,
+    },
+    uk: {
+      translation: uk,
     },
   },
   defaultNS: 'translation',

@@ -22,10 +22,10 @@ export const useDiscomfortLevels = () => {
   const { toolsTranslationKeys } = useTranslationKeys();
 
   return React.useMemo(() => {
-    const discomfortLevels = t(toolsTranslationKeys.MY_FEELINGS.repeater, {
+    const distressLevels = t(toolsTranslationKeys.MY_FEELINGS.repeater, {
       returnObjects: true,
     }) as string[];
-    return Object.values(discomfortLevels);
+    return distressLevels;
   }, [t, toolsTranslationKeys.MY_FEELINGS.repeater]);
 };
 

@@ -16,7 +16,7 @@ export default function HelpSleep() {
 
   const items = t(toolsTranslationKeys.SLEEP.subcategories.SLEEP_HELP.repeater, {
     returnObjects: true,
-  }) as Record<string, { title: string; description: string }>;
+  }) as { title: string; description: string }[];
 
   return (
     <>
@@ -28,7 +28,7 @@ export default function HelpSleep() {
           onLeftPress: () => router.back(),
         }}
         staticText={''}
-        items={Object.values(items).map((item) => ({ ...item, id: item.title }))}
+        items={items.map((item) => ({ ...item, id: item.title }))}
         imageUrl={mediaMapping['SLEEP.SLEEP_HELP.CATEGORY_ICON']}
         footerProps={{ onMainAction: () => finishTool() }}></ScreenWithChangingText>
     </>
