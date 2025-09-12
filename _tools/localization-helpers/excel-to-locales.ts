@@ -5,11 +5,6 @@ import path from 'path';
 import yargs from 'yargs';
 import { hideBin } from 'yargs/helpers';
 
-interface CliArgs {
-  f: string; // short flag
-  filePath: string; // alias
-}
-
 function unflattenObject(flattened: Record<string, string>) {
   const result: Record<string, any> = {};
 
