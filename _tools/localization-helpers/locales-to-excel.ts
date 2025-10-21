@@ -8,7 +8,7 @@ import ExcelJS from 'exceljs';
 function flattenObject(obj: Record<string, any>, parentKey = '', result: Record<string, any> = {}) {
   for (let key in obj) {
     if (obj.hasOwnProperty(key)) {
-      let newKey = parentKey ? `${parentKey}.${key}` : key;
+      const newKey = parentKey ? `${parentKey}.${key}` : key;
 
       if (typeof obj[key] === 'object' && obj[key] !== null) {
         if (Array.isArray(obj[key])) {

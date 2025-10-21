@@ -94,6 +94,7 @@ export const processToolsAssets = async (
         ?.replace(/[^a-zA-Z0-9._-]/g, ''); // Keep only alphanumeric, dots, underscores and hyphens
 
       const localFilePath = `${assetsFolder}/${fileName}`;
+
       const fileInfo = await FileSystem.getInfoAsync(localFilePath);
 
       const needsDownload =
@@ -112,7 +113,8 @@ export const processToolsAssets = async (
         }
       } else {
         // ! Commented by @radulescuandrew: Will overwrite the content for existing files even if the lastUpdatedAt is not changed, so maybe we don't want that
-        // updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
+        // ! Commented by @idormenco: In the unfortunate case when the files are downloaded by the media mapping was not saved we need this or it will show No media mapping found
+        updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
         progressTracker.incrementDownloaded();
       }
     })
@@ -133,27 +135,8 @@ export const processToolsAssets = async (
 
   // Clean up unused folders in the tools-assets folder
   const validFolder = getToolsAssetsFolderName(countryCode, languageCode);
+
   await cleanUpUnusedDirectoriesOrFiles(TOOLS_ASSETS_FOLDER, [validFolder]);
-
-  // Save updated mapping if changes occurred
-  if (hasChanges) {
-    try {
-      // Clean up old mapping files
-      const files = await FileSystem.readDirectoryAsync(`${FileSystem.documentDirectory}`);
-      await Promise.all(
-        files
-          .filter((file) => file.startsWith(TOOLS_ASSETS_MAPPING_FILE_NAME) && file.endsWith('.json'))
-          .map((file) => FileSystem.deleteAsync(`${FileSystem.documentDirectory}${file}`))
-      );
-
-      // Save new mapping
-      const mappingPath = getLocalToolsAssetsMappingFilePath(countryCode, languageCode);
-      await FileSystem.writeAsStringAsync(mappingPath, JSON.stringify(updatedMapping, null, 2));
-      console.log(`Mapping saved to: ${mappingPath}`);
-    } catch (error) {
-      console.error('Error saving local mapping:', error);
-    }
-  }
 
   if (!updatedMapping || Object.keys(updatedMapping).length === 0) {
     return null;
@@ -181,13 +164,17 @@ export const fetchToolsAssets = async (
   // Process remote mapping
   const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode, onProgress);
 
-  const mappedMediaMapping = updatedMapping
-    ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
-    : null;
+  // const mappedMediaMapping = updatedMapping
+  //   ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
+  //   : null;
 
-  return mappedMediaMapping;
-};
+  if (!localMapping && updatedMapping) {
+    await FileSystem.writeAsStringAsync(
+      getLocalToolsAssetsMappingFilePath(countryCode, languageCode),
+      JSON.stringify(updatedMapping, null, 2)
+    );
+    console.log(`🔨 Updated tools saved to: ${getLocalToolsAssetsMappingFilePath(countryCode, languageCode)}`);
+  }
 
-const addDocumentDirectory = (path: string) => {
-  return `${FileSystem.documentDirectory}${path}`;
+  return updatedMapping;
 };

@@ -1,28 +1,27 @@
-import React from 'react';
-import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { Drawer } from 'expo-router/drawer';
-import { ScrollViewProps } from 'react-native';
-import { DrawerContentScrollView } from '@react-navigation/drawer';
-import { useTheme, XStack } from 'tamagui';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
-import { Icon } from '@/components/Icon';
-import { DrawerActions, useNavigation } from '@react-navigation/native';
-import { router } from 'expo-router';
-import { useTranslation } from 'react-i18next';
 import { DrawerItem } from '@/components/DrawerItem';
+import { Icon } from '@/components/Icon';
 import { Typography } from '@/components/Typography';
-import Constants from 'expo-constants';
 import { useNotifications } from '@/hooks/useNotifications';
+import { DrawerContentScrollView } from '@react-navigation/drawer';
+import Constants from 'expo-constants';
+import { router } from 'expo-router';
+import { Drawer } from 'expo-router/drawer';
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { ScrollViewProps } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+import { useTheme, XStack } from 'tamagui';
 
 type DrawerContentProps = ScrollViewProps & {
   children?: React.ReactNode;
   backgroundColor: string;
 };
 
-export const DrawerContent = (props: DrawerContentProps) => {
+export const DrawerContent = (props: DrawerContentProps & any) => {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
-  const navigation = useNavigation();
+  const { navigation } = props;
   const { t } = useTranslation();
 
   useNotifications();
@@ -34,13 +33,7 @@ export const DrawerContent = (props: DrawerContentProps) => {
       stickyHeaderIndices={[0]}
       {...props}>
       <XStack padding={16} justifyContent='flex-end'>
-        <Icon
-          icon='x'
-          width={24}
-          height={24}
-          color={theme.blue1?.val}
-          onPress={() => navigation.dispatch(DrawerActions.closeDrawer())}
-        />
+        <Icon icon='x' width={24} height={24} color={theme.blue1?.val} onPress={() => navigation.closeDrawer()} />
       </XStack>
 
       <DrawerItem label={t('drawer.my-profile')} icon='user' onPress={() => router.push('/profile')} />
@@ -60,7 +53,7 @@ export default function MainLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
       <Drawer
-        drawerContent={() => <DrawerContent backgroundColor={theme.blue9?.val} />}
+        drawerContent={(props) => <DrawerContent {...props} backgroundColor={theme.blue9?.val} />}
         screenOptions={{
           drawerType: 'front',
           headerShown: false,

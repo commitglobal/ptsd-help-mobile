@@ -353,5 +353,9 @@
         ]
       }
     }
+  },
+  "assets-loading": {
+    "heading": "Loading assets...",
+    "body": "This may take a minute, please wait ..."
   }
 }

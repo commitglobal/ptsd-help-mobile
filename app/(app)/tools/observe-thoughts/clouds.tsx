@@ -13,7 +13,7 @@ export default function CloudsPreview() {
 
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
-
+  console.log('category icon', mediaMapping['OBSERVE_THOUGHTS.CATEGORY_ICON']);
   return (
     <>
       <ScreenWithImageHeader

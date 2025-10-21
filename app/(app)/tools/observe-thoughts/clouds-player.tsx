@@ -17,6 +17,8 @@ export const CloudsPlayer = () => {
   const { toolsTranslationKeys } = useTranslationKeys();
   const { mediaMapping } = useAssetsManagerContext();
 
+  console.log('OBSERVE_THOUGHTS.CLOUDS.soundURI', mediaMapping['OBSERVE_THOUGHTS.CLOUDS.soundURI']);
+
   useFocusEffect(() => {
     setMediaURI(mediaMapping['OBSERVE_THOUGHTS.CLOUDS.soundURI']);
 
