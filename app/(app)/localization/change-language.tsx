@@ -15,15 +15,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { useQueryClient } from '@tanstack/react-query';
 import { Country } from '@/constants/countries';
 import { CountryLanguageMap } from '@/constants/languages';
-
-const toolsMap: Record<Country, Record<string, any>> = {
-  [Country.Romania]: {
-    ro: require('../../../assets/tools/RO/ro/tools.json'),
-    uk: require('../../../assets/tools/RO/uk/tools.json'),
-  },
-  [Country.Ukraine]: { ua: require('../../../assets/tools/UA/uk/tools.json') },
-  [Country.Armenia]: { hy: require('../../../assets/tools/AM/hy/tools.json') },
-} as const;
+import { toolsLocalesMap } from '@/constants/tools';
 
 export default function ChangeLanguage() {
   const { t } = useTranslation();
@@ -50,9 +42,9 @@ export default function ChangeLanguage() {
     if (selectedLanguage && country) {
       KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
       KVStore().set(STORE_KEYS.COUNTRY, country.toUpperCase());
-      const tools: any = toolsMap[country.toUpperCase() as Country][selectedLanguage];
-
-      i18n.addResources(selectedLanguage, 'tools', tools);
+      const tools: any = toolsLocalesMap[country.toUpperCase() as Country][selectedLanguage];
+      i18n.addResourceBundle(selectedLanguage, 'tools', tools);
+      i18n.changeLanguage(selectedLanguage);
 
       queryClient.invalidateQueries({ queryKey: ['country-language'] });
       router.dismissAll();
@@ -92,6 +84,7 @@ export default function ChangeLanguage() {
           <RadioItem item={item} selectedItem={selectedLanguage} onSelectItem={setSelectedLanguage} />
         )}
         estimatedItemSize={60}
+        extraData={selectedLanguage}
       />
     </Screen>
   );

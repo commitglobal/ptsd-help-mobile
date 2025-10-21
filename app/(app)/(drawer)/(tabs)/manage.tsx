@@ -183,7 +183,7 @@ export default function Manage() {
   return (
     <Screen
       headerProps={{
-        title: 'Manage',
+        title: t('manage.title'),
         iconRight: <Icon icon='info' color='$gray12' width={24} height={24} />,
         onRightPress: () => router.push('/info'),
       }}

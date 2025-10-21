@@ -10,13 +10,15 @@ import { RadioItem } from '@/components/RadioItem';
 import { Platform } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { AppCountries, Country, CountryFlagMap } from '@/constants/countries';
+import { KVStore } from '@/helpers/mmkv';
+import { STORE_KEYS } from '@/constants/store-keys';
 
 export default function ChangeCountry() {
   const { t } = useTranslation();
   const router = useRouter();
   const insets = useSafeAreaInsets();
 
-  const [selectedCountry, setSelectedCountry] = useState<string>();
+  const [selectedCountry, setSelectedCountry] = useState<string | undefined>(KVStore().getString(STORE_KEYS.COUNTRY));
 
   const countries = useMemo(
     () =>
@@ -28,10 +30,6 @@ export default function ChangeCountry() {
     [AppCountries, t]
   );
 
-  function handleSetSelectedCountry(country: string) {
-    console.log(country);
-    setSelectedCountry(country);
-  }
   return (
     <Screen
       headerProps={{
@@ -65,8 +63,9 @@ export default function ChangeCountry() {
         bounces={false}
         ItemSeparatorComponent={() => <YStack height={16} />}
         data={countries}
+        extraData={selectedCountry}
         renderItem={({ item }) => (
-          <RadioItem item={item} selectedItem={selectedCountry} onSelectItem={handleSetSelectedCountry} />
+          <RadioItem item={item} selectedItem={selectedCountry} onSelectItem={setSelectedCountry} key={item.id} />
         )}
         estimatedItemSize={60}
       />

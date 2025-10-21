@@ -1,41 +1,41 @@
 {
   "lastUpdatedAt": "2025-10-20T18:00:00Z",
-  "title": "Învățați",
+  "title": "Սովորել",
   "pages": [
     {
       "id": "fa3f5b17-9ede-4f0a-98a7-023178ac6296",
       "type": "category",
-      "label": "Află mai mult despre PTSD",
-      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/learn_more_about_ptsd_icon.png",
+      "label": "Իմացեք ավելին PTSD-ի մասին",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/learn_more_about_ptsd_icon.png",
       "topics": [
         {
           "id": "7c1cc94e-7f28-4dde-ab92-69b348eb1ead",
-          "label": "Ce este PTSD-ul?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_ptsd.png",
+          "label": "Ի՞նչ է PTSD-ը",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/what_is_ptsd.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_ptsd.png",
-                "alt": "Ce este PTSD-ul?"
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/what_is_ptsd.png",
+                "alt": "Ի՞նչ է PTSD-ը"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Tulburarea de stres post-traumatic (PTSD) este cauzata de expunerea la moarte sau la amenintarea cu moartea, ranire severa sau violenta sexuala sau aflarea despre cineva apropiat care a suferit astfel de experiente traumatice.</p><p>Vestea buna: PTSD este tratabil.</p><p>PTSD include 4 tipuri de simptome:</p><p>1. Reexperimentarea sau retr Trair traumei, cum ar fi:</p><ul><li>Amintiri tulburatoare sau cosmaruri</li><li>Simtirea sau actionarea ca si cum trauma s-ar intampla din nou (flashback-uri)</li><li>A deveni foarte suparat cand ti se aminteste de trauma</li></ul><p>2. Evitarea persistenta, cum ar fi:</p><ul><li>Evitarea amintirilor, gandurilor sau sentimentelor despre trauma</li><li>Evitarea factorilor externi care declanseaza amintirea evenimentului.</li></ul><p>3. Ganduri si stari negative:</p><ul><li>Senzatie de detasare sau izolare de ceilalti</li><li>Credinte negative (cum ar fi „Sunt o persoana rea\", „Nu pot avea incredere in nimeni\", „Lumea este periculoasa\")</li><li>Auto-invinovatire sau invinovatirea altora pentru cauza sau consecintele evenimentului traumatic</li><li>Emotii negative persistente, cum ar fi frica, furia, vinovatia sau rusinea</li><li>Dificultati in a simti emotii pozitive precum fericirea si dragostea</li><li>Lipsa de interes sau de participare la activitati placute sau importante</li></ul><p>4. Reactivitate mai crescuta precum:</p><ul><li>Hipervigilenta</li><li>A fi iritabil sau furios</li><li>Probleme de somn</li><li>Senzatie de tresarire</li><li>Probleme de concentrare</li><li>A fi imprudent sau autodistructiv</li></ul><p>Aceste simptome dureaza o luna sau mai mult si sunt deranjante si/sau duc la probleme in viata sociala sau de familie, la locul de munca si la scoala.</p><p>PTSD poate include, de asemenea, \"disociere,\" in care oamenii simt ca sunt detasati de ei insisi sau ca si cum lumea din jur pare ireala, indepartata sau distorsionata.</p>"
+                "content": "<p>Հետտրավմատիկ սթրեսի խանգարումը (PTSD) առաջանում է մահվան կամ մահվան սպառնալիքին, ծանր վնասվածքի կամ սեռական բռնության ենթարկվելուց, կամ այդպիսի փորձառություն ունեցող մոտ մարդու մասին իմանալուց։</p><p>Լավ նորություն․ PTSD-ը բուժելի է։</p><p>PTSD-ը ներառում է ախտանիշների 4 տեսակ․</p><p>1) Վերաապրում կամ կրկին փորձառություն, օրինակ՝</p><ul><li>Խանգարող հիշողություններ կամ մղձավանջներ</li><li>Զգալ կամ վարվել այնպես, կարծես տրավման կրկին տեղի է ունենում (ֆլեշբեքներ)</li><li>Չափազանց անհանգստանալ, երբ ինչ–որ բան հիշեցնում է տրավման</li></ul><p>2) Հաստատուն խուսափում, օրինակ՝</p><ul><li>Տրավմայի հետ կապված հիշողություններից, մտքերից կամ զգացմունքներից խուսափելը</li><li>Արտաքին գործոններից խուսափելը, որոնք հիշեցնում են պատահարը</li></ul><p>3) Բացասական մտածումներ և վիճակներ․</p><ul><li>Կիսատ կամ մեկուսացած զգալ մյուսներից</li><li>Բացասական համոզմունքներ (օրինակ՝ «Ես վատ մարդ եմ», «Չեմ կարող վստահել ոչ մեկին», «Աշխարհը վտանգավոր է»)</li><li>Ինքդ քեզ կամ ուրիշներին մեղադրել տրավմատիկ իրադարձության պատճառների կամ հետևանքների համար</li><li>Մշտական բացասական զգացումներ՝ վախ, զայրույթ, մեղքի զգացում կամ ամոթ</li><li>Դժվարություն դրական զգացումներ զգալու մեջ, ինչպես ուրախությունը և սերը</li><li>Հետաքրքրության պակաս կամ մասնակցության նվազում հաճելի կամ կարևոր գործունեությանը</li></ul><p>4) Ավելի բարձր ռեակտիվություն, օրինակ՝</p><ul><li>Գերհսկողություն (հիպերվիգիլայնություն)</li><li>Գրգռվածություն կամ զայրույթ</li><li>Քնի խնդիրներ</li><li>Հեշտ վախենալ կամ սարսուռ</li><li>Կենտրոնացման խնդիրներ</li><li>Անփութ կամ ինքնավնաս վարք</li></ul><p>Այս ախտանիշները տևում են մեկ ամսից ավելի և խանգարում են ու/կամ խնդիրներ են ստեղծում սոցիալական կամ ընտանեկան կյանքում, աշխատանքի վայրում կամ դպրոցում։</p><p>PTSD-ը կարող է ներառել նաև «դիսոցիացիա», երբ մարդը իրեն զգում է կտրված ինքն իրենից կամ աշխարհը թվում է անիրական, հեռու կամ աղավաղված։</p>"
               }
             ]
           }
         },
         {
           "id": "ddacfa2b-77d7-4d86-88c5-7a48316f96b8",
-          "label": "Informații Despre PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/info_about_ptsd.jpg",
+          "label": "PTSD-ի մասին տեղեկություն",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/info_about_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/info_about_ptsd.jpg",
-                "alt": "Informații Despre PTSD"
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/info_about_ptsd.jpg",
+                "alt": "PTSD-ի մասին տեղեկություն"
               },
               {
                 "type": "multiPage",
@@ -43,65 +43,65 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>PTSD este tratabil</h1><div><div>Indiferent de cât timp ai trăit cu PTSD, există tratamente care te pot ajuta.</div></div></div>"
+                      "content": "<div><h1>PTSD-ը բուժելի է</h1><div><div>Անկախ նրանից, թե որքան ժամանակ ես ապրել PTSD-ով, կան բուժումներ, որոնք կարող են օգնել քեզ։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Tratamentul ajută</h1></div><div><div><div>Discuția cu un profesionist este unul dintre cele mai bune lucruri pe care le poți face. Există dovezi a mai multor tratamente care s-au dovedit a fi eficiente în reducerea simptomelor PTSD.</div></div></div>"
+                      "content": "<div><h1>Բուժումը օգնում է</h1></div><div><div><div>Մասնագետի հետ զրույցը լավագույն քայլերից մեկն է, որ կարող ես անել։ Կան բազմաթիվ ապացույցներ, որ որոշ բուժումներ արդյունավետ են PTSD-ի ախտանիշների նվազեցման մեջ։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Sprijinul joacă un rol important</h1><div><div>Prin sprijin pot fi ajutate foarte mult persoane cu PTSD. Studiile au arătat că sprijinul celor dragi îmbunătățește atât tratamentul, cât și recuperarea după PTSD.</div></div></div>"
+                      "content": "<div><h1>Աջակցությունը կարևոր դեր ունի</h1><div><div>Աջակցությունը կարող է մեծապես օգնել PTSD ունեցող մարդկանց։ Հետազոտությունները ցույց են տալիս, որ հարազատների աջակցությունը բարելավում է թե՛ բուժման ընթացքը, թե՛ վերականգնումը PTSD-ից հետո։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Nu ești singur</h1><div><div>PTSD îi afectează pe fiecare în mod diferit, dar este extrem de comun ca oamenii să experimenteze un stres semnificativ. Nu-ți fie teamă să cauți ajutor și sprijin care să te ajute să faci față oricărui stres pe care îl experimentezi.</div></div></div>"
+                      "content": "<div><h1>Դու միայնակ չես</h1><div><div>PTSD-ն տարբեր կերպ է ազդում յուրաքանչյուրի վրա, բայց շատ տարածված է զգալի սթրեսի փորձառությունը։ Մի վախեցիր որոնել օգնություն և աջակցություն՝ հաղթահարելու այն սթրեսը, որը փորձում ես։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Tratamente eficiente pentru PTSD</h1><div><div>Psihoterapia și/sau medicamentele sunt cele mai eficiente tratamente pentru PTSD. Psihoterapia centrată pe traumă este considerată mai eficientă decât medicamentele.</div></div>"
+                      "content": "<h1>PTSD-ի համար արդյունավետ բուժումներ</h1><div><div>Հոգեթերապիան և/կամ դեղորայքը PTSD-ի ամենաարդյունավետ բուժումներն են։ Տրավմայի վրա կենտրոնացած հոգեթերապիան համարվում է ավելի արդյունավետ, քան դեղորայքը։</div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Cum ajută tratamentul</h1><div><div>S-a demonstrat că tratamentele pentru PTSD îmbunătățesc simptomele, relațiile personale și profesionale și calitatea vieții. Discută cu specialiștii despre ce tratament PTSD este potrivit pentru tine.</div></div></div>"
+                      "content": "<div><h1>Ինչպես է բուժումը օգնում</h1><div><div>Ապացուցված է, որ PTSD-ի բուժումները բարելավում են ախտանիշները, անձնական և մասնագիտական հարաբերությունները և կյանքի որակը։ Խորհրդակցիր մասնագետների հետ, թե որ բուժումն է ճիշտ քեզ համար։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce sunt psihoterapiile focalizate pe traumă?</h1><div><div>Aceste terapii folosesc diferite tehnici pentru a ajuta persoanele cu PTSD să își proceseze experiența traumatică. Unele implică vizualizarea sau discutarea despre amintirea traumatizantă, în timp ce altele se concentrează pe schimbarea convingerilor inutile.</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ են տրավմայի վրա կենտրոնացած հոգեթերապիաները</h1><div><div>Այս թերապիաները օգտագործում են տարբեր տեխնիկա՝ PTSD ունեցող մարդկանց օգնելու համար մշակել իրենց տրավմատիկ փորձառությունը։ Որոշ մեթոդներ ներառում են տրավմատիկ հիշողության պատկերացումը կամ քննարկումը, մինչդեռ մյուսները կենտրոնանում են վնասակար համոզմունքների փոփոխման վրա։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce terapii funcționează?</h1><div><div>Există mai multe psihoterapii centrate pe traumă despre care s-a demonstrat că ajută la îmbunătățirea PTSD: expunerea prelungită (PE), terapia procesării cognitive (CPT), desensibilizarea și reprocesarea mișcării oculare (EMDR), psihoterapie eclectică scurtă, terapia expunerii narative și expunerea narativă scrisă.</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ թերապիաներ են արդյունավետ</h1><div><div>Կան մի քանի տրավմայի վրա կենտրոնացած թերապիաներ, որոնք ապացուցված է, որ բարելավում են PTSD-ը՝ երկարացված էքսպոզիցիա (PE), ճանաչողական պրոցեսավորման թերապիա (CPT), աչքի շարժման դեսենսիբիլիզացիա և վերամշակում (EMDR), կարճ էկլեկտիկ հոգեթերապիա, նարատիվ էքսպոզիցիա և գրված նարատիվ էքսպոզիցիա։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce medicamente funcționează?</h1><div><div>Medicamentele care pot fi utile pentru PTSD sunt, de asemenea, utilizate pentru depresie și anxietate: sertralina (Zoloft), paroxetina (Paxil), fluoxetina (Prozac) și venlafaxina (Effexor). Discută cu medicul tău dacă o rețetă îți poate fi utilă.</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ դեղորայք է արդյունավետ</h1><div><div>PTSD-ի համար օգտակար կարող են լինել նաև այն դեղերը, որոնք օգտագործվում են դեպրեսիայի և անհանգստության համար՝ սերտրալին (Zoloft), պարոքսետին (Paxil), ֆլուօքսետին (Prozac) և վենլաֆաքսին (Effexor)։ Խոսիր քո բժշկի հետ՝ արդյոք դեղատոմսը կարող է օգտակար լինել քեզ համար։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Află mai multe despre PTSD</h1><div><div>Centrul Național pentru PTSD menține o colecție extinsă de articole, videoclipuri și instrumente de autoajutorare legate de PTSD. Află tot ce trebuie să știi aici:</div></div></div>"
+                      "content": "<div><h1>Իմանա՛ ավելին PTSD-ի մասին</h1><div><div>PTSD-ի ազգային կենտրոնը պահպանում է PTSD-ին վերաբերող հոդվածների, տեսանյութերի և ինքնօգնության գործիքների լայն հավաքածու։ Ամեն ինչ, ինչ պետք է իմանաս, կարող ես գտնել այստեղ․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Vizitează website-ul",
+                      "label": "Այցելել կայք",
                       "action": {
                         "type": "external",
                         "url": "https://www.ptsd.va.gov/index.asp"
@@ -111,11 +111,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>După implementare</h1><div><div>După implementare. After Deployment este o resursă cuprinzătoare pentru gestionarea stresului, anxietății, somnului, sănătății și multe altele. Merită o vizită:</div></div></div>"
+                      "content": "<div><h1>Ծառայությունից հետո</h1><div><div>After Deployment-ը համապարփակ ռեսուրս է սթրեսի, անհանգստության, քնի, առողջության և այլ խնդիրների կառավարման համար։ Արժե այցելել՝</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Vizitează website-ul",
+                      "label": "Այցելել կայք",
                       "action": {
                         "type": "external",
                         "url": "http://afterdeployment.org"
@@ -125,11 +125,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce este PTSD?</h1><div><div><div>Urmărește acest videoclip:</div></div></div></div>"
+                      "content": "<div><h1>Ի՞նչ է PTSD-ը</h1><div><div><div>Դիտիր այս տեսանյութը․</div></div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Redă Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=YMC2jt_QVEE"
@@ -139,11 +139,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Tratament: Cunoaște-ți opțiunile</h1><div><div>Urmărește acest videoclip despre opțiunile de tratament:</div></div></div>"
+                      "content": "<div><h1>Բուժում՝ ճանաչիր քո տարբերակները</h1><div><div>Դիտիր այս տեսանյութը՝ բուժման տարբերակների մասին․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Redă Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=FeLLt39DI8A"
@@ -153,11 +153,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce este \"Tratamentul bazat pe dovezi științifice\"?</h1><div><div>Află mai multe în acest video:</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ է «ապացույցների վրա հիմնված բուժումը»</h1><div><div>Իմացիր ավելին այս տեսանյութում․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Redă Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=7dzkS0ioqqwhttps://www.youtube.com/watch?v=7dzkS0ioqqw"
@@ -167,11 +167,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce este terapia prin procesare cognitivă?</h1><div><div>Urmărește acest scurt videoclip pentru a afla mai multe:</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ է ճանաչողական պրոցեսավորման թերապիան</h1><div><div>Դիտիր այս կարճ տեսանյութը՝ ավելին իմանալու համար․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Redă Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=Jqj5zDbkPxY"
@@ -181,11 +181,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ce este expunerea prelungită?</h1><div><div>Urmărește acest scurt videoclip pentru a afla mai multe despre PE:</div></div></div>"
+                      "content": "<div><h1>Ի՞նչ է երկարացված էքսպոզիցիան</h1><div><div>Դիտիր այս կարճ տեսանյութը՝ PE-ի մասին ավելին իմանալու համար․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Redă Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=rHg_SlEqJGc&t=1s"
@@ -199,18 +199,18 @@
         },
         {
           "id": "3ea8185b-15d6-4275-a700-c733eb103ec3",
-          "label": "Cum se dezvoltă PTSD-ul?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
+          "label": "Ինչպե՞ս է զարգանում PTSD-ը",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_PTSD_develops.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_PTSD_develops.jpg",
                 "alt": "Cum se dezvoltă PTSD-ul?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>După un eveniment traumatizant, este normal să fii în stare de șoc, să ai amintiri dureroase și să fii afectat de amintirile care apar. Expunerea la un eveniment traumatizant poate schimba, de asemenea, modul în care oamenii gândesc despre ei înșiși, despre ceilalți și despre lume. De exemplu pot apărea idei precum \"nicăieri nu este sigur,\" sau \"nimeni nu poate fi de încredere.\"</div><div>&nbsp;</div><div><div><div>Pentru majoritatea, aceste reacții se vor diminua în timp. Dar pentru unii, aceste reacții continuă și pot fi suficient de severe pentru a perturba viața de zi cu zi.</div></div></div></div>"
+                "content": "<div><div>Տրավմատիկ իրադարձությունից հետո բնական է լինել շոկի մեջ, ունենալ ցավազրկող հիշողություններ և ազդվել ի հայտ եկող հիշողություններից։ Տրավմատիկ իրադարձությանը ենթարկվելը կարող է նաև փոխել այն, թե ինչպես են մարդիկ մտածում իրենց, ուրիշների և աշխարհի մասին։ Օրինակ կարող են առաջանալ գաղափարներ, ինչպիսիք են «ոչ մի տեղ անվտանգ չէ» կամ «ոչ ոքի չի կարելի վստահել»։</div><div>&nbsp;</div><div><div><div>Շատերի մոտ այս արձագանքները ժամանակի ընթացքում նվազում են, բայց որոշների դեպքում դրանք շարունակվում են և կարող են այնքան լուրջ լինել, որ խանգարեն առօրյա կյանքին։</div></div></div></div>"
               }
             ]
           }
@@ -218,12 +218,12 @@
         {
           "id": "4d3d5873-fd6a-4213-9c44-d77b5fa30e78",
           "label": "Cât de comun este PTSD-ul?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_common_ptsd_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_common_ptsd_is.jpg",
                 "alt": "Cât de comun este PTSD-ul?"
               },
               {
@@ -236,12 +236,12 @@
         {
           "id": "8ea11ea0-9943-4ebc-92f6-a08ece314e26",
           "label": "Cine dezvoltă PTSD?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/who_develops_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/who_develops_ptsd.jpg",
                 "alt": "Cine dezvoltă PTSD?"
               },
               {
@@ -254,12 +254,12 @@
         {
           "id": "8c975a93-c9ef-42eb-962b-a38efd01b6e1",
           "label": "Cât durează PTSD-ul?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_long_ptsd_last.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/how_long_ptsd_last.jpg",
                 "alt": "Cât durează PTSD-ul?"
               },
               {
@@ -272,12 +272,12 @@
         {
           "id": "2802716d-beac-42de-8db8-420eb0e55fc9",
           "label": "Probleme legate de PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/ptsb_related_problems.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/ptsb_related_problems.jpg",
                 "alt": "Probleme legate de PTSD"
               },
               {
@@ -290,7 +290,7 @@
         {
           "id": "1cc36b79-7191-4bfb-b8d0-1e1f24c06c63",
           "label": "Înțelegerea tratamentului PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/treatment.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/treatment.jpg",
           "content": {
             "sections": [
               {
@@ -299,7 +299,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/theraphy_works.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/theraphy_works.jpg",
                       "alt": "Psihoterapia Funcționează"
                     },
                     {
@@ -310,7 +310,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/trauma_focused_therapy.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/trauma_focused_therapy.jpg",
                       "alt": "Terapia centrată pe traumă"
                     },
                     {
@@ -321,7 +321,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/spirit_exercises.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/spirit_exercises.jpg",
                       "alt": "Exercițiile îți pot ajuta starea de spirit"
                     },
                     {
@@ -332,7 +332,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/practice_mindfulness.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/practice_mindfulness.jpg",
                       "alt": "Mindfulness (practica de meditație conștientă) poate ajuta"
                     },
                     {
@@ -355,7 +355,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/starting_treatment.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/starting_treatment.jpg",
                       "alt": "Începerea tratamentului"
                     },
                     {
@@ -366,7 +366,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/medications.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/medications.jpg",
                       "alt": "Medicamente care funcționează"
                     },
                     {
@@ -377,7 +377,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/family_therapy.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/family_therapy.jpg",
                       "alt": "Terapie de familie"
                     },
                     {
@@ -388,7 +388,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/treatment.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/treatment.jpg",
                       "alt": "Tratament pentru PTSD"
                     },
                     {
@@ -412,12 +412,12 @@
         {
           "id": "c15f00fc-86f6-4315-ae3a-04e31be589e7",
           "label": "Am PTSD?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/do_i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/do_i_have_ptsd.jpg",
                 "alt": "Am PTSD?"
               },
               {
@@ -430,12 +430,12 @@
         {
           "id": "f5744788-8d9f-43d1-9318-7c238f68c279",
           "label": "Am PTSD...",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/i_have_ptsd.jpg",
                 "alt": "Am PTSD..."
               },
               {
@@ -448,12 +448,12 @@
         {
           "id": "0d5d5441-f145-4d6e-b1b0-2370cd56618b",
           "label": "Mi-e rușine că am PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/ashamed_to_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/ashamed_to_have_ptsd.jpg",
                 "alt": "Mi-e rușine că am PTSD"
               },
               {
@@ -466,12 +466,12 @@
         {
           "id": "3314f9e0-0a05-4cdd-972a-57628fb74260",
           "label": "Izolarea socială",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/social_isolation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/social_isolation.jpg",
                 "alt": "Izolarea socială"
               },
               {
@@ -484,12 +484,12 @@
         {
           "id": "30fcbbd4-27d7-46f5-9ecd-c0a90333b93a",
           "label": "Probleme cu somnul: Coșmarurile",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/sleep_issues_nightmare.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/sleep_issues_nightmare.jpg",
                 "alt": "Probleme cu somnul: Coșmarurile"
               },
               {
@@ -502,12 +502,12 @@
         {
           "id": "fa6b7c8a-2bf7-44b8-bf17-46c9feee97fc",
           "label": "Probleme cu somnul: Insomnia",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/sleep_issues_insomnia.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/sleep_issues_insomnia.jpg",
                 "alt": "Probleme cu somnul: Insomnia"
               },
               {
@@ -520,12 +520,12 @@
         {
           "id": "4afaad60-4964-47c5-9bdb-bdb63bef0336",
           "label": "Ce fac dacă mă afectează anumiți factori declanșatori?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/stress_factor_response_strategy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/stress_factor_response_strategy.jpg",
                 "alt": "Ce fac dacă mă afectează anumiți factori declanșatori?"
               },
               {
@@ -546,12 +546,12 @@
         {
           "id": "109e788d-d579-4077-9a4d-51029256ca1e",
           "label": "Ce este disocierea?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/what_is_dissociation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/what_is_dissociation.jpg",
                 "alt": "Ce este disocierea?"
               },
               {
@@ -564,12 +564,12 @@
         {
           "id": "71939fdd-6c23-4d9e-b7ce-63890c06ccd2",
           "label": "Evit lucrurile",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/avoiding_things.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/avoiding_things.jpg",
                 "alt": "Evit lucrurile"
               },
               {
@@ -582,12 +582,12 @@
         {
           "id": "a9de62c2-a24d-4627-92e4-4d6436e3ea72",
           "label": "Nu am încredere în oameni",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/trust_no_one.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/trust_no_one.jpg",
                 "alt": "Nu am încredere în oameni"
               },
               {
@@ -600,12 +600,12 @@
         {
           "id": "a6d34a91-e0a8-47d2-80ef-ef5263d63824",
           "label": "Nu-mi pot controla temperamentul",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/cant_control_myself.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/cant_control_myself.jpg",
                 "alt": "Nu-mi pot controla temperamentul"
               },
               {
@@ -618,12 +618,12 @@
         {
           "id": "54fe9aa1-43fa-4876-9831-ce0ec7f607dd",
           "label": "Sunt mereu stresat",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/always_stressed.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/always_stressed.jpg",
                 "alt": "Sunt mereu stresat"
               },
               {
@@ -636,12 +636,12 @@
         {
           "id": "a4df8b66-0059-441e-8574-185c85cb7296",
           "label": "Mă simt trist tot timpul",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/always_sad.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/always_sad.jpg",
                 "alt": "Mă simt trist tot timpul"
               },
               {
@@ -665,17 +665,17 @@
       "id": "2f781697-bcf1-4afb-897f-628403ebdf84",
       "type": "category",
       "label": "Obținerea de ajutor profesional",
-      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/getting_professional_help_icon.png",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/getting_professional_help_icon.png",
       "topics": [
         {
           "id": "27a286b0-0e28-498c-abfa-baaf37cfe521",
           "label": "Sunt într-o criză",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/i_am_in_crisis.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/i_am_in_crisis.jpg",
                 "alt": "Sunt într-o criză"
               },
               {
@@ -728,12 +728,12 @@
         {
           "id": "7b8c7803-6247-4fc3-a06c-1e1a69047aaf",
           "label": "Găsirea tratamentului",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/finding_treatment.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/finding_treatment.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/finding_treatment.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/finding_treatment.jpg",
                 "alt": "Găsirea tratamentului"
               },
               {
@@ -750,12 +750,12 @@
         {
           "id": "14dfa4e1-a766-4afc-aba5-82aa427aea9f",
           "label": "Ce este terapia?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_therapy_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_therapy_is.jpg",
                 "alt": "Ce este terapia?"
               },
               {
@@ -768,7 +768,7 @@
         {
           "id": "7d06c62c-1e69-411b-b102-5af1fe3ad2b3",
           "label": "Instrumente pentru PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/tools_for_ptsd_icon.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/tools_for_ptsd_icon.jpg",
           "content": {
             "sections": [
               {
@@ -777,7 +777,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/aims.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/aims.jpg",
                       "alt": "AIMS (Strategii pentru Iritabilitate și Mânie)"
                     },
                     {
@@ -804,7 +804,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/cbti_coach.png",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/cbti_coach.png",
                       "alt": "CBT-i Coach"
                     },
                     {
@@ -831,7 +831,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mindfulness_coach.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/mindfulness_coach.jpg",
                       "alt": "Mindfulness Coach"
                     },
                     {
@@ -858,7 +858,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/stay_quit_coach.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/stay_quit_coach.jpg",
                       "alt": "Stay Quit Coach"
                     },
                     {
@@ -885,7 +885,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/breathe_2_relax.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/breathe_2_relax.jpg",
                       "alt": "Breathe2Relax"
                     },
                     {
@@ -912,7 +912,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mood_tracker.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/mood_tracker.jpg",
                       "alt": "Mood Tracker"
                     },
                     {
@@ -939,7 +939,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/ptsd_coach.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/tools_for_ptsd/ptsd_coach.jpg",
                       "alt": "PTSD Coach"
                     },
                     {
@@ -971,12 +971,12 @@
         {
           "id": "c4983971-9461-4911-bac8-f5700ee0e6fc",
           "label": "Am nevoie de ajutor profesional?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/do_i_need_professional_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/do_i_need_professional_help.jpg",
                 "alt": "Am nevoie de ajutor profesional?"
               },
               {
@@ -1001,12 +1001,12 @@
         {
           "id": "6f32a995-2c44-4792-8c7f-30e73ce48916",
           "label": "De ce caută oamenii terapia?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/why_do_people_seek_therapy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/why_do_people_seek_therapy.jpg",
                 "alt": "De ce caută oamenii terapia?"
               },
               {
@@ -1019,12 +1019,12 @@
         {
           "id": "7163f965-f8f3-4a11-917b-e2177fc98c64",
           "label": "Cum mă poate ajuta un terapeut?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_can_therapist_help_me.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_can_therapist_help_me.jpg",
                 "alt": "Cum mă poate ajuta un terapeut?"
               },
               {
@@ -1037,12 +1037,12 @@
         {
           "id": "050f384c-330c-456f-9615-d075010c84bb",
           "label": "Este terapia confidențială?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/is_therapy_confidential.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/is_therapy_confidential.jpg",
                 "alt": "Este terapia confidențială?"
               },
               {
@@ -1055,12 +1055,12 @@
         {
           "id": "73bc9aee-cb25-4d3e-8e7f-a983fa1b45d9",
           "label": "Terapia chiar va funcționa?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/will_therapy_really_work.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/will_therapy_really_work.png",
                 "alt": "Terapia chiar va funcționa?"
               },
               {
@@ -1073,12 +1073,12 @@
         {
           "id": "dd16e090-d6c7-4168-b90e-a8bdd7d1e7d1",
           "label": "Tratamente pentru PTSD care funcționează",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/ptsd_treatments_that_works.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/ptsd_treatments_that_works.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/ptsd_treatments_that_works.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/ptsd_treatments_that_works.jpg",
                 "alt": "Tratamente pentru PTSD care funcționează"
               },
               {
@@ -1091,12 +1091,12 @@
         {
           "id": "43388869-63ce-457f-9ff6-d924185c77e1",
           "label": "Cum găsesc un consilier/terapeut?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_to_find_therapist.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_to_find_therapist.jpg",
                 "alt": "Cum găsesc un consilier/terapeut?"
               },
               {
@@ -1117,12 +1117,12 @@
         {
           "id": "773969b5-71a1-455f-b68b-081feecabc20",
           "label": "Cât costă consilierea?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_much_does_counseling_cost.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/how_much_does_counseling_cost.png",
                 "alt": "Cât costă consilierea?"
               },
               {
@@ -1143,12 +1143,12 @@
         {
           "id": "48461c08-35f7-4223-91d9-c4a1ffcf5a16",
           "label": "Îmi doresc să fac terapie, dar lucrez toată ziua",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/i_want_counseling_but_I_work_all_day.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/i_want_counseling_but_I_work_all_day.png",
                 "alt": "Îmi doresc să fac terapie, dar lucrez toată ziua"
               },
               {
@@ -1161,12 +1161,12 @@
         {
           "id": "88b2c850-99ee-4372-aac1-c58cf3d502e3",
           "label": "Transport la programări",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/transportation_to_appointments.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/transportation_to_appointments.png",
                 "alt": "Transport la programări"
               },
               {
@@ -1179,12 +1179,12 @@
         {
           "id": "c5d0c457-e0e0-4e66-89f2-fc00c1963057",
           "label": "Mi-e rușine să merg la terapie",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/im_embarrassed_to_go_for_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/im_embarrassed_to_go_for_counseling.png",
                 "alt": "Mi-e rușine să merg la terapie"
               },
               {
@@ -1197,12 +1197,12 @@
         {
           "id": "6456f949-d060-4266-8bbb-ad83a11f4054",
           "label": "Cine mă poate ajuta?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/who_can_help_me.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/who_can_help_me.png",
                 "alt": "Cine mă poate ajuta?"
               },
               {
@@ -1215,12 +1215,12 @@
         {
           "id": "3d72382c-c7c8-46eb-aee5-26f146b0f93f",
           "label": "Ce face un medic de familie?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_primary_care_physician_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_primary_care_physician_do.png",
                 "atl": "Ce face un medic de familie?"
               },
               {
@@ -1233,12 +1233,12 @@
         {
           "id": "1ef6504c-32ad-4e2c-97d1-d61852e33c58",
           "label": "Ce face un psihoterapeut?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_psychologist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_psychologist_do.png",
                 "alt": "Ce face un psihoterapeut?"
               },
               {
@@ -1251,12 +1251,12 @@
         {
           "id": "4bcfa2fd-8a2f-40f3-94b5-bc8b315dfb7c",
           "label": "Ce face un psihiatru?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_psychiatrist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/AM/hy/what_does_a_psychiatrist_do.png",
                 "alt": "Ce face un psihiatru?"
               },
               {
@@ -1272,17 +1272,17 @@
       "id": "3b237604-a536-4943-9181-12b4dfb9a478",
       "type": "category",
       "label": "PTSD și familia",
-      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/ptsd_and_family_icon.png",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/ptsd_and_family_icon.png",
       "topics": [
         {
           "id": "d4cc9bd8-5d41-438d-9fd3-072779921b14",
           "label": "Ce este terapia de cuplu?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/what_is_couples_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/what_is_couples_counseling.png",
                 "alt": "Ce este terapia de cuplu?"
               },
               {
@@ -1295,12 +1295,12 @@
         {
           "id": "834f767e-e286-434b-b344-7585d60ea249",
           "label": "Ce este terapia de familie?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/what_is_family_therapy.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/what_is_family_therapy.png",
                 "alt": "Ce este terapia de familie?"
               },
               {
@@ -1313,12 +1313,12 @@
         {
           "id": "411989be-5394-4b8e-a0ed-cfb2438bbde6",
           "label": "Reconectează-te cu partenerul tău",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/reconnecting_with_your_partner.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/reconnecting_with_your_partner.png",
                 "alt": "Reconectează-te cu partenerul tău"
               },
               {
@@ -1331,12 +1331,12 @@
         {
           "id": "da027dd8-3fe3-4789-8f1b-81818c1ec1e2",
           "label": "Poartă un conflict corect",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/fighting_fair.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/fighting_fair.png",
                 "alt": "Poartă un conflict corect"
               },
               {
@@ -1349,7 +1349,7 @@
         {
           "id": "8d231b5d-aed9-4fab-a7eb-37e0b8046ada",
           "label": "Vorbește cu copiii",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talking_to_kids_icon.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talking_to_kids_icon.png",
           "content": {
             "sections": [
               {
@@ -1358,7 +1358,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_4.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_4.jpg",
                       "alt": "Ai un copil mic (2-4 ani)?"
                     },
                     {
@@ -1369,7 +1369,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/Is-your-child-missing-quality-time.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/Is-your-child-missing-quality-time.jpg",
                       "alt": "Copilului tău îi lipsește timpul de calitate cu tine?"
                     },
                     {
@@ -1380,7 +1380,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_12.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_12.jpg",
                       "alt": "Ai un copil mic (2-12 ani)?"
                     },
                     {
@@ -1391,7 +1391,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/hard_to_connect_wtih_your_children.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/hard_to_connect_wtih_your_children.jpg",
                       "alt": "Îți este greu să te conectezi cu copilul tău?"
                     },
                     {
@@ -1402,7 +1402,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/you_and_your_child_were_distant_from_each_other.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/you_and_your_child_were_distant_from_each_other.jpg",
                       "alt": "Tu și copilul tău ați fost distanți unul cu celălalt?"
                     },
                     {
@@ -1413,7 +1413,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/feeling_like_a_bad_parent.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/feeling_like_a_bad_parent.jpg",
                       "alt": "Te simți un părinte rău?"
                     },
                     {
@@ -1424,7 +1424,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_5_12.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_young_child_5_12.jpg",
                       "alt": "Ai un copil mic (5-12 ani)?"
                     },
                     {
@@ -1435,7 +1435,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_teenager.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_teenager.jpg",
                       "alt": "Ai un adolescent?"
                     },
                     {
@@ -1446,7 +1446,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_partner_who_helps.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_partner_who_helps.jpg",
                       "alt": "Ai un partener care te ajută cu copilul?"
                     },
                     {
@@ -1457,7 +1457,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/feeling_like_things_are_out_of_control.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/feeling_like_things_are_out_of_control.jpg",
                       "alt": "Simți că lucrurile sunt scăpate de sub control?"
                     },
                     {
@@ -1468,7 +1468,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/family_gatherings.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/family_gatherings.jpg",
                       "alt": "Întâlniri de familie"
                     },
                     {
@@ -1479,7 +1479,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/does_your_child_have_a_hard_time_discussing_about_sentiments.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/does_your_child_have_a_hard_time_discussing_about_sentiments.jpg",
                       "alt": "Copilului tău îi este greu să discute despre sentimente?"
                     },
                     {
@@ -1490,7 +1490,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/do_you_have_a_young_child.jpg",
                       "alt": "Ai un copil mic?"
                     },
                     {
@@ -1509,7 +1509,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/ask_what_they_think.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/ask_what_they_think.jpg",
                       "alt": "Încearcă să începi o conversație cu copiii tăi, întreabă ce părere au."
                     },
                     {
@@ -1520,7 +1520,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/share_how_youre_feeling.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/share_how_youre_feeling.jpg",
                       "alt": "Încearcă să începi o conversație, împărtășește cum te simți."
                     },
                     {
@@ -1531,7 +1531,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/open_up.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/open_up.jpg",
                       "alt": "Încearcă să începi o conversație, deschide-te."
                     },
                     {
@@ -1542,7 +1542,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/focus_on_strengths.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/focus_on_strengths.jpg",
                       "alt": "Concentrează-te pe calități"
                     },
                     {
@@ -1553,7 +1553,7 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/give_kids_time_to_speak.jpg",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/talk_with_childred_about_ptsd/give_kids_time_to_speak.jpg",
                       "alt": "Oferă-le copiilor timp să vorbească"
                     },
                     {
@@ -1569,12 +1569,12 @@
         {
           "id": "ecf87853-6c78-4a41-8256-12574ff5f605",
           "label": "Impactul PTSD asupra copiilor",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/impact_of_ptsd_on_children.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/impact_of_ptsd_on_children.jpg",
                 "alt": "Impactul PTSD asupra copiilor"
               },
               {
@@ -1587,12 +1587,12 @@
         {
           "id": "21d86333-ff99-4e2d-a582-881e6deba295",
           "label": "Răspunsurile copiilor la simptomele PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/childrens_responses_to_ptsd_symptoms.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/childrens_responses_to_ptsd_symptoms.png",
                 "alt": "Răspunsurile copiilor la simptomele PTSD"
               },
               {
@@ -1605,12 +1605,12 @@
         {
           "id": "9e1fb374-29d9-46d2-a659-e59b4519cfd1",
           "label": "Pot copiii să preia PTSD de la părinți?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/can_children_get_ptsd_from_their_parents.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/can_children_get_ptsd_from_their_parents.png",
                 "alt": "Pot copiii să preia PTSD de la părinți?"
               },
               {
@@ -1623,12 +1623,12 @@
         {
           "id": "aa47a1bc-84a2-4964-944b-40209b259834",
           "label": "Sprijinind copiii să facă față emoțiilor",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/helping_children_cope.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/helping_children_cope.jpg",
                 "content": "Sprijinind copiii să facă față emoțiilor"
               },
               {
@@ -1641,12 +1641,12 @@
         {
           "id": "b4deacc5-20ef-42c3-bac6-9b1f40c187a9",
           "label": "Sfaturi pentru părinți",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/advice_for_parents.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/advice_for_parents.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/advice_for_parents.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/advice_for_parents.jpg",
                 "alt": "Sfaturi pentru părinți"
               },
               {
@@ -1659,12 +1659,12 @@
         {
           "id": "f601d41a-39d0-4cf2-b9d1-9869ff40dc64",
           "label": "Copiii mei sunt bine? Când să caut ajutor din exterior?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/are_my_kids_ok_when_to_seek_outside_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/are_my_kids_ok_when_to_seek_outside_help.jpg",
                 "alt": "Copiii mei sunt bine? Când să caut ajutor din exterior?"
               },
               {
@@ -1677,12 +1677,12 @@
         {
           "id": "1bd3fc6d-71ea-4f33-9054-b763a0e43b2f",
           "label": "Copilul meu ar trebui să urmeze sesiuni de consiliere individuală?",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/should_my_child_have_individual_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/AM/hy/should_my_child_have_individual_counseling.png",
                 "alt": "Copilul meu ar trebui să urmeze sesiuni de consiliere individuală?"
               },
               {

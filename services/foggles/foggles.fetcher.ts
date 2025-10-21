@@ -27,6 +27,8 @@ export const fetchFoggles = async (countryCode: string) => {
   };
 
   try {
+    console.log('🐸 fetchFoggles', countryCode);
+
     const [localFoggles, remoteFoggles] = await Promise.all([getLocalFoggles(), getRemoteFoggles()]);
 
     if (!localFoggles && !remoteFoggles) {

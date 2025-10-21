@@ -12,6 +12,7 @@ import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
 import { Country } from '@/constants/countries';
 import { CountryLanguageMap } from '@/constants/languages';
+import { toolsLocalesMap } from '@/constants/tools';
 
 export default function ChooseLanguage() {
   const { t } = useTranslation();
@@ -48,6 +49,9 @@ export default function ChooseLanguage() {
         onMainAction: () => {
           if (selectedLanguage) {
             KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
+            const tools: any = toolsLocalesMap[country as Country][selectedLanguage];
+            i18n.addResourceBundle(selectedLanguage, 'tools', tools);
+            i18n.changeLanguage(selectedLanguage);
             router.push('/onboarding/onboarding-slider');
           }
         },

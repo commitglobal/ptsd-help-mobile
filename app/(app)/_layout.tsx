@@ -1,8 +1,25 @@
+import i18n from '@/common/config/i18n';
+import { Country } from '@/constants/countries';
+import { STORE_KEYS } from '@/constants/store-keys';
+import { toolsLocalesMap } from '@/constants/tools';
 import { AssetsManagerContextProvider } from '@/contexts/AssetsManagerContextProvider';
 import ToolManagerContextProvider from '@/contexts/ToolManagerContextProvider';
+import { KVStore } from '@/helpers/mmkv';
 import { Stack } from 'expo-router';
+import { useEffect } from 'react';
 
 export default function AppLayout() {
+  useEffect(() => {
+    const country = KVStore().getString(STORE_KEYS.COUNTRY);
+    const selectedLanguage = KVStore().getString(STORE_KEYS.LANGUAGE);
+
+    if (country && selectedLanguage) {
+      const tools = toolsLocalesMap[country.toUpperCase() as Country][selectedLanguage];
+      // ✅ Merge properly instead of overwriting
+      i18n.addResourceBundle(selectedLanguage, 'tools', tools, true, true);
+    }
+  }, []);
+
   return (
     <AssetsManagerContextProvider>
       <ToolManagerContextProvider>
