@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2025-10-24T18:00:00Z",
+  "lastUpdatedAt": "2025-10-24T19:00:00Z",
   "title": "Support",
   "pages": [
     {
@@ -109,8 +109,13 @@
           },
           {
             "type": "button",
-            "label": "Call +374 99 230694 / +374 94 230694",
-            "action": { "type": "phone", "number": "+374 99 230694 / +374 94 230694" }
+            "label": "Call +374 99 230694",
+            "action": { "type": "phone", "number": "+374 99 230694" }
+          },
+          {
+            "type": "button",
+            "label": "Call +374 94 230694",
+            "action": { "type": "phone", "number": "+374 94 230694" }
           },
           {
             "type": "rich-text",
@@ -145,8 +150,13 @@
           },
           {
             "type": "button",
-            "label": "Call 37499544477 | +37410544077",
-            "action": { "type": "phone", "number": "37499544477 | +37410544077" }
+            "label": "Call 37499544477",
+            "action": { "type": "phone", "number": "37499544477" }
+          },
+          {
+            "type": "button",
+            "label": "Call +37410544077",
+            "action": { "type": "phone", "number": "+37410544077" }
           },
           {
             "type": "rich-text",
@@ -178,8 +188,13 @@
           },
           {
             "type": "button",
-            "label": "Call 374 94027790, +374 28721480",
-            "action": { "type": "phone", "number": "374 94027790, +374 28721480" }
+            "label": "Call +374 28721480",
+            "action": { "type": "phone", "number": "+374 28721480" }
+          },
+          {
+            "type": "button",
+            "label": "Call +374 94027790",
+            "action": { "type": "phone", "number": "+374 94027790" }
           },
           {
             "type": "rich-text",
@@ -202,8 +217,13 @@
           },
           {
             "type": "button",
-            "label": "Call +374 10 581814 / +374 77 581814",
-            "action": { "type": "phone", "number": "+374 10 581814 / +374 77 581814" }
+            "label": "Call +374 77 581814",
+            "action": { "type": "phone", "number": "+374 77 581814" }
+          },
+          {
+            "type": "button",
+            "label": "Call +374 10 581814",
+            "action": { "type": "phone", "number": "+374 10 581814" }
           },
           {
             "type": "rich-text",
@@ -225,21 +245,15 @@
             "action": { "type": "phone", "number": "+374 77 277702" }
           },
           { "type": "rich-text", "content": "<div><h1>Միլենիալ հոգեբան</h1><p>Երևան</p><p></p></div>" },
-          { "type": "button", "label": "Call ", "action": { "type": "phone", "number": "" } },
           {
             "type": "rich-text",
-            "content": "<div><h1>Այստեղ հոգեբանական կենտրոն</h1><p>Երևան</p><p>Ադոնց 6</p></div>"
-          },
-          {
-            "type": "button",
-            "label": "Call գրանցումը կայքով",
-            "action": { "type": "phone", "number": "գրանցումը կայքով" }
+            "content": "<div><h1>Այստեղ հոգեբանական կենտրոն</h1><p>Երևան</p><p>Ադոնց 6</p><p>գրանցումը կայքով</p></div>"
           },
           {
             "type": "rich-text",
             "content": "<div><h1>Ուղեկից հոգեբանական կենտրոն</h1><p>Երևան</p><p>Չեխովի 39/2</p></div>"
           },
-          { "type": "button", "label": "Call 37455157557", "action": { "type": "phone", "number": "37455157557" } },
+          { "type": "button", "label": "Call +37455157557", "action": { "type": "phone", "number": "+37455157557" } },
           {
             "type": "rich-text",
             "content": "<div><h1>Երկուսով հոգեբանական մասնագիտացված կենտրոն</h1><p>Երևան</p><p>Զարոբյան 4</p></div>"
@@ -256,8 +270,13 @@
           },
           {
             "type": "button",
-            "label": "Call 077284415/091284414",
-            "action": { "type": "phone", "number": "077284415/091284414" }
+            "label": "Call 091284414",
+            "action": { "type": "phone", "number": "091284414" }
+          },
+          {
+            "type": "button",
+            "label": "Call 077284415",
+            "action": { "type": "phone", "number": "077284415" }
           },
           {
             "type": "rich-text",
@@ -285,8 +304,13 @@
           },
           {
             "type": "button",
-            "label": "Call 099377067/097250635",
-            "action": { "type": "phone", "number": "099377067/097250635" }
+            "label": "Call 097250635",
+            "action": { "type": "phone", "number": "097250635" }
+          },
+          {
+            "type": "button",
+            "label": "Call 099377067",
+            "action": { "type": "phone", "number": "099377067" }
           },
           {
             "type": "rich-text",
@@ -302,7 +326,6 @@
             "type": "rich-text",
             "content": "<div><h1>Ինսայտ հոգեբանական աջակցության կենտրոն</h1><p>Վանաձոր</p><p>Դեմիրճյան 15, 2-րդ հարկ</p></div>"
           },
-          { "type": "button", "label": "Call ", "action": { "type": "phone", "number": "" } },
           {
             "type": "rich-text",
             "content": "<div><h1>ԼՊ հոգեբանական ուսումնախորհրդատվական կենտրոն</h1><p>Երևան</p><p>Վաղարշ Վաղարշյան 12</p></div>"
@@ -359,15 +382,19 @@
             "type": "rich-text",
             "content": "<div><h1>Հոգեբանների բազա և օնլայն դիմելու հարթակ</h1><p>ամենուր</p><p></p></div>"
           },
-          { "type": "button", "label": "Call ", "action": { "type": "phone", "number": "" } },
           {
             "type": "rich-text",
             "content": "<div><h1>Ինթրա հոգեկան առողջության կենտրոն</h1><p>Երևան</p><p>Սևքարեցի Սաքոյի փ, 25ա շենք</p></div>"
           },
           {
             "type": "button",
-            "label": "Call 091263543/010263543",
-            "action": { "type": "phone", "number": "091263543/010263543" }
+            "label": "Call 010263543",
+            "action": { "type": "phone", "number": "010263543" }
+          },
+          {
+            "type": "button",
+            "label": "Call 091263543",
+            "action": { "type": "phone", "number": "091263543" }
           },
           {
             "type": "rich-text",
@@ -380,8 +407,13 @@
           },
           {
             "type": "button",
-            "label": "Call 093115504/099115504",
-            "action": { "type": "phone", "number": "093115504/099115504" }
+            "label": "Call 099115504",
+            "action": { "type": "phone", "number": "099115504" }
+          },
+          {
+            "type": "button",
+            "label": "Call 093115504",
+            "action": { "type": "phone", "number": "093115504" }
           },
           {
             "type": "rich-text",
@@ -399,8 +431,8 @@
           },
           {
             "type": "button",
-            "label": "Call  +374 55 80 80 38",
-            "action": { "type": "phone", "number": " +374 55 80 80 38" }
+            "label": "Call +374 55 80 80 38",
+            "action": { "type": "phone", "number": "+374 55 80 80 38" }
           },
           {
             "type": "rich-text",
@@ -408,8 +440,13 @@
           },
           {
             "type": "button",
-            "label": "Call 374 93 21 95 27 374 10 22 33 23",
-            "action": { "type": "phone", "number": "374 93 21 95 27 374 10 22 33 23" }
+            "label": "Call +374 93 21 95 27",
+            "action": { "type": "phone", "number": "+374 93 21 95 27" }
+          },
+          {
+            "type": "button",
+            "label": "Call +374 10 22 33 23",
+            "action": { "type": "phone", "number": "+374 10 22 33 23" }
           },
           {
             "type": "rich-text",
@@ -417,8 +454,8 @@
           },
           {
             "type": "button",
-            "label": "Call 374 98 76 07 15",
-            "action": { "type": "phone", "number": "374 98 76 07 15" }
+            "label": "Call +374 98 76 07 15",
+            "action": { "type": "phone", "number": "+374 98 76 07 15" }
           },
           { "type": "rich-text", "content": "<div><h1>Քրիստինե Թորոսյան</h1><p>Երևան</p><p></p></div>" },
           { "type": "button", "label": "Call 91 31 01 63", "action": { "type": "phone", "number": "91 31 01 63" } },
