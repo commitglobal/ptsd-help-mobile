@@ -180,7 +180,7 @@ export enum Country {
   // PuertoRico = 'PR',
   // Qatar = 'QA',
   // Reunion = 'RE',
-  Romania = 'RO',
+  // Romania = 'RO',
   // RussianFederation = 'RU',
   // Rwanda = 'RW',
   // SaintBarthelemy = 'BL',
@@ -231,7 +231,7 @@ export enum Country {
   // TurksAndCaicosIslands = 'TC',
   // Tuvalu = 'TV',
   // Uganda = 'UG',
-  Ukraine = 'UA',
+  // Ukraine = 'UA',
   // UnitedArabEmirates = 'AE',
   // UnitedKingdom = 'GB',
   // UnitedStates = 'US',
@@ -250,9 +250,7 @@ export enum Country {
   // Zimbabwe = 'ZW',
 }
 
-export const AppCountries = [Country.Romania, Country.Armenia, Country.Ukraine] as const;
+export const AppCountries = [Country.Armenia] as const;
 export const CountryFlagMap = {
-  [Country.Romania]: require('../assets/images/flags/ro.png'),
   [Country.Armenia]: require('../assets/images/flags/am.png'),
-  [Country.Ukraine]: require('../assets/images/flags/ua.png'),
 } as const;
