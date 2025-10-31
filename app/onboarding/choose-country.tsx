@@ -9,7 +9,7 @@ import { RadioItem } from '@/components/RadioItem';
 import { YStack } from 'tamagui';
 import { KVStore } from '@/helpers/mmkv';
 import { STORE_KEYS } from '@/constants/store-keys';
-import { Country } from '@/constants/countries';
+import { AppCountries, Country, CountryFlagMap } from '@/constants/countries';
 
 const ChooseCountry = () => {
   const { t } = useTranslation();
@@ -17,21 +17,14 @@ const ChooseCountry = () => {
 
   const [selectedCountry, setSelectedCountry] = useState<string>();
 
-  const countriesArray = [Country.Romania, Country.Armenia, Country.Ukraine];
-  const countryFlags = {
-    [Country.Romania]: require('../../assets/images/flags/ro.png'),
-    [Country.Armenia]: require('../../assets/images/flags/am.png'),
-    [Country.Ukraine]: require('../../assets/images/flags/ua.png'),
-  } as const;
-
   const countries = useMemo(
     () =>
-      countriesArray.map((country) => ({
+      AppCountries.map((country: Country) => ({
         id: country,
         label: t(`choose-country.countries.${country}`),
-        avatar: countryFlags[country as keyof typeof countryFlags],
+        avatar: CountryFlagMap[country],
       })),
-    [countriesArray, t]
+    [AppCountries, t]
   );
 
   return (
