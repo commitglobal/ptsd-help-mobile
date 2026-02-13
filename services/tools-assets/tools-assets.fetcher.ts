@@ -110,11 +110,16 @@ export const processToolsAssets = async (
           progressTracker.incrementDownloaded();
         } catch (error) {
           console.error(`Error downloading ${uri}:`, error);
+          // TODO: sentry report this error in future :)
+          // ! Commented by @radulescuandrew: If the file exists, it will keep the existing one, otherwise will just fail a single file
         }
       } else {
         // ! Commented by @radulescuandrew: Will overwrite the content for existing files even if the lastUpdatedAt is not changed, so maybe we don't want that
         // ! Commented by @idormenco: In the unfortunate case when the files are downloaded by the media mapping was not saved we need this or it will show No media mapping found
-        updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
+        // ! 30-12-2025: Commented by @radulescuandrew: i commented it again as the paths (localFilePath and localFileName) are not the same and in case the download fails, only particular files are missing.
+        // ! also I tested it to stop the download and it continues correctly from the point it stopped.
+        // updatedMapping[key as keyof LocalToolsAssetsMapping] = localFilePath;
+
         progressTracker.incrementDownloaded();
       }
     })
@@ -137,6 +142,26 @@ export const processToolsAssets = async (
   const validFolder = getToolsAssetsFolderName(countryCode, languageCode);
 
   await cleanUpUnusedDirectoriesOrFiles(TOOLS_ASSETS_FOLDER, [validFolder]);
+
+  // Save updated mapping if changes occurred
+  if (hasChanges) {
+    try {
+      // Clean up old mapping files
+      const files = await FileSystem.readDirectoryAsync(`${FileSystem.documentDirectory}`);
+      await Promise.all(
+        files
+          .filter((file) => file.startsWith(TOOLS_ASSETS_MAPPING_FILE_NAME) && file.endsWith('.json'))
+          .map((file) => FileSystem.deleteAsync(`${FileSystem.documentDirectory}${file}`))
+      );
+
+      // Save new mapping
+      const mappingPath = getLocalToolsAssetsMappingFilePath(countryCode, languageCode);
+      await FileSystem.writeAsStringAsync(mappingPath, JSON.stringify(updatedMapping, null, 2));
+      console.log(`Mapping saved to: ${mappingPath}`);
+    } catch (error) {
+      console.error('Error saving local mapping:', error);
+    }
+  }
 
   if (!updatedMapping || Object.keys(updatedMapping).length === 0) {
     return null;
@@ -164,17 +189,23 @@ export const fetchToolsAssets = async (
   // Process remote mapping
   const updatedMapping = await processToolsAssets(remoteMapping, localMapping, countryCode, languageCode, onProgress);
 
-  // const mappedMediaMapping = updatedMapping
-  //   ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
-  //   : null;
+  // We need to add the document directory (to create the absolute path) because we are saving only the relative paths in the local mapping
+  const mappedMediaMapping = updatedMapping
+    ? Object.fromEntries(Object.entries(updatedMapping).map(([key, value]) => [key, addDocumentDirectory(value)]))
+    : null;
 
-  if (!localMapping && updatedMapping) {
-    await FileSystem.writeAsStringAsync(
-      getLocalToolsAssetsMappingFilePath(countryCode, languageCode),
-      JSON.stringify(updatedMapping, null, 2)
-    );
-    console.log(`🔨 Updated tools saved to: ${getLocalToolsAssetsMappingFilePath(countryCode, languageCode)}`);
-  }
+  // ! Commented by @radulescuandrew: We are saving the mapping in the processToolsAssets function which will run everytime.
+  // if (!localMapping && updatedMapping) {
+  //   await FileSystem.writeAsStringAsync(
+  //     getLocalToolsAssetsMappingFilePath(countryCode, languageCode),
+  //     JSON.stringify(updatedMapping, null, 2)
+  //   );
+  //   console.log(`🔨 Updated tools saved to: ${getLocalToolsAssetsMappingFilePath(countryCode, languageCode)}`);
+  // }
 
-  return updatedMapping;
+  return mappedMediaMapping;
+};
+
+const addDocumentDirectory = (path: string) => {
+  return `${FileSystem.documentDirectory}${path}`;
 };

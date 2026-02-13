@@ -49,6 +49,9 @@ export default function ChangeCountry() {
           }
         },
         mainActionDisabled: !selectedCountry,
+      }}
+      footerContainerStyle={{
+        paddingBottom: Platform.OS === 'ios' ? insets.bottom + 64 : insets.bottom + 16,
       }}>
       <FlashList
         ListHeaderComponent={() => (

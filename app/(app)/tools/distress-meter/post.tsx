@@ -95,14 +95,14 @@ const DistressMeterPost = () => {
       {distressMeterInfoPostOpen && (
         <DistressMeterInfo
           setDistressMeterInfoSheetOpen={onCloseDistressMeterInfoPost}
-          snapPoints={[45]}
+          snapPoints={[50]}
           infoText={t('distress-meter.info-post')}
         />
       )}
       {distressMeterInfoSheetOpen && (
         <DistressMeterInfo
           setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen}
-          snapPoints={[45]}
+          snapPoints={[50]}
           infoText={t('distress-meter.info')}
         />
       )}

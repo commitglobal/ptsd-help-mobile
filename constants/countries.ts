@@ -180,7 +180,7 @@ export enum Country {
   // PuertoRico = 'PR',
   // Qatar = 'QA',
   // Reunion = 'RE',
-  // Romania = 'RO',
+  Romania = 'RO',
   // RussianFederation = 'RU',
   // Rwanda = 'RW',
   // SaintBarthelemy = 'BL',
@@ -250,7 +250,8 @@ export enum Country {
   // Zimbabwe = 'ZW',
 }
 
-export const AppCountries = [Country.Armenia] as const;
+export const AppCountries = [Country.Armenia, Country.Romania] as const;
 export const CountryFlagMap = {
   [Country.Armenia]: require('../assets/images/flags/am.png'),
+  [Country.Romania]: require('../assets/images/flags/ro.png'),
 } as const;

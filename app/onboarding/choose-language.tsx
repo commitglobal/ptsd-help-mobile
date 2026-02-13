@@ -71,6 +71,7 @@ export default function ChooseLanguage() {
         contentContainerStyle={{
           padding: 24,
         }}
+        extraData={selectedLanguage}
         bounces={false}
         ItemSeparatorComponent={() => <YStack height={16} />}
         data={languages}

@@ -25,7 +25,7 @@ export default function Support() {
             key={item.id}
             item={{ ...item, icon: getLocalContentFilePath(item.icon) }}
             onPress={() => {
-              console.log('🚀 ~ Support ~ item:', item);
+              // console.log('🚀 ~ Support ~ item:', item);
               if (item.type === 'category') {
                 router.push({ pathname: '/content/category', params: { type: 'support', pageId: item.id } });
               } else {

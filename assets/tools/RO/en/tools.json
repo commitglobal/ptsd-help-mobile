@@ -38,17 +38,21 @@
     "recreational-activities": "Recreational Activities",
     "recreational-activities-alone": "Recreational Activities: Time Spent Alone",
     "recreational-activities-city": "Recreational Activities: In The City",
-    "recreational-activities-nature": "Recreational Activities: In Nature"
+    "recreational-activities-nature": "Recreational Activities: In Nature",
+    "pause": "Pause",
+    "observe-thoughts": "Observe Thoughts",
+    "clouds": "Clouds",
+    "river": "River"
   },
   "symptoms": {
+    "sleep_problems": "Sleep Problems",
     "reminded_of_trauma": "Reminded of Trauma",
     "avoiding_triggers": "Avoiding Triggers",
     "disconnected_from_people": "Disconnected from People",
     "disconnected_from_reality": "Disconnected from Reality",
     "sad_hopeless": "Sad/Hopeless",
     "worried_anxious": "Worried/Anxious",
-    "angry": "Angry",
-    "sleep_problems": "Sleep Problems"
+    "angry": "Angry"
   },
   "relationships": {
     "title": "Relationships",
@@ -549,91 +553,91 @@
         "reminder-time": "Daily",
         "list": [
           {
-            "id": 1,
+            "id": "1",
             "text": "Choose clothes to wear tomorrow"
           },
           {
-            "id": 2,
+            "id": "2",
             "text": "Prepare lunch for tomorrow"
           },
           {
-            "id": 3,
+            "id": "3",
             "text": "Prepare dinner for tomorrow and put it in the fridge"
           },
           {
-            "id": 4,
+            "id": "4",
             "text": "Take a long bath or shower"
           },
           {
-            "id": 5,
+            "id": "5",
             "text": "Write thank you notes or short messages to friends"
           },
           {
-            "id": 6,
+            "id": "6",
             "text": "Browse the internet (only non-stressful topics) or research future purchases (cars, appliances, vacations)"
           },
           {
-            "id": 7,
+            "id": "7",
             "text": "Watch movies or TV show episodes you haven't seen in a long time (no action movies or thrillers)"
           },
           {
-            "id": 8,
+            "id": "8",
             "text": "Take the dog for a long walk"
           },
           {
-            "id": 9,
+            "id": "9",
             "text": "Take care of your pets"
           },
           {
-            "id": 10,
+            "id": "10",
             "text": "Listen to slow, relaxing or instrumental music"
           },
           {
-            "id": 11,
+            "id": "11",
             "text": "Gather old bills and statements and throw them away if no longer needed"
           },
           {
-            "id": 12,
+            "id": "12",
             "text": "Organize collections if you have any - photos, old letters, books or other items"
           },
           {
-            "id": 13,
+            "id": "13",
             "text": "Sort laundry or fold clothes"
           },
           {
-            "id": 14,
+            "id": "14",
             "text": "Polish your shoes"
           },
           {
-            "id": 15,
+            "id": "15",
             "text": "Iron or repair clothes"
           },
           {
-            "id": 16,
+            "id": "16",
             "text": "Write in your journal"
           },
           {
-            "id": 17,
+            "id": "17",
             "text": "Do light exercise to relax your muscles"
           },
           {
-            "id": 18,
+            "id": "18",
             "text": "Do a pedicure, manicure or facial treatment"
           },
           {
-            "id": 19,
+            "id": "19",
             "text": "Sweep or mop the kitchen floor"
           },
           {
-            "id": 20,
+            "id": "20",
             "text": "Floss your teeth"
           },
           {
-            "id": 21,
+            "id": "21",
             "text": "Knit"
           },
           {
-            "id": 22,
+            "id": "22",
             "text": "Start another handmade project"
           }
         ]
@@ -643,75 +647,75 @@
         "info": "Staying awake until you are truly sleepy can help build sleep drive and make it easier to fall asleep. Not sure about the difference between sleepy and tired? Check out 'Sleep 101' in the Learn More section. Use these activities to stay awake until bedtime. If you're not sleepy at that time, try using techniques to relax your body and quiet your mind. Remember not to stay awake when sleepy if it could interfere with activities or responsibilities where drowsiness could be dangerous.",
         "list": [
           {
-            "id": 1,
+            "id": "1",
             "text": "Work on a hobby you're interested in"
           },
           {
-            "id": 2,
+            "id": "2",
             "text": "Read an engaging book"
           },
           {
-            "id": 3,
+            "id": "3",
             "text": "Watch an interesting series"
           },
           {
-            "id": 4,
+            "id": "4",
             "text": "Write a long letter"
           },
           {
-            "id": 5,
+            "id": "5",
             "text": "Call a friend"
           },
           {
-            "id": 6,
+            "id": "6",
             "text": "Do light exercises"
           },
           {
-            "id": 7,
+            "id": "7",
             "text": "Get up and take a few steps"
           },
           {
-            "id": 8,
+            "id": "8",
             "text": "Do household chores"
           },
           {
-            "id": 9,
+            "id": "9",
             "text": "Listen to upbeat music (sing)"
           },
           {
-            "id": 10,
+            "id": "10",
             "text": "Dance"
           },
           {
-            "id": 11,
+            "id": "11",
             "text": "Watch a comedy"
           },
           {
-            "id": 12,
+            "id": "12",
             "text": "Turn on all the lights"
           },
           {
-            "id": 13,
+            "id": "13",
             "text": "Go outside (if it's safe to leave the house)"
           },
           {
-            "id": 14,
+            "id": "14",
             "text": "Prepare lunch for tomorrow"
           },
           {
-            "id": 15,
+            "id": "15",
             "text": "Prepare meals for the rest of the week"
           },
           {
-            "id": 16,
+            "id": "16",
             "text": "Organize laundry"
           },
           {
-            "id": 17,
+            "id": "17",
             "text": "Organize files on computer"
           },
           {
-            "id": 18,
+            "id": "18",
             "text": "Organize drawers or shelves"
           }
         ]
@@ -721,83 +725,83 @@
         "info": "Getting up from bed and doing relaxing activities when you can't sleep can help you associate the bed only with sleep. Use some of the activity ideas to stay relaxed and occupied until you become very sleepy and ready to return to bed. When you get up, you should do things that are engaging but calming. If it's difficult for you to get out of bed, prepare a quiet and comfortable place where you can go to make getting up easier.",
         "list": [
           {
-            "id": 1,
+            "id": "1",
             "text": "Look through catalogs/magazines"
           },
           {
-            "id": 2,
+            "id": "2",
             "text": "Update your contact list or start one online or on paper"
           },
           {
-            "id": 3,
+            "id": "3",
             "text": "Organize emails and bills"
           },
           {
-            "id": 4,
+            "id": "4",
             "text": "Play solitaire online or with cards if you're not very competitive"
           },
           {
-            "id": 5,
+            "id": "5",
             "text": "Read"
           },
           {
-            "id": 6,
+            "id": "6",
             "text": "Make a shopping list for the current week"
           },
           {
-            "id": 7,
+            "id": "7",
             "text": "Plan the menu for upcoming dinners"
           },
           {
-            "id": 8,
+            "id": "8",
             "text": "Clean and organize the coffee table, dining area, kitchen counter or desk"
           },
           {
-            "id": 9,
+            "id": "9",
             "text": "Create a list of activities you'd like to do on weekends or vacation"
           },
           {
-            "id": 10,
+            "id": "10",
             "text": "Organize photo album or journal"
           },
           {
-            "id": 11,
+            "id": "11",
             "text": "Fold clothes and put them away"
           },
           {
-            "id": 12,
+            "id": "12",
             "text": "Buy gifts for birthdays or holidays"
           },
           {
-            "id": 13,
+            "id": "13",
             "text": "Read a magazine or light book"
           },
           {
-            "id": 14,
+            "id": "14",
             "text": "Make a materials list for a home do-it-yourself project"
           },
           {
-            "id": 15,
+            "id": "15",
             "text": "Choose two drawers to organize (in office, bathroom or kitchen)"
           },
           {
-            "id": 16,
+            "id": "16",
             "text": "Watch repetitive TV shows or commercials"
           },
           {
-            "id": 17,
+            "id": "17",
             "text": "Organize your CD or DVD collection and choose some to donate or sell if you no longer need them or don't like them"
           },
           {
-            "id": 18,
+            "id": "18",
             "text": "Write thoughts in a notebook for a while. Use this exercise to get rid of negative thoughts."
           },
           {
-            "id": 19,
+            "id": "19",
             "text": "Crochet or do an activity you can easily stop if you get sleepy"
           },
           {
-            "id": 20,
+            "id": "20",
             "text": "Read a children's book. These are often soothing and amusing"
           }
         ]
@@ -807,83 +811,83 @@
         "info": "Getting up at your planned time in the morning helps maintain a consistent schedule and prevents associating being in bed with being awake. Use these ideas to help stay motivated to start your day. Consider setting a reminder that coincides with when you want to wake up.",
         "list": [
           {
-            "id": 1,
+            "id": "1",
             "text": "Meditate or pray"
           },
           {
-            "id": 2,
+            "id": "2",
             "text": "Watch the sunrise"
           },
           {
-            "id": 3,
+            "id": "3",
             "text": "Take the dog for a walk if you're in a safe area"
           },
           {
-            "id": 4,
+            "id": "4",
             "text": "Read the newspaper or read news online"
           },
           {
-            "id": 5,
+            "id": "5",
             "text": "Exercise at home or go to the gym"
           },
           {
-            "id": 6,
+            "id": "6",
             "text": "Go shopping at the store"
           },
           {
-            "id": 7,
+            "id": "7",
             "text": "Prepare lunch for yourself or the whole family"
           },
           {
-            "id": 8,
+            "id": "8",
             "text": "Enjoy being able to prepare for work and having time to get children ready for school without rushing"
           },
           {
-            "id": 9,
+            "id": "9",
             "text": "Organize children's toys and choose items to donate"
           },
           {
-            "id": 10,
+            "id": "10",
             "text": "Sort clothes for washing or iron laundry"
           },
           {
-            "id": 11,
+            "id": "11",
             "text": "Plan family budget in excel or on paper"
           },
           {
-            "id": 12,
+            "id": "12",
             "text": "Send emails to friends or check work email"
           },
           {
-            "id": 13,
+            "id": "13",
             "text": "Clean up old hard drives or DVDs"
           },
           {
-            "id": 14,
+            "id": "14",
             "text": "Organize bills, documents or other papers"
           },
           {
-            "id": 15,
+            "id": "15",
             "text": "Prepare ingredients for dinner (marinate meat, cut vegetables etc)"
           },
           {
-            "id": 16,
+            "id": "16",
             "text": "Make the bed and clean the room"
           },
           {
-            "id": 17,
+            "id": "17",
             "text": "Pull back curtains and blinds"
           },
           {
-            "id": 18,
+            "id": "18",
             "text": "Sweep inside or outside the house"
           },
           {
-            "id": 19,
+            "id": "19",
             "text": "Take care of indoor plants or garden, water the flowers"
           },
           {
-            "id": 20,
+            "id": "20",
             "text": "Check task list for the current day or week"
           }
         ]

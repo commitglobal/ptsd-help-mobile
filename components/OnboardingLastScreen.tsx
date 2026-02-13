@@ -24,35 +24,36 @@ export const OnboardingLastScreen = () => {
   };
 
   return (
-    <ScrollView
-      //! this width is important for the pagination to work
-      width={width}
-      bounces={false}
-      showsVerticalScrollIndicator={false}
-      contentContainerStyle={{
-        padding: '$md',
-        paddingBottom: '$xl',
-        paddingHorizontal: '$xl',
-        gap: '$md',
-        flexGrow: 1,
-        marginTop: '$lg',
-      }}>
-      <Typography preset='heading' textAlign='center'>
-        {t('onboarding.welcome.title')}
-      </Typography>
-      <Typography>{t('onboarding.welcome.description')}</Typography>
+    <YStack flex={1}>
+      <ScrollView
+        //! this width is important for the pagination to work
+        width={width}
+        bounces={false}
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{
+          padding: '$md',
+          paddingBottom: '$xl',
+          paddingHorizontal: '$xl',
+          gap: '$md',
+          flexGrow: 1,
+          marginTop: '$lg',
+        }}>
+        <Typography preset='heading' textAlign='center'>
+          {t('onboarding.welcome.title')}
+        </Typography>
+        <Typography>{t('onboarding.welcome.description')}</Typography>
 
-      <Typography preset='subheading'>{t('onboarding.welcome.personalize.title')}</Typography>
-      {listItems.map((item) => (
-        <BulletPoint key={item} text={item} />
-      ))}
-      <Typography preset='helper'>{t('onboarding.welcome.personalize.modify_preferences')}</Typography>
-
-      <YStack gap='$md' marginTop='auto'>
+        <Typography preset='subheading'>{t('onboarding.welcome.personalize.title')}</Typography>
+        {listItems.map((item) => (
+          <BulletPoint key={item} text={item} />
+        ))}
+        <Typography preset='helper'>{t('onboarding.welcome.personalize.modify_preferences')}</Typography>
+      </ScrollView>
+      <YStack width={width} padding='$md' gap='$md' marginTop='auto'>
         <Button preset='secondary' onPress={handleStart}>
           {t('onboarding.welcome.actions.start')}
         </Button>
       </YStack>
-    </ScrollView>
+    </YStack>
   );
 };

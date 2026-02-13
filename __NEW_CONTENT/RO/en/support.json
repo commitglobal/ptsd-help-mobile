@@ -1,0 +1,205 @@
+{
+  "lastUpdatedAt": "2026-01-05T00:00:00Z",
+  "title": "Support",
+  "pages": [
+    {
+      "id": "a82f310c-5de9-4342-99a8-25eef443a712",
+      "type": "topic",
+      "label": "Crisis Resources",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/crisis_resources.png",
+      "content": {
+        "sections": [
+          {
+            "type": "rich-text",
+            "content": "<div>For any crisis, including medical emergencies, go to the nearest emergency room or call:</div>"
+          },
+          {
+            "type": "button",
+            "label": "112",
+            "action": {
+              "type": "phone",
+              "number": "112"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>Romanian Alliance for Suicide Prevention:</div>"
+          },
+          {
+            "type": "button",
+            "label": "Call 0800-801-200",
+            "action": {
+              "type": "phone",
+              "number": "0800801200"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>National emergency number for victims of domestic violence:</div>"
+          },
+          {
+            "type": "button",
+            "label": "Call 0800-500-333",
+            "action": {
+              "type": "phone",
+              "number": "0800500333"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>Personal contacts:</div>"
+          },
+          {
+            "type": "contact",
+            "label": "Personal contacts"
+          }
+        ]
+      }
+    },
+    {
+      "id": "a243e909-a625-4dc4-b545-0ae5493801cd",
+      "type": "topic",
+      "label": "Find Professional Care",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/find_professional_care.png",
+      "content": {
+        "sections": [
+          {
+            "type": "rich-text",
+            "content": "<div>&nbsp;</div><div>Useful contacts for critical situations:</div><ul><li>If you are in a critical situation and feel the need to ask for help, do not hesitate and call the emergency service or one of the available services for your situation:</li></ul>"
+          },
+          {
+            "type": "button",
+            "label": "Find a useful contact",
+            "action": {
+              "type": "external",
+              "url": "https://sanatateamintala.ro/ro/pentru-urgente"
+            }
+          },
+          {
+            "type": "button",
+            "label": "DepreHub.ro",
+            "action": {
+              "type": "external",
+              "url": "https://deprehub.ro/psihoterapie-gratuita"
+            }
+          },
+          {
+            "type": "button",
+            "label": "Call 0-374-456-420",
+            "action": {
+              "type": "phone",
+              "number": "0374456420"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>Contact the Romanian Alliance for Suicide Prevention:</div>"
+          },
+          {
+            "type": "button",
+            "label": "Romanian Alliance for Suicide Prevention",
+            "action": {
+              "type": "phone",
+              "number": "0800801200"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>For counseling in suicidal crisis you can send an email 24/7 at sos@antisuicid.ro<div><ul><li><div><div>Obregia Hospital telephone exchange, Monday to Friday between 8:00 am - 4:00 pm</div></div></li></ul>"
+          },
+          {
+            "type": "button",
+            "label": "Call 0213-320-411",
+            "action": {
+              "type": "phone",
+              "number": "0213320411"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<ul><li>Emergency room for Adult Psychiatry - Obregia Hospital</li></ul>"
+          },
+          {
+            "type": "button",
+            "label": "Call the emergency room",
+            "action": {
+              "type": "phone",
+              "number": "0770415316"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<ul><li>Together for Humanity Social Center in Bucharest offers free psychological counseling for social cases that are not in psychological crisis</li></ul>"
+          },
+          {
+            "type": "button",
+            "label": "Together for Humanity Social Center",
+            "action": {
+              "type": "external",
+              "url": "https://www.centrulsocialtfh.ro/cere-ajutor"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<ul><li>Unique number 119 for reporting cases of child abuse, exploitation, or neglect.</li></ul>"
+          },
+          {
+            "type": "button",
+            "label": "Call 119",
+            "action": {
+              "type": "phone",
+              "number": "119"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "c7027a84-6049-4275-8bd2-638461817881",
+      "type": "category",
+      "label": "Grow Your Support Circle",
+      "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/grow_your_support.png",
+      "topics": [
+        {
+          "id": "2f1c9083-72af-4d08-a3da-0e8fec54ffaf",
+          "label": "Someone You Trust",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/someone_you_trust.png",
+          "content": {
+            "sections": [
+              {
+                "type": "rich-text",
+                "content": "<p>&nbsp;</p><p>Having someone you can trust and open up to is a gift. It doesn't mean that person has to be perfect – just that you feel comfortable enough sharing your experience with them and know it’s okay to be yourself.</p><p>&nbsp;</p><p>Take a moment to appreciate that you have someone you can trust. Studies show that expressing appreciation or gratitude toward another person can help boost your mood. Is there someone in your life you could spontaneously call or message?</p><p>&nbsp;</p><p>Just having a conversation with someone you trust can often be very helpful. Call or visit a friend or family member, and if you feel adventurous, open up to them a bit more than usual.</p>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "951050f0-ddb5-4e7d-aec3-aaea6199786e",
+          "label": "I Feel Lonely",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/you_feel_alone.png",
+          "content": {
+            "sections": [
+              {
+                "type": "rich-text",
+                "content": "<div><div>&nbsp;</div><div>The feeling of loneliness or isolation is a common experience. Everyone feels this way sometimes, and it’s especially common for those who have gone through traumatic experiences. It can sometimes be hard to connect with others or to feel understood by them. You may even feel irritated or annoyed when around others.</div><div>&nbsp;</div><div><div><div>First of all, it's important to recognize that going through a traumatic experience often leads to avoiding other people – whether you’re unsure or afraid of how they'll react, are unsure of how you'll behave around them, or simply want to be alone.</div><div>&nbsp;</div><div><div><div>If you feel lonely or isolated, it's very important to try to connect with others and find people you can spend time together with.</div><div>&nbsp;</div><div><div><div>To start connecting with others, consider one of these options:</div><ul><li>Call or message a friend you haven’t spoken to in a long time</li><li>Join a meet-up group based on a hobby or interest of yours</li><li>If you are religious, attend a service or group meeting</li><li>No matter how small, try to do something nice for another person today</li><li>Be the first to start a conversation next time you’re around someone you wouldn’t otherwise talk to</li><li>Smile and say hello to someone in a situation where you normally wouldn’t</li><li>Write a letter or send an email to a loved one</li><li>Volunteer at a local charity</li><li>Surprise someone with a small gift or help them with something</li></ul></div></div></div></div></div></div></div>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "44da46f7-2aaf-400b-baae-41baa5d5f3f9",
+          "label": "Grow Your Support Circle",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/grow_your_support.png",
+          "content": {
+            "sections": [
+              {
+                "type": "rich-text",
+                "content": "<div><div>&nbsp;</div><div>Having healthy and satisfying support from others in your life is important for good quality of life. If you already have at least one kind of support, you’re doing well.</div><div>&nbsp;</div><div><div><div>Having satisfying relationships and friendships with others takes a little effort – by showing those you love that you spend time with them and are interested in them.</div><div>&nbsp;</div><div><div><div>Investing time in existing relationships can bring benefits – you’ll probably feel better, and the bonds with those you already love will grow stronger.</div><div>&nbsp;</div><div><div><div>To develop your existing support, try one of the following:</div><ul><li>Call a friend and invite them to do something together this week.</li><li>Ask a family member to spend quality time with you, doing something you both enjoy.</li><li>Spend time with a friend or family member doing something you know they like, even if you aren’t as excited about it.</li><li>Have a conversation with someone who cares about you and give them your complete attention – as the other person speaks with you, make sure you really understand what they say.</li><li>Connect with other people who have had similar experiences as yours.</li></ul></div></div></div></div></div></div></div>"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

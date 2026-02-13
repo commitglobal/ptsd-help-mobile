@@ -15,21 +15,20 @@ export const MonthlyEvaluationCard = ({ ...props }: CardProps) => {
       <XStack borderRadius='$4'>
         <YStack flex={1} gap='$xs'>
           <Typography color='white' fontWeight='bold' fontSize={14}>
-            {t('dashboard.monthly-evaluation')}
+            {t('dashboard.welcome-message')}
           </Typography>
           <Typography color='white' preset='helper'>
-            {t('dashboard.evaluate')}
+            {t('dashboard.welcome-description')}
           </Typography>
+          <XStack alignItems='center' gap='$xs'>
+            <Typography color='white'>{t('dashboard.welcome-discover-tools')}</Typography>
+            <Icon icon='chevronRight' width={16} height={16} color='white' />
+          </XStack>
         </YStack>
 
         <XStack flex={1} justifyContent='center' alignItems='center'>
-          <Image source={require('../assets/images/evaluation.png')} />
+          <Image width='100%' height={90} objectFit='contain' source={require('../assets/images/welcome-image.png')} />
         </XStack>
-      </XStack>
-
-      <XStack alignItems='center' gap='$xs'>
-        <Typography color='white'>{t('dashboard.start')}</Typography>
-        <Icon icon='chevronRight' width={16} height={16} color='white' />
       </XStack>
     </Card>
   );

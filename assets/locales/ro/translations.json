@@ -1,163 +1,191 @@
 {
   "common": {
-    "start": "RO/ro: Start",
-    "next": "RO/ro: Next",
-    "previous": "RO/ro: Previous",
-    "finish": "RO/ro: Finish",
-    "save": "RO/ro: Save",
-    "cancel": "RO/ro: Cancel",
-    "delete": "RO/en: Delete",
-    "unsaved-data": "RO/en: You have unsaved changes. Are you sure you want to leave this page?",
-    "discard": "RO/en: Discard",
-    "sure": "RO/en: Yes, I'm sure",
-    "delete-confirmation": "RO/en: Are you sure you want to delete?",
-    "yes": "RO/en: Yes",
-    "no": "RO/en: No"
+    "start": "Start",
+    "next": "Următorul",
+    "previous": "Anterior",
+    "finish": "Finalizare",
+    "save": "Salvează",
+    "cancel": "Anulează",
+    "delete": "Șterge",
+    "close": "Închide",
+    "unsaved-data": "Aveți modificări nesalvate. Sigur doriți să părăsiți această pagină?",
+    "discard": "Renunță",
+    "sure": "Da, sunt sigur",
+    "delete-confirmation": "Sunteți sigur că doriți să ștergeți?",
+    "yes": "Da",
+    "no": "Nu",
+    "generic-error": "Ceva nu a funcționat și nu am putut prelua datele.",
+    "recreational-activities": "Activități recreative",
+    "no-favorites": "Nu exista niciun instrument adaugat la favorite",
+    "no-symptoms": "Nu există simptome disponibile",
+    "no-learn-content": "Nu există resurse de învățare disponibile",
+    "pick-image": "Alege o imagine"
   },
   "general": {
-    "done": "RO/ro: Done",
-    "ptsd-help": "RO/ro: PTSD Help",
-    "required": "RO/ro: This field is required"
+    "done": "Gata",
+    "ptsd-help": "PTSD Help",
+    "required": "Acest câmp este obligatoriu"
+  },
+  "drawer": {
+    "about": "Despre aplicație",
+    "my-profile": "Profilul meu",
+    "settings": "Setări",
+    "privacy-policy": "Politica de confidențialitate"
   },
   "languages": {
-    "en": "RO/ro: English",
-    "am": "RO/ro: Armenian",
-    "uk": "RO/ro: Ukrainian",
-    "hy": "RO/ro: Armenian"
+    "en": "Engleză",
+    "ro": "Română",
+    "uk": "Ucraineană",
+    "hy": "Armeană"
   },
   "licence-agreement": {
-    "header-title": "RO/ro: Licence Agreement",
-    "title": "RO/ro: Licence Agreement for the final user (EULA)",
-    "p1": "RO/ro: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
-    "l1": "RO/ro: Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt",
-    "l2": "RO/ro: Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.",
-    "accept": "RO/ro: Accept"
+    "header-title": "Acord de licență",
+    "title": "Acord de licență pentru utilizatorul final (EULA)",
+    "p1": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.",
+    "l1": "Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt",
+    "l2": "Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus. Nullam accumsan lorem in dui.",
+    "accept": "Acceptă"
   },
   "choose-country": {
-    "title": "RO/ro: Localization",
-    "choose": "RO/ro: Choose your country",
-    "subtitle": "RO/ro: Please choose the country you are in right now or the country for which you wish to view resources.",
-    "next": "RO/ro: Next",
+    "title": "Localizare",
+    "choose": "Alegeți țara",
+    "subtitle": "Vă rugăm să selectați țara în care vă aflați acum sau țara pentru care doriți să vedeți resursele.",
+    "next": "Următorul",
     "countries": {
-      "RO": "RO/ro: Romania",
-      "AM": "RO/ro: Armenia",
-      "UA": "RO/ro: Ukraine"
+      "RO": "România",
+      "AM": "Armenia",
+      "UA": "Ucraina"
     }
   },
   "choose-language": {
-    "title": "RO/ro: Language",
-    "choose": "RO/ro: Choose the app language",
-    "subtitle": "RO/ro: Please choose the language of the app content.",
-    "next": "RO/ro: Next"
+    "title": "Limbă",
+    "choose": "Alegeți limba aplicației",
+    "subtitle": "Vă rugăm să alegeți limba conținutului aplicației.",
+    "next": "Următorul"
   },
   "contact": {
-    "title": "RO/ro: Contacts list",
-    "permission-denied": "RO/ro: Permission denied"
+    "title": "Listă contacte",
+    "permission-denied": "Permisiune refuzată"
   },
   "settings": {
-    "title": "Settings",
-    "change-country-and-language": "Change country and language",
-    "pick-contacts": "Pick support contacts",
-    "enable-stress-meter": "Enable stress meter"
+    "title": "Setări",
+    "change-country-and-language": "Schimbă țara și limba",
+    "pick-contacts": "Alege contacte de sprijin",
+    "enable-stress-meter": "Activează bara de stres"
   },
   "onboarding": {
     "learn": {
-      "title": "RO/ro: Learn",
-      "description": "RO/ro: Learn more information about PTSD - for you or for someone you care about."
+      "title": "Învață",
+      "description": "Află mai multe informații despre PTSD - pentru tine sau pentru cineva drag."
     },
     "monitor-progress": {
-      "title": "RO/ro: Monitor Progress",
-      "description": "RO/ro: Monitor your progress over time and get feedback."
+      "title": "Monitorizează Progresul",
+      "description": "Urmărește-ți progresul în timp și primește feedback."
     },
     "manage-symptoms": {
-      "title": "RO/ro: Manage Symptoms",
-      "description": "RO/ro: Choose your favourite instruments for managing stress."
+      "title": "Gestionează Simptomele",
+      "description": "Alege instrumentele tale preferate pentru gestionarea stresului."
     },
     "get-support": {
-      "title": "RO/ro: Get Support",
-      "description": "RO/ro: Connect with support and resources that can truly help you."
+      "title": "Primește Sprijin",
+      "description": "Conectează-te cu sprijin și resurse care chiar te pot ajuta."
     },
     "welcome": {
-      "title": "RO/ro: Welcome to PTSD Help",
-      "description": "RO/ro: This app is designed to support trauma survivors. Please note that it cannot provide medical diagnosis or treatment - these services can only be provided by healthcare professionals. But it can help you learn more about PTSD and manage your symptoms, by providing you with the necessary tools and information for managing the distress that trauma can cause.",
+      "title": "Bine ai venit la PTSD Help",
+      "description": "Această aplicație este concepută pentru a sprijini supraviețuitorii traumei. Vă rugăm să rețineți că nu poate oferi diagnostic sau tratament medical - aceste servicii pot fi oferite doar de profesioniști din domeniul sănătății. Dar vă poate ajuta să aflați mai multe despre PTSD și să vă gestionați simptomele, punându-vă la dispoziție instrumentele și informațiile necesare pentru a gestiona disconfortul pe care trauma îl poate cauza.",
       "actions": {
-        "start": "RO/ro: Start using PTSD Help",
-        "personalize": "RO/ro: Personalize your experience"
+        "start": "Începe să folosești PTSD Help",
+        "personalize": "Personalizează-ți experiența"
       },
       "personalize": {
-        "title": "RO/ro: Personalize the app by adding:",
-        "l1": "RO/ro: Contact information for friends, family or your support network",
-        "l2": "RO/ro: Soothing photos of nature or places that are important to you",
-        "modify_preferences": "RO/ro: You can always modify your preferences later from the settings menu."
+        "title": "Personalizează aplicația adăugând:",
+        "l1": "Informații de contact pentru prieteni, familie sau rețeaua ta de sprijin",
+        "l2": "Fotografii liniștitoare cu natura sau locuri importante pentru tine",
+        "modify_preferences": "Poți oricând să îți modifici preferințele mai târziu din meniul de setări."
       }
     }
   },
   "tabs": {
-    "home": "RO/ro: Home",
-    "manage": "RO/ro: Manage",
-    "track": "RO/ro: Track",
-    "learn": "RO/ro: Learn",
-    "support": "RO/ro: Support"
+    "home": "Acasă",
+    "manage": "Instrumente",
+    "track": "Monitorizare",
+    "learn": "Învață",
+    "support": "Sprijin"
   },
   "symptoms": {
-    "trauma": "RO/ro: Reminded of trauma",
-    "avoiding-triggers": "RO/ro: Avoiding triggers",
-    "disconnected-people": "RO/ro: Disconnected from people",
-    "disconnected-reality": "RO/ro: Disconnected from reality",
-    "sad-hopeless": "RO/ro: Sad/Hopeless",
-    "worried-anxious": "RO/ro: Worried/Anxious",
-    "angry": "RO/ro: Angry"
+    "trauma": "Reamintire de traumă",
+    "avoiding-triggers": "Evitarea declanșatorilor",
+    "disconnected-people": "Deconectare de la oameni",
+    "disconnected-reality": "Deconectare de la realitate",
+    "sad-hopeless": "Trist/Deznădăjduit",
+    "worried-anxious": "Îngrijorat/Anxios",
+    "angry": "Furios"
   },
   "dashboard": {
-    "feeling": "RO/ro: How are you feeling today?",
-    "see-all": "RO/ro: See all",
-    "monthly-evaluation": "RO/ro: Take your monthly evaluation",
-    "evaluate": "RO/ro: Evaluate the intensity of your PTSD symptoms by answering 20 simple questions.",
-    "start": "RO/ro: Start evaluation",
-    "learn": "RO/ro: Learn about PTSD",
-    "read": "RO/ro: Read",
-    "favorite-instruments": "RO/ro: Favorite Tools"
+    "feeling": "Cum te simți astăzi?",
+    "see-all": "Vezi tot",
+    "monthly-evaluation": "Fă evaluarea lunară",
+    "evaluate": "Evaluează intensitatea simptomelor PTSD răspunzând la 20 de întrebări simple.",
+    "start": "Începe evaluarea",
+    "welcome-message": "Bine ai venit la PTSD Help",
+    "welcome-description": "Descoperă instrumente și resurse menite să te sprijine în momentele dificile și să te ajute să recapeți calmul și controlul.",
+    "welcome-discover-tools": "Descoperă instrumente.",
+    "learn": "Află despre PTSD",
+    "read": "Citește",
+    "favorite-instruments": "Instrumente favorite"
   },
   "manage": {
-    "title": "RO/ro: Manage Symptoms",
-    "symptoms": "RO/ro: Symptoms",
-    "tools": "RO/ro: Tools",
-    "favorites": "RO/ro: Favorites"
+    "title": "Gestionează Simptomele",
+    "symptoms": "Simptome",
+    "tools": "Instrumente",
+    "favorites": "Favorite"
   },
   "track": {
-    "evaluate": "RO/ro: Perform an evaluation",
-    "history": "RO/ro: Evaluation history",
-    "schedule": "RO/ro: Schedule an evaluation"
+    "evaluate": "Realizează o evaluare",
+    "history": "Istoric evaluări",
+    "schedule": "Programează o evaluare"
   },
   "distress-meter": {
-    "header-title": "RO/ro: Distress Meter",
-    "title": "RO/ro: What's your current level of distress?",
-    "scale": "RO/ro: {{min}} means no distress, {{max}} is the worst",
-    "subtitle": "RO/ro: Tap on the up and down arrows to indicate how you are feeling.",
+    "header-title": "Bară de disconfort",
+    "title": "Care este nivelul tău actual de disconfort?",
+    "scale": "{{min}} înseamnă lipsă de disconfort, {{max}} este cel mai rău",
+    "subtitle": "Apasă săgețile sus și jos pentru a indica cum te simți.",
     "actions": {
-      "start": "RO/ro: Start using a tool",
-      "skip": "RO/ro: Skip"
+      "start": "Începe să folosești un instrument",
+      "skip": "Sari peste"
     },
     "post-buttons": {
-      "try-again": "Incearca acest instrument din nou",
+      "try-again": "Încearcă acest instrument din nou",
       "another-tool": "Încearcă un alt instrument",
       "remove-from-favorites": "Șterge din favorite",
       "add-to-favorites": "Adaugă la favorite"
     },
-    "info": "RO/ro: Disconfortul poate include furie, tristete, teama, durere, stres, ingrijorare, orice sentiment negativ pe care il simti. Evalueaza-ti nivelul de disconfort inainte si dupa ce folosesti un instrument pe sprijin pentru a-ti da seama care dintre instrumente functioneaza cel mai bine pentru tine.",
+    "info": "Disconfortul poate include furie, tristețe, teamă, durere, stres, îngrijorare, orice sentiment negativ pe care îl simți. Evaluează-ți nivelul de disconfort înainte și după ce folosești un instrument de sprijin pentru a vedea care dintre ele funcționează cel mai bine pentru tine.",
     "info-levels": {
-      "low": "RO/ro: 0 = niciun disconfort",
-      "high": "RO/ro: 10 = cel mai mare nivel de disconfort pe care ti-l poti imagina."
+      "low": "0 = niciun disconfort",
+      "high": "10 = cel mai mare nivel de disconfort pe care ți-l poți imagina."
     },
-    "info-close": "RO/ro: Inchide",
-    "info-pre": "RO/ro: Disconfortul poate include furie, tristete, teama, durere, stres, ingrijorare, orice sentiment negativ pe care il simti. Evalueaza-ti nivelul de disconfort inainte si dupa ce folosesti un instrument pe sprijin pentru a-ti da seama care dintre instrumente functioneaza cel mai bine pentru tine.",
-    "info-post": "RO/ro: Ai facut o treaba buna in completare aacestui instrument, acum vei evalua nivelul de suferinta pe o scara de la 0 la 10 entru a vedea daca a existat o scadere a nivelului de disconfort.",
+    "info-close": "Închide",
+    "info-pre": "Disconfortul poate include furie, tristețe, teamă, durere, stres, îngrijorare, orice sentiment negativ pe care îl simți. Evaluează-ți nivelul de disconfort înainte și după ce folosești un instrument de sprijin pentru a vedea care dintre ele funcționează cel mai bine pentru tine.",
+    "info-post": "Ai făcut o treabă bună completând acest instrument, acum vei evalua nivelul de disconfort pe o scară de la 0 la 10 pentru a vedea dacă a existat o scădere a nivelului de disconfort.",
     "high-distress": {
-      "text": "RO/ro: This is a very high level of distress. It would be good to get help as soon as possible. Would you like to talk to someone now?",
+      "text": "Acesta este un nivel foarte ridicat de disconfort. Ar fi bine să ceri ajutor cât mai curând posibil. Vrei să vorbești cu cineva acum?",
       "actions": {
-        "help": "RO/ro: No, continue to the support tool",
-        "talk": "RO/ro: Yes, I want to talk to someone"
+        "help": "Nu, continuă la instrumentul de sprijin",
+        "talk": "Da, vreau să vorbesc cu cineva"
       }
     }
+  },
+  "assets-loading": {
+    "heading": "Se încarcă resursele...",
+    "body": "Acest lucru poate dura un minut, vă rugăm să așteptați..."
+  },
+  "privacy-policy": {
+    "title": "Politica de confidențialitate",
+    "content": "When you use a Code for Romania mobile app, no data that could be used to identify you is sent to Code for Romania or third parties. Any information that you enter into the app, such as names, phone numbers, addresses, images, or music, cannot be accessed, stored, or shared by Code for Romania. Code for Romania mobile apps do collect anonymous information about how people use the app. It is only used to improve how well the app works. We can see what sections of the app people visit, for example. We often use this information to correct technical problems in the apps. This information cannot be linked to any personal information about you and will never be shared with a third party. If you would like to turn off sending this anonymous usage information, go to the Settings menu, look for “Anonymous Usage Data,” and flip the switch to the “off” setting.\n\nCode for Romania uses some software analysis tools to help identify and prevent app problems. Code for Romania mobile apps do not share personal or identifying information with any of the partners of this tool. In using a Code for Romania mobile app, it is your responsibility to protect any information in the app once it is installed on your device. Setting a passcode on your device is recommended to help keep your information safe.",
+    "open-privacy-policy": "Deschide politica de confidențialitate"
+  },
+  "about": {
+    "title": "Despre aplicație"
   }
 }
