@@ -11,7 +11,7 @@ export const DrawerItem = ({ label, onPress, icon }: { label: string; onPress: (
       focused={true}
       activeTintColor={theme.blue1?.val}
       activeBackgroundColor={theme.blue9?.val}
-      icon={() => <Icon icon={icon} width={24} height={24} color={theme.blue1?.val} marginRight={-16} />}
+      icon={() => <Icon icon={icon} width={24} height={24} color={theme.blue1?.val} />}
       inactiveTintColor='white'
       onPress={onPress}
       style={{

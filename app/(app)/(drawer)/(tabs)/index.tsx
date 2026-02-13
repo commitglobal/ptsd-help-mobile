@@ -60,7 +60,7 @@ export default function HomeScreen() {
 
         {/* monthly evaluation */}
         {/* //todo: on press */}
-        <MonthlyEvaluationCard onPress={() => {}} />
+        <MonthlyEvaluationCard onPress={() => router.push({ pathname: '/manage', params: { tabId: 'tools' } })} />
 
         {/* learn about ptsd */}
         <XStack gap='$md' alignItems='center'>

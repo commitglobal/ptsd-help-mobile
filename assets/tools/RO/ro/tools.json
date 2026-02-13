@@ -1,224 +1,568 @@
 {
   "list": {
-    "relationships": "RO/ro: Relationships",
-    "reconnect-with-partner": "RO/ro: Reconnect with your partner",
-    "positive-communication": "RO/ro: Positive Communication",
-    "i-messages": "RO/ro: I Messages",
-    "ambient-sounds": "RO/ro: Ambient Sounds",
-    "mindfulness": "RO/ro: Mindfulness",
-    "conscious-breathing": "RO/ro: Conscious Breathing",
-    "mindful-walking": "RO/ro: Mindful Walking",
-    "emotional-discomfort": "RO/ro: Emotional Discomfort",
-    "sense-awareness": "RO/ro: Sense Awareness",
-    "loving-kindness": "RO/ro: Loving Kindness",
-    "pause": "RO/ro: Pause",
-    "sleep": "RO/ro: Instrumente pentru somn",
-    "muscle-relaxation": "RO/ro: Muscle Relaxation",
-    "deep-breathing": "RO/ro: Respirație profundă",
-    "body-scan": "RO/ro: Body Scan",
-    "julia": "RO/ro: Julia",
-    "robyn": "RO/ro: Robyn",
-    "forest": "RO/ro: Forest",
-    "country-road": "RO/ro: Country Road",
-    "beach": "RO/ro: Beach",
-    "positive-imagery": "RO/ro: Positive Imagery",
-    "observe-thoughts": "RO/ro: Observă gândurile",
-    "clouds": "RO/ro: Nori",
-    "river": "RO/ro: Râul"
+    "relationships": "Relații",
+    "reconnect-with-partner": "Reconectează-te cu partenerul",
+    "positive-communication": "Comunicare pozitivă",
+    "healthy-arguments": "Certuri sănătoase",
+    "i-messages": "Mesaje cu „eu”",
+    "mindfulness": "Mindfulness",
+    "ambient-sounds": "Sunete ambientale",
+    "conscious-breathing": "Respirație conștientă",
+    "mindful-walking": "Mers conștient",
+    "emotional-discomfort": "Disconfort emoțional",
+    "sense-awareness": "Conștientizarea simțurilor",
+    "loving-kindness": "Bunăvoință iubitoare",
+    "my-feelings": "Sentimentele mele",
+    "sleep": "Instrumente pentru somn",
+    "sleep-help": "Ajutor pentru somn",
+    "sleep-habits": "Obiceiuri bune de somn",
+    "sleep-perspective": "Schimbă perspectiva asupra somnului",
+    "worry-time": "Timp pentru griji",
+    "rid": "RID",
+    "muscle-relaxation": "Relaxare musculară",
+    "deep-breathing": "Respirație profundă",
+    "body-scan": "Scanare corporală",
+    "julia": "Julia",
+    "robyn": "Robyn",
+    "forest": "Pădure",
+    "country-road": "Drum de țară",
+    "beach": "Plajă",
+    "positive-imagery": "Imagini pozitive",
+    "my-strengths": "Punctele mele forte",
+    "shift-thoughts": "Schimbă gândurile",
+    "soothe-senses": "Liniștește-ți simțurile",
+    "connect-with-others": "Conectează-te cu ceilalți",
+    "change-perspective": "Schimbă perspectiva",
+    "grounding": "Ancorare",
+    "quotes": "Citate inspiraționale",
+    "recreational-activities": "Activități recreative",
+    "recreational-activities-alone": "Activități recreative: timp petrecut singur",
+    "recreational-activities-city": "Activități recreative: în oraș",
+    "recreational-activities-nature": "Activități recreative: în natură",
+    "pause": "Pauză",
+    "observe-thoughts": "Observă gândurile",
+    "clouds": "Nori",
+    "river": "Râu"
+  },
+  "symptoms": {
+    "sleep_problems": "Probleme cu somnul",
+    "reminded_of_trauma": "Reamintirea traumei",
+    "avoiding_triggers": "Evitarea factorilor declanșatori",
+    "disconnected_from_people": "Deconectat de oameni",
+    "disconnected_from_reality": "Deconectat de realitate",
+    "sad_hopeless": "Trist/fără speranță",
+    "worried_anxious": "Îngrijorat/anxios",
+    "angry": "Furios"
   },
   "relationships": {
-    "title": "RO/ro: Relationships",
-    "description": "RO/ro: Tools to help improve your relationships with loved ones",
+    "title": "Relații",
+    "description": "Instrumente pentru a-ți îmbunătăți relațiile cu cei dragi",
     "tools": {
       "i-messages": {
-        "title": "RO/ro: Using 'I' messages",
-        "find-time": "RO/ro: Find time to share these messages with your partner.",
-        "text": "RO/ro: Messages that start with 'I' help reduce conflicts in relationships, while also communicating your needs. Exercise creating messages that start with 'I', which you can use in your daily interactions.",
-        "when": "RO/ro: When my loved one",
-        "feel": "RO/ro: I feel",
-        "because": "RO/ro: because",
+        "title": "Utilizarea mesajelor cu 'eu'",
+        "add-message": "Adaugă mesaj cu 'eu'",
+        "find-time": "Găsește timp să împărtășești aceste mesaje cu partenerul tău.",
+        "text": "Mesajele care încep cu 'eu' ajută la reducerea conflictelor în relații și comunică în același timp nevoile tale. Exersează crearea unor mesaje care încep cu 'eu', pe care le poți utiliza în interacțiunile zilnice.",
+        "when": "Când persoana iubită",
+        "feel": "Mă simt",
+        "because": "pentru că",
         "new-message": {
-          "title": "RO/ro: New 'I' message",
-          "save": "RO/ro: Save",
+          "title": "Mesaj nou cu 'eu'",
+          "save": "Salvează",
           "annoyance": {
-            "label": "RO/ro: What's something that your partner does that truly annoys you?",
-            "placeholder": "RO/ro: Something that my partner does that annoys me is...",
-            "example": "RO/ro: Example: Drinks a lot and then gets angry"
+            "label": "Ce face partenerul tău și te deranjează cu adevărat?",
+            "placeholder": "Ceva ce face partenerul meu și mă deranjează este...",
+            "example": "Exemplu: Bea mult și apoi se enervează"
           },
-          "declaration": "RO/ro: Now, use the textarea below to create a statement that tells your partner how you feel. Don't forget to start with 'I', write how you feel and then try to explain what makes you feel this way. Try to avoid using the word 'you', in this case (we know it can be difficult!).",
+          "declaration": "Acum, folosește câmpul de mai jos pentru a crea o afirmație prin care îi comunici partenerului cum te simți. Nu uita să începi cu 'eu', spune cum te simți și apoi explică de ce simți asta. Încearcă să eviți cuvântul 'tu' (știm că este dificil!).",
           "i-feel": {
-            "label": "RO/ro: When my partner does this, I feel...",
-            "placeholder": "RO/ro: I feel...",
-            "example": "RO/ro: Example: sad and disappointed"
+            "label": "Când partenerul meu face asta, mă simt...",
+            "placeholder": "Mă simt...",
+            "example": "Exemplu: trist și dezamăgit"
           },
           "because-input": {
-            "label": "RO/ro: Because...",
-            "placeholder": "RO/ro: Because...",
-            "example": "RO/ro: Example: Because I am worried about the future"
+            "label": "Pentru că...",
+            "placeholder": "Pentru că...",
+            "example": "Exemplu: Pentru că sunt îngrijorat cu privire la viitor"
           }
         },
         "edit": {
-          "title": "RO/ro: Edit 'I' message"
+          "title": "Editează mesajul cu 'eu'"
         }
       },
       "reconnect-with-partner": {
-        "title": "RO/ro: Reconnect with your partner",
-        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "title": "Reconectează-te cu partenerul",
+        "helper": "Încearcă aceste strategii – fie singur, fie, și mai bine, împreună cu partenerul!",
         "repeater": [
           {
-            "title": "RO/ro: Go for a walk or exercise together",
-            "description": "RO/ro: Find time to go for a walk or exercise together"
+            "title": "Observă lucrurile frumoase",
+            "description": "Observă un lucru despre partenerul tău în fiecare zi, timp de o săptămână. Poate fi ceva simplu, ca o tunsoare nouă sau un mic gest de iubire sau sprijin. Fă-ți timp să împărtășești ceea ce ai observat cu partenerul tău.",
+            "calendar": "Observ ceva frumos la partenerul meu"
           },
           {
-            "title": "RO/ro: Prepare a delicious meal and have fun in the kitchen",
-            "description": "RO/ro: Find time to prepare a delicious meal and have fun in the kitchen"
+            "title": "Observați lucrurile frumoase împreună",
+            "description": "Provoacă-ți partenerul să vedeți dacă puteți observa și comenta amândoi în fiecare zi, timp de o săptămână, câte un lucru frumos unul la celălalt.",
+            "sms": "Îmi asum să observ câte ceva drăguț despre tine în următoarea săptămână. Vrei să încerci și tu pentru mine?"
           },
           {
-            "title": "RO/ro: Organize a movie night at home with favorite films",
-            "description": "RO/ro: Find time to organize a movie night at home with favorite films"
+            "title": "Fii afectuos",
+            "description": "Oferă-i soțului/soției sau partenerului tău o îmbrățișare sau ține-i mâna într-un moment în care de obicei nu faci asta. Încearcă să-ți arăți afecțiunea fizică într-un mod pe care tu crezi că îl va aprecia.",
+            "calendar": "Îmbrățișează sau ține-l de mână pe partenerul meu"
+          },
+          {
+            "title": "Fiți afectuoși împreună",
+            "description": "Propune-i partenerului să faceți o promisiune: să vă îmbrățișați sau să vă țineți de mână cel puțin o dată pe zi timp de o săptămână.",
+            "sms": "Aș vrea să încercăm să ne îmbrățișăm sau să ne ținem de mână zilnic săptămâna aceasta. Poți face asta împreună cu mine?"
+          },
+          {
+            "title": "Gesturi de ajutor",
+            "description": "Găsește un mic gest de ajutor pe care să-l faci pentru partenerul tău. Ceva care ar fi trebuit să-l facă el sau ea, dar poți avea tu grijă de acel lucru. Chiar dacă e ceva mic, ca să scoți gunoiul.",
+            "calendar": "Fac astăzi cel puțin un gest de ajutor partenerului meu"
+          },
+          {
+            "title": "Gesturi de ajutor împreună",
+            "description": "Propune-i partenerului să faceți un angajament: să realizați fiecare, în fiecare zi, măcar un mic gest de ajutor unul pentru celălalt.",
+            "sms": "Aș vrea să ne angajăm să facem zilnic cel puțin un lucru util pentru celălalt. Vrei să faci și tu asta?"
+          },
+          {
+            "title": "Activități de voluntariat împreună",
+            "description": "Faceți ceva împreună pentru a ajuta comunitatea!"
+          },
+          {
+            "title": "Cine vreau să fiu",
+            "description": "Gândește-te la 3 cuvinte cu care te-ai descrie ca partenerul ideal. Poate 'empatic', 'distractiv', 'relaxat' sau altceva! Scrie-le și, în săptămâna ce urmează, încearcă să trăiești după aceste calități. Observă ce simți."
+          },
+          {
+            "title": "Reflectează la partenerul tău",
+            "description": "Petrece câteva minute răspunzând la aceste întrebări:\n\n- Ce te-a atras cel mai mult la partenerul tău când v-ați cunoscut, în afară de aspectul fizic?\n- Ce calități personale ai admirat cel mai mult la început?\n- Care sunt cele mai mari puncte forte ale partenerului?"
+          },
+          {
+            "title": "Arată-i că îl susții",
+            "description": "Concentrează-te să-i arăți partenerului tău că ești de partea lui. Dacă partenerul este supărat, caută moduri prin care să-ți exprimi sprijinul."
+          },
+          {
+            "title": "Un gest important de ajutor",
+            "description": "Fă un gest semnificativ de ajutor pentru partenerul tău. Fă ceva ce crezi că va aprecia cu adevărat.",
+            "calendar": "Fă un gest de ajutor pentru partenerul meu"
+          },
+          {
+            "title": "Cultivă aprecierea",
+            "description": "Stai 10 minute singur, într-un loc liniștit. Închide ochii și încearcă să generezi un sentiment de căldură și apreciere pentru partenerul tău. Gândește-te la calitățile lui pozitive. Ce se întâmplă când acorzi timp reflecției la aceste calități?"
+          },
+          {
+            "title": "Acționați ca o echipă",
+            "description": "Anunță-ți partenerul că sunteți o echipă și puteți face lucrurile împreună. Puteți vorbi despre viitor, planifica activități sau accepta o provocare.",
+            "calendar": "Plănuiește o activitate viitoare cu partenerul meu"
+          },
+          {
+            "title": "Renunță la judecată",
+            "description": "Rezervă 5 minute ca să încerci să nu-ți judeci partenerul. Vezi cum e să renunți la orice judecată pentru câteva minute."
+          },
+          {
+            "title": "Oferă un mic cadou",
+            "description": "Surprinde-ți partenerul cu un mic cadou – poate fi orice: o notiță, timpul tău, flori sau ceva mic, rapid și care arată că-ți pasă.",
+            "calendar": "Cumpără un mic cadou pentru partenerul meu"
+          },
+          {
+            "title": "Exprimă-ți aprecierea",
+            "description": "Exprimați-vă aprecierea față de partener de fiecare dată când face ceva care te face să te simți bine, apreciat sau îți face viața mai ușoară!"
+          },
+          {
+            "title": "Nu ține scorul",
+            "description": "Dacă simți că urmărești cât faci pentru partener fără să primești nimic înapoi, încearcă să nu mai 'ții scorul' măcar o zi. Renunțarea la așteptări poate ajuta la reconectare, chiar și pentru scurt timp."
+          },
+          {
+            "title": "Exersează lipsa de judecată",
+            "description": "Dacă sunteți într-un conflict, încearcă să nu-l judeci pe celălalt în toată conversația. Știm că nu e ușor! Important e să tinzi spre lipsa de judecată, iar dacă nu-ți iese, nu-i nimic."
+          },
+          {
+            "title": "O întâlnire-surpriză",
+            "description": "Surprinde-ți partenerul cu o activitate sau întâlnire planificată. Poate fi ceva mic – o plimbare sau să vizionați împreună un film.",
+            "calendar": "Surprinde partenerul cu o activitate împreună"
+          },
+          {
+            "title": "Retrăiți momentele frumoase",
+            "description": "Gândește-te la o activitate scurtă (sau subiect de discuție) pe care ați făcut-o când v-ați cunoscut. Alege ceva neutru, fără risc de conflict, și întreabă dacă ar vrea să încercați din nou."
+          },
+          {
+            "title": "Amintește-ți de lucrurile pozitive",
+            "description": "Fă o listă cu toate calitățile pozitive ale partenerului tău. Ține lista la vedere și adaugă mereu ceva nou când îți amintești."
           }
         ]
       },
       "positive-communication": {
-        "title": "RO/ro: Positive Communication",
-        "helper": "RO/ro: Try these strategies - either on your own or, better, with your partner!",
+        "title": "Comunicare pozitivă",
+        "helper": "Comunicarea pozitivă este cheia oricărei relații bune. Poate faci deja unele dintre aceste lucruri, dar încearcă să încerci câteva din sugestiile de mai jos pentru a-ți consolida relația:",
         "repeater": [
           {
-            "title": "RO/ro: Overcome your automatic negative thoughts",
-            "description": "RO/ro: Think about positive things about your partner"
+            "title": "Depășește gândurile automate negative",
+            "description": "Gândește-te la lucrurile pozitive despre partenerul tău"
           },
           {
-            "title": "RO/ro: Start a conversation with your partner",
-            "description": "RO/ro: Talk about your feelings and thoughts with your partner"
+            "title": "Începe o conversație cu partenerul tău",
+            "description": "Vorbește cu partenerul despre sentimentele și gândurile tale"
+          },
+          {
+            "title": "Arată iubirea",
+            "description": "Spune-i persoanei dragi un lucru pe care îl iubești sau îl apreciezi la ea. Trimite-i un mesaj sau lasă-i o notă acolo unde știi că o va găsi.\n\nFă-o chiar acum, dacă poți!"
+          },
+          {
+            "title": "Arată admirație",
+            "description": "Spune-i persoanei dragi un lucru pe care îl admiri la el/ea."
+          },
+          {
+            "title": "Inițiază o conversație",
+            "description": "Planifică și poartă o discuție cu partenerul tău despre ceva cu care vă identificați amândoi."
+          },
+          {
+            "title": "Primele impresii",
+            "description": "Îți amintești primele impresii despre partenerul tău? Fără să faci comparații cu prezentul, spune-i ce ți-a plăcut sau ai apreciat la început după ce v-ați cunoscut mai bine."
+          },
+          {
+            "title": "Valori comune",
+            "description": "Care este cel puțin un scop sau o valoare pe care o aveți în comun? Întreabă-ți partenerul despre obiectivele sale pentru luna sau anul viitor și cum l-ai putea ajuta să le atingă."
+          },
+          {
+            "title": "Contribuții",
+            "description": "Gândește-te 2 minute: care este măcar un lucru pe care partenerul tău îl face pentru relația voastră? Fii atent la orice, chiar și de mici dimensiuni."
+          },
+          {
+            "title": "Doar ascultă",
+            "description": "Roagă persoana dragă să-ți spună care a fost cea mai frumoasă și cea mai grea parte a zilei. Concentrează-te pe a asculta.\n\nAcceptă ce spune fără să încerci să rezolvi ceva."
+          },
+          {
+            "title": "Depășirea provocărilor",
+            "description": "Gândește-te la un moment din relație când ați depășit împreună o dificultate."
+          },
+          {
+            "title": "Data viitoare când vorbiți",
+            "description": "Încearcă să transformi câteva minute cu partenerul tău într-o conversație pozitivă – vorbiți mai mult decât de obicei despre ceea ce aveți în comun."
+          },
+          {
+            "title": "Ascultă deschis",
+            "description": "Planifică o discuție despre orice lucru pe care partenerul tău ar dori să-l abordeze și care îl interesează. Ascultă pe cât de deschis poți. Nu schimba subiectul!"
+          },
+          {
+            "title": "Împărtășește-i interesele",
+            "description": "Începe o discuție cu partenerul despre ceva ce știi că îl interesează pe el/ea, dar care în mod normal nu te interesează pe tine."
+          },
+          {
+            "title": "Observă lucrurile frumoase făcute de partener",
+            "description": "Găsește ceva frumos, oricât de mic sau mare, pe care partenerul l-a făcut recent. Spune-i și povestește-i cum te-ai simțit."
+          },
+          {
+            "title": "Creați ritualuri",
+            "description": "Propune-i persoanei dragi să începeți sau să păstrați un ritual zilnic sau săptămânal. Poate fi orice – un apel, o masă, o îmbrățișare, orice care vă apropie."
+          },
+          {
+            "title": "Împărtășiți problemele",
+            "description": "Întreabă-ți persoana dragă ce ar vrea să faci data viitoare când își împărtășește cu tine o problemă.\n\nPoți spune: 'Vrei să te ascult sau vrei un sfat?' Nu da sfaturi dacă persoana nu își dorește acest lucru."
+          },
+          {
+            "title": "Experiențe amuzante",
+            "description": "Reamintește-ți o experiență amuzantă pe care ați avut-o împreună.\n\nPlanifică o activitate distractivă ca să retrăiți acea stare."
+          },
+          {
+            "title": "Experiențe preferate",
+            "description": "Petreceți timp amintindu-vă împreună de experiențele preferate pe care le-ați avut."
+          },
+          {
+            "title": "Scrie o scrisoare",
+            "description": "Scrie persoanei dragi o scrisoare în care îi spui ce înseamnă pentru tine, de ce o/îl iubești sau speranțele tale pentru viitorul vostru.\n\nNu uita să-i dai acea scrisoare!"
+          },
+          {
+            "title": "Lasă un bilețel",
+            "description": "Lasă un bilețel pe care partenerul îl poate găsi și pe care să scrie 'Îmi place când tu…', apoi completează spațiul!"
+          }
+        ]
+      },
+      "healthy-arguments": {
+        "title": "Certuri sănătoase",
+        "helper": "Fiecare relație are conflicte. Iată câteva strategii pe care le poți încerca când te afli într-o ceartă cu partenerul.",
+        "repeater": [
+          {
+            "title": "Gestionarea 'subiectelor sensibile'",
+            "description": "Abordează cu grijă subiectele sensibile. Asigură-te că ești suficient de calm. Ia-ți timp pentru reflecție și alege-ți cu grijă cuvintele!"
+          },
+          {
+            "title": "Cum să petreci pauza în afara conflictului",
+            "description": "Găsește ceva relaxant de făcut: o plimbare, vorbește cu un prieten, fă mișcare sau citește."
+          },
+          {
+            "title": "Cum să petreci pauza în afara conflictului",
+            "description": "Care sunt activitățile pe care le puteți face împreună, fără să discutați?"
+          },
+          {
+            "title": "Fă o pauză",
+            "description": "Asigură-te că ai activități favorite care te relaxează. Petrece timp făcând lucruri care îți plac, nu rememorând conflictul."
+          },
+          {
+            "title": "Fă o pauză",
+            "description": "Poți spune partenerului: 'Îmi pasă de această problemă și vreau să o rezolv. Am nevoie doar de puțin timp să mă gândesc și voi reveni când voi avea mintea limpede.'"
+          },
+          {
+            "title": "Ai perspectivă",
+            "description": "Fiecare relație are conflicte. Acceptarea și gestionarea lor, chiar și când sunt mici, consolidează relația."
+          },
+          {
+            "title": "Încearcă să nu-ți critici partenerul",
+            "description": "Critica poate face pe cineva să se simtă judecat sau respins și nu este cea mai bună metodă de schimbare. În loc de critică, folosește afirmații cu 'eu' pentru a-ți exprima sentimentele."
+          },
+          {
+            "title": "Te simți vinovat?",
+            "description": "Încearcă să nu fii defensiv dacă persoana dragă te acuză. Încearcă să înțelegi ce are nevoie de la tine înainte să răspunzi sau să te aperi."
+          },
+          {
+            "title": "Cere și oferă respect",
+            "description": "În orice conflict trebuie să existe un minim de respect reciproc. Nu accepta insulte, ridiculizări sau lipsă de respect. Ia o pauză dacă simți că ești lipsit de respect."
+          },
+          {
+            "title": "Fii prezent pentru partener",
+            "description": "Nu fugi de conflicte, decât dacă unul dintre voi are nevoie de o pauză."
+          },
+          {
+            "title": "Exersează înțelegerea",
+            "description": "Încetinește și ascultă – nu întrerupe."
+          },
+          {
+            "title": "Exersează înțelegerea",
+            "description": "Fii atent la cuvintele și limbajul corporal al partenerului."
+          },
+          {
+            "title": "Exersează înțelegerea",
+            "description": "Arată interes, chiar și pe timpul unui conflict."
+          },
+          {
+            "title": "Acceptă-ți partenerul",
+            "description": "Acordă-i prezumția de nevinovăție."
+          },
+          {
+            "title": "Acceptă-ți partenerul",
+            "description": "Încearcă să nu judeci."
+          },
+          {
+            "title": "Înțelege-ți partenerul",
+            "description": "Folosește cuvintele tale pentru a reformula ce crezi că vrea să spună persoana iubită."
+          },
+          {
+            "title": "Înțelege-ți partenerul",
+            "description": "Nu citi gândurile celuilalt. Nu presupune că știi ce gândește."
+          },
+          {
+            "title": "Înțelege-ți partenerul",
+            "description": "Asigură-te că persoana iubită știe că nu-i poți citi gândurile și cere-i ajutor pentru a-i înțelege nevoile prin conversație deschisă."
+          },
+          {
+            "title": "Înțelege-ți partenerul",
+            "description": "Înțelegerea modului cum se simte partenerul nu înseamnă că trebuie să fii de acord cu el/ea. Înțelegerea perspectivei celuilalt e cheia ieșirii din conflict."
+          },
+          {
+            "title": "Înțelege-ți partenerul",
+            "description": "Pune cât mai multe întrebări. Asigură-te că ai înțeles ce vrea să îți spună partenerul. Corectează-te dacă greșești."
+          },
+          {
+            "title": "Când partenerul este furios",
+            "description": "Asigură-te mereu că ești în siguranță. Dacă e nevoie, sună fără ezitare la 112."
+          },
+          {
+            "title": "Când ești furios",
+            "description": "Oprește-te și respiră adânc."
+          },
+          {
+            "title": "Când ești furios",
+            "description": "Fă o pauză. Pleacă din situația dificilă până poți reface conversația fără furie."
+          },
+          {
+            "title": "Când ești furios",
+            "description": "Stabiliți în avans, împreună cu partenerul, când să luați pauze în timpul unui conflict."
+          },
+          {
+            "title": "Când partenerul este furios",
+            "description": "Oprește-te și respiră adânc. Roagă-l și pe partener să facă la fel."
+          },
+          {
+            "title": "Dacă iei o pauză",
+            "description": "Când amândoi nu mai sunteți furioși, reluați conversația și căutați o soluție potrivită pentru amândoi."
+          },
+          {
+            "title": "Când partenerul este furios",
+            "description": "Încearcă să recunoști factorii declanșatori pentru furie. Fă-ți un plan pentru ce vei face când observi aceste semne."
+          },
+          {
+            "title": "Când ești furios",
+            "description": "Încearcă să recunoști propriii tăi triggeri pentru furie. Fă-ți un plan pentru ce vei face când observi aceste semne."
+          },
+          {
+            "title": "Cunoaște-ți 'subiectele sensibile'",
+            "description": "Care sunt temele recurente ce creează tensiune sau conflict? Când apar, tratează-le cu grijă."
           }
         ]
       }
     },
     "common": {
-      "start": "RO/ro: Start",
-      "next": "RO/ro: Next",
-      "previous": "RO/ro: Previous",
-      "finish": "RO/ro: Finish",
-      "save": "RO/ro: Save",
-      "cancel": "RO/ro: Cancel"
+      "start": "Începe",
+      "next": "Următorul",
+      "previous": "Înapoi",
+      "finish": "Finalizează",
+      "save": "Salvează",
+      "cancel": "Anulează"
     }
+  },
+  "ambient-sounds": {
+    "select": "Selectează un sunet de redat",
+    "beach": "Plajă",
+    "birds": "Păsări",
+    "country-road": "Drum de țară",
+    "crickets": "Greierei",
+    "dripping-water": "Picurare de apă",
+    "forest": "Pădure",
+    "frogs": "Broaște",
+    "marsh": "Mlaștină",
+    "public-pool": "Piscină publică",
+    "rain": "Ploaie",
+    "running-water": "Apă curgătoare",
+    "stream-water": "Râu/Izvor",
+    "waterfall": "Cascadă",
+    "wind": "Vânt"
   },
   "mindfulness": {
     "conscious-breathing": {
-      "description": "RO/ro: For this exercise, find a comfortable and quiet place to sit, where you are unlikely to be disturbed.\n\nPlease note that there will be pauses in the audio so you can practice without distraction.\n\nTime: About 9 minutes."
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde să nu fii deranjat.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 9 minute.",
+      "action-btn-label": "Continuă",
+      "done": "Gata"
+    },
+    "mindful-walking": {
+      "description": "Pentru acest exercițiu, poți merge prin casă, curte, cartier, parc sau oriunde te simți în siguranță și confortabil. Încearcă să nu vorbești în timpul plimbării, ca să te poți concentra pe propriile sentimente și gânduri.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 6 minute.",
+      "action-btn-label": "Continuă",
+      "done": "Gata"
+    },
+    "emotional-discomfort": {
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde să nu fii deranjat.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 7 minute.",
+      "action-btn-label": "Continuă",
+      "done": "Gata"
+    },
+    "sense-awareness": {
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde să nu fii deranjat.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 11 minute.",
+      "action-btn-label": "Continuă",
+      "done": "Gata"
+    },
+    "loving-kindness": {
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde să nu fii deranjat.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 10 minute.",
+      "action-btn-label": "Continuă",
+      "done": "Gata"
     }
   },
   "sleep": {
-    "sleep-help": {
-      "title": "RO/ro: Ajutor pentru a adormi",
-      "repeater": [
-        {
-          "title": "Du-te la culcare numai când îți este somn."
-        },
-        {
-          "title": "Dacă stai în pat timp de 20 de minute și încă nu dormi, ridică-te și fă altceva (fără a te expune la lumină puternică sau la un computer/telefon/ecran TV)."
-        },
-        {
-          "title": "Ascultă muzică relaxantă."
-        },
-        {
-          "title": "Citește ceva liniștitor."
-        },
-        {
-          "title": "Bea o ceașcă de ceai decofeinizat."
-        },
-        {
-          "title": "Bea o cană de lapte cald."
-        },
-        {
-          "title": "Respiră lent și adânc pe nas - fă acest lucru timp de 10 minute. Poți folosi instrumentul de respirație din această aplicație dacă dorești."
-        },
-        {
-          "title": "Mănâncă o gustare ușoară dacă îți este foame - ceva cu puțin zahăr sau deloc și fără alcool."
-        },
-        {
-          "title": "Asigură-te că temperatura camerei este joasă."
-        },
-        {
-          "title": "Încearcă să porți dopuri pentru urechi dacă există zgomot în jurul tău."
-        },
-        {
-          "title": "Dacă există lumină în jur, încearcă să dormi cu o mască pentru ochi."
-        },
-        {
-          "title": "Asigură-te că este întuneric în cameră."
-        },
-        {
-          "title": "Încearcă să faci o baie caldă cu o oră sau 2 înainte de culcare."
-        },
-        {
-          "title": "Asigură-te că ești confortabil și că îmbrăcămintea ta nu este incomodă."
-        },
-        {
-          "title": "Evită să te uiți la ceas."
-        },
-        {
-          "title": "Lasă-ți mintea să rătăcească. Nu te concentra prea mult asupra procesului de a adormi."
-        },
-        {
-          "title": "Dacă te simți îngrijorat, ridică-te și notează-ți grijile, apoi încearcă să scapi de ele."
-        },
-        {
-          "title": "Imaginează-ți un loc sigur și liniştitor: imaginează-te lângă un râu, un lac sau într-o poiană. Imaginează-ți toată scena, priveliștile, sunetele și mirosurile, în timp ce te relaxezi. Poți utiliza instrumentul de imagini pozitive din această aplicație dacă dorești."
-        },
-        {
-          "title": "Simte toți mușchii corpului tău relaxați, ca și cum s-ar fi scufundat în saltea. Poți folosi instrumentul de relaxare musculară progresivă din această aplicație dacă dorești."
-        },
-        {
-          "title": "Evită nicotina, cofeina și alcoolul seara."
-        },
-        {
-          "title": "Evită prea multă sare în mâncare. Acest lucru te poate face să te trezești însetat pe tot parcursul nopții."
-        },
-        {
-          "title": "Oprește calculatorul sau televizorul cu 30 de minute înainte de culcare."
-        },
-        {
-          "title": "Creează-ți o rutină relaxantă la culcare."
-        },
-        {
-          "title": "Ridică-te și bea un pahar cu apă."
-        },
-        {
-          "title": "Asigură-te că cearșafurile sunt curate și că perna și salteaua sunt confortabile."
-        },
-        {
-          "title": "Încearcă să nu îți faci griji din cauză că nu adormi. Continuă să încerci să te relaxezi."
-        }
-      ]
-    },
+    "title": "Ajutor pentru somn",
+    "repeater": [
+      {
+        "title": "Mergi la culcare doar atunci când simți că îți este somn."
+      },
+      {
+        "title": "Dacă stai în pat timp de 20 de minute și tot nu poți adormi, ridică-te și fă altceva (fără să te expui la lumină puternică sau la ecrane de calculator/telefon/TV)."
+      },
+      {
+        "title": "Ascultă muzică relaxantă."
+      },
+      {
+        "title": "Citește ceva liniștitor."
+      },
+      {
+        "title": "Bea o cană de ceai fără cofeină."
+      },
+      {
+        "title": "Bea o cană de lapte cald."
+      },
+      {
+        "title": "Inspiră lent și adânc pe nas – fă acest lucru timp de 10 minute. Poți folosi instrumentul de respirație din această aplicație dacă dorești."
+      },
+      {
+        "title": "Mănâncă o gustare ușoară dacă îți este foame – ceva cu puțin sau deloc zahăr și fără alcool."
+      },
+      {
+        "title": "Asigură-te că temperatura camerei este răcoroasă."
+      },
+      {
+        "title": "Încearcă să folosești dopuri de urechi dacă este zgomot în jurul tău."
+      },
+      {
+        "title": "Dacă există lumină în jur, încearcă să dormi cu o mască pentru ochi."
+      },
+      {
+        "title": "Asigură-te că încăperea este întunecoasă."
+      },
+      {
+        "title": "Încearcă să faci o baie caldă cu una sau două ore înainte de culcare."
+      },
+      {
+        "title": "Asigură-te că te simți confortabil și hainele tale nu te incomodează."
+      },
+      {
+        "title": "Evită să te uiți la ceas."
+      },
+      {
+        "title": "Lasă-ți mintea să rătăcească. Nu te concentra prea mult pe procesul de a adormi."
+      },
+      {
+        "title": "Dacă te simți îngrijorat/ă, ridică-te și scrie-ți grijile pe hârtie, apoi încearcă să le lași să treacă."
+      },
+      {
+        "title": "Imaginează-ți un loc sigur și liniștit: imaginează-te lângă un râu, lac sau într-o poiană. Imaginează-ți întreaga scenă, imaginile, sunetele și mirosurile, în timp ce te relaxezi. Poți folosi instrumentul de imagini pozitive din această aplicație dacă dorești."
+      },
+      {
+        "title": "Simte-ți toate mușchii corpului relaxați, ca și cum s-ar fi scufundat în saltea. Poți folosi instrumentul de relaxare musculară progresivă din această aplicație dacă dorești."
+      },
+      {
+        "title": "Evită nicotina, cofeina și alcoolul seara."
+      },
+      {
+        "title": "Evită prea multă sare în mâncare. Poate să te facă să te trezești însetat/ă în timpul nopții."
+      },
+      {
+        "title": "Oprește calculatorul sau televizorul cu 30 de minute înainte de culcare."
+      },
+      {
+        "title": "Creează o rutină relaxantă înainte de culcare."
+      },
+      {
+        "title": "Ridică-te și bea un pahar cu apă."
+      },
+      {
+        "title": "Asigură-te că așternuturile sunt curate și perna și salteaua sunt confortabile."
+      },
+      {
+        "title": "Încearcă să nu te îngrijorezi că nu adormi. Continuă să te relaxezi."
+      }
+    ],
     "sleep-habits": {
       "title": "Obiceiuri bune pentru somn",
-      "description": "Încorporarea de noi obiceiuri în rutina de noapte poate ajuta la un somn mai lin. Folosește următoarele instrumente pentru a-ți modela programul actual într-unul care să conducă la un somn de calitate.",
+      "info": "Informații",
+      "description": "Adoptarea unor noi obiceiuri în rutina ta nocturnă poate ajuta la un somn mai liniștit. Folosește instrumentele de mai jos pentru a-ți transforma programul actual într-unul care să ducă la un somn de calitate.",
       "save": "Salvează",
       "list": {
         "relaxing-activities": "Activități de relaxare",
-        "awake-activities": "Activități pentru a ma tine treaz",
-        "no-sleep-activities": "Activități pentru cand nu pot dormi",
-        "wake-up-activities": "Activități pentru a ma ajuta sa ma trezesc"
+        "awake-activities": "Activități pentru a rămâne treaz",
+        "no-sleep-activities": "Activități când nu pot dormi",
+        "wake-up-activities": "Activități care mă ajută să mă trezesc"
       },
       "relaxing-activities": {
-        "description": "A avea o perioadă de timp pentru relaxare înainte de a merge la culcare te poate ajuta să îți liniștești mintea și corpul. Acest timp este o tranziție între activitățile zilei și momentul în care mergi la culcare. Citește activitățile de mai jos pentru a explora câteva idei pentru lucruri de făcut în perioada de relaxare. Dacă o activitate continuă să funcționeze pentru tine, îți recomandăm să atingi steaua de lângă ea pentru a o marca drept favorită.",
-        "reminder-title": "RO/ro: Activitatea de relaxare pentru somn",
-        "reminder-body": "RO/ro: Folosește o activitate de relaxare pentru somn pentru a te ajuta să adormi mai ușor.",
+        "description": "Acordarea unui timp de relaxare înainte de culcare poate ajuta la liniștirea minții și corpului. Această perioadă este o tranziție între activitățile zilei și ora de somn. Citește activitățile de mai jos pentru idei despre ce poți face în acest interval de relaxare. Dacă o activitate te ajută constant, recomandăm să apeși pe steaua de lângă activitatea respectivă pentru a o marca ca favorită.",
+        "info": "Incluzând momente de relaxare în rutina ta de somn, somnul va veni mai ușor. Consultă sugestiile de activități pentru a găsi modalități prin care să te relaxezi înainte de culcare.",
+        "reminder-title": "Activitate relaxantă pentru somn",
+        "reminder-body": "Folosește o activitate relaxantă pentru somn ca să adormi mai ușor.",
         "reminder-time": "Zilnic",
         "list": [
           {
             "id": "1",
-            "text": "Alege hainele pe care să le porți a doua zi"
+            "text": "Alege hainele pe care să le porți mâine"
           },
           {
             "id": "2",
-            "text": "Pregătește-ți prânzul pentru a doua zi"
+            "text": "Pregătește prânzul pentru mâine"
           },
           {
             "id": "3",
-            "text": "Pregătește cina pentru a doua zi și pune-o la frigider"
+            "text": "Pregătește cina pentru mâine și pune-o la frigider"
           },
           {
             "id": "4",
@@ -226,23 +570,23 @@
           },
           {
             "id": "5",
-            "text": "Scrie note de mulțumire sau scurte mesaje către prieteni"
+            "text": "Scrie bilețele de mulțumire sau mesaje scurte prietenilor"
           },
           {
             "id": "6",
-            "text": "Navighează pe internet (doar subiecte nestresante) sau fă research pentru viitoare cumpărături (mașini, electrocasnice, vacanțe)"
+            "text": "Navighează pe internet (doar subiecte care nu sunt stresante) sau documentează-te despre viitoare achiziții (mașini, electrocasnice, vacanțe)"
           },
           {
             "id": "7",
-            "text": "Uită-te la filme sau episoade din emisiuni de televiziune pe care nu le-ai văzut de multă vreme (fără filme de acțiune sau thrillere)"
+            "text": "Uită-te la filme sau episoade de seriale pe care nu le-ai mai văzut de mult (fără filme de acțiune sau thrillere)"
           },
           {
             "id": "8",
-            "text": "Ieși cu câinele la o plimbare lungă"
+            "text": "Du câinele la o plimbare lungă"
           },
           {
             "id": "9",
-            "text": "Îngrijește-ți animalele de companie"
+            "text": "Ai grijă de animalele tale de companie"
           },
           {
             "id": "10",
@@ -250,11 +594,11 @@
           },
           {
             "id": "11",
-            "text": "Adună facturi și declarații vechi și aruncă-le dacă nu îți mai sunt utile"
+            "text": "Adună facturile și extrasele vechi și aruncă-le dacă nu mai ai nevoie de ele"
           },
           {
             "id": "12",
-            "text": "Fă ordine în colecții dacă ai - fotografii, scrisori vechi, cărți sau alte articole"
+            "text": "Organizează colecții dacă ai - fotografii, scrisori vechi, cărți sau alte obiecte"
           },
           {
             "id": "13",
@@ -270,23 +614,23 @@
           },
           {
             "id": "16",
-            "text": "Scrie în jurnalul tău"
+            "text": "Scrie în jurnal"
           },
           {
             "id": "17",
-            "text": "Fă sport ușor pentru a-ți relaxa mușchii"
+            "text": "Fă exerciții ușoare pentru relaxarea mușchilor"
           },
           {
             "id": "18",
-            "text": "Fă-ți pedichiura, manichiura sau un tratament facial"
+            "text": "Fă-ți o pedichiură, manichiură sau tratament facial"
           },
           {
             "id": "19",
-            "text": "Mătură sau șterge podeaua bucătăriei"
+            "text": "Mătură sau șterge pe jos în bucătărie"
           },
           {
             "id": "20",
-            "text": "Curăță-ți dinții cu ață dentară"
+            "text": "Folosește ața dentară"
           },
           {
             "id": "21",
@@ -294,16 +638,17 @@
           },
           {
             "id": "22",
-            "text": "Pornește un alt proiect handmade"
+            "text": "Începe un nou proiect de lucru manual"
           }
         ]
       },
       "awake-activities": {
-        "description": "Dacă ai probleme în a rămâne treaz până la ora la care vrei să mergi la culcare consultă secțiunea Activități care mă țin treaz de mai jos pentru idei care să te ajute cu senzațiile de somnolență profunde. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "description": "Dacă ai dificultăți să stai treaz până la ora la care dorești să te culci, verifică secțiunea Activități pentru a rămâne treaz, de mai jos, pentru idei care să te ajute să gestionezi somnolența. Dacă vreuna dintre activitățile de mai jos te ajută, apasă pe steaua din dreptul ei ca să o marchezi.",
+        "info": "Să rămâi treaz până te simți cu adevărat somnoros poate ajuta la creșterea nevoii de somn și la adormirea mai ușoară. Nu știi diferența între somnolență și oboseală? Consultă 'Somnul 101' în secțiunea Află mai multe. Folosește aceste activități pentru a rămâne treaz până la culcare. Dacă nu îți este somn la acea oră, încearcă tehnici de relaxare a corpului și calmare a minții. Amintește-ți să nu stai treaz când îți este somn dacă acest lucru ar putea afecta activități sau responsabilități importante.",
         "list": [
           {
             "id": "1",
-            "text": "Lucrează la un hobby de care ești interesat"
+            "text": "Lucrează la un hobby care îți place"
           },
           {
             "id": "2",
@@ -323,7 +668,7 @@
           },
           {
             "id": "6",
-            "text": "Fă exerciții ușoare "
+            "text": "Fă exerciții ușoare"
           },
           {
             "id": "7",
@@ -331,11 +676,11 @@
           },
           {
             "id": "8",
-            "text": "Fă treburi prin casă"
+            "text": "Fă treburi casnice"
           },
           {
             "id": "9",
-            "text": "Ascultă muzică veselă (cântă) "
+            "text": "Ascultă muzică energizantă (cântă dacă vrei)"
           },
           {
             "id": "10",
@@ -351,7 +696,7 @@
           },
           {
             "id": "13",
-            "text": "Mergi afară (dacă este sigur să ieși din casă) "
+            "text": "Ieși afară (dacă este sigur să ieși din casă)"
           },
           {
             "id": "14",
@@ -359,15 +704,15 @@
           },
           {
             "id": "15",
-            "text": "Pregătește mese pentru restul săptămânii"
+            "text": "Pregătește mesele pentru restul săptămânii"
           },
           {
             "id": "16",
-            "text": "Aranjează rufele"
+            "text": "Organizează rufele"
           },
           {
             "id": "17",
-            "text": "Organizează fișiere pe calculator"
+            "text": "Organizează fișierele de pe calculator"
           },
           {
             "id": "18",
@@ -376,23 +721,24 @@
         ]
       },
       "no-sleep-activities": {
-        "description": "Să te ridici din pat și să faci activități relaxante când nu poți să dormi te poate ajuta să asociezi patul doar cu somnul. Vezi secțiunea Activități pentru Miezul Nopții de mai jos pentru idei de lucruri pe care le poți face atunci când e greu să adormi. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "description": "Dacă nu poți dormi, ridică-te din pat și fă activități relaxante pentru a asocia patul doar cu somnul. Vezi secțiunea Activități de la miezul nopții de mai jos pentru idei despre ce poți face când nu poți adormi. Dacă te ajută vreuna din aceste activități, apasă pe steaua de lângă ea pentru a o marca.",
+        "info": "Ridicându-te din pat și făcând activități relaxante când nu poți dormi te poate ajuta să asociezi patul doar cu somnul. Folosește aceste idei pentru a rămâne relaxat/ă și ocupat/ă până devii foarte somnoros/oasă și pregătit/ă să revii în pat. Când te ridici, fă lucruri care să fie plăcute, dar liniștitoare. Dacă îți este greu să te dai jos din pat, pregătește dinainte un loc liniștit și confortabil unde poți merge.",
         "list": [
           {
             "id": "1",
-            "text": "Uită-te prin cataloage/reviste"
+            "text": "Răsfoiește cataloage/reviste"
           },
           {
             "id": "2",
-            "text": "Actualizează-ți agenda de contacte sau începe una online sau pe hârtie"
+            "text": "Actualizează agenda de contacte sau fă una pe hârtie sau online"
           },
           {
             "id": "3",
-            "text": "Fă ordine prin mail-uri și facturi"
+            "text": "Organizează emailurile și facturile"
           },
           {
             "id": "4",
-            "text": "Joacă solitaire online sau cu cărți de joc dacă nu ești o fire foarte competitivă"
+            "text": "Joacă solitaire online sau cu cărți dacă nu ești foarte competitiv/ă"
           },
           {
             "id": "5",
@@ -400,31 +746,31 @@
           },
           {
             "id": "6",
-            "text": "Fă o listă de cumpărături pentru săptămâna în curs"
+            "text": "Fă o listă de cumpărături pentru săptămâna curentă"
           },
           {
             "id": "7",
-            "text": "Planifică meniul pentru următoarele cine"
+            "text": "Planifică meniul pentru cinele următoare"
           },
           {
             "id": "8",
-            "text": "Fă curat și organizează măsuța de cafea, locul de luat masa, blatul din bucătărie sau biroul"
+            "text": "Curăță și organizează masa de cafea, zona de luat masa, blatul din bucătărie sau biroul"
           },
           {
             "id": "9",
-            "text": "Creează o listă de activități pe care ți-ar plăcea să le faci în weekenduri sau în vacanță"
+            "text": "Fă o listă cu activități pe care ai vrea să le faci în weekend sau în vacanță"
           },
           {
             "id": "10",
-            "text": "Pune în ordine albumul foto sau jurnalul"
+            "text": "Organizează albumul foto sau jurnalul"
           },
           {
             "id": "11",
-            "text": "Împăturește haine și pune-le la loc"
+            "text": "Împăturește hainele și pune-le la loc"
           },
           {
             "id": "12",
-            "text": "Cumpără cadouri pentru zilele de naștere sau sărbători"
+            "text": "Cumpără cadouri pentru zile de naștere sau sărbători"
           },
           {
             "id": "13",
@@ -432,36 +778,37 @@
           },
           {
             "id": "14",
-            "text": "Fă o listă de materiale pentru un proiect do-it-yourself pentru casă"
+            "text": "Fă o listă cu materiale pentru un proiect DIY acasă"
           },
           {
             "id": "15",
-            "text": "Alege două sertare în care să faci ordine (în birou, în baie sau în bucătărie)"
+            "text": "Alege două sertare de organizat (din birou, baie sau bucătărie)"
           },
           {
             "id": "16",
-            "text": "Uită-te la showuri repetitive la televizor sau la reclame"
+            "text": "Uită-te la emisiuni sau reclame TV repetitive"
           },
           {
             "id": "17",
-            "text": "Organizează-ți colecția de CD-uri sau DVD-uri și alege unele pentru a fi donate sau să le vinzi dacă nu mai ai nevoie de ele sau nu îți mai plac"
+            "text": "Organizează colecția de CD-uri sau DVD-uri și alege unele de donat sau vândut dacă nu le mai vrei"
           },
           {
             "id": "18",
-            "text": "Scrie gânduri pe un caiet pentru un timp. Folosește exercițiul ăsta pentru a scăpa de gânduri negative."
+            "text": "Scrie-ți gândurile într-un caiet pentru o vreme. Folosește acest exercițiu pentru a scăpa de gândurile negative."
           },
           {
             "id": "19",
-            "text": "Croșetează sau fă o activitate la care poți renunța ușor dacă ți se face somn"
+            "text": "Croșetează sau fă o activitate pe care o poți opri ușor dacă ți se face somn"
           },
           {
             "id": "20",
-            "text": "Citește o carte pentru copiii. Acestea sunt adesea liniștitoare și amuzante"
+            "text": "Citește o carte pentru copii. Acestea sunt adesea liniștitoare și amuzante"
           }
         ]
       },
       "wake-up-activities": {
-        "description": "Dacă ai o activitate care te entuziasmează programată pentru dimineață, aceasta te poate ajuta să te ridici din pat mult mai energic. Vezi secțiunea Activități pentru dimineată de mai jos pentru idei de lucruri pe care să le faci dimineața. Dacă oricare dintre activitățile acestea te ajută, apasă pe steaua din dreptul activității pentru a o marca.",
+        "description": "Dacă ai o activitate interesantă programată pentru dimineață, te poate ajuta să te ridici din pat cu mai multă energie. Vezi secțiunea Activități pentru dimineață de mai jos pentru idei. Dacă vreuna din aceste activități te ajută, marchează-o cu o stea.",
+        "info": "Ridicându-te la ora planificată dimineața îți menții un program consistent și previi asocierea patului cu starea de veghe. Folosește aceste idei pentru a-ți menține motivația de a începe ziua. Poți seta și o notificare care să coincidă cu ora la care vrei să te trezești.",
         "list": [
           {
             "id": "1",
@@ -473,11 +820,11 @@
           },
           {
             "id": "3",
-            "text": "Scoate cățelul la o plimbare dacă ești într-o zonă sigură"
+            "text": "Scoate câinele la plimbare dacă ești într-o zonă sigură"
           },
           {
             "id": "4",
-            "text": "Citește ziarul sau citește știrile online "
+            "text": "Citește ziarul sau știrile online"
           },
           {
             "id": "5",
@@ -485,35 +832,35 @@
           },
           {
             "id": "6",
-            "text": "Mergi la magazin după cumpărături"
+            "text": "Du-te la cumpărături"
           },
           {
             "id": "7",
-            "text": "Pregătește-ți prânzul pentru tine sau pentru toată familia"
+            "text": "Pregătește prânzul pentru tine sau pentru toată familia"
           },
           {
             "id": "8",
-            "text": "Bucură-te că te poți pregăti pentru mersul la lucru și că ai timp să pregătești copiii pentru școală fără să te grăbești"
+            "text": "Bucură-te că ai timp să te pregătești pentru serviciu și să pregătești copiii de școală fără grabă"
           },
           {
             "id": "9",
-            "text": "Fă ordine în jucăriile copiilor și alege lucruri de donat"
+            "text": "Organizează jucăriile copiilor și alege ce să donezi"
           },
           {
             "id": "10",
-            "text": "Sortează hainele pentru pus la spălat sau calcă rufe"
+            "text": "Sortează hainele pentru spălat sau calcă rufele"
           },
           {
             "id": "11",
-            "text": "Planifică bugetul familiei într-un excel sau pe hârtie"
+            "text": "Planifică bugetul familiei în excel sau pe hârtie"
           },
           {
             "id": "12",
-            "text": "Trimite emailuri către prieteni sau verifică emailul de lucru"
+            "text": "Trimite emailuri prietenilor sau verifică emailul de la serviciu"
           },
           {
             "id": "13",
-            "text": "Fă curat pe hard disk-uri vechi sau pe DVD-uri"
+            "text": "Curăță hdd-uri sau DVD-uri vechi"
           },
           {
             "id": "14",
@@ -521,11 +868,11 @@
           },
           {
             "id": "15",
-            "text": "Pregătește ingredientele pentru cină (pune carne la marinat, taie legume etc)"
+            "text": "Pregătește ingredientele pentru cină (marinează carnea, taie legumele etc)"
           },
           {
             "id": "16",
-            "text": "Fă patul și curat în cameră"
+            "text": "Fă patul și curăță camera"
           },
           {
             "id": "17",
@@ -533,190 +880,1300 @@
           },
           {
             "id": "18",
-            "text": "Mătură prin casă sau în afara ei "
+            "text": "Mătură în casă sau afară"
           },
           {
             "id": "19",
-            "text": "Îngrijește puțin plantele din casă sau grădină, pune apă la flori "
+            "text": "Ai grijă de plantele de apartament sau din grădină, udă florile"
           },
           {
             "id": "20",
-            "text": "Verifică lista de taskuri pentru ziua în curs sau pentru săptămână"
+            "text": "Verifică lista de sarcini pentru ziua sau săptămâna curentă"
           }
         ]
       }
     },
     "sleep-perspective": {
-      "title": "RO/ro: Schimba perspectiva somnului",
-      "description": "RO/ro: Try these habits to improve your sleep quality",
+      "title": "Schimbă-ți perspectiva despre somn",
+      "description": "Încearcă aceste obiceiuri pentru a-ți îmbunătăți calitatea somnului",
       "repeater": [
         {
           "title": "Pot tolera asta."
         },
         {
-          "title": "Voi supraviețui chiar dacă nu dorm deloc în noaptea asta."
+          "title": "O să supraviețuiesc chiar dacă nu dorm deloc în noaptea asta."
         },
         {
-          "title": "Am mai făcut asta, așa că știu că o pot face din nou."
+          "title": "Am mai trecut prin asta, deci știu că pot să fac față din nou."
         },
         {
-          "title": "Nu trebuie să mă simt confortabil tot timpul. Sunt om."
+          "title": "Nu trebuie să mă simt mereu confortabil. Sunt om."
         },
         {
-          "title": "Aceasta este o altă provocare pe care o voi rezolva și o voi face față."
+          "title": "Aceasta este doar o altă provocare pe care o voi rezolva și cu care voi face față."
         },
         {
-          "title": "Am mai trecut prin asta și am fost foarte bine."
+          "title": "Am mai trecut prin asta înainte și am fost bine."
         },
         {
-          "title": "O noapte de somn prost nu este sfârșitul lumii."
+          "title": "O noapte proastă de somn nu este sfârșitul lumii."
         },
         {
           "title": "Această noapte agitată va trece."
         },
         {
-          "title": "Deși se simte că nu voi dormi niciodată bine, s-ar putea să nu fie cazul. Anticiparea că s-ar putea să nu dorm bine îmi va înrăutăți probabil somnul. Am funcționat bine înainte chiar și după ce nu am dormit bine."
+          "title": "Chiar dacă simt că nu o să dorm bine niciodată, acest lucru poate să nu fie adevărat. Dacă mă aștept să nu dorm bine, probabil o să-mi îngreunez și mai mult somnul. Am funcționat bine și în trecut chiar după nopți cu somn slab."
         },
         {
-          "title": "Am funcționat prost înainte chiar și după ce am dormit bine."
+          "title": "Mi s-a întâmplat să funcționez prost chiar și după ce am dormit bine."
         },
         {
-          "title": "Deși anticipez un somn prost, ar putea fi bine... Am dormit bine înainte."
+          "title": "Chiar dacă mă aștept la un somn slab, poate fi ok... Am dormit bine și altădată."
         },
         {
-          "title": "Organismul reglează în mod natural somnul; chiar dacă îmi lipsește puțin somn, voi putea să funcționez."
+          "title": "Corpul reglează somnul în mod natural; chiar dacă pierd puțin somn, voi putea face față."
         },
         {
-          "title": "Dacă nu îmi fac griji în privința somnului, somnul prost într-o noapte îmi va îmbunătăți probabil somnul în noaptea următoare."
+          "title": "Dacă nu mă stresez pentru somn, o noapte proastă probabil va fi urmată de un somn mai bun data viitoare."
         }
       ]
     }
   },
   "pause": {
-    "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat.\n\nTe rugăm să reții că vor fi pauze în înregistrarea audio pentru a putea practica fără distrageri.\n\nDurata: Aproximativ 9 minute.",
+    "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde să nu fii deranjat.\n\nTe rugăm să ții cont că vor exista pauze în audio ca să poți exersa fără distrageri.\n\nDurată: Aproximativ 9 minute.",
     "action-btn-label": "Continuă",
-    "helper": "RO/ro: Incearca sa faci asta pentru 5 minute",
-    "take_break": "RO/ro: Ia o pauză",
+    "helper": "Încearcă să faci acest exercițiu timp de 5 minute",
+    "take_break": "Ia o pauză",
     "repeater": [
       {
-        "title": "Fă o plimbare pentru a te relaxa și a-ți limpezi gândurile"
+        "title": "Fă o plimbare ca să te relaxezi și să-ți limpezești gândurile"
       },
       {
-        "title": "Respiră adânc timp de 10 minute sau mai mult"
+        "title": "Respiră profund timp de 10 minute sau mai mult"
       },
       {
-        "title": "Fă sport (mergi cu bicileta, mergi în drumeții, ridică greutăți, înoată, aleargă)"
+        "title": "Fă mișcare (cu bicicleta, drumeție, ridicări de greutăți, înot, alergare)"
       },
       {
-        "title": "Grădinărește sau fă curat prin curte"
+        "title": "Grădinărește sau fă lucrări de curte"
       },
       {
-        "title": "Spune-ți lucruri pozitive precum \"Pot să fac față acestei situații fără să îmi pierd cumpătul\""
+        "title": "Spune-ți lucruri pozitive, de exemplu: \"Pot face față acestei situații fără să-mi pierd calmul\""
       },
       {
         "title": "Desenează sau pictează pentru a-ți exprima emoțiile"
       },
       {
-        "title": "Sună un prieten sau o persoană iubită pentru sprijin"
+        "title": "Sună un prieten sau o persoană dragă pentru sprijin"
       },
       {
         "title": "Sună-ți terapeutul pentru sprijin"
       },
       {
-        "title": "Întinde-te și respiră adânc și lent"
+        "title": "Întinde-te și respiră adânc și încet"
       },
       {
-        "title": "Amintește-ți că poți să faci față"
+        "title": "Amintește-ți că poți face față"
       },
       {
-        "title": "Meditează pentru a-ți liniști mintea"
+        "title": "Meditează pentru a-ți calma mintea"
       },
       {
         "title": "Roagă-te pentru îndrumare și sprijin"
       },
       {
-        "title": "Gândește-te ce sfat ți-ar da cineva în care ai încredere"
+        "title": "Gândește-te ce sfat ți-ar oferi cineva în care ai încredere"
       },
       {
-        "title": "Petrece timp cu un animal pentru confort și liniște"
+        "title": "Petrece timp cu un animal de companie pentru confort și liniște"
       },
       {
-        "title": "Fă un duș sau o baie pentru a te relaxa"
+        "title": "Fă un duș sau o baie ca să te relaxezi"
       },
       {
-        "title": "Gândește-te la cum vrei să fii un exemplu pentru alții din viața ta - copiii etc."
+        "title": "Gândește-te cum vrei să fii un model pentru ceilalți din viața ta – copii etc."
       }
     ]
   },
+  "my-feelings": {
+    "done": "Gata",
+    "next": "Următorul",
+    "delete": "Șterge sentimentele",
+    "main-action-label": "Adaugă un sentiment",
+    "no-feelings": "Nu ai adăugat încă niciun sentiment.",
+    "choose-main-feelings": "Alege unul sau mai multe sentimente care descriu cum te simți acum.",
+    "choose-secondary-feelings": "Alege orice alte sentimente pe care le simți acum.",
+    "discomfort-meter": "Măsurarea disconfortului",
+    "discomfort-intensity": "Cât de intens este disconfortul tău chiar acum?",
+    "stress": "Stres",
+    "repeater": [
+      "Pace și liniște totală",
+      "Relaxat și fără stres",
+      "Tristețe ușoară",
+      "Puțin trist și fără tensiune",
+      "Stres ușor",
+      "Stresat, dar nu prea mult",
+      "Stres moderat",
+      "Stres moderat ridicat",
+      "Stres și tensiune puternică",
+      "Stres foarte ridicat până la extrem",
+      "Stres extrem și panică"
+    ],
+    "feelings-summary": "Sumar sentimente",
+    "feelings-summary-description": "Iată un sumar al sentimentelor tale pentru: ",
+    "my-feelings": "Sentimentele mele",
+    "emotion-intensity": "Intensitatea emoției",
+    "ok": "Ok"
+  },
+  "feelings": {
+    "angry": {
+      "main": "Furios",
+      "betrayed": "Trădat",
+      "bitter": "Amar",
+      "critical": "Critic",
+      "devastated": "Devastat",
+      "disgusted": "Dezgustat",
+      "frustrated": "Frustrat",
+      "angry": "Furios",
+      "detestable": "Detestabil",
+      "hostile": "Ostil",
+      "hurt": "Rănit",
+      "irritated": "Iritat",
+      "indignant": "Indignat"
+    },
+    "happy": {
+      "main": "Fericit",
+      "energetic": "Energic",
+      "cheerful": "Vesel",
+      "creative": "Creativ",
+      "curious": "Curios",
+      "daring": "Îndrăzneț",
+      "hopeful": "Plin de speranță",
+      "full_of_imagination": "Plin de imaginație",
+      "light": "Ușor",
+      "optimistic": "Optimist",
+      "playful": "Jucăuș",
+      "thin_skinned": "Sensibil",
+      "provocative": "Provocator"
+    },
+    "strong": {
+      "main": "Puternic",
+      "appreciated": "Apreciat",
+      "confident": "Încrezător",
+      "discerning": "Perspicace",
+      "energetic": "Energic",
+      "nourishing": "Hrănitor",
+      "proud": "Mândru",
+      "respected": "Respectat",
+      "receptive": "Receptiv",
+      "successful": "De succes",
+      "grateful": "Recunoscător",
+      "cherished": "Prețuit",
+      "valuable": "Valoros"
+    },
+    "sad": {
+      "main": "Trist",
+      "embarrassed": "Stânjenit",
+      "bored": "Plictisit",
+      "cold": "Rece",
+      "depressed": "Depresiv",
+      "desperate": "Disperat",
+      "disconnected": "Deconectat",
+      "empty": "Gol",
+      "hopeless": "Fără speranță",
+      "humiliated": "Umilit",
+      "lonely": "Singur",
+      "tired": "Obosit",
+      "worthless": "Fără valoare"
+    },
+    "safe": {
+      "main": "În siguranță",
+      "accepted": "Acceptat",
+      "calm": "Calm",
+      "loved": "Iubit",
+      "open": "Deschis",
+      "peaceful": "Liniștit",
+      "protected": "Protejat",
+      "silent": "Tăcut",
+      "relaxed": "Relaxat",
+      "caring": "Îngrijitor",
+      "understood": "Înțeles",
+      "warm": "Cald"
+    },
+    "scared": {
+      "main": "Speriat",
+      "abandoned": "Abandonat",
+      "anxious": "Anxios",
+      "perplexed": "Nedumerit",
+      "helpless": "Neajutorat",
+      "inadequate": "Inadecvat",
+      "insignificant": "Insignifiant",
+      "numb": "Amorțit",
+      "overwhelmed": "Copleșit",
+      "paralyzed": "Paralizat",
+      "shocked": "Șocat",
+      "blocked": "Blocat",
+      "vulnerable": "Vulnerabil"
+    }
+  },
+  "worry-time": {
+    "title": "Timp de îngrijorare",
+    "help": "Ajutor",
+    "description": "O strategie care s-a dovedit utilă în calmarea gândurilor anxioase este programarea unei perioade de îngrijorare. Deși acest lucru poate părea contraintuitiv pentru persoanele care se luptă cu anxietatea, poate ajuta la recâștigarea controlului asupra gândurilor obsesive. Dacă te surprinzi îngrijorat noaptea, programează mai jos un moment în care te poți gândi la problemele care te preocupă.",
+    "write-here": "Folosește acest spațiu pentru a nota subiecte la care să te gândești...",
+    "subjects-to-think-about": "Subiecte la care să te gândești",
+    "help-text": "Faptul că te preocupă griji mici sau mari, că meditezi la probleme sau planifici evenimente viitoare când ești în pat te poate ține treaz. Programarea unei perioade dedicate pentru griji îi poate ajuta pe oameni să recapete controlul asupra gândurilor anxioase care îi țin treji.\n\nAlege un moment în timpul zilei pentru a te gândi, a-ți face griji, a rezolva probleme și a planifica ce ai de făcut. Apoi, dacă apar gânduri intruzive în perioada de somn, amână-le pentru „timpul de gândire și îngrijorare” de a doua zi. Asigură-te că nu alegi un moment prea aproape de ora de culcare, pentru a avea timp să te relaxezi apoi.\n\nProgramând zilnic o perioadă pentru preocupările tale, vei observa că ai mai puține griji când ești în pat.\n\nMulți oameni se trezesc îngrijorându-se că nu pot adormi, ceea ce, din păcate, îi ține și mai treji. Amintește-ți că deși lipsa somnului poate fi inconfortabilă, corpul tău este făcut să tolereze nopți mai proaste. De fapt, pierderea de somn poate crește dorința de a dormi, ceea ce poate duce la îmbunătățirea calității somnului în nopțile următoare. Este important să reduci anxietatea nocturnă pentru a-ți crește șansele de a avea un somn de calitate.",
+    "reminder": "Memento pentru timpul de îngrijorare",
+    "daily-reminder": "Zilnic",
+    "ptsd-help": "Ajutor pentru PTSD",
+    "review": "Revizuiește problemele care te fac să te îngrijorezi."
+  },
+  "rid": {
+    "title": "RID",
+    "start": "Start",
+    "done": "Gata",
+    "description": "Instrumentul RID este conceput pentru momentele declanșate de amintiri traumatice din trecut. Vei fi ghidat prin trei pași pentru a-ți gestiona starea.",
+    "continue": "Continuă",
+    "relax": "RID: Relaxare",
+    "relaxation": "Relaxare",
+    "r": "R",
+    "i": "I",
+    "d": "D",
+    "rid-identify": "RID: Identifică",
+    "identify": "Identifică",
+    "identify-trigger": "Identifică declanșatorul",
+    "breathe": "Ia 30 de secunde pentru a te relaxa, respirând lent și imaginându-ți că, cu fiecare respirație, tensiunea ta scade.",
+    "30-more": "Încă 30 de secunde de relaxare",
+    "review": "Revizuiește ultimele minute sau ore și observă ce amintiri ale traumei ai întâlnit. Declanșatorii pot fi interni, precum gânduri sau amintiri, sau externi, precum conversații, situații sau lucruri din jurul nostru (de exemplu, o anumită persoană sau un anumit loc). Identificarea unui declanșator poate fi uneori dificilă. Nu te îngrijora dacă nu îl poți identifica, concentrează-te doar pe relaxare și calmare.\n\nOdată ce ai identificat declanșatorul, dacă poți, este important să observi că este doar un memento, nu trauma în sine care se repetă, chiar dacă mintea și corpul reacționează. Observă cu adevărat cum declanșatorul actual este diferit de traumă. Reamintește-ți aceste diferențe în mod repetat.",
+    "trigger": "Ce ți-a declanșat starea?",
+    "trigger-placeholder": "De exemplu: „Am fost implicat într-un accident de mașină”",
+    "different": "Cu ce este situația ta actuală diferită față de experiența traumatică?",
+    "placeholder": "Scrie răspunsul aici...",
+    "rid-decide": "RID: Decide",
+    "decide-next": "Decide ce vei face în continuare",
+    "final-step": "Ai ajuns la ultimul pas. Dacă te simți stresat acum, poți încerca să reduci puterea declanșatorului alegând să rămâi pe loc, pentru a vedea că poți face față și că stresul va scădea cu cât reziști mai mult. Dacă declanșatorul te-a făcut foarte furios, cel mai bine este să iei o pauză. Dacă există pericolul să te rănești pe tine sau pe alții, caută sprijin și nu-ți asuma niciun risc.",
+    "what-will-you-decide": "Ce vei decide să faci?",
+    "decision-placeholder": "Mă voi întoarce de câteva ori până nu mă mai declanșează atât de tare.",
+    "rid-summary": "Rezumat RID",
+    "triggered-how": "Cum ai fost declanșat:",
+    "different-situation": "Cu ce situația ta actuală este diferită față de experiența traumatică:",
+    "you-decided": "Ai decis:",
+    "empty": "Nu ai adăugat niciun RID încă.",
+    "date": "Data:",
+    "delete": "Șterge RID"
+  },
   "muscle-relaxation": {
     "title": "Relaxare musculară",
-    "description": "Urmează să fii ghidat printr-un exercițiu de relaxare musculară progresivă. Vei parcurge fiecare dintre grupele tale musculare principale, tensionându-le și relaxându-le pe rând. Acest exercițiu durează aproximativ 9 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
-    "action-btn-label": "RO/ro: Incepe",
-    "done": "RO/ro: Gata"
+    "description": "Vei fi ghidat printr-un exercițiu progresiv de relaxare musculară. Vei parcurge fiecare grupă musculară majoră, tensionând și relaxând pe rând. Exercițiul durează aproximativ 9 minute. Are și audio, deci caută un loc liniștit sau pune-ți căștile acum.",
+    "action-btn-label": "Start",
+    "done": "Gata"
   },
   "deep-breathing": {
     "title": "Respirație profundă",
-    "description": "Încetinirea și adâncirea respirației te poate ajuta să te calmezi când te simți stresat. Pune-ți căștile sau mergi într-un loc privat și liniștit pentru a fi ghidat prin acest exercițiu.",
-    "action-btn-label": "Începe",
+    "description": "Încetinirea și adâncirea respirației te poate ajuta să te calmezi când ești în suferință. Pune-ți căștile sau mergi undeva privat și liniștit pentru a fi ghidat prin exercițiu.",
+    "action-btn-label": "Start",
     "done": "Gata"
   },
   "body-scan": {
-    "title": "Scanarea corpului",
-    "action-btn-label": "Începe",
+    "title": "Scanare corporală",
+    "action-btn-label": "Start",
     "done": "Gata",
     "julia": {
       "title": "Julia",
-      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
-      "action-btn-label": "Începe",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici atenția la senzațiile fizice. Ține cont că vor exista pauze în audio pentru ca tu să poți exersa fără distrageri.",
+      "action-btn-label": "Start",
       "done": "Gata"
     },
     "robyn": {
       "title": "Robyn",
-      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici conștientizarea senzațiilor fizice. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
-      "action-btn-label": "Începe",
+      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat. Acest exercițiu de mindfulness te va ajuta să practici atenția la senzațiile fizice. Ține cont că vor exista pauze în audio pentru ca tu să poți exersa fără distrageri.",
+      "action-btn-label": "Start",
       "done": "Gata"
     }
   },
   "positive-imagery": {
-    "title": "Imagini pozitive",
-    "description": "Imagini pozitive",
-    "action-btn-label": "Începe",
+    "title": "Imaginar pozitiv",
+    "description": "Imaginar pozitiv",
+    "action-btn-label": "Start",
     "done": "Gata",
     "beach": {
       "title": "Plajă",
-      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
-      "action-btn-label": "Începe",
+      "description": "Vei fi ghidat printr-un exercițiu de relaxare despre a vizualiza ceva plăcut. Exercițiul durează aproximativ 4 minute. Are și audio, deci caută un loc liniștit sau pune-ți căștile acum.",
+      "action-btn-label": "Start",
       "done": "Gata"
     },
     "country-road": {
       "title": "Drum de țară",
-      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
-      "action-btn-label": "Începe",
+      "description": "Vei fi ghidat printr-un exercițiu de relaxare despre a vizualiza ceva plăcut. Exercițiul durează aproximativ 4 minute. Are și audio, deci caută un loc liniștit sau pune-ți căștile acum.",
+      "action-btn-label": "Start",
       "done": "Gata"
     },
     "forest": {
       "title": "Pădure",
-      "description": "Urmează să fii ghidat printr-un exercițiu de relaxare concentrat pe vizualizarea unor lucruri plăcute. Acest exercițiu durează aproximativ 4 minute. Are și sunet, așa că va trebui să găsești un loc liniștit sau să îți pui căștile acum.",
-      "action-btn-label": "Începe",
-      "done": "Gata"
-    }
-  },
-  "observe-thoughts": {
-    "title": "Observă gândurile",
-    "description": "Observă gândurile",
-    "action-btn-label": "Începe",
-    "done": "Gata",
-    "clouds": {
-      "title": "Nori",
-      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
-      "action-btn-label": "Începe",
+      "description": "Vei fi ghidat printr-un exercițiu de relaxare despre a vizualiza ceva plăcut. Exercițiul durează aproximativ 4 minute. Are și audio, deci caută un loc liniștit sau pune-ți căștile acum.",
+      "action-btn-label": "Start",
       "done": "Gata"
     },
-    "river": {
-      "title": "Râul",
-      "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să te așezi, unde este puțin probabil să fii deranjat. Te rugăm să reții că vor exista pauze în înregistrarea audio pentru a putea practica fără distrageri.",
-      "action-btn-label": "Începe",
-      "done": "Gata"
+    "observe-thoughts": {
+      "title": "Observă gândurile",
+      "description": "Observă gândurile",
+      "action-btn-label": "Start",
+      "done": "Gata",
+      "clouds": {
+        "title": "Nori",
+        "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat. Ține cont că vor exista pauze în audio pentru ca tu să poți exersa fără distrageri.",
+        "action-btn-label": "Start",
+        "done": "Gata"
+      },
+      "river": {
+        "title": "Râu",
+        "description": "Pentru acest exercițiu, găsește un loc confortabil și liniștit unde să stai, unde este puțin probabil să fii deranjat. Ține cont că vor exista pauze în audio pentru ca tu să poți exersa fără distrageri.",
+        "action-btn-label": "Start",
+        "done": "Gata"
+      }
     }
+  },
+  "my-strengths": {
+    "title": "Punctele mele forte",
+    "title-edit": "Editează punctul forte",
+    "description": "În mijlocul tuturor lucrurilor pe care trebuie să le faci într-o zi, este important să faci un pas înapoi și să observi punctele tale forte.\n\nAmintindu-ți toate calitățile și experiențele bune te poate ajuta să-ți îmbunătățești starea și perspectiva.",
+    "add": "Adaugă punct forte",
+    "done": "Gata",
+    "strength-label": "Ce îți place sau respecți la tine? La ce te pricepi bine?",
+    "placeholder": "Scrie aici punctul tău forte...",
+    "pick-image": "Alege o imagine care îți amintește de unul dintre punctele tale forte - poate fi o persoană, ceva ce ai făcut sau ceva la care ești bun.",
+    "take-picture": "Fă o poză",
+    "pick-from-library": "Alege o imagine din galerie",
+    "delete-image": "Șterge imaginea",
+    "modify-image": "Modifică imaginea",
+    "info": "Exemple:\n- Sunt o persoană bună\n- Am intenții bune\n- Am realizat o pictură frumoasă azi\n- Sunt un prieten bun",
+    "edit": "Editează punctul forte",
+    "delete": "Șterge punctul forte"
+  },
+  "shift-thoughts": {
+    "title": "Schimbă gândurile",
+    "helper": "Găsește un gând de mai jos pe care îl poți repeta timp de 5 minute:",
+    "start": "Start",
+    "repeater": [
+      {
+        "title": "Pot tolera asta."
+      },
+      {
+        "title": "Inspiră adânc."
+      },
+      {
+        "title": "Respiră"
+      },
+      {
+        "title": "Controlează-ți furia"
+      },
+      {
+        "title": "Nu pot schimba lumea."
+      },
+      {
+        "title": "Numără până la 10 și respiră."
+      },
+      {
+        "title": "Caută în tine liniște și stabilitate."
+      },
+      {
+        "title": "Nu te lăsa prins în această situație."
+      },
+      {
+        "title": "Nu lăsa să te afecteze."
+      },
+      {
+        "title": "Nu acorda atenție."
+      },
+      {
+        "title": "Nu reacționa impulsiv."
+      },
+      {
+        "title": "Nu merge acolo."
+      },
+      {
+        "title": "Ia-o ușor."
+      },
+      {
+        "title": "Poți trece peste asta."
+      },
+      {
+        "title": "Cum ar gestiona această situație o persoană pe care o respecți?"
+      },
+      {
+        "title": "Nu pot controla ce fac alții."
+      },
+      {
+        "title": "Este în trecut."
+      },
+      {
+        "title": "Nu este un lucru atât de mare; nu e nevoie să mă supăr."
+      },
+      {
+        "title": "Nu merită."
+      },
+      {
+        "title": "Concentrează-te pe ceea ce contează."
+      },
+      {
+        "title": "Lasă-l în pace."
+      },
+      {
+        "title": "Lasă lucrurile să fie."
+      },
+      {
+        "title": "Lasă să treacă."
+      },
+      {
+        "title": "Încetinește."
+      },
+      {
+        "title": "Mergi înainte."
+      },
+      {
+        "title": "Oprește-te! Doar oprește-te."
+      },
+      {
+        "title": "Și asta va trece."
+      },
+      {
+        "title": "Folosește instrumentele tale!"
+      }
+    ]
+  },
+  "recreational-activities": {
+    "label": "Activități recreative"
+  },
+  "recreational-activities-alone": {
+    "label": "Activități recreative: Timp petrecut singur",
+    "title": "Timp petrecut singur",
+    "repeater": [
+      {
+        "description": "Coace ceva."
+      },
+      {
+        "description": "Gătește ceva pentru tine."
+      },
+      {
+        "description": "Dansează."
+      },
+      {
+        "description": "Rezolvă un rebus sau sudoku."
+      },
+      {
+        "description": "Rezolvă un puzzle."
+      },
+      {
+        "description": "Fă activități de artă sau lucru manual."
+      },
+      {
+        "description": "Mănâncă ceva delicios."
+      },
+      {
+        "description": "Savurează o cafea sau un ceai."
+      },
+      {
+        "description": "Tricotează sau brodează."
+      },
+      {
+        "description": "Aprinde lumânări."
+      },
+      {
+        "description": "Fă o listă cu 5 lucruri care îți plac la tine."
+      },
+      {
+        "description": "Ascultă radio."
+      },
+      {
+        "description": "Pictează sau desenează."
+      },
+      {
+        "description": "Planifică o excursie."
+      },
+      {
+        "description": "Cântă la un instrument muzical."
+      },
+      {
+        "description": "Joacă-te cărți."
+      },
+      {
+        "description": "Petrece timp cu animale."
+      },
+      {
+        "description": "Exersează o artă marțială."
+      },
+      {
+        "description": "Roagă-te, meditează sau practică yoga."
+      },
+      {
+        "description": "Pune-ți cămașa preferată ca să te simți bine."
+      },
+      {
+        "description": "Citește o revistă sau o carte relaxantă."
+      },
+      {
+        "description": "Amintește-ți o vacanță distractivă."
+      },
+      {
+        "description": "Amintește-ți pe cineva care a fost amabil cu tine."
+      },
+      {
+        "description": "Construiește ceva cu mâinile tale."
+      },
+      {
+        "description": "Cântă prin casă."
+      },
+      {
+        "description": "Fă un duș relaxant."
+      },
+      {
+        "description": "Fă o baie caldă sau intră în jacuzzi."
+      },
+      {
+        "description": "Fă fotografii."
+      },
+      {
+        "description": "Gândește-te la cineva drag."
+      },
+      {
+        "description": "Uită-te la un film sau la o emisiune TV."
+      },
+      {
+        "description": "Privește videoclipuri amuzante."
+      },
+      {
+        "description": "Uită-te la sport la TV."
+      },
+      {
+        "description": "Scrie o poezie sau o poveste."
+      }
+    ]
+  },
+  "recreational-activities-city": {
+    "title": "În oraș",
+    "repeater": [
+      {
+        "description": "Răsfoiește marfa într-un magazin de bricolaj sau de articole pentru exterior."
+      },
+      {
+        "description": "Mergi la vitrine (window shopping)."
+      },
+      {
+        "description": "Cumpără-ți un mic cadou."
+      },
+      {
+        "description": "Cumpără-ți o plantă."
+      },
+      {
+        "description": "Cumpără-ți muzică."
+      },
+      {
+        "description": "Mergi la manichiură și/sau pedichiură."
+      },
+      {
+        "description": "Mergi la masaj."
+      },
+      {
+        "description": "Mergi la bowling."
+      },
+      {
+        "description": "Mergi să asculți muzică."
+      },
+      {
+        "description": "Ieși la o înghețată."
+      },
+      {
+        "description": "Ieși la cină."
+      },
+      {
+        "description": "Fă turism prin oraș (vizitează obiective turistice)."
+      },
+      {
+        "description": "Intră într-o librărie și citește."
+      },
+      {
+        "description": "Mergi la o cafenea să citești și să bei cafea/ceai."
+      },
+      {
+        "description": "Mergi la un spectacol sau o piesă de teatru."
+      },
+      {
+        "description": "Mergi la muzeu."
+      },
+      {
+        "description": "Mergi la biserică/templu/moschee."
+      },
+      {
+        "description": "Mergi la cinema."
+      },
+      {
+        "description": "Mergi să vezi curse de cai sau de mașini."
+      },
+      {
+        "description": "Joacă un sport."
+      },
+      {
+        "description": "Joacă biliard."
+      },
+      {
+        "description": "Participă la un curs de meșteșuguri, limbi străine sau dans."
+      },
+      {
+        "description": "Fă voluntariat la o cantină socială sau la un adăpost de animale."
+      }
+    ]
+  },
+  "recreational-activities-nature": {
+    "title": "În natură",
+    "repeater": [
+      {
+        "description": "Cumpără flori și bucură-te de frumusețea lor."
+      },
+      {
+        "description": "Grădinărește."
+      },
+      {
+        "description": "Observă păsările."
+      },
+      {
+        "description": "Mergi cu cortul (camping)."
+      },
+      {
+        "description": "Mergi la pescuit."
+      },
+      {
+        "description": "Fă o plimbare cu mașina sau motocicleta prin mediul rural."
+      },
+      {
+        "description": "Fă o drumeție sau un tur cu bicicleta pe un traseu de natură."
+      },
+      {
+        "description": "Mergi la picnic."
+      },
+      {
+        "description": "Mergi la un lac, râu sau la plajă."
+      },
+      {
+        "description": "Fă o plimbare într-o grădină botanică sau la o expoziție de flori."
+      },
+      {
+        "description": "Fă o excursie într-o rezervație naturală sau într-un parc național."
+      },
+      {
+        "description": "Plimbă-te prin parc."
+      },
+      {
+        "description": "Petrece timp cu animale într-un mod sigur."
+      }
+    ]
+  },
+  "soothe-senses": {
+    "title": "Calmează-ți simțurile",
+    "done": "Gata",
+    "repeater": [
+      {
+        "title": "Auz",
+        "description": "Cântă melodiile tale preferate sau ascultă-le și cântă odată cu ele."
+      },
+      {
+        "title": "Auz",
+        "description": "Ascultă muzică și lasă-te purtat de sunete."
+      },
+      {
+        "title": "Auz",
+        "description": "Ascultă sunete plăcute, precum ciripitul păsărilor sau sunetul valurilor."
+      },
+      {
+        "title": "Auz",
+        "description": "Învață să cânți la un instrument și cântă pentru propria ta plăcere."
+      },
+      {
+        "title": "Auz",
+        "description": "Fii atent la sunetele din jurul tău."
+      },
+      {
+        "title": "Auz",
+        "description": "Pornește un film și ascultă sunetele, tonurile și textura vocii oamenilor."
+      },
+      {
+        "title": "Auz",
+        "description": "Ascultă o meditație sau o prelegere online sau la radio despre ceva interesant pentru tine."
+      },
+      {
+        "title": "Auz",
+        "description": "Fă o plimbare în natură și ascultă sunetele din jur."
+      },
+      {
+        "title": "Văz",
+        "description": "Fă o plimbare prin parc sau o drumeție în natură. Observă frumusețea din jur."
+      },
+      {
+        "title": "Văz",
+        "description": "Mergi la muzeu și bucură-te de operele de artă care îți atrag atenția."
+      },
+      {
+        "title": "Văz",
+        "description": "Stai în holul unui hotel frumos și observă detaliile decorului."
+      },
+      {
+        "title": "Văz",
+        "description": "Cumpără o floare sau un buchet și înfrumusețează un spațiu în cameră."
+      },
+      {
+        "title": "Văz",
+        "description": "Ieși afară seara, în aer curat, și privește stelele."
+      },
+      {
+        "title": "Văz",
+        "description": "Privește poze de călătorie frumoase într-o carte sau online; lasă-te inspirat de ele."
+      },
+      {
+        "title": "Gust",
+        "description": "Mănâncă mâncarea ta preferată; fii atent la gusturile și plăcerea pe care o simți."
+      },
+      {
+        "title": "Gust",
+        "description": "Savurează o băutură relaxantă, cum ar fi ceai de plante sau ciocolată caldă."
+      },
+      {
+        "title": "Gust",
+        "description": "Răsfață-te cu un desert și mănâncă fiecare înghițitură prezent, cu plăcere."
+      },
+      {
+        "title": "Gust",
+        "description": "Cumpără o bomboană cu mentă și las-o să se topească în gură."
+      },
+      {
+        "title": "Gust",
+        "description": "Mestecă guma preferată și savurează aroma."
+      },
+      {
+        "title": "Gust",
+        "description": "Încearcă diverse arome la o gelaterie și observă diferențele subtile."
+      },
+      {
+        "title": "Atingere",
+        "description": "Mergi la masaj. Concentrează-te pe senzațiile plăcute."
+      },
+      {
+        "title": "Atingere",
+        "description": "Stai la soare (folosește cremă de protecție!) și bucură-te de căldură."
+      },
+      {
+        "title": "Atingere",
+        "description": "Mângâie un câine sau o pisică și concentrează-te pe catifelarea și plăcerea atingerii."
+      },
+      {
+        "title": "Atingere",
+        "description": "Fă o baie la picioare și lasă orice tensiune sau durere să dispară."
+      },
+      {
+        "title": "Atingere",
+        "description": "Lasă-te să te afunzi într-un fotoliu sau canapea confortabilă, acasă sau într-un hotel luxos, și relaxează-ți corpul."
+      },
+      {
+        "title": "Atingere",
+        "description": "Îmbrățișează pe cineva și simte confortul atingerii sale."
+      },
+      {
+        "title": "Miros",
+        "description": "Miroase lucruri plăcute, ca parfumuri, marea sau portocalele. Fii atent la senzație."
+      },
+      {
+        "title": "Miros",
+        "description": "Aprinde o lumânare parfumată și bucură-te de aromă în aer."
+      },
+      {
+        "title": "Miros",
+        "description": "Cumpără o floare cu miros frumos și las-o în cameră pentru a o putea mirosi ori de câte ori treci pe lângă ea."
+      },
+      {
+        "title": "Miros",
+        "description": "Fierbe scorțișoară pe aragaz timp de 20 de minute și bucură-te de aroma ce invadează casa."
+      },
+      {
+        "title": "Miros",
+        "description": "Fă o plimbare printr-o zonă împădurită și inspiră mirosul proaspăt al naturii."
+      },
+      {
+        "title": "Miros",
+        "description": "Pune ulei esențial de lămâie pe mobilă și bucură-te de prospețime."
+      }
+    ]
+  },
+  "connect-with-others": {
+    "title": "Conectează-te cu ceilalți",
+    "done": "Gata",
+    "static-text": "A obține sprijin de la ceilalți atunci când te confrunți cu suferință fizică sau emoțională te poate ajuta. Încearcă următoarele:",
+    "repeater": [
+      {
+        "title": "Sună un membru al familiei",
+        "description": "Să vorbești cu altă persoană despre problemele tale, sau să asculți problemele altcuiva pentru o vreme, poate ajuta la îmbunătățirea dispoziției tale sau poate schimba modul în care gândești."
+      },
+      {
+        "title": "Sună un prieten",
+        "description": "Să vorbești cu altă persoană despre problemele tale, sau să asculți problemele altcuiva pentru o vreme, poate ajuta la îmbunătățirea dispoziției tale sau poate schimba modul în care gândești."
+      },
+      {
+        "title": "Gătește cina pentru cineva",
+        "description": ""
+      },
+      {
+        "title": "Mergi la o petrecere",
+        "description": ""
+      },
+      {
+        "title": "Alătură-te unui club de carte sau unui grup de lectură",
+        "description": ""
+      },
+      {
+        "title": "Alătură-te unui club sportiv",
+        "description": "Alătură-te unui club pentru a practica un sport, cum ar fi bowling, baschet sau fotbal."
+      },
+      {
+        "title": "Fă un mic cadou cuiva",
+        "description": ""
+      },
+      {
+        "title": "Vizitează un membru al familiei",
+        "description": "Să vorbești cu altă persoană despre problemele tale, sau să asculți problemele altcuiva pentru o vreme, poate ajuta la îmbunătățirea dispoziției tale sau poate schimba modul în care gândești."
+      },
+      {
+        "title": "Vizitează un prieten",
+        "description": "Să vorbești cu altă persoană despre problemele tale, sau să asculți problemele altcuiva pentru o vreme, poate ajuta la îmbunătățirea dispoziției tale sau poate schimba modul în care gândești."
+      },
+      {
+        "title": "Scrie o scrisoare",
+        "description": ""
+      }
+    ]
+  },
+  "change-perspective": {
+    "title": "Schimbă-ți perspectiva",
+    "done": "Gata",
+    "static-text": "Schimbarea modului în care gândești poate schimba modul în care te simți. Concentrează-te pe acest gând util:",
+    "repeater": [
+      {
+        "description": "Este doar o bătaie de cap, nu un dezastru."
+      },
+      {
+        "description": "Am trecut prin multe lucruri grele în viață și am supraviețuit."
+      },
+      {
+        "description": "Pot să tolerez asta."
+      },
+      {
+        "description": "Voi supraviețui chiar dacă nu dorm deloc la noapte."
+      },
+      {
+        "description": "Această situație este diferită de ce mi s-a întâmplat și o să fiu bine."
+      },
+      {
+        "description": "Sunt aici, acum."
+      },
+      {
+        "description": "Poate părea greu acum, dar va deveni din ce în ce mai ușor în timp."
+      },
+      {
+        "description": "Când totul se va termina, voi fi bucuros/bucuroasă că am făcut-o."
+      },
+      {
+        "description": "Am mai făcut asta înainte, deci știu că pot să o fac din nou."
+      },
+      {
+        "description": "Știu că sunt într-un loc sigur, chiar dacă mintea îmi spune altceva."
+      },
+      {
+        "description": "Simt cum îmi bate inima și cum stau cu picioarele pe podea. Sunt viu/vie și sunt bine."
+      },
+      {
+        "description": "Am trecut prin lucruri mai rele și am reușit să trec cu bine."
+      },
+      {
+        "description": "Corpul meu reacționează la o amintire. Chiar acum sunt în siguranță."
+      },
+      {
+        "description": "Nu trebuie să mă simt mereu confortabil. Asta dovedește doar că sunt om."
+      },
+      {
+        "description": "Această emoție va trece. Mă voi simți diferit(ă) peste douăzeci de minute."
+      },
+      {
+        "description": "Sunt capabil(ă) să răspund eficient. Am abilități pentru a gestiona această situație."
+      },
+      {
+        "description": "Am mai trecut prin asta și am fost bine."
+      },
+      {
+        "description": "Aceasta este o altă provocare pe care o voi descoperi și o voi înfrunta."
+      },
+      {
+        "description": "Aceste emoții îmi transmit ceva. Nu mă pot răni."
+      },
+      {
+        "description": "Sunt om. Pot greși. Nimeni nu e perfect."
+      },
+      {
+        "description": "Sunt capabil(ă) să mă protejez."
+      },
+      {
+        "description": "Oprește-te puțin. Știu că pot face mai multe alegeri."
+      },
+      {
+        "description": "Pot să cer ajutor altora."
+      },
+      {
+        "description": "Am mai luat decizii corecte în trecut."
+      },
+      {
+        "description": "Gândurile mele sunt doar gânduri; nu sunt întotdeauna adevărate. Nu crede tot ce gândești."
+      },
+      {
+        "description": "Sunt puternic(ă). Acum sunt în siguranță."
+      },
+      {
+        "description": "Această stare va trece."
+      },
+      {
+        "description": "Nu mă voi simți mereu așa. M-am mai simțit diferit(ă) înainte și mă voi simți diferit(ă) în curând."
+      },
+      {
+        "description": "Sunt într-un loc sigur."
+      },
+      {
+        "description": "Emoțiile pe care le simt acum îmi dau informații despre cum mă simt, dar nu sunt neapărat bazate pe fapte."
+      },
+      {
+        "description": "Dacă nu mă lupt cu emoțiile mele, ele vor scădea de la sine."
+      },
+      {
+        "description": "Sunt o persoană decentă."
+      },
+      {
+        "description": "E în regulă dacă am nevoie de timp ca să îmi dau seama ce se întâmplă."
+      },
+      {
+        "description": "Întotdeauna este timp să înveți."
+      },
+      {
+        "description": "A învăța îmi va oferi mai multe opțiuni în viitor."
+      },
+      {
+        "description": "Sunt momente când voi reveni la vechile tipare. Trebuie doar să mă prind și să revin pe drumul cel eficient."
+      },
+      {
+        "description": "Știu că merit iubire."
+      },
+      {
+        "description": "Sunt o persoană unică: special(ă), talentat(ă) și valoros/valoaroasă."
+      },
+      {
+        "description": "O noapte de somn slab nu e sfârșitul lumii."
+      },
+      {
+        "description": "Această răsucire și întoarcere în pat va trece."
+      },
+      {
+        "description": "Coșmarurile sunt tulburătoare, dar nu sunt reale. Sunt în siguranță."
+      },
+      {
+        "description": "Chiar dacă simt că nu voi mai avea niciodată un somn bun, am mai avut în trecut și voi avea și în viitor."
+      },
+      {
+        "description": "Chiar dacă anticipez o noapte proastă de somn, s-ar putea să fie bine... am mai dormit bine înainte."
+      }
+    ]
+  },
+  "grounding": {
+    "title": "Împământare",
+    "done": "Gata",
+    "repeater": [
+      {
+        "title": "Simte-ți tălpile pe podea",
+        "description": "Concentrează-ți toată atenția pe tălpile tale. Simte podeaua sub ele."
+      },
+      {
+        "title": "Textura unei pietricele",
+        "description": "Concentrează-ți toată atenția pe textura unei pietricele sau a unei monede în mâna ta."
+      },
+      {
+        "title": "Respirație",
+        "description": "Stai liniștit(ă) și concentrează-ți toată atenția pe inspirația și apoi pe expirația ta."
+      },
+      {
+        "title": "Spațiul din jurul tău – Culori",
+        "description": "Privește în jur și concentrează-ți atenția pe culorile din jur, observând cât mai multe culori poți."
+      },
+      {
+        "title": "Spațiul din jurul tău – Mirosuri",
+        "description": "Concentrează-ți toată atenția pe mirosurile din mediul tău."
+      },
+      {
+        "title": "Spațiul din jurul tău – Sunete",
+        "description": "Concentrează-te și ascultă cu atenție toate sunetele din mediul tău."
+      },
+      {
+        "title": "Spațiul din jurul tău – Temperatură",
+        "description": "Concentrează-ți toată atenția asupra temperaturii aerului pe pielea ta."
+      },
+      {
+        "title": "Mâncat",
+        "description": "În timp ce mănânci, concentrează-ți toată atenția pe senzațiile mâncării din gură în timp ce mesteci foarte încet."
+      },
+      {
+        "title": "Spălatul pe dinți",
+        "description": "Spală-te pe dinți și concentrează-ți atenția pe toate senzațiile, gusturile și mirosurile acestei activități."
+      },
+      {
+        "title": "Mersul",
+        "description": "Mergi încet, concentrându-ți atenția pe senzațiile pe care le ai la fiecare pas."
+      },
+      {
+        "title": "Obiect",
+        "description": "Ia orice obiect mic de pe jos și concentrează-ți toată atenția pe textura obiectului și pe senzația acestuia în mână."
+      },
+      {
+        "title": "Mângâie un animal",
+        "description": "Mângâie un animal liniștit și calm. Concentrează-ți toată atenția pe senzațiile din palma ta."
+      },
+      {
+        "title": "Conectează-te la pământ",
+        "description": "Cu picioarele la lățimea umerilor, închide ochii și imaginează-ți că îți cresc rădăcini în pământ, care te fac puternic(ă) și stabil(ă)."
+      },
+      {
+        "title": "Cub de gheață",
+        "description": "Ia un cub de gheață și concentrează-ți toată atenția pe senzațiile pe care le oferă: rece, ud, furnicături."
+      },
+      {
+        "title": "Spune ce vezi",
+        "description": "Privește în jurul tău și numește ce vezi. Începe cu obiectele mari, apoi treci la cele mai mici."
+      },
+      {
+        "title": "Concentrează-te pe atingere",
+        "description": "Freci palmele, le bați una de alta. Concentrează-ți toată atenția pe senzațiile și sunetele pe care le experimentezi."
+      },
+      {
+        "title": "Reorientare",
+        "description": "Amintește-ți unde ești, care este data de azi, când te-ai născut și ce ai făcut ieri."
+      },
+      {
+        "title": "Sună un prieten",
+        "description": "Sună un prieten și povestiți despre o activitate pe care ați făcut-o recent împreună."
+      },
+      {
+        "title": "Succes din trecut",
+        "description": "Amintește-ți ce ai făcut ca să treci cu bine peste o experiență dureroasă anterioară."
+      },
+      {
+        "title": "Pași mici",
+        "description": "Întreabă-te și răspunde: Care ar fi un semn mic că lucrurile se îmbunătățesc puțin?"
+      },
+      {
+        "title": "Suge o bomboană de mentă",
+        "description": "Suge încet o bomboană de mentă și descrie-ți în detaliu gustul și reacția ta."
+      },
+      {
+        "title": "Lovește cu picioarele podeaua",
+        "description": "Lovește cu picioarele podeaua. Simte forța. Ascultă sunetele. Observă."
+      },
+      {
+        "title": "Simte hainele pe pielea ta",
+        "description": "Fii atent(ă) la senzația hainelor care îți ating pielea."
+      },
+      {
+        "title": "Simte-ți mâinile",
+        "description": "Pune-ți mâinile împreună și observă senzațiile contactului piele-pe-piele."
+      },
+      {
+        "title": "Ascultă-i pe ceilalți",
+        "description": "Fii atent(ă) la vocile celor din jur. Concentrează-te doar pe sunetele vocii altora."
+      }
+    ]
+  },
+  "quotes": {
+    "title": "Citate inspiraționale",
+    "done": "Gata",
+    "repeater": [
+      {
+        "description": "Helen Keller",
+        "title": "Deși lumea este plină de suferință, este plină și de depășirea acesteia."
+      },
+      {
+        "description": "Jesse Jackson",
+        "title": "Nu ești responsabil pentru faptul că ai căzut, dar ești responsabil să te ridici."
+      },
+      {
+        "description": "Rainer Maria Rilke",
+        "title": "Nicio stare nu este definitivă."
+      },
+      {
+        "description": "Baruch Spinoza",
+        "title": "Nu să râzi, nu să plângi, nu să judeci, ci să înțelegi."
+      },
+      {
+        "description": "Erica Jong",
+        "title": "Problema e că, dacă nu riști nimic, riști cel mai mult."
+      },
+      {
+        "description": "Janis Joplin",
+        "title": "Nu te compromite pe tine însuți. Tu ești tot ce ai."
+      },
+      {
+        "description": "Buddha",
+        "title": "Tu însuți, la fel ca oricine din întregul univers, meriți dragostea și afecțiunea ta."
+      },
+      {
+        "description": "Rainer Maria Rilke",
+        "title": "...fii atent(ă) la ceea ce apare în tine și pune asta mai presus de orice… Ce se întâmplă în sinele tău cel mai interior merită întreaga ta iubire; cumva trebuie să găsești o cale să lucrezi la asta."
+      },
+      {
+        "description": "Winston Churchill",
+        "title": "Nu renunța niciodată, niciodată, niciodată, niciodată, niciodată."
+      },
+      {
+        "description": "Frank Outlaw",
+        "title": "Ai grijă la gândurile tale; devin cuvinte. Ai grijă la cuvintele tale; devin acțiuni. Ai grijă la acțiunile tale; devin obiceiuri. Ai grijă la obiceiurile tale; devin caracter. Ai grijă la caracterul tău; devine destinul tău."
+      },
+      {
+        "description": "Theodore Roosevelt",
+        "title": "Fă ce poți, cu ce ai, acolo unde ești."
+      },
+      {
+        "description": "Molly Goode",
+        "title": "Lasă-ți inima să te ghideze. Ea șoptește, așa că ascultă cu atenție."
+      },
+      {
+        "description": "Ellen Glasgow",
+        "title": "Viața nu e niciodată ce visezi. Rareori e ceea ce îți dorești, dar pentru spiritul vital și mintea dornică de cunoaștere, viitorul va avea întotdeauna căutarea comorilor ascunse și posibilitatea unor mari aventuri."
+      },
+      {
+        "description": "Henry David Thoreau",
+        "title": "Este nevoie de doi pentru a spune adevărul: unul pentru a vorbi, altul pentru a asculta."
+      },
+      {
+        "description": "Ralph Waldo Emerson",
+        "title": "Când faci ceva, fă-o cu tot sufletul. Pune-ți personalitatea în ceea ce faci. Fii activ(ă), energic(ă), entuziast(ă) și fidel(ă), și vei reuși."
+      },
+      {
+        "description": "Mohandas K. Gandhi",
+        "title": "Viitorul depinde de ceea ce facem în prezent."
+      },
+      {
+        "description": "Jean Shinoda Bolen",
+        "title": "Dacă ne schimbăm pe dinăuntru, viața noastră exterioară se va schimba și ea."
+      },
+      {
+        "description": "Wallace Stevens",
+        "title": "Poate că adevărul depinde de o plimbare în jurul lacului."
+      },
+      {
+        "description": "Charles Dickens",
+        "title": "O inimă iubitoare este cea mai adevărată înțelepciune."
+      },
+      {
+        "description": "Martin Luther King Jr.",
+        "title": "Fiecare dintre noi are două sine, iar marea provocare a vieții este să încerci să îl ții în control pe cel mai înalt dintre ele."
+      },
+      {
+        "description": "William Saroyan",
+        "title": "În timpul vieții tale, trăiește."
+      },
+      {
+        "description": "Virginia Satir",
+        "title": "Viața nu este așa cum ar trebui să fie. Este așa cum este. Modul în care faci față este cel care face diferența."
+      },
+      {
+        "description": "Tommy Lasorda",
+        "title": "Diferența dintre imposibil și posibil stă în determinarea unei persoane."
+      },
+      {
+        "description": "Scott Adams",
+        "title": "Amintește-ți că nu există un gest mic de bunătate. Fiecare act creează un val fără sfârșit logic."
+      },
+      {
+        "description": "Robert Cushing",
+        "title": "Pentru a face ceva ce merită în lume, nu trebuie să stăm în spate tremurând de frig sau de frică, ci să sărim și să trecem prin ele cât de bine putem."
+      },
+      {
+        "description": "William Thackeray",
+        "title": "Urmează-ți convingerile sincere și rămâi puternic(ă)."
+      },
+      {
+        "description": "Aristotel",
+        "title": "Cunoașterea de sine este începutul oricărei înțelepciuni."
+      },
+      {
+        "description": "A. Bronson Alcott",
+        "title": "Influența ta reală se măsoară prin felul în care te tratezi pe tine însuți."
+      },
+      {
+        "description": "Proverb suedez",
+        "title": "Fii mai puțin fricos, speră mai mult, mănâncă mai puțin, mestecă mai mult, plânge mai puțin, respiră mai mult, vorbește mai puțin, spune mai mult, urăște mai puțin, iubește mai mult, iar lucruri bune vor veni către tine."
+      },
+      {
+        "description": "Martha Washington",
+        "title": "Am învățat că cea mai mare parte a mizeriei sau nefericirii noastre este determinată nu de circumstanțe, ci de dispoziția noastră."
+      },
+      {
+        "description": "Rainer Rilke",
+        "title": "Singura călătorie este cea în interior."
+      },
+      {
+        "description": "Doug Firebaugh",
+        "title": "Fă în fiecare zi ceva care să te aducă mai aproape de o zi de mâine mai bună."
+      },
+      {
+        "description": "Hamerton",
+        "title": "Cea mai fericită viață este aceea care își exersează și educă mereu ce este mai bun din noi."
+      },
+      {
+        "description": "Thomas Edison",
+        "title": "Dacă am face cu toții lucrurile de care suntem capabili, ne-am uimi pe noi înșine."
+      },
+      {
+        "description": "John Clarke",
+        "title": "Dă-te puțin înapoi ca să sari mai departe."
+      },
+      {
+        "description": "Thomas Edison",
+        "title": "Am ajuns la succes prin eșecuri."
+      },
+      {
+        "description": "Ralph Waldo Emerson",
+        "title": "Nu-ți irosi viața în îndoieli și temeri: dedică-te muncii din fața ta, cu convingerea că îndeplinirea corectă a datoriei din această oră e cea mai bună pregătire pentru ce va urma."
+      },
+      {
+        "description": "Chas. Austin Bates",
+        "title": "Necazurile care nu apar niciodată sunt cele care ne fură somnul."
+      },
+      {
+        "description": "Helen Keller",
+        "title": "Când o ușă a fericirii se închide, alta se deschide, însă adesea privim atât de mult la ușa închisă încât nu o vedem pe cea care s-a deschis deja."
+      },
+      {
+        "description": "Horace Bushnell",
+        "title": "Cu cât întâmpini mai multe dificultăți, în interior și exterior, cu atât viața ta va fi mai semnificativă și mai inspirată."
+      },
+      {
+        "description": "Berthold Auerbach",
+        "title": "Anii ne învață mai mult decât cărțile."
+      },
+      {
+        "description": "Helen Keller",
+        "title": "Viața este fie o aventură îndrăzneață, fie nimic."
+      },
+      {
+        "description": "Sf. Clement din Alexandria",
+        "title": "Dacă nu speri, nu vei găsi ceea ce e dincolo de speranțele tale."
+      },
+      {
+        "description": "Henry Ward Beecher",
+        "title": "Cele mai mari succese ale bărbaților vin după dezamăgirile lor."
+      },
+      {
+        "description": "Robert Frost",
+        "title": "Cel mai bun mod de a ieși este întotdeauna prin mijloc."
+      }
+    ]
   }
 }

@@ -64,6 +64,7 @@ const ChooseCountry = () => {
         }}
         bounces={false}
         ItemSeparatorComponent={() => <YStack height={16} />}
+        extraData={selectedCountry}
         data={countries}
         renderItem={({ item }) => (
           <RadioItem item={item} selectedItem={selectedCountry} onSelectItem={setSelectedCountry} />

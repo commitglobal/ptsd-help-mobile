@@ -91,14 +91,14 @@ const DistressMeterPre = () => {
       {distressMeterInfoSheetOpen && (
         <DistressMeterInfo
           setDistressMeterInfoSheetOpen={setDistressMeterInfoSheetOpen}
-          snapPoints={[45]}
+          snapPoints={[50]}
           infoText={t('distress-meter.info')}
         />
       )}
       {distressMeterInfoPreOpen && (
         <DistressMeterInfo
           setDistressMeterInfoSheetOpen={setDistressMeterInfoPreOpen}
-          snapPoints={[45]}
+          snapPoints={[50]}
           infoText={t('distress-meter.info-pre')}
         />
       )}

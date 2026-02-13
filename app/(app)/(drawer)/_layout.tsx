@@ -36,7 +36,7 @@ export const DrawerContent = (props: DrawerContentProps & any) => {
         <Icon icon='x' width={24} height={24} color={theme.blue1?.val} onPress={() => navigation.closeDrawer()} />
       </XStack>
 
-      <DrawerItem label={t('drawer.my-profile')} icon='user' onPress={() => router.push('/profile')} />
+      {/* <DrawerItem label={t('drawer.my-profile')} icon='user' onPress={() => router.push('/profile')} /> */}
       <DrawerItem label={t('drawer.about')} icon='info' onPress={() => router.push('/about')} />
       <DrawerItem label={t('drawer.privacy-policy')} icon='lockClosed' onPress={() => router.push('/privacy-policy')} />
       <DrawerItem label={t('drawer.settings')} icon='settings' onPress={() => router.push('/settings')} />

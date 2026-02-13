@@ -40,15 +40,20 @@ export default function ChangeLanguage() {
 
   const handleDone = async () => {
     if (selectedLanguage && country) {
+      console.log('🚀 ~ handleDone ~ selectedLanguage:', selectedLanguage);
       KVStore().set(STORE_KEYS.LANGUAGE, selectedLanguage);
       KVStore().set(STORE_KEYS.COUNTRY, country.toUpperCase());
       const tools: any = toolsLocalesMap[country.toUpperCase() as Country][selectedLanguage];
-      i18n.addResourceBundle(selectedLanguage, 'tools', tools);
-      i18n.changeLanguage(selectedLanguage);
 
-      queryClient.invalidateQueries({ queryKey: ['country-language'] });
-      router.dismissAll();
-      router.back();
+      try {
+        i18n.addResourceBundle(selectedLanguage, 'tools', tools);
+        i18n.changeLanguage(selectedLanguage);
+        queryClient.invalidateQueries({ queryKey: ['country-language'] });
+        router.dismissAll();
+        router.back();
+      } catch (error) {
+        console.error('🔴🔴🔴 ERROR IN CHANGE LANGUAGE 🔴🔴🔴', error);
+      }
     }
   };
 
@@ -66,6 +71,9 @@ export default function ChangeLanguage() {
       footerProps={{
         mainActionLabel: t('choose-language.done'),
         onMainAction: handleDone,
+      }}
+      footerContainerStyle={{
+        paddingBottom: Platform.OS === 'ios' ? insets.bottom + 64 : insets.bottom + 16,
       }}>
       <FlashList
         ListHeaderComponent={() => (

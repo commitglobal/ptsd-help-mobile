@@ -45,13 +45,13 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <Icon icon='puzzle' width={24} height={24} color={color} />,
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name='track'
         options={{
           title: t('tabs.track'),
           tabBarIcon: ({ color }) => <Icon icon='chart' width={24} height={24} color={color} />,
         }}
-      />
+      /> */}
       <Tabs.Screen
         name='learn'
         options={{
