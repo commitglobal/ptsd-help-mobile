@@ -599,18 +599,18 @@
         },
         {
           "id": "a6d34a91-e0a8-47d2-80ef-ef5263d63824",
-          "label": "I Can't Control My Temper",
+          "label": "Ես չեմ կարողանում կառավարել ինձ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
-                "alt": "I Can't Control My Temper"
+                "alt": "Ես չեմ կարողանում վերահսկել իմ զայրույթը։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>This can be really scary and frustrating for many trauma survivors, especially veterans and active military personnel who have been in places where being angry or aggressive was seen as beneficial. You can learn to control your behavior when upset with the help of this app and/or individual therapy. Check out some of the anger coping tools in this app in the <strong>Symptom Management</strong> section.</div></div>"
+                "content": "<div>Սա կարող է վախեցնող և հուսահատեցնող լինել տրավմա վերապրած շատ մարդկանց, հատկապես պատերազմի վետերանների և գործող զինծառայողների համար, որոնք եղել են այնպիսի վայրերում, որտեղ զայրույթ կամ ագրեսիա ցուցադրելն ընկալվել է որպես օգտակար։ Այս հավելվածի և/կամ հոգեթերապևտի հետ առերես աշխատանքի օգնությամբ կարող ես սովորել վերահսկել քո վարքը հուզմունքի պահին։ Զայրույթի հաղթահարման համար նախատեսված որոշ գործիքներ կարող ես գտնել այս հավելվածի&nbsp;<strong>Կառավարել ախտանիշները</strong>&nbsp;բաժնում։</div>"
               }
             ]
           }
