@@ -1202,18 +1202,18 @@
         },
         {
           "id": "c5d0c457-e0e0-4e66-89f2-fc00c1963057",
-          "label": "I'm Embarrassed to Go to Therapy",
+          "label": "Ես ամաչում եմ հոգեբանի դիմելուց",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
-                "alt": "I'm Embarrassed to Go to Therapy"
+                "alt": "Ես ամաչում եմ հոգեբանի դիմելուց"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Some people feel ashamed or embarrassed to ask for or receive help. But consider the following points:</div><ul><li>We are not alone in this world. People are here to help you now just as you have helped others in the past.</li><li>Did you know that those who accept help after a stressful period fare better than those who do not get support?</li><li>You may think that asking for help means you are not normal, but it is normal and common to have difficulties after a traumatic event, including sleep problems, increased anger, depression, anxiety, and substance use issues.</li><li>Seeking counseling does not mean you are dysfunctional. In fact, most people who have PTSD symptoms can still follow their usual routines while recovering.</li><li>If you feel guilty about taking time and spending money on counseling, remember: you'll be better able and more present for your family and work once you feel better.</li><li>If you still do not feel better and it has been months or years since your trauma, speaking to a therapist can keep your problems from becoming chronic or more serious.</li><li>Therapy is not for weak people. It takes courage to ask for help. Take active control of your life and improve your ability to help yourself.</li></ul></div>"
+                "content": "<div><div>Ոմանք ամաչում են օգնության կարիք ունենալուց կամ օգնություն խնդրելուց։ Բայց մտածի՛ր մեկ այլ տեսանկյունից՝</div><ul><li>Մենք այս աշխարհում միայնակ չենք։ Կան մարդիկ, որոնք ուզում են օգնել քեզ, ճիշտ այնպես, ինչպես դու ես նախկինում օգնել ուրիշներին։</li><li>Գիտեի՞ր, որ հետսթրեսային շրջանում օգնություն ընդունող մարդիկ ավելի լավ են վերականգնվում, քան նրանք, ովքեր աջակցություն չեն ստանում։</li><li>Գուցե մտածում ես, որ օգնություն խնդրելը նշանակում է, թե դու նորմալ չես, բայց տրավմայից հետո դժվարություններ, այդ թվում՝ քնի խանգարումներ, զայրույթ, դեպրեսիա, տագնապայնություն և թմրանյութերի օգտագործման խնդիրներ ունենալը բնական է և շատ տարածված։</li><li>Հոգեբանի խորհրդատվությանը դիմելը չի նշանակում, թե դու անաշխատունակ ես։ Իրականում ՀՏՍԽ ունեցող մարդկանց մեծ մասը վերականգնման ընթացքում շարունակում է սովորական առօրյան։</li><li>Եթե մեղքի զգացում ունես հոգեբանական խորհրդատվության համար ժամանակ և գումար տրամադրելու պատճառով, հիշի՛ր․ երբ ավելի լավ զգաս քեզ, կկարողանաս ավելի օգտակար լինել ընտանիքիդ և աշխատանքիդ վայրում։</li><li>Եթե տրավմայից ամիսներ կամ տարիներ են անցել, բայց ինքնազգացողությունդ դեռ չի լավացել, հոգեբանի հետ խոսելը կարող է օգնել, որպեսզի խնդիրները չդառնան քրոնիկ կամ ավելի ծանր։</li><li>Հոգեբանական խորհրդատվությունը թույլ կամ կոտրված մարդկանց համար չէ։ Օգնություն խնդրելը քաջություն է պահանջում։ Դու ակտիվորեն ստանձնում ես կյանքիդ նկատմամբ վերահսկողությունը և կարողանում ես է՛լ ավելի լավ օգնել ինքդ քեզ։</li></ul></div>"
               }
             ]
           }
