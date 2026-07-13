@@ -501,18 +501,18 @@
         },
         {
           "id": "fa6b7c8a-2bf7-44b8-bf17-46c9feee97fc",
-          "label": "Sleep Problems: Insomnia",
+          "label": "Քնի խնդիրներ․ անքնություն",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
-                "alt": "Sleep Problems: Insomnia"
+                "alt": "Քնի խնդիրներ․ անքնություն"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If you're awake in bed for more than 15-20 minutes without falling asleep, try the following:</div><div>&nbsp;</div><ul><li>Get up and do something boring like reading an instruction manual.</li><li>Return to bed only when you feel sleepy.</li><li>Keep the lights low and don't use the computer or watch TV.</li><li>Drink a little water, warm milk, or decaffeinated tea.</li><li>Have a light, low-sugar snack if you're hungry.</li><li>Read something soothing or listen to relaxing music.</li><li>When you return to bed, breathe slowly and deeply for about 10 minutes.</li><li>Calm your mind with prayer, meditation, or \"counting sheep\".</li><li>If it's hard to share the bed with your partner, consider sometimes sleeping separately.</li></ul></div>"
+                "content": "<div><div>Եթե 15&ndash;20 րոպե անկողնում արթուն պառկած ես և չես կարողանում քնել, փորձի՛ր հետևյալը․</div><div>&nbsp;</div><ul><li>Վե՛ր կաց և ինչ-որ ձանձրալի գործո՛վ զբաղվիր, օրինակ՝ կարդա կենցաղային տեխնիկայի օգտագործման հրահանգները։</li><li>Անկողին վերադարձի՛ր միայն այն ժամանակ, երբ քնկոտություն զգաս։</li><li>Թույլ լուսավորությո՛ւն օգտագործիր, մի՛ օգտվիր համակարգչից և հեռուստացույց մի՛ դիտիր։</li><li>Խմի՛ր ջուր, տաք կաթ կամ կոֆեին չպարունակող թեյ։</li><li>Եթե քաղցած ես, որևէ թեթև և քիչ շաքար պարունակող խորտի՛կ կեր։</li><li>Կարդա՛ հանգստացնող որևէ բան կամ լսի՛ր հանգստացնող երաժշտություն։</li><li>Երբ վերադառնաս անկողին, մոտ 10 րոպե դանդաղ և խոր շնչի՛ր։</li><li>Հանգստացրո՛ւ միտքդ աղոթքով, մեդիտացիայով կամ &laquo;ոչխարներ հաշվելով&raquo;։</li><li>Եթե դժվար է զուգընկերոջդ հետ նույն անկողնում քնել, մտածի՛ր երբեմն առանձին քնելու մասին։</li></ul></div>"
               }
             ]
           }
