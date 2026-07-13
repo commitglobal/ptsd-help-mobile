@@ -617,18 +617,18 @@
         },
         {
           "id": "54fe9aa1-43fa-4876-9831-ce0ec7f607dd",
-          "label": "I'm Always Stressed",
+          "label": "Ես միշտ լարված եմ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
-                "alt": "I'm Always Stressed"
+                "alt": "Ես միշտ լարված եմ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Feeling nervous, alert, or always on edge is a common experience for many people with PTSD. Relaxation exercises and mindfulness practices can help calm the nervous system. These exercises are available in this app in the <strong>Symptom Management</strong> section.</div></div>"
+                "content": "<div>Լարված, զգոն կամ վտանգի նկատմամբ մշտապես պատրաստ վիճակում լինելը ՀՏՍԽ ունեցող շատ մարդկանց համար տարածված փորձառություն է։ Հանգստացնող վարժությունները և գիտակցվածության պրակտիկաները կարող են օգնել հանգստացնելու քո նյարդային համակարգը։ Այս վարժությունները հասանելի են հավելվածի <strong>&laquo;Կառավարել ախտանիշները&raquo;</strong> բաժնում։</div>"
               }
             ]
           }
