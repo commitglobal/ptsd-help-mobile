@@ -677,57 +677,57 @@
       "topics": [
         {
           "id": "27a286b0-0e28-498c-abfa-baaf37cfe521",
-          "label": "I'm in a Crisis",
+          "label": "Ես ճգնաժամի մեջ եմ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
-                "alt": "I'm in a Crisis"
+                "alt": "Ես ճգնաժամի մեջ եմ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>For any crisis, including medical emergencies, go to the nearest emergency room or call:</div></div>"
+                "content": "<p>Ցանկացած ճգնաժամային իրավիճակում, այդ թվում՝ առողջության խնդիր ունենալու դեպքում, դիմի՛ր մոտակա Շտապ օգնության գրասենյակ կամ՝</p>"
               },
               {
                 "type": "button",
-                "label": "112",
+                "label": "112 (անվճար, 24/7)",
                 "action": {
                   "type": "phone",
                   "number": "112"
                 }
               },
               {
-                "type": "rich-text",
-                "content": "<div><div>TelVerde Suicide Prevention:</div></div>"
-              },
-              {
                 "type": "button",
-                "label": "0800 080 020",
+                "label": "911 (անվճար, 24/7)",
                 "action": {
                   "type": "phone",
-                  "number": "0800080020"
-                }
-              },
-              {
-                "type": "button",
-                "label": "Details",
-                "action": {
-                  "type": "external",
-                  "url": "https://www.antisuicid.ro/ce-este-telverde-antisuicid"
+                  "number": "911"
                 }
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>National emergency number for victims of domestic violence:</div></div>"
+                "content": "<p>Ընտանեկան բռնության դեպքում՝ «Կանանց աջակցման կենտրոն» ՀԿ թեժ գիծ</p>"
               },
               {
                 "type": "button",
-                "label": "0800-500-333",
+                "label": "099 88 78 08",
                 "action": {
                   "type": "phone",
-                  "number": "0800-500-333"
+                  "number": "099887808"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<p>«Սեռական բռնության ճգնաժամային կենտրոն» ՀԿ</p>"
+              },
+              {
+                "type": "button",
+                "label": "077 99 12 80",
+                "action": {
+                  "type": "phone",
+                  "number": "077991280"
                 }
               }
             ]
