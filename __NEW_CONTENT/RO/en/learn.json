@@ -545,18 +545,18 @@
         },
         {
           "id": "109e788d-d579-4077-9a4d-51029256ca1e",
-          "label": "What is Dissociation?",
+          "label": "Ի՞նչ է դիսոցացիան",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
-                "alt": "What is Dissociation?"
+                "alt": "Ի՞նչ է դիսոցացիան"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Dissociation is the feeling of detachment from physical and emotional experiences, sensations, memories, or your immediate environment. Dissociation can range from mild to intense. It often happens without the person intending it, so it may be confusing and upsetting.</div><div>&nbsp;</div><div><div>Examples:</div><ul><li>Noticing yourself or your body from an outside perspective (as if you are above your body)</li><li>Sounds or images that seem distant or distorted</li><li>Loss of time</li><li>Physical or emotional numbness</li></ul></div></div></div>"
+                "content": "<div><div>Դիսոցացիան ֆիզիկական և հուզական փորձառություններից, զգացողություններից, հիշողություններից կամ անմիջական շրջապատից կտրված լինելու զգացումն է։ Դիսոցացիան կարող է լինել թեթևից մինչև ինտենսիվ։ Այն հաճախ տեղի է ունենում մարդու կամքից անկախ, ուստի կարող է շփոթեցնող և անհանգստացնող լինել։</div><div>&nbsp;</div><div><div>Օրինակներ․</div><ul><li>Ինքդ քեզ կամ քո մարմինը տեսնում ես դրսից, օրինակ՝ վերևից կամ սենյակի մյուս ծայրից</li><li>Ձայները կամ տեսարանները հեռավոր կամ աղավաղված են թվում</li><li>Ժամանակ ես կորցնում</li><li>Ֆիզիկական կամ հուզական թմրածության մեջ ես</li></ul></div></div>"
               }
             ]
           }
