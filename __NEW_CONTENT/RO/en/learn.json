@@ -447,18 +447,18 @@
         },
         {
           "id": "0d5d5441-f145-4d6e-b1b0-2370cd56618b",
-          "label": "I'm Ashamed to Have PTSD",
+          "label": "Ամաչում եմ, որ ՀՏՍԽ ունեմ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
-                "alt": "I'm Ashamed to Have PTSD"
+                "alt": "Ամաչում եմ, որ ՀՏՍԽ ունեմ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If people with PTSD see it as a sign of weakness or impairment, they may feel ashamed about it. This can be especially true if the person has outbursts of anger, flashbacks, or other PTSD symptoms in public.</div><div>&nbsp;</div><div><div><div>Shame may cause trauma survivors to withdraw or be silent about their struggles. But this can harm them and lead to isolation and feeling unsupported.</div><div>&nbsp;</div><div><div><div>Remember: PTSD is a normal response to abnormal circumstances.</div></div></div></div></div></div>"
+                "content": "<div><p>Երբ ՀՏՍԽ ունեցող մարդիկ այն ընկալում են որպես թուլության կամ վնասված լինելու նշան, նրանք հաճախ կարող են ամաչել կամ փորձել թաքցնել այն։ Սա հատկապես պատահում է այն դեպքերում, երբ անձը հասարակական վայրերում զայրույթի պոռթկումներ, ֆլեշբեքեր (հանկարծակի վերհուշ) կամ ՀՏՍԽ-ի այլ ախտանիշներ է ունենում։</p><p>Ամոթն ու շփոթվածությունը կարող են տրավմա վերապրած մարդկանց ստիպել մեկուսանալ ուրիշներից կամ լռել իրենց խնդիրների մասին։ Բայց դա կարող է հակառակ ազդեցությունն ունենալ՝ նրանց թողնելով մեկուսացած և առանց աջակցության։</p><p>Հիշի՛ր․ ՀՏՍԽ-ն նորմալ արձագանք է աննորմալ հանգամանքներին։</p></div>"
               }
             ]
           }
