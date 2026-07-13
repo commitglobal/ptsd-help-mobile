@@ -1395,23 +1395,23 @@
     {
       "id": "3b237604-a536-4943-9181-12b4dfb9a478",
       "type": "category",
-      "label": "PTSD and the Family",
+      "label": "ՀՏՍԽ-ն և ընտանիքը",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/ptsd_and_family_icon.png",
       "topics": [
         {
           "id": "d4cc9bd8-5d41-438d-9fd3-072779921b14",
-          "label": "What is couples therapy?",
+          "label": "Ի՞նչ է զույգերի հոգեբանական խորհրդատվությունը",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
-                "alt": "What is couples therapy?"
+                "alt": "Ի՞նչ է զույգերի հոգեբանական խորհրդատվությունը"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If you and your partner are experiencing difficulties in your relationship or don’t feel close, couples therapy can help.</div><div>&nbsp;</div><div><div><div>In this type of counseling, a therapist can help you:</div><ul><li>Understand what is causing these difficulties</li><li>Learn ways to cope with relationship stress</li><li>Develop skills to better communicate and solve problems</li><li>Strengthen your trust by feeling closer to one another</li></ul></div></div></div>"
+                "content": "<div><p>Եթե դու և քո զուգընկերը դժվարանում եք լեզու գտնել կամ այլևս մտերմություն չեք զգում, ապա զույգերի հոգեթերապիան կարող է օգտակար լինել։</p><p>Այս տեսակի խորհրդատվության ընթացքում հոգեթերապևտը կարող է օգնել երկուսիդ՝</p><ul><li>հասկանալ, թե որտեղից են ծագում ձեր դժվարությունները</li><li>սովորել հարաբերություններում առաջացող սթրեսը հաղթահարելու եղանակներ</li><li>զարգացնել ավելի լավ հաղորդակցվելու և խնդիրները հաղթահարելու հմտություններ</li><li>վերականգնել վստահությունը և ավելի մտերմանալ</li></ul><p>Առողջապահության ոլորտի մասնագետը, հոգևոր սպասավորը կամ սոցիալական ծառայություն մատուցող կազմակերպությունը կարող են օգնել քեզ զույգերի հոգեթերապևտ գտնելու։</p></div>"
               }
             ]
           }
