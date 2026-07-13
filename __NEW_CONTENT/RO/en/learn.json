@@ -1220,18 +1220,18 @@
         },
         {
           "id": "6456f949-d060-4266-8bbb-ad83a11f4054",
-          "label": "Who Can Help Me?",
+          "label": "Ո՞վ կարող է ինձ օգնել։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
-                "alt": "Who Can Help Me?"
+                "alt": "Ո՞վ կարող է ինձ օգնել։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>There are many experts who can help you if you want this.</div><div>&nbsp;</div><div><div>You can read more here about the roles and duties of family doctors, social workers, psychologists, psychiatrists, and pastoral/theological counselors.</div></div></div>"
+                "content": "<div><div>Կան շատ մասնագետներ, որոնք կարող են օգնել, եթե դիմես նրանց։</div><div>&nbsp;</div><div><div>Այստեղ կարող ես կարդալ ավելին առաջնային օղակի բուժաշխատողների, սոցիալական աշխատողների, հոգեբանների, հոգեբույժների և հոգևոր սպասավորների դերերի ու պարտականությունների մասին։</div></div></div>"
               }
             ]
           }
