@@ -1429,25 +1429,25 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե քո ընտանիքում դժվարանում են հաղորդակցվել կամ իրար հետ լեզու գտնել, մտածի՛ր ընտանեկան թերապիայի մասին։</p><p>Այս տեսակի հոգեբանական խորհրդատվության ընթացքում հոգեթերապևտն օգնում է քեզ և քո ընտանիքին՝</p><ul><li>ավելի լավ հաղորդակցվել</li><li>զարգացնել և պահպանել առողջ հարաբերություններ</li><li>հաղթահարել ծանր հույզերը</li><li>հասկանալ և հաղթահարել ՀՏՍԽ-ն</li></ul></div>"
+                "content": "<div><p>Եթե քո ընտանիքում դժվարանում են հաղորդակցվել կամ իրար հետ լեզու գտնել, մտածի՛ր ընտանեկան թերապիայի մասին։</p><p>Այս տեսակի հոգեբանական խորհրդատվության ընթացքում հոգեթերապևտն օգնում է քեզ և քո ընտանիքին՝</p><ul><li>ավելի լավ հաղորդակցվել</li><li>զարգացնել և պահպանել առողջ հարաբերություններ</li><li>հաղթահարել ծանր հույզերը</li><li>հասկանալ և հաղթահարել ՀՏՍԽ-ն</li></ul><p>Առողջապահության ոլորտի մասնագետը, հոգևոր սպասավորը կամ սոցիալական ծառայություն մատուցող կազմակերպությունը կարող են օգնել քեզ ընտանեկան թերապևտի գտնելու գործում։</p></div>"
               }
             ]
           }
         },
         {
           "id": "411989be-5394-4b8e-a0ed-cfb2438bbde6",
-          "label": "Reconnect with your partner",
+          "label": "Վերականգնել կապը զուգընկերոջդ հետ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
-                "alt": "Reconnect with your partner"
+                "alt": "Վերականգնել կապը զուգընկերոջդ հետ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Relationships can feel strained if a partner is struggling with PTSD. Here are some tips to help you become close again.</div><div>&nbsp;</div><ul><li>Feeling emotionally numb can make it hard to express love or care. You can start by appreciating the concrete things your partner does (like \"thank you for doing the dishes,\" or \"I appreciate you changing the car oil.\")</li><li>Talk with your partner about how PTSD has affected you and what you need. They can support you better if they know what’s going on.</li><li>Ask questions, listen to your loved one’s needs, and pay attention to their feelings. Do your best to stay open and put yourself in their shoes as they speak.</li><li>If you tend to withdraw under stress, try to reach out to your loved one, with small favors, gentle touches, or a few kind words.</li><li>Avoid saying things that could hurt them or becoming physically aggressive. Instead, give yourself time to calm down. You can find a tool for this in the Symptom Management section of this app.</li><li>Due to the stress of PTSD, sexual intimacy might be neglected for a while. If that’s the case, try to focus on other ways of being close, like spending time together, holding hands, hugging, and kissing.</li><li>Understand that PTSD can make you both feel more distant or irritable. Try to manage your expectations and self-criticism — you’re only human, and healing takes time!</li><li>Seek help from a couples therapist if needed.</li></ul></div>"
+                "content": "<div><p>Եթե զուգընկերներից մեկը ՀՏՍԽ ունի, զուգընկերների հարաբերություններում կարող է լարվածություն առաջանալ։ Ահա մի քանի խորհուրդ, որոնք կարող են օգնել կրկին մտերմանալու։</p><ul><li>Հուզական թմրածության մեջ դժվար է սեր և հոգատարություն արտահայտելը։ Կարող ես սկսել՝ շնորհակալություն հայտնելով որոշակի բաների համար, որ անում է զուգընկերդ, օրինակ՝ &laquo;շնորհակալ եմ սպասքը լվանալու համար&raquo; կամ շնորհակալ եմ, որ մեքենայի յուղը փոխեցիր&raquo;։</li><li>Խոսի՛ր զուգընկերոջդ հետ, թե ինչպես է ՀՏՍԽ-ն ազդել քեզ վրա, և ինչի կարիք ունես։ Նա կկարողանա քեզ ավելի լավ աջակցել, եթե իմանա՝ ինչ է կատարվում քեզ հետ։</li><li>Հարցե՛ր տուր և լսի՛ր քո մտերիմի զգացմունքներն ու կարիքները։ Փորձի՛ր բաց լինել և իրավիճակին նայել նրա տեսանկյունից։</li><li>Եթե սթրեսի ժամանակ հակված ես հեռանալու կամ մեկուսանալու, փորձի՛ր դրա փոխարեն փոքր հոգատար քայլերով, մեղմ հպումներով կամ բարի խոսքերով մոտենալ քո մտերիմին։</li><li>Խուսափի՛ր վիրավորական խոսքեր ասելուց կամ ֆիզիկական բռնություն գործադրելուց։ Փոխարենը դադա՛ր առ և հանգստացի՛ր։ Այս գործիքը կարող ես գտնել հավելվածի &laquo;Կառավարել ախտանիշները&raquo; բաժնում։</li><li>ՀՏՍԽ-ի սթրեսի պատճառով սեռական մտերմություն կարող է որոշ ժամանակ չլինել։ Այդ դեպքում փորձի՛ր կենտրոնանալ մտերմության այլ ձևերի վրա, օրինակ՝ միասին հաճելի ժամանակ անցկացնել, իրար ձեռք բռնել, գրկախառնվել և համբուրվել։</li><li>Հասկացի՛ր, որ ՀՏՍԽ-ն կարող է քեզ ավելի օտարված կամ դյուրագրգիռ դարձնել։ Փորձի՛ր չափավորել սպասելիքներդ և ինքդ քեզ չքննադատել․ դու պարզապես մարդ ես, իսկ ապաքինումը ժամանակ է պահանջում։</li><li>Անհրաժեշտության դեպքում դիմի՛ր զույգերի հոգեբանական խորհրդատուի օգնությանը։</li></ul></div>"
               }
             ]
           }
