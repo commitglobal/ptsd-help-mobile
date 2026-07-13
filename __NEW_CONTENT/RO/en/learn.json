@@ -465,18 +465,18 @@
         },
         {
           "id": "3314f9e0-0a05-4cdd-972a-57628fb74260",
-          "label": "Social Isolation",
+          "label": "Սոցիալական մեկուսացում",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
-                "alt": "Social Isolation"
+                "alt": "Սոցիալական մեկուսացում"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>It is common for people with PTSD to isolate themselves. You may feel overwhelmed or unsafe in groups, anger quickly, feel misunderstood, or simply have no interest in being around people. However, isolation can lead to loneliness, depression, and anxiety.</div><div>&nbsp;</div><div><div><div>This app offers some suggestions and strategies to help you deal with feeling disconnected from people and to begin reconnecting with loved ones and friends.</div></div></div></div>"
+                "content": "<div><p>ՀՏՍԽ ունեցող մարդկանց համար սովորական է մեկուսանալը։ Դու կարող ես քեզ ճնշված կամ անապահով զգալ խմբերում, արագ զայրանալ, չհասկացված զգալ կամ պարզապես ցանկություն չունենալ մարդկանց շրջապատում լինելու։ Սակայն մեկուսացումը կարող է հանգեցնել միայնության, դեպրեսիայի և անհանգստության։</p><p>Այս հավելվածն առաջարկում է որոշ խորհուրդներ և ռազմավարություններ, որոնք կօգնեն քեզ հաղթահարելու մարդկանցից կտրված լինելու զգացումը և սկսելու վերստին կապ հաստատել մտերիմների և ընկերների հետ։</p></div>"
               }
             ]
           }
