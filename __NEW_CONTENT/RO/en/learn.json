@@ -217,18 +217,18 @@
         },
         {
           "id": "4d3d5873-fd6a-4213-9c44-d77b5fa30e78",
-          "label": "How Common is PTSD?",
+          "label": "Որքա՞ն տարածված է ՀՏՍԽ-ն",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
-                "alt": "How Common is PTSD?"
+                "alt": "Որքա՞ն տարածված է ՀՏՍԽ-ն"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Although most people feel much better a month or two after trauma, some develop PTSD or other problems like depression or substance use issues.</div><div>&nbsp;</div><div>Did you know?</div><ul><li>Certain types of traumatic experiences, such as rape and physical assault, can cause even higher levels of PTSD symptoms.</li></ul>"
+                "content": "<div>Թեև մարդկանց մեծ մասի ինքնազգացողությունը տրավմայից մեկ-երկու ամիս անց զգալիորեն լավանում է, որոշ մարդիկանց մոտ ունենում ձեռք են բերում զարգանում է ՀՏՍԽ կամ այլ խնդիրներ են առաջանում, օրինակ՝ դեպրեսիա կամ թմրանյութերի օգտագործման խնդիրներ։</div><div>&nbsp;</div><div>Գիտեի՞ր, որ</div><ul><li>Տրավմայի որոշ տեսակներ, օրինակ՝ բռնաբարությունը կամ մարտական գործողություններին մասնակցությունը, կարող են հանգեցնել ՀՏՍԽ-ի ավելի բարձր ցուցանիշերի։</li></ul>"
               }
             ]
           }
