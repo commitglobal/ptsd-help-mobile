@@ -1044,18 +1044,18 @@
         },
         {
           "id": "050f384c-330c-456f-9615-d075010c84bb",
-          "label": "Is Therapy Confidential?",
+          "label": "Արդյո՞ք հոգեբանի խորհրդատվությունը գաղտնի է",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
-                "alt": "Is Therapy Confidential?"
+                "alt": "Արդյո՞ք հոգեբանի խորհրդատվությունը գաղտնի է"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Therapy is almost always confidential.</div><div>&nbsp;</div><div><div><div>There are important exceptions to this rule for:</div><ul><li>public health protection</li><li>preventing imminent danger (e.g., suicide)</li><li>preventing a criminal act (e.g., killing someone else)</li></ul><div><div>The mental health specialist may write a note in your medical or psychological file, which can be viewed by other professionals involved in your care.</div><div>&nbsp;</div><div><div><div>Please discuss any concerns about confidentiality with your therapist or mental health professional.</div></div></div></div></div></div></div>"
+                "content": "<div><p>Հոգեթերապիան գրեթե միշտ գաղտնի է։</p><p>Այս կարևոր կանոնից բացառություններ կարող են լինել, եթե՝</p><ul><li>հայտնում ես, որ մտադիր ես վնասելու կամ կյանքից զրկելու քեզ կամ մեկ ուրիշին</li><li>հոգեթերապևտը տեղեկանում է, որ որևէ երեխա կամ չափահաս անձ բռնության է ենթարկվում</li><li>դու զինծառայող ես. այս դեպքում հնարավոր է՝ գաղտնիության որոշ սահմանափակումներ լինեն</li></ul><p>Քո առաջնային բուժօգնության մասնագետը կարող է գրառում անել քո բժշկական քարտում, որը կարող են տեսնել քո խնամքի մեջ ներգրավված այլ մասնագետներ։</p><p>Խնդրում ենք գաղտնիության վերաբերյալ ցանկացած մտահոգություն քննարկել հոգեբանիդ կամ առողջապահական մասնագետիդ հետ։</p></div>"
               }
             ]
           }
