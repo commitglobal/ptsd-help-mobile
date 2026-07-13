@@ -635,25 +635,33 @@
         },
         {
           "id": "a4df8b66-0059-441e-8574-185c85cb7296",
-          "label": "I Feel Sad All the Time",
+          "label": "Ես միշտ տխուր եմ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
-                "alt": "I Feel Sad All the Time"
+                "alt": "Ես միշտ տխուր եմ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you're worried you might be depressed, talk to your healthcare provider or contact a psychotherapist or clinical psychologist. You can also call the <strong>TelVerde Antidepresie</strong> hotline:</div></div>"
+                "content": "<p>Ավելի քան երկու շաբաթ շարունակ տխուր, ընկճված, ծանրացած կամ անտրամադիր զգալը կարող է դեպրեսիայի նշան լինել։ Եթե քեզ անհանգստացնում է քո հոգեկան վիճակը, խոսիր քեզ սպասարկող բուժաշխատողի հետ կամ դիմիր հոգեբանի աջակցության։ Կարող ես զանգահարել նաև &laquo;Ինթրա&raquo; հոգեկան առողջության կենտրոն, որտեղ գործում են նաև պետական ծրագրեր և պատերազմի մասնակիցների համար նախատեսված անվճար խմբեր։</p>"
               },
               {
                 "type": "button",
-                "label": "0800 080 020",
+                "label": "098 26 35 43",
                 "action": {
                   "type": "phone",
-                  "number": "0800080020"
+                  "number": "098263543"
+                }
+              },
+              {
+                "type": "button",
+                "label": "091 26 35 43",
+                "action": {
+                  "type": "phone",
+                  "number": "091263543"
                 }
               }
             ]
