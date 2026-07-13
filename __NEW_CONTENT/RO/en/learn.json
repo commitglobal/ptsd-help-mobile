@@ -672,7 +672,7 @@
     {
       "id": "2f781697-bcf1-4afb-897f-628403ebdf84",
       "type": "category",
-      "label": "Getting Professional Help",
+      "label": "Մասնագիտական օգնություն ստանալը",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/getting_professional_help_icon.png",
       "topics": [
         {
@@ -1118,6 +1118,70 @@
                   "type": "external",
                   "url": "https://www.artmed.am/service/13"
                 }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>Եթե պատերազմի վետերան ես, ապա կարող ես նաև</div>"
+              },
+              {
+                "type": "button",
+                "label": "կապվել «Զինվորի տուն» վերականգնողական կենտրոնի հոգեբանական ծառայության հետ (055 20 45 20)",
+                "action": {
+                  "type": "phone",
+                  "number": "055204520"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>կամ այցելել</div>"
+              },
+              {
+                "type": "button",
+                "label": "https://zinvoritun.am",
+                "action": {
+                  "type": "external",
+                  "url": "https://zinvoritun.am"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>ՀՀ ՊՆ Կենտրոնական կլինիկական զինվորական հոսպիտալ</div>"
+              },
+              {
+                "type": "button",
+                "label": "010 45 89 62",
+                "action": {
+                  "type": "phone",
+                  "number": "010458962"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>կամ այցելել</div>"
+              },
+              {
+                "type": "button",
+                "label": "https://mil.am",
+                "action": {
+                  "type": "external",
+                  "url": "https://mil.am"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>Կին վետերանները կարող են դիմել նաև «Կանանց աջակցման կենտրոն»</div>"
+              },
+              {
+                "type": "button",
+                "label": "099 88 78 08",
+                "action": {
+                  "type": "phone",
+                  "number": "099887808"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div>այցելել քո զորամասի հոգևոր սպասավորին՝ որոնումը սկսելու համար</div>"
               }
             ]
           }
@@ -1238,54 +1302,90 @@
         },
         {
           "id": "3d72382c-c7c8-46eb-aee5-26f146b0f93f",
-          "label": "What Does a Family Doctor Do?",
+          "label": "Ի՞նչ է անում առաջնային օղակի բուժաշխատողը։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
-                "atl": "What Does a Family Doctor Do?"
+                "atl": "Ի՞նչ է անում առաջնային օղակի բուժաշխատողը։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>A family doctor can treat common medical problems, and some are also trained to recognize and help with common psychological issues such as depression and anxiety.</div><div>&nbsp;</div><div><div><div>A primary care provider can help you with:</div><ul><li>Medical assistance</li><li>A medical prescription to help with depression or sleep problems</li><li>A referral to a psychologist or psychiatrist</li></ul></div></div></div>"
+                "content": "<div><div>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</div><div>&nbsp;</div><div><div><div>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</div><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>You can find a primary care physician:</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "1ef6504c-32ad-4e2c-97d1-d61852e33c58",
-          "label": "What Does a Psychotherapist Do?",
+          "label": "Ի՞նչ է անում հոգեբանը",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
-                "alt": "What Does a Psychotherapist Do?"
+                "alt": "Ի՞նչ է անում հոգեբանը"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Psychotherapists can provide assessments and therapy. They work with individuals, couples, families, and groups.</div><div>&nbsp;</div><div><div><div>A psychotherapist can help you with:</div><ul><li>Issues such as depression, anxiety, PTSD, and substance use problems</li><li>Family and relationship difficulties</li><li>In some cases, if they are physicians, they can prescribe medication for a mental health problem.</li></ul><div><div>You can find a psychotherapist:</div><ul><li>Through a recommendation from a doctor, nurse, or insurance company</li><li>Through people you know</li><li>By searching online for 'trauma psychotherapist' or 'trauma psychologist'</li></ul><div>&nbsp;</div></div></div></div></div>"
+                "content": "<div><div>Հոգեբանները հոգեբանության ոլորտում համապատասխան որակավորում ունեցող մասնագետներ են։ Նրանք կարող են գնահատել անձի հոգեկան առողջության վիճակը և առաջարկել հոգեբանական թերապիա, բայց միայն քչերն ունեն դեղորայք նշանակելու լիցենզիա։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</div><div>&nbsp;</div><div><div><div>Հոգեբանը կարող է օգնել քեզ՝</div><ul><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի օգտագործման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li><li>հոգեբանական վիճակի գնահատում իրականացնելու միջոցով</li><li>որոշ դեպքերում՝ հոգեկան առողջության խնդրի համար դեղորայք նշանակելու միջոցով</li></ul><p>Հոգեբանների մեծ մասը իրավասություն չունի դեղորայք նշանակելու։</p><div><div>Հոգեբանի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul><div>&nbsp;</div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "4bcfa2fd-8a2f-40f3-94b5-bc8b315dfb7c",
-          "label": "What Does a Psychiatrist Do?",
+          "label": "Ի՞նչ է անում հոգեբույժը",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-                "alt": "What Does a Psychiatrist Do?"
+                "alt": "Ի՞նչ է անում հոգեբույժը"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div><div><div>A psychiatrist is a physician with specialized training in psychiatry. They primarily treat patients with medications that can alleviate symptoms of depression, anxiety, or post-traumatic stress disorders, or help with sleep issues or other problems associated with mental health conditions.</div><div>&nbsp;</div><div><div><div>A psychiatrist can help you with:</div><ul><li>Medications for mental health problems such as depression, anxiety, PTSD, and severe mental illnesses</li><li>In some cases, counseling or psychotherapy</li></ul><div><div>You can find a psychiatrist:</div><ul><li>By referral from a doctor, nurse, or your insurance company</li><li>Through people you know</li><li>By searching directly online in trusted sources</li></ul></div></div></div></div></div></div>"
+                "content": "<div><div><div><div>Հոգեբույժը բժիշկ է, որը մասնագիտացված է հոգեբուժության ոլորտում։ Հոգեբույժները հիմնականում բուժում են դեղորայքով, որը կարող է մեղմացնել դեպրեսիայի, տագնապայնության կամ ՀՏՍԽ-ի ախտանիշները կամ օգնել քնի և հոգեկան առողջության խնդիրներին առնչվող այլ դժվարությունների դեպքում։</div><div>&nbsp;</div><div><div><div>Հոգեբույժը կարող է օգնել քեզ՝</div><ul><li>նշանակելով դեղորայք հոգեկան առողջությանն առնչվող այնպիսի խնդիրների դեպքում, ինչպիսիք են դեպրեսիան, տագնապայնությունը, ՀՏՍԽ-ն և ծանր հոգեկան հիվանդությունները</li><li>որոշ դեպքերում՝ խորհրդատվությամբ</li></ul><div><div>Հոգեբույժի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div></div></div></div></div></div>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "4ac6cc84-7441-4010-9da0-ac493a752827",
+          "label": "Ի՞նչ է անում սոցիալական աշխատողը",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+          "content": {
+            "sections": [
+              {
+                "type": "image",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+                "alt": "Ի՞նչ է անում սոցիալական աշխատողը"
+              },
+              {
+                "type": "rich-text",
+                "content": "<div><p>Սոցիալական աշխատողները սովորաբար ունեն սոցիալական աշխատանքի մագիստրոսի աստիճան, որոշ դեպքերում՝ դոկտորի գիտական աստիճան և հաճախ աշխատում են որպես խորհրդատուներ։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</p><p>Սոցիալական աշխատողը կարող է օգնել քեզ՝</p><ul><li>հաղթահարել գործնական դժվարությունները, օրինակ՝ աշխատանք գտնելու, բնակարան ձեռք բերելու կամ պետական նպաստներից օգտվելու հարցում</li><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի չարաշահման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li></ul><p>Սոցիալական աշխատողները չեն կարող դեղորայք նշանակել։</p><div>Սոցիալական աշխատողի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "8e3b7262-cc5b-42c1-8695-c1fc4b81af8e",
+          "label": "Ի՞նչ է անում հոգևոր խորհրդատուն կամ հոգևոր սպասավորը",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+          "content": {
+            "sections": [
+              {
+                "type": "image",
+                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
+                "alt": "Ի՞նչ է անում հոգևոր խորհրդատուն կամ հոգևոր սպասավորը"
+              },
+              {
+                "type": "rich-text",
+                "content": "<div><p>Հոգևոր սպասավորներն օգնում են բոլոր մարդկանց՝ անկախ նրանց հավատքից և կրոնական համոզմունքներից, և առաջարկում են հոգևոր խորհրդատվություն և աջակցություն։ Թեև հոգևոր սպասավորները սովորաբար պատրաստված չեն հոգեկան առողջության խորհրդատվություն տրամադրելու համար, որոշ հոգևոր խորհրդատուներ նաև հոգեկան առողջության լիցենզավորված մասնագետներ են։ Հոգևոր սպասավորները կամ հոգևոր խորհրդատուները կարող են նաև քեզ ուղղորդել համապատասխան մասնագետի՝ հոգեբանի, հոգեբույժի կամ սոցիալական աշխատողի մոտ։</p><p>Հոգևոր խորհրդատուն կամ հոգևոր սպասավորը հոգևորական է, որը՝</p><ul><li>տրամադրում է հոգևոր աջակցություն և ուղղորդում</li><li>իրականացնում է կրոնական արարողություններ դաշտային պայմաններում</li><li>աջակցություն է ցուցաբերում արտակարգ իրավիճակներում</li></ul><div>Եթե հոգևոր ուղղորդում ես փնտրում, ապա հոգևոր խորհրդատուն կամ հոգևոր սպասավորը լավ մեկնարկային տարբերակ կարող է լինել։</div></div>"
               }
             ]
           }
