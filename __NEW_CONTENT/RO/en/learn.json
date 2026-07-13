@@ -429,18 +429,18 @@
         },
         {
           "id": "f5744788-8d9f-43d1-9318-7c238f68c279",
-          "label": "I Have PTSD...",
+          "label": "Ես ՀՏՍԽ ունեմ...",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
-                "alt": "I Have PTSD..."
+                "alt": "Ես ՀՏՍԽ ունեմ..."
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If you have been diagnosed with PTSD, the tools in this app can help you manage your symptoms. However, this app is not meant to replace professional care. If you are currently in treatment for PTSD, you should discuss using this app as part of your work together with your provider.</div><div>&nbsp;</div><div><div><div>Remember: effective treatment for PTSD is available! You don’t have to live forever with your symptoms.</div></div></div></div>"
+                "content": "<div><p>Եթե քեզ մոտ ախտորոշվել է ՀՏՍԽ, այս հավելվածի գործիքները կարող են օգնել կառավարելու դրա ախտանիշները։ Սակայն այս հավելվածը նախատեսված չէ մասնագիտական օգնությանը փոխարինելու համար։ Եթե այս պահին ՀՏՍԽ բուժում ես ստանում, ապա առաջարկում ենք քո բժշկի հետ քննարկել այս հավելվածի օգտագործումը բուժման մաս դարձնելու տարբերակը։</p><p>Հիշեք․ ՀՏՍԽ-ի արդյունավետ բուժում գոյություն ունի։ Դու չպետք է հավերժ ապրես դրա ախտանիշներով։</p></div>"
               }
             ]
           }
