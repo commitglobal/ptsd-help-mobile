@@ -411,18 +411,18 @@
         },
         {
           "id": "c15f00fc-86f6-4315-ae3a-04e31be589e7",
-          "label": "Do I Have PTSD?",
+          "label": "Ես ՀՏՍԽ ունե՞մ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
-                "alt": "Do I Have PTSD?"
+                "alt": "Ես ՀՏՍԽ ունե՞մ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Only a qualified mental health professional can determine if you have PTSD. However, self-assessments like the one in this app can help you decide if you should seek further evaluation. If you believe you have PTSD, schedule an assessment with a mental health professional (a psychiatrist or clinical psychologist). Also note that some people may develop other conditions, such as depression or substance use issues, after a traumatic experience.</div><div>&nbsp;</div><div><div><div>If the traumatic event you experienced happened less than a month or two ago and you are not too stressed or having problems functioning in daily life, you may want to wait and see if your symptoms improve on their own. Using the tools in this app can help you cope when you're feeling stressed.</div><div>&nbsp;</div><div><div><div>If you still feel unwell after one or two months, seek professional help.</div></div></div></div></div></div>"
+                "content": "<div><p>Միայն հոգեկան առողջության մասնագետը կարող է որոշել՝ արդյոք դու ՀՏՍԽ ունես։ Սակայն ինքնագնահատման թեստերը, ինչպես, օրինակ, այս հավելվածում առկա թեստը, կարող են օգնել որոշելու՝ արդյոք անհրաժեշտ է անցնել ավելի խորքային գնահատում։ Եթե կարծում ես, որ ՀՏՍԽ ունես, խոսի՛ր քո բժշկի հետ կամ այցելի՛ր հոգեկան առողջության մասնագետի։ Նաև հիշի՛ր, որ որոշ մարդկանց մոտ տրավմայից հետո կարող են առաջանալ այլ խնդիրներ, օրինակ՝ դեպրեսիա կամ թմրանյութերի չարաշահում։</p><p>Եթե քո տրավման տեղի է ունեցել մինչև երկու ամիս առաջ, և դու չափազանց մեծ անհանգստություն չես զգում կամ առօրյա կյանքում գործելու լուրջ դժվարություններ չունես, կարող ես սպասել և տեսնել՝ արդյոք ախտանիշները կմեղմանան։ Այս հավելվածի գործիքները կարող են օգնել քեզ հաղթահարելու լարվածությունը, երբ անհանգստություն զգաս։</p><p>Եթե տրավմատիկ իրադարձությունից մեկ կամ երկու ամիս անց դեռ քեզ լավ չես զգում, դիմի՛ր մասնագետի օգնությանը։</p></div>"
               }
             ]
           }
