@@ -1418,18 +1418,18 @@
         },
         {
           "id": "834f767e-e286-434b-b344-7585d60ea249",
-          "label": "What is family therapy?",
+          "label": "Ի՞նչ է ընտանեկան հոգեթերապիան",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
-                "alt": "What is family therapy?"
+                "alt": "Ի՞նչ է ընտանեկան հոգեթերապիան"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If your family is struggling to communicate or get along, consider family therapy.</div><div>&nbsp;</div><div><div><div>In this type of counseling, a therapist helps you and your family to:</div><ul><li>Communicate better</li><li>Develop and maintain good relationships</li><li>Cope with upsetting emotions</li><li>Understand and manage PTSD</li></ul></div></div></div>"
+                "content": "<div><p>Եթե քո ընտանիքում դժվարանում են հաղորդակցվել կամ իրար հետ լեզու գտնել, մտածի՛ր ընտանեկան թերապիայի մասին։</p><p>Այս տեսակի հոգեբանական խորհրդատվության ընթացքում հոգեթերապևտն օգնում է քեզ և քո ընտանիքին՝</p><ul><li>ավելի լավ հաղորդակցվել</li><li>զարգացնել և պահպանել առողջ հարաբերություններ</li><li>հաղթահարել ծանր հույզերը</li><li>հասկանալ և հաղթահարել ՀՏՍԽ-ն</li></ul></div>"
               }
             ]
           }
