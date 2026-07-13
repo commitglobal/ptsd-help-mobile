@@ -483,18 +483,18 @@
         },
         {
           "id": "30fcbbd4-27d7-46f5-9ecd-c0a90333b93a",
-          "label": "Sleep Problems: Nightmares",
+          "label": "Քնի խնդիրներ․ մղձավանջներ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
-                "alt": "Sleep Problems: Nightmares"
+                "alt": "Քնի խնդիրներ․ մղձավանջներ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If you have disturbing nightmares that interrupt your sleep, here are a few tips:</div><ul><li>Upon waking, turn on the light, take several deep breaths, and observe the sights, sounds, and smells around you.</li><li>Notice the differences between the nightmare and the present moment and let those differences calm and reassure you.</li><li>Distract yourself for 5 to 10 minutes after waking with a book or some music; try getting up and spending time in another room.</li><li>When you try to sleep again, think about pleasant things and avoid thinking about the nightmare.</li><li>Avoid sleep deprivation. Keep a consistent sleep schedule and exercise regularly to reduce the frequency of nightmares.</li><li>Be mindful of alcohol, caffeine, and nicotine, which can disturb sleep.</li></ul></div>"
+                "content": "<div><div>Եթե քեզ անհանգստացնում են մղձավանջները, ահա մի քանի խորհուրդ․</div><ul><li>Արթնանալուց հետո միացրո՛ւ լույսը, մի քանի անգամ խոր շո՛ւնչ քաշիր և ուշադրությո՛ւն դարձրու շուրջդ եղած պատկերներին, ձայներին և հոտերին։</li><li>Ուշադրությո՛ւն դարձրու մղձավանջի և ներկա պահի տարբերություններին, և թող այդ տարբերությունները քեզ հանգստացնեն ու ապահովություն ներշնչեն քեզ։</li><li>Արթնանալուց հետո 5&ndash;10 րոպե ուշադրությունդ շեղի՛ր գիրք կարդալով կամ երաժշտություն լսելով․ փորձի՛ր վեր կենալ և ժամանակ անցկացնել մեկ այլ սենյակում։</li><li>Երբ նորից փորձես քնել, մտածի՛ր հաճելի բաների մասին և խուսափի՛ր մղձավանջի մասին մտքերից։</li><li>Խուսափի՛ր քնի պակասից։ Քնի կայուն ռեժի՛մ պահպանիր և պարբերաբար մարզվի՛ր՝ մղձավանջների հաճախականությունը նվազեցնելու համար։</li><li>Ուշադրությո՛ւն դարձրու ալկոհոլի, կոֆեինի և նիկոտինի օգտագործմանը, քանի որ դրանք կարող են խանգարել քունը։</li></ul></div>"
               }
             ]
           }
