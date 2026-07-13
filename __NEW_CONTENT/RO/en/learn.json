@@ -199,18 +199,18 @@
         },
         {
           "id": "3ea8185b-15d6-4275-a700-c733eb103ec3",
-          "label": "How Does PTSD Develop?",
+          "label": "Ինչպե՞ս է զարգանում ՀՏՍԽ-ն",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
-                "alt": "How Does PTSD Develop?"
+                "alt": "Ինչպե՞ս է զարգանում ՀՏՍԽ-ն"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>After a traumatic event, it's normal to be in shock, have painful memories, and be affected by memories that arise. Exposure to a traumatic event can also change how people think about themselves, others, and the world. For example, ideas may occur such as \"nowhere is safe,\" or \"no one can be trusted.\"</div><div>&nbsp;</div><div><div><div>For most people, these reactions will decrease over time. But for some, these reactions continue and can be severe enough to disrupt everyday life.</div></div></div></div>"
+                "content": "<div><p>Տրավմայից հետո բնական է շոկի մեջ լինելը, ցավոտ հիշողություններ ունենալը և տրավմայի մասին հիշեցումներից հուզվելը։ Տրավման կարող է նաև փոխել մարդու պատկերացումները իր, այլ մարդկանց և աշխարհի մասին՝ հանգեցնելով ավելի ծայրահեղ մտքերի, օրինակ՝ &laquo;ոչ մի տեղ անվտանգ չէ&raquo; կամ &laquo;ոչ ոքի չի կարելի վստահել&raquo;։</p><p>Շատերի դեպքում նման ռեակցիաները արձագանքները ժամանակի ընթացքում մեղմթուլանում են։ Սակայն ոմանց մոտ դեպքում դրանք շարունակվում պահպանվում են և կարող են այնքան ուժեղ լինել, որ խանգարեն առօրյա կյանքին։</p></div>"
               }
             ]
           }
