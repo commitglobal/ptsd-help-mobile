@@ -1124,25 +1124,41 @@
         },
         {
           "id": "773969b5-71a1-455f-b68b-081feecabc20",
-          "label": "How Much Does Counseling Cost?",
+          "label": "Ի՞նչ արժե հոգեբանական խորհրդատվությունը",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
-                "alt": "How Much Does Counseling Cost?"
+                "alt": "Ի՞նչ արժե հոգեբանական խորհրդատվությունը"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Don't let concerns about the cost of counseling prevent you from researching and checking your options. Depending on your insurance, counseling may be free or low-cost.</div><div>&nbsp;</div><div><div><div>To find out more:</div><div><div><ul><li>Call your insurance company to learn about your benefits. Also, psychotherapists may charge different rates based on their training.</li></ul></div></div></div></div></div>"
+                "content": "<div>Թույլ մի՛ տուր, որ հոգեբանի խորհրդատվության գնի մասին մտահոգությունները խանգարեն քեզ ուսումնասիրելու դաշտը և հասկանալու, թե ինչ տարբերակներ կան։ Կախված քո ապահովագրությունից կամ զինծառայողի արտոնություններից՝ հոգեբանի խորհրդատվությունը կարող է լինել անվճար կամ շատ էժան։<p>Ավելին իմանալու համար՝:</p><ul><li>Զանգահարիր և տեղեկացիր քո արտոնությունների մասին։</li></ul></div>"
+              },
+              {
+                "type": "rich-text",
+                "content": "<p>ՀՀ Աշխատանքի և սոցիալական հարցերի նախարարության Միասնական սոցիալական ծառայություն (ՄՍԾ) </p>"
               },
               {
                 "type": "button",
-                "label": "",
+                "label": "114",
                 "action": {
-                  "type": "external",
-                  "url": "https://deprehub.ro/psihoterapie-gratuita"
+                  "type": "phone",
+                  "number": "114"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<p>ԶԻՆԱՊԱՀ՝ Զինծառայողների ապահովագրության ազգային հիմնադրամ</p>"
+              },
+              {
+                "type": "button",
+                "label": "012 551055",
+                "action": {
+                  "type": "phone",
+                  "number": "012551055"
                 }
               }
             ]
