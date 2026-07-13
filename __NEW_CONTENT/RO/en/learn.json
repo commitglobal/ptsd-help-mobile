@@ -1062,18 +1062,18 @@
         },
         {
           "id": "73bc9aee-cb25-4d3e-8e7f-a983fa1b45d9",
-          "label": "Will Therapy Really Work?",
+          "label": "Արդյո՞ք հոգեթերապիան իսկապես արդյունավետ է։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
-                "alt": "Will Therapy Really Work?"
+                "alt": "Արդյո՞ք հոգեթերապիան իսկապես արդյունավետ է։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Research on various types of therapy shows that many kinds of therapy and medication really do work. Also, some types of therapy last only a few months.</div><div>&nbsp;</div><div><div><div>Many people find they quickly get comfortable talking with a therapist and come to trust them. Therapists are well-trained professionals, and many are specialists who have helped many trauma survivors.</div><div>&nbsp;</div><div><div><div>Remember: you can see how it goes – you don't have to commit to anything right away. If you have a few sessions and feel it's not working, you can discuss what to change with your therapist or ask for a different one. Therapists are invested in your recovery and will help you get the support you need.</div></div></div></div></div></div>"
+                "content": "<div><p>Հոգեթերապիայի տարբեր տեսակների վերաբերյալ հետազոտությունները ցույց են տալիս, որ հոգեբանի խորհրդատվության և դեղորայքային բուժման շատ տեսակներ իսկապես արդյունավետ են։ Բացի այդ՝ հոգեթերապիայի որոշ տեսակներ տևում են ընդամենը մի քանի ամիս։</p><p>Շատ զինծառայողներ և վետերաններ նկատում են, որ արագ ընտելանում են հոգեբանի հետ զրույցներին և սկսում են վստահել նրան։ Հոգեթերապևտները հատուկ պատրաստված մասնագետներ են, և նրանցից շատերն օգնել են տրավմա ապրած մեծ թվով մարդկանց։</p><p>Հիշի՛ր․ միշտ կարող ես պարզապես փորձել և տեսնել՝ ինչպես է ընթանում թերապիան․ պարտադիր չէ անմիջապես որևէ երկարաժամկետ պարտավորություն ստանձնել։ Եթե մի քանի հանդիպումից հետո ընթացքը քեզ դուր չգա, կարող ես ասել հոգեբանիդ, թե ինչը կուզեիր փոխել։ Կարող ես ընտրել նաև այլ հոգեբանի։ Հոգեբանների նպատակը քո վերականգնվելն է, և նրանք կօգնեն, որ ստանաս անհրաժեշտ աջակցությունը։</p></div>"
               }
             ]
           }
