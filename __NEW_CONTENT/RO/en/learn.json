@@ -235,18 +235,18 @@
         },
         {
           "id": "8ea11ea0-9943-4ebc-92f6-a08ece314e26",
-          "label": "Who Develops PTSD?",
+          "label": "Ո՞ւմ մոտ է առաջանում ՀՏՍԽ։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
-                "alt": "Who Develops PTSD?"
+                "alt": "Ո՞ւմ մոտ է առաջանում ՀՏՍԽ։"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Practically anyone can develop PTSD. However, there are a few factors that put you more at risk.</div><div>&nbsp;</div><div><div>Pre-existing risk factors:</div><ul><li>If you are a woman</li><li>Previous traumatic experience</li><li>Childhood abuse</li><li>Pre-existing mental health problem</li><li>Family history of mental illness</li></ul><div><div>Risk factors during a trauma:</div><ul><li>Believing you will die</li><li>Feeling detached from yourself or your surroundings</li><li>Complete helplessness</li><li>Panic attack</li><li>A serious injury</li></ul><div><div>Risk factors after trauma:</div><ul><li><div>Lack of social support</div></li><li><div>Additional stressors (such as job loss, divorce)</div></li></ul></div></div></div></div>"
+                "content": "<p>ՀՏՍԽ կարող է առաջանալ գրեթե յուրաքանչյուրի մոտ, սակայն կան որոշ գործոններ, որոնք մեծացնում են դրա հավանականությունը։</p><p>Ռիսկի գործոններ տրավմայից առաջ․</p><ul><li>իգական սեռի պատկանելը</li><li>նախկինում տրավմայի ենթարկված լինելը</li><li>մանկության տարիներին բռնության ենթարկված լինելը</li><li>նախկինում հոգեկան առողջության խնդիր ունենալը</li><li>ընտանիքում հոգեկան առողջության խանգարումների պատմություն ունենալը</li></ul><p>Ռիսկի գործոններ տրավմայի ընթացքում․</p><ul><li>հավատալը, որ կմահանաս</li><li>ինքդ քեզանից կամ շրջապատից կտրված զգալը</li><li>լիովին անօգնական զգալը</li><li>խուճապի նոպա ունենալը</li><li>լուրջ վնասվածք ստանալը</li></ul><p>սոցիալական աջակցության պակաս</p><ul><li><div>սոցիալական աջակցության պակաս</div></li><li><div>լրացուցիչ սթրեսներ, օրինակ՝ աշխատանքը կորցնելը կամ ամուսնալուծությունը</div></li></ul>"
               }
             ]
           }
