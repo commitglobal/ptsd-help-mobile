@@ -581,18 +581,18 @@
         },
         {
           "id": "a9de62c2-a24d-4627-92e4-4d6436e3ea72",
-          "label": "I Don't Trust People",
+          "label": "Ես մարդկանց չեմ վստահում",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
-                "alt": "I Don't Trust People"
+                "alt": "Ես մարդկանց չեմ վստահում"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Many people who have experienced trauma feel distrustful, but it's not helpful to make this assumption about everyone all the time.</div><div>&nbsp;</div><div><div><div>Practice and ask yourself questions like:</div><ul><li>Is it true all the time? What percentage of the time are people untrustworthy?</li><li>Can I think of a time when someone helped me?</li><li>Who are 3 people I know and can trust even a little?</li><li>What can I trust them with?</li></ul></div></div></div>"
+                "content": "<div><div>Տրավմա ապրած շատ մարդիկ անվստահություն են զգում, բայց այն ենթադրությունը, որ ոչ ոք վստահելի չէ, ամենևին օգտակար չէ։</div><div>&nbsp;</div><div><div><div>Փորձիր ինքդ քեզ նման հարցեր տալ․</div><ul><li>Արդյո՞ք դա միշտ է ճիշտ։ Ժամանակի քանի՞ տոկոսում են մարդիկ ոչ վստահելի։</li><li>Կարո՞ղ եմ հիշել մի դեպք, երբ ինչ-որ մեկը կողքիս է եղել։</li><li>Ովքե՞ր են այն երեք մարդիկ, որոնց կարող եմ թեկուզ որոշ չափով վստահել։</li><li>Ի՞նչ կարող եմ վստահել նրանց։</li></ul></div></div></div>"
               }
             ]
           }
