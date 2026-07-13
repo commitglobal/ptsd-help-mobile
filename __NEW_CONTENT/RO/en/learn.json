@@ -1098,25 +1098,25 @@
         },
         {
           "id": "43388869-63ce-457f-9ff6-d924185c77e1",
-          "label": "How Do I Find a Counselor/Therapist?",
+          "label": "Ինչպե՞ս գտնեմ հոգեբանական խորհրդատուի կամ հոգեթերապևտի",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
-                "alt": "How Do I Find a Counselor/Therapist?"
+                "alt": "Ինչպե՞ս գտնեմ հոգեբանական խորհրդատուի կամ հոգեթերապևտի"
               },
               {
                 "type": "rich-text",
-                "content": "<div>To find a counselor or therapist, you can:</div><div><ul><li>Ask for a recommendation from a doctor or nurse</li><li>Ask friends you trust for names</li><li>Visit:</li></ul></div>"
+                "content": "<div>Հոգեթերապևտի կամ հոգեբանական խորհրդատուի գտնելու համար կարող ես՝</div><div><ul><li>դիմել բժշկի, բժշկի օգնականի կամ բուժքրոջ՝ ուղղորդում ստանալու համար</li><li>հարցնել այն ընկերներին և ընտանիքի անդամներին, որոնց վստահում ես</li><li>Ալցելել․</li></ul></div>"
               },
               {
                 "type": "button",
-                "label": "Sanatateamintala.ro",
+                "label": "«Սթրես» հոգեկան առողջության վերականգնողական կենտրոն (Երևանի Մ. Հերացու անվան պետական բժշկական համալսարանի կլինիկա)",
                 "action": {
                   "type": "external",
-                  "url": "https://sanatateamintala.ro"
+                  "url": "https://www.artmed.am/service/13"
                 }
               }
             ]
