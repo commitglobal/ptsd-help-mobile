@@ -519,18 +519,18 @@
         },
         {
           "id": "4afaad60-4964-47c5-9bdb-bdb63bef0336",
-          "label": "What Should I Do If Certain Triggers Affect Me?",
+          "label": "Ի՞նչ անել, եթե տրավման հուզական արձագանք է առաջացնում",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
-                "alt": "What Should I Do If Certain Triggers Affect Me?"
+                "alt": "Ի՞նչ անել, եթե տրավման հուզական արձագանք է առաջացնում"
               },
               {
                 "type": "button",
-                "label": "Try the RID tool now",
+                "label": "Փորձի՛ր RID գործիքը հիմա (relax - թուլանալ, identify – ճանաչել գրգռիչը, decide – որոշել արձագանքը)",
                 "action": {
                   "type": "start_tool",
                   "toolId": "rid"
@@ -538,7 +538,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<ul><li>Relax</li><li>Identify</li><li>Decide</li></ul><p>First, do something to help yourself relax (such as deep breathing, sipping a glass of water, or reminding yourself \"I can handle this\")</p><p>Second, identify what the trigger is (such as a car, being in a crowd). Then identify how this is different now than it was then (like you're not in a war zone, you have more control now).</p><p>Third, decide what to do. For example, if being in a crowd bothers you, recognize that this crowd is not hostile. You can decide to stay in the crowd and see that you are safe now.</p>"
+                "content": "<ul><li>Relax - Թուլանալ</li><li>Identify - Ճանաչել գրգռիչը</li><li>Decide - Որոշել արձագանքը</li></ul><p>Նախ արա՛ որևէ բան, որը կօգնի թուլանալու, օրինակ՝ մի քանի անգամ խոր շո՛ւնչ քաշիր, ջո՛ւր խմիր կամ հիշեցրո՛ւ ինքդ քեզ․ &laquo;Ես կարող եմ հաղթահարել սա&raquo;։</p><p>Երկրորդ՝ փորձի՛ր հասկանալ, թե ո՛րն է եղել գրգռիչը, օրինակ՝ մեքենայի հետհարվածի ձայնը կամ մարդաշատ վայրում լինելը։ Այնուհետև փորձի՛ր հասկանալ, թե ներկա իրավիճակը ինչո՞վ է տարբերվում անցյալից, օրինակ՝ դու պատերազմի դաշտում չես, հիմա իրավիճակը քո վերահսկողության տակ է։</p><p>Երրորդ՝ որոշի՛ր, թե ինչ անես։ Օրինակ՝ եթե քեզ անհանգստացրել է մարդաշատ վայրում լինելը, գիտակցի՛ր, որ այս բազմությունը թշնամական չէ։ Կարող ես որոշում կայացնել մնալ բազմության մեջ և համոզվել, որ այժմ ապահով ես։</p>"
               }
             ]
           }
