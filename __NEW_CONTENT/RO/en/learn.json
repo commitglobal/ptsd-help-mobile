@@ -253,36 +253,36 @@
         },
         {
           "id": "8c975a93-c9ef-42eb-962b-a38efd01b6e1",
-          "label": "How Long Does PTSD Last?",
+          "label": "Որքա՞ն է տևում ՀՏՍԽ-ն",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
-                "alt": "How Long Does PTSD Last?"
+                "alt": "Որքա՞ն է տևում ՀՏՍԽ-ն"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>PTSD symptoms usually appear shortly after a traumatic experience; however, in some cases, symptoms do not appear for months or even years after the trauma. For some people who have early symptoms, these symptoms go away on their own. For others, these symptoms can last many years, especially if they do not seek help.</div><div>&nbsp;</div><div><div><div>PTSD symptoms can worsen during times of stress or when people are reminded of what happened by trauma triggers (such as anniversaries). The duration of PTSD also depends on whether effective treatment is received.</div></div></div></div>"
+                "content": "<div><p>ՀՏՍԽ ախտանիշները սովորաբար ի հայտ են գալիս տրավմատիկ փորձառությունից անմիջապես հետո, սակայն որոշ դեպքերում դրանք կարող են ի հայտ գալ ամիսներ կամ նույնիսկ տարիներ անց։ Որոշ մարդկանց մոտ վաղ փուլում ի հայտ եկած ախտանիշներն անցնում են։ Այլոց դեպքում դրանք կարող են տևել երկար տարիներ, հատկապես եթե նրանք չեն դիմում օգնության։</p><p>ՀՏՍԽ ախտանիշները կարող են սրվել սթրեսային իրավիճակներում, կամ երբ որևէ բան հիշեցնում է տրավմայի մասին, օրինակ՝ այդ իրադարձության տարելիցի ժամանակ։ ՀՏՍԽ տևողությունը կախված է նաև այն հանգամանքից, թե արդյոք անձը արդյունավետ բուժում է ստանում։</p></div>"
               }
             ]
           }
         },
         {
           "id": "2802716d-beac-42de-8db8-420eb0e55fc9",
-          "label": "Problems Related to PTSD",
+          "label": "ՀՏՍԽ-ին առնչվող խնդիրներ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
-                "alt": "Problems Related to PTSD"
+                "alt": "ՀՏՍԽ-ին առնչվող խնդիրներ"
               },
               {
                 "type": "rich-text",
-                "content": "<div>People with PTSD often develop other kinds of problems as well. These include:</div><ul><li>Depression</li><li>Panic attacks</li><li>Problems with alcohol and substance use</li><li>Problems at work, school, in relationships or other important activities</li><li>Physical symptoms (bodily pain, headaches, digestive problems)</li><li>Increased risk of medical problems</li></ul><div><div>Did you know?:</div><ul><li><div>More than half of men with PTSD have problems with alcohol</div></li><li><div>Almost half of women with PTSD have depression</div></li></ul></div>"
+                "content": "<p>Կան նաև այլ խնդիրներ, որոնք հաճախ են հանդիպում ՀՏՍԽ ունեցող մարդկանց մոտ։ Դրանք են՝</p><ul><li>դեպրեսիա</li><li>խուճապի նոպաներ</li><li>ալկոհոլի և թմրանյութերի օգտագործում</li><li>խնդիրներ հարաբերություններում, աշխատանքի, ուսման մեջ կամ այլ կարևոր ոլորտներում</li><li>ֆիզիկական ախտանիշներ, օրինակ՝ ցավ, գլխացավեր, մարսողության խնդիրներ</li><li>առողջության խնդիրների բարձր ռիսկ</li></ul><p>Գիտեի՞ր, որ․</p><ul><li><div>ՀՏՍԽ ունեցող տղամարդկանց ավելի քան կեսը ունի ալկոհոլի չարաշահման խնդիրներ</div></li><li><div>ՀՏՍԽ ունեցող կանանց գրեթե կեսն ունի դեպրեսիա</div></li></ul>"
               }
             ]
           }
