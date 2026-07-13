@@ -1166,36 +1166,36 @@
         },
         {
           "id": "48461c08-35f7-4223-91d9-c4a1ffcf5a16",
-          "label": "I Want Therapy, But I Work All Day",
+          "label": "Ես ուզում եմ հոգեթերապևտի խորհրդատվություն ստանալ, բայց ամբողջ օրն աշխատանքի եմ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
-                "alt": "I Want Therapy, But I Work All Day"
+                "alt": "Ես ուզում եմ հոգեթերապևտի խորհրդատվություն ստանալ, բայց ամբողջ օրն աշխատանքի եմ"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If you need flexible appointments to avoid missing work, look for a therapist who can offer sessions according to your schedule. Also, most employers will understand and help you take care of your health, whether it is physical or emotional health.</div><div>&nbsp;</div><div><div><div>Often, people can set up a flexible schedule with their boss to free up time for daytime appointments.</div></div></div></div>"
+                "content": "<div><div>Եթե կարիք ունես ճկուն ժամերով հանդիպումների, որպեսզի չբացակայես աշխատանքից, ապա փնտրի՛ր այնպիսի հոգեբանի, որը կկարողանա քո գրաֆիկին հարմար ժամ ընտրել հանդիպման համար։ Բացի այդ՝ գործատուների մեծ մասը կհասկանա քեզ և կօգնի, որ հոգ տանես քո ֆիզիկական և մտավոր առողջության համար։</div><div><div><div>Հաճախ հնարավոր է աշխատանքային ժամերը համաձայնեցնել ղեկավարի հետ՝ օրվա ընթացքում հոգեբանի հետ հանդիպումների համար։</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "88b2c850-99ee-4372-aac1-c58cf3d502e3",
-          "label": "Transportation to Appointments",
+          "label": "Ինչպե՞ս հասնել հանդիպման վայր",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
-                "alt": "Transportation to Appointments"
+                "alt": "Ինչպե՞ս հասնել հանդիպման վայր"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Some people have difficulty getting to and from appointments. If this is a problem for you, consider the following options:</div><ul><li>Public transportation, taxi, or ridesharing services</li><li>Ask a friend, family member, or neighbor to drive you</li><li>Borrow a car from a friend, family member, or neighbor</li><li>You can also schedule an appointment with a psychologist online.</li></ul></div>"
+                "content": "<div><div>Ոմանք դժվարանում են հասնել հոգեբանի հետ հանդիպումներին և այնտեղից վերադառնալ տուն։ Եթե սա քեզ համար խնդիր է, դիտարկի՛ր հետևյալ տարբերակները՝</div><ul><li>Հանրային տրանսպորտ</li><li>Խնդրի՛ր որևէ ընկերոջ, ընտանիքի անդամի կամ հարևանի, որ քեզ մեքենայով ուղեկցի</li><li>Վերցրո՛ւ ընկերոջ, ընտանիքի անդամի կամ հարևանի մեքենան</li><li>Որոշ հոգեբանական կենտրոններ տրանսպորտային ծառայություններ են տրամադրում պատերազմի վետերաններին․ ճշտիր՝ արդյոք այն կենտրոնում, ուր հաճախում ես, գործում է նման ծառայություն։</li></ul></div>"
               }
             ]
           }
