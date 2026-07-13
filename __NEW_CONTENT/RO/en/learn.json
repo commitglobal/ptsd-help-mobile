@@ -1454,18 +1454,18 @@
         },
         {
           "id": "da027dd8-3fe3-4789-8f1b-81818c1ec1e2",
-          "label": "How to fight fair",
+          "label": "Արդարացի կռվել",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
-                "alt": "How to fight fair"
+                "alt": "Արդարացի կռվել"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Conflict will always exist in relationships. If you’re easily irritable, communication can get even harder. Here are some tips for \"fighting fair\":</div><ul><li>Think before you speak. Staying calm helps solve problems.</li><li>When you talk, use \"I\" statements, like \"I think\" or \"I feel.\" Using \"you\" statements can sound accusatory.</li><li>Focus on one issue at a time.</li><li>Be positive – clearly ask for what you want or need. Blame and negativity won’t help resolve things.</li><li>Put your feelings into words. Your loved one may not know you’re sad or frustrated unless you tell them.</li><li>During an argument, give the other person equal time to share their point of view.</li><li>When the other person speaks, listen to what they say without interrupting. Ask questions and repeat back what was said to be sure you understand.</li><li>Don’t offer advice unless it’s requested.</li><li>Don’t hit \"below the belt\" with comments about sensitive topics. Stay on the issues at hand.</li><li>Never argue in bed. Use a neutral area and express your love often.</li><li>Work together as a team to solve problems. You can accomplish a lot more this way than as rivals.</li><li>Avoid saying \"I told you so.\" Remember that a solved problem is a win for both.</li><li>If things get too heated, take a break, but agree to continue the discussion when things cool down.</li></ul></div>"
+                "content": "<div><div>Հարաբերություններում կոնֆլիկտներն անխուսափելի են։ Եթե դյուրագրգիռ ես կամ արագ ես բռնկվում, դրանք հաղթահարելը ավելի դժվար է լինում։ Ահա մի քանի խորհուրդ՝ &laquo;արդարացի կռվելու&raquo; համար․</div><ul><li>Խոսելուց առաջ մտածի՛ր։ Սառնասրտությունը շատ է օգնում խնդիրներ լուծելիս։</li><li>Երբ խոսում ես, օգտագործի՛ր առաջին դեմքով արտահայտություններ, օրինակ՝ &laquo;ես կարծում եմ&raquo; կամ &laquo;ես զգում եմ&raquo;։ Երկրորդ դեմքով արտահայտությունները կարող են մեղադրական հնչել։</li><li>Մի՛ փորձիր միանգամից լուծել բոլոր խնդիրները։ Կենտրոնացի՛ր մեկ հարցի վրա։</li><li>Եղի՛ր դրական․ հստա՛կ ասա, թե ինչ ես ուզում կամ ինչի կարիք ունես։ Մեղադրանքն ու բացասական վերաբերմունքը չեն օգնի լուծելու խնդիրները։</li><li>Արտահայտի՛ր զգացմունքներդ բառերով ։ Քո սիրելին կարող է չիմանալ, որ տխուր կամ հիասթափված ես, եթե չասես նրան դրա մասին։</li><li>Վեճի ընթացքում դիմացինին տո՛ւր իր մտքերն արտահայտելու հնարավորություն։</li><li>Երբ դիմացինը խոսում է, լսի՛ր նրան առանց ընդհատելու։ Հարցե՛ր տուր և կրկնի՛ր նրա ասածը՝ համոզվելու համար, որ ճիշտ ես հասկացել։</li><li>Խորհուրդ մի՛ տուր, եթե քեզ չեն խնդրել։</li><li>Մի՛ խոսիր զգայուն թեմաներից։ Մի՛ շեղվիր քննարկվող հարցից։</li><li>Երբեք մի՛ վիճիր անկողնում։ Օգտագործի՛ր չեզոք սենյակ և հաճախակի արտահայտի՛ր քո սերը։</li><li>Խնդիրները հաղթահարեք որպես թիմ։ Այդպես շատ ավելին կարող եք անել, քան եթե վերաբերվեք միմյանց որպես մրցակիցների։</li><li>Խուսափի՛ր ասելուց՝ &laquo;ես քեզ ասում էի, չէ՞&raquo;։ Հիշի՛ր՝ լուծված խնդիրը երկուսիդ հաղթանակն է։</li><li>Եթե վիճակը չափազանց թեժանում է, դադա՛ր առեք, բայց պայմանավորվե՛ք շարունակել քննարկումը, երբ ավելի հանգիստ կլինեք։</li></ul></div>"
               }
             ]
           }
