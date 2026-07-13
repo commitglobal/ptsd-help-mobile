@@ -563,18 +563,18 @@
         },
         {
           "id": "71939fdd-6c23-4d9e-b7ce-63890c06ccd2",
-          "label": "Avoiding Things",
+          "label": "Խուսափում ես որոշ բաներից",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
-                "alt": "Avoiding Things"
+                "alt": "Խուսափում ես որոշ բաներից"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>People with PTSD often find themselves avoiding things that remind them of the traumatic experience they've had. Although avoiding painful memories may bring short-term relief, when you start avoiding things you have to face or isolate yourself, it may mean avoidance is not really working.</div><div><div>You can find tools and strategies for managing triggers and reducing avoidance in the Symptom Management section of this app.</div></div></div>"
+                "content": "<div><p>ՀՏՍԽ ունեցող մարդիկ հաճախ նկատում են, որ խուսափում են այն բաներից, որոնք հիշեցնում են իրենց ապրած տրավման։ Թեև ցավոտ հիշեցումներից խուսափելը կարճաժամկետ հեռանկարում կարող է թեթևություն բերել, սակայն եթե ի վերջո սկսում ես խուսափել այն բաներից, որոնց պետք է առերեսվել, եթե մեկուսանում ես կամ նկատում, որ կյանքդ շատ է սահմանափակվել, դա կարող է նշանակել, որ խուսափելը իրականում չի օգնում։</p><p>Տրավմայի գրգռիչները կառավարելու և խուսափումը նվազեցնելու գործիքներ և ռազմավարություններ կարող ես գտնել այս հավելվածի &laquo;Կառավարել ախտանիշները&raquo; բաժնում։</p></div>"
               }
             ]
           }
