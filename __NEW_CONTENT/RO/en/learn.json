@@ -1710,18 +1710,18 @@
         },
         {
           "id": "21d86333-ff99-4e2d-a582-881e6deba295",
-          "label": "Children’s responses to PTSD symptoms",
+          "label": "Երեխաների արձագանքները ՀՏՍԽ ախտանիշներին",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
-                "alt": "Children’s responses to PTSD symptoms"
+                "alt": "Երեխաների արձագանքները ՀՏՍԽ ախտանիշներին"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>A parent’s reactions to past trauma can affect children in many ways:</div><div>&nbsp;</div><div><div>If: The parent has upsetting nightmares or overwhelming memories/flashbacks, children may:</div><div><ul><li>Feel confused about what’s happening and why it’s happening</li><li>Feel afraid if they see or hear the parent being very upset or scared</li><li>Worry about their parent’s well-being</li><li>Worry that their parent can’t properly take care of them</li></ul><div><div>If: The parent avoids going out or becomes isolated, children may:</div><div><ul><li>Take it personally and worry that their parents don’t care about them, spending time together, or being involved in their lives (such as school sports or family outings)</li><li>Feel neglected</li><li>Have hurt feelings or feel frustrated</li></ul><div><div>If: The parent is withdrawn or uninterested, children may:</div><div><ul><li>Think the parent is not interested in them or doesn’t love them even if the parent says otherwise</li><li>Feel worried that their parent will leave them or the family</li></ul><div><div>If: The parent is irritable, angry, or easily frustrated, children may:</div><ul><li>Question whether their parent loves them</li><li>Feel tense and anxious around the parent</li><li>Lose respect for their parent</li></ul><div><div>If: The parent is hypervigilant, alert to danger, or easily startled, children may:</div><ul><li>Develop similar levels of vigilance as their parents and feel very stressed</li><li>Be more alert to danger</li></ul></div></div></div></div></div></div></div></div>"
+                "content": "<p>Ծնողների արձագանքն անցյալում ապրած տրավմային կարող է տարբեր կերպ ազդել երեխաների վրա․</p><p>Եթե ծնողը մղձավանջներ կամ ճնշող հիշողություններ/ֆլեշբեքներ (հանկարծակի վերհուշ) է ունենում, <br /> երեխաները կարող են՝</p><ul><li>Feel confused about what&rsquo;s happening and why it&rsquo;s happening</li><li>Feel afraid if they see or hear the parent being very upset or scared</li><li>Worry about their parent&rsquo;s well-being</li><li>Worry that their parent can&rsquo;t properly take care of them</li></ul><p>If: Parent avoids going out or isolates him/herself <br /> երեխաները կարող են՝</p><ul><li>Take it personally and worry that their parents don&rsquo;t care about them, spending time together, or being involved in their lives (such as school sports or family outings)</li><li>Feel neglected</li><li>Have hurt feelings or feel frustrated</li></ul><p>Եթե ծնողը չշփվող է, հուզականորեն անզգայացած կամ անտարբեր, <br /> երեխաները կարող են՝</p><ul><li>մտածել, որ ծնողն իրենցով հետաքրքրված չէ կամ չի սիրում իրենց, նույնիսկ եթե ծնողի խոսքերը հակառակն են ասում</li><li>անհանգստանալ, որ ծնողը կլքի իրենց կամ ընտանիքը</li></ul><p>Եթե ծնողը դյուրագրգիռ, զայրացած է կամ հեշտությամբ է հիասթափվում <br /> Երեխաները կարող են՝</p><ul><li>կասկածել ծնողի սիրուն</li><li>ծնողի կողքին չափազանց զգուշավոր լինել, կամ լարված ու տագնապային զգալ</li><li>կորցնել հարգանքը ծնողի նկատմամբ</li></ul><p>Եթե ծնողը չափազանց զգոն է, վտանգի նկատմամբ զգայուն կամ հեշտությամբ ցնցվում է <br /> Երեխաները կարող են՝</p><ul><li>ձեռք բերել նույնպիսի զգոնություն և շատ սթրեսային լինել</li><li>ավելի լարված զգալ և մշտապես զգուշանալ վտանգից</li></ul>"
               }
             ]
           }
