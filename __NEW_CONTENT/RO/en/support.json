@@ -232,13 +232,13 @@
         },
         {
           "id": "44da46f7-2aaf-400b-baae-41baa5d5f3f9",
-          "label": "Grow Your Support Circle",
+          "label": "Աջակցության շրջանակի ընդլայնում",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/grow_your_support.png",
           "content": {
             "sections": [
               {
                 "type": "rich-text",
-                "content": "<div><div>&nbsp;</div><div>Having healthy and satisfying support from others in your life is important for good quality of life. If you already have at least one kind of support, you’re doing well.</div><div>&nbsp;</div><div><div><div>Having satisfying relationships and friendships with others takes a little effort – by showing those you love that you spend time with them and are interested in them.</div><div>&nbsp;</div><div><div><div>Investing time in existing relationships can bring benefits – you’ll probably feel better, and the bonds with those you already love will grow stronger.</div><div>&nbsp;</div><div><div><div>To develop your existing support, try one of the following:</div><ul><li>Call a friend and invite them to do something together this week.</li><li>Ask a family member to spend quality time with you, doing something you both enjoy.</li><li>Spend time with a friend or family member doing something you know they like, even if you aren’t as excited about it.</li><li>Have a conversation with someone who cares about you and give them your complete attention – as the other person speaks with you, make sure you really understand what they say.</li><li>Connect with other people who have had similar experiences as yours.</li></ul></div></div></div></div></div></div></div>"
+                "content": "<div><p>Քո շրջապատի մարդկանց աջակցությունը կարևոր է կյանքի լավ որակի համար։ Եթե արդեն որոշակի աջակցություն վայելում ես, դա արդեն լավ է։</p><p>Գոհացնող անձնական և ընկերական հարաբերություններ ունենալը որոշակի ջանք է պահանջում՝ ցույց տալու մարդկանց, ում համար հոգ ես տանում, որ ժամանակ ունես նրանց համար և հետաքրքրված ես նրանցով։</p><div><div><p>Արդեն իսկ ունեցած քո հարաբերությունների մեջ ժամանակ ներդնելը կարող է մեծ արդյունք տալ․ հավանաբար քեզ ավելի լավ կզգաս և կամրապնդես կապերն այն մարդկանց հետ, որոնց համար արդեն հոգ ես տանում։</p><p>Արդեն իսկ ունեցածդ աջակցության շրջանակը մեծացնելու համար փորձի՛ր հետևյալ տարբերակներից մեկը․</p><ul><li>Զանգահարի՛ր ընկերոջդ և հրավիրի՛ր նրան այս շաբաթ միասին ինչ-որ բան անելու։</li><li>Խնդրի՛ր ընտանիքիդ անդամներից մեկին որակյալ ժամանակ անցկացնել քեզ հետ՝ անելով մի բան, որը երկուսիդ էլ հաճելի է։</li><li>Ժամանա՛կ հատկացրու ընկերոջդ կամ ընտանիքիդ անդամի հետ անելու մի բան, որը գիտես՝ նա սիրում է անել, նույնիսկ եթե դու այնքան էլ հաճույքով չես անում դա։</li><li>Զրուցի՛ր մեկի հետ, ում համար հոգ ես տանում, և նվիրի՛ր նրան ամբողջ ուշադրությունդ․ երբ այդ մարդը խոսում է քեզ հետ, փորձի՛ր իսկապես հասկանալ, թե նա ինչ է ասում։</li><li>Կա՛պ հաստատիր այլ վետերանների հետ, որոնք նման փորձառություններ են ունեցել։</li></ul></div></div></div>"
               }
             ]
           }
