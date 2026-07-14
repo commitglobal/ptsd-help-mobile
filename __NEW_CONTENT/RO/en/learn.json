@@ -1782,18 +1782,18 @@
         },
         {
           "id": "f601d41a-39d0-4cf2-b9d1-9869ff40dc64",
-          "label": "Are my kids okay? When should I seek outside help?",
+          "label": "Երեխաներս լա՞վ են․ ե՞րբ դիմել մասնագետի օգնության",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
-                "alt": "Are my kids okay? When should I seek outside help?"
+                "alt": "Երեխաներս լա՞վ են․ ե՞րբ դիմել մասնագետի օգնության"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>If your child or teen seems to have trouble adapting to PTSD, don’t hesitate to contact your doctor or a mental health specialist for support. Here are some signs to watch for:</div><div><ul><li>Trouble concentrating or engaging in schoolwork and activities</li><li>Intense emotional responses, such as persistent crying, deep sadness, or a low mood</li><li>Depression, or not communicating</li><li>Expressing violent or depressed feelings through drawings</li><li>Significant weight loss or gain, or lack of attention to hygiene</li><li>Major changes in social activities or friendships</li><li>Drug or alcohol use</li></ul><div><div>Please seek immediate help if your child is hurting or cutting themselves intentionally, seems in danger of hurting others, or expresses suicidal thoughts.</div></div></div></div>"
+                "content": "<div><div>Եթե քեզ թվում է, որ քո երեխան կամ դեռահասը դժվարանում է հարմարվել քո ՀՏՍԽ-ին, մի՛ հապաղիր դիմել բժշկի կամ հոգեկան առողջության մասնագետի՝ աջակցություն ստանալու համար։ Ահա մի քանի նշան, որոնց արժե ուշադրություն դարձնել․</div><div><ul><li>Դժվարանում է կենտրոնանալ դպրոցական առաջադրանքների և զբաղմունքների վրա կամ ներգրավվել դրանցում</li><li>Ուժեղ հուզական արձագանքներ, օրինակ՝ երկարատև լաց, խոր տխրություն կամ տրամադրության կտրուկ փոփոխություններ</li><li>Դեպրեսիա կամ ինքնամփոփ ու չհաղորդակցվող վարք</li><li>Բռնի կամ ընկճված զգացումների արտահայտում մռայլ նկարների կամ գրառումների միջոցով</li><li>Քաշի զգալի նվազում կամ ավելացում կամ հիգիենայի նկատմամբ ոչ պատշաճ ուշադրություն</li><li>Սոցիալական ակտիվության կամ ընկերական հարաբերություններում նկատվող մեծ փոփոխություններ</li><li>Թմրանյութերի կամ ալկոհոլի օգտագործում</li></ul><div><div>Խնդրում ենք, անհապաղ օգնությա՛ն դիմիր, եթե երեխադ դիտավորյալ վնասում է իրեն կամ կարող է վնասել ուրիշներին, արտահայտում է ինքնասպանության մասին մտքեր։</div></div></div></div>"
               }
             ]
           }
