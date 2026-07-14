@@ -71,96 +71,128 @@
     {
       "id": "a243e909-a625-4dc4-b545-0ae5493801cd",
       "type": "topic",
-      "label": "Find Professional Care",
+      "label": "Գտնել մասնագիտական օգնություն",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/find_professional_care.png",
       "content": {
         "sections": [
           {
             "type": "rich-text",
-            "content": "<div>&nbsp;</div><div>Useful contacts for critical situations:</div><ul><li>If you are in a critical situation and feel the need to ask for help, do not hesitate and call the emergency service or one of the available services for your situation:</li></ul>"
+            "content": "<div>Կապ հաստատե՛ք «Զինվորի տուն» վերականգնողական կենտրոնի հետ</div>"
           },
           {
             "type": "button",
-            "label": "Find a useful contact",
+            "label": "«Զինվորի տուն» վերականգնողական կենտրոն",
+            "action": {
+              "type": "phone",
+              "number": "011202520"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>կամ այցելեք ՀՀ Պաշտպանության նախարարության «Զինծառայողների սոցիալական պաշտպանության» բաժին</div>"
+          },
+          {
+            "type": "button",
+            "label": "mil.am",
             "action": {
               "type": "external",
-              "url": "https://sanatateamintala.ro/ro/pentru-urgente"
+              "url": "https://mil.am"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>«Սթրես» հոգեկան առողջության վերականգնողական կենտրոնը (Երևանի Մ. Հերացու անվան պետական բժշկական համալսարանի կլինիկա) առաջատար կլինիկական կենտրոն է, որտեղ աշխատում են պատերազմական և սուր տրավմատիկ PTSD-ի գծով վերապատրաստված լավագույն հոգեբույժներն ու նյարդաբանները։</div>"
+          },
+          {
+            "type": "button",
+            "label": "044 62 50 50",
+            "action": {
+              "type": "phone",
+              "number": "044625050"
             }
           },
           {
             "type": "button",
-            "label": "DepreHub.ro",
+            "label": "010 62 50 50",
+            "action": {
+              "type": "phone",
+              "number": "010625050"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>Վերապատրաստված մասնագետներ կան «ԱՅԳ» հոգեբանական ծառայությունների կենտրոնում</div>"
+          },
+          {
+            "type": "button",
+            "label": "«ԱՅԳ» հոգեբանական ծառայությունների կենտրոնի կայքը",
             "action": {
               "type": "external",
-              "url": "https://deprehub.ro/psihoterapie-gratuita"
-            }
-          },
-          {
-            "type": "button",
-            "label": "Call 0-374-456-420",
-            "action": {
-              "type": "phone",
-              "number": "0374456420"
+              "url": "https://hogeban.am/"
             }
           },
           {
             "type": "rich-text",
-            "content": "<div>Contact the Romanian Alliance for Suicide Prevention:</div>"
+            "content": "<div>«Ինթրա» հոգեկան առողջության կենտրոնը տրամադրում են անվճար կամ արտոնյալ պայմաններով հոգեբանական և հոգեթերապևտիկ աջակցություն պատերազմական տրավմա, տագնապային խանգարումներ և ՀՏՍԽ ունեցող անձանց։</div>"
           },
           {
             "type": "button",
-            "label": "Romanian Alliance for Suicide Prevention",
-            "action": {
-              "type": "phone",
-              "number": "0800801200"
-            }
-          },
-          {
-            "type": "rich-text",
-            "content": "<div>For counseling in suicidal crisis you can send an email 24/7 at sos@antisuicid.ro<div><ul><li><div><div>Obregia Hospital telephone exchange, Monday to Friday between 8:00 am - 4:00 pm</div></div></li></ul>"
-          },
-          {
-            "type": "button",
-            "label": "Call 0213-320-411",
-            "action": {
-              "type": "phone",
-              "number": "0213320411"
-            }
-          },
-          {
-            "type": "rich-text",
-            "content": "<ul><li>Emergency room for Adult Psychiatry - Obregia Hospital</li></ul>"
-          },
-          {
-            "type": "button",
-            "label": "Call the emergency room",
-            "action": {
-              "type": "phone",
-              "number": "0770415316"
-            }
-          },
-          {
-            "type": "rich-text",
-            "content": "<ul><li>Together for Humanity Social Center in Bucharest offers free psychological counseling for social cases that are not in psychological crisis</li></ul>"
-          },
-          {
-            "type": "button",
-            "label": "Together for Humanity Social Center",
+            "label": "«Ինթրա» հոգեկան առողջության կենտրոն",
             "action": {
               "type": "external",
-              "url": "https://www.centrulsocialtfh.ro/cere-ajutor"
+              "url": "https://sgmhf.am/"
             }
           },
           {
             "type": "rich-text",
-            "content": "<ul><li>Unique number 119 for reporting cases of child abuse, exploitation, or neglect.</li></ul>"
+            "content": "<div>Հոգեկան առողջության հայկական ասոցիացիան ունի մասնագիտացված ընտանեկան խորհրդատվության բաժին</div>"
           },
           {
             "type": "button",
-            "label": "Call 119",
+            "label": "Հոգեկան առողջության հայկական ասոցիացիա",
+            "action": {
+              "type": "external",
+              "url": "https://www.amha.am/"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<div>ՀՀ Աշխատանքի և սոցիալական հարցերի նախարարության Միասնական սոցիալական ծառայությունը (ՄՍԾ)  զինծառայողներին և նրանց ընտանիքներին կարող է ուղղորդել իրենց հասանելիք բոլոր պետական, սոցիալական, բժշկական և ֆինանսական ծրագրերի գծով։</div>"
+          },
+          {
+            "type": "button",
+            "label": "ՀՀ Աշխատանքի և սոցիալական հարցերի նախարարության Միասնական սոցիալական ծառայությունը (ՄՍԾ)",
+            "action": {
+              "type": "external",
+              "url": "https://socservice.am"
+            }
+          },
+          {
+            "type": "rich-text",
+            "content": "<p>Եթե ՀՏՍԽ ունեցող վետերանի ընտանիքի անդամ եք,</p><p>փորձե՛ք կապ հաստատել «Զինվորի մայր» բարեգործական ՀԿ-ի հետ, որը ցուցաբերում են խորհրդատվական, իրավական և բարոյահոգեբանական օժանդակություն զինծառայողներին և նրանց ընտանիքներին, ինչպես նաև զբաղվում է նախազորակոչային տարիքի տղաների ծնողների իրավական կրթությամբ:</p>"
+          },
+          {
+            "type": "button",
+            "label": "«Զինվորի մայր» բարեգործական ՀԿ",
+            "action": {
+              "type": "external",
+              "url": "zinvori-mair-ngo.am/"
+            }
+          },
+          {
+            "type": "button",
+            "label": "Զանգահարե՛ք 010 52 32 02",
             "action": {
               "type": "phone",
-              "number": "119"
+              "number": "010 52 32 02"
+            }
+          },
+          {
+            "type": "button",
+            "label": "Զանգահարե՛ք 093 59 56 85",
+            "action": {
+              "type": "phone",
+              "number": "093 59 56 85"
             }
           }
         ]
