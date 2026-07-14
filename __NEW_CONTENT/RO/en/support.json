@@ -206,13 +206,13 @@
       "topics": [
         {
           "id": "2f1c9083-72af-4d08-a3da-0e8fec54ffaf",
-          "label": "Someone You Trust",
+          "label": "Մեկը, ում վստահում ես",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/someone_you_trust.png",
           "content": {
             "sections": [
               {
                 "type": "rich-text",
-                "content": "<p>&nbsp;</p><p>Having someone you can trust and open up to is a gift. It doesn't mean that person has to be perfect – just that you feel comfortable enough sharing your experience with them and know it’s okay to be yourself.</p><p>&nbsp;</p><p>Take a moment to appreciate that you have someone you can trust. Studies show that expressing appreciation or gratitude toward another person can help boost your mood. Is there someone in your life you could spontaneously call or message?</p><p>&nbsp;</p><p>Just having a conversation with someone you trust can often be very helpful. Call or visit a friend or family member, and if you feel adventurous, open up to them a bit more than usual.</p>"
+                "content": "<p>Շատ կարևոր է ունենալ մեկին, որին կարող ես վստահել և որի հետ կարող ես սրտաբաց խոսել։ Դա չի նշանակում, որ այդ մարդը պետք է կատարյալ լինի․ պարզապես պետք է այնքան հարմարավետ զգաս նրա կողքին, որ պատմես նրան քեզ հետ կատարվածի մասին և իմանաս, որ նորմալ է լինել այնպիսին, ինչպիսին կաս։</p><p>Գոհացի՛ր, որ ունես մեկին, որին կարող ես վստահել։ Հետազոտությունները ցույց են տվել, որ մեկ ուրիշին գնահատանք կամ երախտագիտություն հայտնելը կարող է իսկապես բարձրացնել քո իսկ տրամադրությունը։ Քո կյանքում կա՞ մեկը, ում կարող ես ամեն պահի զանգահարել կամ գրել։</p><p>Հաճախ օգտակար է պարզապես զրուցել մեկի հետ, ում վստահում ես։ Զանգահարի՛ր կամ այցելի՛ր ընկերոջդ կամքո մտերիմ մարդուն, և եթե պատրաստ ես, փորձի՛ր սովորականից մի քիչ ավելի բաց լինել նրա հետ։</p>"
               }
             ]
           }
