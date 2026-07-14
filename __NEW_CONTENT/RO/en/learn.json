@@ -1746,18 +1746,18 @@
         },
         {
           "id": "aa47a1bc-84a2-4964-944b-40209b259834",
-          "label": "Helping children cope with emotions",
+          "label": "Օգնել երեխաներին հաղթահարելու իրավիճակը",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
-                "content": "Helping children cope with emotions"
+                "content": "Օգնել երեխաներին հաղթահարելու իրավիճակը"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>When PTSD affects your family:</div><ul><li>Explain the reasons behind the difficulties. Knowing what’s happening and why helps children feel safe.</li><li>However, be careful not to share too many details of the event(s) with your child. How much you say depends on your child’s age and maturity level.</li><li>Help them see that PTSD symptoms and trauma responses are not their fault.</li><li>Talk together about events and related experiences. Listen to their concerns and accept their feelings.</li><li>Recognize that change is stressful for children, just as it is for adults, and be patient.</li><li>Remember that they may have mixed feelings about you and about PTSD. They may feel loving, worried, protective, and sometimes anxious or angry.</li><li>Help them learn tools to better manage stress. Examples include:<ul><li>Running or physical exercise as an outlet</li><li>Drawing or writing for self-expression</li><li>Deep breathing to relax</li></ul></li><li>Give them a journal to keep about these events and their feelings and experiences.</li><li>Include them in important decisions that affect them whenever possible.</li></ul></div>"
+                "content": "<div><div>Երբ ՀՏՍԽ-ն ազդում է ընտանիքի վրա․</div><ul><li>Բացատրի՛ր դժվարությունների պատճառները։ Երբ երեխան իմանում է, թե ինչ է կատարվում և ինչու, իրեն ավելի ապահով է զգում։</li><li>Միաժամանակ զգո՛ւյշ եղիր և երեխային մի պատմիր տրավմատիկ իրադարձությունների չափազանց շատ մանրամասներ։ Թե որքան շատ մանրամասներ կպատմես, կախված է քո երեխայի տարիքից և հասունության մակարդակից։</li><li>Օգնի՛ր նրանց հասկանալու, որ ՀՏՍԽ-ի ախտանիշներն ու տրավմայի արձագանքներն իրենց պատճառով չեն։</li><li>Խոսի՛ր նրա հետ ՀՏՍԽ-ին առնչվող իրադարձությունների և փորձառությունների մասին։ Լսի՛ր նրանց մտահոգությունները և ընդունի՛ր նրանց զգացմունքները։</li><li>Ընդունի՛ր, որ փոփոխությունը կարող է սթրեսային լինել երեխաների համար այնպես, ինչպես մեծահասակների համար, և համբերատա՛ր եղիր։</li><li>Հիշի՛ր, որ նրանք կարող են հակասական զգացմունքներ ունենալ քո և քո ՀՏՍԽ-ի նկատմամբ։ Նրանք կարող են քեզ սիրել, անհանգստանալ քեզ համար և ցանկանալ պաշտպանել ձեզ, բայց միաժամանակ զգալ վիրավորվածություն, տագնապ կամ զայրույթ։</li><li>Օգնի՛ր նրանց ձեռք բերելու սթրեսն ավելի լավ կառավարելու հմտություններ։ Օրինակ՝<ul><li>վազել կամ մարզվել՝ լարվածությունը թոթափելու համար</li><li>նկարել կամ գրել՝ սեփական զգացմունքներն արտահայտելու համար</li><li>խոր շնչել՝ հանգստանալու համար</li></ul></li><li>Նրանց օրագի՛ր տուր, որտեղ կարող են գրել այս իրադարձությունների, իրենց զգացմունքների և ապրումների մասին։</li><li>Հնարավորության դեպքում ներգրավի՛ր նրանց իրենց վրա ազդող որոշումների կայացման մեջ։</li></ul></div>"
               }
             ]
           }
