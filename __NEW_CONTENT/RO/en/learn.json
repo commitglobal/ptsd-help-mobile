@@ -5,23 +5,23 @@
     {
       "id": "fa3f5b17-9ede-4f0a-98a7-023178ac6296",
       "type": "category",
-      "label": "Իմանալ ՀՏՍԽ-ի մասին",
+      "label": "Learn More About PTSD",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/learn_more_about_ptsd_icon.png",
       "topics": [
         {
           "id": "7c1cc94e-7f28-4dde-ab92-69b348eb1ead",
-          "label": "Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)",
+          "label": "What is PTSD?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_ptsd.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_ptsd.png",
-                "alt": "Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)"
+                "alt": "What is PTSD?"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Հետտրավմատիկ սթրեսային խանգարումը (ՀՏՍԽ) կարող է առաջանալ, երբ անձը ականատես է եղել, անձամբ ապրել է կամ տեղեկացել է, որ իր մտերիմներից մեկը ենթարկվել է է տրավմայի, օրինակ՝ իրական կամ մահվան սպառնալիք, ծանր վնասվածք կամ սեռական բռնություն։</p><p>Լավ նորությունն այն է, որ ՀՏՍԽ-ն բուժելի է:</p><p>ՀՏՍԽ-ն ներառում է ախտանիշների 4 տեսակ․</p><p>1. Տրավմատիկ փորձի կրկնություն կամ տրավմայի վերապրում, օրինակ՝</p><ul><li>Անհանգստացնող հիշողություններ կամ մղձավանջներ,</li><li>Այնպիսի զգացողություն կամ վարք, ասես տրավման նորից է կատարվում (ֆլեշբեք/հանկարծակի վերհուշ),</li><li>Տրավման հիշեցնող հանգամանքներին խիստ հուզական արձագանք։</li></ul><p>2. Համառորեն խուսափելը, օրինակ՝</p><ul><li>Տրավմայի մասին հիշողություններից կամ մտքերից խուսափելը,</li><li>Տրավմատիկ իրադարձություններին առնչվող մտքերից, զգացմունքներից կամ հիշողություններից խուսափելը։</li></ul><p>3. Բացասական մտքեր և տրամադրություն</p><ul><li>Մյուսներից կտրված կամ մեկուսացված զգալը</li><li>Բացասական համոզմունքներ, օրինակ՝ &laquo;Ես վատ մարդ եմ&raquo;, &laquo;Ես ոչ ոքի չեմ կարող վստահել&raquo;, &laquo;Աշխարհը վտանգավոր է&raquo;</li><li>Տրավմայի համար ինքն իրեն մեղադրելը</li><li>Մշտական բացասական հույզեր, օրինակ՝ վախ, զայրույթ, մեղքի զգացում կամ ամոթ</li><li>Դժվարանալ զգալ դրական հույզեր, օրինակ՝ երջանկություն և սեր</li><li>Հաճելի կամ կարևոր գործողությունների նկատմամբ հետաքրքրության պակաս կամ դրանց մասնակցելու ցանկության բացակայություն</li></ul><p>4. 4. Ավելի լարված և գերզգայուն վիճակ, օրինակ՝</p><ul><li>Զգոն լինելու զգացում</li><li>Դյուրագրգիռ կամ զայրացած լինել</li><li>Քնելու դժվարություններ</li><li>Հեշտությամբ վախենալ կամ ցնցվել</li><li>Կենտրոնանալու դժվարություններ</li><li>Անզգույշ կամ ինքնավնասող վարքագիծ ցուցաբերել</li></ul><p>Այս ախտանիշները տևում են մեկ ամիս կամ ավելի, անհանգստացնում են և/կամ խնդիրներ են առաջացնում սոցիալական կամ ընտանեկան կյանքում, աշխատանքի կամ ուսման մեջ։ՀՏՍԽ-ն կարող է նաև ներառել &laquo;դիսոցացիա&raquo;․ սա այն վիճակն է, երբ մարդիկ կտրված են զգում իրենք իրենցից, կամ շրջապատող աշխարհն անիրական, հեռավոր կամ աղավաղված է թվում։</p>"
+                "content": "<p>Posttraumatic Stress Disorder (PTSD) is caused by exposure to death or the threat of death, severe injury, sexual violence, or learning that someone close to you has gone through such traumatic experiences.</p><p>The good news: PTSD is treatable.</p><p>PTSD includes 4 types of symptoms:</p><p>1. Re-experiencing or reliving the trauma, such as:</p><ul><li>Disturbing memories or nightmares</li><li>Feeling or acting as if the trauma is happening again (flashbacks)</li><li>Getting very upset when reminded of the trauma</li></ul><p>2. Persistent avoidance, such as:</p><ul><li>Avoiding memories, thoughts or feelings about the trauma</li><li>Avoiding external reminders that trigger the memory of the event</li></ul><p>3. Negative thoughts and moods:</p><ul><li>Feeling detached or isolated from others</li><li>Negative beliefs (such as \"I am a bad person\", \"I can't trust anyone\", \"The world is dangerous\")</li><li>Blaming yourself or others for the cause or consequences of the traumatic event</li><li>Persistent negative emotions like fear, anger, guilt or shame</li><li>Difficulty feeling positive emotions such as happiness and love</li><li>Lack of interest or participation in enjoyable or important activities</li></ul><p>4. Heightened reactivity such as:</p><ul><li>Hypervigilance</li><li>Being irritable or angry</li><li>Sleep problems</li><li>Feeling jumpy</li><li>Difficulty concentrating</li><li>Being reckless or self-destructive</li></ul><p>These symptoms last for a month or more and are distressing and/or cause problems in social or family life, at work, and at school.</p><p>PTSD may also include \"dissociation\", in which people feel detached from themselves or as if the world around them seems unreal, distant, or distorted.</p>"
               }
             ]
           }
@@ -43,61 +43,61 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>PTSD is treatable</h1>No matter how long you have lived with PTSD, there are treatments that can help you."
+                      "content": "<div><h1>PTSD is treatable</h1><div><div>No matter how long you have lived with PTSD, there are treatments that can help you.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Treatment helps</h1>Talking to a professional is one of the best things you can do. There is evidence for several treatments that have been shown to be effective in reducing PTSD symptoms."
+                      "content": "<div><h1>Treatment helps</h1></div><div><div><div>Talking to a professional is one of the best things you can do. There is evidence for several treatments that have been shown to be effective in reducing PTSD symptoms.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Support plays an important role</h1>Support can greatly help people with PTSD. Studies have shown that the support of loved ones improves both treatment and recovery after PTSD."
+                      "content": "<div><h1>Support plays an important role</h1><div><div>Support can greatly help people with PTSD. Studies have shown that the support of loved ones improves both treatment and recovery after PTSD.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>You are not alone</h1>PTSD affects everyone differently, but it is extremely common for people to experience significant stress. Don't be afraid to seek help and support to cope with any stress you are experiencing."
+                      "content": "<div><h1>You are not alone</h1><div><div>PTSD affects everyone differently, but it is extremely common for people to experience significant stress. Don’t be afraid to seek help and support to cope with any stress you are experiencing.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Effective Treatments for PTSD</h1>Psychotherapy and/or medication are the most effective treatments for PTSD. Trauma-focused psychotherapy is considered more effective than medication."
+                      "content": "<h1>Effective Treatments for PTSD</h1><div><div>Psychotherapy and/or medication are the most effective treatments for PTSD. Trauma-focused psychotherapy is considered more effective than medication.</div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>How treatment helps</h1>Treatments for PTSD have been shown to improve symptoms, personal and professional relationships, and quality of life. Talk to specialists about which PTSD treatment is right for you."
+                      "content": "<div><h1>How treatment helps</h1><div><div>Treatments for PTSD have been shown to improve symptoms, personal and professional relationships, and quality of life. Talk to specialists about which PTSD treatment is right for you.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What are trauma-focused psychotherapies?</h1>These therapies use different techniques to help people with PTSD process their traumatic experience. Some involve visualizing or talking about the traumatic memory, while others focus on changing unhelpful beliefs."
+                      "content": "<div><h1>What are trauma-focused psychotherapies?</h1><div><div>These therapies use different techniques to help people with PTSD process their traumatic experience. Some involve visualizing or talking about the traumatic memory, while others focus on changing unhelpful beliefs.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What therapies work?</h1>There are several trauma-focused psychotherapies that have been shown to help with PTSD: prolonged exposure (PE), cognitive processing therapy (CPT), eye movement desensitization and reprocessing (EMDR), brief eclectic psychotherapy, narrative exposure therapy, and written narrative exposure."
+                      "content": "<div><h1>What therapies work?</h1><div><div>There are several trauma-focused psychotherapies that have been shown to help with PTSD: prolonged exposure (PE), cognitive processing therapy (CPT), eye movement desensitization and reprocessing (EMDR), brief eclectic psychotherapy, narrative exposure therapy, and written narrative exposure.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What medications work?</h1>Medications that can be useful for PTSD are also used for depression and anxiety: sertraline (Zoloft), paroxetine (Paxil), fluoxetine (Prozac), and venlafaxine (Effexor). Talk with your doctor if a prescription could be helpful for you."
+                      "content": "<div><h1>What medications work?</h1><div><div>Medications that can be useful for PTSD are also used for depression and anxiety: sertraline (Zoloft), paroxetine (Paxil), fluoxetine (Prozac), and venlafaxine (Effexor). Talk with your doctor if a prescription could be helpful for you.</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Իմանալ ՀՏՍԽ-ի մասին</h1>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:"
+                      "content": "<div><h1>Learn more about PTSD</h1><div><div>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -111,7 +111,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>After Deployment</h1>After Deployment is a comprehensive resource for managing stress, anxiety, sleep, health, and more. Worth a visit:"
+                      "content": "<div><h1>After Deployment</h1><div><div>After Deployment is a comprehensive resource for managing stress, anxiety, sleep, health, and more. Worth a visit:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -125,7 +125,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)</h1>Watch this video:"
+                      "content": "<div><h1>What is PTSD?</h1><div><div><div>Watch this video:</div></div></div></div>"
                     },
                     {
                       "type": "button",
@@ -139,7 +139,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Treatment: Know your options</h1>Watch this video about treatment options:"
+                      "content": "<div><h1>Treatment: Know your options</h1><div><div>Watch this video about treatment options:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -153,7 +153,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is \"evidence-based treatment\"?</h1>Find out more in this video:"
+                      "content": "<div><h1>What is \"evidence-based treatment\"?</h1><div><div>Find out more in this video:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -167,7 +167,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is cognitive processing therapy?</h1>Watch this short video to learn more:"
+                      "content": "<div><h1>What is cognitive processing therapy?</h1><div><div>Watch this short video to learn more:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -181,7 +181,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is prolonged exposure?</h1>Watch this short video to learn more about PE:"
+                      "content": "<div><h1>What is prolonged exposure?</h1><div><div>Watch this short video to learn more about PE:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -199,90 +199,90 @@
         },
         {
           "id": "3ea8185b-15d6-4275-a700-c733eb103ec3",
-          "label": "Ինչպե՞ս է զարգանում ՀՏՍԽ-ն",
+          "label": "How Does PTSD Develop?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_PTSD_develops.jpg",
-                "alt": "Ինչպե՞ս է զարգանում ՀՏՍԽ-ն"
+                "alt": "How Does PTSD Develop?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Տրավմայից հետո բնական է շոկի մեջ լինելը, ցավոտ հիշողություններ ունենալը և տրավմայի մասին հիշեցումներից հուզվելը։ Տրավման կարող է նաև փոխել մարդու պատկերացումները իր, այլ մարդկանց և աշխարհի մասին՝ հանգեցնելով ավելի ծայրահեղ մտքերի, օրինակ՝ &laquo;ոչ մի տեղ անվտանգ չէ&raquo; կամ &laquo;ոչ ոքի չի կարելի վստահել&raquo;։</p><p>Շատերի դեպքում նման ռեակցիաները արձագանքները ժամանակի ընթացքում մեղմթուլանում են։ Սակայն ոմանց մոտ դեպքում դրանք շարունակվում պահպանվում են և կարող են այնքան ուժեղ լինել, որ խանգարեն առօրյա կյանքին։</p></div>"
+                "content": "<div><div>After a traumatic event, it's normal to be in shock, have painful memories, and be affected by memories that arise. Exposure to a traumatic event can also change how people think about themselves, others, and the world. For example, ideas may occur such as \"nowhere is safe,\" or \"no one can be trusted.\"</div><div>&nbsp;</div><div><div><div>For most people, these reactions will decrease over time. But for some, these reactions continue and can be severe enough to disrupt everyday life.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "4d3d5873-fd6a-4213-9c44-d77b5fa30e78",
-          "label": "Որքա՞ն տարածված է ՀՏՍԽ-ն",
+          "label": "How Common is PTSD?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_common_ptsd_is.jpg",
-                "alt": "Որքա՞ն տարածված է ՀՏՍԽ-ն"
+                "alt": "How Common is PTSD?"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Թեև մարդկանց մեծ մասի ինքնազգացողությունը տրավմայից մեկ-երկու ամիս անց զգալիորեն լավանում է, որոշ մարդիկանց մոտ ունենում ձեռք են բերում զարգանում է ՀՏՍԽ կամ այլ խնդիրներ են առաջանում, օրինակ՝ դեպրեսիա կամ թմրանյութերի օգտագործման խնդիրներ։</p><p>Գիտեի՞ր, որ</p><ul><li>Տրավմայի որոշ տեսակներ, օրինակ՝ բռնաբարությունը կամ մարտական գործողություններին մասնակցությունը, կարող են հանգեցնել ՀՏՍԽ-ի ավելի բարձր ցուցանիշերի։</li></ul>"
+                "content": "<div>Although most people feel much better a month or two after trauma, some develop PTSD or other problems like depression or substance use issues.</div><div>&nbsp;</div><div>Did you know?</div><ul><li>Certain types of traumatic experiences, such as rape and physical assault, can cause even higher levels of PTSD symptoms.</li></ul>"
               }
             ]
           }
         },
         {
           "id": "8ea11ea0-9943-4ebc-92f6-a08ece314e26",
-          "label": "Ո՞ւմ մոտ է առաջանում ՀՏՍԽ։",
+          "label": "Who Develops PTSD?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/who_develops_ptsd.jpg",
-                "alt": "Ո՞ւմ մոտ է առաջանում ՀՏՍԽ։"
+                "alt": "Who Develops PTSD?"
               },
               {
                 "type": "rich-text",
-                "content": "<p>ՀՏՍԽ կարող է առաջանալ գրեթե յուրաքանչյուրի մոտ, սակայն կան որոշ գործոններ, որոնք մեծացնում են դրա հավանականությունը։</p><p>Ռիսկի գործոններ տրավմայից առաջ․</p><ul><li>իգական սեռի պատկանելը</li><li>նախկինում տրավմայի ենթարկված լինելը</li><li>մանկության տարիներին բռնության ենթարկված լինելը</li><li>նախկինում հոգեկան առողջության խնդիր ունենալը</li><li>ընտանիքում հոգեկան առողջության խանգարումների պատմություն ունենալը</li></ul><p>Ռիսկի գործոններ տրավմայի ընթացքում․</p><ul><li>հավատալը, որ կմահանաս</li><li>ինքդ քեզանից կամ շրջապատից կտրված զգալը</li><li>լիովին անօգնական զգալը</li><li>խուճապի նոպա ունենալը</li><li>լուրջ վնասվածք ստանալը</li></ul><p>սոցիալական աջակցության պակաս</p><ul><li><div>սոցիալական աջակցության պակաս</div></li><li><div>լրացուցիչ սթրեսներ, օրինակ՝ աշխատանքը կորցնելը կամ ամուսնալուծությունը</div></li></ul>"
+                "content": "<div>Practically anyone can develop PTSD. However, there are a few factors that put you more at risk.</div><div>&nbsp;</div><div><div>Pre-existing risk factors:</div><ul><li>If you are a woman</li><li>Previous traumatic experience</li><li>Childhood abuse</li><li>Pre-existing mental health problem</li><li>Family history of mental illness</li></ul><div><div>Risk factors during a trauma:</div><ul><li>Believing you will die</li><li>Feeling detached from yourself or your surroundings</li><li>Complete helplessness</li><li>Panic attack</li><li>A serious injury</li></ul><div><div>Risk factors after trauma:</div><ul><li><div>Lack of social support</div></li><li><div>Additional stressors (such as job loss, divorce)</div></li></ul></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "8c975a93-c9ef-42eb-962b-a38efd01b6e1",
-          "label": "Որքա՞ն է տևում ՀՏՍԽ-ն",
+          "label": "How Long Does PTSD Last?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/how_long_ptsd_last.jpg",
-                "alt": "Որքա՞ն է տևում ՀՏՍԽ-ն"
+                "alt": "How Long Does PTSD Last?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>ՀՏՍԽ ախտանիշները սովորաբար ի հայտ են գալիս տրավմատիկ փորձառությունից անմիջապես հետո, սակայն որոշ դեպքերում դրանք կարող են ի հայտ գալ ամիսներ կամ նույնիսկ տարիներ անց։ Որոշ մարդկանց մոտ վաղ փուլում ի հայտ եկած ախտանիշներն անցնում են։ Այլոց դեպքում դրանք կարող են տևել երկար տարիներ, հատկապես եթե նրանք չեն դիմում օգնության։</p><p>ՀՏՍԽ ախտանիշները կարող են սրվել սթրեսային իրավիճակներում, կամ երբ որևէ բան հիշեցնում է տրավմայի մասին, օրինակ՝ այդ իրադարձության տարելիցի ժամանակ։ ՀՏՍԽ տևողությունը կախված է նաև այն հանգամանքից, թե արդյոք անձը արդյունավետ բուժում է ստանում։</p></div>"
+                "content": "<div><div>PTSD symptoms usually appear shortly after a traumatic experience; however, in some cases, symptoms do not appear for months or even years after the trauma. For some people who have early symptoms, these symptoms go away on their own. For others, these symptoms can last many years, especially if they do not seek help.</div><div>&nbsp;</div><div><div><div>PTSD symptoms can worsen during times of stress or when people are reminded of what happened by trauma triggers (such as anniversaries). The duration of PTSD also depends on whether effective treatment is received.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "2802716d-beac-42de-8db8-420eb0e55fc9",
-          "label": "ՀՏՍԽ-ին առնչվող խնդիրներ",
+          "label": "Problems Related to PTSD",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ptsb_related_problems.jpg",
-                "alt": "ՀՏՍԽ-ին առնչվող խնդիրներ"
+                "alt": "Problems Related to PTSD"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Կան նաև այլ խնդիրներ, որոնք հաճախ են հանդիպում ՀՏՍԽ ունեցող մարդկանց մոտ։ Դրանք են՝</p><ul><li>դեպրեսիա</li><li>խուճապի նոպաներ</li><li>ալկոհոլի և թմրանյութերի օգտագործում</li><li>խնդիրներ հարաբերություններում, աշխատանքի, ուսման մեջ կամ այլ կարևոր ոլորտներում</li><li>ֆիզիկական ախտանիշներ, օրինակ՝ ցավ, գլխացավեր, մարսողության խնդիրներ</li><li>առողջության խնդիրների բարձր ռիսկ</li></ul><p>Գիտեի՞ր, որ․</p><ul><li><div>ՀՏՍԽ ունեցող տղամարդկանց ավելի քան կեսը ունի ալկոհոլի չարաշահման խնդիրներ</div></li><li><div>ՀՏՍԽ ունեցող կանանց գրեթե կեսն ունի դեպրեսիա</div></li></ul>"
+                "content": "<div>People with PTSD often develop other kinds of problems as well. These include:</div><ul><li>Depression</li><li>Panic attacks</li><li>Problems with alcohol and substance use</li><li>Problems at work, school, in relationships or other important activities</li><li>Physical symptoms (bodily pain, headaches, digestive problems)</li><li>Increased risk of medical problems</li></ul><div><div>Did you know?:</div><ul><li><div>More than half of men with PTSD have problems with alcohol</div></li><li><div>Almost half of women with PTSD have depression</div></li></ul></div>"
               }
             ]
           }
@@ -304,7 +304,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Therapy Works</h1>One of the most effective treatments for PTSD is psychotherapy."
+                      "content": "<div><h1>Therapy Works</h1><div><div>One of the most effective treatments for PTSD is psychotherapy.</div></div></div>"
                     }
                   ],
                   [
@@ -315,7 +315,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Trauma-Focused Therapy</h1>While many types of talk therapy can help, the best possible treatment is trauma-focused therapy. These are: prolonged exposure therapy, cognitive processing therapy, and eye movement desensitization and reprocessing (EMDR)."
+                      "content": "<div><div><div><h1>Trauma-Focused Therapy</h1></div></div><div>While many types of talk therapy can help, the best possible treatment is trauma-focused therapy. These are: prolonged exposure therapy, cognitive processing therapy, and eye movement desensitization and reprocessing (EMDR).</div></div>"
                     }
                   ],
                   [
@@ -326,7 +326,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Exercises Can Help Your Mood</h1>Physical exercise can be an important part of improving your mood. If you are physically able, you might benefit from a few minutes of exercise every day."
+                      "content": "<div><div><div><div><h1>Exercises Can Help Your Mood</h1><div><div>Physical exercise can be an important part of improving your mood. If you are physically able, you might benefit from a few minutes of exercise every day.</div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -337,7 +337,11 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Mindfulness (Meditation Practice) Can Help</h1>Mindfulness, or the practice of conscious meditation, has been shown to be very effective in reducing suffering and PTSD symptoms. Try the Mindfulness tools in this app!"
+                      "content": "TO DO: The button must redirect users to the subtools list instead of opening a certain tool."
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><div><div><h1>Mindfulness (Meditation Practice) Can Help</h1></div></div><div>Mindfulness, or the practice of conscious meditation, has been shown to be very effective in reducing suffering and PTSD symptoms. Try the Mindfulness tools in this app!</div><div>&nbsp;</div></div>"
                     },
                     {
                       "type": "button",
@@ -356,7 +360,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Starting Treatment</h1>Talk to a clinical psychologist or psychotherapist about how to get the care you need."
+                      "content": "<div><div><div><div><h1>Starting Treatment</h1><div><div>Talk to a clinical psychologist or psychotherapist about how to get the care you need.</div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -367,7 +371,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Medications That Work</h1>Some medications have been shown to be helpful in treating PTSD symptoms, including Celexa, Paxil, Prozac, and Zoloft. Talk to your doctor."
+                      "content": "<div><h1>Medications That Work</h1><div><div>Some medications have been shown to be helpful in treating PTSD symptoms, including Celexa, Paxil, Prozac, and Zoloft. Talk to your doctor.</div></div></div>"
                     }
                   ],
                   [
@@ -378,7 +382,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Family Therapy</h1>PTSD can affect all family members. Family therapy is a helpful way to bring family members together and help them understand each other better in a safe space."
+                      "content": "<div><h1>Family Therapy</h1><div><div>PTSD can affect all family members. Family therapy is a helpful way to bring family members together and help them understand each other better in a safe space.</div></div></div>"
                     }
                   ],
                   [
@@ -389,7 +393,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>PTSD Treatment</h1>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you are concerned you might be depressed, talk to your healthcare provider or contact a mental health specialist. You can call DepreHub.ro - free anti-anxiety helpline at:"
+                      "content": "<div><h1>PTSD Treatment</h1><div><div>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you are concerned you might be depressed, talk to your healthcare provider or contact a mental health specialist. You can call DepreHub.ro - free anti-anxiety helpline at:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -407,126 +411,126 @@
         },
         {
           "id": "c15f00fc-86f6-4315-ae3a-04e31be589e7",
-          "label": "Ես ՀՏՍԽ ունե՞մ",
+          "label": "Do I Have PTSD?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/do_i_have_ptsd.jpg",
-                "alt": "Ես ՀՏՍԽ ունե՞մ"
+                "alt": "Do I Have PTSD?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Միայն հոգեկան առողջության մասնագետը կարող է որոշել՝ արդյոք դու ՀՏՍԽ ունես։ Սակայն ինքնագնահատման թեստերը, ինչպես, օրինակ, այս հավելվածում առկա թեստը, կարող են օգնել որոշելու՝ արդյոք անհրաժեշտ է անցնել ավելի խորքային գնահատում։ Եթե կարծում ես, որ ՀՏՍԽ ունես, խոսի՛ր քո բժշկի հետ կամ այցելի՛ր հոգեկան առողջության մասնագետի։ Նաև հիշի՛ր, որ որոշ մարդկանց մոտ տրավմայից հետո կարող են առաջանալ այլ խնդիրներ, օրինակ՝ դեպրեսիա կամ թմրանյութերի չարաշահում։</p><p>Եթե քո տրավման տեղի է ունեցել մինչև երկու ամիս առաջ, և դու չափազանց մեծ անհանգստություն չես զգում կամ առօրյա կյանքում գործելու լուրջ դժվարություններ չունես, կարող ես սպասել և տեսնել՝ արդյոք ախտանիշները կմեղմանան։ Այս հավելվածի գործիքները կարող են օգնել քեզ հաղթահարելու լարվածությունը, երբ անհանգստություն զգաս։</p><p>Եթե տրավմատիկ իրադարձությունից մեկ կամ երկու ամիս անց դեռ քեզ լավ չես զգում, դիմի՛ր մասնագետի օգնությանը։</p></div>"
+                "content": "<div><div>Only a qualified mental health professional can determine if you have PTSD. However, self-assessments like the one in this app can help you decide if you should seek further evaluation. If you believe you have PTSD, schedule an assessment with a mental health professional (a psychiatrist or clinical psychologist). Also note that some people may develop other conditions, such as depression or substance use issues, after a traumatic experience.</div><div>&nbsp;</div><div><div><div>If the traumatic event you experienced happened less than a month or two ago and you are not too stressed or having problems functioning in daily life, you may want to wait and see if your symptoms improve on their own. Using the tools in this app can help you cope when you're feeling stressed.</div><div>&nbsp;</div><div><div><div>If you still feel unwell after one or two months, seek professional help.</div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "f5744788-8d9f-43d1-9318-7c238f68c279",
-          "label": "Ես ՀՏՍԽ ունեմ...",
+          "label": "I Have PTSD...",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/i_have_ptsd.jpg",
-                "alt": "Ես ՀՏՍԽ ունեմ..."
+                "alt": "I Have PTSD..."
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե քեզ մոտ ախտորոշվել է ՀՏՍԽ, այս հավելվածի գործիքները կարող են օգնել կառավարելու դրա ախտանիշները։ Սակայն այս հավելվածը նախատեսված չէ մասնագիտական օգնությանը փոխարինելու համար։ Եթե այս պահին ՀՏՍԽ բուժում ես ստանում, ապա առաջարկում ենք քո բժշկի հետ քննարկել այս հավելվածի օգտագործումը բուժման մաս դարձնելու տարբերակը։</p><p>Հիշեք․ ՀՏՍԽ-ի արդյունավետ բուժում գոյություն ունի։ Դու չպետք է հավերժ ապրես դրա ախտանիշներով։</p></div>"
+                "content": "<div><div>If you have been diagnosed with PTSD, the tools in this app can help you manage your symptoms. However, this app is not meant to replace professional care. If you are currently in treatment for PTSD, you should discuss using this app as part of your work together with your provider.</div><div>&nbsp;</div><div><div><div>Remember: effective treatment for PTSD is available! You don’t have to live forever with your symptoms.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "0d5d5441-f145-4d6e-b1b0-2370cd56618b",
-          "label": "Ամաչում եմ, որ ՀՏՍԽ ունեմ",
+          "label": "I'm Ashamed to Have PTSD",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/ashamed_to_have_ptsd.jpg",
-                "alt": "Ամաչում եմ, որ ՀՏՍԽ ունեմ"
+                "alt": "I'm Ashamed to Have PTSD"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Երբ ՀՏՍԽ ունեցող մարդիկ այն ընկալում են որպես թուլության կամ վնասված լինելու նշան, նրանք հաճախ կարող են ամաչել կամ փորձել թաքցնել այն։ Սա հատկապես պատահում է այն դեպքերում, երբ անձը հասարակական վայրերում զայրույթի պոռթկումներ, ֆլեշբեքեր (հանկարծակի վերհուշ) կամ ՀՏՍԽ-ի այլ ախտանիշներ է ունենում։</p><p>Ամոթն ու շփոթվածությունը կարող են տրավմա վերապրած մարդկանց ստիպել մեկուսանալ ուրիշներից կամ լռել իրենց խնդիրների մասին։ Բայց դա կարող է հակառակ ազդեցությունն ունենալ՝ նրանց թողնելով մեկուսացած և առանց աջակցության։</p><p>Հիշի՛ր․ ՀՏՍԽ-ն նորմալ արձագանք է աննորմալ հանգամանքներին։</p></div>"
+                "content": "<div><div>If people with PTSD see it as a sign of weakness or impairment, they may feel ashamed about it. This can be especially true if the person has outbursts of anger, flashbacks, or other PTSD symptoms in public.</div><div>&nbsp;</div><div><div><div>Shame may cause trauma survivors to withdraw or be silent about their struggles. But this can harm them and lead to isolation and feeling unsupported.</div><div>&nbsp;</div><div><div><div>Remember: PTSD is a normal response to abnormal circumstances.</div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "3314f9e0-0a05-4cdd-972a-57628fb74260",
-          "label": "Սոցիալական մեկուսացում",
+          "label": "Social Isolation",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/social_isolation.jpg",
-                "alt": "Սոցիալական մեկուսացում"
+                "alt": "Social Isolation"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>ՀՏՍԽ ունեցող մարդկանց համար սովորական է մեկուսանալը։ Դու կարող ես քեզ ճնշված կամ անապահով զգալ խմբերում, արագ զայրանալ, չհասկացված զգալ կամ պարզապես ցանկություն չունենալ մարդկանց շրջապատում լինելու։ Սակայն մեկուսացումը կարող է հանգեցնել միայնության, դեպրեսիայի և անհանգստության։</p><p>Այս հավելվածն առաջարկում է որոշ խորհուրդներ և ռազմավարություններ, որոնք կօգնեն քեզ հաղթահարելու մարդկանցից կտրված լինելու զգացումը և սկսելու վերստին կապ հաստատել մտերիմների և ընկերների հետ։</p></div>"
+                "content": "<div><div>It is common for people with PTSD to isolate themselves. You may feel overwhelmed or unsafe in groups, anger quickly, feel misunderstood, or simply have no interest in being around people. However, isolation can lead to loneliness, depression, and anxiety.</div><div>&nbsp;</div><div><div><div>This app offers some suggestions and strategies to help you deal with feeling disconnected from people and to begin reconnecting with loved ones and friends.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "30fcbbd4-27d7-46f5-9ecd-c0a90333b93a",
-          "label": "Քնի խնդիրներ․ մղձավանջներ",
+          "label": "Sleep Problems: Nightmares",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_nightmare.jpg",
-                "alt": "Քնի խնդիրներ․ մղձավանջներ"
+                "alt": "Sleep Problems: Nightmares"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Եթե քեզ անհանգստացնում են մղձավանջները, ահա մի քանի խորհուրդ․</div><ul><li>Արթնանալուց հետո միացրո՛ւ լույսը, մի քանի անգամ խոր շո՛ւնչ քաշիր և ուշադրությո՛ւն դարձրու շուրջդ եղած պատկերներին, ձայներին և հոտերին։</li><li>Ուշադրությո՛ւն դարձրու մղձավանջի և ներկա պահի տարբերություններին, և թող այդ տարբերությունները քեզ հանգստացնեն ու ապահովություն ներշնչեն քեզ։</li><li>Արթնանալուց հետո 5&ndash;10 րոպե ուշադրությունդ շեղի՛ր գիրք կարդալով կամ երաժշտություն լսելով․ փորձի՛ր վեր կենալ և ժամանակ անցկացնել մեկ այլ սենյակում։</li><li>Երբ նորից փորձես քնել, մտածի՛ր հաճելի բաների մասին և խուսափի՛ր մղձավանջի մասին մտքերից։</li><li>Խուսափի՛ր քնի պակասից։ Քնի կայուն ռեժի՛մ պահպանիր և պարբերաբար մարզվի՛ր՝ մղձավանջների հաճախականությունը նվազեցնելու համար։</li><li>Ուշադրությո՛ւն դարձրու ալկոհոլի, կոֆեինի և նիկոտինի օգտագործմանը, քանի որ դրանք կարող են խանգարել քունը։</li></ul></div>"
+                "content": "<div><div>If you have disturbing nightmares that interrupt your sleep, here are a few tips:</div><ul><li>Upon waking, turn on the light, take several deep breaths, and observe the sights, sounds, and smells around you.</li><li>Notice the differences between the nightmare and the present moment and let those differences calm and reassure you.</li><li>Distract yourself for 5 to 10 minutes after waking with a book or some music; try getting up and spending time in another room.</li><li>When you try to sleep again, think about pleasant things and avoid thinking about the nightmare.</li><li>Avoid sleep deprivation. Keep a consistent sleep schedule and exercise regularly to reduce the frequency of nightmares.</li><li>Be mindful of alcohol, caffeine, and nicotine, which can disturb sleep.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "fa6b7c8a-2bf7-44b8-bf17-46c9feee97fc",
-          "label": "Քնի խնդիրներ․ անքնություն",
+          "label": "Sleep Problems: Insomnia",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/sleep_issues_insomnia.jpg",
-                "alt": "Քնի խնդիրներ․ անքնություն"
+                "alt": "Sleep Problems: Insomnia"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե 15&ndash;20 րոպե անկողնում արթուն պառկած ես և չես կարողանում քնել, փորձի՛ր հետևյալը․</p><ul><li>Վե՛ր կաց և ինչ-որ ձանձրալի գործո՛վ զբաղվիր, օրինակ՝ կարդա կենցաղային տեխնիկայի օգտագործման հրահանգները։</li><li>Անկողին վերադարձի՛ր միայն այն ժամանակ, երբ քնկոտություն զգաս։</li><li>Թույլ լուսավորությո՛ւն օգտագործիր, մի՛ օգտվիր համակարգչից և հեռուստացույց մի՛ դիտիր։</li><li>Խմի՛ր ջուր, տաք կաթ կամ կոֆեին չպարունակող թեյ։</li><li>Եթե քաղցած ես, որևէ թեթև և քիչ շաքար պարունակող խորտի՛կ կեր։</li><li>Կարդա՛ հանգստացնող որևէ բան կամ լսի՛ր հանգստացնող երաժշտություն։</li><li>Երբ վերադառնաս անկողին, մոտ 10 րոպե դանդաղ և խոր շնչի՛ր։</li><li>Հանգստացրո՛ւ միտքդ աղոթքով, մեդիտացիայով կամ &laquo;ոչխարներ հաշվելով&raquo;։</li><li>Եթե դժվար է զուգընկերոջդ հետ նույն անկողնում քնել, մտածի՛ր երբեմն առանձին քնելու մասին։</li></ul></div>"
+                "content": "<div><div>If you're awake in bed for more than 15-20 minutes without falling asleep, try the following:</div><div>&nbsp;</div><ul><li>Get up and do something boring like reading an instruction manual.</li><li>Return to bed only when you feel sleepy.</li><li>Keep the lights low and don't use the computer or watch TV.</li><li>Drink a little water, warm milk, or decaffeinated tea.</li><li>Have a light, low-sugar snack if you're hungry.</li><li>Read something soothing or listen to relaxing music.</li><li>When you return to bed, breathe slowly and deeply for about 10 minutes.</li><li>Calm your mind with prayer, meditation, or \"counting sheep\".</li><li>If it's hard to share the bed with your partner, consider sometimes sleeping separately.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "4afaad60-4964-47c5-9bdb-bdb63bef0336",
-          "label": "Ի՞նչ անել, եթե տրավման հուզական արձագանք է առաջացնում",
+          "label": "What Should I Do If Certain Triggers Affect Me?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/stress_factor_response_strategy.jpg",
-                "alt": "Ի՞նչ անել, եթե տրավման հուզական արձագանք է առաջացնում"
+                "alt": "What Should I Do If Certain Triggers Affect Me?"
               },
               {
                 "type": "button",
-                "label": "Փորձի՛ր RID գործիքը հիմա (relax - թուլանալ, identify – ճանաչել գրգռիչը, decide – որոշել արձագանքը)",
+                "label": "Try the RID tool now",
                 "action": {
                   "type": "start_tool",
                   "toolId": "rid"
@@ -534,138 +538,122 @@
               },
               {
                 "type": "rich-text",
-                "content": "<ul><li>Relax - Թուլանալ</li><li>Identify - Ճանաչել գրգռիչը</li><li>Decide - Որոշել արձագանքը</li></ul><p>Նախ արա՛ որևէ բան, որը կօգնի թուլանալու, օրինակ՝ մի քանի անգամ խոր շո՛ւնչ քաշիր, ջո՛ւր խմիր կամ հիշեցրո՛ւ ինքդ քեզ․ &laquo;Ես կարող եմ հաղթահարել սա&raquo;։</p><p>Երկրորդ՝ փորձի՛ր հասկանալ, թե ո՛րն է եղել գրգռիչը, օրինակ՝ մեքենայի հետհարվածի ձայնը կամ մարդաշատ վայրում լինելը։ Այնուհետև փորձի՛ր հասկանալ, թե ներկա իրավիճակը ինչո՞վ է տարբերվում անցյալից, օրինակ՝ դու պատերազմի դաշտում չես, հիմա իրավիճակը քո վերահսկողության տակ է։</p><p>Երրորդ՝ որոշի՛ր, թե ինչ անես։ Օրինակ՝ եթե քեզ անհանգստացրել է մարդաշատ վայրում լինելը, գիտակցի՛ր, որ այս բազմությունը թշնամական չէ։ Կարող ես որոշում կայացնել մնալ բազմության մեջ և համոզվել, որ այժմ ապահով ես։</p>"
+                "content": "<ul><li>Relax</li><li>Identify</li><li>Decide</li></ul><p>First, do something to help yourself relax (such as deep breathing, sipping a glass of water, or reminding yourself \"I can handle this\")</p><p>Second, identify what the trigger is (such as a car, being in a crowd). Then identify how this is different now than it was then (like you're not in a war zone, you have more control now).</p><p>Third, decide what to do. For example, if being in a crowd bothers you, recognize that this crowd is not hostile. You can decide to stay in the crowd and see that you are safe now.</p>"
               }
             ]
           }
         },
         {
           "id": "109e788d-d579-4077-9a4d-51029256ca1e",
-          "label": "Ի՞նչ է դիսոցացիան",
+          "label": "What is Dissociation?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/what_is_dissociation.jpg",
-                "alt": "Ի՞նչ է դիսոցացիան"
+                "alt": "What is Dissociation?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Դիսոցացիան ֆիզիկական և հուզական փորձառություններից, զգացողություններից, հիշողություններից կամ անմիջական շրջապատից կտրված լինելու զգացումն է։ Դիսոցացիան կարող է լինել թեթևից մինչև ինտենսիվ։ Այն հաճախ տեղի է ունենում մարդու կամքից անկախ, ուստի կարող է շփոթեցնող և անհանգստացնող լինել։</p><p>Օրինակներ․</p><ul><li>Ինքդ քեզ կամ քո մարմինը տեսնում ես դրսից, օրինակ՝ վերևից կամ սենյակի մյուս ծայրից</li><li>Ձայները կամ տեսարանները հեռավոր կամ աղավաղված են թվում</li><li>Ժամանակ ես կորցնում</li><li>Ֆիզիկական կամ հուզական թմրածության մեջ ես</li></ul></div>"
+                "content": "<div><div>Dissociation is the feeling of detachment from physical and emotional experiences, sensations, memories, or your immediate environment. Dissociation can range from mild to intense. It often happens without the person intending it, so it may be confusing and upsetting.</div><div>&nbsp;</div><div><div>Examples:</div><ul><li>Noticing yourself or your body from an outside perspective (as if you are above your body)</li><li>Sounds or images that seem distant or distorted</li><li>Loss of time</li><li>Physical or emotional numbness</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "71939fdd-6c23-4d9e-b7ce-63890c06ccd2",
-          "label": "Խուսափում ես որոշ բաներից",
+          "label": "Avoiding Things",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/avoiding_things.jpg",
-                "alt": "Խուսափում ես որոշ բաներից"
+                "alt": "Avoiding Things"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>ՀՏՍԽ ունեցող մարդիկ հաճախ նկատում են, որ խուսափում են այն բաներից, որոնք հիշեցնում են իրենց ապրած տրավման։ Թեև ցավոտ հիշեցումներից խուսափելը կարճաժամկետ հեռանկարում կարող է թեթևություն բերել, սակայն եթե ի վերջո սկսում ես խուսափել այն բաներից, որոնց պետք է առերեսվել, եթե մեկուսանում ես կամ նկատում, որ կյանքդ շատ է սահմանափակվել, դա կարող է նշանակել, որ խուսափելը իրականում չի օգնում։</p><p>Տրավմայի գրգռիչները կառավարելու և խուսափումը նվազեցնելու գործիքներ և ռազմավարություններ կարող ես գտնել այս հավելվածի &laquo;Կառավարել ախտանիշները&raquo; բաժնում։</p></div>"
+                "content": "<div><div>People with PTSD often find themselves avoiding things that remind them of the traumatic experience they've had. Although avoiding painful memories may bring short-term relief, when you start avoiding things you have to face or isolate yourself, it may mean avoidance is not really working.</div><div><div>You can find tools and strategies for managing triggers and reducing avoidance in the Symptom Management section of this app.</div></div></div>"
               }
             ]
           }
         },
         {
           "id": "a9de62c2-a24d-4627-92e4-4d6436e3ea72",
-          "label": "Ես մարդկանց չեմ վստահում",
+          "label": "I Don't Trust People",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/trust_no_one.jpg",
-                "alt": "Ես մարդկանց չեմ վստահում"
+                "alt": "I Don't Trust People"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Տրավմա ապրած շատ մարդիկ անվստահություն են զգում, բայց այն ենթադրությունը, որ ոչ ոք վստահելի չէ, ամենևին օգտակար չէ։</p><p>Փորձիր ինքդ քեզ նման հարցեր տալ․</p><ul><li>Արդյո՞ք դա միշտ է ճիշտ։ Ժամանակի քանի՞ տոկոսում են մարդիկ ոչ վստահելի։</li><li>Կարո՞ղ եմ հիշել մի դեպք, երբ ինչ-որ մեկը կողքիս է եղել։</li><li>Ովքե՞ր են այն երեք մարդիկ, որոնց կարող եմ թեկուզ որոշ չափով վստահել։</li><li>Ի՞նչ կարող եմ վստահել նրանց։</li></ul></div>"
+                "content": "<div><div>Many people who have experienced trauma feel distrustful, but it's not helpful to make this assumption about everyone all the time.</div><div>&nbsp;</div><div><div><div>Practice and ask yourself questions like:</div><ul><li>Is it true all the time? What percentage of the time are people untrustworthy?</li><li>Can I think of a time when someone helped me?</li><li>Who are 3 people I know and can trust even a little?</li><li>What can I trust them with?</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "a6d34a91-e0a8-47d2-80ef-ef5263d63824",
-          "label": "Ես չեմ կարողանում կառավարել ինձ",
+          "label": "I Can't Control My Temper",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/cant_control_myself.jpg",
-                "alt": "Ես չեմ կարողանում վերահսկել իմ զայրույթը։"
+                "alt": "I Can't Control My Temper"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Սա կարող է վախեցնող և հուսահատեցնող լինել տրավմա վերապրած շատ մարդկանց, հատկապես պատերազմի վետերանների և գործող զինծառայողների համար, որոնք եղել են այնպիսի վայրերում, որտեղ զայրույթ կամ ագրեսիա ցուցադրելն ընկալվել է որպես օգտակար։ Այս հավելվածի և/կամ հոգեթերապևտի հետ առերես աշխատանքի օգնությամբ կարող ես սովորել վերահսկել քո վարքը հուզմունքի պահին։ Զայրույթի հաղթահարման համար նախատեսված որոշ գործիքներ կարող ես գտնել այս հավելվածի <strong>Կառավարել ախտանիշները</strong> բաժնում։</div>"
+                "content": "<div><div>This can be really scary and frustrating for many trauma survivors, especially veterans and active military personnel who have been in places where being angry or aggressive was seen as beneficial. You can learn to control your behavior when upset with the help of this app and/or individual therapy. Check out some of the anger coping tools in this app in the <strong>Symptom Management</strong> section.</div></div>"
               }
             ]
           }
         },
         {
           "id": "54fe9aa1-43fa-4876-9831-ce0ec7f607dd",
-          "label": "Ես միշտ լարված եմ",
+          "label": "I'm Always Stressed",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_stressed.jpg",
-                "alt": "Ես միշտ լարված եմ"
+                "alt": "I'm Always Stressed"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Լարված, զգոն կամ վտանգի նկատմամբ մշտապես պատրաստ վիճակում լինելը ՀՏՍԽ ունեցող շատ մարդկանց համար տարածված փորձառություն է։ Հանգստացնող վարժությունները և գիտակցվածության պրակտիկաները կարող են օգնել հանգստացնելու քո նյարդային համակարգը։ Այս վարժությունները հասանելի են հավելվածի <strong>&laquo;Կառավարել ախտանիշները&raquo;</strong> բաժնում։</div>"
+                "content": "<div><div>Feeling nervous, alert, or always on edge is a common experience for many people with PTSD. Relaxation exercises and mindfulness practices can help calm the nervous system. These exercises are available in this app in the <strong>Symptom Management</strong> section.</div></div>"
               }
             ]
           }
         },
         {
           "id": "a4df8b66-0059-441e-8574-185c85cb7296",
-          "label": "Ես միշտ տխուր եմ",
+          "label": "I Feel Sad All the Time",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/always_sad.jpg",
-                "alt": "Ես միշտ տխուր եմ"
+                "alt": "I Feel Sad All the Time"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Ավելի քան երկու շաբաթ շարունակ տխուր, ընկճված, ծանրացած կամ անտրամադիր զգալը կարող է դեպրեսիայի նշան լինել։ Եթե քեզ անհանգստացնում է քո հոգեկան վիճակը, խոսիր քեզ սպասարկող բուժաշխատողի հետ կամ դիմիր հոգեբանի աջակցության։ Կարող ես զանգահարել նաև &laquo;Ինթրա&raquo; հոգեկան առողջության կենտրոն, որտեղ գործում են նաև պետական ծրագրեր և պատերազմի մասնակիցների համար նախատեսված անվճար խմբեր։</p>"
+                "content": "<div><div>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you're worried you might be depressed, talk to your healthcare provider or contact a psychotherapist or clinical psychologist. You can also call the <strong>TelVerde Antidepresie</strong> hotline:</div></div>"
               },
               {
                 "type": "button",
-                "label": "098 26 35 43",
+                "label": "0800 080 020",
                 "action": {
                   "type": "phone",
-                  "number": "098263543"
-                }
-              },
-              {
-                "type": "button",
-                "label": "091 26 35 43",
-                "action": {
-                  "type": "phone",
-                  "number": "091263543"
-                }
-              },
-              {
-                "type": "button",
-                "label": "010 26 35 43",
-                "action": {
-                  "type": "phone",
-                  "number": "010263543"
+                  "number": "0800080020"
                 }
               }
             ]
@@ -676,62 +664,62 @@
     {
       "id": "2f781697-bcf1-4afb-897f-628403ebdf84",
       "type": "category",
-      "label": "Մասնագիտական օգնություն ստանալը",
+      "label": "Getting Professional Help",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/getting_professional_help_icon.png",
       "topics": [
         {
           "id": "27a286b0-0e28-498c-abfa-baaf37cfe521",
-          "label": "Ես ճգնաժամի մեջ եմ",
+          "label": "I'm in a Crisis",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_am_in_crisis.jpg",
-                "alt": "Ես ճգնաժամի մեջ եմ"
+                "alt": "I'm in a Crisis"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Ցանկացած ճգնաժամային իրավիճակում, այդ թվում՝ առողջության խնդիր ունենալու դեպքում, դիմի՛ր մոտակա Շտապ օգնության գրասենյակ կամ՝</p>"
+                "content": "<div><div>For any crisis, including medical emergencies, go to the nearest emergency room or call:</div></div>"
               },
               {
                 "type": "button",
-                "label": "112 (անվճար, 24/7)",
+                "label": "112",
                 "action": {
                   "type": "phone",
                   "number": "112"
                 }
               },
               {
+                "type": "rich-text",
+                "content": "<div><div>TelVerde Suicide Prevention:</div></div>"
+              },
+              {
                 "type": "button",
-                "label": "911 (անվճար, 24/7)",
+                "label": "0800 080 020",
                 "action": {
                   "type": "phone",
-                  "number": "911"
+                  "number": "0800080020"
+                }
+              },
+              {
+                "type": "button",
+                "label": "Details",
+                "action": {
+                  "type": "external",
+                  "url": "https://www.antisuicid.ro/ce-este-telverde-antisuicid"
                 }
               },
               {
                 "type": "rich-text",
-                "content": "<p>Ընտանեկան բռնության դեպքում՝ «Կանանց աջակցման կենտրոն» ՀԿ թեժ գիծ</p>"
+                "content": "<div><div>National emergency number for victims of domestic violence:</div></div>"
               },
               {
                 "type": "button",
-                "label": "099 88 78 08",
+                "label": "0800-500-333",
                 "action": {
                   "type": "phone",
-                  "number": "099887808"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<p>«Սեռական բռնության ճգնաժամային կենտրոն» ՀԿ</p>"
-              },
-              {
-                "type": "button",
-                "label": "077 99 12 80",
-                "action": {
-                  "type": "phone",
-                  "number": "077991280"
+                  "number": "0800-500-333"
                 }
               }
             ]
@@ -761,289 +749,392 @@
         },
         {
           "id": "14dfa4e1-a766-4afc-aba5-82aa427aea9f",
-          "label": "Ի՞նչ է հոգեբանի հետ աշխատանքը։",
+          "label": "What is Therapy?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
-                "alt": "Ի՞նչ է հոգեբանի հետ աշխատանքը։"
+                "alt": "What is Therapy?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Հոգեբանական թերապիան ներառում է հանդիպումներ վերապատրաստված մասնագետի հետ տարբեր տիպի խնդիրների հաղթահարման ուղղությամբ աշխատելու համար, այդ թվում, և ոչ միայն, հետևյալի՝</p><ul><li>տրամադրության փոփոխություններ, օրինակ՝ դեպրեսիա կամ տագնապայնություն</li><li>խնդրահարույց համոզմունքներ կամ մտածելակերպեր</li><li>վարքագծային խնդիրներ, օրինակ՝ ծխելը, ալկոհոլի օգտագործումը, ոչ բավարար ֆիզիկական ակտիվությունը</li><li>ցավին կամ քնին առնչվող խնդիրներ</li><li>դժվար հաղթահարվող զգացմունքներ կամ հույզեր</li><li>հարաբերություններում առկա խնդիրների հաղթահարում</li></ul></div>"
+                "content": "<div><div>Therapy (also called psychotherapy or talk therapy) involves meeting with a trained professional to address various types of issues, including but not limited to:</div><ul><li>Changes in mood like depression or anxiety</li><li>Problematic beliefs or ways of thinking</li><li>Behaviors like smoking, alcohol use, or lack of exercise</li><li>Problems related to pain or sleep</li><li>Difficult feelings or emotions</li><li>Improving relationship difficulties</li></ul></div>"
+              }
+            ]
+          }
+        },
+        {
+          "id": "7d06c62c-1e69-411b-b102-5af1fe3ad2b3",
+          "label": "Tools for PTSD",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/tools_for_ptsd_icon.jpg",
+          "content": {
+            "sections": [
+              {
+                "type": "multiPage",
+                "pageArray": [
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/aims.jpg",
+                      "alt": "AIMS (Anger and Irritability Management Skills)"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<h1>AIMS (Anger and Irritability Management Skills)</h1><p>AIMS can help if you have difficulties with irritability or anger.</p><p>Tap one of the buttons below to install the app or share information about it with others.</p>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.aims"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/app/id1243035440"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/cbti_coach.png",
+                      "alt": "CBT-i Coach"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<h1>CBT-i Coach</h1><p>Although this app is designed to be used with a healthcare professional, it can be helpful to learn more about improving sleep.</p><p>Tap one of the buttons below to install the app or share information about it with others.</p>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.cbti"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/app/id655918660"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mindfulness_coach.jpg",
+                      "alt": "Mindfulness Coach"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<h1>Mindfulness Coach</h1><div><div>Mindfulness Coach offers exercises and information that can help with:</div><ol><li><div>Focusing on the present moment</div></li><li><div>Reducing the power of unwanted thoughts or memories</div></li></ol><div><div>Tap the message icon below to share information about these apps with others.</div></div></div>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.mindfulnesscoach"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/it/app/mindfulness-coach/id804284729"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/stay_quit_coach.jpg",
+                      "alt": "Stay Quit Coach"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><h1>Stay Quit Coach</h1><div><div>Do you smoke cigarettes and want to quit?</div><div>&nbsp;</div><div><div><div>Create a personal plan, set a quit date, and start your life as a non-smoker.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div></div></div>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=gov.va.stayquit"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/it/app/stay-quit-coach/id655892317"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/breathe_2_relax.jpg",
+                      "alt": "Breathe2Relax"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><h1>Breathe2Relax</h1><div><div>Deep breathing is one of the best ways to learn to relax.</div><div>&nbsp;</div><div><div><div>Learn to perform controlled, deep breaths using this free and customizable app.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div></div></div>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=mil.dha.breathe2relax"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/us/app/breathe2relax/id425720246"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mood_tracker.jpg",
+                      "alt": "Mood Tracker"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><h1>Mood Tracker</h1><div><div>Track your mood or other things important to you using Mood Tracker.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=com.t2.vas"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/us/app/t2-mood-tracker/id428373825"
+                      }
+                    }
+                  ],
+                  [
+                    {
+                      "type": "image",
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/ptsd_coach.jpg",
+                      "alt": "PTSD Coach"
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><h1>PTSD Coach</h1><div><div>You may want to share this app if you think someone else could benefit from the information and tools seen here.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div>"
+                    },
+                    {
+                      "type": "button",
+                      "label": "Play Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://play.google.com/store/apps/details?id=is.vertical.ptsdcoach"
+                      }
+                    },
+                    {
+                      "type": "button",
+                      "label": "App Store",
+                      "action": {
+                        "type": "external",
+                        "url": "https://itunes.apple.com/it/app/ptsd-coach/id430646302"
+                      }
+                    }
+                  ]
+                ]
               }
             ]
           }
         },
         {
           "id": "c4983971-9461-4911-bac8-f5700ee0e6fc",
-          "label": "Արդյոք ես մասնագիտական օգնության կարիք ունե՞մ։",
+          "label": "Do I Need Professional Help?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
-                "alt": "Արդյոք ես մասնագիտական օգնության կարիք ունե՞մ։"
+                "alt": "Do I Need Professional Help?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Բնական է, որ տրավմա ապրած մարդիկ հետագայում կյանքին հարմարվելու դժվարություններ ունենան․ սրանում ամոթալի ոչինչ չկա։ Երբեմն դժվարությունները շատ լուրջ են լինում և շարունակվում են ամիսներ։</p><p>Միայն դու ինքդ և առողջապահության ոլորտի մասնագետը կարող եք որոշել՝ օգնության կարիք ունես, թե ոչ։ Այնուամենայնիվ դու կարող ես անցնել այս հավելվածում ներառված հետտրավմատիկ սթրեսային խանգարման ինքնագնահատման թեստը և պատկերացում կազմել քո վիճակի մասին։</p><p>Եթե ինքնասպանության կամ մեկ ուրիշին վնասելու կամ սպանելու մտքեր ես ունենում, խնդրում ենք զանգահարել՝</p></div>"
+                "content": "<div><div>It is normal for people who have gone through traumatic experiences to face some challenges in adjusting afterward – this is nothing to be ashamed of. Sometimes these challenges are severe or last more than a few months.</div><div>&nbsp;</div><div><div><div>The need for help can only be determined by you and a health professional. However, you can complete the PTSD self-assessment in this app to get an idea of how you are doing.</div><div>&nbsp;</div><div><div><div>If you have thoughts about hurting or killing yourself or someone else, please call:</div><div></div><div></div></div></div></div></div></div>"
               },
               {
                 "type": "button",
-                "label": "112 (անվճար, 24/7)",
+                "label": "112",
                 "action": {
                   "type": "phone",
                   "number": "112"
                 }
               },
               {
-                "type": "button",
-                "label": "911 (անվճար, 24/7)",
-                "action": {
-                  "type": "phone",
-                  "number": "911"
-                }
-              },
-              {
                 "type": "rich-text",
-                "content": "<div>կամ անմիջապես դիմել մոտակա հիվանդանոցի Շտապ օգնության բաժանմունք։ </div>"
-              },
-              {
-                "type": "button",
-                "label": "1-03",
-                "action": {
-                  "type": "phone",
-                  "number": "103"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div><p>Հիշի՛ր, ինչ-որ մեկի հետ խոսելու համար կարիք չկա սպասելու արտակարգ իրավիճակի։</p><p>Տրավմա ապրած մարդկանց շրջանում հետևյալ խնդիրները հաճախ են հանդիպում և կարող են վկայել, որ աջակցության կարիք ունես․</p><ul><li>Դեպրեսիա՝ գրեթե միշտ տխուր, անտրամադիր և ընկճված զգալը</li><li>Տագնապայնություն՝ նյարդայնություն, անհանգստություն, լարվածություն, հնարավոր վտանգի նկատմամբ զգոնություն</li><li>Չափազանց զգոն լինելը կամ բարձր կամ անսպասելի ձայներից հեշտությամբ ցնցվելը</li><li>Տրավմատիկ փորձառությունների մասին կպչուն մտքեր և հիշողություններ, որոնք շատ անհանգստացնող են</li><li>Ալկոհոլի, փողոցային թմրանյութերի կամ դեղատոմսով նշանակվող դեղերի օգտագործման ավելացում կամ դրանց օգտագործումը՝ խնդիրները հաղթահարելու համար</li><li>Հեշտությամբ զայրանալը, ագրեսիվ կամ բռնի վարքագիծը</li><li>Անզգույշ կամ ագրեսիվ մեքենա վարելը</li><li>Քնի խանգարումներ, օրինակ՝ անքնություն կամ մղձավանջներ</li><li>Ինքնամեկուսացում, ընկերներից և ընտանիքից հեռանալը</li><li>Ախորժակի փոփոխություններ կամ առանց ջանքի քաշի զգալի ավելացում/նվազում</li><li>Աշխատանքային կամ առօրյա պարտականությունները կատարելու դժվարություններ</li><li>Հարաբերություններում խնդիրներ կամ ընտանիքի համար հոգ տանելու դժվարություններ</li><li>Ինքնասպանության կամ մեկ ուրիշին վնասելու կամ կյանքից զրկելու մտքեր</li></ul><p>Եթե նկատում ես, որ այս խնդիրներից որևէ մեկը ունես, հավանաբար օգտակար կլինի խոսել հոգեբանի հետ։</p></div>"
+                "content": "<div><div><div><div>or go immediately to the emergency room of the nearest hospital.</div><div>&nbsp;</div><div><div><div>Remember, you don't have to wait for an emergency to talk to someone.</div><div>&nbsp;</div><div><div><div>The following issues are common after a traumatic experience and could indicate the need for more support:</div><ul><li>Depression – feeling sad, down, or blue much of the time</li><li>Anxiety – nervousness, worry, tension, being very alert to possible danger most of the time</li><li>Excess vigilance or strong reactions to loud or unexpected noises</li><li>Intrusive thoughts and memories about traumatic experiences that are very distressing</li><li>Increased alcohol use, drug use, or misuse of prescription medication to cope</li><li>Easily irritable, aggressive/violent behavior</li><li>Irresponsible or aggressive driving</li><li>Sleep problems, such as insomnia or nightmares</li><li>Withdrawing from or isolating yourself from friends and family</li><li>Changes in appetite or unintentional weight gain/loss</li><li>Difficulty working or fulfilling daily responsibilities</li><li>Problems in relationships or difficulties caring for your family</li><li>Thoughts of suicide or hurting or killing someone</li></ul><div><div>If you have any of these concerns, you may benefit from therapy.</div></div></div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "6f32a995-2c44-4792-8c7f-30e73ce48916",
-          "label": "Ինչո՞ւ են մարդիկ դիմում հոգեբանական խորհրդատվության։",
+          "label": "Why Do People Seek Therapy?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
-                "alt": "Ինչո՞ւ են մարդիկ դիմում հոգեբանական խորհրդատվության։"
+                "alt": "Why Do People Seek Therapy?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Տրավմա ապրած որոշ մարդիկ դիմում են հոգեբանական խորհրդատվության, որովհետև՝</p><ul><li>դժվարություններ ունեն աշխատանքի և հարաբերությունների մեջ</li><li>խուսափում են տրավման հիշեցնող իրավիճակներից, բայց դրանք հանդիպում են ամեն քայլափոխի</li><li>շատ նյարդային կամ զայրացած են զգում</li><li>Feel very anxious or angry</li><li>քնելու դժվարություն ունեն</li></ul><p>Թեև այս ախտանիշները հաճախ են հանդիպում տրավմային հաջորդող մեկ-երկու ամսվա ընթացքում, սակայն եթե կարճ ժամանակ անց ինքնազգացողությունդ չի լավանում, ապա արժե մտածել հոգեբանի հետ խոսելու մասին։</p><p>Բացի այդ՝ որոշ մարդիկ նկատում են, որ՝</p><ul><li>թեև մտերիմները ցանկանում են օգնել, բայց չեն կարողանում դա անել, ինչպես հարկն է</li><li>մտերիմները հեռու են և հասանելի չեն</li><li>այն, ինչի մասին ուզում են խոսել, չափազանց զգայուն կամ անձնական է թվում</li></ul><div>Նման իրավիճակներում մասնագետի հետ խոսելը կարող է իսկապես օգնել։</div></div>"
+                "content": "<div><div>Some trauma survivors want to go to therapy because they have:</div><ul><li>Problems with work and interpersonal relationships</li><li>Avoid things that remind them of the trauma, but memories</li><li>are still triggered by all sorts of things</li><li>Feel very anxious or angry</li><li>Have trouble sleeping</li></ul><div><div>Although these symptoms are common in the first months after a traumatic experience, if you don't feel better soon, you should consider talking to a therapist.</div><div>&nbsp;</div><div><div><div>Also, some people find that:</div><ul><li>Loved ones mean well but cannot provide the support they need</li><li>Loved ones are far away and unavailable</li><li>What they want to talk about feels too sensitive or private</li></ul><div><div>In such circumstances, talking with a specialist can truly help.</div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "7163f965-f8f3-4a11-917b-e2177fc98c64",
-          "label": "Ինչպե՞ս կարող է հոգեբանն ինձ օգնել։",
+          "label": "How Can a Therapist Help Me?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
-                "alt": "Ինչպե՞ս կարող է հոգեբանն ինձ օգնել։"
+                "alt": "How Can a Therapist Help Me?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>ՀՏՍԽ-ի հետ աշխատելու մեջ մասնագիտացած հոգեբանները կարող են՝</p><ul><li>օգնել քեզ ձեռք բերելու տրավման ավելի լավ հաղթահարելու հմտություններ</li><li>առաջարկել նոր տեսանկյուններ</li><li>օգնել, որ ավելի հանգիստ զգաս առօրյա կյանքում մարդկանց հետ խոսելիս, նպատակներիդ ուղղությամբ աշխատելիս և ապագայիդ վրա կենտրոնանալիս</li></ul><p>Հիշի՛ր, հոգեբանական խորհրդատվության դիմելը ոչ թե թուլության, այլ ուժի նշան է։ Հոգեբանի հետ խոսելը վերականգնման ճանապարհին խիզախ քայլ է և կարող է ամրապնդել ինքդ քեզ օգնելու կարողությունդ։</p></div>"
+                "content": "<div><div>Professionals specialized in working with PTSD can:</div><ul><li>Help you learn skills to better cope</li><li>Offer new perspectives</li><li>Help you feel more comfortable talking with people in your everyday life, pursuing your goals, and focusing on your future</li></ul><div><div>Remember: seeking counseling is a sign of strength, not weakness. Talking to a counselor is a courageous step toward recovery and can strengthen your ability to help yourself.</div></div></div>"
               }
             ]
           }
         },
         {
           "id": "050f384c-330c-456f-9615-d075010c84bb",
-          "label": "Արդյո՞ք հոգեբանի խորհրդատվությունը գաղտնի է",
+          "label": "Is Therapy Confidential?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/is_therapy_confidential.jpg",
-                "alt": "Արդյո՞ք հոգեբանի խորհրդատվությունը գաղտնի է"
+                "alt": "Is Therapy Confidential?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Հոգեթերապիան գրեթե միշտ գաղտնի է։</p><p>Այս կարևոր կանոնից բացառություններ կարող են լինել, եթե՝</p><ul><li>հայտնում ես, որ մտադիր ես վնասելու կամ կյանքից զրկելու քեզ կամ մեկ ուրիշին</li><li>հոգեթերապևտը տեղեկանում է, որ որևէ երեխա կամ չափահաս անձ բռնության է ենթարկվում</li><li>դու զինծառայող ես. այս դեպքում հնարավոր է՝ գաղտնիության որոշ սահմանափակումներ լինեն</li></ul><p>Քո առաջնային բուժօգնության մասնագետը կարող է գրառում անել քո բժշկական քարտում, որը կարող են տեսնել քո խնամքի մեջ ներգրավված այլ մասնագետներ։</p><p>Խնդրում ենք գաղտնիության վերաբերյալ ցանկացած մտահոգություն քննարկել հոգեբանիդ կամ առողջապահական մասնագետիդ հետ։</p></div>"
+                "content": "<div><div>Therapy is almost always confidential.</div><div>&nbsp;</div><div><div><div>There are important exceptions to this rule for:</div><ul><li>public health protection</li><li>preventing imminent danger (e.g., suicide)</li><li>preventing a criminal act (e.g., killing someone else)</li></ul><div><div>The mental health specialist may write a note in your medical or psychological file, which can be viewed by other professionals involved in your care.</div><div>&nbsp;</div><div><div><div>Please discuss any concerns about confidentiality with your therapist or mental health professional.</div></div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "73bc9aee-cb25-4d3e-8e7f-a983fa1b45d9",
-          "label": "Արդյո՞ք հոգեթերապիան իսկապես արդյունավետ է։",
+          "label": "Will Therapy Really Work?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/will_therapy_really_work.png",
-                "alt": "Արդյո՞ք հոգեթերապիան իսկապես արդյունավետ է։"
+                "alt": "Will Therapy Really Work?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Հոգեթերապիայի տարբեր տեսակների վերաբերյալ հետազոտությունները ցույց են տալիս, որ հոգեբանի խորհրդատվության և դեղորայքային բուժման շատ տեսակներ իսկապես արդյունավետ են։ Բացի այդ՝ հոգեթերապիայի որոշ տեսակներ տևում են ընդամենը մի քանի ամիս։</p><p>Շատ զինծառայողներ և վետերաններ նկատում են, որ արագ ընտելանում են հոգեբանի հետ զրույցներին և սկսում են վստահել նրան։ Հոգեթերապևտները հատուկ պատրաստված մասնագետներ են, և նրանցից շատերն օգնել են տրավմա ապրած մեծ թվով մարդկանց։</p><p>Հիշի՛ր․ միշտ կարող ես պարզապես փորձել և տեսնել՝ ինչպես է ընթանում թերապիան․ պարտադիր չէ անմիջապես որևէ երկարաժամկետ պարտավորություն ստանձնել։ Եթե մի քանի հանդիպումից հետո ընթացքը քեզ դուր չգա, կարող ես ասել հոգեբանիդ, թե ինչը կուզեիր փոխել։ Կարող ես ընտրել նաև այլ հոգեբանի։ Հոգեբանների նպատակը քո վերականգնվելն է, և նրանք կօգնեն, որ ստանաս անհրաժեշտ աջակցությունը։</p></div>"
+                "content": "<div><div>Research on various types of therapy shows that many kinds of therapy and medication really do work. Also, some types of therapy last only a few months.</div><div>&nbsp;</div><div><div><div>Many people find they quickly get comfortable talking with a therapist and come to trust them. Therapists are well-trained professionals, and many are specialists who have helped many trauma survivors.</div><div>&nbsp;</div><div><div><div>Remember: you can see how it goes – you don't have to commit to anything right away. If you have a few sessions and feel it's not working, you can discuss what to change with your therapist or ask for a different one. Therapists are invested in your recovery and will help you get the support you need.</div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "dd16e090-d6c7-4168-b90e-a8bdd7d1e7d1",
-          "label": "ՀՏՍԽ-ի արդյունավետ բուժման ձևեր",
+          "label": "Effective Treatments for PTSD",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/ptsd_treatments_that_works.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/ptsd_treatments_that_works.jpg",
-                "alt": "ՀՏՍԽ-ի արդյունավետ բուժման ձևեր"
+                "alt": "Effective Treatments for PTSD"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Լավ նորությունն այն է, որ կան ՀՏՍԽ-ի բուժման մի քանի արդյունավետ ձևեր, որոնցից են՝</div><div><div><div>Կարճաժամկետ՝ մի քանի ամիս տևողությամբ հոգեթերապիաներ, որոնց արդյունավետությունը գիտականորեն ապացուցված է։</div><ul><li>Երկարատև էքսպոզիցիոն թերապիա (PE) և էքսպոզիցիոն այլ թերապիաներ, որոնք կենտրոնանում են տրավմատիկ հիշողությունների ու հիշեցումների հուզական արձագանքների վրա</li><li>Կոգնիտիվ մշակման թերապիա (CPT) և այլ կոգնիտիվ թերապիաներ, որոնք օգնում են հաղթահարելու տրավմային առնչվող բացասական համոզմունքները</li><li>Աչքերի շարժումներով ապազգայունացում և վերամշակում (EMDR), որը կենտրոնանում է տրավմայի մասին մտքերի և զգացմունքների ուժգնությունը նվազեցնելու վրա՝ թույլ տալով ավելի արդյունավետորեն հաղթահարել տրավման</li></ul><div><div>Կարճաժամկետ՝ մի քանի ամիս տևող այլ հոգեթերապիաներ, որոնք կարող են օգտակար լինել՝</div><ul><li>Կոգնիտիվ վարքաբանական թերապիա (CBT)</li><li>Կարճատև էկլեկտիկ հոգեթերապիա (BEP)</li><li>Նարատիվ էքսպոզիցիոն թերապիա</li><li>Գրավոր նարատիվ էքսպոզիցիա</li></ul><div><div>Հոգեթերապիաներ, որոնք չեն կենտրոնանում տրավմայի վրա՝</div><ul><li>Սթրեսի դիմակայունության թրեյնինգ (SIT)</li><li>Ներկայակենտրոն թերապիա (PCT)</li><li>Միջանձնային հոգեթերապիա (IPT)</li></ul><div><div>Դեղորայք, եթե հոգեթերապիան տարբերակ չէ՝</div><ul><li>Zoloft (սերտրալին)</li><li>Paxil (պարոքսետին)</li><li>Prozac (ֆլուօքսետին)</li><li>Effexor (վենլաֆաքսին)</li></ul><div><div>Լավագույն բուժումը հոգեթերապիան է, բայց դեղորայքը կարող է օգտակար լինել, եթե հոգեթերապիան քեզ համար հասանելի կամ մատչելի չէ։</div><div><div><div>Քեզ սպասարկող բուժաշխատողը քեզ հետ քննարկելուց հետո պետք է ընտրի բուժման այն տարբերակը, որն առավել համապատասխանում է քո՝</div><ul><li>կարիքներին</li><li>նախընտրություններին</li><li>բուժման նպատակներին</li><li>նախկին բուժման փորձառություններին</li></ul></div></div></div></div></div></div></div></div></div>"
+                "content": "<div><div>The good news is that there are several effective treatments for PTSD, including:</div><div>&nbsp;</div><div><div><div>Short-term psychotherapies (several months) with the strongest scientific evidence:</div><ul><li>Prolonged Exposure Therapy (PE) and other exposure therapies focusing on the emotional processing of trauma memories and cues</li><li>Cognitive Processing Therapy (CPT) and other cognitive therapies addressing negative trauma-related beliefs</li><li>Eye Movement Desensitization and Reprocessing (EMDR) which reduces the intensity of trauma-related thoughts and feelings, allowing for more effective adaptation</li></ul><div><div>Other short-term psychotherapies (several months) that may help:</div><ul><li>Cognitive Behavioral Therapy (CBT)</li><li>Brief Eclectic Psychotherapy (BEP)</li><li>Narrative Exposure Therapy</li><li>Written Narrative Exposure</li></ul><div><div>Psychotherapies that do not focus on trauma:</div><ul><li>Stress Inoculation Training (SIT)</li><li>Present-Centered Therapy (PCT)</li><li>Interpersonal Psychotherapy (IPT)</li></ul><div><div>Medications (if psychotherapy is not an option for you):</div><ul><li>Zoloft (Sertraline)</li><li>Paxil (Paroxetine)</li><li>Prozac (Fluoxetine)</li><li>Effexor (Venlafaxine)</li></ul><div><div>The best treatment is psychotherapy, but medications can be useful if psychotherapy is not available or accessible to you.</div><div>&nbsp;</div><div><div><div>Your mental health specialist (psychiatrist, clinical psychologist, or psychotherapist) should collaborate with you to personalize your treatment based on:</div><ul><li>your needs</li><li>your preferences</li><li>treatment goals</li><li>previous treatment experiences</li></ul></div></div></div></div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "43388869-63ce-457f-9ff6-d924185c77e1",
-          "label": "Ինչպե՞ս գտնեմ հոգեբանական խորհրդատուի կամ հոգեթերապևտի",
+          "label": "How Do I Find a Counselor/Therapist?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_to_find_therapist.jpg",
-                "alt": "Ինչպե՞ս գտնեմ հոգեբանական խորհրդատուի կամ հոգեթերապևտի"
+                "alt": "How Do I Find a Counselor/Therapist?"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Հոգեթերապևտի կամ հոգեբանական խորհրդատուի գտնելու համար կարող ես՝</div><div><ul><li>դիմել բժշկի, բժշկի օգնականի կամ բուժքրոջ՝ ուղղորդում ստանալու համար</li><li>հարցնել այն ընկերներին և ընտանիքի անդամներին, որոնց վստահում ես</li><li>Ալցելել․</li></ul></div>"
+                "content": "<div>To find a counselor or therapist, you can:</div><div><ul><li>Ask for a recommendation from a doctor or nurse</li><li>Ask friends you trust for names</li><li>Visit:</li></ul></div>"
               },
               {
                 "type": "button",
-                "label": "«Սթրես» հոգեկան առողջության վերականգնողական կենտրոն (Երևանի Մ. Հերացու անվան պետական բժշկական համալսարանի կլինիկա)",
+                "label": "Sanatateamintala.ro",
                 "action": {
                   "type": "external",
-                  "url": "https://www.artmed.am/service/13"
+                  "url": "https://sanatateamintala.ro"
                 }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>Եթե պատերազմի վետերան ես, ապա կարող ես նաև</div>"
-              },
-              {
-                "type": "button",
-                "label": "կապվել «Զինվորի տուն» վերականգնողական կենտրոնի հոգեբանական ծառայության հետ (055 20 45 20)",
-                "action": {
-                  "type": "phone",
-                  "number": "055204520"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>կամ այցելել</div>"
-              },
-              {
-                "type": "button",
-                "label": "https://zinvoritun.am",
-                "action": {
-                  "type": "external",
-                  "url": "https://zinvoritun.am"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>ՀՀ ՊՆ Կենտրոնական կլինիկական զինվորական հոսպիտալ</div>"
-              },
-              {
-                "type": "button",
-                "label": "010 45 89 62",
-                "action": {
-                  "type": "phone",
-                  "number": "010458962"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>կամ այցելել</div>"
-              },
-              {
-                "type": "button",
-                "label": "https://mil.am",
-                "action": {
-                  "type": "external",
-                  "url": "https://mil.am"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>Կին վետերանները կարող են դիմել նաև «Կանանց աջակցման կենտրոն»</div>"
-              },
-              {
-                "type": "button",
-                "label": "099 88 78 08",
-                "action": {
-                  "type": "phone",
-                  "number": "099887808"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<div>այցելել քո զորամասի հոգևոր սպասավորին՝ որոնումը սկսելու համար</div>"
               }
             ]
           }
         },
         {
           "id": "773969b5-71a1-455f-b68b-081feecabc20",
-          "label": "Ի՞նչ արժե հոգեբանական խորհրդատվությունը",
+          "label": "How Much Does Counseling Cost?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_much_does_counseling_cost.png",
-                "alt": "Ի՞նչ արժե հոգեբանական խորհրդատվությունը"
+                "alt": "How Much Does Counseling Cost?"
               },
               {
                 "type": "rich-text",
-                "content": "<div>Թույլ մի՛ տուր, որ հոգեբանի խորհրդատվության գնի մասին մտահոգությունները խանգարեն քեզ ուսումնասիրելու դաշտը և հասկանալու, թե ինչ տարբերակներ կան։ Կախված քո ապահովագրությունից կամ զինծառայողի արտոնություններից՝ հոգեբանի խորհրդատվությունը կարող է լինել անվճար կամ շատ էժան։<p>Ավելին իմանալու համար՝:</p><ul><li>Զանգահարիր և տեղեկացիր քո արտոնությունների մասին։</li></ul></div>"
-              },
-              {
-                "type": "rich-text",
-                "content": "<p>ՀՀ Աշխատանքի և սոցիալական հարցերի նախարարության Միասնական սոցիալական ծառայություն (ՄՍԾ) </p>"
+                "content": "<div><div>Don't let concerns about the cost of counseling prevent you from researching and checking your options. Depending on your insurance, counseling may be free or low-cost.</div><div>&nbsp;</div><div><div><div>To find out more:</div><div><div><ul><li>Call your insurance company to learn about your benefits. Also, psychotherapists may charge different rates based on their training.</li></ul></div></div></div></div></div>"
               },
               {
                 "type": "button",
-                "label": "114",
+                "label": "",
                 "action": {
-                  "type": "phone",
-                  "number": "114"
-                }
-              },
-              {
-                "type": "rich-text",
-                "content": "<p>ԶԻՆԱՊԱՀ՝ Զինծառայողների ապահովագրության ազգային հիմնադրամ</p>"
-              },
-              {
-                "type": "button",
-                "label": "012 551055",
-                "action": {
-                  "type": "phone",
-                  "number": "012551055"
+                  "type": "external",
+                  "url": "https://deprehub.ro/psihoterapie-gratuita"
                 }
               }
             ]
@@ -1051,162 +1142,126 @@
         },
         {
           "id": "48461c08-35f7-4223-91d9-c4a1ffcf5a16",
-          "label": "Ես ուզում եմ հոգեթերապևտի խորհրդատվություն ստանալ, բայց ամբողջ օրն աշխատանքի եմ",
+          "label": "I Want Therapy, But I Work All Day",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/i_want_counseling_but_I_work_all_day.png",
-                "alt": "Ես ուզում եմ հոգեթերապևտի խորհրդատվություն ստանալ, բայց ամբողջ օրն աշխատանքի եմ"
+                "alt": "I Want Therapy, But I Work All Day"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Եթե կարիք ունես ճկուն ժամերով հանդիպումների, որպեսզի չբացակայես աշխատանքից, ապա փնտրի՛ր այնպիսի հոգեբանի, որը կկարողանա քո գրաֆիկին հարմար ժամ ընտրել հանդիպման համար։ Բացի այդ՝ գործատուների մեծ մասը կհասկանա քեզ և կօգնի, որ հոգ տանես քո ֆիզիկական և մտավոր առողջության համար։</div><div><div><div>Հաճախ հնարավոր է աշխատանքային ժամերը համաձայնեցնել ղեկավարի հետ՝ օրվա ընթացքում հոգեբանի հետ հանդիպումների համար։</div></div></div></div>"
+                "content": "<div><div>If you need flexible appointments to avoid missing work, look for a therapist who can offer sessions according to your schedule. Also, most employers will understand and help you take care of your health, whether it is physical or emotional health.</div><div>&nbsp;</div><div><div><div>Often, people can set up a flexible schedule with their boss to free up time for daytime appointments.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "88b2c850-99ee-4372-aac1-c58cf3d502e3",
-          "label": "Ինչպե՞ս հասնել հանդիպման վայր",
+          "label": "Transportation to Appointments",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/transportation_to_appointments.png",
-                "alt": "Ինչպե՞ս հասնել հանդիպման վայր"
+                "alt": "Transportation to Appointments"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Ոմանք դժվարանում են հասնել հոգեբանի հետ հանդիպումներին և այնտեղից վերադառնալ տուն։ Եթե սա քեզ համար խնդիր է, դիտարկի՛ր հետևյալ տարբերակները՝</div><ul><li>Հանրային տրանսպորտ</li><li>Խնդրի՛ր որևէ ընկերոջ, ընտանիքի անդամի կամ հարևանի, որ քեզ մեքենայով ուղեկցի</li><li>Վերցրո՛ւ ընկերոջ, ընտանիքի անդամի կամ հարևանի մեքենան</li><li>Որոշ հոգեբանական կենտրոններ տրանսպորտային ծառայություններ են տրամադրում պատերազմի վետերաններին․ ճշտիր՝ արդյոք այն կենտրոնում, ուր հաճախում ես, գործում է նման ծառայություն։</li></ul></div>"
+                "content": "<div><div>Some people have difficulty getting to and from appointments. If this is a problem for you, consider the following options:</div><ul><li>Public transportation, taxi, or ridesharing services</li><li>Ask a friend, family member, or neighbor to drive you</li><li>Borrow a car from a friend, family member, or neighbor</li><li>You can also schedule an appointment with a psychologist online.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "c5d0c457-e0e0-4e66-89f2-fc00c1963057",
-          "label": "Ես ամաչում եմ հոգեբանի դիմելուց",
+          "label": "I'm Embarrassed to Go to Therapy",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/im_embarrassed_to_go_for_counseling.png",
-                "alt": "Ես ամաչում եմ հոգեբանի դիմելուց"
+                "alt": "I'm Embarrassed to Go to Therapy"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Ոմանք ամաչում են օգնության կարիք ունենալուց կամ օգնություն խնդրելուց։ Բայց մտածի՛ր մեկ այլ տեսանկյունից՝</div><ul><li>Մենք այս աշխարհում միայնակ չենք։ Կան մարդիկ, որոնք ուզում են օգնել քեզ, ճիշտ այնպես, ինչպես դու ես նախկինում օգնել ուրիշներին։</li><li>Գիտեի՞ր, որ հետսթրեսային շրջանում օգնություն ընդունող մարդիկ ավելի լավ են վերականգնվում, քան նրանք, ովքեր աջակցություն չեն ստանում։</li><li>Գուցե մտածում ես, որ օգնություն խնդրելը նշանակում է, թե դու նորմալ չես, բայց տրավմայից հետո դժվարություններ, այդ թվում՝ քնի խանգարումներ, զայրույթ, դեպրեսիա, տագնապայնություն և թմրանյութերի օգտագործման խնդիրներ ունենալը բնական է և շատ տարածված։</li><li>Հոգեբանի խորհրդատվությանը դիմելը չի նշանակում, թե դու անաշխատունակ ես։ Իրականում ՀՏՍԽ ունեցող մարդկանց մեծ մասը վերականգնման ընթացքում շարունակում է սովորական առօրյան։</li><li>Եթե մեղքի զգացում ունես հոգեբանական խորհրդատվության համար ժամանակ և գումար տրամադրելու պատճառով, հիշի՛ր․ երբ ավելի լավ զգաս քեզ, կկարողանաս ավելի օգտակար լինել ընտանիքիդ և աշխատանքիդ վայրում։</li><li>Եթե տրավմայից ամիսներ կամ տարիներ են անցել, բայց ինքնազգացողությունդ դեռ չի լավացել, հոգեբանի հետ խոսելը կարող է օգնել, որպեսզի խնդիրները չդառնան քրոնիկ կամ ավելի ծանր։</li><li>Հոգեբանական խորհրդատվությունը թույլ կամ կոտրված մարդկանց համար չէ։ Օգնություն խնդրելը քաջություն է պահանջում։ Դու ակտիվորեն ստանձնում ես կյանքիդ նկատմամբ վերահսկողությունը և կարողանում ես է՛լ ավելի լավ օգնել ինքդ քեզ։</li></ul></div>"
+                "content": "<div><div>Some people feel ashamed or embarrassed to ask for or receive help. But consider the following points:</div><ul><li>We are not alone in this world. People are here to help you now just as you have helped others in the past.</li><li>Did you know that those who accept help after a stressful period fare better than those who do not get support?</li><li>You may think that asking for help means you are not normal, but it is normal and common to have difficulties after a traumatic event, including sleep problems, increased anger, depression, anxiety, and substance use issues.</li><li>Seeking counseling does not mean you are dysfunctional. In fact, most people who have PTSD symptoms can still follow their usual routines while recovering.</li><li>If you feel guilty about taking time and spending money on counseling, remember: you'll be better able and more present for your family and work once you feel better.</li><li>If you still do not feel better and it has been months or years since your trauma, speaking to a therapist can keep your problems from becoming chronic or more serious.</li><li>Therapy is not for weak people. It takes courage to ask for help. Take active control of your life and improve your ability to help yourself.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "6456f949-d060-4266-8bbb-ad83a11f4054",
-          "label": "Ո՞վ կարող է ինձ օգնել։",
+          "label": "Who Can Help Me?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/who_can_help_me.png",
-                "alt": "Ո՞վ կարող է ինձ օգնել։"
+                "alt": "Who Can Help Me?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Կան շատ մասնագետներ, որոնք կարող են օգնել, եթե դիմես նրանց։</p><div>Այստեղ կարող ես կարդալ ավելին առաջնային օղակի բուժաշխատողների, սոցիալական աշխատողների, հոգեբանների, հոգեբույժների և հոգևոր սպասավորների դերերի ու պարտականությունների մասին։</div></div>"
+                "content": "<div><div>There are many experts who can help you if you want this.</div><div>&nbsp;</div><div><div>You can read more here about the roles and duties of family doctors, social workers, psychologists, psychiatrists, and pastoral/theological counselors.</div></div></div>"
               }
             ]
           }
         },
         {
           "id": "3d72382c-c7c8-46eb-aee5-26f146b0f93f",
-          "label": "Ի՞նչ է անում առաջնային օղակի բուժաշխատողը։",
+          "label": "What Does a Family Doctor Do?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_primary_care_physician_do.png",
-                "atl": "Ի՞նչ է անում առաջնային օղակի բուժաշխատողը։"
+                "atl": "What Does a Family Doctor Do?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</p><p>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</p><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>You can find a primary care physician:</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
+                "content": "<div><div>A family doctor can treat common medical problems, and some are also trained to recognize and help with common psychological issues such as depression and anxiety.</div><div>&nbsp;</div><div><div><div>A primary care provider can help you with:</div><ul><li>Medical assistance</li><li>A medical prescription to help with depression or sleep problems</li><li>A referral to a psychologist or psychiatrist</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "1ef6504c-32ad-4e2c-97d1-d61852e33c58",
-          "label": "Ի՞նչ է անում հոգեբանը",
+          "label": "What Does a Psychotherapist Do?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychologist_do.png",
-                "alt": "Ի՞նչ է անում հոգեբանը"
+                "alt": "What Does a Psychotherapist Do?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Հոգեբանները հոգեբանության ոլորտում համապատասխան որակավորում ունեցող մասնագետներ են։ Նրանք կարող են գնահատել անձի հոգեկան առողջության վիճակը և առաջարկել հոգեբանական թերապիա, բայց միայն քչերն ունեն դեղորայք նշանակելու լիցենզիա։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</p><p>Հոգեբանը կարող է օգնել քեզ՝</p><ul><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի օգտագործման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li><li>հոգեբանական վիճակի գնահատում իրականացնելու միջոցով</li><li>որոշ դեպքերում՝ հոգեկան առողջության խնդրի համար դեղորայք նշանակելու միջոցով</li></ul><p>Հոգեբանների մեծ մասը իրավասություն չունի դեղորայք նշանակելու։</p><p>Հոգեբանի կարող ես գտնել՝</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
+                "content": "<div><div>Psychotherapists can provide assessments and therapy. They work with individuals, couples, families, and groups.</div><div>&nbsp;</div><div><div><div>A psychotherapist can help you with:</div><ul><li>Issues such as depression, anxiety, PTSD, and substance use problems</li><li>Family and relationship difficulties</li><li>In some cases, if they are physicians, they can prescribe medication for a mental health problem.</li></ul><div><div>You can find a psychotherapist:</div><ul><li>Through a recommendation from a doctor, nurse, or insurance company</li><li>Through people you know</li><li>By searching online for 'trauma psychotherapist' or 'trauma psychologist'</li></ul><div>&nbsp;</div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "4bcfa2fd-8a2f-40f3-94b5-bc8b315dfb7c",
-          "label": "Ի՞նչ է անում հոգեբույժը",
+          "label": "What Does a Psychiatrist Do?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-                "alt": "Ի՞նչ է անում հոգեբույժը"
+                "alt": "What Does a Psychiatrist Do?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Հոգեբույժը բժիշկ է, որը մասնագիտացված է հոգեբուժության ոլորտում։ Հոգեբույժները հիմնականում բուժում են դեղորայքով, որը կարող է մեղմացնել դեպրեսիայի, տագնապայնության կամ ՀՏՍԽ-ի ախտանիշները կամ օգնել քնի և հոգեկան առողջության խնդիրներին առնչվող այլ դժվարությունների դեպքում։</p><p>Հոգեբույժը կարող է օգնել քեզ՝</p><ul><li>նշանակելով դեղորայք հոգեկան առողջությանն առնչվող այնպիսի խնդիրների դեպքում, ինչպիսիք են դեպրեսիան, տագնապայնությունը, ՀՏՍԽ-ն և ծանր հոգեկան հիվանդությունները</li><li>որոշ դեպքերում՝ խորհրդատվությամբ</li></ul><p>Հոգեբույժի կարող ես գտնել՝</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
-              }
-            ]
-          }
-        },
-        {
-          "id": "4ac6cc84-7441-4010-9da0-ac493a752827",
-          "label": "Ի՞նչ է անում սոցիալական աշխատողը",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-          "content": {
-            "sections": [
-              {
-                "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-                "alt": "Ի՞նչ է անում սոցիալական աշխատողը"
-              },
-              {
-                "type": "rich-text",
-                "content": "<div><p>Սոցիալական աշխատողները սովորաբար ունեն սոցիալական աշխատանքի մագիստրոսի աստիճան, որոշ դեպքերում՝ դոկտորի գիտական աստիճան և հաճախ աշխատում են որպես խորհրդատուներ։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</p><p>Սոցիալական աշխատողը կարող է օգնել քեզ՝</p><ul><li>հաղթահարել գործնական դժվարությունները, օրինակ՝ աշխատանք գտնելու, բնակարան ձեռք բերելու կամ պետական նպաստներից օգտվելու հարցում</li><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի չարաշահման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li></ul><p>Սոցիալական աշխատողները չեն կարող դեղորայք նշանակել։</p><div>Սոցիալական աշխատողի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
-              }
-            ]
-          }
-        },
-        {
-          "id": "8e3b7262-cc5b-42c1-8695-c1fc4b81af8e",
-          "label": "Ի՞նչ է անում հոգևոր խորհրդատուն կամ հոգևոր սպասավորը",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-          "content": {
-            "sections": [
-              {
-                "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_does_a_psychiatrist_do.png",
-                "alt": "Ի՞նչ է անում հոգևոր խորհրդատուն կամ հոգևոր սպասավորը"
-              },
-              {
-                "type": "rich-text",
-                "content": "<div><p>Հոգևոր սպասավորներն օգնում են բոլոր մարդկանց՝ անկախ նրանց հավատքից և կրոնական համոզմունքներից, և առաջարկում են հոգևոր խորհրդատվություն և աջակցություն։ Թեև հոգևոր սպասավորները սովորաբար պատրաստված չեն հոգեկան առողջության խորհրդատվություն տրամադրելու համար, որոշ հոգևոր խորհրդատուներ նաև հոգեկան առողջության լիցենզավորված մասնագետներ են։ Հոգևոր սպասավորները կամ հոգևոր խորհրդատուները կարող են նաև քեզ ուղղորդել համապատասխան մասնագետի՝ հոգեբանի, հոգեբույժի կամ սոցիալական աշխատողի մոտ։</p><p>Հոգևոր խորհրդատուն կամ հոգևոր սպասավորը հոգևորական է, որը՝</p><ul><li>տրամադրում է հոգևոր աջակցություն և ուղղորդում</li><li>իրականացնում է կրոնական արարողություններ դաշտային պայմաններում</li><li>աջակցություն է ցուցաբերում արտակարգ իրավիճակներում</li></ul><div>Եթե հոգևոր ուղղորդում ես փնտրում, ապա հոգևոր խորհրդատուն կամ հոգևոր սպասավորը լավ մեկնարկային տարբերակ կարող է լինել։</div></div>"
+                "content": "<div><div><div><div>A psychiatrist is a physician with specialized training in psychiatry. They primarily treat patients with medications that can alleviate symptoms of depression, anxiety, or post-traumatic stress disorders, or help with sleep issues or other problems associated with mental health conditions.</div><div>&nbsp;</div><div><div><div>A psychiatrist can help you with:</div><ul><li>Medications for mental health problems such as depression, anxiety, PTSD, and severe mental illnesses</li><li>In some cases, counseling or psychotherapy</li></ul><div><div>You can find a psychiatrist:</div><ul><li>By referral from a doctor, nurse, or your insurance company</li><li>Through people you know</li><li>By searching directly online in trusted sources</li></ul></div></div></div></div></div></div>"
               }
             ]
           }
@@ -1216,77 +1271,77 @@
     {
       "id": "3b237604-a536-4943-9181-12b4dfb9a478",
       "type": "category",
-      "label": "ՀՏՍԽ-ն և ընտանիքը",
+      "label": "PTSD and the Family",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/ptsd_and_family_icon.png",
       "topics": [
         {
           "id": "d4cc9bd8-5d41-438d-9fd3-072779921b14",
-          "label": "Ի՞նչ է զույգերի հոգեբանական խորհրդատվությունը",
+          "label": "What is couples therapy?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_couples_counseling.png",
-                "alt": "Ի՞նչ է զույգերի հոգեբանական խորհրդատվությունը"
+                "alt": "What is couples therapy?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե դու և քո զուգընկերը դժվարանում եք լեզու գտնել կամ այլևս մտերմություն չեք զգում, ապա զույգերի հոգեթերապիան կարող է օգտակար լինել։</p><p>Այս տեսակի խորհրդատվության ընթացքում հոգեթերապևտը կարող է օգնել երկուսիդ՝</p><ul><li>հասկանալ, թե որտեղից են ծագում ձեր դժվարությունները</li><li>սովորել հարաբերություններում առաջացող սթրեսը հաղթահարելու եղանակներ</li><li>զարգացնել ավելի լավ հաղորդակցվելու և խնդիրները հաղթահարելու հմտություններ</li><li>վերականգնել վստահությունը և ավելի մտերմանալ</li></ul><p>Առողջապահության ոլորտի մասնագետը, հոգևոր սպասավորը կամ սոցիալական ծառայություն մատուցող կազմակերպությունը կարող են օգնել քեզ զույգերի հոգեթերապևտ գտնելու։</p></div>"
+                "content": "<div><div>If you and your partner are experiencing difficulties in your relationship or don’t feel close, couples therapy can help.</div><div>&nbsp;</div><div><div><div>In this type of counseling, a therapist can help you:</div><ul><li>Understand what is causing these difficulties</li><li>Learn ways to cope with relationship stress</li><li>Develop skills to better communicate and solve problems</li><li>Strengthen your trust by feeling closer to one another</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "834f767e-e286-434b-b344-7585d60ea249",
-          "label": "Ի՞նչ է ընտանեկան հոգեթերապիան",
+          "label": "What is family therapy?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/what_is_family_therapy.png",
-                "alt": "Ի՞նչ է ընտանեկան հոգեթերապիան"
+                "alt": "What is family therapy?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե քո ընտանիքում դժվարանում են հաղորդակցվել կամ իրար հետ լեզու գտնել, մտածի՛ր ընտանեկան թերապիայի մասին։</p><p>Այս տեսակի հոգեբանական խորհրդատվության ընթացքում հոգեթերապևտն օգնում է քեզ և քո ընտանիքին՝</p><ul><li>ավելի լավ հաղորդակցվել</li><li>զարգացնել և պահպանել առողջ հարաբերություններ</li><li>հաղթահարել ծանր հույզերը</li><li>հասկանալ և հաղթահարել ՀՏՍԽ-ն</li></ul><p>Առողջապահության ոլորտի մասնագետը, հոգևոր սպասավորը կամ սոցիալական ծառայություն մատուցող կազմակերպությունը կարող են օգնել քեզ ընտանեկան թերապևտի գտնելու գործում։</p></div>"
+                "content": "<div><div>If your family is struggling to communicate or get along, consider family therapy.</div><div>&nbsp;</div><div><div><div>In this type of counseling, a therapist helps you and your family to:</div><ul><li>Communicate better</li><li>Develop and maintain good relationships</li><li>Cope with upsetting emotions</li><li>Understand and manage PTSD</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "411989be-5394-4b8e-a0ed-cfb2438bbde6",
-          "label": "Վերականգնել կապը զուգընկերոջդ հետ",
+          "label": "Reconnect with your partner",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/reconnecting_with_your_partner.png",
-                "alt": "Վերականգնել կապը զուգընկերոջդ հետ"
+                "alt": "Reconnect with your partner"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Եթե զուգընկերներից մեկը ՀՏՍԽ ունի, զուգընկերների հարաբերություններում կարող է լարվածություն առաջանալ։ Ահա մի քանի խորհուրդ, որոնք կարող են օգնել կրկին մտերմանալու։</p><ul><li>Հուզական թմրածության մեջ դժվար է սեր և հոգատարություն արտահայտելը։ Կարող ես սկսել՝ շնորհակալություն հայտնելով որոշակի բաների համար, որ անում է զուգընկերդ, օրինակ՝ &laquo;շնորհակալ եմ սպասքը լվանալու համար&raquo; կամ շնորհակալ եմ, որ մեքենայի յուղը փոխեցիր&raquo;։</li><li>Խոսի՛ր զուգընկերոջդ հետ, թե ինչպես է ՀՏՍԽ-ն ազդել քեզ վրա, և ինչի կարիք ունես։ Նա կկարողանա քեզ ավելի լավ աջակցել, եթե իմանա՝ ինչ է կատարվում քեզ հետ։</li><li>Հարցե՛ր տուր և լսի՛ր քո մտերիմի զգացմունքներն ու կարիքները։ Փորձի՛ր բաց լինել և իրավիճակին նայել նրա տեսանկյունից։</li><li>Եթե սթրեսի ժամանակ հակված ես հեռանալու կամ մեկուսանալու, փորձի՛ր դրա փոխարեն փոքր հոգատար քայլերով, մեղմ հպումներով կամ բարի խոսքերով մոտենալ քո մտերիմին։</li><li>Խուսափի՛ր վիրավորական խոսքեր ասելուց կամ ֆիզիկական բռնություն գործադրելուց։ Փոխարենը դադա՛ր առ և հանգստացի՛ր։ Այս գործիքը կարող ես գտնել հավելվածի &laquo;Կառավարել ախտանիշները&raquo; բաժնում։</li><li>ՀՏՍԽ-ի սթրեսի պատճառով սեռական մտերմություն կարող է որոշ ժամանակ չլինել։ Այդ դեպքում փորձի՛ր կենտրոնանալ մտերմության այլ ձևերի վրա, օրինակ՝ միասին հաճելի ժամանակ անցկացնել, իրար ձեռք բռնել, գրկախառնվել և համբուրվել։</li><li>Հասկացի՛ր, որ ՀՏՍԽ-ն կարող է քեզ ավելի օտարված կամ դյուրագրգիռ դարձնել։ Փորձի՛ր չափավորել սպասելիքներդ և ինքդ քեզ չքննադատել․ դու պարզապես մարդ ես, իսկ ապաքինումը ժամանակ է պահանջում։</li><li>Անհրաժեշտության դեպքում դիմի՛ր զույգերի հոգեբանական խորհրդատուի օգնությանը։</li></ul></div>"
+                "content": "<div><div>Relationships can feel strained if a partner is struggling with PTSD. Here are some tips to help you become close again.</div><div>&nbsp;</div><ul><li>Feeling emotionally numb can make it hard to express love or care. You can start by appreciating the concrete things your partner does (like \"thank you for doing the dishes,\" or \"I appreciate you changing the car oil.\")</li><li>Talk with your partner about how PTSD has affected you and what you need. They can support you better if they know what’s going on.</li><li>Ask questions, listen to your loved one’s needs, and pay attention to their feelings. Do your best to stay open and put yourself in their shoes as they speak.</li><li>If you tend to withdraw under stress, try to reach out to your loved one, with small favors, gentle touches, or a few kind words.</li><li>Avoid saying things that could hurt them or becoming physically aggressive. Instead, give yourself time to calm down. You can find a tool for this in the Symptom Management section of this app.</li><li>Due to the stress of PTSD, sexual intimacy might be neglected for a while. If that’s the case, try to focus on other ways of being close, like spending time together, holding hands, hugging, and kissing.</li><li>Understand that PTSD can make you both feel more distant or irritable. Try to manage your expectations and self-criticism — you’re only human, and healing takes time!</li><li>Seek help from a couples therapist if needed.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "da027dd8-3fe3-4789-8f1b-81818c1ec1e2",
-          "label": "Արդարացի կռվել",
+          "label": "How to fight fair",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/fighting_fair.png",
-                "alt": "Արդարացի կռվել"
+                "alt": "How to fight fair"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Հարաբերություններում կոնֆլիկտներն անխուսափելի են։ Եթե դյուրագրգիռ ես կամ արագ ես բռնկվում, դրանք հաղթահարելը ավելի դժվար է լինում։ Ահա մի քանի խորհուրդ՝ &laquo;արդարացի կռվելու&raquo; համար․</div><ul><li>Խոսելուց առաջ մտածի՛ր։ Սառնասրտությունը շատ է օգնում խնդիրներ լուծելիս։</li><li>Երբ խոսում ես, օգտագործի՛ր առաջին դեմքով արտահայտություններ, օրինակ՝ &laquo;ես կարծում եմ&raquo; կամ &laquo;ես զգում եմ&raquo;։ Երկրորդ դեմքով արտահայտությունները կարող են մեղադրական հնչել։</li><li>Մի՛ փորձիր միանգամից լուծել բոլոր խնդիրները։ Կենտրոնացի՛ր մեկ հարցի վրա։</li><li>Եղի՛ր դրական․ հստա՛կ ասա, թե ինչ ես ուզում կամ ինչի կարիք ունես։ Մեղադրանքն ու բացասական վերաբերմունքը չեն օգնի լուծելու խնդիրները։</li><li>Արտահայտի՛ր զգացմունքներդ բառերով ։ Քո սիրելին կարող է չիմանալ, որ տխուր կամ հիասթափված ես, եթե չասես նրան դրա մասին։</li><li>Վեճի ընթացքում դիմացինին տո՛ւր իր մտքերն արտահայտելու հնարավորություն։</li><li>Երբ դիմացինը խոսում է, լսի՛ր նրան առանց ընդհատելու։ Հարցե՛ր տուր և կրկնի՛ր նրա ասածը՝ համոզվելու համար, որ ճիշտ ես հասկացել։</li><li>Խորհուրդ մի՛ տուր, եթե քեզ չեն խնդրել։</li><li>Մի՛ խոսիր զգայուն թեմաներից։ Մի՛ շեղվիր քննարկվող հարցից։</li><li>Երբեք մի՛ վիճիր անկողնում։ Օգտագործի՛ր չեզոք սենյակ և հաճախակի արտահայտի՛ր քո սերը։</li><li>Խնդիրները հաղթահարեք որպես թիմ։ Այդպես շատ ավելին կարող եք անել, քան եթե վերաբերվեք միմյանց որպես մրցակիցների։</li><li>Խուսափի՛ր ասելուց՝ &laquo;ես քեզ ասում էի, չէ՞&raquo;։ Հիշի՛ր՝ լուծված խնդիրը երկուսիդ հաղթանակն է։</li><li>Եթե վիճակը չափազանց թեժանում է, դադա՛ր առեք, բայց պայմանավորվե՛ք շարունակել քննարկումը, երբ ավելի հանգիստ կլինեք։</li></ul></div>"
+                "content": "<div><div>Conflict will always exist in relationships. If you’re easily irritable, communication can get even harder. Here are some tips for \"fighting fair\":</div><ul><li>Think before you speak. Staying calm helps solve problems.</li><li>When you talk, use \"I\" statements, like \"I think\" or \"I feel.\" Using \"you\" statements can sound accusatory.</li><li>Focus on one issue at a time.</li><li>Be positive – clearly ask for what you want or need. Blame and negativity won’t help resolve things.</li><li>Put your feelings into words. Your loved one may not know you’re sad or frustrated unless you tell them.</li><li>During an argument, give the other person equal time to share their point of view.</li><li>When the other person speaks, listen to what they say without interrupting. Ask questions and repeat back what was said to be sure you understand.</li><li>Don’t offer advice unless it’s requested.</li><li>Don’t hit \"below the belt\" with comments about sensitive topics. Stay on the issues at hand.</li><li>Never argue in bed. Use a neutral area and express your love often.</li><li>Work together as a team to solve problems. You can accomplish a lot more this way than as rivals.</li><li>Avoid saying \"I told you so.\" Remember that a solved problem is a win for both.</li><li>If things get too heated, take a break, but agree to continue the discussion when things cool down.</li></ul></div>"
               }
             ]
           }
@@ -1308,7 +1363,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Do you have a young child (2-4 years old)?</h1>Set short, clear rules with your child about things like personal space, using a quiet voice, or other possible triggers. Find 1 or 2 words to gently but consistently remind them about family interaction rules.Ask your child what you can do to help them. Take a few minutes to really listen to everything they have to say, and find one thing each day—no matter how small—to help them with."
+                      "content": "<div><h1>Do you have a young child (2-4 years old)?</h1><div><div>Set short, clear rules with your child about things like personal space, using a quiet voice, or other possible triggers. Find 1 or 2 words to gently but consistently remind them about family interaction rules.</div><div>&nbsp;</div><div><div><div>Ask your child what you can do to help them. Take a few minutes to really listen to everything they have to say, and find one thing each day—no matter how small—to help them with.</div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1319,7 +1374,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Is your child missing quality time with you?</h1>Find at least one activity you can share with your child for a few minutes every day. Quality time will be good for both of you."
+                      "content": "<div><h1>Is your child missing quality time with you?</h1><div><div>Find at least one activity you can share with your child for a few minutes every day. Quality time will be good for both of you.</div></div></div>"
                     }
                   ],
                   [
@@ -1330,7 +1385,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a young child (2-12 years old)?</h1><p>Keep rules short and to the point. Stick to your promises and rules. Set expectations you are sure your child can meet.</p><p>Celebrate your child's successes.</p><p>Trust your instincts about how to be the best parent you can be.</p><p>Establish and maintain a routine if you don't have one already. Children thrive on consistency.</p></div>"
+                      "content": "<div><div><div><h1>Do you have a young child (2-12 years old)?</h1></div></div><div>Keep rules short and to the point. Stick to your promises and rules. Set expectations you are sure your child can meet.</div><div>&nbsp;</div><div><div><div>Celebrate your child's successes.</div><div>&nbsp;</div><div><div><div>Trust your instincts about how to be the best parent you can be.</div><div>&nbsp;</div><div><div><div>Establish and maintain a routine if you don't have one already. Children thrive on consistency.</div></div></div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1341,7 +1396,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Is it hard to connect with your child?</h1><p>Think of ways to show your appreciation for your child&mdash;say something kind, or use gestures to show how much you care.</p></div>"
+                      "content": "<div><h1>Is it hard to connect with your child?</h1><div><div>Think of ways to show your appreciation for your child—say something kind, or use gestures to show how much you care.</div></div></div>"
                     }
                   ],
                   [
@@ -1352,7 +1407,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Have you and your child been distant from each other?</h1><p>Reconnect with your child by doing activities together that you both enjoy. Try to gradually increase the time you spend together.</p></div>"
+                      "content": "<div><div><div><h1>Have you and your child been distant from each other?</h1></div></div><div>Reconnect with your child by doing activities together that you both enjoy. Try to gradually increase the time you spend together.</div></div>"
                     }
                   ],
                   [
@@ -1363,7 +1418,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you feel like a bad parent?</h1><p>Know that you are not alone. It is incredibly hard to be a parent with PTSD. Children are resilient, and they know when they are loved. Love your kids, accept that you will make mistakes, take responsibility, and move forward. Just try to do the best you can.</p></div>"
+                      "content": "<div><div><div><h1>Do you feel like a bad parent?</h1></div></div><div>Know that you are not alone. It is incredibly hard to be a parent with PTSD. Children are resilient, and they know when they are loved. Love your kids, accept that you will make mistakes, take responsibility, and move forward. Just try to do the best you can.</div></div>"
                     }
                   ],
                   [
@@ -1374,7 +1429,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a young child (5-12 years old)?</h1><p>Help your child manage any anger they experience. Provide them with tools to manage anger: count to 10, find a creative way to release anger, take deep breaths, or find an ally to talk to.</p></div>"
+                      "content": "<div><div><div><h1>Do you have a young child (5-12 years old)?</h1></div></div><div>Help your child manage any anger they experience. Provide them with tools to manage anger: count to 10, find a creative way to release anger, take deep breaths, or find an ally to talk to.</div></div>"
                     }
                   ],
                   [
@@ -1385,7 +1440,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a teenager?</h1><p>Don&rsquo;t be afraid to talk to your teen about PTSD. Ask for and listen to their opinions. Encourage them to express their feelings &mdash; in words, music, or another way.</p><p>Teens may need their own space to cope with their loved one's PTSD. Respect your teen&rsquo;s privacy as much as you can. Don&rsquo;t intervene to solve their problems or make decisions for them.</p><p>Pick your moments with your teen, and when they want to talk, just listen. Show affection towards them!</p></div>"
+                      "content": "<div><h1>Do you have a teenager?</h1><div><div>Don’t be afraid to talk to your teen about PTSD. Ask for and listen to their opinions. Encourage them to express their feelings — in words, music, or another way.</div><div>&nbsp;</div><div><div><div>Teens may need their own space to cope with their loved one's PTSD. Respect your teen’s privacy as much as you can. Don’t intervene to solve their problems or make decisions for them.</div><div>&nbsp;</div><div><div><div>Pick your moments with your teen, and when they want to talk, just listen. Show affection towards them!</div></div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1396,7 +1451,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a partner who helps with your child?</h1><p>Include your spouse or partner as often as possible when making decisions about how to discipline your child.</p><p>Compliment your partner when you notice them doing something well.</p><p>Try to make sure you send your children a consistent message when they talk to you or your partner. Even if you have very different parenting strategies, try to find common ground where you can.</p></div>"
+                      "content": "<div><h1>Do you have a partner who helps with your child?</h1><div><div>Include your spouse or partner as often as possible when making decisions about how to discipline your child.</div><div>&nbsp;</div><div><div><div>Compliment your partner when you notice them doing something well.</div><div>&nbsp;</div><div><div><div>Try to make sure you send your children a consistent message when they talk to you or your partner. Even if you have very different parenting strategies, try to find common ground where you can.</div></div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1407,7 +1462,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you feel like things are out of control?</h1><p>Tell your family you are going to start having regular family meetings. Hold a family meeting at a time when everyone in your family can be together &mdash; mealtimes are a good opportunity for these.</p></div>"
+                      "content": "<div><h1>Do you feel like things are out of control?</h1><div><div>Tell your family you are going to start having regular family meetings. Hold a family meeting at a time when everyone in your family can be together — mealtimes are a good opportunity for these.</div><div>&nbsp;</div><div>&nbsp;</div></div></div>"
                     }
                   ],
                   [
@@ -1418,7 +1473,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Family meetings</h1><p>Create an agenda together. Work together as a family to see if you can find solutions for each topic on the agenda.</p></div>"
+                      "content": "<div><div><h1>Family meetings</h1><div><div><div>Create an agenda together. Work together as a family to see if you can find solutions for each topic on the agenda.</div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1429,7 +1484,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Does your child have a hard time discussing feelings?</h1><p>Take time to give your child your full and undivided attention. Listen with respect and interest, and avoid commenting or judging&mdash;just let your child talk.</p><p>Help your child label or name any feelings you hear them speak about &mdash; like happy, sad, scared, excited, interested.</p><p>You don&rsquo;t always have to talk. Sometimes just being together is enough.</p></div>"
+                      "content": "<div><h1>Does your child have a hard time discussing feelings?</h1><div><div>Take time to give your child your full and undivided attention. Listen with respect and interest, and avoid commenting or judging—just let your child talk.</div><div>&nbsp;</div><div><div><div>Help your child label or name any feelings you hear them speak about — like happy, sad, scared, excited, interested.</div><div>&nbsp;</div><div><div><div>You don’t always have to talk. Sometimes just being together is enough.</div></div></div></div></div></div></div>"
                     }
                   ],
                   [
@@ -1440,7 +1495,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Do you have a young child?</h1><p>Sesame Street has a wonderful set of resources for helping kids cope with trauma in the family:</p>"
+                      "content": "<h1>Do you have a young child?</h1><div><div>Sesame Street has a wonderful set of resources for helping kids cope with trauma in the family:</div></div><div>&nbsp;</div>"
                     },
                     {
                       "type": "button",
@@ -1459,18 +1514,18 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation with your kids, ask what they think.</h1><p>With kids who are able to understand, try something like: \"I&rsquo;ve been dealing with some difficult things lately and would like to talk with you for a few minutes. How do you feel about how things have been going?\"</p></div>"
+                      "content": "<div><h1>Try to start a conversation with your kids, ask what they think.</h1><div><div>With kids who are able to understand, try something like: \"I’ve been dealing with some difficult things lately and would like to talk with you for a few minutes. How do you feel about how things have been going?\"</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/share_how_youre_feeling.jpg",
-                      "alt": "Try to start a conversation, share how you're feeling."
+                      "alt": "Try to start a conversation, share how you’re feeling."
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, share how you&rsquo;re feeling.</h1><p>If you&rsquo;re open to talking about how you feel, try saying something like \"I&rsquo;ve been a bit sad lately. I want to tell you a little about what&rsquo;s going on with me.\"</p></div>"
+                      "content": "<div><h1>Try to start a conversation, share how you’re feeling.</h1><div><div>If you’re open to talking about how you feel, try saying something like \"I’ve been a bit sad lately. I want to tell you a little about what’s going on with me.\"</div></div></div>"
                     }
                   ],
                   [
@@ -1481,7 +1536,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, open up.</h1><p>With older kids, model sharing feelings: \"I&rsquo;d like to talk with you about some tough things..\"</p></div>"
+                      "content": "<div><h1>Try to start a conversation, open up.</h1><div><div>With older kids, model sharing feelings: \"I’d like to talk with you about some tough things..\"</div></div></div>"
                     }
                   ],
                   [
@@ -1492,7 +1547,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Focus on strengths</h1><p>Give attention to your child&rsquo;s strengths &mdash; tell them you see them in a positive light. Emphasize the things they do well.</p></div>"
+                      "content": "<div><div><div><h1>Focus on strengths</h1></div></div><div>Give attention to your child’s strengths — tell them you see them in a positive light. Emphasize the things they do well.</div></div>"
                     }
                   ],
                   [
@@ -1503,7 +1558,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Give kids time to speak</h1><p>Ask your child about their worries and concerns, then give them plenty of time to respond to show you really want them to have a voice.</p></div>"
+                      "content": "<div><h1>Give kids time to speak</h1><div><div><div>Ask your child about their worries and concerns, then give them plenty of time to respond to show you really want them to have a voice.</div></div></div></div>"
                     }
                   ]
                 ]
@@ -1513,126 +1568,126 @@
         },
         {
           "id": "ecf87853-6c78-4a41-8256-12574ff5f605",
-          "label": "ՀՏՍԽ-ի ազդեցությունը երեխաների վրա",
+          "label": "The impact of PTSD on children",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
-                "alt": "ՀՏՍԽ-ի ազդեցությունը երեխաների վրա"
+                "alt": "The impact of PTSD on children"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Երեխաների ու դեռահասների համար բավականին ծանր կարող է լինել ՀՏՍԽ ունեցող ծնողի հետ ապրելը։ Թեև շատ երեխաներ լավ հարմարվում են, մյուսները կարող են ցուցաբերել խնդրահարույց վարք, այդ թվում՝</div><ul><li>ընդօրինակել ծնողին՝ հավանաբար փորձելով ավելի սերտ կապ հաստատել նրա հետ։ Նման երեխաները կարող են ունենալ նույն ախտանիշները, ինչ ՀՏՍԽ ունեցող ծնողը, օրինակ՝ դյուրագրգիռ լինել կամ քնի խանգարումներ ունենալ։</li><li>ստանձնել մեծահասակի դերեր և պարտականություններ՝ ՀՏՍԽ ունեցող ծնողին &laquo;փոխարինելու&raquo; համար։ Երեխան կարող է իր տարիքից չափազանց հասուն երևալ։ Սա կարող է ծանրաբեռնել երեխային և խանգարել նրան դրսևորելու իր տարիքին համապատասխան վարք։</li><li>իր տարիքից փոքր երեխայի նման պահել իրեն, օրինակ՝ գիշերամիզություն կամ զայրույթի պոռթկումներ ունենալ։</li><li>մտածել, որ խնդիրն իր մեջ է, կամ որ ինքը պատասխանատու է ՀՏՍԽ ունեցող ծնողի վարքի համար, օրինակ՝ &laquo;նա այդքան չէր զայրանա, եթե ես ավելի լուռ լինեի&raquo;։</li><li>դեպրեսիայի կամ տագնապայնության ախտանիշներ ունենալ։</li><li>դժվարություններ ունենալ դպրոցում կամ ընկերների հետ հարաբերություններում։</li></ul></div>"
+                "content": "<div><div>Adapting to life with a parent who has PTSD can be a challenge for children and teens. While many children adapt well, others may respond in problematic ways, including:</div><ul><li>Acting like their parent, possibly as a way to try to become closer to them. These children might show some of the same symptoms as the parent with PTSD, such as irritability or sleep problems.</li><li>Taking on adult roles and responsibilities to help the parent with PTSD. This child may be too mature for their age. This can be overwhelming for the child and keep them from acting like a child their age.</li><li>Regressing to more childlike behavior (such as bed-wetting, tantrums).</li><li>Thinking that they are the problem or responsible for the parent’s PTSD behavior (like \"they wouldn’t get so angry if I could just be quieter\").</li><li>Experiencing symptoms of depression or anxiety.</li><li>Having problems at school or with friends.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "21d86333-ff99-4e2d-a582-881e6deba295",
-          "label": "Երեխաների արձագանքները ՀՏՍԽ ախտանիշներին",
+          "label": "Children’s responses to PTSD symptoms",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/childrens_responses_to_ptsd_symptoms.png",
-                "alt": "Երեխաների արձագանքները ՀՏՍԽ ախտանիշներին"
+                "alt": "Children’s responses to PTSD symptoms"
               },
               {
                 "type": "rich-text",
-                "content": "<p>Ծնողների արձագանքն անցյալում ապրած տրավմային կարող է տարբեր կերպ ազդել երեխաների վրա․</p><p>Եթե ծնողը մղձավանջներ կամ ճնշող հիշողություններ/ֆլեշբեքներ (հանկարծակի վերհուշ) է ունենում, <br /> երեխաները կարող են՝</p><ul><li>Feel confused about what&rsquo;s happening and why it&rsquo;s happening</li><li>Feel afraid if they see or hear the parent being very upset or scared</li><li>Worry about their parent&rsquo;s well-being</li><li>Worry that their parent can&rsquo;t properly take care of them</li></ul><p>If: Parent avoids going out or isolates him/herself <br /> երեխաները կարող են՝</p><ul><li>Take it personally and worry that their parents don&rsquo;t care about them, spending time together, or being involved in their lives (such as school sports or family outings)</li><li>Feel neglected</li><li>Have hurt feelings or feel frustrated</li></ul><p>Եթե ծնողը չշփվող է, հուզականորեն անզգայացած կամ անտարբեր, <br /> երեխաները կարող են՝</p><ul><li>մտածել, որ ծնողն իրենցով հետաքրքրված չէ կամ չի սիրում իրենց, նույնիսկ եթե ծնողի խոսքերը հակառակն են ասում</li><li>անհանգստանալ, որ ծնողը կլքի իրենց կամ ընտանիքը</li></ul><p>Եթե ծնողը դյուրագրգիռ, զայրացած է կամ հեշտությամբ է հիասթափվում <br /> Երեխաները կարող են՝</p><ul><li>կասկածել ծնողի սիրուն</li><li>ծնողի կողքին չափազանց զգուշավոր լինել, կամ լարված ու տագնապային զգալ</li><li>կորցնել հարգանքը ծնողի նկատմամբ</li></ul><p>Եթե ծնողը չափազանց զգոն է, վտանգի նկատմամբ զգայուն կամ հեշտությամբ ցնցվում է <br /> Երեխաները կարող են՝</p><ul><li>ձեռք բերել նույնպիսի զգոնություն և շատ սթրեսային լինել</li><li>ավելի լարված զգալ և մշտապես զգուշանալ վտանգից</li></ul>"
+                "content": "<div><div>A parent’s reactions to past trauma can affect children in many ways:</div><div>&nbsp;</div><div><div>If: The parent has upsetting nightmares or overwhelming memories/flashbacks, children may:</div><div><ul><li>Feel confused about what’s happening and why it’s happening</li><li>Feel afraid if they see or hear the parent being very upset or scared</li><li>Worry about their parent’s well-being</li><li>Worry that their parent can’t properly take care of them</li></ul><div><div>If: The parent avoids going out or becomes isolated, children may:</div><div><ul><li>Take it personally and worry that their parents don’t care about them, spending time together, or being involved in their lives (such as school sports or family outings)</li><li>Feel neglected</li><li>Have hurt feelings or feel frustrated</li></ul><div><div>If: The parent is withdrawn or uninterested, children may:</div><div><ul><li>Think the parent is not interested in them or doesn’t love them even if the parent says otherwise</li><li>Feel worried that their parent will leave them or the family</li></ul><div><div>If: The parent is irritable, angry, or easily frustrated, children may:</div><ul><li>Question whether their parent loves them</li><li>Feel tense and anxious around the parent</li><li>Lose respect for their parent</li></ul><div><div>If: The parent is hypervigilant, alert to danger, or easily startled, children may:</div><ul><li>Develop similar levels of vigilance as their parents and feel very stressed</li><li>Be more alert to danger</li></ul></div></div></div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "9e1fb374-29d9-46d2-a659-e59b4519cfd1",
-          "label": "Երեխաները կարո՞ղ են ՀՏՍԽ ձեռք բերել ծնողներից",
+          "label": "Can children get PTSD from their parents?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
-                "alt": "Երեխաները կարո՞ղ են ՀՏՍԽ ձեռք բերել ծնողներից"
+                "alt": "Can children get PTSD from their parents?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Թեև ոչ հաճախ, բայց ՀՏՍԽ ունեցող մարդկանց երեխաները նույնպես կարող են ունենալ ՀՏՍԽ-ի նշաններ։ Սա կոչվում է &laquo;երկրորդային տրավմատիզացում&raquo;։</p><p>Ահա թե ինչպես դա կարող է տեղի ունենալ․</p><ul><li>Երբ ընտանիքում երեխային սովորեցնում են երբեք չխոսել անհանգստացնող իրադարձությունների, մտքերի կամ զգացմունքների մասին, երեխայի տագնապայնությունը կարող է սրվել։ Նա կարող է անհանգստանալ, թե ծնողի ախտանիշներն իր պատճառով են առաջանում, և կարող է իր պատմությունը հորինել տեղի ունեցածի մասին։</li><li>Երբեմն ծնողները չափազանց շատ մանրամասներ են պատմում իրադարձությունների մասին։ Երեխաների մեջ, դրան ի պատասխան, կարող են ի հայտ գալ սթրես և ՀՏՍԽ ախտանիշներ։</li><li>Երեխան կարող է սկսել դրսևորել ծնողի ախտանիշները՝ որպես ծնողի հետ կապ հաստատելու միջոց։</li><li>Երեխաները կարող են նաև վերարտադրել կամ կրկնել ծնողի ապրած տրավմայի որևէ դրվագ։ Երբեմն երեխաների համար դժվար է անցյալ տրավման տարբերակել ներկա իրականությունից։</li></ul></div>"
+                "content": "<div><div>Although it is not common, it is possible for children of people with PTSD to show signs of PTSD themselves. This is called “secondary traumatization.”</div><div>&nbsp;</div><div><div><div>Here’s how it can happen:</div><ul><li>When a family teaches a child to never talk about upsetting events, thoughts, or feelings, the child’s anxiety can get worse. They may worry about triggering the parent’s symptoms or make up their own story about what happened.</li><li>Sometimes parents share too many details about events. Children may begin to develop their own symptoms of PTSD in response.</li><li>A child may start sharing the parent’s symptoms as a way to connect with the parent.</li><li>Children may also reconstruct or relive some aspects of the traumatic experience their parent went through. Sometimes it is hard for children to separate the past traumatic event from the present moment.</li></ul></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "aa47a1bc-84a2-4964-944b-40209b259834",
-          "label": "Օգնել երեխաներին հաղթահարելու իրավիճակը",
+          "label": "Helping children cope with emotions",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/helping_children_cope.jpg",
-                "content": "Օգնել երեխաներին հաղթահարելու իրավիճակը"
+                "content": "Helping children cope with emotions"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Երբ ՀՏՍԽ-ն ազդում է ընտանիքի վրա․</div><ul><li>Բացատրի՛ր դժվարությունների պատճառները։ Երբ երեխան իմանում է, թե ինչ է կատարվում և ինչու, իրեն ավելի ապահով է զգում։</li><li>Միաժամանակ զգո՛ւյշ եղիր և երեխային մի պատմիր տրավմատիկ իրադարձությունների չափազանց շատ մանրամասներ։ Թե որքան շատ մանրամասներ կպատմես, կախված է քո երեխայի տարիքից և հասունության մակարդակից։</li><li>Օգնի՛ր նրանց հասկանալու, որ ՀՏՍԽ-ի ախտանիշներն ու տրավմայի արձագանքներն իրենց պատճառով չեն։</li><li>Խոսի՛ր նրա հետ ՀՏՍԽ-ին առնչվող իրադարձությունների և փորձառությունների մասին։ Լսի՛ր նրանց մտահոգությունները և ընդունի՛ր նրանց զգացմունքները։</li><li>Ընդունի՛ր, որ փոփոխությունը կարող է սթրեսային լինել երեխաների համար այնպես, ինչպես մեծահասակների համար, և համբերատա՛ր եղիր։</li><li>Հիշի՛ր, որ նրանք կարող են հակասական զգացմունքներ ունենալ քո և քո ՀՏՍԽ-ի նկատմամբ։ Նրանք կարող են քեզ սիրել, անհանգստանալ քեզ համար և ցանկանալ պաշտպանել ձեզ, բայց միաժամանակ զգալ վիրավորվածություն, տագնապ կամ զայրույթ։</li><li>Օգնի՛ր նրանց ձեռք բերելու սթրեսն ավելի լավ կառավարելու հմտություններ։ Օրինակ՝<ul><li>վազել կամ մարզվել՝ լարվածությունը թոթափելու համար</li><li>նկարել կամ գրել՝ սեփական զգացմունքներն արտահայտելու համար</li><li>խոր շնչել՝ հանգստանալու համար</li></ul></li><li>Նրանց օրագի՛ր տուր, որտեղ կարող են գրել այս իրադարձությունների, իրենց զգացմունքների և ապրումների մասին։</li><li>Հնարավորության դեպքում ներգրավի՛ր նրանց իրենց վրա ազդող որոշումների կայացման մեջ։</li></ul></div>"
+                "content": "<div><div>When PTSD affects your family:</div><ul><li>Explain the reasons behind the difficulties. Knowing what’s happening and why helps children feel safe.</li><li>However, be careful not to share too many details of the event(s) with your child. How much you say depends on your child’s age and maturity level.</li><li>Help them see that PTSD symptoms and trauma responses are not their fault.</li><li>Talk together about events and related experiences. Listen to their concerns and accept their feelings.</li><li>Recognize that change is stressful for children, just as it is for adults, and be patient.</li><li>Remember that they may have mixed feelings about you and about PTSD. They may feel loving, worried, protective, and sometimes anxious or angry.</li><li>Help them learn tools to better manage stress. Examples include:<ul><li>Running or physical exercise as an outlet</li><li>Drawing or writing for self-expression</li><li>Deep breathing to relax</li></ul></li><li>Give them a journal to keep about these events and their feelings and experiences.</li><li>Include them in important decisions that affect them whenever possible.</li></ul></div>"
               }
             ]
           }
         },
         {
           "id": "b4deacc5-20ef-42c3-bac6-9b1f40c187a9",
-          "label": "Ծնողավարման խորհուրդներ",
+          "label": "Tips for parents",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/advice_for_parents.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/advice_for_parents.jpg",
-                "alt": "Ծնողավարման խորհուրդներ"
+                "alt": "Tips for parents"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Ահա մի քանի խորհուրդ այն երեխաների ծնողներին, որոնք հարմարվում են ՀՏՍԽ ունեցող մարդու հետ ապրելուն։</p><p>Կրթվե՛ք</p><ul><li>Երկու ծնողներն էլ պետք է իմանան, թե ինչպես կարող է ՀՏՍԽ-ն ազդել երեխաների վրա, և ինչպիսի արձագանքներ են սովորաբար ունենում այն երեխաները, որոնց ծնողը ՀՏՍԽ ունի։</li><li>Հաշվի՛ առ, որ այս շրջանում երեխաները կարող են ավելի շատ հոգատարության, ուշադրության և մտերմության կարիք ունենալ։</li></ul><p>Աջակցի՛ր</p><ul><li>Ժամանա՛կ հատկացրու միասին տարբեր զբաղմունքների և զրուցելու համար։ Երկու ծնողներն էլ պետք է լսեն երեխաների զգացմունքներն ու մտահոգությունները և լուրջ վերաբերվեն դրանց։</li><li>Փարատի՛ր նրանց մտահոգությունները և աջակցի՛ր, եթե նրանք հարցեր են ունենում։</li><li>Երեխաներին տրամադրի՛ր իրենց համար մատչելի տեղեկություն ՀՏՍԽ-ի, ինչպես նաև ՀՏՍԽ ունեցող ծնողի փորձառությունների և փոփոխությունների մասին՝ նրանց շփոթությունն ու անհայտի նկատմամբ վախը մեղմելու համար։</li><li>Խրախուսի՛ր և կազմակերպի՛ր այնպիսի զբաղմունքներ, որոնք օգնում են երեխաներին արտահայտվելու և կառավարելու սթրեսը, օրինակ՝ շարժվել լարվածությունը թոթափելու համար, նկարել ու գրել և այլն։</li></ul><p>Եղի՛ր սիրալիր և հստակ սահմաննե՛ր ունեցիր</p><ul><li>Եղի՛ր սիրալիր, համբերատար և ուշադիր՝ միևնույն ժամանակ պահպանելով հստակ և հետևողական սահմաններ։</li><li>Գիտակցի՛ր, որ երեխաները երբեմն կարող են վատ վարքագիծ դրսևորել կամ չլսել, և նման իրավիճակներում ներողամի՛տ եղիր նրա հանդեպ։ Այդպիսի վարքը սթրեսի բնական արձագանք է, եթե այն հաճախակի չի դառնում կամ ավելի մեծ խնդիրներ չի առաջացնում։</li><li>Գովի՛ր նրանց դրական վարքն ու դժվարությունները հաղթահարելու առողջ ձևերը։ Միշտ կենտրոնացի՛ր այն ամենի վրա, ինչն արժևորում ես նրանց մեջ։</li><li>Եթե ՀՏՍԽ ունեցող ծնողը դու ես, կենտրոնացի՛ր երեխաների հետ որակյալ և հաճելի ժամանակ անցկացնելու վրա և հետաձգի՛ր դաստիարակչական խիստ միջոցները, հատկապես եթե վերջին շրջանում տրամադրությունդ փոփոխվում է, կամ դյուրագրգիռ ես։</li></ul><p>Պահպանի՛ր սովորական առօրյան</p><ul><li>Պահպանի՛ր ընտանիքի սովորական առօրյան, օրինակ՝ միասին ընթրելու և քնելուց առաջ ընդունված սովորությունները։</li><li>Համոզվի՛ր, որ երեխաները շարունակում են հաճախել դպրոց և մասնակցել իրենց սովորական զբաղմունքներին (դասեր, խմբակներ և այլն)։</li></ul><p>Ներգրավի՛ր նրանց</p><ul><li>Ներգրավի՛ր երեխաներին ընտանեկան գործերում։ Հանգստյան օրերը թող որ հաճելի լինեն երեխաների համար։</li><li>Շարունակի՛ր ներգրավված լինել երեխաներիդ դպրոցական և սոցիալական կյանքում։</li><li>Հարցրո՛ւ նրանց հետաքրքրությունների մասին և լսի՛ր առանց դատելու կամ ծաղրելու։</li></ul></div>"
+                "content": "<div><div>Here are some tips for children adapting to life with someone with PTSD.</div><div>&nbsp;</div><div><div>Educate yourselves:</div><ul><li>Both parents should learn about how PTSD can affect children and about typical responses when a parent has PTSD</li><li>Be aware that young children might need extra care, attention, and comfort during this time</li></ul><div><div>Provide support:</div><ul><li>Make time to do activities and talk together. Both parents should listen to their children’s feelings and concerns and take them seriously</li><li>Offer support and reassurance for their questions and worries</li><li>Give children age-appropriate information about PTSD and their parent’s experiences and changes to ease confusion and fear of the unknown</li><li>Encourage and arrange activities (walks to let off steam, drawing and writing for self-expression, etc.) that help children manage stress</li></ul><div><div>Be loving and set clear boundaries:</div><ul><li>Be loving, patient, and attentive while also setting clear and consistent limits</li><li>Understand that sometimes children may act out or behave inappropriately, and be a little more tolerant with them in these situations.</li><li>Acting out is a normal response to stress as long as it isn’t frequent or causing bigger problems</li><li>Praise their good behavior and healthy coping strategies. Always keep your focus on what you appreciate in them</li><li>If you are the parent with PTSD, focus on quality time and fun with your kids and avoid punishments, especially if you have been moody or irritable lately</li></ul><div><div>Keep things as normal as possible:</div><ul><li>Maintain the family’s basic routines, like dinner and bedtime rituals</li><li>Ensure that children continue regular school and other usual activities</li></ul><div><div>Include them:</div><div><ul><li>Involve children in family activities. Keep weekends fun with activities for kids</li><li>Stay involved in your children’s school and social activities</li><li>Ask about their interests and listen without judging or teasing</li></ul></div></div></div></div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "f601d41a-39d0-4cf2-b9d1-9869ff40dc64",
-          "label": "Երեխաներս լա՞վ են․ ե՞րբ դիմել մասնագետի օգնության",
+          "label": "Are my kids okay? When should I seek outside help?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/are_my_kids_ok_when_to_seek_outside_help.jpg",
-                "alt": "Երեխաներս լա՞վ են․ ե՞րբ դիմել մասնագետի օգնության"
+                "alt": "Are my kids okay? When should I seek outside help?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Եթե քեզ թվում է, որ քո երեխան կամ դեռահասը դժվարանում է հարմարվել քո ՀՏՍԽ-ին, մի՛ հապաղիր դիմել բժշկի կամ հոգեկան առողջության մասնագետի՝ աջակցություն ստանալու համար։ Ահա մի քանի նշան, որոնց արժե ուշադրություն դարձնել․</div><div><ul><li>Դժվարանում է կենտրոնանալ դպրոցական առաջադրանքների և զբաղմունքների վրա կամ ներգրավվել դրանցում</li><li>Ուժեղ հուզական արձագանքներ, օրինակ՝ երկարատև լաց, խոր տխրություն կամ տրամադրության կտրուկ փոփոխություններ</li><li>Դեպրեսիա կամ ինքնամփոփ ու չհաղորդակցվող վարք</li><li>Բռնի կամ ընկճված զգացումների արտահայտում մռայլ նկարների կամ գրառումների միջոցով</li><li>Քաշի զգալի նվազում կամ ավելացում կամ հիգիենայի նկատմամբ ոչ պատշաճ ուշադրություն</li><li>Սոցիալական ակտիվության կամ ընկերական հարաբերություններում նկատվող մեծ փոփոխություններ</li><li>Թմրանյութերի կամ ալկոհոլի օգտագործում</li></ul><div><div>Խնդրում ենք, անհապաղ օգնությա՛ն դիմիր, եթե երեխադ դիտավորյալ վնասում է իրեն կամ կարող է վնասել ուրիշներին, արտահայտում է ինքնասպանության մասին մտքեր։</div></div></div></div>"
+                "content": "<div><div>If your child or teen seems to have trouble adapting to PTSD, don’t hesitate to contact your doctor or a mental health specialist for support. Here are some signs to watch for:</div><div><ul><li>Trouble concentrating or engaging in schoolwork and activities</li><li>Intense emotional responses, such as persistent crying, deep sadness, or a low mood</li><li>Depression, or not communicating</li><li>Expressing violent or depressed feelings through drawings</li><li>Significant weight loss or gain, or lack of attention to hygiene</li><li>Major changes in social activities or friendships</li><li>Drug or alcohol use</li></ul><div><div>Please seek immediate help if your child is hurting or cutting themselves intentionally, seems in danger of hurting others, or expresses suicidal thoughts.</div></div></div></div>"
               }
             ]
           }
         },
         {
           "id": "1bd3fc6d-71ea-4f33-9054-b763a0e43b2f",
-          "label": "Արդյո՞ք իմ երեխան պետք է անհատական հոգեբանական խորհրդատվություն ստանա",
+          "label": "Should my child have individual counseling?",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
-                "alt": "Արդյո՞ք իմ երեխան պետք է անհատական հոգեբանական խորհրդատվություն ստանա"
+                "alt": "Should my child have individual counseling?"
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Երեխաների համար կարող է օգտակար լինել անհատական հոգեբանական խորհրդատվությունը կամ ընտանեկան թերապիան։</p><p>Ընտանեկան թերապիան օգնում է ընտանիքի անդամներին՝ սովորելու ինչպես հաղթահարել սթրեսը, հաղորդակցվել և պահպանել լավ հարաբերություններ իրավիճակներում։</p><p>Անհատական թերապիան երեխաներին ապահովում է անվտանգ և անձնական տարածքով՝ խոսելու իրենց փորձառությունների մասին և սովորելու հաղթահարել դրանք։</p></div>"
+                "content": "<div><div>Children can benefit from individual counseling or family therapy.</div><div>&nbsp;</div><div><div><div>Family therapy helps family members learn how to cope, communicate, and understand each other during times of stress.</div><div>&nbsp;</div><div><div><div>Individual therapy gives children a private space to talk and learn to cope with their experiences.</div></div></div></div></div></div>"
               }
             ]
           }
