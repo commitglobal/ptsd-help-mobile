@@ -1692,18 +1692,18 @@
         },
         {
           "id": "ecf87853-6c78-4a41-8256-12574ff5f605",
-          "label": "The impact of PTSD on children",
+          "label": "ՀՏՍԽ-ի ազդեցությունը երեխաների վրա",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/impact_of_ptsd_on_children.jpg",
-                "alt": "The impact of PTSD on children"
+                "alt": "ՀՏՍԽ-ի ազդեցությունը երեխաների վրա"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Adapting to life with a parent who has PTSD can be a challenge for children and teens. While many children adapt well, others may respond in problematic ways, including:</div><ul><li>Acting like their parent, possibly as a way to try to become closer to them. These children might show some of the same symptoms as the parent with PTSD, such as irritability or sleep problems.</li><li>Taking on adult roles and responsibilities to help the parent with PTSD. This child may be too mature for their age. This can be overwhelming for the child and keep them from acting like a child their age.</li><li>Regressing to more childlike behavior (such as bed-wetting, tantrums).</li><li>Thinking that they are the problem or responsible for the parent’s PTSD behavior (like \"they wouldn’t get so angry if I could just be quieter\").</li><li>Experiencing symptoms of depression or anxiety.</li><li>Having problems at school or with friends.</li></ul></div>"
+                "content": "<div><div>Երեխաների ու դեռահասների համար բավականին ծանր կարող է լինել ՀՏՍԽ ունեցող ծնողի հետ ապրելը։ Թեև շատ երեխաներ լավ հարմարվում են, մյուսները կարող են ցուցաբերել խնդրահարույց վարք, այդ թվում՝</div><ul><li>ընդօրինակել ծնողին՝ հավանաբար փորձելով ավելի սերտ կապ հաստատել նրա հետ։ Նման երեխաները կարող են ունենալ նույն ախտանիշները, ինչ ՀՏՍԽ ունեցող ծնողը, օրինակ՝ դյուրագրգիռ լինել կամ քնի խանգարումներ ունենալ։</li><li>ստանձնել մեծահասակի դերեր և պարտականություններ՝ ՀՏՍԽ ունեցող ծնողին &laquo;փոխարինելու&raquo; համար։ Երեխան կարող է իր տարիքից չափազանց հասուն երևալ։ Սա կարող է ծանրաբեռնել երեխային և խանգարել նրան դրսևորելու իր տարիքին համապատասխան վարք։</li><li>իր տարիքից փոքր երեխայի նման պահել իրեն, օրինակ՝ գիշերամիզություն կամ զայրույթի պոռթկումներ ունենալ։</li><li>մտածել, որ խնդիրն իր մեջ է, կամ որ ինքը պատասխանատու է ՀՏՍԽ ունեցող ծնողի վարքի համար, օրինակ՝ &laquo;նա այդքան չէր զայրանա, եթե ես ավելի լուռ լինեի&raquo;։</li><li>դեպրեսիայի կամ տագնապայնության ախտանիշներ ունենալ։</li><li>դժվարություններ ունենալ դպրոցում կամ ընկերների հետ հարաբերություններում։</li></ul></div>"
               }
             ]
           }
