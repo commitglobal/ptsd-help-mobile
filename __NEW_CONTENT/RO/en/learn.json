@@ -986,30 +986,50 @@
         },
         {
           "id": "c4983971-9461-4911-bac8-f5700ee0e6fc",
-          "label": "Do I Need Professional Help?",
+          "label": "Արդյոք ես մասնագիտական օգնության կարիք ունե՞մ։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/do_i_need_professional_help.jpg",
-                "alt": "Do I Need Professional Help?"
+                "alt": "Արդյոք ես մասնագիտական օգնության կարիք ունե՞մ։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>It is normal for people who have gone through traumatic experiences to face some challenges in adjusting afterward – this is nothing to be ashamed of. Sometimes these challenges are severe or last more than a few months.</div><div>&nbsp;</div><div><div><div>The need for help can only be determined by you and a health professional. However, you can complete the PTSD self-assessment in this app to get an idea of how you are doing.</div><div>&nbsp;</div><div><div><div>If you have thoughts about hurting or killing yourself or someone else, please call:</div><div></div><div></div></div></div></div></div></div>"
+                "content": "<div><p>Բնական է, որ տրավմա ապրած մարդիկ հետագայում կյանքին հարմարվելու դժվարություններ ունենան․ սրանում ամոթալի ոչինչ չկա։ Երբեմն դժվարությունները շատ լուրջ են լինում և շարունակվում են ամիսներ։</p><p>Միայն դու ինքդ և առողջապահության ոլորտի մասնագետը կարող եք որոշել՝ օգնության կարիք ունես, թե ոչ։ Այնուամենայնիվ դու կարող ես անցնել այս հավելվածում ներառված հետտրավմատիկ սթրեսային խանգարման ինքնագնահատման թեստը և պատկերացում կազմել քո վիճակի մասին։</p><p>Եթե ինքնասպանության կամ մեկ ուրիշին վնասելու կամ սպանելու մտքեր ես ունենում, խնդրում ենք զանգահարել՝</p></div>"
               },
               {
                 "type": "button",
-                "label": "112",
+                "label": "112 (անվճար, 24/7)",
                 "action": {
                   "type": "phone",
                   "number": "112"
                 }
               },
               {
+                "type": "button",
+                "label": "911 (անվճար, 24/7)",
+                "action": {
+                  "type": "phone",
+                  "number": "911"
+                }
+              },
+              {
                 "type": "rich-text",
-                "content": "<div><div><div><div>or go immediately to the emergency room of the nearest hospital.</div><div>&nbsp;</div><div><div><div>Remember, you don't have to wait for an emergency to talk to someone.</div><div>&nbsp;</div><div><div><div>The following issues are common after a traumatic experience and could indicate the need for more support:</div><ul><li>Depression – feeling sad, down, or blue much of the time</li><li>Anxiety – nervousness, worry, tension, being very alert to possible danger most of the time</li><li>Excess vigilance or strong reactions to loud or unexpected noises</li><li>Intrusive thoughts and memories about traumatic experiences that are very distressing</li><li>Increased alcohol use, drug use, or misuse of prescription medication to cope</li><li>Easily irritable, aggressive/violent behavior</li><li>Irresponsible or aggressive driving</li><li>Sleep problems, such as insomnia or nightmares</li><li>Withdrawing from or isolating yourself from friends and family</li><li>Changes in appetite or unintentional weight gain/loss</li><li>Difficulty working or fulfilling daily responsibilities</li><li>Problems in relationships or difficulties caring for your family</li><li>Thoughts of suicide or hurting or killing someone</li></ul><div><div>If you have any of these concerns, you may benefit from therapy.</div></div></div></div></div></div></div></div>"
+                "content": "<div>կամ անմիջապես դիմել մոտակա հիվանդանոցի Շտապ օգնության բաժանմունք։ </div>"
+              },
+              {
+                "type": "button",
+                "label": "1-03",
+                "action": {
+                  "type": "phone",
+                  "number": "103"
+                }
+              },
+              {
+                "type": "rich-text",
+                "content": "<div><p>Հիշի՛ր, ինչ-որ մեկի հետ խոսելու համար կարիք չկա սպասելու արտակարգ իրավիճակի։</p><p>Տրավմա ապրած մարդկանց շրջանում հետևյալ խնդիրները հաճախ են հանդիպում և կարող են վկայել, որ աջակցության կարիք ունես․</p><ul><li>Դեպրեսիա՝ գրեթե միշտ տխուր, անտրամադիր և ընկճված զգալը</li><li>Տագնապայնություն՝ նյարդայնություն, անհանգստություն, լարվածություն, հնարավոր վտանգի նկատմամբ զգոնություն</li><li>Չափազանց զգոն լինելը կամ բարձր կամ անսպասելի ձայներից հեշտությամբ ցնցվելը</li><li>Տրավմատիկ փորձառությունների մասին կպչուն մտքեր և հիշողություններ, որոնք շատ անհանգստացնող են</li><li>Ալկոհոլի, փողոցային թմրանյութերի կամ դեղատոմսով նշանակվող դեղերի օգտագործման ավելացում կամ դրանց օգտագործումը՝ խնդիրները հաղթահարելու համար</li><li>Հեշտությամբ զայրանալը, ագրեսիվ կամ բռնի վարքագիծը</li><li>Անզգույշ կամ ագրեսիվ մեքենա վարելը</li><li>Քնի խանգարումներ, օրինակ՝ անքնություն կամ մղձավանջներ</li><li>Ինքնամեկուսացում, ընկերներից և ընտանիքից հեռանալը</li><li>Ախորժակի փոփոխություններ կամ առանց ջանքի քաշի զգալի ավելացում/նվազում</li><li>Աշխատանքային կամ առօրյա պարտականությունները կատարելու դժվարություններ</li><li>Հարաբերություններում խնդիրներ կամ ընտանիքի համար հոգ տանելու դժվարություններ</li><li>Ինքնասպանության կամ մեկ ուրիշին վնասելու կամ կյանքից զրկելու մտքեր</li></ul><p>Եթե նկատում ես, որ այս խնդիրներից որևէ մեկը ունես, հավանաբար օգտակար կլինի խոսել հոգեբանի հետ։</p></div>"
               }
             ]
           }
