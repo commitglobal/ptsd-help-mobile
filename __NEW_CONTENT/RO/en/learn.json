@@ -1728,18 +1728,18 @@
         },
         {
           "id": "9e1fb374-29d9-46d2-a659-e59b4519cfd1",
-          "label": "Can children get PTSD from their parents?",
+          "label": "Երեխաները կարո՞ղ են ՀՏՍԽ ձեռք բերել ծնողներից",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/can_children_get_ptsd_from_their_parents.png",
-                "alt": "Can children get PTSD from their parents?"
+                "alt": "Երեխաները կարո՞ղ են ՀՏՍԽ ձեռք բերել ծնողներից"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Although it is not common, it is possible for children of people with PTSD to show signs of PTSD themselves. This is called “secondary traumatization.”</div><div>&nbsp;</div><div><div><div>Here’s how it can happen:</div><ul><li>When a family teaches a child to never talk about upsetting events, thoughts, or feelings, the child’s anxiety can get worse. They may worry about triggering the parent’s symptoms or make up their own story about what happened.</li><li>Sometimes parents share too many details about events. Children may begin to develop their own symptoms of PTSD in response.</li><li>A child may start sharing the parent’s symptoms as a way to connect with the parent.</li><li>Children may also reconstruct or relive some aspects of the traumatic experience their parent went through. Sometimes it is hard for children to separate the past traumatic event from the present moment.</li></ul></div></div></div>"
+                "content": "<div><div>Թեև ոչ հաճախ, բայց ՀՏՍԽ ունեցող մարդկանց երեխաները նույնպես կարող են ունենալ ՀՏՍԽ-ի նշաններ։ Սա կոչվում է &laquo;երկրորդային տրավմատիզացում&raquo;։</div><div>&nbsp;</div><div><div><div>Ահա թե ինչպես դա կարող է տեղի ունենալ․</div><ul><li>Երբ ընտանիքում երեխային սովորեցնում են երբեք չխոսել անհանգստացնող իրադարձությունների, մտքերի կամ զգացմունքների մասին, երեխայի տագնապայնությունը կարող է սրվել։ Նա կարող է անհանգստանալ, թե ծնողի ախտանիշներն իր պատճառով են առաջանում, և կարող է իր պատմությունը հորինել տեղի ունեցածի մասին։</li><li>Երբեմն ծնողները չափազանց շատ մանրամասներ են պատմում իրադարձությունների մասին։ Երեխաների մեջ, դրան ի պատասխան, կարող են ի հայտ գալ սթրես և ՀՏՍԽ ախտանիշներ։</li><li>Երեխան կարող է սկսել դրսևորել ծնողի ախտանիշները՝ որպես ծնողի հետ կապ հաստատելու միջոց։</li><li>Երեխաները կարող են նաև վերարտադրել կամ կրկնել ծնողի ապրած տրավմայի որևէ դրվագ։ Երբեմն երեխաների համար դժվար է անցյալ տրավման տարբերակել ներկա իրականությունից։</li></ul></div></div></div>"
               }
             ]
           }
