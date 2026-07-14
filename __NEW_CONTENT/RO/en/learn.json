@@ -1036,18 +1036,18 @@
         },
         {
           "id": "6f32a995-2c44-4792-8c7f-30e73ce48916",
-          "label": "Why Do People Seek Therapy?",
+          "label": "Ինչո՞ւ են մարդիկ դիմում հոգեբանական խորհրդատվության։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/why_do_people_seek_therapy.jpg",
-                "alt": "Why Do People Seek Therapy?"
+                "alt": "Ինչո՞ւ են մարդիկ դիմում հոգեբանական խորհրդատվության։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Some trauma survivors want to go to therapy because they have:</div><ul><li>Problems with work and interpersonal relationships</li><li>Avoid things that remind them of the trauma, but memories</li><li>are still triggered by all sorts of things</li><li>Feel very anxious or angry</li><li>Have trouble sleeping</li></ul><div><div>Although these symptoms are common in the first months after a traumatic experience, if you don't feel better soon, you should consider talking to a therapist.</div><div>&nbsp;</div><div><div><div>Also, some people find that:</div><ul><li>Loved ones mean well but cannot provide the support they need</li><li>Loved ones are far away and unavailable</li><li>What they want to talk about feels too sensitive or private</li></ul><div><div>In such circumstances, talking with a specialist can truly help.</div></div></div></div></div></div>"
+                "content": "<div><p>Տրավմա ապրած որոշ մարդիկ դիմում են հոգեբանական խորհրդատվության, որովհետև՝</p><ul><li>դժվարություններ ունեն աշխատանքի և հարաբերությունների մեջ</li><li>խուսափում են տրավման հիշեցնող իրավիճակներից, բայց դրանք հանդիպում են ամեն քայլափոխի</li><li>շատ նյարդային կամ զայրացած են զգում</li><li>Feel very anxious or angry</li><li>քնելու դժվարություն ունեն</li></ul><p>Թեև այս ախտանիշները հաճախ են հանդիպում տրավմային հաջորդող մեկ-երկու ամսվա ընթացքում, սակայն եթե կարճ ժամանակ անց ինքնազգացողությունդ չի լավանում, ապա արժե մտածել հոգեբանի հետ խոսելու մասին։</p><p>Բացի այդ՝ որոշ մարդիկ նկատում են, որ՝</p><ul><li>թեև մտերիմները ցանկանում են օգնել, բայց չեն կարողանում դա անել, ինչպես հարկն է</li><li>մտերիմները հեռու են և հասանելի չեն</li><li>այն, ինչի մասին ուզում են խոսել, չափազանց զգայուն կամ անձնական է թվում</li></ul><div>Նման իրավիճակներում մասնագետի հետ խոսելը կարող է իսկապես օգնել։</div></div>"
               }
             ]
           }
