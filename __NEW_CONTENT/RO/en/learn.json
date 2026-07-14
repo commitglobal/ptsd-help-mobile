@@ -5,7 +5,7 @@
     {
       "id": "fa3f5b17-9ede-4f0a-98a7-023178ac6296",
       "type": "category",
-      "label": "Learn More About PTSD",
+      "label": "Իմանալ ՀՏՍԽ-ի մասին",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/learn_more_about_ptsd_icon.png",
       "topics": [
         {
@@ -97,7 +97,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Learn more about PTSD</h1><div><div>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:</div></div></div>"
+                      "content": "<div><h1>Իմանալ ՀՏՍԽ-ի մասին</h1><div><div>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:</div></div></div>"
                     },
                     {
                       "type": "button",
@@ -662,6 +662,14 @@
                 "action": {
                   "type": "phone",
                   "number": "091263543"
+                }
+              },
+              {
+                "type": "button",
+                "label": "010 26 35 43",
+                "action": {
+                  "type": "phone",
+                  "number": "010263543"
                 }
               }
             ]

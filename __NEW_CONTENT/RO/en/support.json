@@ -5,53 +5,65 @@
     {
       "id": "a82f310c-5de9-4342-99a8-25eef443a712",
       "type": "topic",
-      "label": "Crisis Resources",
+      "label": "Ճգնաժամային ռեսուրսներ",
       "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/support/crisis_resources.png",
       "content": {
         "sections": [
           {
             "type": "rich-text",
-            "content": "<div>For any crisis, including medical emergencies, go to the nearest emergency room or call:</div>"
+            "content": "<div>Ցանկացած ճգնաժամի, այդ թվում՝ հրատապ բժշկական օգնություն պահանջող իրավիճակներում դիմի՛ր Շտապ օգնության մոտակա բաժանմունք կամ՝</div>"
           },
           {
             "type": "button",
-            "label": "112",
+            "label": "Զանգահարի'ր 911",
             "action": {
               "type": "phone",
-              "number": "112"
+              "number": "911"
             }
           },
           {
             "type": "rich-text",
-            "content": "<div>Romanian Alliance for Suicide Prevention:</div>"
+            "content": "<div>ՀՀ Պաշտպանության նախարարության թեժ գիծ</div>"
           },
           {
             "type": "button",
-            "label": "Call 0800-801-200",
+            "label": "012 21 00 00 (շուրջօրյա)",
             "action": {
               "type": "phone",
-              "number": "0800801200"
+              "number": "012210000"
+            }
+          },
+          {
+            "type": "button",
+            "label": "Հեռ․՝ 1-28",
+            "action": {
+              "type": "phone",
+              "number": "128"
             }
           },
           {
             "type": "rich-text",
-            "content": "<div>National emergency number for victims of domestic violence:</div>"
+            "content": "<div>Ընտանեկան բռնության դեպքում՝ «Կանանց աջակցման կենտրոն» ՀԿ թեժ գիծ</div>"
           },
           {
             "type": "button",
-            "label": "Call 0800-500-333",
+            "label": "099 88 78 08",
             "action": {
               "type": "phone",
-              "number": "0800500333"
+              "number": "099887808"
             }
           },
           {
             "type": "rich-text",
-            "content": "<div>Personal contacts:</div>"
+            "content": "<div>«Սեռական բռնության ճգնաժամային կենտրոն» ՀԿ</div>"
           },
           {
-            "type": "contact",
-            "label": "Personal contacts"
+            "type": "button",
+            "label": "077 99 12 80",
+            "action": {
+              "type": "phone",
+              "number": "077991280"
+            }
           }
         ]
       }
