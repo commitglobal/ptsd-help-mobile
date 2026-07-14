@@ -1054,18 +1054,18 @@
         },
         {
           "id": "7163f965-f8f3-4a11-917b-e2177fc98c64",
-          "label": "How Can a Therapist Help Me?",
+          "label": "Ինչպե՞ս կարող է հոգեբանն ինձ օգնել։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/how_can_therapist_help_me.jpg",
-                "alt": "How Can a Therapist Help Me?"
+                "alt": "Ինչպե՞ս կարող է հոգեբանն ինձ օգնել։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Professionals specialized in working with PTSD can:</div><ul><li>Help you learn skills to better cope</li><li>Offer new perspectives</li><li>Help you feel more comfortable talking with people in your everyday life, pursuing your goals, and focusing on your future</li></ul><div><div>Remember: seeking counseling is a sign of strength, not weakness. Talking to a counselor is a courageous step toward recovery and can strengthen your ability to help yourself.</div></div></div>"
+                "content": "<div><p>ՀՏՍԽ-ի հետ աշխատելու մեջ մասնագիտացած հոգեբանները կարող են՝</p><ul><li>օգնել քեզ ձեռք բերելու տրավման ավելի լավ հաղթահարելու հմտություններ</li><li>առաջարկել նոր տեսանկյուններ</li><li>օգնել, որ ավելի հանգիստ զգաս առօրյա կյանքում մարդկանց հետ խոսելիս, նպատակներիդ ուղղությամբ աշխատելիս և ապագայիդ վրա կենտրոնանալիս</li></ul><p>Հիշի՛ր, հոգեբանական խորհրդատվության դիմելը ոչ թե թուլության, այլ ուժի նշան է։ Հոգեբանի հետ խոսելը վերականգնման ճանապարհին խիզախ քայլ է և կարող է ամրապնդել ինքդ քեզ օգնելու կարողությունդ։</p></div>"
               }
             ]
           }
