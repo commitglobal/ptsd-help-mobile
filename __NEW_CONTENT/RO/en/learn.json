@@ -1800,18 +1800,18 @@
         },
         {
           "id": "1bd3fc6d-71ea-4f33-9054-b763a0e43b2f",
-          "label": "Should my child have individual counseling?",
+          "label": "Արդյո՞ք իմ երեխան պետք է անհատական հոգեբանական խորհրդատվություն ստանա",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/should_my_child_have_individual_counseling.png",
-                "alt": "Should my child have individual counseling?"
+                "alt": "Արդյո՞ք իմ երեխան պետք է անհատական հոգեբանական խորհրդատվություն ստանա"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Children can benefit from individual counseling or family therapy.</div><div>&nbsp;</div><div><div><div>Family therapy helps family members learn how to cope, communicate, and understand each other during times of stress.</div><div>&nbsp;</div><div><div><div>Individual therapy gives children a private space to talk and learn to cope with their experiences.</div></div></div></div></div></div>"
+                "content": "<div><div>Երեխաների համար կարող է օգտակար լինել անհատական հոգեբանական խորհրդատվությունը կամ ընտանեկան թերապիան։</div><div>&nbsp;</div><div><div><div>Ընտանեկան թերապիան օգնում է ընտանիքի անդամներին՝ սովորելու ինչպես հաղթահարել սթրեսը, հաղորդակցվել և պահպանել լավ հարաբերություններ իրավիճակներում։</div><div>&nbsp;</div><div><div><div>Անհատական թերապիան երեխաներին ապահովում է անվտանգ և անձնական տարածքով՝ խոսելու իրենց փորձառությունների մասին և սովորելու հաղթահարել դրանք։</div></div></div></div></div></div>"
               }
             ]
           }
