@@ -43,61 +43,61 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>PTSD is treatable</h1><div><div>No matter how long you have lived with PTSD, there are treatments that can help you.</div></div></div>"
+                      "content": "<h1>PTSD is treatable</h1>No matter how long you have lived with PTSD, there are treatments that can help you."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Treatment helps</h1></div><div><div><div>Talking to a professional is one of the best things you can do. There is evidence for several treatments that have been shown to be effective in reducing PTSD symptoms.</div></div></div>"
+                      "content": "<h1>Treatment helps</h1>Talking to a professional is one of the best things you can do. There is evidence for several treatments that have been shown to be effective in reducing PTSD symptoms."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Support plays an important role</h1><div><div>Support can greatly help people with PTSD. Studies have shown that the support of loved ones improves both treatment and recovery after PTSD.</div></div></div>"
+                      "content": "<h1>Support plays an important role</h1>Support can greatly help people with PTSD. Studies have shown that the support of loved ones improves both treatment and recovery after PTSD."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>You are not alone</h1><div><div>PTSD affects everyone differently, but it is extremely common for people to experience significant stress. Don’t be afraid to seek help and support to cope with any stress you are experiencing.</div></div></div>"
+                      "content": "<h1>You are not alone</h1>PTSD affects everyone differently, but it is extremely common for people to experience significant stress. Don't be afraid to seek help and support to cope with any stress you are experiencing."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Effective Treatments for PTSD</h1><div><div>Psychotherapy and/or medication are the most effective treatments for PTSD. Trauma-focused psychotherapy is considered more effective than medication.</div></div>"
+                      "content": "<h1>Effective Treatments for PTSD</h1>Psychotherapy and/or medication are the most effective treatments for PTSD. Trauma-focused psychotherapy is considered more effective than medication."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>How treatment helps</h1><div><div>Treatments for PTSD have been shown to improve symptoms, personal and professional relationships, and quality of life. Talk to specialists about which PTSD treatment is right for you.</div></div></div>"
+                      "content": "<h1>How treatment helps</h1>Treatments for PTSD have been shown to improve symptoms, personal and professional relationships, and quality of life. Talk to specialists about which PTSD treatment is right for you."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What are trauma-focused psychotherapies?</h1><div><div>These therapies use different techniques to help people with PTSD process their traumatic experience. Some involve visualizing or talking about the traumatic memory, while others focus on changing unhelpful beliefs.</div></div></div>"
+                      "content": "<h1>What are trauma-focused psychotherapies?</h1>These therapies use different techniques to help people with PTSD process their traumatic experience. Some involve visualizing or talking about the traumatic memory, while others focus on changing unhelpful beliefs."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What therapies work?</h1><div><div>There are several trauma-focused psychotherapies that have been shown to help with PTSD: prolonged exposure (PE), cognitive processing therapy (CPT), eye movement desensitization and reprocessing (EMDR), brief eclectic psychotherapy, narrative exposure therapy, and written narrative exposure.</div></div></div>"
+                      "content": "<h1>What therapies work?</h1>There are several trauma-focused psychotherapies that have been shown to help with PTSD: prolonged exposure (PE), cognitive processing therapy (CPT), eye movement desensitization and reprocessing (EMDR), brief eclectic psychotherapy, narrative exposure therapy, and written narrative exposure."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What medications work?</h1><div><div>Medications that can be useful for PTSD are also used for depression and anxiety: sertraline (Zoloft), paroxetine (Paxil), fluoxetine (Prozac), and venlafaxine (Effexor). Talk with your doctor if a prescription could be helpful for you.</div></div></div>"
+                      "content": "<h1>What medications work?</h1>Medications that can be useful for PTSD are also used for depression and anxiety: sertraline (Zoloft), paroxetine (Paxil), fluoxetine (Prozac), and venlafaxine (Effexor). Talk with your doctor if a prescription could be helpful for you."
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Իմանալ ՀՏՍԽ-ի մասին</h1><div><div>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:</div></div></div>"
+                      "content": "<h1>Իմանալ ՀՏՍԽ-ի մասին</h1>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:"
                     },
                     {
                       "type": "button",
@@ -111,7 +111,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>After Deployment</h1><div><div>After Deployment is a comprehensive resource for managing stress, anxiety, sleep, health, and more. Worth a visit:</div></div></div>"
+                      "content": "<h1>After Deployment</h1>After Deployment is a comprehensive resource for managing stress, anxiety, sleep, health, and more. Worth a visit:"
                     },
                     {
                       "type": "button",
@@ -125,7 +125,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)</h1><div><div><div>Watch this video:</div></div></div></div>"
+                      "content": "<h1>Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)</h1>Watch this video:"
                     },
                     {
                       "type": "button",
@@ -139,7 +139,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Treatment: Know your options</h1><div><div>Watch this video about treatment options:</div></div></div>"
+                      "content": "<h1>Treatment: Know your options</h1>Watch this video about treatment options:"
                     },
                     {
                       "type": "button",
@@ -153,7 +153,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What is \"evidence-based treatment\"?</h1><div><div>Find out more in this video:</div></div></div>"
+                      "content": "<h1>What is \"evidence-based treatment\"?</h1>Find out more in this video:"
                     },
                     {
                       "type": "button",
@@ -167,7 +167,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What is cognitive processing therapy?</h1><div><div>Watch this short video to learn more:</div></div></div>"
+                      "content": "<h1>What is cognitive processing therapy?</h1>Watch this short video to learn more:"
                     },
                     {
                       "type": "button",
@@ -181,7 +181,7 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>What is prolonged exposure?</h1><div><div>Watch this short video to learn more about PE:</div></div></div>"
+                      "content": "<h1>What is prolonged exposure?</h1>Watch this short video to learn more about PE:"
                     },
                     {
                       "type": "button",
@@ -228,7 +228,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div>Թեև մարդկանց մեծ մասի ինքնազգացողությունը տրավմայից մեկ-երկու ամիս անց զգալիորեն լավանում է, որոշ մարդիկանց մոտ ունենում ձեռք են բերում զարգանում է ՀՏՍԽ կամ այլ խնդիրներ են առաջանում, օրինակ՝ դեպրեսիա կամ թմրանյութերի օգտագործման խնդիրներ։</div><div>&nbsp;</div><div>Գիտեի՞ր, որ</div><ul><li>Տրավմայի որոշ տեսակներ, օրինակ՝ բռնաբարությունը կամ մարտական գործողություններին մասնակցությունը, կարող են հանգեցնել ՀՏՍԽ-ի ավելի բարձր ցուցանիշերի։</li></ul>"
+                "content": "<p>Թեև մարդկանց մեծ մասի ինքնազգացողությունը տրավմայից մեկ-երկու ամիս անց զգալիորեն լավանում է, որոշ մարդիկանց մոտ ունենում ձեռք են բերում զարգանում է ՀՏՍԽ կամ այլ խնդիրներ են առաջանում, օրինակ՝ դեպրեսիա կամ թմրանյութերի օգտագործման խնդիրներ։</p><p>Գիտեի՞ր, որ</p><ul><li>Տրավմայի որոշ տեսակներ, օրինակ՝ բռնաբարությունը կամ մարտական գործողություններին մասնակցությունը, կարող են հանգեցնել ՀՏՍԽ-ի ավելի բարձր ցուցանիշերի։</li></ul>"
               }
             ]
           }
@@ -304,7 +304,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Therapy Works</h1><div><div>One of the most effective treatments for PTSD is psychotherapy.</div></div></div>"
+                      "content": "<h1>Therapy Works</h1>One of the most effective treatments for PTSD is psychotherapy."
                     }
                   ],
                   [
@@ -315,7 +315,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Trauma-Focused Therapy</h1></div></div><div>While many types of talk therapy can help, the best possible treatment is trauma-focused therapy. These are: prolonged exposure therapy, cognitive processing therapy, and eye movement desensitization and reprocessing (EMDR).</div></div>"
+                      "content": "<h1>Trauma-Focused Therapy</h1>While many types of talk therapy can help, the best possible treatment is trauma-focused therapy. These are: prolonged exposure therapy, cognitive processing therapy, and eye movement desensitization and reprocessing (EMDR)."
                     }
                   ],
                   [
@@ -326,7 +326,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><div><h1>Exercises Can Help Your Mood</h1><div><div>Physical exercise can be an important part of improving your mood. If you are physically able, you might benefit from a few minutes of exercise every day.</div></div></div></div></div></div>"
+                      "content": "<h1>Exercises Can Help Your Mood</h1>Physical exercise can be an important part of improving your mood. If you are physically able, you might benefit from a few minutes of exercise every day."
                     }
                   ],
                   [
@@ -337,11 +337,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "TO DO: The button must redirect users to the subtools list instead of opening a certain tool."
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<div><div><div><h1>Mindfulness (Meditation Practice) Can Help</h1></div></div><div>Mindfulness, or the practice of conscious meditation, has been shown to be very effective in reducing suffering and PTSD symptoms. Try the Mindfulness tools in this app!</div><div>&nbsp;</div></div>"
+                      "content": "<h1>Mindfulness (Meditation Practice) Can Help</h1>Mindfulness, or the practice of conscious meditation, has been shown to be very effective in reducing suffering and PTSD symptoms. Try the Mindfulness tools in this app!"
                     },
                     {
                       "type": "button",
@@ -360,7 +356,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><div><h1>Starting Treatment</h1><div><div>Talk to a clinical psychologist or psychotherapist about how to get the care you need.</div></div></div></div></div></div>"
+                      "content": "<h1>Starting Treatment</h1>Talk to a clinical psychologist or psychotherapist about how to get the care you need."
                     }
                   ],
                   [
@@ -371,7 +367,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Medications That Work</h1><div><div>Some medications have been shown to be helpful in treating PTSD symptoms, including Celexa, Paxil, Prozac, and Zoloft. Talk to your doctor.</div></div></div>"
+                      "content": "<h1>Medications That Work</h1>Some medications have been shown to be helpful in treating PTSD symptoms, including Celexa, Paxil, Prozac, and Zoloft. Talk to your doctor."
                     }
                   ],
                   [
@@ -382,7 +378,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Family Therapy</h1><div><div>PTSD can affect all family members. Family therapy is a helpful way to bring family members together and help them understand each other better in a safe space.</div></div></div>"
+                      "content": "<h1>Family Therapy</h1>PTSD can affect all family members. Family therapy is a helpful way to bring family members together and help them understand each other better in a safe space."
                     }
                   ],
                   [
@@ -393,7 +389,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>PTSD Treatment</h1><div><div>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you are concerned you might be depressed, talk to your healthcare provider or contact a mental health specialist. You can call DepreHub.ro - free anti-anxiety helpline at:</div></div></div>"
+                      "content": "<h1>PTSD Treatment</h1>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you are concerned you might be depressed, talk to your healthcare provider or contact a mental health specialist. You can call DepreHub.ro - free anti-anxiety helpline at:"
                     },
                     {
                       "type": "button",
@@ -512,7 +508,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Եթե 15&ndash;20 րոպե անկողնում արթուն պառկած ես և չես կարողանում քնել, փորձի՛ր հետևյալը․</div><div>&nbsp;</div><ul><li>Վե՛ր կաց և ինչ-որ ձանձրալի գործո՛վ զբաղվիր, օրինակ՝ կարդա կենցաղային տեխնիկայի օգտագործման հրահանգները։</li><li>Անկողին վերադարձի՛ր միայն այն ժամանակ, երբ քնկոտություն զգաս։</li><li>Թույլ լուսավորությո՛ւն օգտագործիր, մի՛ օգտվիր համակարգչից և հեռուստացույց մի՛ դիտիր։</li><li>Խմի՛ր ջուր, տաք կաթ կամ կոֆեին չպարունակող թեյ։</li><li>Եթե քաղցած ես, որևէ թեթև և քիչ շաքար պարունակող խորտի՛կ կեր։</li><li>Կարդա՛ հանգստացնող որևէ բան կամ լսի՛ր հանգստացնող երաժշտություն։</li><li>Երբ վերադառնաս անկողին, մոտ 10 րոպե դանդաղ և խոր շնչի՛ր։</li><li>Հանգստացրո՛ւ միտքդ աղոթքով, մեդիտացիայով կամ &laquo;ոչխարներ հաշվելով&raquo;։</li><li>Եթե դժվար է զուգընկերոջդ հետ նույն անկողնում քնել, մտածի՛ր երբեմն առանձին քնելու մասին։</li></ul></div>"
+                "content": "<div><p>Եթե 15&ndash;20 րոպե անկողնում արթուն պառկած ես և չես կարողանում քնել, փորձի՛ր հետևյալը․</p><ul><li>Վե՛ր կաց և ինչ-որ ձանձրալի գործո՛վ զբաղվիր, օրինակ՝ կարդա կենցաղային տեխնիկայի օգտագործման հրահանգները։</li><li>Անկողին վերադարձի՛ր միայն այն ժամանակ, երբ քնկոտություն զգաս։</li><li>Թույլ լուսավորությո՛ւն օգտագործիր, մի՛ օգտվիր համակարգչից և հեռուստացույց մի՛ դիտիր։</li><li>Խմի՛ր ջուր, տաք կաթ կամ կոֆեին չպարունակող թեյ։</li><li>Եթե քաղցած ես, որևէ թեթև և քիչ շաքար պարունակող խորտի՛կ կեր։</li><li>Կարդա՛ հանգստացնող որևէ բան կամ լսի՛ր հանգստացնող երաժշտություն։</li><li>Երբ վերադառնաս անկողին, մոտ 10 րոպե դանդաղ և խոր շնչի՛ր։</li><li>Հանգստացրո՛ւ միտքդ աղոթքով, մեդիտացիայով կամ &laquo;ոչխարներ հաշվելով&raquo;։</li><li>Եթե դժվար է զուգընկերոջդ հետ նույն անկողնում քնել, մտածի՛ր երբեմն առանձին քնելու մասին։</li></ul></div>"
               }
             ]
           }
@@ -556,7 +552,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Դիսոցացիան ֆիզիկական և հուզական փորձառություններից, զգացողություններից, հիշողություններից կամ անմիջական շրջապատից կտրված լինելու զգացումն է։ Դիսոցացիան կարող է լինել թեթևից մինչև ինտենսիվ։ Այն հաճախ տեղի է ունենում մարդու կամքից անկախ, ուստի կարող է շփոթեցնող և անհանգստացնող լինել։</div><div>&nbsp;</div><div><div>Օրինակներ․</div><ul><li>Ինքդ քեզ կամ քո մարմինը տեսնում ես դրսից, օրինակ՝ վերևից կամ սենյակի մյուս ծայրից</li><li>Ձայները կամ տեսարանները հեռավոր կամ աղավաղված են թվում</li><li>Ժամանակ ես կորցնում</li><li>Ֆիզիկական կամ հուզական թմրածության մեջ ես</li></ul></div></div>"
+                "content": "<div><p>Դիսոցացիան ֆիզիկական և հուզական փորձառություններից, զգացողություններից, հիշողություններից կամ անմիջական շրջապատից կտրված լինելու զգացումն է։ Դիսոցացիան կարող է լինել թեթևից մինչև ինտենսիվ։ Այն հաճախ տեղի է ունենում մարդու կամքից անկախ, ուստի կարող է շփոթեցնող և անհանգստացնող լինել։</p><p>Օրինակներ․</p><ul><li>Ինքդ քեզ կամ քո մարմինը տեսնում ես դրսից, օրինակ՝ վերևից կամ սենյակի մյուս ծայրից</li><li>Ձայները կամ տեսարանները հեռավոր կամ աղավաղված են թվում</li><li>Ժամանակ ես կորցնում</li><li>Ֆիզիկական կամ հուզական թմրածության մեջ ես</li></ul></div>"
               }
             ]
           }
@@ -592,7 +588,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Տրավմա ապրած շատ մարդիկ անվստահություն են զգում, բայց այն ենթադրությունը, որ ոչ ոք վստահելի չէ, ամենևին օգտակար չէ։</div><div>&nbsp;</div><div><div><div>Փորձիր ինքդ քեզ նման հարցեր տալ․</div><ul><li>Արդյո՞ք դա միշտ է ճիշտ։ Ժամանակի քանի՞ տոկոսում են մարդիկ ոչ վստահելի։</li><li>Կարո՞ղ եմ հիշել մի դեպք, երբ ինչ-որ մեկը կողքիս է եղել։</li><li>Ովքե՞ր են այն երեք մարդիկ, որոնց կարող եմ թեկուզ որոշ չափով վստահել։</li><li>Ի՞նչ կարող եմ վստահել նրանց։</li></ul></div></div></div>"
+                "content": "<div><p>Տրավմա ապրած շատ մարդիկ անվստահություն են զգում, բայց այն ենթադրությունը, որ ոչ ոք վստահելի չէ, ամենևին օգտակար չէ։</p><p>Փորձիր ինքդ քեզ նման հարցեր տալ․</p><ul><li>Արդյո՞ք դա միշտ է ճիշտ։ Ժամանակի քանի՞ տոկոսում են մարդիկ ոչ վստահելի։</li><li>Կարո՞ղ եմ հիշել մի դեպք, երբ ինչ-որ մեկը կողքիս է եղել։</li><li>Ովքե՞ր են այն երեք մարդիկ, որոնց կարող եմ թեկուզ որոշ չափով վստահել։</li><li>Ի՞նչ կարող եմ վստահել նրանց։</li></ul></div>"
               }
             ]
           }
@@ -610,7 +606,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div>Սա կարող է վախեցնող և հուսահատեցնող լինել տրավմա վերապրած շատ մարդկանց, հատկապես պատերազմի վետերանների և գործող զինծառայողների համար, որոնք եղել են այնպիսի վայրերում, որտեղ զայրույթ կամ ագրեսիա ցուցադրելն ընկալվել է որպես օգտակար։ Այս հավելվածի և/կամ հոգեթերապևտի հետ առերես աշխատանքի օգնությամբ կարող ես սովորել վերահսկել քո վարքը հուզմունքի պահին։ Զայրույթի հաղթահարման համար նախատեսված որոշ գործիքներ կարող ես գտնել այս հավելվածի&nbsp;<strong>Կառավարել ախտանիշները</strong>&nbsp;բաժնում։</div>"
+                "content": "<div>Սա կարող է վախեցնող և հուսահատեցնող լինել տրավմա վերապրած շատ մարդկանց, հատկապես պատերազմի վետերանների և գործող զինծառայողների համար, որոնք եղել են այնպիսի վայրերում, որտեղ զայրույթ կամ ագրեսիա ցուցադրելն ընկալվել է որպես օգտակար։ Այս հավելվածի և/կամ հոգեթերապևտի հետ առերես աշխատանքի օգնությամբ կարող ես սովորել վերահսկել քո վարքը հուզմունքի պահին։ Զայրույթի հաղթահարման համար նախատեսված որոշ գործիքներ կարող ես գտնել այս հավելվածի <strong>Կառավարել ախտանիշները</strong> բաժնում։</div>"
               }
             ]
           }
@@ -765,221 +761,18 @@
         },
         {
           "id": "14dfa4e1-a766-4afc-aba5-82aa427aea9f",
-          "label": "What is Therapy?",
+          "label": "Ի՞նչ է հոգեբանի հետ աշխատանքը։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
-                "alt": "What is Therapy?"
+                "alt": "Ի՞նչ է հոգեբանի հետ աշխատանքը։"
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Therapy (also called psychotherapy or talk therapy) involves meeting with a trained professional to address various types of issues, including but not limited to:</div><ul><li>Changes in mood like depression or anxiety</li><li>Problematic beliefs or ways of thinking</li><li>Behaviors like smoking, alcohol use, or lack of exercise</li><li>Problems related to pain or sleep</li><li>Difficult feelings or emotions</li><li>Improving relationship difficulties</li></ul></div>"
-              }
-            ]
-          }
-        },
-        {
-          "id": "7d06c62c-1e69-411b-b102-5af1fe3ad2b3",
-          "label": "Tools for PTSD",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/tools_for_ptsd_icon.jpg",
-          "content": {
-            "sections": [
-              {
-                "type": "multiPage",
-                "pageArray": [
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/aims.jpg",
-                      "alt": "AIMS (Anger and Irritability Management Skills)"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<h1>AIMS (Anger and Irritability Management Skills)</h1><p>AIMS can help if you have difficulties with irritability or anger.</p><p>Tap one of the buttons below to install the app or share information about it with others.</p>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.aims"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/app/id1243035440"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/cbti_coach.png",
-                      "alt": "CBT-i Coach"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<h1>CBT-i Coach</h1><p>Although this app is designed to be used with a healthcare professional, it can be helpful to learn more about improving sleep.</p><p>Tap one of the buttons below to install the app or share information about it with others.</p>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.cbti"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/app/id655918660"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mindfulness_coach.jpg",
-                      "alt": "Mindfulness Coach"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<h1>Mindfulness Coach</h1><div><div>Mindfulness Coach offers exercises and information that can help with:</div><ol><li><div>Focusing on the present moment</div></li><li><div>Reducing the power of unwanted thoughts or memories</div></li></ol><div><div>Tap the message icon below to share information about these apps with others.</div></div></div>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=gov.va.mobilehealth.ncptsd.mindfulnesscoach"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/it/app/mindfulness-coach/id804284729"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/stay_quit_coach.jpg",
-                      "alt": "Stay Quit Coach"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<div><h1>Stay Quit Coach</h1><div><div>Do you smoke cigarettes and want to quit?</div><div>&nbsp;</div><div><div><div>Create a personal plan, set a quit date, and start your life as a non-smoker.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div></div></div>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=gov.va.stayquit"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/it/app/stay-quit-coach/id655892317"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/breathe_2_relax.jpg",
-                      "alt": "Breathe2Relax"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<div><h1>Breathe2Relax</h1><div><div>Deep breathing is one of the best ways to learn to relax.</div><div>&nbsp;</div><div><div><div>Learn to perform controlled, deep breaths using this free and customizable app.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div></div></div>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=mil.dha.breathe2relax"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/us/app/breathe2relax/id425720246"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/mood_tracker.jpg",
-                      "alt": "Mood Tracker"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<div><h1>Mood Tracker</h1><div><div>Track your mood or other things important to you using Mood Tracker.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=com.t2.vas"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/us/app/t2-mood-tracker/id428373825"
-                      }
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/tools_for_ptsd/ptsd_coach.jpg",
-                      "alt": "PTSD Coach"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<div><h1>PTSD Coach</h1><div><div>You may want to share this app if you think someone else could benefit from the information and tools seen here.</div><div>&nbsp;</div><div><div><div>Tap one of the buttons below to install the app or share information about it with others.</div></div></div></div></div>"
-                    },
-                    {
-                      "type": "button",
-                      "label": "Play Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://play.google.com/store/apps/details?id=is.vertical.ptsdcoach"
-                      }
-                    },
-                    {
-                      "type": "button",
-                      "label": "App Store",
-                      "action": {
-                        "type": "external",
-                        "url": "https://itunes.apple.com/it/app/ptsd-coach/id430646302"
-                      }
-                    }
-                  ]
-                ]
+                "content": "<div><p>Հոգեբանական թերապիան ներառում է հանդիպումներ վերապատրաստված մասնագետի հետ տարբեր տիպի խնդիրների հաղթահարման ուղղությամբ աշխատելու համար, այդ թվում, և ոչ միայն, հետևյալի՝</p><ul><li>տրամադրության փոփոխություններ, օրինակ՝ դեպրեսիա կամ տագնապայնություն</li><li>խնդրահարույց համոզմունքներ կամ մտածելակերպեր</li><li>վարքագծային խնդիրներ, օրինակ՝ ծխելը, ալկոհոլի օգտագործումը, ոչ բավարար ֆիզիկական ակտիվությունը</li><li>ցավին կամ քնին առնչվող խնդիրներ</li><li>դժվար հաղթահարվող զգացմունքներ կամ հույզեր</li><li>հարաբերություններում առկա խնդիրների հաղթահարում</li></ul></div>"
               }
             ]
           }
@@ -1323,7 +1116,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Կան շատ մասնագետներ, որոնք կարող են օգնել, եթե դիմես նրանց։</div><div>&nbsp;</div><div><div>Այստեղ կարող ես կարդալ ավելին առաջնային օղակի բուժաշխատողների, սոցիալական աշխատողների, հոգեբանների, հոգեբույժների և հոգևոր սպասավորների դերերի ու պարտականությունների մասին։</div></div></div>"
+                "content": "<div><p>Կան շատ մասնագետներ, որոնք կարող են օգնել, եթե դիմես նրանց։</p><div>Այստեղ կարող ես կարդալ ավելին առաջնային օղակի բուժաշխատողների, սոցիալական աշխատողների, հոգեբանների, հոգեբույժների և հոգևոր սպասավորների դերերի ու պարտականությունների մասին։</div></div>"
               }
             ]
           }
@@ -1341,7 +1134,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</div><div>&nbsp;</div><div><div><div>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</div><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>You can find a primary care physician:</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div></div></div>"
+                "content": "<div><p>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</p><p>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</p><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>You can find a primary care physician:</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
               }
             ]
           }
@@ -1359,7 +1152,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Հոգեբանները հոգեբանության ոլորտում համապատասխան որակավորում ունեցող մասնագետներ են։ Նրանք կարող են գնահատել անձի հոգեկան առողջության վիճակը և առաջարկել հոգեբանական թերապիա, բայց միայն քչերն ունեն դեղորայք նշանակելու լիցենզիա։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</div><div>&nbsp;</div><div><div><div>Հոգեբանը կարող է օգնել քեզ՝</div><ul><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի օգտագործման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li><li>հոգեբանական վիճակի գնահատում իրականացնելու միջոցով</li><li>որոշ դեպքերում՝ հոգեկան առողջության խնդրի համար դեղորայք նշանակելու միջոցով</li></ul><p>Հոգեբանների մեծ մասը իրավասություն չունի դեղորայք նշանակելու։</p><div><div>Հոգեբանի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul><div>&nbsp;</div></div></div></div></div>"
+                "content": "<div><p>Հոգեբանները հոգեբանության ոլորտում համապատասխան որակավորում ունեցող մասնագետներ են։ Նրանք կարող են գնահատել անձի հոգեկան առողջության վիճակը և առաջարկել հոգեբանական թերապիա, բայց միայն քչերն ունեն դեղորայք նշանակելու լիցենզիա։ Նրանք աշխատում են անհատների, զույգերի, ընտանիքների և խմբերի հետ։</p><p>Հոգեբանը կարող է օգնել քեզ՝</p><ul><li>դեպրեսիայի, տագնապայնության, ՀՏՍԽ-ի և թմրանյութերի օգտագործման խնդիրների դեպքում</li><li>ընտանեկան և միջանձնային հարաբերություններում առկա դժվարությունների դեպքում</li><li>հոգեբանական վիճակի գնահատում իրականացնելու միջոցով</li><li>որոշ դեպքերում՝ հոգեկան առողջության խնդրի համար դեղորայք նշանակելու միջոցով</li></ul><p>Հոգեբանների մեծ մասը իրավասություն չունի դեղորայք նշանակելու։</p><p>Հոգեբանի կարող ես գտնել՝</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
               }
             ]
           }
@@ -1377,7 +1170,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div><div><div>Հոգեբույժը բժիշկ է, որը մասնագիտացված է հոգեբուժության ոլորտում։ Հոգեբույժները հիմնականում բուժում են դեղորայքով, որը կարող է մեղմացնել դեպրեսիայի, տագնապայնության կամ ՀՏՍԽ-ի ախտանիշները կամ օգնել քնի և հոգեկան առողջության խնդիրներին առնչվող այլ դժվարությունների դեպքում։</div><div>&nbsp;</div><div><div><div>Հոգեբույժը կարող է օգնել քեզ՝</div><ul><li>նշանակելով դեղորայք հոգեկան առողջությանն առնչվող այնպիսի խնդիրների դեպքում, ինչպիսիք են դեպրեսիան, տագնապայնությունը, ՀՏՍԽ-ն և ծանր հոգեկան հիվանդությունները</li><li>որոշ դեպքերում՝ խորհրդատվությամբ</li></ul><div><div>Հոգեբույժի կարող ես գտնել՝</div><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div></div></div></div></div></div>"
+                "content": "<div><p>Հոգեբույժը բժիշկ է, որը մասնագիտացված է հոգեբուժության ոլորտում։ Հոգեբույժները հիմնականում բուժում են դեղորայքով, որը կարող է մեղմացնել դեպրեսիայի, տագնապայնության կամ ՀՏՍԽ-ի ախտանիշները կամ օգնել քնի և հոգեկան առողջության խնդիրներին առնչվող այլ դժվարությունների դեպքում։</p><p>Հոգեբույժը կարող է օգնել քեզ՝</p><ul><li>նշանակելով դեղորայք հոգեկան առողջությանն առնչվող այնպիսի խնդիրների դեպքում, ինչպիսիք են դեպրեսիան, տագնապայնությունը, ՀՏՍԽ-ն և ծանր հոգեկան հիվանդությունները</li><li>որոշ դեպքերում՝ խորհրդատվությամբ</li></ul><p>Հոգեբույժի կարող ես գտնել՝</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>ծանոթների միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
               }
             ]
           }
@@ -1515,7 +1308,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a young child (2-4 years old)?</h1><div><div>Set short, clear rules with your child about things like personal space, using a quiet voice, or other possible triggers. Find 1 or 2 words to gently but consistently remind them about family interaction rules.</div><div>&nbsp;</div><div><div><div>Ask your child what you can do to help them. Take a few minutes to really listen to everything they have to say, and find one thing each day—no matter how small—to help them with.</div></div></div></div></div>"
+                      "content": "<h1>Do you have a young child (2-4 years old)?</h1>Set short, clear rules with your child about things like personal space, using a quiet voice, or other possible triggers. Find 1 or 2 words to gently but consistently remind them about family interaction rules.Ask your child what you can do to help them. Take a few minutes to really listen to everything they have to say, and find one thing each day—no matter how small—to help them with."
                     }
                   ],
                   [
@@ -1526,7 +1319,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Is your child missing quality time with you?</h1><div><div>Find at least one activity you can share with your child for a few minutes every day. Quality time will be good for both of you.</div></div></div>"
+                      "content": "<h1>Is your child missing quality time with you?</h1>Find at least one activity you can share with your child for a few minutes every day. Quality time will be good for both of you."
                     }
                   ],
                   [
@@ -1537,7 +1330,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Do you have a young child (2-12 years old)?</h1></div></div><div>Keep rules short and to the point. Stick to your promises and rules. Set expectations you are sure your child can meet.</div><div>&nbsp;</div><div><div><div>Celebrate your child's successes.</div><div>&nbsp;</div><div><div><div>Trust your instincts about how to be the best parent you can be.</div><div>&nbsp;</div><div><div><div>Establish and maintain a routine if you don't have one already. Children thrive on consistency.</div></div></div></div></div></div></div></div>"
+                      "content": "<div><h1>Do you have a young child (2-12 years old)?</h1><p>Keep rules short and to the point. Stick to your promises and rules. Set expectations you are sure your child can meet.</p><p>Celebrate your child's successes.</p><p>Trust your instincts about how to be the best parent you can be.</p><p>Establish and maintain a routine if you don't have one already. Children thrive on consistency.</p></div>"
                     }
                   ],
                   [
@@ -1548,7 +1341,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Is it hard to connect with your child?</h1><div><div>Think of ways to show your appreciation for your child—say something kind, or use gestures to show how much you care.</div></div></div>"
+                      "content": "<div><h1>Is it hard to connect with your child?</h1><p>Think of ways to show your appreciation for your child&mdash;say something kind, or use gestures to show how much you care.</p></div>"
                     }
                   ],
                   [
@@ -1559,7 +1352,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Have you and your child been distant from each other?</h1></div></div><div>Reconnect with your child by doing activities together that you both enjoy. Try to gradually increase the time you spend together.</div></div>"
+                      "content": "<div><h1>Have you and your child been distant from each other?</h1><p>Reconnect with your child by doing activities together that you both enjoy. Try to gradually increase the time you spend together.</p></div>"
                     }
                   ],
                   [
@@ -1570,7 +1363,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Do you feel like a bad parent?</h1></div></div><div>Know that you are not alone. It is incredibly hard to be a parent with PTSD. Children are resilient, and they know when they are loved. Love your kids, accept that you will make mistakes, take responsibility, and move forward. Just try to do the best you can.</div></div>"
+                      "content": "<div><h1>Do you feel like a bad parent?</h1><p>Know that you are not alone. It is incredibly hard to be a parent with PTSD. Children are resilient, and they know when they are loved. Love your kids, accept that you will make mistakes, take responsibility, and move forward. Just try to do the best you can.</p></div>"
                     }
                   ],
                   [
@@ -1581,7 +1374,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Do you have a young child (5-12 years old)?</h1></div></div><div>Help your child manage any anger they experience. Provide them with tools to manage anger: count to 10, find a creative way to release anger, take deep breaths, or find an ally to talk to.</div></div>"
+                      "content": "<div><h1>Do you have a young child (5-12 years old)?</h1><p>Help your child manage any anger they experience. Provide them with tools to manage anger: count to 10, find a creative way to release anger, take deep breaths, or find an ally to talk to.</p></div>"
                     }
                   ],
                   [
@@ -1592,7 +1385,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a teenager?</h1><div><div>Don’t be afraid to talk to your teen about PTSD. Ask for and listen to their opinions. Encourage them to express their feelings — in words, music, or another way.</div><div>&nbsp;</div><div><div><div>Teens may need their own space to cope with their loved one's PTSD. Respect your teen’s privacy as much as you can. Don’t intervene to solve their problems or make decisions for them.</div><div>&nbsp;</div><div><div><div>Pick your moments with your teen, and when they want to talk, just listen. Show affection towards them!</div></div></div></div></div></div></div>"
+                      "content": "<div><h1>Do you have a teenager?</h1><p>Don&rsquo;t be afraid to talk to your teen about PTSD. Ask for and listen to their opinions. Encourage them to express their feelings &mdash; in words, music, or another way.</p><p>Teens may need their own space to cope with their loved one's PTSD. Respect your teen&rsquo;s privacy as much as you can. Don&rsquo;t intervene to solve their problems or make decisions for them.</p><p>Pick your moments with your teen, and when they want to talk, just listen. Show affection towards them!</p></div>"
                     }
                   ],
                   [
@@ -1603,7 +1396,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a partner who helps with your child?</h1><div><div>Include your spouse or partner as often as possible when making decisions about how to discipline your child.</div><div>&nbsp;</div><div><div><div>Compliment your partner when you notice them doing something well.</div><div>&nbsp;</div><div><div><div>Try to make sure you send your children a consistent message when they talk to you or your partner. Even if you have very different parenting strategies, try to find common ground where you can.</div></div></div></div></div></div></div>"
+                      "content": "<div><h1>Do you have a partner who helps with your child?</h1><p>Include your spouse or partner as often as possible when making decisions about how to discipline your child.</p><p>Compliment your partner when you notice them doing something well.</p><p>Try to make sure you send your children a consistent message when they talk to you or your partner. Even if you have very different parenting strategies, try to find common ground where you can.</p></div>"
                     }
                   ],
                   [
@@ -1614,7 +1407,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you feel like things are out of control?</h1><div><div>Tell your family you are going to start having regular family meetings. Hold a family meeting at a time when everyone in your family can be together — mealtimes are a good opportunity for these.</div><div>&nbsp;</div><div>&nbsp;</div></div></div>"
+                      "content": "<div><h1>Do you feel like things are out of control?</h1><p>Tell your family you are going to start having regular family meetings. Hold a family meeting at a time when everyone in your family can be together &mdash; mealtimes are a good opportunity for these.</p></div>"
                     }
                   ],
                   [
@@ -1625,7 +1418,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><h1>Family meetings</h1><div><div><div>Create an agenda together. Work together as a family to see if you can find solutions for each topic on the agenda.</div></div></div></div></div>"
+                      "content": "<div><h1>Family meetings</h1><p>Create an agenda together. Work together as a family to see if you can find solutions for each topic on the agenda.</p></div>"
                     }
                   ],
                   [
@@ -1636,7 +1429,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Does your child have a hard time discussing feelings?</h1><div><div>Take time to give your child your full and undivided attention. Listen with respect and interest, and avoid commenting or judging—just let your child talk.</div><div>&nbsp;</div><div><div><div>Help your child label or name any feelings you hear them speak about — like happy, sad, scared, excited, interested.</div><div>&nbsp;</div><div><div><div>You don’t always have to talk. Sometimes just being together is enough.</div></div></div></div></div></div></div>"
+                      "content": "<div><h1>Does your child have a hard time discussing feelings?</h1><p>Take time to give your child your full and undivided attention. Listen with respect and interest, and avoid commenting or judging&mdash;just let your child talk.</p><p>Help your child label or name any feelings you hear them speak about &mdash; like happy, sad, scared, excited, interested.</p><p>You don&rsquo;t always have to talk. Sometimes just being together is enough.</p></div>"
                     }
                   ],
                   [
@@ -1647,7 +1440,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Do you have a young child?</h1><div><div>Sesame Street has a wonderful set of resources for helping kids cope with trauma in the family:</div></div><div>&nbsp;</div>"
+                      "content": "<h1>Do you have a young child?</h1><p>Sesame Street has a wonderful set of resources for helping kids cope with trauma in the family:</p>"
                     },
                     {
                       "type": "button",
@@ -1666,18 +1459,18 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation with your kids, ask what they think.</h1><div><div>With kids who are able to understand, try something like: \"I’ve been dealing with some difficult things lately and would like to talk with you for a few minutes. How do you feel about how things have been going?\"</div></div></div>"
+                      "content": "<div><h1>Try to start a conversation with your kids, ask what they think.</h1><p>With kids who are able to understand, try something like: \"I&rsquo;ve been dealing with some difficult things lately and would like to talk with you for a few minutes. How do you feel about how things have been going?\"</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/share_how_youre_feeling.jpg",
-                      "alt": "Try to start a conversation, share how you’re feeling."
+                      "alt": "Try to start a conversation, share how you're feeling."
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, share how you’re feeling.</h1><div><div>If you’re open to talking about how you feel, try saying something like \"I’ve been a bit sad lately. I want to tell you a little about what’s going on with me.\"</div></div></div>"
+                      "content": "<div><h1>Try to start a conversation, share how you&rsquo;re feeling.</h1><p>If you&rsquo;re open to talking about how you feel, try saying something like \"I&rsquo;ve been a bit sad lately. I want to tell you a little about what&rsquo;s going on with me.\"</p></div>"
                     }
                   ],
                   [
@@ -1688,7 +1481,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, open up.</h1><div><div>With older kids, model sharing feelings: \"I’d like to talk with you about some tough things..\"</div></div></div>"
+                      "content": "<div><h1>Try to start a conversation, open up.</h1><p>With older kids, model sharing feelings: \"I&rsquo;d like to talk with you about some tough things..\"</p></div>"
                     }
                   ],
                   [
@@ -1699,7 +1492,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><div><div><h1>Focus on strengths</h1></div></div><div>Give attention to your child’s strengths — tell them you see them in a positive light. Emphasize the things they do well.</div></div>"
+                      "content": "<div><h1>Focus on strengths</h1><p>Give attention to your child&rsquo;s strengths &mdash; tell them you see them in a positive light. Emphasize the things they do well.</p></div>"
                     }
                   ],
                   [
@@ -1710,7 +1503,7 @@
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Give kids time to speak</h1><div><div><div>Ask your child about their worries and concerns, then give them plenty of time to respond to show you really want them to have a voice.</div></div></div></div>"
+                      "content": "<div><h1>Give kids time to speak</h1><p>Ask your child about their worries and concerns, then give them plenty of time to respond to show you really want them to have a voice.</p></div>"
                     }
                   ]
                 ]
@@ -1767,7 +1560,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Թեև ոչ հաճախ, բայց ՀՏՍԽ ունեցող մարդկանց երեխաները նույնպես կարող են ունենալ ՀՏՍԽ-ի նշաններ։ Սա կոչվում է &laquo;երկրորդային տրավմատիզացում&raquo;։</div><div>&nbsp;</div><div><div><div>Ահա թե ինչպես դա կարող է տեղի ունենալ․</div><ul><li>Երբ ընտանիքում երեխային սովորեցնում են երբեք չխոսել անհանգստացնող իրադարձությունների, մտքերի կամ զգացմունքների մասին, երեխայի տագնապայնությունը կարող է սրվել։ Նա կարող է անհանգստանալ, թե ծնողի ախտանիշներն իր պատճառով են առաջանում, և կարող է իր պատմությունը հորինել տեղի ունեցածի մասին։</li><li>Երբեմն ծնողները չափազանց շատ մանրամասներ են պատմում իրադարձությունների մասին։ Երեխաների մեջ, դրան ի պատասխան, կարող են ի հայտ գալ սթրես և ՀՏՍԽ ախտանիշներ։</li><li>Երեխան կարող է սկսել դրսևորել ծնողի ախտանիշները՝ որպես ծնողի հետ կապ հաստատելու միջոց։</li><li>Երեխաները կարող են նաև վերարտադրել կամ կրկնել ծնողի ապրած տրավմայի որևէ դրվագ։ Երբեմն երեխաների համար դժվար է անցյալ տրավման տարբերակել ներկա իրականությունից։</li></ul></div></div></div>"
+                "content": "<div><p>Թեև ոչ հաճախ, բայց ՀՏՍԽ ունեցող մարդկանց երեխաները նույնպես կարող են ունենալ ՀՏՍԽ-ի նշաններ։ Սա կոչվում է &laquo;երկրորդային տրավմատիզացում&raquo;։</p><p>Ահա թե ինչպես դա կարող է տեղի ունենալ․</p><ul><li>Երբ ընտանիքում երեխային սովորեցնում են երբեք չխոսել անհանգստացնող իրադարձությունների, մտքերի կամ զգացմունքների մասին, երեխայի տագնապայնությունը կարող է սրվել։ Նա կարող է անհանգստանալ, թե ծնողի ախտանիշներն իր պատճառով են առաջանում, և կարող է իր պատմությունը հորինել տեղի ունեցածի մասին։</li><li>Երբեմն ծնողները չափազանց շատ մանրամասներ են պատմում իրադարձությունների մասին։ Երեխաների մեջ, դրան ի պատասխան, կարող են ի հայտ գալ սթրես և ՀՏՍԽ ախտանիշներ։</li><li>Երեխան կարող է սկսել դրսևորել ծնողի ախտանիշները՝ որպես ծնողի հետ կապ հաստատելու միջոց։</li><li>Երեխաները կարող են նաև վերարտադրել կամ կրկնել ծնողի ապրած տրավմայի որևէ դրվագ։ Երբեմն երեխաների համար դժվար է անցյալ տրավման տարբերակել ներկա իրականությունից։</li></ul></div>"
               }
             ]
           }
@@ -1803,7 +1596,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Ահա մի քանի խորհուրդ այն երեխաների ծնողներին, որոնք հարմարվում են ՀՏՍԽ ունեցող մարդու հետ ապրելուն։</div><div>&nbsp;</div><div><div>Կրթվե՛ք</div><ul><li>Երկու ծնողներն էլ պետք է իմանան, թե ինչպես կարող է ՀՏՍԽ-ն ազդել երեխաների վրա, և ինչպիսի արձագանքներ են սովորաբար ունենում այն երեխաները, որոնց ծնողը ՀՏՍԽ ունի։</li><li>Հաշվի՛ առ, որ այս շրջանում երեխաները կարող են ավելի շատ հոգատարության, ուշադրության և մտերմության կարիք ունենալ։</li></ul><div><div>Աջակցի՛ր</div><ul><li>Ժամանա՛կ հատկացրու միասին տարբեր զբաղմունքների և զրուցելու համար։ Երկու ծնողներն էլ պետք է լսեն երեխաների զգացմունքներն ու մտահոգությունները և լուրջ վերաբերվեն դրանց։</li><li>Փարատի՛ր նրանց մտահոգությունները և աջակցի՛ր, եթե նրանք հարցեր են ունենում։</li><li>Երեխաներին տրամադրի՛ր իրենց համար մատչելի տեղեկություն ՀՏՍԽ-ի, ինչպես նաև ՀՏՍԽ ունեցող ծնողի փորձառությունների և փոփոխությունների մասին՝ նրանց շփոթությունն ու անհայտի նկատմամբ վախը մեղմելու համար։</li><li>Խրախուսի՛ր և կազմակերպի՛ր այնպիսի զբաղմունքներ, որոնք օգնում են երեխաներին արտահայտվելու և կառավարելու սթրեսը, օրինակ՝ շարժվել լարվածությունը թոթափելու համար, նկարել ու գրել և այլն։</li></ul><div><div>Եղի՛ր սիրալիր և հստակ սահմաննե՛ր ունեցիր</div><ul><li>Եղի՛ր սիրալիր, համբերատար և ուշադիր՝ միևնույն ժամանակ պահպանելով հստակ և հետևողական սահմաններ։</li><li>Գիտակցի՛ր, որ երեխաները երբեմն կարող են վատ վարքագիծ դրսևորել կամ չլսել, և նման իրավիճակներում ներողամի՛տ եղիր նրա հանդեպ։ Այդպիսի վարքը սթրեսի բնական արձագանք է, եթե այն հաճախակի չի դառնում կամ ավելի մեծ խնդիրներ չի առաջացնում։</li><li>Գովի՛ր նրանց դրական վարքն ու դժվարությունները հաղթահարելու առողջ ձևերը։ Միշտ կենտրոնացի՛ր այն ամենի վրա, ինչն արժևորում ես նրանց մեջ։</li><li>Եթե ՀՏՍԽ ունեցող ծնողը դու ես, կենտրոնացի՛ր երեխաների հետ որակյալ և հաճելի ժամանակ անցկացնելու վրա և հետաձգի՛ր դաստիարակչական խիստ միջոցները, հատկապես եթե վերջին շրջանում տրամադրությունդ փոփոխվում է, կամ դյուրագրգիռ ես։</li></ul><div><div>Պահպանի՛ր սովորական առօրյան</div><ul><li>Պահպանի՛ր ընտանիքի սովորական առօրյան, օրինակ՝ միասին ընթրելու և քնելուց առաջ ընդունված սովորությունները։</li><li>Համոզվի՛ր, որ երեխաները շարունակում են հաճախել դպրոց և մասնակցել իրենց սովորական զբաղմունքներին (դասեր, խմբակներ և այլն)։</li></ul><div><div>Ներգրավի՛ր նրանց</div><div><ul><li>Ներգրավի՛ր երեխաներին ընտանեկան գործերում։ Հանգստյան օրերը թող որ հաճելի լինեն երեխաների համար։</li><li>Շարունակի՛ր ներգրավված լինել երեխաներիդ դպրոցական և սոցիալական կյանքում։</li><li>Հարցրո՛ւ նրանց հետաքրքրությունների մասին և լսի՛ր առանց դատելու կամ ծաղրելու։</li></ul></div></div></div></div></div></div></div>"
+                "content": "<div><p>Ահա մի քանի խորհուրդ այն երեխաների ծնողներին, որոնք հարմարվում են ՀՏՍԽ ունեցող մարդու հետ ապրելուն։</p><p>Կրթվե՛ք</p><ul><li>Երկու ծնողներն էլ պետք է իմանան, թե ինչպես կարող է ՀՏՍԽ-ն ազդել երեխաների վրա, և ինչպիսի արձագանքներ են սովորաբար ունենում այն երեխաները, որոնց ծնողը ՀՏՍԽ ունի։</li><li>Հաշվի՛ առ, որ այս շրջանում երեխաները կարող են ավելի շատ հոգատարության, ուշադրության և մտերմության կարիք ունենալ։</li></ul><p>Աջակցի՛ր</p><ul><li>Ժամանա՛կ հատկացրու միասին տարբեր զբաղմունքների և զրուցելու համար։ Երկու ծնողներն էլ պետք է լսեն երեխաների զգացմունքներն ու մտահոգությունները և լուրջ վերաբերվեն դրանց։</li><li>Փարատի՛ր նրանց մտահոգությունները և աջակցի՛ր, եթե նրանք հարցեր են ունենում։</li><li>Երեխաներին տրամադրի՛ր իրենց համար մատչելի տեղեկություն ՀՏՍԽ-ի, ինչպես նաև ՀՏՍԽ ունեցող ծնողի փորձառությունների և փոփոխությունների մասին՝ նրանց շփոթությունն ու անհայտի նկատմամբ վախը մեղմելու համար։</li><li>Խրախուսի՛ր և կազմակերպի՛ր այնպիսի զբաղմունքներ, որոնք օգնում են երեխաներին արտահայտվելու և կառավարելու սթրեսը, օրինակ՝ շարժվել լարվածությունը թոթափելու համար, նկարել ու գրել և այլն։</li></ul><p>Եղի՛ր սիրալիր և հստակ սահմաննե՛ր ունեցիր</p><ul><li>Եղի՛ր սիրալիր, համբերատար և ուշադիր՝ միևնույն ժամանակ պահպանելով հստակ և հետևողական սահմաններ։</li><li>Գիտակցի՛ր, որ երեխաները երբեմն կարող են վատ վարքագիծ դրսևորել կամ չլսել, և նման իրավիճակներում ներողամի՛տ եղիր նրա հանդեպ։ Այդպիսի վարքը սթրեսի բնական արձագանք է, եթե այն հաճախակի չի դառնում կամ ավելի մեծ խնդիրներ չի առաջացնում։</li><li>Գովի՛ր նրանց դրական վարքն ու դժվարությունները հաղթահարելու առողջ ձևերը։ Միշտ կենտրոնացի՛ր այն ամենի վրա, ինչն արժևորում ես նրանց մեջ։</li><li>Եթե ՀՏՍԽ ունեցող ծնողը դու ես, կենտրոնացի՛ր երեխաների հետ որակյալ և հաճելի ժամանակ անցկացնելու վրա և հետաձգի՛ր դաստիարակչական խիստ միջոցները, հատկապես եթե վերջին շրջանում տրամադրությունդ փոփոխվում է, կամ դյուրագրգիռ ես։</li></ul><p>Պահպանի՛ր սովորական առօրյան</p><ul><li>Պահպանի՛ր ընտանիքի սովորական առօրյան, օրինակ՝ միասին ընթրելու և քնելուց առաջ ընդունված սովորությունները։</li><li>Համոզվի՛ր, որ երեխաները շարունակում են հաճախել դպրոց և մասնակցել իրենց սովորական զբաղմունքներին (դասեր, խմբակներ և այլն)։</li></ul><p>Ներգրավի՛ր նրանց</p><ul><li>Ներգրավի՛ր երեխաներին ընտանեկան գործերում։ Հանգստյան օրերը թող որ հաճելի լինեն երեխաների համար։</li><li>Շարունակի՛ր ներգրավված լինել երեխաներիդ դպրոցական և սոցիալական կյանքում։</li><li>Հարցրո՛ւ նրանց հետաքրքրությունների մասին և լսի՛ր առանց դատելու կամ ծաղրելու։</li></ul></div>"
               }
             ]
           }
@@ -1839,7 +1632,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><div>Երեխաների համար կարող է օգտակար լինել անհատական հոգեբանական խորհրդատվությունը կամ ընտանեկան թերապիան։</div><div>&nbsp;</div><div><div><div>Ընտանեկան թերապիան օգնում է ընտանիքի անդամներին՝ սովորելու ինչպես հաղթահարել սթրեսը, հաղորդակցվել և պահպանել լավ հարաբերություններ իրավիճակներում։</div><div>&nbsp;</div><div><div><div>Անհատական թերապիան երեխաներին ապահովում է անվտանգ և անձնական տարածքով՝ խոսելու իրենց փորձառությունների մասին և սովորելու հաղթահարել դրանք։</div></div></div></div></div></div>"
+                "content": "<div><p>Երեխաների համար կարող է օգտակար լինել անհատական հոգեբանական խորհրդատվությունը կամ ընտանեկան թերապիան։</p><p>Ընտանեկան թերապիան օգնում է ընտանիքի անդամներին՝ սովորելու ինչպես հաղթահարել սթրեսը, հաղորդակցվել և պահպանել լավ հարաբերություններ իրավիճակներում։</p><p>Անհատական թերապիան երեխաներին ապահովում է անվտանգ և անձնական տարածքով՝ խոսելու իրենց փորձառությունների մասին և սովորելու հաղթահարել դրանք։</p></div>"
               }
             ]
           }
