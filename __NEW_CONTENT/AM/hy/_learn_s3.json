@@ -1,5 +1,5 @@
 {
-  "lastUpdatedAt": "2026-07-14T00:01:00Z",
+  "lastUpdatedAt": "2026-07-15T00:00:00Z",
   "title": "Învățați",
   "pages": [
     {
@@ -1304,143 +1304,143 @@
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_4.jpg",
-                      "alt": "Do you have a young child (2-4 years old)?"
+                      "alt": "Ունե՞ք փոքր երեխա (2–4 տարեկան)"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Do you have a young child (2-4 years old)?</h1>Set short, clear rules with your child about things like personal space, using a quiet voice, or other possible triggers. Find 1 or 2 words to gently but consistently remind them about family interaction rules.Ask your child what you can do to help them. Take a few minutes to really listen to everything they have to say, and find one thing each day—no matter how small—to help them with."
+                      "content": "<div><h1>Ունե՞ք փոքր երեխա (2&ndash;4 տարեկան)</h1><p>Ձեր երեխայի հետ սահմանեք կարճ և հստակ կանոններ՝ անձնական տարածքը հարգելու, հանգիստ ձայնով խոսելու կամ նրան անհանգստացնող այլ իրավիճակների վերաբերյալ։ Ընտրեք 1&ndash;2 պարզ բառ, որոնցով կարող եք մեղմորեն, բայց հետևողականորեն հիշեցնել ընտանիքում շփման կանոնների մասին։</p><p>Հարցրեք ձեր երեխային, թե ինչ կարող եք անել նրան օգնելու համար։ Մի քանի րոպե հատկացրեք իսկապես լսելու այն ամենը, ինչ նա ցանկանում է ասել և ամեն օր գտեք գոնե մեկ բան (նույնիսկ եթե դա շատ փոքր բան է), որով կարող եք աջակցել նրան ։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/Is-your-child-missing-quality-time.jpg",
-                      "alt": "Is your child missing quality time with you?"
+                      "alt": "Ձեր երեխան բավարար որակյալ ժամանակ անցկացնո՞ւմ է ձեզ հետ։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Is your child missing quality time with you?</h1>Find at least one activity you can share with your child for a few minutes every day. Quality time will be good for both of you."
+                      "content": "<h1>Ձեր երեխան բավարար որակյալ ժամանակ անցկացնո՞ւմ է ձեզ հետ։</h1><p>Ամեն օր գտեք գոնե մեկ զբաղմունք, որը կարող եք մի քանի րոպե միասին անել Ձեր երեխայի հետ։ Միասին անցկացրած որակյալ ժամանակը օգտակար կլինի երկուսիդ համար։</p>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_2_12.jpg",
-                      "alt": "Do you have a young child (2-12 years old)?"
+                      "alt": "Ունե՞ք 2–12 տարեկան երեխա։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a young child (2-12 years old)?</h1><p>Keep rules short and to the point. Stick to your promises and rules. Set expectations you are sure your child can meet.</p><p>Celebrate your child's successes.</p><p>Trust your instincts about how to be the best parent you can be.</p><p>Establish and maintain a routine if you don't have one already. Children thrive on consistency.</p></div>"
+                      "content": "<div><h1>Ունե՞ք 2–12 տարեկան երեխա։</h1><p>Այնպես արեք, որ կանոնները լինեն կարճ, պարզ և հստակ։ Հետևողական եղեք ձեր խոստումների և սահմանած կանոնների հարցում։ Սահմանեք իրատեսական ակնկալիքներ։</p><p>Տոնեք Ձեր երեխայի հաջողությունները։</p><p>Վստահեք Ձեր ծնողական բնազդին և այն գիտակցմանը, թե ինչպես կարող եք լինել Ձեր երեխայի համար լավագույն ծնողը։</p><p>Եթե դեռ չունեք, ստեղծեք ռեժիմ և հետևեք դրան։ Երեխաները լավագույնս զարգանում են հետևողականության շնորհիվ։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/hard_to_connect_wtih_your_children.jpg",
-                      "alt": "Is it hard to connect with your child?"
+                      "alt": "Դժվա՞ր է կապ հաստատել Ձեր երեխայի հետ։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Is it hard to connect with your child?</h1><p>Think of ways to show your appreciation for your child&mdash;say something kind, or use gestures to show how much you care.</p></div>"
+                      "content": "<div><h1>Դժվա՞ր է կապ հաստատել Ձեր երեխայի հետ։</h1><p>Մտածեք, թե ինչպես կարող եք արտահայտել ձեր գնահատանքն ու սերը Ձեր երեխայի հանդեպ․ ասեք նրան բարի խոսքեր կամ օգտագործեք ժեստեր՝ ցույց տալու համար, թե որքան կարևոր է նա Ձեզ համար։</p>/div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/you_and_your_child_were_distant_from_each_other.jpg",
-                      "alt": "Have you and your child been distant from each other?"
+                      "alt": "Դուք և Ձեր երեխան միմյանցից հեռու եղե՞լ եք։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Have you and your child been distant from each other?</h1><p>Reconnect with your child by doing activities together that you both enjoy. Try to gradually increase the time you spend together.</p></div>"
+                      "content": "<div><h1>Դուք և Ձեր երեխան միմյանցից հեռու եղե՞լ եք։</h1><p>Վերականգնեք կապը Ձեր երեխայի հետ՝ միասին ունենալով այնպիսի զբաղմունք, որը երկուսիդ էլ հաճույք է պատճառում։ Փորձեք աստիճանաբար ավելացնել այն ժամանակը, որը միասին եք անցկացնում։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/feeling_like_a_bad_parent.jpg",
-                      "alt": "Do you feel like a bad parent?"
+                      "alt": "Մտածու՞մ եք, որ լավ ծնող չեք։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you feel like a bad parent?</h1><p>Know that you are not alone. It is incredibly hard to be a parent with PTSD. Children are resilient, and they know when they are loved. Love your kids, accept that you will make mistakes, take responsibility, and move forward. Just try to do the best you can.</p></div>"
+                      "content": "<div><h1>Մտածու՞մ եք, որ լավ ծնող չեք։</h1><p>Հիշեք, որ միայնակ չեք։ Հետտրավմատիկ սթրեսային խանգարում ունեցող ծնող լինելը չափազանց դժվար է։ Երեխաները զգում են, երբ իրենց սիրում են։ Սիրեք Ձեր երեխաներին, ընդունեք, որ երբեմն սխալներ եք գործելու, պատասխանատվություն կրեք դրանց համար և շարունակեք առաջ շարժվել։ Պարզապես փորձեք անել այն ամենը, ինչ կարող եք։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child_5_12.jpg",
-                      "alt": "Do you have a young child (5-12 years old)?"
+                      "alt": "Ունե՞ք 5–12 տարեկան երեխա։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a young child (5-12 years old)?</h1><p>Help your child manage any anger they experience. Provide them with tools to manage anger: count to 10, find a creative way to release anger, take deep breaths, or find an ally to talk to.</p></div>"
+                      "content": "<div><h1>Ունե՞ք 5–12 տարեկան երեխա։</h1><p>Օգնեք ձեր երեխային կառավարել իր զայրույթը։ Տվեք նրան զայրույթը հաղթահարելու պարզ գործիքներ՝ հաշվել մինչև 10-ը, գտնել զայրույթն արտահայտելու անվտանգ և ստեղծագործ միջոց, խորը շնչել կամ զրուցել վստահելի մարդու հետ։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_teenager.jpg",
-                      "alt": "Do you have a teenager?"
+                      "alt": "Ունե՞ք դեռահաս երեխա։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a teenager?</h1><p>Don&rsquo;t be afraid to talk to your teen about PTSD. Ask for and listen to their opinions. Encourage them to express their feelings &mdash; in words, music, or another way.</p><p>Teens may need their own space to cope with their loved one's PTSD. Respect your teen&rsquo;s privacy as much as you can. Don&rsquo;t intervene to solve their problems or make decisions for them.</p><p>Pick your moments with your teen, and when they want to talk, just listen. Show affection towards them!</p></div>"
+                      "content": "<div><h1>Ունե՞ք դեռահաս երեխա։</h1><p>Մի՛ վախեցեք Ձեր դեռահաս երեխայի հետ խոսել հետտրավմատիկ սթրեսային խանգարման մասին։ Հարցրեք նրա կարծիքը և ուշադիր լսեք նրան։ Խրախուսեք, որ նա արտահայտի իր զգացմունքները՝ բառերով, երաժշտությամբ կամ իրեն հարմար ցանկացած այլ ձևով։</p><p>Դեռահասներին երբեմն անհրաժեշտ է ունենալ իրենց անձնական տարածքը՝ հաղթահարելու իրենց սիրելիի հետտրավմատիկ սթրեսային խանգարումը։ Հնարավորինս հարգեք նրանց անձնական տարածքը։ Մի՛ շտապեք միջամտել՝ նրանց խնդիրները լուծելու կամ նրանց փոխարեն որոշումներ կայացնելու համար։</p><p>Ընտրեք հարմար պահեր Ձեր դեռահասի հետ շփվելու համար, և երբ նա ցանկանա խոսել, պարզապես լսեք նրան։ Մի՛ մոռացեք նաև&nbsp; ցուցաբերել ջերմություն և սեր նրա նկատմամբ։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_partner_who_helps.jpg",
-                      "alt": "Do you have a partner who helps with your child?"
+                      "alt": "Ունե՞ք զուգընկեր, որը օգնում է Ձեզ երեխայի խնամքի հարցում։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you have a partner who helps with your child?</h1><p>Include your spouse or partner as often as possible when making decisions about how to discipline your child.</p><p>Compliment your partner when you notice them doing something well.</p><p>Try to make sure you send your children a consistent message when they talk to you or your partner. Even if you have very different parenting strategies, try to find common ground where you can.</p></div>"
+                      "content": "<div><h1>Ունե՞ք զուգընկեր, որը օգնում է Ձեզ երեխայի խնամքի հարցում։</h1><p>Հնարավորինս հաճախ ներգրավեք Ձեր ամուսնուն կամ զուգընկերոջը երեխայի դաստիարակության և կարգապահության վերաբերյալ որոշումներ կայացնելիս։</p><p>Գովեք Ձեր զուգընկերոջը, երբ նկատում եք, որ նա ինչ-որ բան լավ է անում։</p><p>Փորձեք այնպես անել, որ Ձեր երեխաները Ձեզնից և Ձեր զուգընկերոջից ստանան միանման և հետևողական ուղերձներ։ Նույնիսկ եթե ձեր դաստիարակության մոտեցումները տարբեր են, ձգտեք գտնել ընդհանուր մոտեցումներ, որոնց շուրջ կարող եք համաձայնության գալ։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/feeling_like_things_are_out_of_control.jpg",
-                      "alt": "Do you feel like things are out of control?"
+                      "alt": "Զգո՞ւմ եք, որ իրավիճակը դուրս է եկել վերահսկողությունից։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Do you feel like things are out of control?</h1><p>Tell your family you are going to start having regular family meetings. Hold a family meeting at a time when everyone in your family can be together &mdash; mealtimes are a good opportunity for these.</p></div>"
+                      "content": "<div><h1>Զգո՞ւմ եք, որ իրավիճակը դուրս է եկել վերահսկողությունից։</h1><p>Ասեք Ձեր ընտանիքի անդամներին, որ այսուհետ պատրաստվում եք պարբերաբար ընտանեկան հանդիպումներ կազմակերպել։ Ընտանեկան հանդիպումները անցկացրեք այն ժամանակ, երբ ընտանիքի բոլոր անդամները կարող են միասին լինել․ օրինակ՝ ճաշի կամ ընթրիքի ժամերը դրա համար հարմար հնարավորություն են։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/family_gatherings.jpg",
-                      "alt": "Family meetings"
+                      "alt": "Ընտանեկան հանդիպումներ"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Family meetings</h1><p>Create an agenda together. Work together as a family to see if you can find solutions for each topic on the agenda.</p></div>"
+                      "content": "<div><h1>Ընտանեկան հանդիպումներ</h1><p>Միասին կազմեք հանդիպման օրակարգ։ Որպես ընտանիք՝ միասին քննարկեք յուրաքանչյուր հարց և փորձեք գտնել դրանց լուծումները։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/does_your_child_have_a_hard_time_discussing_about_sentiments.jpg",
-                      "alt": "Does your child have a hard time discussing feelings?"
+                      "alt": "Ձեր երեխայի համար դժվա՞ր է  խոսել իր զգացմունքների մասին։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Does your child have a hard time discussing feelings?</h1><p>Take time to give your child your full and undivided attention. Listen with respect and interest, and avoid commenting or judging&mdash;just let your child talk.</p><p>Help your child label or name any feelings you hear them speak about &mdash; like happy, sad, scared, excited, interested.</p><p>You don&rsquo;t always have to talk. Sometimes just being together is enough.</p></div>"
+                      "content": "<div><h1>Ձեր երեխայի համար դժվա՞ր է  խոսել իր զգացմունքների մասին։</h1><p>Այնպես արեք, որ Ձեր երեխային նվիրեք Ձեր ամբողջ ուշադրությունը։ Լսեք նրան հարգանքով և հետաքրքրությամբ՝ առանց մեկնաբանելու կամ դատելու․ պարզապես թույլ տվեք, որ նա խոսի։</p><p>Օգնեք Ձեր երեխային ճանաչել և անվանել իր զգացմունքները, որոնց մասին նա խոսում է, օրինակ՝ ուրախ, տխուր, վախեցած, ոգևորված կամ հետաքրքրված։</p><p>Պարտադիր չէ, որ միշտ խոսեք։ Երբեմն պարզապես միասին լինելն արդեն բավական է։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/do_you_have_a_young_child.jpg",
-                      "alt": "Do you have a young child?"
+                      "alt": "Ունե՞ք փոքր երեխա։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Do you have a young child?</h1><p>Sesame Street has a wonderful set of resources for helping kids cope with trauma in the family:</p>"
+                      "content": "<h1>Ունե՞ք փոքր երեխա։</h1><p>«Sesame Street»-ն ունի նյութերի հրաշալի  հավաքածու, որն օգնում է երեխաներին հաղթահարել ընտանիքում տեղի ունեցած տրավմատիկ իրադարձությունները։</p>"
                     },
                     {
                       "type": "button",
@@ -1455,55 +1455,55 @@
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/ask_what_they_think.jpg",
-                      "alt": "Try to start a conversation with your kids, ask what they think."
+                      "alt": "Փորձեք զրույց սկսել Ձեր երեխաների հետ և հարցրեք, թե նրանք ինչ են մտածում։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation with your kids, ask what they think.</h1><p>With kids who are able to understand, try something like: \"I&rsquo;ve been dealing with some difficult things lately and would like to talk with you for a few minutes. How do you feel about how things have been going?\"</p></div>"
+                      "content": "<div><h1>Փորձեք զրույց սկսել Ձեր երեխաների հետ և հարցրեք, թե նրանք ինչ են մտածում։</h1><p>Եթե Ձեր երեխան արդեն բավականաչափ մեծ է հասկանալու համար, կարող եք ասել, օրինակ․ «Վերջին շրջանում ես դժվար ժամանակներ եմ ապրում և կուզենայի մի քանի րոպե խոսել քեզ հետ։ Ինչպե՞ս ես և ի՞նչ ես մտածում՝ ինչպես են վերջին շրջանում մեր գործերը»։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/share_how_youre_feeling.jpg",
-                      "alt": "Try to start a conversation, share how you're feeling."
+                      "alt": "Փորձեք զրույց սկսել և կիսվել Ձեր զգացողություններով։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, share how you&rsquo;re feeling.</h1><p>If you&rsquo;re open to talking about how you feel, try saying something like \"I&rsquo;ve been a bit sad lately. I want to tell you a little about what&rsquo;s going on with me.\"</p></div>"
+                      "content": "<div><h1>Փորձեք զրույց սկսել և կիսվել Ձեր զգացողություններով։</h1><p>Եթե պատրաստ եք խոսել Ձեր զգացողությունների մասին, փորձեք ասել, օրինակ՝ «Վերջերս մի քիչ տխուր եմ։ Ուզում եմ քեզ պատմել, թե ինչ է կատարվում ինձ հետ»։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/open_up.jpg",
-                      "alt": "Try to start a conversation, open up."
+                      "alt": "Փորձեք զրույց սկսել և անկեղծանալ։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Try to start a conversation, open up.</h1><p>With older kids, model sharing feelings: \"I&rsquo;d like to talk with you about some tough things..\"</p></div>"
+                      "content": "<div><h1>Փորձեք զրույց սկսել և անկեղծանալ։</h1><p>Ավելի մեծ երեխաների դեպքում օրինակ ծառայեք՝ կիսվելով Ձեր զգացողություններով․ «Ես կցանկանայի քեզ հետ խոսել որոշ դժվար բաների մասին․․․»</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/focus_on_strengths.jpg",
-                      "alt": "Focus on strengths"
+                      "alt": "Կենտրոնացեք ուժեղ կողմերի վրա։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Focus on strengths</h1><p>Give attention to your child&rsquo;s strengths &mdash; tell them you see them in a positive light. Emphasize the things they do well.</p></div>"
+                      "content": "<div><h1>Կենտրոնացեք ուժեղ կողմերի վրա։</h1><p>Ուշադրություն դարձրեք Ձեր երեխայի ուժեղ կողմերին, ասեք նրան, որ Դուք նրան դրական լույսի տակ եք տեսնում։ Ընդգծեք այն ամենը, ինչ նա լավ է անում։</p></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
                       "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talk_with_childred_about_ptsd/give_kids_time_to_speak.jpg",
-                      "alt": "Give kids time to speak"
+                      "alt": "Երեխաներին խոսելու ժամանակ տվեք։"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<div><h1>Give kids time to speak</h1><p>Ask your child about their worries and concerns, then give them plenty of time to respond to show you really want them to have a voice.</p></div>"
+                      "content": "<div><h1>Երեխաներին խոսելու ժամանակ տվեք։</h1><p>Հարցրեք Ձեր երեխային նրա անհանգստությունների և մտահոգությունների մասին, այնուհետև բավականաչափ ժամանակ տվեք նրան պատասխանելու համար՝ ցույց տալով, որ իսկապես ցանկանում եք լսել նրան։</p></div>"
                     }
                   ]
                 ]
