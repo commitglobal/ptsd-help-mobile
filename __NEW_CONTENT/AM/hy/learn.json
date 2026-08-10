@@ -1,6 +1,6 @@
 {
-  "lastUpdatedAt": "2026-07-15T00:00:00Z",
-  "title": "Învățați",
+  "lastUpdatedAt": "2026-08-10T00:00:00Z",
+  "title": "Իմանալ ավելին",
   "pages": [
     {
       "id": "fa3f5b17-9ede-4f0a-98a7-023178ac6296",
@@ -28,14 +28,14 @@
         },
         {
           "id": "ddacfa2b-77d7-4d86-88c5-7a48316f96b8",
-          "label": "PTSD Information",
+          "label": "PTSD-ի մասին տեղեկություն",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/info_about_ptsd.jpg",
           "content": {
             "sections": [
               {
                 "type": "image",
                 "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/info_about_ptsd.jpg",
-                "alt": "PTSD Information"
+                "alt": "PTSD-ի մասին տեղեկություն"
               },
               {
                 "type": "multiPage",
@@ -43,65 +43,65 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>PTSD is treatable</h1>No matter how long you have lived with PTSD, there are treatments that can help you."
+                      "content": "<div><h1>PTSD-ը բուժելի է</h1><div><div>Անկախ նրանից, թե որքան ժամանակ ես ապրել PTSD-ով, կան բուժումներ, որոնք կարող են օգնել քեզ։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Treatment helps</h1>Talking to a professional is one of the best things you can do. There is evidence for several treatments that have been shown to be effective in reducing PTSD symptoms."
+                      "content": "<div><h1>Բուժումը օգնում է</h1></div><div><div><div>Մասնագետի հետ զրույցը լավագույն քայլերից մեկն է, որ կարող ես անել։ Կան բազմաթիվ ապացույցներ, որ որոշ բուժումներ արդյունավետ են PTSD-ի ախտանիշների նվազեցման մեջ։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Support plays an important role</h1>Support can greatly help people with PTSD. Studies have shown that the support of loved ones improves both treatment and recovery after PTSD."
+                      "content": "<div><h1>Աջակցությունը կարևոր դեր ունի</h1><div><div>Աջակցությունը կարող է մեծապես օգնել PTSD ունեցող մարդկանց։ Հետազոտությունները ցույց են տալիս, որ հարազատների աջակցությունը բարելավում է թե՛ բուժման ընթացքը, թե՛ վերականգնումը PTSD-ից հետո։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>You are not alone</h1>PTSD affects everyone differently, but it is extremely common for people to experience significant stress. Don't be afraid to seek help and support to cope with any stress you are experiencing."
+                      "content": "<div><h1>Դու միայնակ չես</h1><div><div>PTSD-ն տարբեր կերպ է ազդում յուրաքանչյուրի վրա, բայց շատ տարածված է զգալի սթրեսի փորձառությունը։ Մի վախեցիր որոնել օգնություն և աջակցություն՝ հաղթահարելու այն սթրեսը, որը փորձում ես։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Effective Treatments for PTSD</h1>Psychotherapy and/or medication are the most effective treatments for PTSD. Trauma-focused psychotherapy is considered more effective than medication."
+                      "content": "<h1>PTSD-ի համար արդյունավետ բուժումներ</h1><div><div>Հոգեթերապիան և/կամ դեղորայքը PTSD-ի ամենաարդյունավետ բուժումներն են։ Տրավմայի վրա կենտրոնացած հոգեթերապիան համարվում է ավելի արդյունավետ, քան դեղորայքը։</div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>How treatment helps</h1>Treatments for PTSD have been shown to improve symptoms, personal and professional relationships, and quality of life. Talk to specialists about which PTSD treatment is right for you."
+                      "content": "<div><h1>Ինչպես է բուժումը օգնում</h1><div><div>Ապացուցված է, որ PTSD-ի բուժումները բարելավում են ախտանիշները, անձնական և մասնագիտական հարաբերությունները և կյանքի որակը։ Խորհրդակցիր մասնագետների հետ, թե որ բուժումն է ճիշտ քեզ համար։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What are trauma-focused psychotherapies?</h1>These therapies use different techniques to help people with PTSD process their traumatic experience. Some involve visualizing or talking about the traumatic memory, while others focus on changing unhelpful beliefs."
+                      "content": "<div><h1>Ի՞նչ են տրավմայի վրա կենտրոնացած հոգեթերապիաները</h1><div><div>Այս թերապիաները օգտագործում են տարբեր տեխնիկա՝ PTSD ունեցող մարդկանց օգնելու համար մշակել իրենց տրավմատիկ փորձառությունը։ Որոշ մեթոդներ ներառում են տրավմատիկ հիշողության պատկերացումը կամ քննարկումը, մինչդեռ մյուսները կենտրոնանում են վնասակար համոզմունքների փոփոխման վրա։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What therapies work?</h1>There are several trauma-focused psychotherapies that have been shown to help with PTSD: prolonged exposure (PE), cognitive processing therapy (CPT), eye movement desensitization and reprocessing (EMDR), brief eclectic psychotherapy, narrative exposure therapy, and written narrative exposure."
+                      "content": "<div><h1>Ի՞նչ թերապիաներ են արդյունավետ</h1><div><div>Կան մի քանի տրավմայի վրա կենտրոնացած թերապիաներ, որոնք ապացուցված է, որ բարելավում են PTSD-ը՝ երկարացված էքսպոզիցիա (PE), ճանաչողական պրոցեսավորման թերապիա (CPT), աչքի շարժման դեսենսիբիլիզացիա և վերամշակում (EMDR), կարճ էկլեկտիկ հոգեթերապիա, նարատիվ էքսպոզիցիա և գրված նարատիվ էքսպոզիցիա։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What medications work?</h1>Medications that can be useful for PTSD are also used for depression and anxiety: sertraline (Zoloft), paroxetine (Paxil), fluoxetine (Prozac), and venlafaxine (Effexor). Talk with your doctor if a prescription could be helpful for you."
+                      "content": "<div><h1>Ի՞նչ դեղորայք է արդյունավետ</h1><div><div>PTSD-ի համար օգտակար կարող են լինել նաև այն դեղերը, որոնք օգտագործվում են դեպրեսիայի և անհանգստության համար՝ սերտրալին (Zoloft), պարոքսետին (Paxil), ֆլուօքսետին (Prozac) և վենլաֆաքսին (Effexor)։ Խոսիր քո բժշկի հետ՝ արդյոք դեղատոմսը կարող է օգտակար լինել քեզ համար։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Իմանալ ՀՏՍԽ-ի մասին</h1>The National Center for PTSD maintains an extensive collection of articles, videos, and self-help tools related to PTSD. Learn everything you need to know here:"
+                      "content": "<div><h1>Իմանա՛ ավելին PTSD-ի մասին</h1><div><div>PTSD-ի ազգային կենտրոնը պահպանում է PTSD-ին վերաբերող հոդվածների, տեսանյութերի և ինքնօգնության գործիքների լայն հավաքածու։ Ամեն ինչ, ինչ պետք է իմանաս, կարող ես գտնել այստեղ․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Visit website",
+                      "label": "Այցելել կայք",
                       "action": {
                         "type": "external",
                         "url": "https://www.ptsd.va.gov/index.asp"
@@ -111,11 +111,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>After Deployment</h1>After Deployment is a comprehensive resource for managing stress, anxiety, sleep, health, and more. Worth a visit:"
+                      "content": "<div><h1>Ծառայությունից հետո</h1><div><div>After Deployment-ը համապարփակ ռեսուրս է սթրեսի, անհանգստության, քնի, առողջության և այլ խնդիրների կառավարման համար։ Արժե այցելել՝</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Visit website",
+                      "label": "Այցելել կայք",
                       "action": {
                         "type": "external",
                         "url": "http://afterdeployment.org"
@@ -125,11 +125,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Ի՞նչ է հետտրվմատիկ սթրեսային խանգարումը (ՀՏՍԽ)</h1>Watch this video:"
+                      "content": "<div><h1>Ի՞նչ է PTSD-ը</h1><div><div><div>Դիտիր այս տեսանյութը․</div></div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Play Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=YMC2jt_QVEE"
@@ -139,11 +139,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>Treatment: Know your options</h1>Watch this video about treatment options:"
+                      "content": "<div><h1>Բուժում՝ ճանաչիր քո տարբերակները</h1><div><div>Դիտիր այս տեսանյութը՝ բուժման տարբերակների մասին․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Play Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=FeLLt39DI8A"
@@ -153,11 +153,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is \"evidence-based treatment\"?</h1>Find out more in this video:"
+                      "content": "<div><h1>Ի՞նչ է «ապացույցների վրա հիմնված բուժումը»</h1><div><div>Իմացիր ավելին այս տեսանյութում․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Play Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=7dzkS0ioqqwhttps://www.youtube.com/watch?v=7dzkS0ioqqw"
@@ -167,11 +167,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is cognitive processing therapy?</h1>Watch this short video to learn more:"
+                      "content": "<div><h1>Ի՞նչ է ճանաչողական պրոցեսավորման թերապիան</h1><div><div>Դիտիր այս կարճ տեսանյութը՝ ավելին իմանալու համար․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Play Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=Jqj5zDbkPxY"
@@ -181,11 +181,11 @@
                   [
                     {
                       "type": "rich-text",
-                      "content": "<h1>What is prolonged exposure?</h1>Watch this short video to learn more about PE:"
+                      "content": "<div><h1>Ի՞նչ է երկարացված էքսպոզիցիան</h1><div><div>Դիտիր այս կարճ տեսանյութը՝ PE-ի մասին ավելին իմանալու համար․</div></div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Play Video",
+                      "label": "Դիտել տեսանյութը",
                       "action": {
                         "type": "webview",
                         "url": "https://www.youtube.com/watch?v=rHg_SlEqJGc&t=1s"
@@ -289,8 +289,8 @@
         },
         {
           "id": "1cc36b79-7191-4bfb-b8d0-1e1f24c06c63",
-          "label": "Understanding PTSD Treatment",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/treatment.jpg",
+          "label": "PTSD-ի բուժման ըմբռնումը",
+          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/treatment.jpg",
           "content": {
             "sections": [
               {
@@ -299,49 +299,53 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/theraphy_works.jpg",
-                      "alt": "Therapy Works"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/theraphy_works.jpg",
+                      "alt": "Հոգեթերապիան արդյունավետ է"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Therapy Works</h1>One of the most effective treatments for PTSD is psychotherapy."
+                      "content": "<div><h1>Հոգեթերապիան արդյունավետ է</h1><div><div>PTSD-ի ամենաարդյունավետ բուժումներից մեկն է հոգեթերապիան։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/trauma_focused_therapy.jpg",
-                      "alt": "Trauma-Focused Therapy"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/trauma_focused_therapy.jpg",
+                      "alt": "Տրավմայի վրա կենտրոնացած թերապիա"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Trauma-Focused Therapy</h1>While many types of talk therapy can help, the best possible treatment is trauma-focused therapy. These are: prolonged exposure therapy, cognitive processing therapy, and eye movement desensitization and reprocessing (EMDR)."
+                      "content": "<div><div><div><h1>Տրավմայի վրա կենտրոնացած թերապիա</h1></div></div><div>Թեև խոսքային թերապիայի տարբեր տեսակներ կարող են օգտակար լինել, լավագույն արդյունքներ տալիս են տրավմայի վրա կենտրոնացած թերապիաները, օրինակ՝ երկարացված էքսպոզիցիա (PE), ճանաչողական պրոցեսավորման թերապիա (CPT) և աչքի շարժումների դեսենսիբիլիզացիա և վերամշակում (EMDR)։</div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/spirit_exercises.jpg",
-                      "alt": "Exercises Can Help Your Mood"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/spirit_exercises.jpg",
+                      "alt": "Վարժությունները կարող են օգնել տրամադրությանը"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Exercises Can Help Your Mood</h1>Physical exercise can be an important part of improving your mood. If you are physically able, you might benefit from a few minutes of exercise every day."
+                      "content": "<div><div><div><div><h1>Վարժությունները կարող են օգնել տրամադրությանը</h1><div><div>Ֆիզիկական վարժությունները կարող են կարևոր դեր ունենալ տրամադրության բարելավման մեջ։ Եթե ֆիզիկապես կարող ես, օգտակար կլինի ամեն օր մի քանի րոպե զբաղվել վարժություններով։</div></div></div></div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/practice_mindfulness.jpg",
-                      "alt": "Mindfulness (Meditation Practice) Can Help"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/practice_mindfulness.jpg",
+                      "alt": "Mindfulness-ը կարող է օգնել"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Mindfulness (Meditation Practice) Can Help</h1>Mindfulness, or the practice of conscious meditation, has been shown to be very effective in reducing suffering and PTSD symptoms. Try the Mindfulness tools in this app!"
+                      "content": "TO DO: The button must redirect users to the subtools list instead of opening a certain tool."
+                    },
+                    {
+                      "type": "rich-text",
+                      "content": "<div><div><div><h1>Mindfulness-ը կարող է օգնել</h1></div></div><div>Mindfulness-ի պրակտիկան արդյունավետ է տառապանքի և PTSD-ի ախտանիշների նվազեցման մեջ։ Փորձիր այս հավելվածում առկա Mindfulness-ի գործիքները։</div><div>&nbsp;</div></div>"
                     },
                     {
                       "type": "button",
-                      "label": "Tools for Meditation Practice",
+                      "label": "Mindfulness-ի գործիքներ",
                       "action": {
                         "type": "start_tool",
                         "toolId": "mindfulness-conscious-breathing"
@@ -351,53 +355,34 @@
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/starting_treatment.jpg",
-                      "alt": "Starting Treatment"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/starting_treatment.jpg",
+                      "alt": "Բուժման մեկնարկը"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Starting Treatment</h1>Talk to a clinical psychologist or psychotherapist about how to get the care you need."
+                      "content": "<div><div><div><div><h1>Բուժման մեկնարկը</h1><div><div>Խորհրդակցիր կլինիկական հոգեբանի կամ հոգեթերապևտի հետ՝ հասկանալու, թե ինչ խնամք է անհրաժեշտ քեզ։</div></div></div></div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/medications.jpg",
-                      "alt": "Medications That Work"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/medications.jpg",
+                      "alt": "Արդյունավետ դեղամիջոցներ"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Medications That Work</h1>Some medications have been shown to be helpful in treating PTSD symptoms, including Celexa, Paxil, Prozac, and Zoloft. Talk to your doctor."
+                      "content": "<div><h1>Արդյունավետ դեղամիջոցներ</h1><div><div>Կան դեղամիջոցներ, որոնք կարող են օգտակար լինել PTSD-ի որոշ ախտանիշների բուժման համար։ Խորհրդակցիր քո բժշկի հետ՝ հասկանալու, թե որոնք կարող են համապատասխան լինել քեզ համար։</div></div></div>"
                     }
                   ],
                   [
                     {
                       "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/family_therapy.jpg",
-                      "alt": "Family Therapy"
+                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/AM/hy/understanding-treatment/family_therapy.jpg",
+                      "alt": "Ընտանեկան թերապիա"
                     },
                     {
                       "type": "rich-text",
-                      "content": "<h1>Family Therapy</h1>PTSD can affect all family members. Family therapy is a helpful way to bring family members together and help them understand each other better in a safe space."
-                    }
-                  ],
-                  [
-                    {
-                      "type": "image",
-                      "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/learn_more_about_ptsd/understanding-treatment/treatment.jpg",
-                      "alt": "PTSD Treatment"
-                    },
-                    {
-                      "type": "rich-text",
-                      "content": "<h1>PTSD Treatment</h1>Feeling sad or down most of the time for more than 2 weeks can be a sign of depression. If you are concerned you might be depressed, talk to your healthcare provider or contact a mental health specialist. You can call DepreHub.ro - free anti-anxiety helpline at:"
-                    },
-                    {
-                      "type": "button",
-                      "label": "0374 456 420",
-                      "action": {
-                        "type": "phone",
-                        "number": "0374456420"
-                      }
+                      "content": "<div><h1>Ընտանեկան թերապիա</h1><div><div>PTSD-ը կարող է ազդել ընտանիքի բոլոր անդամների վրա։ Ընտանեկան թերապիան կարող է օգնել ընտանիքի անդամներին անվտանգ միջավայրում ավելի լավ հասկանալ միմյանց և միասին աշխատել։</div></div></div>"
                     }
                   ]
                 ]
@@ -738,28 +723,6 @@
           }
         },
         {
-          "id": "7b8c7803-6247-4fc3-a06c-1e1a69047aaf",
-          "label": "Finding Treatment",
-          "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/finding_treatment.jpg",
-          "content": {
-            "sections": [
-              {
-                "type": "image",
-                "src": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/finding_treatment.jpg",
-                "alt": "Finding Treatment"
-              },
-              {
-                "type": "button",
-                "label": "Treatment Centers for Veterans",
-                "action": {
-                  "type": "external",
-                  "url": "https://edata.e-health.gov.ua/e-data/dashboard/pmg-psychiatry"
-                }
-              }
-            ]
-          }
-        },
-        {
           "id": "14dfa4e1-a766-4afc-aba5-82aa427aea9f",
           "label": "Ի՞նչ է հոգեբանի հետ աշխատանքը։",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/getting_professional_help/what_therapy_is.jpg",
@@ -840,7 +803,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Տրավմա ապրած որոշ մարդիկ դիմում են հոգեբանական խորհրդատվության, որովհետև՝</p><ul><li>դժվարություններ ունեն աշխատանքի և հարաբերությունների մեջ</li><li>խուսափում են տրավման հիշեցնող իրավիճակներից, բայց դրանք հանդիպում են ամեն քայլափոխի</li><li>շատ նյարդային կամ զայրացած են զգում</li><li>Feel very anxious or angry</li><li>քնելու դժվարություն ունեն</li></ul><p>Թեև այս ախտանիշները հաճախ են հանդիպում տրավմային հաջորդող մեկ-երկու ամսվա ընթացքում, սակայն եթե կարճ ժամանակ անց ինքնազգացողությունդ չի լավանում, ապա արժե մտածել հոգեբանի հետ խոսելու մասին։</p><p>Բացի այդ՝ որոշ մարդիկ նկատում են, որ՝</p><ul><li>թեև մտերիմները ցանկանում են օգնել, բայց չեն կարողանում դա անել, ինչպես հարկն է</li><li>մտերիմները հեռու են և հասանելի չեն</li><li>այն, ինչի մասին ուզում են խոսել, չափազանց զգայուն կամ անձնական է թվում</li></ul><div>Նման իրավիճակներում մասնագետի հետ խոսելը կարող է իսկապես օգնել։</div></div>"
+                "content": "<div><p>Տրավմա ապրած որոշ մարդիկ դիմում են հոգեբանական խորհրդատվության, որովհետև՝</p><ul><li>դժվարություններ ունեն աշխատանքի և հարաբերությունների մեջ</li><li>խուսափում են տրավման հիշեցնող իրավիճակներից, բայց դրանք հանդիպում են ամեն քայլափոխի</li><li>շատ նյարդային կամ զայրացած են զգում</li><li>քնելու դժվարություն ունեն</li></ul><p>Թեև այս ախտանիշները հաճախ են հանդիպում տրավմային հաջորդող մեկ-երկու ամսվա ընթացքում, սակայն եթե կարճ ժամանակ անց ինքնազգացողությունդ չի լավանում, ապա արժե մտածել հոգեբանի հետ խոսելու մասին։</p><p>Բացի այդ՝ որոշ մարդիկ նկատում են, որ՝</p><ul><li>թեև մտերիմները ցանկանում են օգնել, բայց չեն կարողանում դա անել, ինչպես հարկն է</li><li>մտերիմները հեռու են և հասանելի չեն</li><li>այն, ինչի մասին ուզում են խոսել, չափազանց զգայուն կամ անձնական է թվում</li></ul><div>Նման իրավիճակներում մասնագետի հետ խոսելը կարող է իսկապես օգնել։</div></div>"
               }
             ]
           }
@@ -1134,7 +1097,7 @@
               },
               {
                 "type": "rich-text",
-                "content": "<div><p>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</p><p>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</p><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>You can find a primary care physician:</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
+                "content": "<div><p>Առաջնային օղակի բուժաշխատողը սովորաբար բժիշկ կամ բուժքույր է։ Նա կարող է բուժել տարածված առողջության խնդիրները, և հնարավոր է՝ նաև վերապատրաստված լինի ճանաչելու և օգնություն տրամադրելու տարածված հոգեբանական խնդիրների (օրինակ՝ դեպրեսիա և տագնապայնություն) դեպքում։</p><p>Առաջնային օղակի բուժաշխատողը կարող է օգնել քեզ՝</p><ul><li>բժշկական օգնություն տրամադրելով</li><li>դեպրեսիայի կամ քնի խանգարումների դեպքում օգնող դեղորայք նշանակելով</li><li>հոգեբանի, սոցիալական աշխատողի կամ հոգեբույժի մոտ ուղղորդելով</li></ul><p>Դուք կարող եք գտնել առաջնային օղակի բժշկի։</p><ul><li>բժշկի, բուժքրոջ կամ քո ապահովագրական ընկերության ուղղորդմամբ</li><li>քեզ ծանոթ մարդկանց միջոցով</li><li>զինծառայողներին և վետերաններին առողջապահական աջակցություն տրամադրող կազմակերպությունների և հաստատությունների միջոցով</li></ul></div>"
               }
             ]
           }
@@ -1293,7 +1256,7 @@
         },
         {
           "id": "8d231b5d-aed9-4fab-a7eb-37e0b8046ada",
-          "label": "Talking to kids",
+          "label": "Խոսել երեխաների հետ",
           "icon": "https://ptsdhelp-cms-test.s3.eu-central-1.amazonaws.com/content/assets/ptsd_and_family/talking_to_kids_icon.png",
           "content": {
             "sections": [
