@@ -103,11 +103,11 @@ export const AssetsManagerContextProvider = ({ children }: { children: React.Rea
     return <Typography>FATAL: No media mapping found {mediaMappingError?.message}</Typography>;
   }
 
-  if (!toReturn.learnContent) {
+  if (!toReturn.learnContent || !Array.isArray(toReturn.learnContent.pages)) {
     return <Typography>FATAL: No learn content found {learnContentError?.message}</Typography>;
   }
 
-  if (!toReturn.supportContent) {
+  if (!toReturn.supportContent || !Array.isArray(toReturn.supportContent.pages)) {
     return <Typography>FATAL: No support content found {supportContentError?.message}</Typography>;
   }
 

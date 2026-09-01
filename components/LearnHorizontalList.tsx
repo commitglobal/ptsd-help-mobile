@@ -14,8 +14,9 @@ export const LearnHorizontalList = () => {
 
   const { learnContent } = useAssetsManagerContext();
   const learnContentTopics = useMemo(() => {
-    return learnContent.pages[0].type === 'category'
-      ? learnContent.pages[0].topics.slice(0, 5).map((topic) => {
+    const firstPage = learnContent.pages?.[0];
+    return firstPage?.type === 'category'
+      ? firstPage.topics.slice(0, 5).map((topic) => {
           return { title: topic.label, id: topic.id };
         })
       : [];
@@ -41,7 +42,7 @@ export const LearnHorizontalList = () => {
           onPress={() => {
             router.push({
               pathname: '/content/topic',
-              params: { type: 'learn', categoryId: learnContent.pages[0].id, topicId: item.id },
+              params: { type: 'learn', categoryId: learnContent.pages?.[0]?.id, topicId: item.id },
             });
           }}>
           <Typography>{item.title}</Typography>

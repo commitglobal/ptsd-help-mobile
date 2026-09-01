@@ -1,4 +1,4 @@
-CREATE TABLE `contacts` (
+CREATE TABLE IF NOT EXISTS `contacts` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`contact_ids` text,
 	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE `contacts` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `favorites` (
+CREATE TABLE IF NOT EXISTS `favorites` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`toolId` text NOT NULL,
 	`updated_at` text DEFAULT CURRENT_TIMESTAMP NOT NULL,
@@ -14,7 +14,7 @@ CREATE TABLE `favorites` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `feelings` (
+CREATE TABLE IF NOT EXISTS `feelings` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`feelings` text NOT NULL,
 	`discomfort` integer NOT NULL,
@@ -23,7 +23,7 @@ CREATE TABLE `feelings` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `i_message` (
+CREATE TABLE IF NOT EXISTS `i_message` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`annoyance` text,
 	`message` text,
@@ -33,7 +33,7 @@ CREATE TABLE `i_message` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `rid` (
+CREATE TABLE IF NOT EXISTS `rid` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`trigger` text NOT NULL,
 	`difference` text NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE `rid` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `sleep_activities` (
+CREATE TABLE IF NOT EXISTS `sleep_activities` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`type` text NOT NULL,
 	`favorites` text,
@@ -54,7 +54,7 @@ CREATE TABLE `sleep_activities` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `strengths` (
+CREATE TABLE IF NOT EXISTS `strengths` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`strength` text,
 	`image` text,
@@ -63,7 +63,7 @@ CREATE TABLE `strengths` (
 	`deleted_at` text
 );
 --> statement-breakpoint
-CREATE TABLE `worries` (
+CREATE TABLE IF NOT EXISTS `worries` (
 	`id` integer PRIMARY KEY NOT NULL,
 	`worry` text,
 	`reminder_enabled` integer DEFAULT false,

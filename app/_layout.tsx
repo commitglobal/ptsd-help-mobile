@@ -63,25 +63,32 @@ export default function RootLayout() {
   }
 
   /**
-   * Handle migrations
+   * Migration status messages and the app tree all render inside TamaguiProvider
+   * so themed components (Typography -> SizableText) always have a theme.
    */
-  // TODO: show splash screen maybe here!!!
-  if (!success) {
-    return <Typography>Migrations are running...</Typography>;
-  }
+  const renderContent = () => {
+    // Check error first: on a failed migration useMigrations keeps success=false
+    // AND sets error, so an error-first check is required or it's never shown.
+    if (error) {
+      console.error('[migrations] failed to apply', error);
+      return <Typography>Error applying migrations: {error.message}</Typography>;
+    }
 
-  // TODO: what to do here?
-  if (error) {
-    return <Typography>Error applying migrations: {error.message}</Typography>;
-  }
+    // TODO: show splash screen maybe here!!!
+    if (!success) {
+      return <Typography>Migrations are running...</Typography>;
+    }
 
-  return (
-    <TamaguiProvider config={appConfig}>
+    return (
       <QueryClientProvider client={queryClient}>
         <PortalProvider>
           <Slot />
         </PortalProvider>
       </QueryClientProvider>
-    </TamaguiProvider>
+    );
+  };
+
+  return (
+    <TamaguiProvider config={appConfig}>{renderContent()}</TamaguiProvider>
   );
 }

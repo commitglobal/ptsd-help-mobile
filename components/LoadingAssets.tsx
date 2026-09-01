@@ -9,7 +9,7 @@ export default function LoadingAssets({ progress = 0 }: { progress?: number | nu
   const { t } = useTranslation();
 
   return (
-    <YStack flex={1} flexGrow={1} alignItems='center' justifyContent='center'>
+    <YStack flex={1} flexGrow={1} alignItems='center' justifyContent='center' backgroundColor='white'>
       <Typography preset='heading'>{t('assets-loading.heading')}</Typography>
       <LottieView style={styles.lottie} source={require('@/assets/lottie/loading-assets.json')} autoPlay loop />
       {!!progress && <Typography preset='heading'>{`${progress}%`}</Typography>}

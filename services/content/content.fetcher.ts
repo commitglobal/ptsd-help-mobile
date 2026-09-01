@@ -125,14 +125,35 @@ class LearnContentDownloader {
 }
 
 const getLocalLearnContent = async (config: ContentFetcherConfig) => {
+  let localContentJson: string;
   try {
-    const localContentJson = await FileSystem.readAsStringAsync(config.localContentMappingFilePath);
-    return JSON.parse(localContentJson);
+    localContentJson = await FileSystem.readAsStringAsync(config.localContentMappingFilePath);
   } catch (error) {
     console.log('No existing local learn content found', error);
     return null;
   }
+
+  try {
+    return JSON.parse(localContentJson);
+  } catch (error) {
+    // The file exists but isn't parseable (interrupted write, disk corruption).
+    // Delete it here — a parse failure never reaches the shape-validation cleanup
+    // in fetchLearnContent, so otherwise it would be re-read and re-logged forever.
+    console.warn(`⚠️ Deleting corrupt local ${config.type} content at ${config.localContentMappingFilePath}`, error);
+    try {
+      await FileSystem.deleteAsync(config.localContentMappingFilePath, { idempotent: true });
+    } catch (deleteError) {
+      console.error('Error deleting corrupt local content:', deleteError);
+    }
+    return null;
+  }
 };
+
+// A cached file written by an older schema (top-level `categories` instead of
+// `pages`) or a partial/interrupted write must not be trusted: every consumer
+// reads `content.pages`, so an invalid shape crashes the render tree.
+const isValidContent = (content: any): content is ContentType =>
+  !!content && Array.isArray(content.pages) && content.pages.length > 0;
 
 const getRemoteLearnContent = async (config: ContentFetcherConfig): Promise<ContentType | null> => {
   try {
@@ -179,10 +200,22 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
   const progressTracker = new DownloadProgressTracker(config.onProgress);
   const downloader = new LearnContentDownloader(progressTracker);
 
-  const [localContent, remoteContent] = await Promise.all([
+  let [localContent, remoteContent] = await Promise.all([
     getLocalLearnContent(config),
     getRemoteLearnContent(config),
   ]);
+
+  // Discard a malformed local cache and re-download from remote instead of
+  // handing broken content to the app.
+  if (localContent && !isValidContent(localContent)) {
+    console.warn(`⚠️ Ignoring malformed local ${config.type} content at ${config.localContentMappingFilePath}`);
+    try {
+      await FileSystem.deleteAsync(config.localContentMappingFilePath, { idempotent: true });
+    } catch (error) {
+      console.error('Error deleting malformed local content:', error);
+    }
+    localContent = null;
+  }
 
   if (!localContent && !remoteContent) {
     console.log('❌ No local or remote learn content found');
@@ -195,7 +228,7 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
 
   await FileSystem.makeDirectoryAsync(config.localContentDir, { intermediates: true });
 
-  if (shouldUpdateLocal && remoteContent) {
+  if (shouldUpdateLocal && isValidContent(remoteContent)) {
     progressTracker.setTotalFiles(extractFileNames(remoteContent).length);
 
     const processedCategories = await downloader.processCategories(
@@ -221,5 +254,5 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
     progressTracker.setTotalFiles(0);
   }
 
-  return localContent;
+  return isValidContent(localContent) ? localContent : null;
 };

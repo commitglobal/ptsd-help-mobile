@@ -77,7 +77,7 @@ export default function HomeScreen() {
             onPress={() =>
               router.push({
                 pathname: '/content/category',
-                params: { type: 'learn', pageId: learnContent.pages[0].id },
+                params: { type: 'learn', pageId: learnContent.pages?.[0]?.id },
               })
             }>
             <Typography preset='default' color='$blue11' fontWeight='bold'>

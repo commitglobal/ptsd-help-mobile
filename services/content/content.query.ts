@@ -8,7 +8,7 @@ export const useLearnContent = (
   countryCode: string | undefined,
   languageCode: string | undefined,
   onProgress?: (progress: DownloadProgress) => void
-): UseQueryResult<ContentType> => {
+): UseQueryResult<ContentType | null> => {
   return useQuery({
     queryKey: ['learn', countryCode, languageCode],
     queryFn:
@@ -27,7 +27,7 @@ export const useSupportContent = (
   countryCode: string | undefined,
   languageCode: string | undefined,
   onProgress?: (progress: DownloadProgress) => void
-): UseQueryResult<ContentType> => {
+): UseQueryResult<ContentType | null> => {
   return useQuery({
     queryKey: ['support', countryCode, languageCode],
     queryFn:
