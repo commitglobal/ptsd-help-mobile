@@ -45,15 +45,16 @@ export default function Settings() {
       </Section>
 
       <Section>
-        <XStack alignItems='center' justifyContent='space-between' paddingRight='$sm'>
-          <XStack alignItems='center' gap='$md'>
+        <XStack alignItems='center' justifyContent='space-between' gap='$md' paddingRight='$sm'>
+          <XStack alignItems='center' gap='$md' flex={1}>
             <Icon icon='chart' width={24} height={24} color='$blue11' />
-            <Typography>{t('settings.enable-stress-meter')}</Typography>
+            <Typography flex={1}>{t('settings.enable-stress-meter')}</Typography>
           </XStack>
           <Switch
             checked={isEnabled}
             onCheckedChange={handleToggleStressMeter}
             size='$4'
+            flexShrink={0}
             backgroundColor={isEnabled ? '$blue8' : '$gray1'}>
             <Switch.Thumb animation='quick' backgroundColor='$blue11' />
           </Switch>
