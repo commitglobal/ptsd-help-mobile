@@ -4,4 +4,5 @@ export const STORE_KEYS = {
   ONBOARDING_DONE: 'onboarding_done',
   STRESS_METER: 'stress_meter',
   DISTRESS_METER_INFO_SHOWN: 'distress_meter_info_shown',
+  RESET_CONTENT_CACHE: 'reset_content_cache',
 };

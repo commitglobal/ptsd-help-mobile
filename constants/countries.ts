@@ -250,7 +250,9 @@ export enum Country {
   // Zimbabwe = 'ZW',
 }
 
-export const AppCountries = [Country.Armenia, Country.Romania] as const;
+// Romania is temporarily disabled (Armenian-only release). Swap to the line below to re-enable it.
+// export const AppCountries = [Country.Armenia, Country.Romania] as const;
+export const AppCountries = [Country.Armenia] as const;
 export const CountryFlagMap = {
   [Country.Armenia]: require('../assets/images/flags/am.png'),
   [Country.Romania]: require('../assets/images/flags/ro.png'),

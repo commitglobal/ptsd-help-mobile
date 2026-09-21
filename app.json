@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "ptsd-help",
+    "name": "PTSD Help",
     "slug": "ptsd-help",
     "version": "1.1.1",
     "orientation": "portrait",
@@ -18,15 +18,10 @@
       "buildNumber": "36",
       "bundleIdentifier": "org.commitglobal.ptsdhelp",
       "entitlements": {
-        "com.apple.developer.applesignin": [
-          "Default"
-        ]
+        "com.apple.developer.applesignin": ["Default"]
       },
       "infoPlist": {
-        "UIBackgroundModes": [
-          "fetch",
-          "remote-notification"
-        ]
+        "UIBackgroundModes": ["fetch", "remote-notification"]
       },
       "config": {
         "usesNonExemptEncryption": false

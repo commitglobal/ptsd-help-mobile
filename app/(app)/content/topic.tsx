@@ -38,7 +38,7 @@ function ImageContentComponent({ content }: { content: ImageContent }) {
   );
 }
 
-function RichTextContentComponent({ content }: { content: RichTextContent }) {
+export function RichTextContentComponent({ content }: { content: RichTextContent }) {
   const width = Dimensions.get('window').width;
 
   // ! There is "Support for defaultProps will be removed from function components" Error
