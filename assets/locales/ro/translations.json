@@ -33,10 +33,10 @@
     "privacy-policy": "Politica de confidențialitate"
   },
   "languages": {
-    "en": "Engleză",
-    "ro": "Română",
-    "uk": "Ucraineană",
-    "hy": "Armeană"
+    "en": "English / English",
+    "ro": "Romanian / Română",
+    "uk": "Ukrainian / Українська",
+    "hy": "Armenian / Հայերեն"
   },
   "licence-agreement": {
     "header-title": "Acord de licență",
@@ -52,9 +52,9 @@
     "subtitle": "Vă rugăm să selectați țara în care vă aflați acum sau țara pentru care doriți să vedeți resursele.",
     "next": "Următorul",
     "countries": {
-      "RO": "România",
-      "AM": "Armenia",
-      "UA": "Ucraina"
+      "RO": "Romania / România",
+      "AM": "Armenia / Հայաստան",
+      "UA": "Ukraine / Україна"
     }
   },
   "choose-language": {

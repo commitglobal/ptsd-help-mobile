@@ -33,10 +33,10 @@
     "privacy-policy": "Privacy policy"
   },
   "languages": {
-    "en": "English",
-    "ro": "Romanian",
-    "uk": "Ukrainian",
-    "hy": "Armenian"
+    "en": "English / English",
+    "ro": "Romanian / Română",
+    "uk": "Ukrainian / Українська",
+    "hy": "Armenian / Հայերեն"
   },
   "licence-agreement": {
     "header-title": "Licence Agreement",
@@ -52,9 +52,9 @@
     "subtitle": "Please choose the country you are in right now or the country for which you wish to view resources.",
     "next": "Next",
     "countries": {
-      "RO": "Romania",
-      "AM": "Armenia",
-      "UA": "Ukraine"
+      "RO": "Romania / România",
+      "AM": "Armenia / Հայաստան",
+      "UA": "Ukraine / Україна"
     }
   },
   "choose-language": {
