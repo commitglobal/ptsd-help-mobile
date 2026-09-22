@@ -2,7 +2,7 @@
   "expo": {
     "name": "PTSD Help",
     "slug": "ptsd-help",
-    "version": "1.1.1",
+    "version": "2.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "ptsd-help",
@@ -15,13 +15,18 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "36",
-      "bundleIdentifier": "org.commitglobal.ptsdhelp",
+      "buildNumber": "38",
+      "bundleIdentifier": "ro.code.ptsd-coach",
       "entitlements": {
-        "com.apple.developer.applesignin": ["Default"]
+        "com.apple.developer.applesignin": [
+          "Default"
+        ]
       },
       "infoPlist": {
-        "UIBackgroundModes": ["fetch", "remote-notification"]
+        "UIBackgroundModes": [
+          "fetch",
+          "remote-notification"
+        ]
       },
       "config": {
         "usesNonExemptEncryption": false
@@ -29,12 +34,12 @@
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
-      "versionCode": 52,
+      "versionCode": 54,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#3E729F"
       },
-      "package": "org.commitglobal.ptsdhelp"
+      "package": "ro.code.ptsdcoach"
     },
     "web": {
       "bundler": "metro",
