@@ -39,6 +39,11 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#3E729F"
       },
+      "splash": {
+        "image": "./assets/images/splash-android.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#1DA1F2"
+      },
       "package": "ro.code4.ptsdcoach"
     },
     "web": {
