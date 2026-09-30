@@ -1,4 +1,3 @@
-import { Icon } from '@/components/Icon';
 import { Screen } from '@/components/Screen';
 import { Typography } from '@/components/Typography';
 import { useRouter } from 'expo-router';
@@ -31,8 +30,6 @@ const ChooseCountry = () => {
     <Screen
       headerProps={{
         title: t('choose-country.title'),
-        iconLeft: <Icon icon='chevronLeft' color='$gray12' width={24} height={24} />,
-        onLeftPress: router.back,
       }}
       contentContainerStyle={{
         backgroundColor: 'white',

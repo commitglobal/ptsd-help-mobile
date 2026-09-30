@@ -52,7 +52,7 @@ export default function ChooseLanguage() {
             const tools: any = toolsLocalesMap[country as Country][selectedLanguage];
             i18n.addResourceBundle(selectedLanguage, 'tools', tools);
             i18n.changeLanguage(selectedLanguage);
-            router.push('/onboarding/onboarding-slider');
+            router.push('/onboarding/licence-agreement');
           }
         },
       }}>
