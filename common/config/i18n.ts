@@ -25,7 +25,9 @@ if (storedCountry && !(AppCountries as readonly string[]).includes(storedCountry
   KVStore().set(STORE_KEYS.RESET_CONTENT_CACHE, true);
 }
 
-const systemLocale = KVStore().getString(STORE_KEYS.LANGUAGE) || Localization.getLocales()?.[0]?.languageCode || 'en';
+// Before a language is chosen (first screens of onboarding) the default country's language is used,
+// not the device locale, as the other locales only hold placeholder content.
+const systemLocale = KVStore().getString(STORE_KEYS.LANGUAGE) || CountryLanguageMap[AppCountries[0] as Country][0];
 
 // handle RTL languages
 const language = Localization.getLocales().find((lang) => lang.languageCode === systemLocale); // TODO: We need to use the user's preferred language FIRST

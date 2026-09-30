@@ -5,12 +5,13 @@ import { useRouter } from 'expo-router';
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Image, ScrollView } from 'tamagui';
+import { RichTextContentComponent } from '@/app/(app)/content/topic';
 
 export default function LicenceAgreement() {
   const { t } = useTranslation();
   const router = useRouter();
 
-  const list = [t('licence-agreement.l1'), t('licence-agreement.l2')];
+  const list = [t('licence-agreement.l1'), t('licence-agreement.l2')].filter(Boolean);
 
   return (
     <Screen
@@ -29,7 +30,7 @@ export default function LicenceAgreement() {
         <Typography preset='heading' textAlign='center' paddingHorizontal='$lg'>
           {t('licence-agreement.title')}
         </Typography>
-        <Typography>{t('licence-agreement.p1')}</Typography>
+        <RichTextContentComponent content={{ type: 'rich-text', content: t('licence-agreement.p1') }} />
         {list.map((item) => (
           <BulletPoint key={item} text={item} />
         ))}
