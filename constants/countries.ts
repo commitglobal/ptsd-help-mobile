@@ -231,7 +231,7 @@ export enum Country {
   // TurksAndCaicosIslands = 'TC',
   // Tuvalu = 'TV',
   // Uganda = 'UG',
-  // Ukraine = 'UA',
+  Ukraine = 'UA',
   // UnitedArabEmirates = 'AE',
   // UnitedKingdom = 'GB',
   // UnitedStates = 'US',
@@ -251,9 +251,10 @@ export enum Country {
 }
 
 // Romania is temporarily disabled (Armenian-only release). Swap to the line below to re-enable it.
-// export const AppCountries = [Country.Armenia, Country.Romania] as const;
-export const AppCountries = [Country.Armenia] as const;
+export const AppCountries = [Country.Armenia, Country.Romania, Country.Ukraine] as const;
+// export const AppCountries = [Country.Armenia] as const;
 export const CountryFlagMap = {
   [Country.Armenia]: require('../assets/images/flags/am.png'),
   [Country.Romania]: require('../assets/images/flags/ro.png'),
+  [Country.Ukraine]: require('../assets/images/flags/ua.png'),
 } as const;

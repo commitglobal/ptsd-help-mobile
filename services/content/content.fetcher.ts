@@ -114,6 +114,16 @@ class LearnContentDownloader {
           })
         );
 
+        // A top-level topic page must carry its own processed (local) content,
+        // otherwise its sections keep pointing at remote image URLs.
+        if (contentPage.type === 'topic') {
+          return {
+            ...contentPage,
+            icon: processedIcon,
+            content: processedTopics[0].content,
+          };
+        }
+
         return {
           ...contentPage,
           icon: processedIcon,
@@ -185,6 +195,18 @@ function extractFileNames(jsonObj: any) {
   return fileNames;
 }
 
+// Saved content should only reference local relative paths: '' means downloadImage failed,
+// and a remote URL means the image was never downloaded.
+function hasMissingImages(jsonObj: any): boolean {
+  if (Array.isArray(jsonObj)) return jsonObj.some(hasMissingImages);
+  if (!jsonObj || typeof jsonObj !== 'object') return false;
+  return Object.entries(jsonObj).some(([key, value]) =>
+    (key === 'icon' || key === 'src') && typeof value === 'string'
+      ? value === '' || /^https?:\/\//.test(value)
+      : hasMissingImages(value)
+  );
+}
+
 export type ContentFetcherConfig = {
   type: 'learn' | 'support';
   remoteContentFolderUrl: string;
@@ -222,8 +244,11 @@ export const fetchLearnContent = async (config: ContentFetcherConfig) => {
     return null;
   }
 
+  // Re-download when a previous run failed to download some images (their path was saved as ''),
+  // not only when the remote content is newer — otherwise missing images stay missing.
   const shouldUpdateLocal =
     !localContent ||
+    hasMissingImages(localContent) ||
     (remoteContent && new Date(remoteContent?.lastUpdatedAt) > new Date(localContent?.lastUpdatedAt || ''));
 
   await FileSystem.makeDirectoryAsync(config.localContentDir, { intermediates: true });

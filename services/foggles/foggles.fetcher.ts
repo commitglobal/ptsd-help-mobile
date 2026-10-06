@@ -1,4 +1,4 @@
-import { S3_CMS_CONFIG_FOLDER } from '@/constants/cms';
+import { cmsUrls } from '@/constants/cms';
 import { FogglesConfig } from './foggles.type';
 import * as FileSystem from 'expo-file-system';
 
@@ -17,7 +17,7 @@ export const fetchFoggles = async (countryCode: string) => {
 
   const getRemoteFoggles = async () => {
     try {
-      const response = await fetch(`${S3_CMS_CONFIG_FOLDER}foggles_${countryCode}.json`);
+      const response = await fetch(cmsUrls.foggles(countryCode));
       if (!response.ok) return null;
       return await response.json();
     } catch (error) {

@@ -1,4 +1,4 @@
-import { getS3CMSContentFolderLearnJSON, getS3CMSContentFolderSupportJSON } from '@/constants/cms';
+import { cmsUrls } from '@/constants/cms';
 import * as FileSystem from 'expo-file-system';
 import { ContentFetcherConfig } from './content.fetcher';
 
@@ -20,7 +20,7 @@ export const getLocalLearnContentMappingFilePath = (countryCode: string, languag
 export const getLearnContentConfig = (countryCode: string, languageCode: string): ContentFetcherConfig => {
   return {
     type: 'learn',
-    remoteContentFolderUrl: getS3CMSContentFolderLearnJSON(countryCode, languageCode),
+    remoteContentFolderUrl: cmsUrls.learn(countryCode, languageCode),
     localContentDir: getLocalLearnContentDir(countryCode, languageCode),
     localContentMappingFilePath: getLocalLearnContentMappingFilePath(countryCode, languageCode),
     localRelativeContentDir: getLocalRelativeLearnContentDir(countryCode, languageCode),
@@ -49,7 +49,7 @@ export const getLocalSupportContentMappingFilePath = (countryCode: string, langu
 export const getSupportContentConfig = (countryCode: string, languageCode: string): ContentFetcherConfig => {
   return {
     type: 'support',
-    remoteContentFolderUrl: getS3CMSContentFolderSupportJSON(countryCode, languageCode),
+    remoteContentFolderUrl: cmsUrls.support(countryCode, languageCode),
     localContentDir: getLocalSupportContentDir(countryCode, languageCode),
     localContentMappingFilePath: getLocalSupportContentMappingFilePath(countryCode, languageCode),
     localRelativeContentDir: getLocalRelativeSupportContentDir(countryCode, languageCode),
