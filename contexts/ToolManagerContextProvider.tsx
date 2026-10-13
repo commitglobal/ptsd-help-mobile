@@ -1,9 +1,8 @@
-import { SymptomType, Tool, ToolConfigType, useTools } from '@/hooks/useTools';
+import { SymptomType, Tool, ToolConfigType, filterToolsWithFoggles, useTools } from '@/hooks/useTools';
 import { Href, router } from 'expo-router';
 import { createContext, useContext, useMemo, useState } from 'react';
 
 import '../common/config/i18n';
-import { FogglesConfig } from '@/services/foggles/foggles.type';
 import { useTranslation } from 'react-i18next';
 import { STORE_KEYS } from '@/constants/store-keys';
 import { KVStore } from '@/helpers/mmkv';
@@ -34,41 +33,6 @@ type ToolManagerContextType = {
   getToolById: (toolId: string) => Tool | undefined;
 
   setIsDistressMeterActive: (active: boolean) => void;
-};
-
-const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
-  if (!foggles) {
-    return toolsConfig;
-  }
-
-  return Object.entries(toolsConfig).reduce((acc, [key, tool]) => {
-    // If no specific foggle exists for this tool, consider it enabled
-    const isToolEnabled = foggles?.features?.tools?.[tool.id]?.enabled ?? true;
-    if (!isToolEnabled) {
-      return acc;
-    }
-
-    return {
-      ...acc,
-      [key]: {
-        ...tool,
-        subcategories: !tool.subcategories
-          ? undefined
-          : Object.entries(tool.subcategories).reduce((subAcc, [subKey, subcategory]) => {
-              // If no specific foggle exists for this subcategory, consider it enabled
-              const isSubcategoryEnabled =
-                foggles?.features?.tools?.[tool.id]?.subcategories?.[subcategory.id]?.enabled ?? true;
-              if (!isSubcategoryEnabled) {
-                return subAcc;
-              }
-              return {
-                ...subAcc,
-                [subKey]: subcategory,
-              };
-            }, {}),
-      },
-    };
-  }, {} as ToolConfigType);
 };
 
 const ToolManagerContext = createContext<ToolManagerContextType | null>(null);

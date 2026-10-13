@@ -1,6 +1,7 @@
 import { Href } from 'expo-router';
 import useTranslationKeys from '@/hooks/useTranslationKeys';
 import { useAssetsManagerContext } from '@/contexts/AssetsManagerContextProvider';
+import { FogglesConfig } from '@/services/foggles/foggles.type';
 
 const DUMMY_PHOTO = require('@/assets/images/old-couple.png');
 
@@ -144,6 +145,41 @@ type Symptoms =
   | 'WORRIED_ANXIOUS'
   | 'ANGRY'
   | 'SLEEP_PROBLEMS';
+
+export const filterToolsWithFoggles = (toolsConfig: ToolConfigType, foggles: FogglesConfig): ToolConfigType => {
+  if (!foggles) {
+    return toolsConfig;
+  }
+
+  return Object.entries(toolsConfig).reduce((acc, [key, tool]) => {
+    // If no specific foggle exists for this tool, consider it enabled
+    const isToolEnabled = foggles?.features?.tools?.[tool.id]?.enabled ?? true;
+    if (!isToolEnabled) {
+      return acc;
+    }
+
+    return {
+      ...acc,
+      [key]: {
+        ...tool,
+        subcategories: !tool.subcategories
+          ? undefined
+          : Object.entries(tool.subcategories).reduce((subAcc, [subKey, subcategory]) => {
+              // If no specific foggle exists for this subcategory, consider it enabled
+              const isSubcategoryEnabled =
+                foggles?.features?.tools?.[tool.id]?.subcategories?.[subcategory.id]?.enabled ?? true;
+              if (!isSubcategoryEnabled) {
+                return subAcc;
+              }
+              return {
+                ...subAcc,
+                [subKey]: subcategory,
+              };
+            }, {}),
+      },
+    };
+  }, {} as ToolConfigType);
+};
 
 export const useTools = () => {
   const { mediaMapping } = useAssetsManagerContext();
@@ -472,8 +508,16 @@ export const useTools = () => {
 
 export const useSymptoms = () => {
   const { symptomsTranslationKeys } = useTranslationKeys();
-  const { mediaMapping } = useAssetsManagerContext();
+  const { mediaMapping, foggles } = useAssetsManagerContext();
   const TOOLS_CONFIG = useTools();
+
+  // Ids of the tools and subcategories that are not disabled by the foggles for the current country
+  const enabledToolIds = new Set(
+    Object.values(filterToolsWithFoggles(TOOLS_CONFIG, foggles)).flatMap((tool) => [
+      tool.id,
+      ...Object.values(tool.subcategories ?? {}).map((subcategory) => subcategory!.id),
+    ])
+  );
 
   const SYMPOTOMS_CONFIG: SymptomsConfigType = {
     REMINDED_OF_TRAUMA: {
@@ -686,7 +730,8 @@ export const useSymptoms = () => {
   };
 
   const getRandomToolForSymptom = (symptom: SymptomType) => {
-    const randomTool = symptom.tools[Math.floor(Math.random() * symptom.tools.length)];
+    const tools = symptom.tools.filter((tool) => enabledToolIds.has(tool.id));
+    const randomTool = tools[Math.floor(Math.random() * tools.length)];
     return randomTool;
   };
 
