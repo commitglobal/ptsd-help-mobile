@@ -2,7 +2,7 @@
   "expo": {
     "name": "PTSD Help",
     "slug": "ptsd-help",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "ptsd-help",
@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "38",
+      "buildNumber": "39",
       "bundleIdentifier": "ro.code.ptsd-coach",
       "entitlements": {
         "com.apple.developer.applesignin": [
@@ -34,12 +34,17 @@
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
-      "versionCode": 54,
+      "versionCode": 58,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#3E729F"
       },
-      "package": "ro.code.ptsdcoach"
+      "splash": {
+        "image": "./assets/images/splash-android.png",
+        "resizeMode": "contain",
+        "backgroundColor": "#1DA1F2"
+      },
+      "package": "ro.code4.ptsdcoach"
     },
     "web": {
       "bundler": "metro",
@@ -51,7 +56,10 @@
         "expo-build-properties",
         {
           "android": {
-            "kotlinVersion": "1.9.24"
+            "kotlinVersion": "1.9.24",
+            "compileSdkVersion": 35,
+            "targetSdkVersion": 35,
+            "buildToolsVersion": "35.0.0"
           }
         }
       ],
