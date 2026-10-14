@@ -83,7 +83,7 @@ export const processToolsAssets = async (
 
   await Promise.all(
     Object.entries(cmsMapping).map(async ([key, { uri, lastUpdatedAt }]) => {
-      // Files from S3 can contain "+" signs instead of spaces in their names
+      // Remote file names can contain "+" signs instead of spaces
       // First decode the URI to handle any URL encoding
       // Then extract filename, replace any spaces or + signs with underscores
       // And remove any other special characters to ensure valid filenames

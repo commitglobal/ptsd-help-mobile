@@ -7,9 +7,12 @@
   "build": {
     "development": {
       "developmentClient": true,
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_CMS_URL": "https://ptsd-help-backend.staging.heroesof.tech"
+      }
     },
-"development-simulator": {
+    "development-simulator": {
       "developmentClient": true,
       "distribution": "internal",
       "ios": {
@@ -17,15 +20,23 @@
       },
       "android": {
         "buildType": "apk"
+      },
+      "env": {
+        "EXPO_PUBLIC_CMS_URL": "https://ptsd-help-backend.staging.heroesof.tech"
       }
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_CMS_URL": "https://ptsd-help-backend.staging.heroesof.tech"
+      }
     },
     "staging": {
       "channel": "staging",
+      "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_ENVIRONMENT": "staging"
+        "EXPO_PUBLIC_ENVIRONMENT": "staging",
+        "EXPO_PUBLIC_CMS_URL": "https://ptsd-help-backend.staging.heroesof.tech"
       }
     },
     "production": {
