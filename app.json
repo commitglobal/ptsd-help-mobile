@@ -2,7 +2,7 @@
   "expo": {
     "name": "PTSD Help",
     "slug": "ptsd-help",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "ptsd-help",
@@ -15,7 +15,7 @@
     },
     "ios": {
       "supportsTablet": true,
-      "buildNumber": "39",
+      "buildNumber": "41",
       "bundleIdentifier": "ro.code.ptsd-coach",
       "entitlements": {
         "com.apple.developer.applesignin": [
@@ -34,7 +34,7 @@
     },
     "android": {
       "softwareKeyboardLayoutMode": "pan",
-      "versionCode": 58,
+      "versionCode": 62,
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#3E729F"
@@ -60,6 +60,9 @@
             "compileSdkVersion": 35,
             "targetSdkVersion": 35,
             "buildToolsVersion": "35.0.0"
+          },
+          "ios": {
+            "deploymentTarget": "15.1"
           }
         }
       ],
@@ -76,7 +79,8 @@
         {
           "photosPermission": "Allow PTSDHelp to access your photos. The app uses them within the therapeutic tools."
         }
-      ]
+      ],
+      "./plugins/withPodsDeploymentTarget"
     ],
     "experiments": {
       "typedRoutes": true

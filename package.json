@@ -174,5 +174,9 @@
       "react-native/no-color-literals": "off",
       "react-native/sort-styles": "off"
     }
+  },
+  "allowScripts": {
+    "dtrace-provider": true,
+    "protobufjs": true
   }
 }
